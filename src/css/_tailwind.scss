@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		@apply h-full font-montserrat leading-none;
+	}
+
+	body {
+		@apply flex h-full flex-col bg-wild-sand;
+	}
+
+	main {
+		@apply flex-grow;
+	}
+
+	section {
+		@apply py-[3.125rem] mxlg:py-[1.5625rem];
+	}
+}
+
+@layer components {
+	.container {
+		@apply max-w-[87.5rem];
+	}
+
+	.active-category {
+		background: #8B7AA8;
+
+		> a {
+			svg {
+				path {
+					fill: #fff;
+					transition: all 0.2s ease-in;
+				}
+			}
+
+			span {
+				color: #fff;
+				transition: all 0.2s ease-in;
+			}
+		}
+	}
+
+	.btn-primary {
+		@apply rounded-[1.25rem] bg-lavender-purple text-white transition ease-in hover:bg-purple-800;
+	}
+}

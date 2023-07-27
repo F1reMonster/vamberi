@@ -1,0 +1,40 @@
+<!-- banner slider -->
+<section class="xlg:pt-0">
+	<div class="container">
+		<div class="relative">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="h-[18.75rem] overflow-hidden rounded-[1.25rem] mlg:h-[12.5rem] mlg:rounded-[0.625rem] mmd:h-[9.375rem] mxmd:h-[6.875rem]">
+							<picture>
+								<source srcset="img/banner-mobile.jpg" media="(max-width: 30em)" />
+								<img class="h-full w-full object-cover object-center" src="img/banner.jpg" alt="banner" />
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn-home-slider-prev btn-home-slider-next absolute left-[0.9375rem] top-[7.8125rem] flex h-[3.125rem] w-[3.125rem] items-center justify-center rounded-[50%] bg-wild-sand/[0.6] mlg:w-[26px] mlg:h-[26px] mlg:left-0 mlg:top-[5.4375rem] mmd:top-[3.875rem] mxmd:top-[2.625rem]">
+				<svg class="h-5 w-5 mlg:w-[0.625rem] mlg:h-[0.625rem]" fill="none" stroke="#000" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+				</svg>
+			</button>
+			<button class="btn-home-slider-next absolute right-[0.9375rem] top-[7.8125rem] flex h-[3.125rem] w-[3.125rem] items-center justify-center rounded-[50%] bg-wild-sand/[0.6]  mlg:w-[26px] mlg:h-[26px] mlg:right-0 mlg:top-[5.4375rem] mmd:top-[3.875rem] mxmd:top-[2.625rem]">
+				<svg class="h-5 w-5 mlg:w-[0.625rem] mlg:h-[0.625rem]" fill="none" stroke="#000" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+				</svg>
+			</button>
+			<div class="home-slider-pagination mt-[1.625rem] flex items-center justify-center gap-[0.875rem] mlg:mt-[0.625rem] mlg:gap-[0.5rem]">
+				
+				<!-- при натяжці span видалити так як це генерує swiper -->
+
+				<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>
+				<span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+				<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+				<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+				<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ./banner slider -->
