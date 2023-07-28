@@ -11,213 +11,139 @@
 		@@include('html/_banner-slider.html')
 		@@include('html/components/_category-mobile.html', {hidden: "hidden"})
 
-		<section class="">
+		<section>
 			<div class="container">
-				<div class="flex items-center justify-between gap-4">
+				<div class="flex items-center justify-between gap-4 mmd:flex-col mmd:items-start">
 					<div class="max-w-[56.25rem]">
-						<h1 class="text-[2.375rem] font-bold leading-[131%]">Майданчик для інтернет-магазинів</h1>
-						<p class="mt-5 text-[1.25rem] leading-[175%]">Він заощаджує час пошуку необхідних спеціалістів, товарів, послуг. А ще це місце, де перевірені магазини можуть знайти нових вдячних клієнтів.</p>
+						<h1 class="text-sm font-semibold text-shark sm:text-3xl">Майданчик для інтернет-магазинів</h1>
+						<p class="mt-5 text-[1.25rem] leading-[175%] mxlg:text-[1.125rem] mmd:hidden">Він заощаджує час пошуку необхідних спеціалістів, товарів, послуг. А ще це місце, де перевірені магазини можуть знайти нових вдячних клієнтів.</p>
 					</div>
-					<div class="w-[22.0625rem] rounded-lg bg-white/[0.64] py-6 px-6 lg:pl-12 lg:pr-20 flex-shrink-0">
-						<div class="flex flex-col justify-center sm:gap-y-2">
-							<a class="flex w-full text-lavender-purple group hover:text-purple-800 transition ease-in" href="http://fil.vamberi.com.ua/ua/bezopasnaya-sdelka">
-								<svg class="hidden h-8 w-5 fill-lavender-purple  lg:block">
+					<div class="relative md:w-[22.0625rem] flex-shrink-0 rounded-lg md:bg-white/[0.64] md:px-6 md:py-6 lg:pl-12 lg:pr-20">
+						<div class="flex flex-col justify-center sm:gap-y-2 mmd:gap-2">
+							<a class="group flex w-full text-lavender-purple transition ease-in hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue" href="http://fil.vamberi.com.ua/ua/bezopasnaya-sdelka">
+								<svg class="hidden h-8 w-5 fill-lavender-purple lg:block">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
 								</svg>
-								<p class="w-full rounded-xl border-lavender-purple bg-white py-1 text-xs underline decoration-dashed underline-offset-4 sm:py-1.5 md:ml-4 md:border md:text-center md:text-sm md:no-underline group-hover:border-purple-800">Безпечні угоди</p>
+								<p class="w-full rounded-xl border-lavender-purple md:bg-white py-1 text-xs underline decoration-dashed underline-offset-4 group-hover:border-purple-800 sm:py-1.5 md:ml-4 md:border md:text-center md:text-sm md:no-underline">Безпечні угоди</p>
 							</a>
+
+							<a class="group flex w-full text-lavender-purple transition ease-in hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue" href="http://fil.vamberi.com.ua/ua/shops">
+								<svg class="hidden h-8 w-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800 lg:block">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
+								</svg>
+								<p class="w-full rounded-xl border-lavender-purple md:bg-white py-1 text-xs underline decoration-dashed underline-offset-4 group-hover:border-purple-800 sm:py-1.5 md:ml-4 md:border md:text-center md:text-sm md:no-underline">Онлайн-магазини</p>
+							</a>
+							<a href="#" class="group flex w-full text-lavender-purple transition ease-in hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue">
+								<svg class="hidden h-8 w-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800 lg:block">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
+								</svg>
+								<p class="w-full rounded-xl border-lavender-purple md:bg-white py-1 text-xs underline decoration-dashed underline-offset-4 group-hover:border-purple-800 sm:py-1.5 md:ml-4 md:border md:text-center md:text-sm md:no-underline">Турбо продаж</p>
+							</a>
+
+							<a href="#" class="group flex w-full text-lavender-purple transition ease-in hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue">
+								<svg class="hidden h-8 w-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800 lg:block">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
+								</svg>
+								<p class="w-full rounded-xl border-lavender-purple md:bg-white py-1 text-xs underline decoration-dashed underline-offset-4 group-hover:border-purple-800 sm:py-1.5 md:ml-4 md:border md:text-center md:text-sm md:no-underline">Оголошення на карті</p>
+							</a>
+							<a href="#" class="group flex w-full text-lavender-purple transition ease-in hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue">
+								<svg class="hidden h-8 w-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800 lg:block">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
+								</svg>
+								<p class="w-full rounded-xl border-lavender-purple md:bg-white py-1 text-xs underline decoration-dashed underline-offset-4 group-hover:border-purple-800 sm:py-[6px] md:ml-4 md:border md:text-center md:text-sm md:no-underline">Допомога ЗСУ</p>
+							</a>
+
+							<div class="absolute -bottom-2 -right-4 hidden h-10 w-10 items-center justify-center rounded-full bg-lavender-purple xl:flex">
+								<svg class="h-5 w-5 fill-white">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#finger-up"></use>
+								</svg>
 							
-							<a class="flex w-full text-lavender-purple group hover:text-purple-800 transition ease-in" href="http://fil.vamberi.com.ua/ua/shops">
-								<svg class="hidden h-8 w-5 fill-lavender-purple lg:block transition ease-in group-hover:fill-purple-800">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
-								</svg>
-								<p class="w-full bg-white rounded-xl border-lavender-purple py-1 text-xs underline decoration-dashed underline-offset-4 sm:py-1.5 md:ml-4 md:border md:text-center md:text-sm md:no-underline group-hover:border-purple-800">Онлайн-магазини</p>
-							</a>
-							<a href="#" class="flex w-full text-lavender-purple group hover:text-purple-800 transition ease-in">
-								<svg class="hidden h-8 w-5 fill-lavender-purple lg:block transition ease-in group-hover:fill-purple-800">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
-								</svg>
-								<p class="w-full bg-white rounded-xl border-lavender-purple py-1 text-xs underline decoration-dashed underline-offset-4 sm:py-1.5 md:ml-4 md:border md:text-center md:text-sm md:no-underline group-hover:border-purple-800">Турбо продаж</p>
-							</a>
-
-							<a href="#" class="flex w-full text-lavender-purple group hover:text-purple-800 transition ease-in">
-								<svg class="hidden h-8 w-5 fill-lavender-purple lg:block transition ease-in group-hover:fill-purple-800">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
-								</svg>
-								<p class="w-full bg-white rounded-xl border-lavender-purple py-1 text-xs underline decoration-dashed underline-offset-4 sm:py-1.5 md:ml-4 md:border md:text-center md:text-sm md:no-underline group-hover:border-purple-800">Оголошення на карті</p>
-							</a>
-							<a href="#" class="flex w-full text-lavender-purple group hover:text-purple-800 transition ease-in">
-								<svg class="hidden h-8 w-5 fill-lavender-purple lg:block transition ease-in group-hover:fill-purple-800">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
-								</svg>
-								<p class="w-full bg-white rounded-xl border-lavender-purple py-1 text-xs underline decoration-dashed underline-offset-4 sm:py-[6px] md:ml-4 md:border md:text-center md:text-sm md:no-underline group-hover:border-purple-800">Допомога ЗСУ</p>
-							</a>
-
-
-							<div class="absolute bottom-4 right-6 hidden h-[52px] w-[52px] items-center justify-center rounded-full bg-accent xl:flex">
-								<img src="/img/like.svg" alt="" class="h-[26px] w-[26px] fill-white" />
 							</div>
 						</div>
 					</div>
 				</div>
-
-				
 			</div>
 		</section>
 
-		<section class="px-4 sm:pb-4 lg:pb-8">
+		<!-- slider shops -->
+		<section>
 			<div class="container">
-				<div class="flex w-fit py-6 sm:flex-col">
-					<h2 class="text-sm font-semibold text-black sm:text-3xl">Магазини</h2>
-					<div class="flex items-center pl-2 pt-0.5 text-[0.75rem] sm:text-sm lg:pl-0.5">
-						<a class="z-10 hover:text-accent" href="http://fil.vamberi.com.ua/ua/shops"
-							><span class="decoration-dashed underline-offset-4 sm:underline">Всі магазини</span
-							><span class="ml-1 inline-flex h-3 w-3 items-center justify-center rounded-full bg-accent sm:h-5 sm:w-5"
-								><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="h-[7px] w-[7px] rotate-180">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path></svg></span
-						></a>
-					</div>
+				<div class="flex sm:flex-col justify-between items-center sm:items-start">
+					<h2 class="text-sm font-semibold text-shark sm:text-3xl">Магазини</h2>
+
+					<a class="group mt-2.5 flex items-center hover:text-lavender-purple transition ease-in text-shark leading-[121%] text-xs sm:text-base" href="http://fil.vamberi.com.ua/ua/shops">
+						<span class="decoration-tundora decoration-dotted underline-offset-2 sm:underline">Всі магазини</span>
+						<span class="ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-lavender-purple sm:h-5 sm:w-5">
+							<svg class="h-2.5 w-1.5 sm:h-3 sm:w-1.5 fill-white">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+							</svg>
+						</span>
+					</a>
 				</div>
-				<div class="relative min-h-[132px] w-full">
-					<div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden relative w-[85%] md:w-[85%] lg:w-[90%] xl:w-[95%]">
-						<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px)">
-							<div class="swiper-slide swiper-slide-active border-gray flex min-h-[132px] w-fit items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[156px] sm:border-accent sm:py-2" data-swiper-slide-index="0" style="width: 310px; margin-right: 20px">
-								<div class="w-fit flex-col items-center pl-[1%]">
-									<a href="http://fil.vamberi.com.ua/ua/shops/c9f0f895fb98ab9159f51fd0297e236d"><img src="/media/others/30a484ca29228a4ed7c30a8b31f01367.jpg" alt="" class="h-[46px] w-full sm:h-[56px] sm:w-[130px]" /></a>
-									<div class="flex justify-center pt-1"><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /></div>
-								</div>
-								<div class="mx-auto text-center">
-									<a href="http://fil.vamberi.com.ua/ua/shops/c9f0f895fb98ab9159f51fd0297e236d">
-										<p class="text-[12px] lg:text-[18px]">Електро-Дом <br /></p>
-										<button class="text-[10px] text-accent underline decoration-dashed hover:opacity-75">Докладніше</button>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide swiper-slide-next border-gray flex min-h-[132px] w-fit items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[156px] sm:border-accent sm:py-2" data-swiper-slide-index="1" style="width: 310px; margin-right: 20px">
-								<div class="w-fit flex-col items-center pl-[1%]">
-									<a href="http://fil.vamberi.com.ua/ua/shops/1679091c5a880faf6fb5e6087eb1b2dc"></a>
-									<div class="flex justify-center pt-1"><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /></div>
-								</div>
-								<div class="mx-auto text-center">
-									<a href="http://fil.vamberi.com.ua/ua/shops/1679091c5a880faf6fb5e6087eb1b2dc">
-										<p class="text-[12px] lg:text-[18px]">Александр <br /></p>
-										<button class="text-[10px] text-accent underline decoration-dashed hover:opacity-75">Докладніше</button>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide border-gray flex min-h-[132px] w-fit items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[156px] sm:border-accent sm:py-2" data-swiper-slide-index="2" style="width: 310px; margin-right: 20px">
-								<div class="w-fit flex-col items-center pl-[1%]">
-									<a href="http://fil.vamberi.com.ua/ua/shops/shop"><img src="/media/others/5f54b34e946cceff7914b4d2a76ffd8d.png" alt="" class="h-[46px] w-full sm:h-[56px] sm:w-[130px]" /></a>
-									<div class="flex justify-center pt-1"><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /></div>
-								</div>
-								<div class="mx-auto text-center">
-									<a href="http://fil.vamberi.com.ua/ua/shops/shop">
-										<p class="text-[12px] lg:text-[18px]">TVShop <br /></p>
-										<button class="text-[10px] text-accent underline decoration-dashed hover:opacity-75">Докладніше</button>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide border-gray flex min-h-[132px] w-fit items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[156px] sm:border-accent sm:py-2" data-swiper-slide-index="3" style="width: 310px; margin-right: 20px">
-								<div class="w-fit flex-col items-center pl-[1%]">
-									<a href="http://fil.vamberi.com.ua/ua/shops/mebel-platon"><img src="/media/others/5657c85f5c8a73cbc6bc4178dcc7c5b3.png" alt="" class="h-[46px] w-full sm:h-[56px] sm:w-[130px]" /></a>
-									<div class="flex justify-center pt-1"><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /></div>
-								</div>
-								<div class="mx-auto text-center">
-									<a href="http://fil.vamberi.com.ua/ua/shops/mebel-platon">
-										<p class="text-[12px] lg:text-[18px]">Мебель Платон <br /></p>
-										<button class="text-[10px] text-accent underline decoration-dashed hover:opacity-75">Докладніше</button>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide border-gray flex min-h-[132px] w-fit items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[156px] sm:border-accent sm:py-2" data-swiper-slide-index="4" style="width: 310px; margin-right: 20px">
-								<div class="w-fit flex-col items-center pl-[1%]">
-									<a href="http://fil.vamberi.com.ua/ua/shops/45c48cce2e2d7fbdea1afc51c7c6ad26"><img src="/media/others/e3c51addea074ba7fc6d32f3d1cfac66.png" alt="" class="h-[46px] w-full sm:h-[56px] sm:w-[130px]" /></a>
-									<div class="flex justify-center pt-1"><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /></div>
-								</div>
-								<div class="mx-auto text-center">
-									<a href="http://fil.vamberi.com.ua/ua/shops/45c48cce2e2d7fbdea1afc51c7c6ad26">
-										<p class="text-[12px] lg:text-[18px]">Лия <br /></p>
-										<button class="text-[10px] text-accent underline decoration-dashed hover:opacity-75">Докладніше</button>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide border-gray flex min-h-[132px] w-fit items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[156px] sm:border-accent sm:py-2" data-swiper-slide-index="5" style="width: 310px; margin-right: 20px">
-								<div class="w-fit flex-col items-center pl-[1%]">
-									<a href="http://fil.vamberi.com.ua/ua/shops/torgovoye-oborudovaniye"><img src="/media/others/df6e38cd2ecc18259f63e68c37da4b84.png" alt="" class="h-[46px] w-full sm:h-[56px] sm:w-[130px]" /></a>
-									<div class="flex justify-center pt-1"><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /></div>
-								</div>
-								<div class="mx-auto text-center">
-									<a href="http://fil.vamberi.com.ua/ua/shops/torgovoye-oborudovaniye">
-										<p class="text-[12px] lg:text-[18px]">Анна <br /></p>
-										<button class="text-[10px] text-accent underline decoration-dashed hover:opacity-75">Докладніше</button>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide border-gray flex min-h-[132px] w-fit items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[156px] sm:border-accent sm:py-2" data-swiper-slide-index="6" style="width: 310px; margin-right: 20px">
-								<div class="w-fit flex-col items-center pl-[1%]">
-									<a href="http://fil.vamberi.com.ua/ua/shops/34173cb38f07f89ddbebc2ac9128303f"></a>
-									<div class="flex justify-center pt-1"><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /></div>
-								</div>
-								<div class="mx-auto text-center">
-									<a href="http://fil.vamberi.com.ua/ua/shops/34173cb38f07f89ddbebc2ac9128303f">
-										<p class="text-[12px] lg:text-[18px]">Дмитрий <br /></p>
-										<button class="text-[10px] text-accent underline decoration-dashed hover:opacity-75">Докладніше</button>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide border-gray flex min-h-[132px] w-fit items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[156px] sm:border-accent sm:py-2" data-swiper-slide-index="7" style="width: 310px; margin-right: 20px">
-								<div class="w-fit flex-col items-center pl-[1%]">
-									<a href="http://fil.vamberi.com.ua/ua/shops/6c8349cc7260ae62e3b1396831a8398f"></a>
-									<div class="flex justify-center pt-1"><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /></div>
-								</div>
-								<div class="mx-auto text-center">
-									<a href="http://fil.vamberi.com.ua/ua/shops/6c8349cc7260ae62e3b1396831a8398f">
-										<p class="text-[12px] lg:text-[18px]">Олександр <br /></p>
-										<button class="text-[10px] text-accent underline decoration-dashed hover:opacity-75">Докладніше</button>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide border-gray flex min-h-[132px] w-fit items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[156px] sm:border-accent sm:py-2" data-swiper-slide-index="8" style="width: 310px; margin-right: 20px">
-								<div class="w-fit flex-col items-center pl-[1%]">
-									<a href="http://fil.vamberi.com.ua/ua/shops/67c6a1e7ce56d3d6fa748ab6d9af3fd7"></a>
-									<div class="flex justify-center pt-1"><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /></div>
-								</div>
-								<div class="mx-auto text-center">
-									<a href="http://fil.vamberi.com.ua/ua/shops/67c6a1e7ce56d3d6fa748ab6d9af3fd7">
-										<p class="text-[12px] lg:text-[18px]">Oleksii <br /></p>
-										<button class="text-[10px] text-accent underline decoration-dashed hover:opacity-75">Докладніше</button>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide border-gray flex min-h-[132px] w-fit items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[156px] sm:border-accent sm:py-2" data-swiper-slide-index="9" style="width: 310px; margin-right: 20px">
-								<div class="w-fit flex-col items-center pl-[1%]">
-									<a href="http://fil.vamberi.com.ua/ua/shops/d67d8ab4f4c10bf22aa353e27879133c"></a>
-									<div class="flex justify-center pt-1"><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /><img src="/img/Star.svg" alt="" /></div>
-								</div>
-								<div class="mx-auto text-center">
-									<a href="http://fil.vamberi.com.ua/ua/shops/d67d8ab4f4c10bf22aa353e27879133c">
-										<p class="text-[12px] lg:text-[18px]">Test <br /></p>
-										<button class="text-[10px] text-accent underline decoration-dashed hover:opacity-75">Докладніше</button>
-									</a>
+
+				<div class="relative min-h-[8.25rem] w-full mt-8">
+					<div class="relative px-1 sm:px-8">
+						<div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+							<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px)">
+								<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0">
+									<div class="border-gray flex min-h-[8.25rem] w-[260px] sm:w-[20.625rem] items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[9.75rem] sm:border-lavender-purple sm:py-2">
+										<div class="w-fit flex-col items-center pl-[1%]">
+											<a href="http://fil.vamberi.com.ua/ua/shops/c9f0f895fb98ab9159f51fd0297e236d">
+												<img src="http://w2.vamberi.com.ua/media/others/5657c85f5c8a73cbc6bc4178dcc7c5b3.png" alt="" class="h-[46px] w-full sm:h-14 sm:w-[8.125rem]" />
+											</a>
+											<div class="flex justify-center pt-5">
+												<svg class="h-5 w-5 fill-goldenrod">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+												</svg>
+												<svg class="h-5 w-5 fill-goldenrod">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+												</svg>
+												<svg class="h-5 w-5 fill-goldenrod">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+												</svg>
+												<svg class="h-5 w-5 fill-goldenrod">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+												</svg>
+												<svg class="h-5 w-5 fill-alto">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="mx-auto text-center">
+											<a href="http://fil.vamberi.com.ua/ua/shops/c9f0f895fb98ab9159f51fd0297e236d">
+												<p class="text-[1rem] lg:text-[1.125rem]">Мебель Платон</p>
+												<p class="mt-1.5 text-[0.875rem] leading-[121%]">49 оголошень</p>
+												<button class="mt-4 text-[0.625rem] leading-[121%] text-lavender-purple underline decoration-tundora decoration-dashed decoration-1 underline-offset-2 transition ease-in hover:decoration-tundora/75 hover:opacity-75">Докладніше</button>
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+						<button class="absolute left-0 top-1/2 z-10 -translate-y-1/2 rounded-full h-6 w-6 bg-lavender-purple sm:bg-white sm:px-0.5 sm:py-5 md:px-1 md:py-6 flex items-center justify-center">
+							<svg class="h-2.5 w-1.5 fill-white sm:fill-lavender-purple sm:h-3.5 sm:w-3.5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
+							</svg>
+						</button>
+						<button class="absolute right-0 top-1/2 z-10 -translate-y-1/2 h-6 w-6 rounded-full bg-lavender-purple sm:bg-white sm:px-0.5 sm:py-5 md:px-1 md:py-6 flex items-center justify-center">
+							<svg class="h-2.5 w-1.5 fill-white sm:fill-lavender-purple sm:h-3.5 sm:w-3.5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+							</svg>
+						</button>
 					</div>
-					<button class="absolute left-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white px-1 py-1 sm:px-0.5 sm:py-5 md:px-1 md:py-6">
-						<img src="/img/Стрелка_left.png" alt="" class="h-[7px] w-[7px] sm:h-[14px] sm:w-[14px]" /></button
-					><button class="absolute right-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white px-1 py-1 sm:px-0.5 sm:py-5 md:px-1 md:py-6">
-						<img src="/img/Стрелка_right.png" alt="" class="h-[7px] w-[7px] sm:h-[14px] sm:w-[14px]" />
-					</button>
 				</div>
 			</div>
 		</section>
-		<section class="mt-10 px-5 lg:mt-20">
+		<!-- ./slider shops -->
+
+		<section>
 			<div class="container">
 				<h2 class="font-semibold lg:text-3xl">Рекомендации для вас</h2>
 				<div class="auto-rows-[minmax(0px, auto)] mt-4 grid grid-cols-2 gap-x-1.5 gap-y-4 md:grid-cols-3 md:gap-x-10 lg:mt-11 lg:grid-cols-5 lg:gap-x-6 lg:gap-y-8"></div>
 			</div>
 		</section>
-		<section class="mt-4 px-4 pb-4 sm:mt-6 lg:mt-10">
+
+		<section>
 			<div class="container">
 				<div class="flex">
 					<div class="w-full lg:w-[85%] lg:pr-9">
