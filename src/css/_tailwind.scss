@@ -25,25 +25,8 @@
 		@apply max-w-[87.5rem];
 	}
 
-	.active-category {
-		background: #8B7AA8;
-
-		> a {
-			svg {
-				path {
-					fill: #fff;
-					transition: all 0.2s ease-in;
-				}
-			}
-
-			span {
-				color: #fff;
-				transition: all 0.2s ease-in;
-			}
-		}
-	}
-
 	.btn-primary {
 		@apply rounded-[1.25rem] bg-lavender-purple text-white transition ease-in hover:bg-purple-800;
 	}
 }
+
