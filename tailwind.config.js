@@ -1,12 +1,10 @@
 const options = require("./config"); //options from config.js
 
-
 const allPlugins = {
 	typography: require("@tailwindcss/typography"),
 	forms: require("@tailwindcss/forms"),
 	containerQueries: require("@tailwindcss/container-queries"),
 };
-
 
 const plugins = Object.keys(allPlugins)
 	.filter((k) => options.plugins[k])
@@ -21,7 +19,6 @@ module.exports = {
 	content: ["./src/**/*.{html,js,php}", "./resources/js/**/*.{vue,js,ts,jsx,tsx}", "./resources/view/*.{vue,js,ts,jsx,tsx}"],
 	darkMode: "class",
 	theme: {
-		
 		container: {
 			padding: "0.9375rem",
 			center: true,
@@ -37,6 +34,8 @@ module.exports = {
 				mxmd: { max: "35.9375em" }, // 575
 				msm: { max: "30em" }, // 480
 				mlw: { max: "23.375em" }, // 374
+				lw: "30em",
+				low: "23.375em"
 			},
 			fontFamily: {
 				montserrat: "Montserrat, sans-serif",
@@ -54,7 +53,9 @@ module.exports = {
 				ebb: "#efe7e7",
 				goldenrod: "#FCCB71", // rating star
 				tundora: "#424242",
-				"royal-blue":" #5477E7",
+				"royal-blue": " #5477E7",
+				"dove-gray": "#6A6969",
+				pomegranate: "#F03B42",
 				//  ==================================== //
 
 				main: "#212529",

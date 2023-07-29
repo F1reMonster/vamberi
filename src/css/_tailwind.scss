@@ -16,13 +16,13 @@
 	}
 
 	section {
-		@apply py-[3.125rem] mxlg:py-[1.5625rem];
+		@apply py-4 lg:py-7;
 	}
 }
 
 @layer components {
 	.container {
-		@apply max-w-[87.5rem];
+		@apply max-w-[91.875rem];
 	}
 
 	.btn-primary {
