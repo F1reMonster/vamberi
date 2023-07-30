@@ -3,19 +3,119 @@
 	<head>
 		@@include('html/components/_head.html', {title: "VamBeri - Карточка товару"})
 	</head>
-<body>
-	@@include('html/components/_header.html') 
-	@@include('html/components/_category-mobile.html', {hidden: "hidden"})
+	<body>
+		@@include('html/components/_header.html')
 
-	<main>
-		@@include("html/components/_breadcrumbs.html", {})
-		<section>
-			
-		</section>
+		<main>
+			@@include("html/components/_breadcrumbs.html", {})
+			<section class="">
+				<div class="container">
+					<div class="flex flex-col justify-between lg:flex-row">
+						<div class="lg:w-[calc(60%-1.5625rem)] w-full">
+							
+							<div class="mb-[1.6875rem] flex justify-between gap-2.5 lw:gap-[1.875rem] xl:hidden flex-wrap">
+								<div class="flex h-[3.125rem] w-full lw:w-[calc(50%-0.9375rem)] items-center justify-center gap-1 rounded-[0.625rem] bg-white p-1.5 text-[0.875rem] tracking-[0.0225em]"><span class="text-dusty-gray">Код товару:</span><span class="font-semibold">119954759</span></div>
+								<div class="flex h-[3.125rem] w-full lw:w-[calc(50%-0.9375rem)] items-center justify-center gap-1 rounded-[0.625rem] bg-white p-1.5 text-[0.875rem] tracking-[0.0225em]"><span class="text-dusty-gray">ID:</span><span class="font-semibold">45475541</span></div>
+							</div>
 
-	</main>
+							
+							<h2 class="mb-3 lw:mb-[1.625rem] text-base font-medium leading-[121%] text-shark sm:text-[1.875rem]">Lenovo ideapad 330-15ikb</h2>
+							
+							<div class="flex flex-col justify-between gap-4 lw:items-center lw:flex-row">
+								<!-- rating -->
+								<div class="flex items-center gap-2">
+									<div class="flex items-center gap-[0.3125rem]">
+										<svg class="w-5 h-5 fill-goldenrod">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+										</svg>
+										<svg class="w-5 h-5 fill-goldenrod">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+										</svg>
+										<svg class="w-5 h-5 fill-goldenrod">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+										</svg>
+										<svg class="w-5 h-5 fill-goldenrod">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+										</svg>
+										<svg class="w-5 h-5 fill-white stroke-tundora">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+										</svg>
+									</div>
+									<div class="text-[0.875rem]">28 відгуків</div>
+								</div>
+								<!-- ./rating -->
+								
+								<a href="#" class="rounded-[1.25rem] border border-waikawa-gray px-[1.1875rem] py-2.5 text-[0.875rem] text-waikawa-gray transition ease-in hover:border-blue-800 hover:text-blue-800 text-center">Всі товари продавця</a>
+							</div>
 
-	@@include('html/components/_sticky-menu.html') 
-	@@include('html/components/_footer.html') 	
-</body>
+							<!-- product image -->
+							<div class="flex flex-col mt-5">
+								<div class="relative">
+									<div class="lw:aspect-[1.414] w-full overflow-hidden rounded-[0.625rem]">
+										<img class="object-cover w-full h-full" src="img/product-card/product001-001.jpg" alt="" srcset="" />
+									</div>
+									<button class="btn-product-card-prev group absolute left-0 top-[50%] hidden sm:flex h-[3.125rem] w-[3.125rem] -translate-y-1/2 items-center justify-center rounded-[50%] bg-wild-sand/[0.6] transition ease-in hover:bg-lavender-purple">
+										<svg class="w-5 h-5 transition ease-linear group-hover:fill-white">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
+										</svg>
+									</button>
+									<button class="btn-product-card-next group absolute right-0 top-[50%] hidden sm:flex h-[3.125rem] w-[3.125rem] -translate-y-1/2 items-center justify-center rounded-[50%] bg-wild-sand/[0.6] transition ease-in hover:bg-lavender-purple">
+										<svg class="w-5 h-5 transition ease-linear group-hover:fill-white">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+										</svg>
+									</button>
+								</div>
+
+								<div class="product-card-slider-pagination mt-[0.9375rem] gap-2 flex sm:hidden items-center justify-center  ">
+				
+									<!-- при натяжці span видалити так як це генерує swiper -->
+					
+									<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>
+									<span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+									<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+									<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+									<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+								</div>
+
+								<div class="scrollbar-custom mt-[1.125rem] hidden sm:flex gap-5 overflow-auto pb-2">
+									<div class="h-[6.25rem] w-[11.25rem] flex-shrink-0 overflow-hidden rounded-[0.625rem] border-[0.1563rem] border-lavender-purple">
+										<img class="object-cover w-full h-full" src="img/product-card/product001-001.jpg" alt="img" />
+									</div>
+									<div class="h-[6.25rem] w-[11.25rem] flex-shrink-0 overflow-hidden rounded-[0.625rem]">
+										<img class="object-cover w-full h-full" src="img/product-card/product001-002.jpg" alt="img" />
+									</div>
+									<div class="h-[6.25rem] w-[11.25rem] flex-shrink-0 overflow-hidden rounded-[0.625rem]">
+										<img class="object-cover w-full h-full" src="img/product-card/product001-003.jpg" alt="img" />
+									</div>
+									<div class="h-[6.25rem] w-[11.25rem] flex-shrink-0 overflow-hidden rounded-[0.625rem]">
+										<img class="object-cover w-full h-full" src="img/product-card/product001-001.jpg" alt="img" />
+									</div>
+									<div class="h-[6.25rem] w-[11.25rem] flex-shrink-0 overflow-hidden rounded-[0.625rem]">
+										<img class="object-cover w-full h-full" src="img/product-card/product001-002.jpg" alt="img" />
+									</div>
+									<div class="h-[6.25rem] w-[11.25rem] flex-shrink-0 overflow-hidden rounded-[0.625rem]">
+										<img class="object-cover w-full h-full" src="img/product-card/product001-003.jpg" alt="img" />
+									</div>
+								</div>
+							</div>
+							<!-- ./product image -->
+						</div>
+
+						<!-- product aside -->
+						<aside class="lg:w-[calc(40%-1.5625rem)] w-full lg:mt-0 mt-5">
+							<div class="mt-[3.375rem] hidden justify-between gap-[1.875rem] xl:flex">
+								<div class="flex h-11 w-[calc(50%-0.9375rem)] items-center justify-center gap-1 rounded-[0.625rem] bg-white p-1.5 text-[1.125rem] tracking-[0.0225em]"><span class="text-dusty-gray">Код товару:</span><span class="font-semibold">119954759</span></div>
+								<div class="flex h-11 w-[calc(50%-0.9375rem)] items-center justify-center gap-1 rounded-[0.625rem] bg-white p-1.5 text-[1.125rem] tracking-[0.0225em]"><span class="text-dusty-gray">ID:</span><span class="font-semibold">45475541</span></div>
+							</div>
+
+							2
+						</aside>
+						<!--  ./product aside -->
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+	</body>
 </html>

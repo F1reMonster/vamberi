@@ -38,7 +38,7 @@
 		<div class="relative mt-[1.375rem] flex items-center mxlg:justify-between mxlg:gap-2.5 mxlg:pb-[5rem]">
 			<!-- burger -->
 			<button class="hidden h-[1.875rem] w-[1.875rem] items-center justify-center rounded-[50%] bg-white mxlg:flex">
-				<svg class="h-4 w-4 fill-black">
+				<svg class="w-4 h-4 fill-black">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
 				</svg>
 			</button>
@@ -50,8 +50,8 @@
 			<!-- category dropdown -->
 			<button aria-label="Обрати категорію" class="group mr-8 flex h-[3.125rem] w-[18.125rem] flex-shrink-0 items-center rounded-[0.625rem] bg-white px-2.5 py-1.5 mxxl:mr-4 mxlg:hidden">
 				<div class="flex items-center gap-3.5">
-					<div class="btn-primary flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg">
-						<svg class="h-5 w-5 fill-white">
+					<div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-lg btn-primary">
+						<svg class="w-5 h-5 fill-white">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#category"></use>
 						</svg>
 					</div>
@@ -66,23 +66,24 @@
 			<!-- ./category dropdown -->
 
 			<!-- search -->
-			<div class="group flex h-[3.125rem] flex-grow items-center gap-4 rounded-[1.25rem] bg-white px-2.5 py-1.5 mxlg:absolute mxlg:bottom-4 mxlg:left-0 mxlg:h-14 mxlg:w-full mxlg:gap-2.5">
-				<button class="hidden mxlg:block">
-					<svg class="h-6 w-6 fill-black">
+			<div class="group flex h-[3.125rem] flex-grow items-center gap-4 rounded-[0.625rem] lg:rounded-[1.25rem] bg-white px-2.5 py-1.5 mxlg:absolute mxlg:bottom-4 mxlg:left-0 mxlg:h-14 mxlg:w-full mxlg:gap-2.5">
+				
+				<input type="text" class="flex-grow border-none p-0 text-[0.875rem] placeholder:text-[0.8125rem] placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
+				<button class="btn-primary lg:px-5 py-2.5 px-[0.8125rem]">
+					<span class="hidden lg:block">Пошук</span>
+					<svg class="block w-4 h-4 fill-white lg:hidden">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
 					</svg>
 				</button>
-				<input type="text" class="flex-grow border-none p-0 text-[0.875rem] placeholder:text-[0.8125rem] placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
-				<button class="btn-primary px-5 py-2.5 mxlg:hidden">Пошук</button>
 			</div>
 			<!-- ./search -->
 
 			<!-- actions buttons -->
 			<div class="ml-8 flex gap-3.5 text-[0.875rem] leading-[121%] mxxl:ml-4 mxxl:gap-1 mxlg:ml-0 mxlg:gap-2.5">
-				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:hidden" title="Увійти">
+				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 mxlg:hidden" title="Увійти">
 					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
 						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/user01.svg" alt="Увійти" /> -->
-						<svg class="h-5 w-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800">
+						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
 						</svg>
 						
@@ -92,7 +93,7 @@
 				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:h-[1.875rem] mxlg:w-[1.875rem]" title="Кошик">
 					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
 						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/cart.svg" alt="Кошик" /> -->
-						<svg class="w-5 h-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800">
+						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#cart"></use>
 						</svg>
 					</span>
@@ -101,21 +102,21 @@
 				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:h-[1.875rem] mxlg:w-[1.875rem]" title="Обране">
 					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
 						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/heart.svg" alt="Обране" /> -->
-						<svg class="h-5 w-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800">
+						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 						</svg>
 					</span>
 					<span class="mxxl:hidden">Обране</span>
 				</a>
-				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:hidden" title="Сповіщення">
+				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 mxlg:hidden" title="Сповіщення">
 					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
 						<!--  якщо є сповіщення додаємо класс hidden -->
-						<svg class="h-5 w-5 fill-transparent stroke-lavender-purple transition ease-in group-hover:stroke-purple-800">
+						<svg class="w-5 h-5 transition ease-in fill-transparent stroke-lavender-purple group-hover:stroke-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
 						</svg>
 
 						<!--  якщо є сповіщення видяляємо класс hidden -->
-						<svg class="h-5 w-5 fill-tall-poppy stroke-tall-poppy transition ease-in group-hover:fill-pink-800 hidden">
+						<svg class="hidden w-5 h-5 transition ease-in fill-tall-poppy stroke-tall-poppy group-hover:fill-pink-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
 						</svg>
 					</span>
@@ -141,13 +142,13 @@
 						<div class="h-[18.75rem] overflow-hidden rounded-[1.25rem] mlg:h-[12.5rem] mlg:rounded-[0.625rem] mmd:h-[9.375rem] mxmd:h-[6.875rem]">
 							<picture>
 								<source srcset="img/banner-mobile.jpg" media="(max-width: 30em)" />
-								<img class="h-full w-full object-cover object-center" src="img/banner.jpg" alt="banner" />
+								<img class="object-cover object-center w-full h-full" src="img/banner.jpg" alt="banner" />
 							</picture>
 						</div>
 					</div>
 				</div>
 			</div>
-			<button class="btn-home-slider-prev btn-home-slider-next absolute left-[0.9375rem] top-[7.8125rem] flex h-[3.125rem] w-[3.125rem] items-center justify-center rounded-[50%] bg-wild-sand/[0.6] mlg:w-[26px] mlg:h-[26px] mlg:left-0 mlg:top-[5.4375rem] mmd:top-[3.875rem] mxmd:top-[2.625rem]">
+			<button class="btn-home-slider-prev absolute left-[0.9375rem] top-[7.8125rem] flex h-[3.125rem] w-[3.125rem] items-center justify-center rounded-[50%] bg-wild-sand/[0.6] mlg:w-[26px] mlg:h-[26px] mlg:left-0 mlg:top-[5.4375rem] mmd:top-[3.875rem] mxmd:top-[2.625rem]">
 				<svg class="h-5 w-5 mlg:w-[0.625rem] mlg:h-[0.625rem]" fill="none" stroke="#000" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
 				</svg>
@@ -171,7 +172,8 @@
 	</div>
 </section>
 <!-- ./banner slider -->
- <!-- category dropdown -->
+ 
+			<!-- category dropdown -->
 <div class="hidden mxlg:block">
 	<div class="container">
 		<!-- при відкритті додати класи  rounded-bl-0 rounded-br-0-->
@@ -746,7 +748,7 @@
 					</div>
 					<div class="auto-rows-[minmax(0px, auto)] mt-4 grid grid-cols-2 gap-x-1.5 gap-y-1.5 md:grid-cols-3 md:gap-x-4 lg:mt-11 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-[1.375rem] xl:gap-y-8">
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="hidden w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -769,7 +771,7 @@
 								<!-- ./card image -->
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
@@ -779,7 +781,7 @@
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Шкаф кровать трансформер</div>
 									</div>
 
-									<div class="mt-2 text-[0.5625rem] sm:mt-5 sm:text-sm">
+									<div class="mt-2 text-[0.5625rem] sm:text-sm">
 										<div class="flex items-center justify-between gap-1">
 											<div class="min-w-[4.75rem] flex-shrink-0 sm:min-w-[7.875rem]">
 												<div class="rounded-lg border border-lavender-purple p-1 sm:px-2.5 sm:py-1">275 ₴ від 5 шт.</div>
@@ -810,7 +812,7 @@
 						<!-- ./card -->
 
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -832,7 +834,7 @@
 								</div>
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
@@ -842,7 +844,7 @@
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Шкаф кровать трансформер</div>
 									</div>
 
-									<div class="mt-2 text-[0.5625rem] sm:mt-5 sm:text-sm">
+									<div class="mt-2 text-[0.5625rem] sm:text-sm">
 										<div class="flex items-center justify-between gap-1">
 											<div class="min-w-[4.75rem] flex-shrink-0 sm:min-w-[7.875rem]">
 												<div class="rounded-lg border border-lavender-purple p-1 sm:px-2.5 sm:py-1">275 ₴ від 5 шт.</div>
@@ -873,7 +875,7 @@
 						<!-- ./card -->
 
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="h-4 -4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -894,7 +896,7 @@
 								</div>
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
@@ -904,7 +906,7 @@
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, ipsa?</div>
 									</div>
 
-									<div class="mt-2 text-[0.5625rem] sm:mt-5 sm:text-sm">
+									<div class="mt-2 text-[0.5625rem] sm:text-sm">
 										<div class="flex items-center justify-between gap-1">
 											<div class="min-w-[4.75rem] flex-shrink-0 sm:min-w-[7.875rem]">
 												<div class="rounded-lg border border-lavender-purple p-1 sm:px-2.5 sm:py-1">215 ₴ від 5 шт.</div>
@@ -935,7 +937,7 @@
 						<!-- ./card -->
 
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="h-4 -4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -956,13 +958,13 @@
 								</div>
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
 											<p class="text-xs font-bold sm:text-[1.125rem]">9900 грн.</p>
-											<p class="text-[0.5625rem] text-pomegranate sm:text-[0.9375rem]">Лише ОПТ</p>
+											<p class="text-[0.5625rem] font-semibold text-pomegranate sm:text-[0.9375rem]">Лише ОПТ</p>
 										</div>
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Шкаф кровать трансформер</div>
 									</div>
@@ -998,7 +1000,7 @@
 						<!-- ./card -->
 
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="h-4 -4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1032,7 +1034,7 @@
 								<!-- ./card image -->
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
@@ -1042,7 +1044,7 @@
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Шкаф кровать трансформер</div>
 									</div>
 
-									<div class="mt-2 text-[0.5625rem] sm:mt-5 sm:text-sm">
+									<div class="mt-2 text-[0.5625rem] sm:text-sm">
 										<div class="flex items-center justify-between gap-1">
 											<div class="min-w-[4.75rem] flex-shrink-0 sm:min-w-[7.875rem]">
 												<div class="rounded-lg border border-lavender-purple p-1 sm:px-2.5 sm:py-1">275 ₴ від 5 шт.</div>
@@ -1124,7 +1126,7 @@
 				<div class="container">
 					<div class="auto-rows-[minmax(0px, auto)] grid grid-cols-2 gap-x-1.5 gap-y-1.5 md:grid-cols-3 md:gap-x-4 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-[1.375rem] xl:gap-y-8">
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="hidden w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1147,7 +1149,7 @@
 								<!-- ./card image -->
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
@@ -1157,7 +1159,7 @@
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Шкаф кровать трансформер</div>
 									</div>
 
-									<div class="mt-2 text-[0.5625rem] sm:mt-5 sm:text-sm">
+									<div class="mt-2 text-[0.5625rem] sm:text-sm">
 										<div class="flex items-center justify-between gap-1">
 											<div class="min-w-[4.75rem] flex-shrink-0 sm:min-w-[7.875rem]">
 												<div class="rounded-lg border border-lavender-purple p-1 sm:px-2.5 sm:py-1">275 ₴ від 5 шт.</div>
@@ -1188,7 +1190,7 @@
 						<!-- ./card -->
 
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1210,7 +1212,7 @@
 								</div>
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
@@ -1220,7 +1222,7 @@
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Шкаф кровать трансформер</div>
 									</div>
 
-									<div class="mt-2 text-[0.5625rem] sm:mt-5 sm:text-sm">
+									<div class="mt-2 text-[0.5625rem] sm:text-sm">
 										<div class="flex items-center justify-between gap-1">
 											<div class="min-w-[4.75rem] flex-shrink-0 sm:min-w-[7.875rem]">
 												<div class="rounded-lg border border-lavender-purple p-1 sm:px-2.5 sm:py-1">275 ₴ від 5 шт.</div>
@@ -1251,7 +1253,7 @@
 						<!-- ./card -->
 
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="h-4 -4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1272,7 +1274,7 @@
 								</div>
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
@@ -1282,7 +1284,7 @@
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, ipsa?</div>
 									</div>
 
-									<div class="mt-2 text-[0.5625rem] sm:mt-5 sm:text-sm">
+									<div class="mt-2 text-[0.5625rem] sm:text-sm">
 										<div class="flex items-center justify-between gap-1">
 											<div class="min-w-[4.75rem] flex-shrink-0 sm:min-w-[7.875rem]">
 												<div class="rounded-lg border border-lavender-purple p-1 sm:px-2.5 sm:py-1">215 ₴ від 5 шт.</div>
@@ -1313,7 +1315,7 @@
 						<!-- ./card -->
 
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="h-4 -4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1334,13 +1336,13 @@
 								</div>
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
 											<p class="text-xs font-bold sm:text-[1.125rem]">9900 грн.</p>
-											<p class="text-[0.5625rem] text-pomegranate sm:text-[0.9375rem]">Лише ОПТ</p>
+											<p class="text-[0.5625rem] font-semibold text-pomegranate sm:text-[0.9375rem]">Лише ОПТ</p>
 										</div>
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Шкаф кровать трансформер</div>
 									</div>
@@ -1376,7 +1378,7 @@
 						<!-- ./card -->
 
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="h-4 -4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1410,7 +1412,7 @@
 								<!-- ./card image -->
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
@@ -1420,7 +1422,7 @@
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Шкаф кровать трансформер</div>
 									</div>
 
-									<div class="mt-2 text-[0.5625rem] sm:mt-5 sm:text-sm">
+									<div class="mt-2 text-[0.5625rem] sm:text-sm">
 										<div class="flex items-center justify-between gap-1">
 											<div class="min-w-[4.75rem] flex-shrink-0 sm:min-w-[7.875rem]">
 												<div class="rounded-lg border border-lavender-purple p-1 sm:px-2.5 sm:py-1">275 ₴ від 5 шт.</div>
@@ -1449,8 +1451,9 @@
 							</a>
 						</div>
 						<!-- ./card -->
+
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="hidden w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1473,7 +1476,7 @@
 								<!-- ./card image -->
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
@@ -1483,7 +1486,7 @@
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Шкаф кровать трансформер</div>
 									</div>
 
-									<div class="mt-2 text-[0.5625rem] sm:mt-5 sm:text-sm">
+									<div class="mt-2 text-[0.5625rem] sm:text-sm">
 										<div class="flex items-center justify-between gap-1">
 											<div class="min-w-[4.75rem] flex-shrink-0 sm:min-w-[7.875rem]">
 												<div class="rounded-lg border border-lavender-purple p-1 sm:px-2.5 sm:py-1">275 ₴ від 5 шт.</div>
@@ -1514,7 +1517,7 @@
 						<!-- ./card -->
 
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1536,7 +1539,7 @@
 								</div>
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
@@ -1546,7 +1549,7 @@
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Шкаф кровать трансформер</div>
 									</div>
 
-									<div class="mt-2 text-[0.5625rem] sm:mt-5 sm:text-sm">
+									<div class="mt-2 text-[0.5625rem] sm:text-sm">
 										<div class="flex items-center justify-between gap-1">
 											<div class="min-w-[4.75rem] flex-shrink-0 sm:min-w-[7.875rem]">
 												<div class="rounded-lg border border-lavender-purple p-1 sm:px-2.5 sm:py-1">275 ₴ від 5 шт.</div>
@@ -1577,7 +1580,7 @@
 						<!-- ./card -->
 
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="h-4 -4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1598,7 +1601,7 @@
 								</div>
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
@@ -1608,7 +1611,7 @@
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, ipsa?</div>
 									</div>
 
-									<div class="mt-2 text-[0.5625rem] sm:mt-5 sm:text-sm">
+									<div class="mt-2 text-[0.5625rem] sm:text-sm">
 										<div class="flex items-center justify-between gap-1">
 											<div class="min-w-[4.75rem] flex-shrink-0 sm:min-w-[7.875rem]">
 												<div class="rounded-lg border border-lavender-purple p-1 sm:px-2.5 sm:py-1">215 ₴ від 5 шт.</div>
@@ -1639,7 +1642,7 @@
 						<!-- ./card -->
 
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="h-4 -4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1660,13 +1663,13 @@
 								</div>
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
 											<p class="text-xs font-bold sm:text-[1.125rem]">9900 грн.</p>
-											<p class="text-[0.5625rem] text-pomegranate sm:text-[0.9375rem]">Лише ОПТ</p>
+											<p class="text-[0.5625rem] font-semibold text-pomegranate sm:text-[0.9375rem]">Лише ОПТ</p>
 										</div>
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Шкаф кровать трансформер</div>
 									</div>
@@ -1702,7 +1705,7 @@
 						<!-- ./card -->
 
 						<!-- card -->
-						<div class="relative group">
+						<div class="relative flex group">
 							<!--  favorite icon -->
 							<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 								<svg class="h-4 -4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1736,7 +1739,7 @@
 								<!-- ./card image -->
 
 								<!-- card info -->
-								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 py-3 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
+								<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
 									<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 									<div>
 										<div class="relative flex items-center gap-0.5 sm:gap-3">
@@ -1746,7 +1749,7 @@
 										<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm">Шкаф кровать трансформер</div>
 									</div>
 
-									<div class="mt-2 text-[0.5625rem] sm:mt-5 sm:text-sm">
+									<div class="mt-2 text-[0.5625rem] sm:text-sm">
 										<div class="flex items-center justify-between gap-1">
 											<div class="min-w-[4.75rem] flex-shrink-0 sm:min-w-[7.875rem]">
 												<div class="rounded-lg border border-lavender-purple p-1 sm:px-2.5 sm:py-1">275 ₴ від 5 шт.</div>
@@ -1775,6 +1778,9 @@
 							</a>
 						</div>
 						<!-- ./card -->
+
+					
+
 					</div>
 
 					<!-- кнопка показати більше -->
@@ -1861,7 +1867,8 @@
 							</a>
 						</div>
 					</div>
-					<div class="mt-6 flex justify-between gap-[0.8125rem] leading-[121%] md:mt-[3.125rem] lg:justify-center lg:gap-[9.375rem]">
+					
+					<!-- <div class="mt-6 flex justify-between gap-[0.8125rem] leading-[121%] md:mt-[3.125rem] lg:justify-center lg:gap-[9.375rem] ">
 						<div class="flex flex-col items-center order-3 gap-3 md:order-1 md:justify-between">
 							<div class="h-[3.125rem] w-[3.125rem] md:h-[8.125rem] md:w-[8.125rem]">
 								<img class="w-full h-full" src="img/icon001.png" alt="icon" />
@@ -1889,7 +1896,8 @@
 								онлайн-магазини
 							</p>
 						</div>
-					</div>
+					</div> -->
+
 				</div>
 			</section>
 			<!-- ./why vamberi -->

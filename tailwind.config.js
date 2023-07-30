@@ -35,7 +35,7 @@ module.exports = {
 				msm: { max: "30em" }, // 480
 				mlw: { max: "23.375em" }, // 374
 				lw: "30em",
-				low: "23.375em"
+				low: "23.375em",
 			},
 			fontFamily: {
 				montserrat: "Montserrat, sans-serif",
@@ -56,7 +56,11 @@ module.exports = {
 				"royal-blue": " #5477E7",
 				"dove-gray": "#6A6969",
 				pomegranate: "#F03B42",
-				//  ==================================== //
+				"waikawa-gray": "#5C78AC",
+
+				//  =============== old colors =================================== //
+				// нижче закоментовані кольори для того щоб не конфліктували із == //
+				// стандартною схемою кольорів tailwind ========================== //
 
 				main: "#212529",
 				index: "#F5F5F5",
@@ -90,7 +94,7 @@ module.exports = {
 			},
 			boxShadow: {
 				custom: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25)",
-				card: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25), 0 0 0 0.0625rem #999494"
+				card: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25), 0 0 0 0.0625rem #999494",
 			},
 			dropShadow: {
 				text: "box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25)",

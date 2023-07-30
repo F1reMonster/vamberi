@@ -37,7 +37,7 @@
 		<div class="relative mt-[1.375rem] flex items-center mxlg:justify-between mxlg:gap-2.5 mxlg:pb-[5rem]">
 			<!-- burger -->
 			<button class="hidden h-[1.875rem] w-[1.875rem] items-center justify-center rounded-[50%] bg-white mxlg:flex">
-				<svg class="h-4 w-4 fill-black">
+				<svg class="w-4 h-4 fill-black">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
 				</svg>
 			</button>
@@ -49,8 +49,8 @@
 			<!-- category dropdown -->
 			<button aria-label="Обрати категорію" class="group mr-8 flex h-[3.125rem] w-[18.125rem] flex-shrink-0 items-center rounded-[0.625rem] bg-white px-2.5 py-1.5 mxxl:mr-4 mxlg:hidden">
 				<div class="flex items-center gap-3.5">
-					<div class="btn-primary flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg">
-						<svg class="h-5 w-5 fill-white">
+					<div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-lg btn-primary">
+						<svg class="w-5 h-5 fill-white">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#category"></use>
 						</svg>
 					</div>
@@ -65,23 +65,24 @@
 			<!-- ./category dropdown -->
 
 			<!-- search -->
-			<div class="group flex h-[3.125rem] flex-grow items-center gap-4 rounded-[1.25rem] bg-white px-2.5 py-1.5 mxlg:absolute mxlg:bottom-4 mxlg:left-0 mxlg:h-14 mxlg:w-full mxlg:gap-2.5">
-				<button class="hidden mxlg:block">
-					<svg class="h-6 w-6 fill-black">
+			<div class="group flex h-[3.125rem] flex-grow items-center gap-4 rounded-[0.625rem] lg:rounded-[1.25rem] bg-white px-2.5 py-1.5 mxlg:absolute mxlg:bottom-4 mxlg:left-0 mxlg:h-14 mxlg:w-full mxlg:gap-2.5">
+				
+				<input type="text" class="flex-grow border-none p-0 text-[0.875rem] placeholder:text-[0.8125rem] placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
+				<button class="btn-primary lg:px-5 py-2.5 px-[0.8125rem]">
+					<span class="hidden lg:block">Пошук</span>
+					<svg class="block w-4 h-4 fill-white lg:hidden">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
 					</svg>
 				</button>
-				<input type="text" class="flex-grow border-none p-0 text-[0.875rem] placeholder:text-[0.8125rem] placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
-				<button class="btn-primary px-5 py-2.5 mxlg:hidden">Пошук</button>
 			</div>
 			<!-- ./search -->
 
 			<!-- actions buttons -->
 			<div class="ml-8 flex gap-3.5 text-[0.875rem] leading-[121%] mxxl:ml-4 mxxl:gap-1 mxlg:ml-0 mxlg:gap-2.5">
-				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:hidden" title="Увійти">
+				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 mxlg:hidden" title="Увійти">
 					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
 						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/user01.svg" alt="Увійти" /> -->
-						<svg class="h-5 w-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800">
+						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
 						</svg>
 						
@@ -91,7 +92,7 @@
 				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:h-[1.875rem] mxlg:w-[1.875rem]" title="Кошик">
 					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
 						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/cart.svg" alt="Кошик" /> -->
-						<svg class="w-5 h-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800">
+						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#cart"></use>
 						</svg>
 					</span>
@@ -100,21 +101,21 @@
 				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:h-[1.875rem] mxlg:w-[1.875rem]" title="Обране">
 					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
 						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/heart.svg" alt="Обране" /> -->
-						<svg class="h-5 w-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800">
+						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 						</svg>
 					</span>
 					<span class="mxxl:hidden">Обране</span>
 				</a>
-				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:hidden" title="Сповіщення">
+				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 mxlg:hidden" title="Сповіщення">
 					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
 						<!--  якщо є сповіщення додаємо класс hidden -->
-						<svg class="h-5 w-5 fill-transparent stroke-lavender-purple transition ease-in group-hover:stroke-purple-800">
+						<svg class="w-5 h-5 transition ease-in fill-transparent stroke-lavender-purple group-hover:stroke-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
 						</svg>
 
 						<!--  якщо є сповіщення видяляємо класс hidden -->
-						<svg class="h-5 w-5 fill-tall-poppy stroke-tall-poppy transition ease-in group-hover:fill-pink-800 hidden">
+						<svg class="hidden w-5 h-5 transition ease-in fill-tall-poppy stroke-tall-poppy group-hover:fill-pink-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
 						</svg>
 					</span>
@@ -138,13 +139,13 @@
 						<div class="h-[18.75rem] overflow-hidden rounded-[1.25rem] mlg:h-[12.5rem] mlg:rounded-[0.625rem] mmd:h-[9.375rem] mxmd:h-[6.875rem]">
 							<picture>
 								<source srcset="img/banner-mobile.jpg" media="(max-width: 30em)" />
-								<img class="h-full w-full object-cover object-center" src="img/banner.jpg" alt="banner" />
+								<img class="object-cover object-center w-full h-full" src="img/banner.jpg" alt="banner" />
 							</picture>
 						</div>
 					</div>
 				</div>
 			</div>
-			<button class="btn-home-slider-prev btn-home-slider-next absolute left-[0.9375rem] top-[7.8125rem] flex h-[3.125rem] w-[3.125rem] items-center justify-center rounded-[50%] bg-wild-sand/[0.6] mlg:w-[26px] mlg:h-[26px] mlg:left-0 mlg:top-[5.4375rem] mmd:top-[3.875rem] mxmd:top-[2.625rem]">
+			<button class="btn-home-slider-prev absolute left-[0.9375rem] top-[7.8125rem] flex h-[3.125rem] w-[3.125rem] items-center justify-center rounded-[50%] bg-wild-sand/[0.6] mlg:w-[26px] mlg:h-[26px] mlg:left-0 mlg:top-[5.4375rem] mmd:top-[3.875rem] mxmd:top-[2.625rem]">
 				<svg class="h-5 w-5 mlg:w-[0.625rem] mlg:h-[0.625rem]" fill="none" stroke="#000" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
 				</svg>
