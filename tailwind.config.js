@@ -57,6 +57,10 @@ module.exports = {
 				"dove-gray": "#6A6969",
 				pomegranate: "#F03B42",
 				"waikawa-gray": "#5C78AC",
+				limeade: "#679B00",
+				"persian-red": "#CA392D",
+				
+				
 
 				//  =============== old colors =================================== //
 				// нижче закоментовані кольори для того щоб не конфліктували із == //
@@ -106,6 +110,9 @@ module.exports = {
 				strelka_down: 'url("@/img/strelka_down.svg")',
 				banner: "linear-gradient(90.77deg, #FFE6E6 1.76%, #F7CCC8 92.9%)",
 			},
+			borderRadius: {
+				lge: "0.625rem",
+			}
 		},
 	},
 	plugins: plugins,
