@@ -844,171 +844,149 @@
 </div>
 <!-- ./sticky menu --> 
 		<!-- footer -->
-<footer class="sticky bg-dark text-white">
+<footer class="sticky bg-tundora pb-[0.9375rem] pt-[1.5625rem] leading-[121%] text-white lg:py-[3.125rem]">
 	<div class="container">
-		<div class="h-full w-full px-5">
-			<div class="hidden h-full justify-between gap-x-10 pb-12 pt-14 lg:flex">
-				<div class="flex max-w-[25%] flex-col justify-between">
-					<div>
-						У вас есть свой бизнес или вы хотите его начать, но не знаете как,
-						<span class="text-2xl font-semibold text-accent"> VamBeri </span>
-						вам в этом поможет
-					</div>
-					<a class="my-5" href="http://fil.vamberi.com.ua/ua/account/ads/create">
-						<button class="flex items-center rounded-[20px] bg-accent px-5 py-3">
-							<div class="text-sm text-white">Создать онлайн магазин</div>
-						</button>
-					</a>
-					<div>
-						<div class="flex items-center space-x-2.5">
-							<a href="#" class="">
-								<img class="h-6 w-6" src="img/svg/socials/instagram.svg" alt="instagram">
-									
-								
-							</a>
-							<a href="#" class="">
-								<img class="h-6 w-6" src="img/svg/socials/facebook.svg" alt="fb" jbzhyrlos="" />
-							</a>
-							<a href="#" class="">
-								<img class="h-6 w-6" src="img/svg/socials/youtube.svg" alt="youtube" />
-							</a>
-							<a href="#" class="">
-								<img class="h-6 w-6" src="img/svg/socials/telegram.svg" alt="telegram" />
-							</a>
-							<a href="#" class="">
-								<img class="h-6 w-6" src="img/svg/socials/twitter.svg" alt="twitter" jbzhyrlos="" />
-							</a>
-							<a href="#" class="">
-								<img class="h-6 w-6" src="img/svg/socials/viber.svg" alt="viber" />
-							</a>
-						</div>
-						<a class="mt-2 text-xs lg:text-base" href="amberi.sms@gmail.com"> vamberi.sms@gmail.com </a>
-					</div>
-				</div>
-				<div class="space-y-2.5">
-					<div>
-						<a href="http://fil.vamberi.com.ua/ua/blog">Блог</a>
-					</div>
-					<div>
-						<a href="http://fil.vamberi.com.ua/ua/o-nas">О нас</a>
-					</div>
-					<div>
-						<a href="http://fil.vamberi.com.ua/ua/kontakty">Контакты</a>
-					</div>
-					<div>
-						<a href="http://fil.vamberi.com.ua/ua/bezopasnaya-sdelka">Безопасная сделка</a>
-					</div>
-					<div>
-						<a href="http://fil.vamberi.com.ua/ua/rules">Правила подачи объявлений</a>
-					</div>
-					<div>
-						<a href="http://fil.vamberi.com.ua/ua/predlozheniya-po-rabote-sayta">Предложения для улучшения сайта</a>
-					</div>
-				</div>
-				<div class="space-y-2.5">
-					<div>
-						<a href="http://fil.vamberi.com.ua/ua/politiki-konfidencialnosti">Политика конфиденциальности</a>
-					</div>
-					<div>
-						<a href="http://fil.vamberi.com.ua/ua/dogovor-oferta">Договор-оферта</a>
-					</div>
-					<div>
-						<a href="http://fil.vamberi.com.ua/ua/politika-cookie">Политика использования файлов cookie</a>
-					</div>
-					<div>
-						<a href="http://fil.vamberi.com.ua/ua/polzovatelskoe-soglashenie">Пользовательское соглашение</a>
-					</div>
-					<div>
-						<a href="http://fil.vamberi.com.ua/ua/prohibited">Запрещенные к публикации товары и услуги</a>
-					</div>
-					<div>
-						<a href="http://fil.vamberi.com.ua/ua/dropshipping">Дропшиппинг</a>
-					</div>
-				</div>
-				<div class="flex flex-col items-center justify-between">
-					<a href="#app" class="flex h-[60px] w-[60px] items-center justify-center rounded-full border border-accent">
-						<svg class="h-3 w-24 fill-white">
+		<div class="relative">
+			<div class="flex flex-col md:flex-row">
+				<div class="flex items-center justify-between pb-5 md:mr-12 md:pb-20 lg:mr-48 md:items-start">
+					<a href="#" class="link-primary drop-shadow-text md:text-[1.875rem] font-semibold hover:text-white">VamBeri</a>
+					<button class="flex h-[2.1875rem] w-[2.1875rem] items-center justify-center rounded-full border border-lavender-purple md:hidden">
+						<svg class="w-4 h-4 transition ease-in fill-white">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-up"></use>
 						</svg>
-					</a>
-					<div class="font-inter">© 2022 Доска объявлений vamberi.com.ua</div>
+					</button>
+				</div>
+
+				<div class="flex w-full flex-col justify-between gap-[0.9375rem] md:flex-row lg:w-auto lg:gap-20">
+					<!-- для відкриття в мобільному  -->
+					<!-- при кліку на заголовок h3 -->
+					<!-- на button вішаємо клас rotate-180 -->
+					<!-- на список із меню ul прибираємо клас hidden -->
+					<div>
+						<div class="flex items-center gap-2">
+							<h3 class="text-[0.875rem] font-semibold md:text-[1.25rem]">Покупцям</h3>
+							<button class="transition ease-linear md:hidden">
+								<svg class="h-2.5 w-2.5 fill-white">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+								</svg>
+							</button>
+						</div>
+						<ul class="md:mt-[1.875rem] mt-2.5 text-[0.75rem] hidden md:block md:max-w-[14.5rem] md:text-[1rem]">
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#" class="link-white">Як зробити заказ</a>
+							</li>
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#" class="link-white">Способи оплати</a>
+							</li>
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#" class="link-white">Доставка</a>
+							</li>
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#" class="link-white">Повернення товару</a>
+							</li>
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#" class="link-white">Повернення коштів</a>
+							</li>
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#" class="link-white">Правила продажу</a>
+							</li>
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#" class="link-white">Правила користування торговим майданчиком</a>
+							</li>
+							<li class="mb-0">
+								<a href="#" class="link-white">Запитання та відповідіз</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div>
+						<div class="flex items-center gap-2">
+							<h3 class="text-[0.875rem] font-semibold md:text-[1.25rem]">Партненрам</h3>
+							<button class="md:hidden">
+								<svg class="h-2.5 w-2.5 fill-white">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+								</svg>
+							</button>
+						</div>
+						<ul class="md:mt-[1.875rem] mt-2.5 text-[0.75rem] hidden md:block md:text-[1rem]">
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#" class="link-white">Продавайте на Vamberi</a>
+							</li>
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#" class="link-white">Кур'єрам</a>
+							</li>
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#" class="link-white">Перевізникам</a>
+							</li>
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#" class="link-white">Партнерський пункт видачі</a>
+							</li>
+							<li class="mb-0">
+								<a href="#" class="link-white">Франшизний пункт видачі</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<div class="flex items-center gap-2">
+							<h3 class="text-[1.0625rem] font-semibold md:text-[1.25rem]">Компанія</h3>
+							<button class="md:hidden">
+								<svg class="h-2.5 w-2.5 fill-white">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+								</svg>
+							</button>
+						</div>
+						<ul class="md:mt-[1.875rem] mt-2.5 text-[0.75rem] hidden md:block md:text-[1rem]">
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#">Про нас</a>
+							</li>
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#">Реквізити</a>
+							</li>
+							<li class="mb:mb-[0.9375rem] mb-1.5">
+								<a href="#">Прес-центр</a>
+							</li>
+							<li class="mb-0">
+								<a href="#">Контакти</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="flex flex-col justify-between gap-y-6 pb-2 pt-4 lg:hidden">
-				<div class="flex items-center justify-between">
-					<div class="text-sm text-lavender-purple">VamBeri</div>
-					<a href="#app" class="flex h-[30px] w-[30px] items-center justify-center rounded-full border border-lavender-purple">
-						<svg class="h-3 w-3 fill-white">
-							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-up"></use>
-						</svg>
+
+			<div class="static bottom-0 left-0 mt-[1.4375rem] flex flex-col gap-[0.9375rem] pb-10 md:pb-0 lg:absolute">
+				<div class="flex items-center gap-3.5">
+					<a href="#" class="">
+						<img class="w-6 h-6" src="img/svg/socials/instagram.svg" alt="instagram" />
+					</a>
+					<a href="#" class="">
+						<img class="w-6 h-6" src="img/svg/socials/facebook.svg" alt="fb" jbzhyrlos="" />
+					</a>
+					<a href="#" class="">
+						<img class="w-6 h-6" src="img/svg/socials/youtube.svg" alt="youtube" />
+					</a>
+					<a href="#" class="">
+						<img class="w-6 h-6" src="img/svg/socials/telegram.svg" alt="telegram" />
+					</a>
+					<a href="#" class="">
+						<img class="w-6 h-6" src="img/svg/socials/twitter.svg" alt="twitter" jbzhyrlos="" />
+					</a>
+					<a href="#" class="">
+						<img class="w-6 h-6" src="img/svg/socials/viber.svg" alt="viber" />
 					</a>
 				</div>
-				<div class="flex items-end justify-between gap-2 text-xs mxmd:flex-col mxmd:items-start">
-					<div class="space-y-1">
-						<div>
-							<a href="http://fil.vamberi.com.ua/ua/blog">Блог</a>
-						</div>
-						<div>
-							<a href="http://fil.vamberi.com.ua/ua/o-nas">О нас</a>
-						</div>
-						<div>
-							<a href="http://fil.vamberi.com.ua/ua/kontakty">Контакты</a>
-						</div>
-						<div>
-							<a href="http://fil.vamberi.com.ua/ua/bezopasnaya-sdelka">Безопасная сделка</a>
-						</div>
-						<div>
-							<a href="http://fil.vamberi.com.ua/ua/rules">Правила подачи объявлений</a>
-						</div>
-						<div>
-							<a href="http://fil.vamberi.com.ua/ua/predlozheniya-po-rabote-sayta">Предложения для улучшения сайта</a>
-						</div>
-					</div>
-					<div class="space-y-1">
-						<div>
-							<a href="http://fil.vamberi.com.ua/ua/politiki-konfidencialnosti">Политика конфиденциальности</a>
-						</div>
-						<div>
-							<a href="http://fil.vamberi.com.ua/ua/dogovor-oferta">Договор-оферта</a>
-						</div>
-						<div>
-							<a href="http://fil.vamberi.com.ua/ua/politika-cookie">Политика использования файлов cookie</a>
-						</div>
-						<div>
-							<a href="http://fil.vamberi.com.ua/ua/polzovatelskoe-soglashenie">Пользовательское соглашение</a>
-						</div>
-						<div>
-							<a href="http://fil.vamberi.com.ua/ua/prohibited">Запрещенные к публикации товары и услуги</a>
-						</div>
-						<div>
-							<a href="http://fil.vamberi.com.ua/ua/dropshipping">Дропшиппинг</a>
-						</div>
-					</div>
-				</div>
-				<div class="flex items-center justify-between flex-wrap gap-2">
-					<div class="flex gap-x-1">
-						<a href="#" class="">
-							<img class="h-[15px] w-[15px]" src="img/svg/socials/instagram.svg" alt="instagram" />
-						</a>
-						<a href="#" class="">
-							<img class="h-[15px] w-[15px]" src="img/svg/socials/facebook.svg" alt="fb" jbzhyrlos="" />
-						</a>
-						<a href="#" class="">
-							<img class="h-[15px] w-[15px]" src="img/svg/socials/youtube.svg" alt="youtube" />
-						</a>
-						<a href="#" class="">
-							<img class="h-[15px] w-[15px]" src="img/svg/socials/telegram.svg" alt="telegram" />
-						</a>
-						<a href="#" class="">
-							<img class="h-[15px] w-[15px]" src="img/svg/socials/twitter.svg" alt="twitter" jbzhyrlos="" />
-						</a>
-						<a href="#" class="">
-							<img class="h-[15px] w-[15px]" src="img/svg/socials/viber.svg" alt="viber" />
-						</a>
-					</div>
-					<a class="text-xs" href="amberi.sms@gmail.com">vamberi.sms@gmail.com</a>
-				</div>
+				<a class="text-[0.875rem] lg:text-base" href="amberi.sms@gmail.com"> vamberi.sms@gmail.com </a>
 			</div>
+			<!-- copyrights -->
+			<div class="absolute bottom-0 right-0 z-10 flex-col items-end justify-end hidden h-full md:flex xl:items-center">
+				<button class="group flex h-[2.1875rem] w-[2.1875rem] items-center justify-center rounded-full border border-lavender-purple transition ease-in hover:border-white lg:h-[3.75rem] lg:w-[3.75rem]">
+					<svg class="w-4 h-4 transition ease-in fill-white group-hover:fill-lavender-purple lg:h-6 lg:w-6">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-up"></use>
+					</svg>
+				</button>
+				<p class="mt-auto font-inter text-xs md:mt-[2.1875rem] lg:text-base">© 2022 Доска объявлений vamberi.com.ua</p>
+			</div>
+			<p class="text-xs text-center font-inter md:hidden">© 2022 Доска объявлений vamberi.com.ua</p>
+			<!-- ./copyrights -->
 		</div>
 	</div>
 </footer>

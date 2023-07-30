@@ -90,6 +90,10 @@ module.exports = {
 			},
 			boxShadow: {
 				custom: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25)",
+				card: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25), 0 0 0 0.0625rem #999494"
+			},
+			dropShadow: {
+				text: "box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25)",
 			},
 			backgroundImage: {
 				send: 'url("@/img/send.svg")',
