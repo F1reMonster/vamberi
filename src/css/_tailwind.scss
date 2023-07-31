@@ -26,19 +26,19 @@
 	}
 
 	.btn-primary {
-		@apply rounded-[1.25rem] bg-lavender-purple text-white transition ease-in hover:bg-purple-800;
+		@apply rounded-2lge bg-lavender-purple text-white transition ease-in hover:bg-purple-800;
 	}
 
 	.btn-primary-light {
-		@apply rounded-[1.25rem] text-lavender-purple transition ease-in border border-lavender-purple hover:text-white hover:bg-lavender-purple;
+		@apply rounded-2lge text-lavender-purple transition ease-in border border-lavender-purple hover:text-white hover:bg-lavender-purple;
 	}
 
 	.btn-danger-light {
-		@apply rounded-[1.25rem] text-persian-red transition ease-in border border-persian-red hover:text-red-800 hover:border-red-800;
+		@apply rounded-2lge text-persian-red transition ease-in border border-persian-red hover:text-red-800 hover:border-red-800;
 	}
 
 	.btn-pink {
-		@apply rounded-[1.25rem] bg-deep-blush text-white transition ease-in hover:bg-pink-800;
+		@apply rounded-2lge bg-deep-blush text-white transition ease-in hover:bg-pink-800;
 	}
 
 	.link-primary {

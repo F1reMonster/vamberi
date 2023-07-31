@@ -1,11 +1,11 @@
 <!-- banner slider -->
-<section class="mxlg:pt-0">
+<section class="pt-0 lg:pt-7.5">
 	<div class="container">
 		<div class="relative">
 			<div class="swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<div class="h-[18.75rem] overflow-hidden rounded-[1.25rem] mlg:h-[12.5rem] mlg:rounded-[0.625rem] mmd:h-[9.375rem] mxmd:h-[6.875rem]">
+						<div class="lg:h-[18.75rem] overflow-hidden lg:rounded-2lge md:h-[12.5rem] rounded-lge sm:h-[9.375rem] h-[6.875rem]">
 							<picture>
 								<source srcset="img/banner-mobile.jpg" media="(max-width: 30em)" />
 								<img class="object-cover object-center w-full h-full" src="img/banner.jpg" alt="banner" />
@@ -14,17 +14,18 @@
 					</div>
 				</div>
 			</div>
-			<button class="btn-home-slider-prev absolute left-[0.9375rem] top-[7.8125rem] flex h-[3.125rem] w-[3.125rem] items-center justify-center rounded-[50%] bg-wild-sand/[0.6] mlg:w-[26px] mlg:h-[26px] mlg:left-0 mlg:top-[5.4375rem] mmd:top-[3.875rem] mxmd:top-[2.625rem]">
-				<svg class="h-5 w-5 mlg:w-[0.625rem] mlg:h-[0.625rem]" fill="none" stroke="#000" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+			<button class="btn-home-slider-prev absolute lg:left-[0.9375rem] lg:top-[7.8125rem] flex lg:h-12.5 lg:w-12.5 items-center justify-center rounded-full bg-wild-sand/60 w-6.5 h-6.5 left-0 md:top-[5.4375rem] sm:top-[3.875rem] top-[2.625rem] group transition ease-in hover:bg-lavender-purple">
+				
+				<svg class="w-2.5 h-2.5 lg:h-5 lg:w-5 group-hover:fill-white transition ease-in">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
 				</svg>
 			</button>
-			<button class="btn-home-slider-next absolute right-[0.9375rem] top-[7.8125rem] flex h-[3.125rem] w-[3.125rem] items-center justify-center rounded-[50%] bg-wild-sand/[0.6]  mlg:w-[26px] mlg:h-[26px] mlg:right-0 mlg:top-[5.4375rem] mmd:top-[3.875rem] mxmd:top-[2.625rem]">
-				<svg class="h-5 w-5 mlg:w-[0.625rem] mlg:h-[0.625rem]" fill="none" stroke="#000" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+			<button class="btn-home-slider-next absolute lg:right-[0.9375rem] lg:top-[7.8125rem] flex lg:h-12.5 lg:w-12.5 items-center justify-center rounded-full bg-wild-sand/60 w-6.5 h-6.5 right-0 md:top-[5.4375rem] sm:top-[3.875rem] top-[2.625rem] group transition ease-in hover:bg-lavender-purple">
+				<svg class="w-2.5 h-2.5 lg:h-5 lg:w-5 group-hover:fill-white transition ease-in">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 				</svg>
 			</button>
-			<div class="home-slider-pagination mt-[1.625rem] flex items-center justify-center gap-[0.875rem] mlg:mt-[0.625rem] mlg:gap-[0.5rem]">
+			<div class="home-slider-pagination lg:mt-6.5 flex items-center justify-center lg:gap-3.5 mt-2.5 gap-2">
 				
 				<!-- при натяжці span видалити так як це генерує swiper -->
 

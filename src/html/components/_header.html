@@ -1,57 +1,57 @@
 <!-- header -->
-<header class="leading-[121%]">
+<header>
 	<div class="container">
 		<!-- header top -->
-		<div class="flex justify-between pt-9 mxlg:hidden">
+		<div class="justify-between hidden lg:flex pt-9">
 			<div class="flex items-center">
 				<!-- lang switcher -->
-				<div class="mr-10 flex h-10 items-center rounded-[1.25rem] bg-deep-blush px-2.5 py-1.5 text-[0.875rem] transition ease-in hover:bg-pink-800 mxxl:ml-4">
-					<button aria-label="Мова" class="rounded-[1.25rem] bg-white px-5 py-1.5 text-shark transition ease-in">Мова</button>
-					<button aria-label="Язык" class="rounded-[1.25rem] px-5 py-1.5 text-white transition ease-in">Язык</button>
+				<div class="mr-4 xl:mr-10 flex h-10 items-center rounded-2lge bg-deep-blush px-2.5 py-1.5 text-sm transition ease-in hover:bg-pink-800">
+					<button aria-label="Мова" class="rounded-2lge bg-white px-5 py-1.5 text-shark transition ease-in">Мова</button>
+					<button aria-label="Язык" class="rounded-2lge px-5 py-1.5 text-white transition ease-in">Язык</button>
 				</div>
 				<!-- ./lang switcher -->
-				<a href="#" class="btn-primary flex h-10 min-w-[18.125rem] items-center justify-center text-[0.875rem]">Продавай на VamBeri</a>
+				<a href="#" class="btn-primary flex h-10 min-w-[18.125rem] items-center justify-center text-sm">Продавай на VamBeri</a>
 			</div>
 			<a href="#" class="btn-primary flex h-10 min-w-[12rem] items-center justify-center">Додати товар</a>
 		</div>
 		<!-- ./header top -->
 
 		<!-- header bottom -->
-		<div class="relative mt-[1.375rem] flex items-center mxlg:justify-between mxlg:gap-2.5 mxlg:pb-[5rem]">
+		<div class="relative mt-5.5 flex items-center justify-between gap-2.5 pb-[5rem] lg:pb-0 lg:gap-0">
 			<!-- burger -->
-			<button class="hidden h-[1.875rem] w-[1.875rem] items-center justify-center rounded-[50%] bg-white mxlg:flex">
+			<button class="lg:hidden h-7.5 w-7.5 items-center justify-center rounded-full bg-white flex">
 				<svg class="w-4 h-4 fill-black">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
 				</svg>
 			</button>
 			<!-- ./burger -->
 			<!-- logo -->
-			<a href="index.html" title="VamBeri" class="mr-10 text-[2.5rem] font-semibold leading-[121%] text-lavender-purple mxxl:mr-4 mxlg:ml-10 mxlg:mr-0 mxlg:text-center mxlg:text-[1.5rem] msm:text-[1.125rem]">VamBeri</a>
+			<a href="index.html" title="VamBeri" class="ml-10 mr-0 text-lg font-semibold text-center sm:text-2xl lg:mr-4 xl:mr-10 lg:text-4ms text-lavender-purple lg:text-left lg:ml-0">VamBeri</a>
 			<!-- ./logo -->
 
 			<!-- category dropdown -->
-			<button aria-label="Обрати категорію" class="group mr-8 flex h-[3.125rem] w-[18.125rem] flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5 mxxl:mr-4 mxlg:hidden">
+			<button aria-label="Обрати категорію" class="group xl:mr-8 hidden h-12.5 w-[18.125rem] flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5 mr-4 lg:flex">
 				<div class="flex items-center gap-3.5">
 					<div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-lg btn-primary">
 						<svg class="w-5 h-5 fill-white">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#category"></use>
 						</svg>
 					</div>
-					<span class="text-[0.75rem]">Обрати категорію</span>
+					<span class="text-xs">Обрати категорію</span>
 				</div>
 				<div class="ml-auto">
-					<svg class="h-2.5 w-2.5" fill="none" stroke="#000" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+					<svg class="h2.5 w-2.5">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 					</svg>
 				</div>
 			</button>
 			<!-- ./category dropdown -->
 
 			<!-- search -->
-			<div class="group flex h-[3.125rem] flex-grow items-center gap-4 rounded-lge lg:rounded-[1.25rem] bg-white px-2.5 py-1.5 mxlg:absolute mxlg:bottom-4 mxlg:left-0 mxlg:h-14 mxlg:w-full mxlg:gap-2.5">
+			<div class="group flex lg:h-12.5 flex-grow items-center lg:gap-4 rounded-lge lg:rounded-2lge bg-white px-2.5 py-1.5 absolute bottom-4 left-0 h-14 w-full gap-2.5 lg:relative lg:bottom-0">
 				
-				<input type="text" class="flex-grow border-none p-0 text-[0.875rem] placeholder:text-[0.8125rem] placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
-				<button class="btn-primary lg:px-5 py-2.5 px-[0.8125rem]">
+				<input type="text" class="flex-grow p-0 text-sm border-none placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
+				<button class="btn-primary lg:px-5 py-2.5 px-3.5">
 					<span class="hidden lg:block">Пошук</span>
 					<svg class="block w-4 h-4 fill-white lg:hidden">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
@@ -61,37 +61,37 @@
 			<!-- ./search -->
 
 			<!-- actions buttons -->
-			<div class="ml-8 flex gap-3.5 text-[0.875rem] leading-[121%] mxxl:ml-4 mxxl:gap-1 mxlg:ml-0 mxlg:gap-2.5">
-				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 mxlg:hidden" title="Увійти">
-					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
-						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/user01.svg" alt="Увійти" /> -->
+			<div class="xl:ml-8 flex xl:gap-3.5 text-sm lg:ml-4 lg:gap-1 ml-0 gap-2.5">
+				<a href="#" class="flex-col items-center hidden gap-1 transition ease-in lg:flex group text-lavender-purple hover:text-purple-800" title="Увійти">
+					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
+						
 						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
 						</svg>
 						
 					</span>
-					<span class="mxxl:hidden">Увійти</span>
+					<span class="hidden xl:block">Увійти</span>
 				</a>
-				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:h-[1.875rem] mxlg:w-[1.875rem]" title="Кошик">
-					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
+				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 " title="Кошик">
+					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
 						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/cart.svg" alt="Кошик" /> -->
 						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#cart"></use>
 						</svg>
 					</span>
-					<span class="mxxl:hidden">Кошик</span>
+					<span class="hidden xl:block">Кошик</span>
 				</a>
-				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:h-[1.875rem] mxlg:w-[1.875rem]" title="Обране">
-					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
+				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800" title="Обране">
+					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
 						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/heart.svg" alt="Обране" /> -->
 						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 						</svg>
 					</span>
-					<span class="mxxl:hidden">Обране</span>
+					<span class="hidden xl:block">Обране</span>
 				</a>
-				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 mxlg:hidden" title="Сповіщення">
-					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
+				<a href="#" class="flex-col items-center hidden gap-1 transition ease-in lg:flex group text-lavender-purple hover:text-purple-800" title="Сповіщення">
+					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
 						<!--  якщо є сповіщення додаємо класс hidden -->
 						<svg class="w-5 h-5 transition ease-in fill-transparent stroke-lavender-purple group-hover:stroke-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
@@ -102,7 +102,7 @@
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
 						</svg>
 					</span>
-					<span class="mxxl:hidden">Сповіщення </span>
+					<span class="hidden xl:block">Сповіщення </span>
 				</a>
 			</div>
 			<!-- ./actions buttons -->

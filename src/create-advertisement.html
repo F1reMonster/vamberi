@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		@@include('html/components/_head.html', {title: "VamBeri - Головна сторінка"})
+	</head>
+
+	<body class="">
+		<!-- для на десктопі при відкритті категорій  -->
+		<!-- на <body> додати класи overflow-hidden overscroll-none touch-none -->
+
+		@@include('html/components/_header.html')
+
+		<main>
+			<section class="text-shark">
+				<div class="container">
+					<div class="relative flex justify-center">
+						<div class="md:translate-none absolute left-0 top-[50%] -translate-y-1/2 md:bottom-0">
+							<a href="#">
+								<svg class="h-4.5 w-2.5 md:hidden">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
+								</svg>
+								<span class="hidden text-base underline transition ease-in text-waikawa-gray decoration-dashed decoration-1 underline-offset-4 hover:text-blue-800 md:block">Повернутися на головну</span>
+							</a>
+						</div>
+						<h1 class="text-base font-semibold text-center text-shark sm:text-3xl">Публікація товару</h1>
+					</div>
+					<div class="mt-[3.125rem] flex justify-between">
+						<!-- left side -->
+						<div class="w-[70%]">
+							<div class="flex items-center">
+								<div class="text-lg font-medium">Вкажіть назву товару</div>
+								<div class="flex items-center ml-auto">
+									<div class="flex items-center px-2 py-1 mr-10 text-sm transition ease-in rounded-lge bg-deep-blush hover:bg-pink-800">
+										<button aria-label="Мова" class="rounded-lge bg-white px-5 py-0.5 text-shark transition ease-in">Мова</button>
+										<button aria-label="Язык" class="rounded-lge px-5 py-0.5 text-white transition ease-in">Язык</button>
+									</div>
+									<div class="mr-24">
+										<label class="flex cursor-pointer items-center gap-[0.9375rem]">
+											<div class="relative flex items-center justify-center flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray">
+												<input type="checkbox" name="" class="hidden peer" />
+												<div class="h-[18px] w-[18px] rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+											</div>
+											<div class="text-sm text-tundora">Замовити переклад(безкоштовно)</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="mt-3.5">
+								<input type="text" placeholder="Вкажіть назву товару" class="w-full p-3 text-sm transition ease-in bg-white border-white rounded-lge ring-0 placeholder:text-dusty-gray focus:ring-0 focus:border-lavender-purple" />
+							</div>
+							<p class="mt-2.5 text-xs text-dusty-gray">Символів 0 з 70</p>
+							
+							<div class="mt-5 text-lg font-medium">Опис товару</div>
+							<!-- editor -->
+							<div class="mt-3.5 p-6 rounded-lge border border-dusty-gray border-dashed">
+								<div class="flex flex-wrap px-5 py-1.5 bg-white border border-dusty-gray rounded-lge gap-x-6 gap-y-3">
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#bold"></use>
+										</svg>
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#italic"></use>
+										</svg>
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#through-letter"></use>
+										</svg>
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#quote"></use>
+										</svg>
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#warning2"></use>
+										</svg>
+										
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#letter-up"></use>
+										</svg>
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#double-t"></use>
+										</svg>
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#marker-list"></use>
+										</svg>
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#numeric-list"></use>
+										</svg>
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#left-side"></use>
+										</svg>
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#center"></use>
+										</svg>
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#right-side"></use>
+										</svg>
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#image"></use>
+										</svg>
+									</button>
+									<button type="button" class="p-1.5 transition ease-linear rounded-md group hover:bg-gray-100">
+										<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<use xlink:href="img/svg/sprites/sprite-editor.svg#video"></use>
+										</svg>
+									</button>
+								</div>
+								
+								<div class="mt-5">
+									<textarea name="" class="w-full p-[0.875rem] text-sm transition ease-in bg-white border resize-none rounded-lge ring-0 border-dusty-gray placeholder:text-dusty-gray focus:ring-0 focus:border-lavender-purple h-[13.5rem]" placeholder="Почніть вводити..."></textarea>
+								</div>
+								
+							</div>
+							<p class="mt-2.5 text-xs text-dusty-gray">Символів 0 з 2000</p>
+							<!-- editor -->
+
+							<div class="mt-5 text-lg font-medium">Оберіть категорію товару</div>
+							<div class="mt-3.5">
+								<div class="flex items-center justify-between w-full p-3 text-sm transition ease-in bg-white rounded-lge text-tundora">
+									<div>Дитячі м’які меблі</div>
+									<button type="button">
+										<span class="text-sm underline transition ease-in text-waikawa-gray decoration-dashed decoration-1 underline-offset-4 hover:text-blue-800">Змінити категорію</span>
+									</button>
+								</div>
+							</div>
+							
+							<div  class="mt-4.5">
+								<div class="flex items-center justify-between w-full p-3 text-sm transition ease-in bg-white border-dusty-gray border border-dotted rounded-lge text-tundora h-[20.75rem]">
+									<label class="flex flex-col items-center w-full">
+										<input type="file" class="hidden">
+										<svg class="w-[84px] h-[84px] fill-dusty-gray">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#add-image"></use>
+										</svg>
+										<div class="text-base font-semibold mt-2.5">Виберіть або перетягніть зображення</div>
+										<div class="max-w-[32.0625rem] text-center italic text-dusty-gray text-sm mt-6">
+											Перше фото відображатиметься в результатах пошуку, виберіть найбільш вдале. Ви можете завантажити до 8 фотографій у форматі JPG або PNG. Максимальний розмір фото — 25mb. 
+										</div>
+									</label>
+								</div>
+							</div>
+
+							<div class="mt-4.5">
+								<div class="flex items-center justify-between w-full p-3 text-sm transition ease-in bg-white rounded-lge text-tundora">
+									<div class="h-5.5">Товар належної якості - обміну та поверненню не підлягає</div>
+									
+								</div>
+							</div>
+							
+							
+						</div>
+						<!-- ./left side -->
+						
+						<!-- left side -->
+						<div class="w-[410px]">
+							<div class="text-lg font-medium">Ваш код</div>
+						</div>
+						<!-- ./right side -->
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+	</body>
+</html>

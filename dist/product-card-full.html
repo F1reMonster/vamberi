@@ -9,59 +9,59 @@
 	</head>
 	<body>
 		<!-- header -->
-<header class="leading-[121%]">
+<header>
 	<div class="container">
 		<!-- header top -->
-		<div class="flex justify-between pt-9 mxlg:hidden">
+		<div class="justify-between hidden lg:flex pt-9">
 			<div class="flex items-center">
 				<!-- lang switcher -->
-				<div class="mr-10 flex h-10 items-center rounded-[1.25rem] bg-deep-blush px-2.5 py-1.5 text-[0.875rem] transition ease-in hover:bg-pink-800 mxxl:ml-4">
-					<button aria-label="Мова" class="rounded-[1.25rem] bg-white px-5 py-1.5 text-shark transition ease-in">Мова</button>
-					<button aria-label="Язык" class="rounded-[1.25rem] px-5 py-1.5 text-white transition ease-in">Язык</button>
+				<div class="mr-4 xl:mr-10 flex h-10 items-center rounded-2lge bg-deep-blush px-2.5 py-1.5 text-sm transition ease-in hover:bg-pink-800">
+					<button aria-label="Мова" class="rounded-2lge bg-white px-5 py-1.5 text-shark transition ease-in">Мова</button>
+					<button aria-label="Язык" class="rounded-2lge px-5 py-1.5 text-white transition ease-in">Язык</button>
 				</div>
 				<!-- ./lang switcher -->
-				<a href="#" class="btn-primary flex h-10 min-w-[18.125rem] items-center justify-center text-[0.875rem]">Продавай на VamBeri</a>
+				<a href="#" class="btn-primary flex h-10 min-w-[18.125rem] items-center justify-center text-sm">Продавай на VamBeri</a>
 			</div>
 			<a href="#" class="btn-primary flex h-10 min-w-[12rem] items-center justify-center">Додати товар</a>
 		</div>
 		<!-- ./header top -->
 
 		<!-- header bottom -->
-		<div class="relative mt-[1.375rem] flex items-center mxlg:justify-between mxlg:gap-2.5 mxlg:pb-[5rem]">
+		<div class="relative mt-5.5 flex items-center justify-between gap-2.5 pb-[5rem] lg:pb-0 lg:gap-0">
 			<!-- burger -->
-			<button class="hidden h-[1.875rem] w-[1.875rem] items-center justify-center rounded-[50%] bg-white mxlg:flex">
+			<button class="lg:hidden h-7.5 w-7.5 items-center justify-center rounded-full bg-white flex">
 				<svg class="w-4 h-4 fill-black">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
 				</svg>
 			</button>
 			<!-- ./burger -->
 			<!-- logo -->
-			<a href="index.html" title="VamBeri" class="mr-10 text-[2.5rem] font-semibold leading-[121%] text-lavender-purple mxxl:mr-4 mxlg:ml-10 mxlg:mr-0 mxlg:text-center mxlg:text-[1.5rem] msm:text-[1.125rem]">VamBeri</a>
+			<a href="index.html" title="VamBeri" class="ml-10 mr-0 text-lg font-semibold text-center sm:text-2xl lg:mr-4 xl:mr-10 lg:text-4ms text-lavender-purple lg:text-left lg:ml-0">VamBeri</a>
 			<!-- ./logo -->
 
 			<!-- category dropdown -->
-			<button aria-label="Обрати категорію" class="group mr-8 flex h-[3.125rem] w-[18.125rem] flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5 mxxl:mr-4 mxlg:hidden">
+			<button aria-label="Обрати категорію" class="group xl:mr-8 hidden h-12.5 w-[18.125rem] flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5 mr-4 lg:flex">
 				<div class="flex items-center gap-3.5">
 					<div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-lg btn-primary">
 						<svg class="w-5 h-5 fill-white">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#category"></use>
 						</svg>
 					</div>
-					<span class="text-[0.75rem]">Обрати категорію</span>
+					<span class="text-xs">Обрати категорію</span>
 				</div>
 				<div class="ml-auto">
-					<svg class="h-2.5 w-2.5" fill="none" stroke="#000" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+					<svg class="h2.5 w-2.5">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 					</svg>
 				</div>
 			</button>
 			<!-- ./category dropdown -->
 
 			<!-- search -->
-			<div class="group flex h-[3.125rem] flex-grow items-center gap-4 rounded-lge lg:rounded-[1.25rem] bg-white px-2.5 py-1.5 mxlg:absolute mxlg:bottom-4 mxlg:left-0 mxlg:h-14 mxlg:w-full mxlg:gap-2.5">
+			<div class="group flex lg:h-12.5 flex-grow items-center lg:gap-4 rounded-lge lg:rounded-2lge bg-white px-2.5 py-1.5 absolute bottom-4 left-0 h-14 w-full gap-2.5 lg:relative lg:bottom-0">
 				
-				<input type="text" class="flex-grow border-none p-0 text-[0.875rem] placeholder:text-[0.8125rem] placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
-				<button class="btn-primary lg:px-5 py-2.5 px-[0.8125rem]">
+				<input type="text" class="flex-grow p-0 text-sm border-none placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
+				<button class="btn-primary lg:px-5 py-2.5 px-3.5">
 					<span class="hidden lg:block">Пошук</span>
 					<svg class="block w-4 h-4 fill-white lg:hidden">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
@@ -71,37 +71,37 @@
 			<!-- ./search -->
 
 			<!-- actions buttons -->
-			<div class="ml-8 flex gap-3.5 text-[0.875rem] leading-[121%] mxxl:ml-4 mxxl:gap-1 mxlg:ml-0 mxlg:gap-2.5">
-				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 mxlg:hidden" title="Увійти">
-					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
-						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/user01.svg" alt="Увійти" /> -->
+			<div class="xl:ml-8 flex xl:gap-3.5 text-sm lg:ml-4 lg:gap-1 ml-0 gap-2.5">
+				<a href="#" class="flex-col items-center hidden gap-1 transition ease-in lg:flex group text-lavender-purple hover:text-purple-800" title="Увійти">
+					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
+						
 						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
 						</svg>
 						
 					</span>
-					<span class="mxxl:hidden">Увійти</span>
+					<span class="hidden xl:block">Увійти</span>
 				</a>
-				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:h-[1.875rem] mxlg:w-[1.875rem]" title="Кошик">
-					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
+				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 " title="Кошик">
+					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
 						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/cart.svg" alt="Кошик" /> -->
 						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#cart"></use>
 						</svg>
 					</span>
-					<span class="mxxl:hidden">Кошик</span>
+					<span class="hidden xl:block">Кошик</span>
 				</a>
-				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:h-[1.875rem] mxlg:w-[1.875rem]" title="Обране">
-					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
+				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800" title="Обране">
+					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
 						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/heart.svg" alt="Обране" /> -->
 						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 						</svg>
 					</span>
-					<span class="mxxl:hidden">Обране</span>
+					<span class="hidden xl:block">Обране</span>
 				</a>
-				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 mxlg:hidden" title="Сповіщення">
-					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
+				<a href="#" class="flex-col items-center hidden gap-1 transition ease-in lg:flex group text-lavender-purple hover:text-purple-800" title="Сповіщення">
+					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
 						<!--  якщо є сповіщення додаємо класс hidden -->
 						<svg class="w-5 h-5 transition ease-in fill-transparent stroke-lavender-purple group-hover:stroke-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
@@ -112,7 +112,7 @@
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
 						</svg>
 					</span>
-					<span class="mxxl:hidden">Сповіщення </span>
+					<span class="hidden xl:block">Сповіщення </span>
 				</a>
 			</div>
 			<!-- ./actions buttons -->
@@ -124,22 +124,22 @@
 
 		<main>
 			<!-- breadcrumbs -->
-<div class="pt-2 lg:pt-[1.875rem] text-[0.6875rem] lg:text-[0.875rem] leading-[121%] lg:pb-2 pb-4">
+<div class="pt-2 lg:pt-7.5 text-xs lg:text-sm lg:pb-2 pb-4">
 	<div class="container">
-		<ul class="flex items-center gap-[0.1875rem] overflow-hidden">
-			<li class="flex items-center gap-[0.1875rem]">
+		<ul class="flex items-center gap-1 overflow-hidden">
+			<li class="flex items-center gap-1">
 				<a href="#" class="link-primary text-tundora text-ellipsis line-clamp-1">Україна</a>
 				<svg class="w-2.5 h-2.5 fill-lavender-purple">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 				</svg>
 			</li>
-			<li class="flex items-center gap-[0.1875rem]">
+			<li class="flex items-center gap-1">
 				<a href="#" class="link-primary text-tundora text-ellipsis line-clamp-1">Електроніка</a>
 				<svg class="w-2.5 h-2.5 fill-lavender-purple">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 				</svg>
 			</li>
-			<li class="flex items-center gap-[0.1875rem] ">
+			<li class="flex items-center gap-1 ">
 				<a href="#" class="overflow-hidden link-primary text-tundora text-ellipsis line-clamp-1">Комп’ютери і комплектуючі</a>
 				
 			</li>
@@ -164,19 +164,19 @@
 								<!-- rating -->
 								<div class="flex items-center gap-2">
 									<div class="flex items-center gap-[0.3125rem]">
-										<svg class="w-5 h-5 fill-goldenrod">
+										<svg class="h-5 w-5 fill-goldenrod">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 										</svg>
-										<svg class="w-5 h-5 fill-goldenrod">
+										<svg class="h-5 w-5 fill-goldenrod">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 										</svg>
-										<svg class="w-5 h-5 fill-goldenrod">
+										<svg class="h-5 w-5 fill-goldenrod">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 										</svg>
-										<svg class="w-5 h-5 fill-goldenrod">
+										<svg class="h-5 w-5 fill-goldenrod">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 										</svg>
-										<svg class="w-5 h-5 fill-white stroke-tundora">
+										<svg class="h-5 w-5 fill-white stroke-tundora">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 										</svg>
 									</div>
@@ -188,18 +188,18 @@
 							</div>
 
 							<!-- product image -->
-							<div class="flex flex-col mt-5">
+							<div class="mt-5 flex flex-col">
 								<div class="relative">
 									<div class="w-full overflow-hidden rounded-lge lw:aspect-[1.47058]">
-										<img class="object-cover w-full h-full" src="img/product-card/product001-001.jpg" alt="" srcset="" />
+										<img class="h-full w-full object-cover" src="img/product-card/product001-001.jpg" alt="" srcset="" />
 									</div>
 									<button class="btn-product-card-prev group absolute left-0 top-[50%] hidden h-[3.125rem] w-[3.125rem] -translate-y-1/2 items-center justify-center rounded-[50%] bg-wild-sand/[0.6] transition ease-in hover:bg-lavender-purple sm:flex">
-										<svg class="w-5 h-5 transition ease-linear group-hover:fill-white">
+										<svg class="h-5 w-5 transition ease-linear group-hover:fill-white">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
 										</svg>
 									</button>
 									<button class="btn-product-card-next group absolute right-0 top-[50%] hidden h-[3.125rem] w-[3.125rem] -translate-y-1/2 items-center justify-center rounded-[50%] bg-wild-sand/[0.6] transition ease-in hover:bg-lavender-purple sm:flex">
-										<svg class="w-5 h-5 transition ease-linear group-hover:fill-white">
+										<svg class="h-5 w-5 transition ease-linear group-hover:fill-white">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 										</svg>
 									</button>
@@ -217,22 +217,22 @@
 
 								<div class="scrollbar-custom mt-[1.125rem] hidden gap-5 overflow-auto pb-2 sm:flex">
 									<div class="h-[6.25rem] w-[11.25rem] flex-shrink-0 overflow-hidden rounded-lge border-[0.1563rem] border-lavender-purple">
-										<img class="object-cover w-full h-full" src="img/product-card/product001-001.jpg" alt="img" />
+										<img class="h-full w-full object-cover" src="img/product-card/product001-001.jpg" alt="img" />
 									</div>
 									<div class="h-[6.25rem] w-[11.25rem] flex-shrink-0 overflow-hidden rounded-lge">
-										<img class="object-cover w-full h-full" src="img/product-card/product001-002.jpg" alt="img" />
+										<img class="h-full w-full object-cover" src="img/product-card/product001-002.jpg" alt="img" />
 									</div>
 									<div class="h-[6.25rem] w-[11.25rem] flex-shrink-0 overflow-hidden rounded-lge">
-										<img class="object-cover w-full h-full" src="img/product-card/product001-003.jpg" alt="img" />
+										<img class="h-full w-full object-cover" src="img/product-card/product001-003.jpg" alt="img" />
 									</div>
 									<div class="h-[6.25rem] w-[11.25rem] flex-shrink-0 overflow-hidden rounded-lge">
-										<img class="object-cover w-full h-full" src="img/product-card/product001-001.jpg" alt="img" />
+										<img class="h-full w-full object-cover" src="img/product-card/product001-001.jpg" alt="img" />
 									</div>
 									<div class="h-[6.25rem] w-[11.25rem] flex-shrink-0 overflow-hidden rounded-lge">
-										<img class="object-cover w-full h-full" src="img/product-card/product001-002.jpg" alt="img" />
+										<img class="h-full w-full object-cover" src="img/product-card/product001-002.jpg" alt="img" />
 									</div>
 									<div class="h-[6.25rem] w-[11.25rem] flex-shrink-0 overflow-hidden rounded-lge">
-										<img class="object-cover w-full h-full" src="img/product-card/product001-003.jpg" alt="img" />
+										<img class="h-full w-full object-cover" src="img/product-card/product001-003.jpg" alt="img" />
 									</div>
 								</div>
 							</div>
@@ -254,19 +254,19 @@
 											<p class="font-medium">Макс</p>
 											<div class="flex items-center gap-1">
 												<div class="flex items-center">
-													<svg class="w-4 h-4 fill-transparent stroke-tundora">
+													<svg class="h-4 w-4 fill-transparent stroke-tundora">
 														<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 													</svg>
-													<svg class="w-4 h-4 fill-transparent stroke-tundora">
+													<svg class="h-4 w-4 fill-transparent stroke-tundora">
 														<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 													</svg>
-													<svg class="w-4 h-4 fill-transparent stroke-tundora">
+													<svg class="h-4 w-4 fill-transparent stroke-tundora">
 														<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 													</svg>
-													<svg class="w-4 h-4 fill-transparent stroke-tundora">
+													<svg class="h-4 w-4 fill-transparent stroke-tundora">
 														<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 													</svg>
-													<svg class="w-4 h-4 fill-transparent stroke-tundora">
+													<svg class="h-4 w-4 fill-transparent stroke-tundora">
 														<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 													</svg>
 												</div>
@@ -275,11 +275,11 @@
 										</div>
 									</div>
 
-									<div class="flex-shrink-0 hidden sm:block">
+									<div class="hidden flex-shrink-0 sm:block">
 										<button class="flex items-center gap-2.5" aria-label="Додати до обраного">
 											<p class="text-[0.875rem]">У обране</p>
 
-											<svg class="w-5 h-5 fill-lavender-purple">
+											<svg class="h-5 w-5 fill-lavender-purple">
 												<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 											</svg>
 										</button>
@@ -288,12 +288,11 @@
 
 								<!-- <p class="mt-2.5 text-[0.75rem] sm:text-[0.875rem]">Опубліковано 27.07.2022, 17:54</p> -->
 								<div class="mt-2.5 flex items-center justify-between">
-									
 									<button class="text-[0.875rem] text-persian-red sm:text-[1rem]" aria-label="Поскаржитись">Поскаржитись</button>
 									<button class="flex items-center gap-2.5 sm:hidden" aria-label="Додати до обраного">
 										<p class="text-[0.875rem]">У обране</p>
 
-										<svg class="w-5 h-5 fill-lavender-purple">
+										<svg class="h-5 w-5 fill-lavender-purple">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 										</svg>
 									</button>
@@ -313,7 +312,7 @@
 
 								<div class="flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
 									<p class="text-[0.875rem] font-medium sm:text-[1.125rem]">Опт. 7500 грн от 5 шт.</p>
-									<p class="text-[0.75rem] text-limeade sm:text-[1rem] sm:block hidden">У наявності</p>
+									<p class="hidden text-[0.75rem] text-limeade sm:block sm:text-[1rem]">У наявності</p>
 								</div>
 
 								<p class="mt-[0.875rem] hidden text-[0.75rem] sm:block sm:text-[0.875rem]">Відправка протягом 3 днів</p>
@@ -330,7 +329,7 @@
 									<div class="flex flex-col gap-[0.9375rem] sm:gap-2.5">
 										<button class="btn-primary-light h-[3.125rem] w-full px-2 sm:h-9 sm:min-w-[13.75rem]" aria-label="Написати продавцеві">Написати продавцеві</button>
 										<button class="btn-primary flex h-[3.125rem] w-full items-center justify-center gap-3 px-2 sm:h-9 sm:min-w-[13.75rem]" aria-label="Додати до корзини">
-											<svg class="w-5 h-5 fill-white">
+											<svg class="h-5 w-5 fill-white">
 												<use xlink:href="img/svg/sprites/sprite-icons.svg#cart"></use>
 											</svg>
 											<span>Додати</span>
@@ -349,7 +348,7 @@
 
 								<p class="mt-[0.875rem] text-[0.75rem] sm:text-[0.875rem]">Товар продається лише через транспортну компанію</p>
 
-								<div class="flex flex-col justify-between gap-2 mt-6 sm:flex-row sm:items-end">
+								<div class="mt-6 flex flex-col justify-between gap-2 sm:flex-row sm:items-end">
 									<div class="text-[0.875rem]">
 										<p>Спосіб доставки:</p>
 										<div class="mt-2.5 flex items-center gap-1.5">
@@ -369,7 +368,7 @@
 							<div class="mt-5 flex items-center justify-between rounded-lge bg-white px-[0.875rem] py-2.5 text-[0.875rem] font-medium sm:mt-[0.875rem]">
 								<div class="flex items-center gap-2.5">
 									<h4 class="text-base font-semibold sm:text-[1.125rem]">Гарантія</h4>
-									<svg class="w-4 h-4 sm:h-5 sm:w-5">
+									<svg class="h-4 w-4 sm:h-5 sm:w-5">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#guarantee"></use>
 									</svg>
 								</div>
@@ -379,7 +378,7 @@
 						<!--  ./product aside -->
 					</div>
 
-					<div class="flex flex-col">
+					<div class="flex w-full flex-col lg:w-[calc(57.5%-1.5625rem)]">
 						<div class="order-1 mt-5 rounded-lge bg-white px-4 py-[0.875rem] sm:-order-1 sm:mt-[3.125rem]">
 							<h3 class="text-[0.875rem] font-bold text-shark sm:text-[1.25rem]">Опис товару</h3>
 							<p class="mt-3 text-[0.625rem] leading-[200%] text-tundora sm:text-[0.875rem] sm:leading-[121%]">Ноутбук хороший звоните, пишите 0963465090 цена 8000 тора нет. Продаю за бесценок так как срочно.</p>
@@ -394,7 +393,7 @@
 								<div class="flex items-end gap-3">
 									<div class="relative w-[50%] flex-shrink-0 md:w-[21.125rem]">
 										<div class="relative z-10">
-											<span class="pr-3 bg-white">Приватне-бізнес</span>
+											<span class="bg-white pr-3">Приватне-бізнес</span>
 										</div>
 										<div class="dashed-line absolute bottom-1 left-0 right-0 h-[1px]"></div>
 									</div>
@@ -404,7 +403,7 @@
 								<div class="flex items-end gap-3">
 									<div class="relative w-[50%] flex-shrink-0 md:w-[21.125rem]">
 										<div class="relative z-10">
-											<span class="pr-3 bg-white">Стан товару</span>
+											<span class="bg-white pr-3">Стан товару</span>
 										</div>
 										<div class="dashed-line absolute bottom-1 left-0 right-0 h-[1px]"></div>
 									</div>
@@ -414,7 +413,7 @@
 								<div class="flex items-end gap-3">
 									<div class="relative w-[50%] flex-shrink-0 md:w-[21.125rem]">
 										<div class="relative z-10">
-											<span class="pr-3 bg-white">Наявність товару</span>
+											<span class="bg-white pr-3">Наявність товару</span>
 										</div>
 										<div class="dashed-line absolute bottom-1 left-0 right-0 h-[1px]"></div>
 									</div>
@@ -424,7 +423,7 @@
 								<div class="flex items-end gap-3">
 									<div class="relative w-[50%] flex-shrink-0 md:w-[21.125rem]">
 										<div class="relative z-10">
-											<span class="pr-3 bg-white">Країна виробника</span>
+											<span class="bg-white pr-3">Країна виробника</span>
 										</div>
 										<div class="dashed-line absolute bottom-1 left-0 right-0 h-[1px]"></div>
 									</div>
@@ -434,7 +433,7 @@
 								<div class="flex items-end gap-3">
 									<div class="relative w-[50%] flex-shrink-0 md:w-[21.125rem]">
 										<div class="relative z-10">
-											<span class="pr-3 bg-white">Термін використання</span>
+											<span class="bg-white pr-3">Термін використання</span>
 										</div>
 										<div class="dashed-line absolute bottom-1 left-0 right-0 h-[1px]"></div>
 									</div>
@@ -444,7 +443,7 @@
 								<div class="flex items-end gap-3">
 									<div class="relative w-[50%] flex-shrink-0 md:w-[21.125rem]">
 										<div class="relative z-10">
-											<span class="pr-3 bg-white">Торг</span>
+											<span class="bg-white pr-3">Торг</span>
 										</div>
 										<div class="dashed-line absolute bottom-1 left-0 right-0 h-[1px]"></div>
 									</div>
@@ -454,7 +453,7 @@
 								<div class="flex items-end gap-3">
 									<div class="relative w-[50%] flex-shrink-0 md:w-[21.125rem]">
 										<div class="relative z-10">
-											<span class="pr-3 bg-white">Марка</span>
+											<span class="bg-white pr-3">Марка</span>
 										</div>
 										<div class="dashed-line absolute bottom-1 left-0 right-0 h-[1px]"></div>
 									</div>
@@ -464,7 +463,7 @@
 								<div class="flex items-end gap-3">
 									<div class="relative w-[50%] flex-shrink-0 md:w-[21.125rem]">
 										<div class="relative z-10">
-											<span class="pr-3 bg-white">Діагональ екрану</span>
+											<span class="bg-white pr-3">Діагональ екрану</span>
 										</div>
 										<div class="dashed-line absolute bottom-1 left-0 right-0 h-[1px] w-full"></div>
 									</div>
@@ -474,7 +473,7 @@
 								<div class="flex items-end gap-3">
 									<div class="relative w-[50%] flex-shrink-0 md:w-[21.125rem]">
 										<div class="relative z-10">
-											<span class="pr-3 bg-white">Оперативна пам’ять</span>
+											<span class="bg-white pr-3">Оперативна пам’ять</span>
 										</div>
 										<div class="dashed-line absolute bottom-1 left-0 right-0 h-[0.0625rem]"></div>
 									</div>
@@ -486,11 +485,11 @@
 						</div>
 					</div>
 
-					<div class="mt-5 rounded-lge bg-white px-4 py-[0.875rem] sm:mt-6">
+					<div class="mt-5 w-full rounded-lge bg-white px-4 py-[0.875rem] sm:mt-6 lg:w-[calc(57.5%-1.5625rem)]">
 						<div class="flex items-end justify-between sm:items-center">
 							<textarea class="h-[6.625rem] min-h-0 w-full resize-none border-0 p-0 pr-4 text-[0.625rem] leading-[121%] placeholder:text-[0.625rem] placeholder:text-dusty-gray sm:h-auto sm:text-[0.875rem] sm:placeholder:text-[0.875rem]" disabled placeholder="Додавати коментарі можуть лише авторизовані користувачі"></textarea>
 							<button aria-label="Відправити повідомлення">
-								<svg class="w-4 h-4 fill-lavender-purple sm:h-6 sm:w-6">
+								<svg class="h-4 w-4 fill-lavender-purple sm:h-6 sm:w-6">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#message-send"></use>
 								</svg>
 							</button>
@@ -518,9 +517,9 @@
 							</button>
 						</div>
 					</div>
-					<div class="flex justify-between mt-4 lg:mt-7  gap-1.5 sm:gap-[1.3125rem] overflow-auto pt-0.5 pb-1.5 px-0.5">
+					<div class="flex justify-between mt-4 lg:mt-7  gap-1.5 sm:gap-5 overflow-auto pt-0.5 pb-1.5 px-0.5">
 	<!-- card -->
-	<div class="relative flex group w-[140px] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="hidden w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -534,21 +533,21 @@
 
 		<a class="flex flex-col" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/photo_2023-07-29_22-15-03.jpg" alt="" class="object-cover w-full h-full" />
-					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] text-white sm:text-xs">-40%</div>
+					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] text-white sm:text-xs">-40%</div>
 				</div>
 			</div>
 			<!-- ./card image -->
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">8000 грн.</p>
-						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-[0.9375rem]">8300 грн.</p>
+						<p class="text-xs font-bold sm:text-lg">8000 грн.</p>
+						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">8300 грн.</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Шкаф кровать трансформер</div>
 				</div>
@@ -584,7 +583,7 @@
 	<!-- ./card -->
 
 	<!-- card -->
-	<div class="relative flex group w-[8.75rem] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -598,20 +597,20 @@
 
 		<a class="flex flex-col" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/photo_2023-07-29_22-17-00.jpg" alt="" class="object-cover w-full h-full" />
-					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] text-white sm:text-xs">-40%</div>
+					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] text-white sm:text-xs">-40%</div>
 				</div>
 			</div>
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">8000 грн.</p>
-						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-[0.9375rem]">8300 грн.</p>
+						<p class="text-xs font-bold sm:text-lg">8000 грн.</p>
+						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">8300 грн.</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Шкаф кровать трансформер</div>
 				</div>
@@ -647,7 +646,7 @@
 	<!-- ./card -->
 
 	<!-- card -->
-	<div class="relative flex group w-[8.75rem] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -660,20 +659,20 @@
 		<!-- ./favorite icon -->
 		<a class="flex flex-col" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/goods/3.jpg" alt="" class="object-cover w-full h-full" />
-					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] text-white sm:text-xs">-40%</div>
+					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] text-white sm:text-xs">-40%</div>
 				</div>
 			</div>
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">100500 грн.</p>
-						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-[0.9375rem]">700 грн.</p>
+						<p class="text-xs font-bold sm:text-lg">100500 грн.</p>
+						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">700 грн.</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, ipsa?</div>
 				</div>
@@ -709,7 +708,7 @@
 	<!-- ./card -->
 
 	<!-- card -->
-	<div class="relative flex group w-[8.75rem] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -722,21 +721,21 @@
 		<!-- ./favorite icon -->
 		<a class="flex flex-col" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/goods/4.jpg" alt="" class="object-cover w-full h-full" />
-					<!-- <div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] sm:text-xs text-white">-40%</div> -->
+					<!-- <div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] sm:text-xs text-white">-40%</div> -->
 				</div>
 			</div>
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">9900 грн.</p>
-						<p class="text-[0.5625rem] font-semibold text-pomegranate sm:text-[0.9375rem]">Лише ОПТ</p>
+						<p class="text-xs font-bold sm:text-lg">9900 грн.</p>
+						<p class="text-[0.5625rem] font-semibold text-pomegranate sm:text-base">Лише ОПТ</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Шкаф кровать трансформер</div>
 				</div>
@@ -772,7 +771,7 @@
 	<!-- ./card -->
 
 	<!-- card -->
-	<div class="relative flex group w-[8.75rem] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -786,17 +785,17 @@
 
 		<a class="flex flex-col group" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/goods/1.jpg" alt="" class="object-cover w-full h-full" />
-					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] text-white sm:text-xs">-40%</div>
+					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] text-white sm:text-xs">-40%</div>
 
-					<button class="absolute top-[50%] flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-[1.875rem] lg:w-[1.875rem]">
+					<button class="absolute top-1/2 flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-7.5 lg:w-7.5">
 						<svg class="h-2.5 w-2.5 fill-black">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
 						</svg>
 					</button>
-					<button class="absolute right-0 top-[50%] flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-[1.875rem] lg:w-[1.875rem]">
+					<button class="absolute right-0 top-1/2 flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-7.5 lg:w-7.5">
 						<svg class="h-2.5 w-2.5 fill-black">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 						</svg>
@@ -806,12 +805,12 @@
 			<!-- ./card image -->
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">8000 грн.</p>
-						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-[0.9375rem]">8300 грн.</p>
+						<p class="text-xs font-bold sm:text-lg">8000 грн.</p>
+						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">8300 грн.</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Шкаф кровать трансформер</div>
 				</div>
@@ -868,9 +867,9 @@
 							</button>
 						</div>
 					</div>
-					<div class="flex justify-between mt-4 lg:mt-7  gap-1.5 sm:gap-[1.3125rem] overflow-auto pt-0.5 pb-1.5 px-0.5">
+					<div class="flex justify-between mt-4 lg:mt-7  gap-1.5 sm:gap-5 overflow-auto pt-0.5 pb-1.5 px-0.5">
 	<!-- card -->
-	<div class="relative flex group w-[140px] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="hidden w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -884,21 +883,21 @@
 
 		<a class="flex flex-col" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/photo_2023-07-29_22-15-03.jpg" alt="" class="object-cover w-full h-full" />
-					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] text-white sm:text-xs">-40%</div>
+					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] text-white sm:text-xs">-40%</div>
 				</div>
 			</div>
 			<!-- ./card image -->
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">8000 грн.</p>
-						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-[0.9375rem]">8300 грн.</p>
+						<p class="text-xs font-bold sm:text-lg">8000 грн.</p>
+						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">8300 грн.</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Шкаф кровать трансформер</div>
 				</div>
@@ -934,7 +933,7 @@
 	<!-- ./card -->
 
 	<!-- card -->
-	<div class="relative flex group w-[8.75rem] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -948,20 +947,20 @@
 
 		<a class="flex flex-col" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/photo_2023-07-29_22-17-00.jpg" alt="" class="object-cover w-full h-full" />
-					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] text-white sm:text-xs">-40%</div>
+					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] text-white sm:text-xs">-40%</div>
 				</div>
 			</div>
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">8000 грн.</p>
-						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-[0.9375rem]">8300 грн.</p>
+						<p class="text-xs font-bold sm:text-lg">8000 грн.</p>
+						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">8300 грн.</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Шкаф кровать трансформер</div>
 				</div>
@@ -997,7 +996,7 @@
 	<!-- ./card -->
 
 	<!-- card -->
-	<div class="relative flex group w-[8.75rem] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1010,20 +1009,20 @@
 		<!-- ./favorite icon -->
 		<a class="flex flex-col" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/goods/3.jpg" alt="" class="object-cover w-full h-full" />
-					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] text-white sm:text-xs">-40%</div>
+					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] text-white sm:text-xs">-40%</div>
 				</div>
 			</div>
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">100500 грн.</p>
-						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-[0.9375rem]">700 грн.</p>
+						<p class="text-xs font-bold sm:text-lg">100500 грн.</p>
+						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">700 грн.</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, ipsa?</div>
 				</div>
@@ -1059,7 +1058,7 @@
 	<!-- ./card -->
 
 	<!-- card -->
-	<div class="relative flex group w-[8.75rem] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1072,21 +1071,21 @@
 		<!-- ./favorite icon -->
 		<a class="flex flex-col" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/goods/4.jpg" alt="" class="object-cover w-full h-full" />
-					<!-- <div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] sm:text-xs text-white">-40%</div> -->
+					<!-- <div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] sm:text-xs text-white">-40%</div> -->
 				</div>
 			</div>
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">9900 грн.</p>
-						<p class="text-[0.5625rem] font-semibold text-pomegranate sm:text-[0.9375rem]">Лише ОПТ</p>
+						<p class="text-xs font-bold sm:text-lg">9900 грн.</p>
+						<p class="text-[0.5625rem] font-semibold text-pomegranate sm:text-base">Лише ОПТ</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Шкаф кровать трансформер</div>
 				</div>
@@ -1122,7 +1121,7 @@
 	<!-- ./card -->
 
 	<!-- card -->
-	<div class="relative flex group w-[8.75rem] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1136,17 +1135,17 @@
 
 		<a class="flex flex-col group" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/goods/1.jpg" alt="" class="object-cover w-full h-full" />
-					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] text-white sm:text-xs">-40%</div>
+					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] text-white sm:text-xs">-40%</div>
 
-					<button class="absolute top-[50%] flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-[1.875rem] lg:w-[1.875rem]">
+					<button class="absolute top-1/2 flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-7.5 lg:w-7.5">
 						<svg class="h-2.5 w-2.5 fill-black">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
 						</svg>
 					</button>
-					<button class="absolute right-0 top-[50%] flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-[1.875rem] lg:w-[1.875rem]">
+					<button class="absolute right-0 top-1/2 flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-7.5 lg:w-7.5">
 						<svg class="h-2.5 w-2.5 fill-black">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 						</svg>
@@ -1156,12 +1155,12 @@
 			<!-- ./card image -->
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">8000 грн.</p>
-						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-[0.9375rem]">8300 грн.</p>
+						<p class="text-xs font-bold sm:text-lg">8000 грн.</p>
+						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">8300 грн.</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Шкаф кровать трансформер</div>
 				</div>
@@ -1218,9 +1217,9 @@
 							</button>
 						</div>
 					</div>
-					<div class="flex justify-between mt-4 lg:mt-7  gap-1.5 sm:gap-[1.3125rem] overflow-auto pt-0.5 pb-1.5 px-0.5">
+					<div class="flex justify-between mt-4 lg:mt-7  gap-1.5 sm:gap-5 overflow-auto pt-0.5 pb-1.5 px-0.5">
 	<!-- card -->
-	<div class="relative flex group w-[140px] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="hidden w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1234,21 +1233,21 @@
 
 		<a class="flex flex-col" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/photo_2023-07-29_22-15-03.jpg" alt="" class="object-cover w-full h-full" />
-					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] text-white sm:text-xs">-40%</div>
+					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] text-white sm:text-xs">-40%</div>
 				</div>
 			</div>
 			<!-- ./card image -->
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">8000 грн.</p>
-						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-[0.9375rem]">8300 грн.</p>
+						<p class="text-xs font-bold sm:text-lg">8000 грн.</p>
+						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">8300 грн.</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Шкаф кровать трансформер</div>
 				</div>
@@ -1284,7 +1283,7 @@
 	<!-- ./card -->
 
 	<!-- card -->
-	<div class="relative flex group w-[8.75rem] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1298,20 +1297,20 @@
 
 		<a class="flex flex-col" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/photo_2023-07-29_22-17-00.jpg" alt="" class="object-cover w-full h-full" />
-					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] text-white sm:text-xs">-40%</div>
+					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] text-white sm:text-xs">-40%</div>
 				</div>
 			</div>
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">8000 грн.</p>
-						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-[0.9375rem]">8300 грн.</p>
+						<p class="text-xs font-bold sm:text-lg">8000 грн.</p>
+						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">8300 грн.</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Шкаф кровать трансформер</div>
 				</div>
@@ -1347,7 +1346,7 @@
 	<!-- ./card -->
 
 	<!-- card -->
-	<div class="relative flex group w-[8.75rem] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1360,20 +1359,20 @@
 		<!-- ./favorite icon -->
 		<a class="flex flex-col" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/goods/3.jpg" alt="" class="object-cover w-full h-full" />
-					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] text-white sm:text-xs">-40%</div>
+					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] text-white sm:text-xs">-40%</div>
 				</div>
 			</div>
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">100500 грн.</p>
-						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-[0.9375rem]">700 грн.</p>
+						<p class="text-xs font-bold sm:text-lg">100500 грн.</p>
+						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">700 грн.</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, ipsa?</div>
 				</div>
@@ -1409,7 +1408,7 @@
 	<!-- ./card -->
 
 	<!-- card -->
-	<div class="relative flex group w-[8.75rem] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1422,21 +1421,21 @@
 		<!-- ./favorite icon -->
 		<a class="flex flex-col" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/goods/4.jpg" alt="" class="object-cover w-full h-full" />
-					<!-- <div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] sm:text-xs text-white">-40%</div> -->
+					<!-- <div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] sm:text-xs text-white">-40%</div> -->
 				</div>
 			</div>
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">9900 грн.</p>
-						<p class="text-[0.5625rem] font-semibold text-pomegranate sm:text-[0.9375rem]">Лише ОПТ</p>
+						<p class="text-xs font-bold sm:text-lg">9900 грн.</p>
+						<p class="text-[0.5625rem] font-semibold text-pomegranate sm:text-base">Лише ОПТ</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Шкаф кровать трансформер</div>
 				</div>
@@ -1472,7 +1471,7 @@
 	<!-- ./card -->
 
 	<!-- card -->
-	<div class="relative flex group w-[8.75rem] sm:w-[16.875rem] flex-shrink-0">
+	<div class="relative flex group w-35 sm:w-[16.875rem] flex-shrink-0">
 		<!--  favorite icon -->
 		<button class="absolute z-10 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 			<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
@@ -1486,17 +1485,17 @@
 
 		<a class="flex flex-col group" href="#">
 			<!-- card image -->
-			<div class="rounded-bl-[1.25rem] rounded-br-[1.25rem] rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-[2.1875rem] sm:rounded-br-[2.1875rem] sm:px-3 sm:py-3">
+			<div class="rounded-bl-2lge rounded-br-2lge rounded-tl-2xl rounded-tr-2xl bg-white px-1.5 pb-2.5 pt-1.5 shadow-card sm:rounded-bl-6md sm:rounded-br-6md sm:px-3 sm:py-3">
 				<div class="relative aspect-[0.92] overflow-hidden rounded-2xl sm:aspect-[0.89]">
 					<img src="img/goods/1.jpg" alt="" class="object-cover w-full h-full" />
-					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] leading-[121%] text-white sm:text-xs">-40%</div>
+					<div class="absolute bottom-2 right-2 z-10 rounded-lg bg-pomegranate px-1 py-0.5 text-[0.625rem] text-white sm:text-xs">-40%</div>
 
-					<button class="absolute top-[50%] flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-[1.875rem] lg:w-[1.875rem]">
+					<button class="absolute top-1/2 flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-7.5 lg:w-7.5">
 						<svg class="h-2.5 w-2.5 fill-black">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
 						</svg>
 					</button>
-					<button class="absolute right-0 top-[50%] flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-[1.875rem] lg:w-[1.875rem]">
+					<button class="absolute right-0 top-1/2 flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-7.5 lg:w-7.5">
 						<svg class="h-2.5 w-2.5 fill-black">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 						</svg>
@@ -1506,12 +1505,12 @@
 			<!-- ./card image -->
 
 			<!-- card info -->
-			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-[1.25rem] rounded-tr-[1.25rem] border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-[2.1875rem] sm:rounded-tr-[2.1875rem] sm:px-3 sm:py-4 sm:leading-[121%]">
-				<div class="absolute -top-[2px] left-[50%] h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
+			<div class="relative z-10 -mt-2 flex grow flex-col justify-between break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pt-3 pb-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-4 ">
+				<div class="absolute -top-0.5 left-1/2 h-3 w-[89%] -translate-x-1/2 bg-white sm:w-[87%]"></div>
 				<div>
 					<div class="relative flex items-center gap-0.5 sm:gap-3">
-						<p class="text-xs font-bold sm:text-[1.125rem]">8000 грн.</p>
-						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-[0.9375rem]">8300 грн.</p>
+						<p class="text-xs font-bold sm:text-lg">8000 грн.</p>
+						<p class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">8300 грн.</p>
 					</div>
 					<div class="mt-1 text-[0.625rem] font-medium sm:text-xs lg:text-sm text-elipsis line-clamp-2">Шкаф кровать трансформер</div>
 				</div>
@@ -1601,53 +1600,53 @@
 
 <!-- ./sticky menu -->
  <!-- footer -->
-<footer class="bg-tundora pb-[0.9375rem] pt-[1.5625rem] leading-[121%] text-white lg:py-[3.125rem] sticky">
+<footer class="sticky py-6 text-white bg-tundora lg:py-12.5">
 	<div class="container">
 		<div class="relative">
 			<div class="flex flex-col md:flex-row">
 				<div class="flex items-center justify-between pb-5 md:mr-12 md:items-start md:pb-20 lg:mr-48">
-					<a href="#" class="link-primary drop-shadow-text font-semibold hover:text-white md:text-[1.875rem]">VamBeri</a>
-					<button class="flex h-[2.1875rem] w-[2.1875rem] items-center justify-center rounded-full border border-lavender-purple md:hidden">
+					<a href="#" class="font-semibold link-primary drop-shadow-text hover:text-white md:text-3xl">VamBeri</a>
+					<button class="flex items-center justify-center border rounded-full h-9 w-9 border-lavender-purple md:hidden">
 						<svg class="w-4 h-4 transition ease-in fill-white">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-up"></use>
 						</svg>
 					</button>
 				</div>
 
-				<div class="flex w-full flex-col justify-between gap-[0.9375rem] md:flex-row lg:w-auto lg:gap-20">
+				<div class="flex flex-col justify-between w-full gap-4 md:flex-row lg:w-auto lg:gap-20">
 					<!-- для відкриття в мобільному  -->
 					<!-- при кліку на заголовок h3 -->
 					<!-- на button вішаємо клас rotate-180 -->
 					<!-- на список із меню ul прибираємо клас hidden -->
 					<div>
 						<div class="flex items-center gap-2">
-							<h3 class="text-[0.875rem] font-semibold md:text-[1.25rem]">Покупцям</h3>
+							<h3 class="text-sm font-semibold md:text-xl">Покупцям</h3>
 							<button class="transition ease-linear md:hidden">
 								<svg class="h-2.5 w-2.5 fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 								</svg>
 							</button>
 						</div>
-						<ul class="mt-2.5 hidden text-[0.75rem] md:mt-[1.875rem] md:block md:max-w-[14.5rem] md:text-[1rem]">
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+						<ul class="mt-2.5 hidden text-xs md:mt-7.5 md:block md:max-w-[14.5rem] md:text-base">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Як зробити заказ</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Способи оплати</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Доставка</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Повернення товару</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Повернення коштів</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Правила продажу</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Правила користування торговим майданчиком</a>
 							</li>
 							<li class="mb-0">
@@ -1658,24 +1657,24 @@
 
 					<div>
 						<div class="flex items-center gap-2">
-							<h3 class="text-[0.875rem] font-semibold md:text-[1.25rem]">Партненрам</h3>
+							<h3 class="text-sm font-semibold md:text-xl">Партненрам</h3>
 							<button class="md:hidden">
 								<svg class="h-2.5 w-2.5 fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 								</svg>
 							</button>
 						</div>
-						<ul class="mt-2.5 hidden text-[0.75rem] md:mt-[1.875rem] md:block md:text-[1rem]">
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+						<ul class="mt-2.5 hidden text-xs md:mt-7.5 md:block md:text-base">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Продавайте на Vamberi</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Кур'єрам</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Перевізникам</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Партнерський пункт видачі</a>
 							</li>
 							<li class="mb-0">
@@ -1685,21 +1684,21 @@
 					</div>
 					<div>
 						<div class="flex items-center gap-2">
-							<h3 class="text-[1.0625rem] font-semibold md:text-[1.25rem]">Компанія</h3>
+							<h3 class="text-base font-semibold md:text-xl">Компанія</h3>
 							<button class="md:hidden">
 								<svg class="h-2.5 w-2.5 fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 								</svg>
 							</button>
 						</div>
-						<ul class="mt-2.5 hidden text-[0.75rem] md:mt-[1.875rem] md:block md:text-[1rem]">
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+						<ul class="mt-2.5 hidden text-xs md:mt-7.5 md:block md:text-base">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Про нас</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Реквізити</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Прес-центр</a>
 							</li>
 							<li class="mb-0">
@@ -1710,7 +1709,7 @@
 				</div>
 			</div>
 
-			<div class="static bottom-0 left-0 mt-[1.4375rem] flex flex-col gap-[0.9375rem] pb-10 md:pb-0 lg:absolute">
+			<div class="static bottom-0 left-0 flex flex-col gap-4 pb-10 mt-6 md:pb-0 lg:absolute">
 				<div class="flex items-center gap-3.5">
 					<a href="#" class="">
 						<img class="w-6 h-6" src="img/svg/socials/instagram.svg" alt="instagram" />
@@ -1731,16 +1730,16 @@
 						<img class="w-6 h-6" src="img/svg/socials/viber.svg" alt="viber" />
 					</a>
 				</div>
-				<a class="text-[0.875rem] lg:text-base" href="amberi.sms@gmail.com"> vamberi.sms@gmail.com </a>
+				<a class="text-sm lg:text-base" href="amberi.sms@gmail.com"> vamberi.sms@gmail.com </a>
 			</div>
 			<!-- copyrights -->
 			<div class="absolute bottom-0 right-0 z-10 flex-col items-end justify-end hidden h-full md:flex xl:items-center">
-				<button class="group flex h-[2.1875rem] w-[2.1875rem] items-center justify-center rounded-full border border-lavender-purple transition ease-in hover:border-white lg:h-[3.75rem] lg:w-[3.75rem]">
+				<button class="flex items-center justify-center transition ease-in border rounded-full group h-9 w-9 border-lavender-purple hover:border-white lg:h-15 lg:w-15">
 					<svg class="w-4 h-4 transition ease-in fill-white group-hover:fill-lavender-purple lg:h-6 lg:w-6">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-up"></use>
 					</svg>
 				</button>
-				<p class="mt-auto font-inter text-xs md:mt-[2.1875rem] lg:text-base">© 2022 Доска объявлений vamberi.com.ua</p>
+				<p class="mt-auto text-xs font-inter md:mt-9 lg:text-base">© 2022 Доска объявлений vamberi.com.ua</p>
 			</div>
 			<p class="text-xs text-center font-inter md:hidden">© 2022 Доска объявлений vamberi.com.ua</p>
 			<!-- ./copyrights -->

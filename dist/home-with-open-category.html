@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class=" ">
+<html class="">
 	<head>
 		<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,63 +8,64 @@
 <title>VamBeri - Головна сторінка</title>
 	</head>
 
-	<!-- для на десктопі при відкритті категорій  -->
-	<!-- на <body> додати класи overflow-hidden overscroll-none touch-none -->
-	<body class="overflow-hidden overscroll-none touch-none mxlg:overflow-auto mxlg:overscroll-auto mxlg:touch-auto">
+	
+	<body class="overflow-auto lg:overflow-hidden lg:overscroll-none lg:touch-none overscroll-auto touch-auto">
+		<!-- для на десктопі при відкритті категорій  -->
+		<!-- на <body> додати класи overflow-hidden overscroll-none touch-none -->
 		<!-- header -->
-<header class="leading-[121%]">
+<header>
 	<div class="container">
 		<!-- header top -->
-		<div class="flex justify-between pt-9 mxlg:hidden">
+		<div class="justify-between hidden lg:flex pt-9">
 			<div class="flex items-center">
 				<!-- lang switcher -->
-				<div class="mr-10 flex h-10 items-center rounded-[1.25rem] bg-deep-blush px-2.5 py-1.5 text-[0.875rem] transition ease-in hover:bg-pink-800 mxxl:ml-4">
-					<button aria-label="Мова" class="rounded-[1.25rem] bg-white px-5 py-1.5 text-shark transition ease-in">Мова</button>
-					<button aria-label="Язык" class="rounded-[1.25rem] px-5 py-1.5 text-white transition ease-in">Язык</button>
+				<div class="mr-4 xl:mr-10 flex h-10 items-center rounded-2lge bg-deep-blush px-2.5 py-1.5 text-sm transition ease-in hover:bg-pink-800">
+					<button aria-label="Мова" class="rounded-2lge bg-white px-5 py-1.5 text-shark transition ease-in">Мова</button>
+					<button aria-label="Язык" class="rounded-2lge px-5 py-1.5 text-white transition ease-in">Язык</button>
 				</div>
 				<!-- ./lang switcher -->
-				<a href="#" class="btn-primary flex h-10 min-w-[18.125rem] items-center justify-center text-[0.875rem]">Продавай на VamBeri</a>
+				<a href="#" class="btn-primary flex h-10 min-w-[18.125rem] items-center justify-center text-sm">Продавай на VamBeri</a>
 			</div>
 			<a href="#" class="btn-primary flex h-10 min-w-[12rem] items-center justify-center">Додати товар</a>
 		</div>
 		<!-- ./header top -->
 
 		<!-- header bottom -->
-		<div class="relative mt-[1.375rem] flex items-center mxlg:justify-between mxlg:gap-2.5 mxlg:pb-[5rem]">
+		<div class="relative mt-5.5 flex items-center justify-between gap-2.5 pb-[5rem] lg:pb-0 lg:gap-0">
 			<!-- burger -->
-			<button class="hidden h-[1.875rem] w-[1.875rem] items-center justify-center rounded-[50%] bg-white mxlg:flex">
+			<button class="lg:hidden h-7.5 w-7.5 items-center justify-center rounded-full bg-white flex">
 				<svg class="w-4 h-4 fill-black">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
 				</svg>
 			</button>
 			<!-- ./burger -->
 			<!-- logo -->
-			<a href="index.html" title="VamBeri" class="mr-10 text-[2.5rem] font-semibold leading-[121%] text-lavender-purple mxxl:mr-4 mxlg:ml-10 mxlg:mr-0 mxlg:text-center mxlg:text-[1.5rem] msm:text-[1.125rem]">VamBeri</a>
+			<a href="index.html" title="VamBeri" class="ml-10 mr-0 text-lg font-semibold text-center sm:text-2xl lg:mr-4 xl:mr-10 lg:text-4ms text-lavender-purple lg:text-left lg:ml-0">VamBeri</a>
 			<!-- ./logo -->
 
 			<!-- category dropdown -->
-			<button aria-label="Обрати категорію" class="group mr-8 flex h-[3.125rem] w-[18.125rem] flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5 mxxl:mr-4 mxlg:hidden">
+			<button aria-label="Обрати категорію" class="group xl:mr-8 hidden h-12.5 w-[18.125rem] flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5 mr-4 lg:flex">
 				<div class="flex items-center gap-3.5">
 					<div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-lg btn-primary">
 						<svg class="w-5 h-5 fill-white">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#category"></use>
 						</svg>
 					</div>
-					<span class="text-[0.75rem]">Обрати категорію</span>
+					<span class="text-xs">Обрати категорію</span>
 				</div>
 				<div class="ml-auto">
-					<svg class="h-2.5 w-2.5" fill="none" stroke="#000" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+					<svg class="h2.5 w-2.5">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 					</svg>
 				</div>
 			</button>
 			<!-- ./category dropdown -->
 
 			<!-- search -->
-			<div class="group flex h-[3.125rem] flex-grow items-center gap-4 rounded-lge lg:rounded-[1.25rem] bg-white px-2.5 py-1.5 mxlg:absolute mxlg:bottom-4 mxlg:left-0 mxlg:h-14 mxlg:w-full mxlg:gap-2.5">
+			<div class="group flex lg:h-12.5 flex-grow items-center lg:gap-4 rounded-lge lg:rounded-2lge bg-white px-2.5 py-1.5 absolute bottom-4 left-0 h-14 w-full gap-2.5 lg:relative lg:bottom-0">
 				
-				<input type="text" class="flex-grow border-none p-0 text-[0.875rem] placeholder:text-[0.8125rem] placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
-				<button class="btn-primary lg:px-5 py-2.5 px-[0.8125rem]">
+				<input type="text" class="flex-grow p-0 text-sm border-none placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
+				<button class="btn-primary lg:px-5 py-2.5 px-3.5">
 					<span class="hidden lg:block">Пошук</span>
 					<svg class="block w-4 h-4 fill-white lg:hidden">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
@@ -74,37 +75,37 @@
 			<!-- ./search -->
 
 			<!-- actions buttons -->
-			<div class="ml-8 flex gap-3.5 text-[0.875rem] leading-[121%] mxxl:ml-4 mxxl:gap-1 mxlg:ml-0 mxlg:gap-2.5">
-				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 mxlg:hidden" title="Увійти">
-					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
-						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/user01.svg" alt="Увійти" /> -->
+			<div class="xl:ml-8 flex xl:gap-3.5 text-sm lg:ml-4 lg:gap-1 ml-0 gap-2.5">
+				<a href="#" class="flex-col items-center hidden gap-1 transition ease-in lg:flex group text-lavender-purple hover:text-purple-800" title="Увійти">
+					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
+						
 						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
 						</svg>
 						
 					</span>
-					<span class="mxxl:hidden">Увійти</span>
+					<span class="hidden xl:block">Увійти</span>
 				</a>
-				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:h-[1.875rem] mxlg:w-[1.875rem]" title="Кошик">
-					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
+				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 " title="Кошик">
+					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
 						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/cart.svg" alt="Кошик" /> -->
 						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#cart"></use>
 						</svg>
 					</span>
-					<span class="mxxl:hidden">Кошик</span>
+					<span class="hidden xl:block">Кошик</span>
 				</a>
-				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 mxlg:h-[1.875rem] mxlg:w-[1.875rem]" title="Обране">
-					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
+				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800" title="Обране">
+					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
 						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/heart.svg" alt="Обране" /> -->
 						<svg class="w-5 h-5 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 						</svg>
 					</span>
-					<span class="mxxl:hidden">Обране</span>
+					<span class="hidden xl:block">Обране</span>
 				</a>
-				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 mxlg:hidden" title="Сповіщення">
-					<span class="flex h-[2.125rem] w-[2.125rem] items-center justify-center rounded-[50%] bg-white">
+				<a href="#" class="flex-col items-center hidden gap-1 transition ease-in lg:flex group text-lavender-purple hover:text-purple-800" title="Сповіщення">
+					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
 						<!--  якщо є сповіщення додаємо класс hidden -->
 						<svg class="w-5 h-5 transition ease-in fill-transparent stroke-lavender-purple group-hover:stroke-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
@@ -115,7 +116,7 @@
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
 						</svg>
 					</span>
-					<span class="mxxl:hidden">Сповіщення </span>
+					<span class="hidden xl:block">Сповіщення </span>
 				</a>
 			</div>
 			<!-- ./actions buttons -->
@@ -126,13 +127,13 @@
 <!-- ./header -->
  
 		<!-- banner slider -->
-<section class="mxlg:pt-0">
+<section class="pt-0 lg:pt-7.5">
 	<div class="container">
 		<div class="relative">
 			<div class="swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<div class="h-[18.75rem] overflow-hidden rounded-[1.25rem] mlg:h-[12.5rem] mlg:rounded-[0.625rem] mmd:h-[9.375rem] mxmd:h-[6.875rem]">
+						<div class="lg:h-[18.75rem] overflow-hidden lg:rounded-2lge md:h-[12.5rem] rounded-lge sm:h-[9.375rem] h-[6.875rem]">
 							<picture>
 								<source srcset="img/banner-mobile.jpg" media="(max-width: 30em)" />
 								<img class="object-cover object-center w-full h-full" src="img/banner.jpg" alt="banner" />
@@ -141,17 +142,18 @@
 					</div>
 				</div>
 			</div>
-			<button class="btn-home-slider-prev absolute left-[0.9375rem] top-[7.8125rem] flex h-[3.125rem] w-[3.125rem] items-center justify-center rounded-[50%] bg-wild-sand/[0.6] mlg:w-[26px] mlg:h-[26px] mlg:left-0 mlg:top-[5.4375rem] mmd:top-[3.875rem] mxmd:top-[2.625rem]">
-				<svg class="h-5 w-5 mlg:w-[0.625rem] mlg:h-[0.625rem]" fill="none" stroke="#000" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+			<button class="btn-home-slider-prev absolute lg:left-[0.9375rem] lg:top-[7.8125rem] flex lg:h-12.5 lg:w-12.5 items-center justify-center rounded-full bg-wild-sand/60 w-6.5 h-6.5 left-0 md:top-[5.4375rem] sm:top-[3.875rem] top-[2.625rem] group transition ease-in hover:bg-lavender-purple">
+				
+				<svg class="w-2.5 h-2.5 lg:h-5 lg:w-5 group-hover:fill-white transition ease-in">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
 				</svg>
 			</button>
-			<button class="btn-home-slider-next absolute right-[0.9375rem] top-[7.8125rem] flex h-[3.125rem] w-[3.125rem] items-center justify-center rounded-[50%] bg-wild-sand/[0.6]  mlg:w-[26px] mlg:h-[26px] mlg:right-0 mlg:top-[5.4375rem] mmd:top-[3.875rem] mxmd:top-[2.625rem]">
-				<svg class="h-5 w-5 mlg:w-[0.625rem] mlg:h-[0.625rem]" fill="none" stroke="#000" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+			<button class="btn-home-slider-next absolute lg:right-[0.9375rem] lg:top-[7.8125rem] flex lg:h-12.5 lg:w-12.5 items-center justify-center rounded-full bg-wild-sand/60 w-6.5 h-6.5 right-0 md:top-[5.4375rem] sm:top-[3.875rem] top-[2.625rem] group transition ease-in hover:bg-lavender-purple">
+				<svg class="w-2.5 h-2.5 lg:h-5 lg:w-5 group-hover:fill-white transition ease-in">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 				</svg>
 			</button>
-			<div class="home-slider-pagination mt-[1.625rem] flex items-center justify-center gap-[0.875rem] mlg:mt-[0.625rem] mlg:gap-[0.5rem]">
+			<div class="home-slider-pagination lg:mt-6.5 flex items-center justify-center lg:gap-3.5 mt-2.5 gap-2">
 				
 				<!-- при натяжці span видалити так як це генерує swiper -->
 
@@ -167,14 +169,14 @@
 <!-- ./banner slider -->
 
 		<!-- category dropdown -->
-<div class="hidden mxlg:block">
+<div class="lg:hidden">
 	<div class="container">
 		<!-- при відкритті додати класи  rounded-bl-0 rounded-br-0-->
-		<div class="relative rounded-lg bg-white">
-			<button aria-label="Обрати категорію" class="group flex h-[3.125rem] w-full items-center px-2.5 py-1.5">
+		<div class="relative bg-white rounded-lg">
+			<button aria-label="Обрати категорію" class="group flex h-12.5 w-full items-center px-2.5 py-1.5">
 				<div class="flex items-center gap-3.5">
-					<div class="btn-primary flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg">
-						<img class="h-5 w-5" src="img/svg/category.svg" alt="category">
+					<div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-lg btn-primary">
+						<img class="w-5 h-5" src="img/svg/category.svg" alt="category">
 					</div>
 					<span class="text-[0.75rem]">Обрати категорію</span>
 				</div>
@@ -182,7 +184,7 @@
 				<div class="ml-auto">
 					<!-- при відкритті додати клас rotate-180 -->
 				
-						<svg class="h-3 w-3 fill-black">
+						<svg class="w-3 h-3 fill-black">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 						</svg>
 					
@@ -191,12 +193,12 @@
 
 			<!-- для відкриття прибрати hidden  -->
 			<!-- головні категоірї -->
-			<div class="scrollbar-custom absolute z-20  h-[28.125rem] w-full overflow-y-auto overflow-x-hidden bg-white px-4 pt-2.5 pb-5 rounded-bl-lg rounded-br-lg hidden">
-				<ul class=" flex flex-col gap-4  text-[0.875rem] leading-[121%] ">
+			<div class="scrollbar-custom absolute z-20  h-[28.125rem] w-full overflow-y-auto overflow-x-hidden bg-white px-4 pt-2.5 pb-5 rounded-bl-lg rounded-br-lg ">
+				<ul class="flex flex-col gap-4 text-sm ">
 					
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#women"></use>
 							</svg>
 							<span>Жінкам</span>
@@ -204,7 +206,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#shoes"></use>
 							</svg>
 							<span>Взуття</span>
@@ -213,7 +215,7 @@
 					<!-- active category -->
 					<li class="rounded-lg bg-lavender-purple px-2.5 py-1.5 text-white">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-white">
+							<svg class="w-5 h-5 fill-white">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#children-goods2"></use>
 							</svg>
 							<span>Дитячі товари 2</span>
@@ -222,7 +224,7 @@
 					<!-- ./active category -->
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#man"></use>
 							</svg>
 							<span>Чоловікам</span>
@@ -230,7 +232,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#for-house2"></use>
 							</svg>
 							<span>Дім</span>
@@ -238,7 +240,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#accessory"></use>
 							</svg>
 							<span>Аксесуари</span>
@@ -246,7 +248,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#toys"></use>
 							</svg>
 							<span>Іграшки </span>
@@ -254,7 +256,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#homehold"></use>
 							</svg>
 							<span>Побутова техніка </span>
@@ -262,7 +264,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#help"></use>
 							</svg>
 							<span>Допомога</span>
@@ -270,7 +272,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#sport"></use>
 							</svg>
 							<span>Спорт та відпочинок</span>
@@ -278,7 +280,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#plc-board"></use>
 							</svg>
 		
@@ -287,7 +289,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#instruments"></use>
 							</svg>
 		
@@ -296,7 +298,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#fashion"></use>
 							</svg>
 		
@@ -305,7 +307,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#beauty"></use>
 							</svg>
 		
@@ -314,7 +316,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#children-goods"></use>
 							</svg>
 		
@@ -323,7 +325,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#building"></use>
 							</svg>
 		
@@ -332,7 +334,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#for-home"></use>
 							</svg>
 		
@@ -341,7 +343,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#work"></use>
 							</svg>
 		
@@ -350,7 +352,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#freelance"></use>
 							</svg>
 		
@@ -359,7 +361,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#auto"></use>
 							</svg>
 		
@@ -368,7 +370,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#auto2"></use>
 							</svg>
 		
@@ -377,7 +379,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#spare-parts"></use>
 							</svg>
 		
@@ -386,7 +388,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#animals"></use>
 							</svg>
 		
@@ -395,7 +397,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#electronics"></use>
 							</svg>
 		
@@ -404,7 +406,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#exchange"></use>
 							</svg>
 		
@@ -413,7 +415,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#for-busines"></use>
 							</svg>
 		
@@ -422,7 +424,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#hobbies"></use>
 							</svg>
 		
@@ -431,7 +433,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-transparent stroke-shark">
+							<svg class="w-5 h-5 fill-transparent stroke-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#school"></use>
 							</svg>
 		
@@ -440,7 +442,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#books"></use>
 							</svg>
 		
@@ -449,7 +451,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#jewerly"></use>
 							</svg>
 		
@@ -458,7 +460,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#roll-brush"></use>
 							</svg>
 		
@@ -467,7 +469,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#garden"></use>
 							</svg>
 		
@@ -476,7 +478,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#health"></use>
 							</svg>
 		
@@ -485,7 +487,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#office-supplies"></use>
 							</svg>
 		
@@ -496,9 +498,9 @@
 			</div>
 
 			<!-- підкатегорії -->
-			<div class="scrollbar-custom absolute  h-[28.125rem] pt-2.5 pb-5 w-full overflow-y-auto overflow-x-hidden bg-white px-2.5 hidden rounded-bl-lg rounded-br-lg">
-				<p class="text-[1.125rem] font-semibold">Дитячі товари</p>
-				<ul class="mt-6 flex flex-col gap-4 text-[0.875rem] leading-[121%]">
+			<div class="hidden scrollbar-custom absolute  h-[28.125rem] pt-2.5 pb-5 w-full overflow-y-auto overflow-x-hidden bg-white px-2.5  rounded-bl-lg rounded-br-lg z-30">
+				<p class="text-lg font-semibold">Дитячі товари</p>
+				<ul class="flex flex-col gap-4 mt-6 text-sm ">
 					<li class="rounded-lg py-1.5">
 						<a href="#" class="flex items-center gap-4">
 							<span>Дитячі мебелі</span>
@@ -561,11 +563,12 @@
 					</li>
 
 					<!-- active subcategory -->
-					<li class="active-subcategory rounded-lg py-1.5">
+					<li class="active-subcategory rounded-lg py-1.5 pr-4">
 						<a href="#" class="relative flex items-center gap-4">
 							<span class="font-semibold">Дитячі коляски</span>
-							<svg class="absolute -right-3.5 top-[50%] h-3.5 w-3.5 -translate-y-[50%]" fill="none" stroke="#000" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+							
+							<svg class="absolute -right-4 top-1/2 h-3.5 w-3.5 -translate-y-1/2">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 							</svg>
 						</a>
 					</li>
@@ -598,48 +601,48 @@
 
 		<section>
 			<div class="container">
-				<div class="flex items-center justify-between gap-4 mmd:flex-col mmd:items-start">
+				<div class="flex flex-col items-start justify-between gap-4 md:items-center md:flex-row">
 					<div class="max-w-[56.25rem]">
 						<h1 class="text-sm font-semibold text-shark sm:text-3xl">Майданчик для інтернет-магазинів</h1>
 						<p class="mt-5 text-[1.25rem] leading-[175%] mxlg:text-[1.125rem] mmd:hidden">Він заощаджує час пошуку необхідних спеціалістів, товарів, послуг. А ще це місце, де перевірені магазини можуть знайти нових вдячних клієнтів.</p>
 					</div>
 					<div class="relative md:w-[22.0625rem] flex-shrink-0 rounded-lg md:bg-white/[0.64] md:px-6 md:py-6 lg:pl-12 lg:pr-20">
 						<div class="flex flex-col justify-center sm:gap-y-2 mmd:gap-2">
-							<a class="group flex w-full text-lavender-purple transition ease-in hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue" href="http://fil.vamberi.com.ua/ua/bezopasnaya-sdelka">
-								<svg class="hidden h-8 w-5 fill-lavender-purple lg:block">
+							<a class="flex w-full transition ease-in group text-lavender-purple hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue" href="http://fil.vamberi.com.ua/ua/bezopasnaya-sdelka">
+								<svg class="hidden w-5 h-8 fill-lavender-purple lg:block">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
 								</svg>
 								<p class="w-full rounded-xl border-lavender-purple md:bg-white py-1 text-xs underline decoration-dashed underline-offset-4 group-hover:border-purple-800 sm:py-1.5 md:ml-4 md:border md:text-center md:text-sm md:no-underline">Безпечні угоди</p>
 							</a>
 
-							<a class="group flex w-full text-lavender-purple transition ease-in hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue" href="http://fil.vamberi.com.ua/ua/shops">
-								<svg class="hidden h-8 w-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800 lg:block">
+							<a class="flex w-full transition ease-in group text-lavender-purple hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue" href="http://fil.vamberi.com.ua/ua/shops">
+								<svg class="hidden w-5 h-8 transition ease-in fill-lavender-purple group-hover:fill-purple-800 lg:block">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
 								</svg>
 								<p class="w-full rounded-xl border-lavender-purple md:bg-white py-1 text-xs underline decoration-dashed underline-offset-4 group-hover:border-purple-800 sm:py-1.5 md:ml-4 md:border md:text-center md:text-sm md:no-underline">Онлайн-магазини</p>
 							</a>
-							<a href="#" class="group flex w-full text-lavender-purple transition ease-in hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue">
-								<svg class="hidden h-8 w-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800 lg:block">
+							<a href="#" class="flex w-full transition ease-in group text-lavender-purple hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue">
+								<svg class="hidden w-5 h-8 transition ease-in fill-lavender-purple group-hover:fill-purple-800 lg:block">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
 								</svg>
 								<p class="w-full rounded-xl border-lavender-purple md:bg-white py-1 text-xs underline decoration-dashed underline-offset-4 group-hover:border-purple-800 sm:py-1.5 md:ml-4 md:border md:text-center md:text-sm md:no-underline">Турбо продаж</p>
 							</a>
 
-							<a href="#" class="group flex w-full text-lavender-purple transition ease-in hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue">
-								<svg class="hidden h-8 w-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800 lg:block">
+							<a href="#" class="flex w-full transition ease-in group text-lavender-purple hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue">
+								<svg class="hidden w-5 h-8 transition ease-in fill-lavender-purple group-hover:fill-purple-800 lg:block">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
 								</svg>
 								<p class="w-full rounded-xl border-lavender-purple md:bg-white py-1 text-xs underline decoration-dashed underline-offset-4 group-hover:border-purple-800 sm:py-1.5 md:ml-4 md:border md:text-center md:text-sm md:no-underline">Оголошення на карті</p>
 							</a>
-							<a href="#" class="group flex w-full text-lavender-purple transition ease-in hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue">
-								<svg class="hidden h-8 w-5 fill-lavender-purple transition ease-in group-hover:fill-purple-800 lg:block">
+							<a href="#" class="flex w-full transition ease-in group text-lavender-purple hover:text-purple-800 mmd:text-royal-blue mmd:hover:text-royal-blue">
+								<svg class="hidden w-5 h-8 transition ease-in fill-lavender-purple group-hover:fill-purple-800 lg:block">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#checker3"></use>
 								</svg>
 								<p class="w-full rounded-xl border-lavender-purple md:bg-white py-1 text-xs underline decoration-dashed underline-offset-4 group-hover:border-purple-800 sm:py-[6px] md:ml-4 md:border md:text-center md:text-sm md:no-underline">Допомога ЗСУ</p>
 							</a>
 
-							<div class="absolute -bottom-2 -right-4 hidden h-10 w-10 items-center justify-center rounded-full bg-lavender-purple xl:flex">
-								<svg class="h-5 w-5 fill-white">
+							<div class="absolute items-center justify-center hidden w-10 h-10 rounded-full -bottom-2 -right-4 bg-lavender-purple xl:flex">
+								<svg class="w-5 h-5 fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#finger-up"></use>
 								</svg>
 							
@@ -653,12 +656,12 @@
 		<!-- slider shops -->
 		<section>
 			<div class="container">
-				<div class="flex sm:flex-col justify-between items-center sm:items-start">
+				<div class="flex items-center justify-between sm:flex-col sm:items-start">
 					<h2 class="text-sm font-semibold text-shark sm:text-3xl">Магазини</h2>
 
 					<a class="group mt-2.5 flex items-center hover:text-lavender-purple transition ease-in text-shark leading-[121%] text-xs sm:text-base" href="http://fil.vamberi.com.ua/ua/shops">
 						<span class="decoration-tundora decoration-dotted underline-offset-2 sm:underline">Всі магазини</span>
-						<span class="ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-lavender-purple sm:h-5 sm:w-5">
+						<span class="flex items-center justify-center w-4 h-4 ml-1 rounded-full bg-lavender-purple sm:h-5 sm:w-5">
 							<svg class="h-2.5 w-1.5 sm:h-3 sm:w-1.5 fill-white">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 							</svg>
@@ -677,19 +680,19 @@
 												<img src="http://w2.vamberi.com.ua/media/others/5657c85f5c8a73cbc6bc4178dcc7c5b3.png" alt="" class="h-[46px] w-full sm:h-14 sm:w-[8.125rem]" />
 											</a>
 											<div class="flex justify-center pt-5">
-												<svg class="h-5 w-5 fill-goldenrod">
+												<svg class="w-5 h-5 fill-goldenrod">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 												</svg>
-												<svg class="h-5 w-5 fill-goldenrod">
+												<svg class="w-5 h-5 fill-goldenrod">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 												</svg>
-												<svg class="h-5 w-5 fill-goldenrod">
+												<svg class="w-5 h-5 fill-goldenrod">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 												</svg>
-												<svg class="h-5 w-5 fill-goldenrod">
+												<svg class="w-5 h-5 fill-goldenrod">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 												</svg>
-												<svg class="h-5 w-5 fill-alto">
+												<svg class="w-5 h-5 fill-alto">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 												</svg>
 											</div>
@@ -728,70 +731,7 @@
 			</div>
 		</section>
 
-		<section>
-			<div class="container">
-				<div class="flex">
-					<div class="w-full lg:w-[85%] lg:pr-9">
-						<div class="relative pb-4">
-							<h2 class="text-[13px] font-medium sm:text-xl lg:text-[26px]">Сервіс товарів Vamberi - надійний посередник вдалих угод</h2>
-							<p class="mb-2 mt-2 text-[12px] sm:mb-4 sm:mt-3 sm:text-base md:mb-6 lg:mb-9 lg:mt-4">Дошка товарів Vamberi — майданчик, який заощаджує час пошуку необхідних спеціалістів, товарів, послуг. А ще це міс це, де пер евірені магазини можуть знайти нових вдячних клієнтів.</p>
-							<h2 class="text-[13px] font-medium sm:text-xl lg:text-[26px]">Чому з вигідно з Вамбері?</h2>
-							<p class="my-2 text-[12px] sm:my-4 sm:text-base lg:my-6">Створити умови, в яких шукати, вибирати, купувати та продавати зручно та безпечно – ось початкова мета платформи Vamberi. Детальний аналіз потреб покупців та продавців дозволив розробити сайт товарів, який відповідає всім вимогам та йде в ногу з часом. Адже на першому місці сьогодні – безпека онлайн-покупок, гарантія якості товарів. Наші переваги:</p>
-							<ul class="my-2 text-[12px] sm:my-4 sm:text-base lg:my-6">
-								<div class="relative">
-									<div class="absolute left-0 top-2 h-1 w-1 rounded-full bg-black sm:hidden"></div>
-									<li class="my-1 ml-3 before:absolute before:left-0 before:translate-y-[9px] before:rounded-full before:bg-accent sm:before:h-2 sm:before:w-2 md:my-3">можливість здійснювати безпечні покупки завдяки спеціальному сервісу "Безпечні угоди";</li>
-								</div>
-								<div class="relative">
-									<div class="absolute left-0 top-2 h-1 w-1 rounded-full bg-black sm:hidden"></div>
-									<li class="my-1 ml-3 before:absolute before:left-0 before:translate-y-[9px] before:rounded-full before:bg-accent sm:before:h-2 sm:before:w-2 md:my-3">наявність функції "Турбопродажу" - терміново продамо навіть торішній сніг; жарт, звичайно, ми розміщуємо лише якісні товари;</li>
-								</div>
-								<div class="relative">
-									<div class="absolute left-0 top-2 h-1 w-1 rounded-full bg-black sm:hidden"></div>
-									<li class="my-1 ml-3 before:absolute before:left-0 before:translate-y-[9px] before:rounded-full before:bg-accent sm:before:h-2 sm:before:w-2 md:my-3">можливість вивчити каталог онлайн-магазинів – лише перевірені шопи до ваших послуг.</li>
-								</div>
-								<div class="relative">
-									<div class="absolute left-0 top-2 h-1 w-1 rounded-full bg-black sm:hidden"></div>
-									<li class="my-1 ml-3 before:absolute before:left-0 before:translate-y-[9px] before:rounded-full before:bg-accent sm:before:h-2 sm:before:w-2 md:my-3">сервіс «товарів на карті» - не любите онлайн-покупок, ну і не любите; у нас можна знайти необхідні послуги та товари поруч із вами — просто скористайтесь нашим зручним пошуком по карті;</li>
-								</div>
-							</ul>
-							<p class="my-2 hidden text-[12px] sm:my-3 sm:block sm:text-base md:my-5 lg:mt-9">Неабияка перевага – можливість співпрацювати з нами за системою дропшипінг – безкоштовне розміщення товарів, немає необхідності закуповувати товар. Оптимальний варіант старту бізнесу у сфері онлайн-продажів. Ми завжди раді допомогти та підтримати</p>
-							<p class="my-2 hidden text-[12px] sm:my-3 sm:block sm:text-base md:my-5 lg:my-9">Ми подбали про те, щоб використання платформи Vamberi було зручним та приносило користь усім гостям. Мінімальна витрата часу на пошук потрібного товару, безпеку угод, гарантії повернення товару чи фінансів. З Vamberi надійно!</p>
-							<button class="absolute right-0 text-xs text-dark underline decoration-dashed underline-offset-4 hover:text-accent sm:relative sm:text-base">Читати повністю</button>
-						</div>
-						<div class="mx-auto mt-9 flex gap-x-2 sm:mt-10 sm:w-full sm:gap-x-5 md:gap-x-10 lg:mt-16 lg:gap-x-28">
-							<div class="text-center text-[12px] sm:text-base"><img src="/img/document.png" alt="" class="mx-auto mb-3 w-[50px] lg:w-[100px] xl:w-[120px]" /><span class="">Безпечні угоди</span></div>
-							<div class="text-center text-[12px] sm:text-base">
-								<img src="/img/information.svg" alt="" class="mx-auto mb-3 w-[50px] lg:w-[100px] xl:w-[120px]" /><span class="hidden sm:block">Турбопродаж</span><span class="sm:hidden">Турбо <br />продаж</span>
-							</div>
-							<div class="text-center text-[12px] sm:text-base"><img src="/img/iphone.png" alt="" class="mx-auto mb-3 w-[50px] lg:w-[100px] xl:w-[120px]" /><span>товарів на карті</span></div>
-							<div class="text-center text-[12px] sm:text-base lg:w-[160px]">
-								<img src="/img/shopping.png" alt="" class="mx-auto mb-3 w-[50px] lg:w-[100px] xl:w-[120px]" />
-								<div>
-									<span class="hidden sm:inline-block"> Лише</span>
-									перевірені онлайн-магазини
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="hidden lg:block lg:w-[15%]">
-						<p class="absolute right-0 mb-4 text-center text-xs underline decoration-dashed underline-offset-4 sm:relative sm:text-sm md:text-base">Також читайте</p>
-						<div class="pb-4">
-							<a href="http://fil.vamberi.com.ua/ua/blog/novosti-kompanii-vamberi/doska-obyavleniy-pochemu-stoit-vybrat-vamberi-1"
-								><img src="/media/images_blog/big/06b28e1450fa129478e6bff5acb22f74.png" alt="" class="w-full" />
-								<p class="my-2">Доска объявлений - почему стоит выбрать Вамбери</p>
-							</a>
-						</div>
-						<div class="pb-4">
-							<a href="http://fil.vamberi.com.ua/ua/blog/novosti-kompanii-vamberi/katalog-obyavleniy-bystryy-udobnyy-poisk-2"
-								><img src="/media/images_blog/big/d4741bf3e5934a7be48ca00bf63137f3.png" alt="" class="w-full" />
-								<p class="my-2">Каталог объявлений — быстрый удобный поиск</p>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+	
 
 		<!-- sticky menu -->
 
@@ -844,53 +784,53 @@
 <!-- ./sticky menu -->
  
 		<!-- footer -->
-<footer class="bg-tundora pb-[0.9375rem] pt-[1.5625rem] leading-[121%] text-white lg:py-[3.125rem] sticky">
+<footer class="sticky py-6 text-white bg-tundora lg:py-12.5">
 	<div class="container">
 		<div class="relative">
 			<div class="flex flex-col md:flex-row">
 				<div class="flex items-center justify-between pb-5 md:mr-12 md:items-start md:pb-20 lg:mr-48">
-					<a href="#" class="link-primary drop-shadow-text font-semibold hover:text-white md:text-[1.875rem]">VamBeri</a>
-					<button class="flex h-[2.1875rem] w-[2.1875rem] items-center justify-center rounded-full border border-lavender-purple md:hidden">
+					<a href="#" class="font-semibold link-primary drop-shadow-text hover:text-white md:text-3xl">VamBeri</a>
+					<button class="flex items-center justify-center border rounded-full h-9 w-9 border-lavender-purple md:hidden">
 						<svg class="w-4 h-4 transition ease-in fill-white">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-up"></use>
 						</svg>
 					</button>
 				</div>
 
-				<div class="flex w-full flex-col justify-between gap-[0.9375rem] md:flex-row lg:w-auto lg:gap-20">
+				<div class="flex flex-col justify-between w-full gap-4 md:flex-row lg:w-auto lg:gap-20">
 					<!-- для відкриття в мобільному  -->
 					<!-- при кліку на заголовок h3 -->
 					<!-- на button вішаємо клас rotate-180 -->
 					<!-- на список із меню ul прибираємо клас hidden -->
 					<div>
 						<div class="flex items-center gap-2">
-							<h3 class="text-[0.875rem] font-semibold md:text-[1.25rem]">Покупцям</h3>
+							<h3 class="text-sm font-semibold md:text-xl">Покупцям</h3>
 							<button class="transition ease-linear md:hidden">
 								<svg class="h-2.5 w-2.5 fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 								</svg>
 							</button>
 						</div>
-						<ul class="mt-2.5 hidden text-[0.75rem] md:mt-[1.875rem] md:block md:max-w-[14.5rem] md:text-[1rem]">
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+						<ul class="mt-2.5 hidden text-xs md:mt-7.5 md:block md:max-w-[14.5rem] md:text-base">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Як зробити заказ</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Способи оплати</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Доставка</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Повернення товару</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Повернення коштів</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Правила продажу</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Правила користування торговим майданчиком</a>
 							</li>
 							<li class="mb-0">
@@ -901,24 +841,24 @@
 
 					<div>
 						<div class="flex items-center gap-2">
-							<h3 class="text-[0.875rem] font-semibold md:text-[1.25rem]">Партненрам</h3>
+							<h3 class="text-sm font-semibold md:text-xl">Партненрам</h3>
 							<button class="md:hidden">
 								<svg class="h-2.5 w-2.5 fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 								</svg>
 							</button>
 						</div>
-						<ul class="mt-2.5 hidden text-[0.75rem] md:mt-[1.875rem] md:block md:text-[1rem]">
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+						<ul class="mt-2.5 hidden text-xs md:mt-7.5 md:block md:text-base">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Продавайте на Vamberi</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Кур'єрам</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Перевізникам</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Партнерський пункт видачі</a>
 							</li>
 							<li class="mb-0">
@@ -928,21 +868,21 @@
 					</div>
 					<div>
 						<div class="flex items-center gap-2">
-							<h3 class="text-[1.0625rem] font-semibold md:text-[1.25rem]">Компанія</h3>
+							<h3 class="text-base font-semibold md:text-xl">Компанія</h3>
 							<button class="md:hidden">
 								<svg class="h-2.5 w-2.5 fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 								</svg>
 							</button>
 						</div>
-						<ul class="mt-2.5 hidden text-[0.75rem] md:mt-[1.875rem] md:block md:text-[1rem]">
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+						<ul class="mt-2.5 hidden text-xs md:mt-7.5 md:block md:text-base">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Про нас</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Реквізити</a>
 							</li>
-							<li class="mb-1.5 md:mb-[0.9375rem]">
+							<li class="mb-1.5 md:mb-4">
 								<a href="#" class="link-white">Прес-центр</a>
 							</li>
 							<li class="mb-0">
@@ -953,7 +893,7 @@
 				</div>
 			</div>
 
-			<div class="static bottom-0 left-0 mt-[1.4375rem] flex flex-col gap-[0.9375rem] pb-10 md:pb-0 lg:absolute">
+			<div class="static bottom-0 left-0 flex flex-col gap-4 pb-10 mt-6 md:pb-0 lg:absolute">
 				<div class="flex items-center gap-3.5">
 					<a href="#" class="">
 						<img class="w-6 h-6" src="img/svg/socials/instagram.svg" alt="instagram" />
@@ -974,16 +914,16 @@
 						<img class="w-6 h-6" src="img/svg/socials/viber.svg" alt="viber" />
 					</a>
 				</div>
-				<a class="text-[0.875rem] lg:text-base" href="amberi.sms@gmail.com"> vamberi.sms@gmail.com </a>
+				<a class="text-sm lg:text-base" href="amberi.sms@gmail.com"> vamberi.sms@gmail.com </a>
 			</div>
 			<!-- copyrights -->
 			<div class="absolute bottom-0 right-0 z-10 flex-col items-end justify-end hidden h-full md:flex xl:items-center">
-				<button class="group flex h-[2.1875rem] w-[2.1875rem] items-center justify-center rounded-full border border-lavender-purple transition ease-in hover:border-white lg:h-[3.75rem] lg:w-[3.75rem]">
+				<button class="flex items-center justify-center transition ease-in border rounded-full group h-9 w-9 border-lavender-purple hover:border-white lg:h-15 lg:w-15">
 					<svg class="w-4 h-4 transition ease-in fill-white group-hover:fill-lavender-purple lg:h-6 lg:w-6">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-up"></use>
 					</svg>
 				</button>
-				<p class="mt-auto font-inter text-xs md:mt-[2.1875rem] lg:text-base">© 2022 Доска объявлений vamberi.com.ua</p>
+				<p class="mt-auto text-xs font-inter md:mt-9 lg:text-base">© 2022 Доска объявлений vamberi.com.ua</p>
 			</div>
 			<p class="text-xs text-center font-inter md:hidden">© 2022 Доска объявлений vamberi.com.ua</p>
 			<!-- ./copyrights -->
@@ -1003,19 +943,20 @@
 		<!-- category dropdown-menu -->
 <!-- для активізації прибирати hidden, mxlg:hidden - не трогати -->
 <!-- на <body> додати класи overflow-hidden overscroll-none touch-none -->
-<div class=" absolute -top-[0.0625rem] left-0 z-30 h-screen w-screen bg-lavender-purple/10 mxlg:hidden">
-	<div class="relative flex max-h-screen max-w-[1120]">
-		<div class="relative flex border border-dusty-gray bg-white text-shark shadow-custom">
+
+<div class="hidden absolute -top-[0.0625rem] left-0 z-30 h-screen w-screen bg-lavender-purple/10 lg:">
+	<div class="relative flex max-h-screen max-w-[70rem]">
+		<div class="relative flex bg-white border border-dusty-gray text-shark shadow-custom">
 			<button class="absolute -right-10 top-5">
-				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M1 1L19 19M1 19L19 1" stroke="black" stroke-width="1.3" />
+				<svg class="w-5 h-5">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
 				</svg>
 			</button>
-			<div class="scrollbar-custom max-h-full w-[23.125rem] overflow-y-auto overflow-x-hidden py-[1.875rem] pl-[1.875rem] pr-[3.125rem] mxxl:w-80 mxxl:px-2.5 border  border-r-ebb">
-				<ul class="flex w-[280px] flex-col gap-4 text-[0.875rem] leading-[121%]">
+			<div class="scrollbar-custom max-h-full xl:w-[23.125rem] overflow-y-auto overflow-x-hidden py-[1.875rem] xl:pl-[1.875rem] xl:pr-[3.125rem] w-80 px-2.5 border  border-r-ebb">
+				<ul class="flex w-[280px] flex-col gap-4 text-sm">
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#women"></use>
 							</svg>
 							<span>Жінкам</span>
@@ -1023,7 +964,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#shoes"></use>
 							</svg>
 							<span>Взуття</span>
@@ -1032,7 +973,7 @@
 					<!-- active category -->
 					<li class="rounded-lg bg-lavender-purple px-2.5 py-1.5 text-white">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-white">
+							<svg class="w-5 h-5 fill-white">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#children-goods2"></use>
 							</svg>
 							<span>Дитячі товари 2</span>
@@ -1041,7 +982,7 @@
 					<!-- ./active category -->
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#man"></use>
 							</svg>
 							<span>Чоловікам</span>
@@ -1049,7 +990,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#for-house2"></use>
 							</svg>
 							<span>Дім</span>
@@ -1057,7 +998,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#accessory"></use>
 							</svg>
 							<span>Аксесуари</span>
@@ -1065,7 +1006,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#toys"></use>
 							</svg>
 							<span>Іграшки </span>
@@ -1073,7 +1014,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#homehold"></use>
 							</svg>
 							<span>Побутова техніка </span>
@@ -1081,7 +1022,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#help"></use>
 							</svg>
 							<span>Допомога</span>
@@ -1089,7 +1030,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#sport"></use>
 							</svg>
 							<span>Спорт та відпочинок</span>
@@ -1097,7 +1038,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#plc-board"></use>
 							</svg>
 
@@ -1106,7 +1047,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#instruments"></use>
 							</svg>
 
@@ -1115,7 +1056,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#fashion"></use>
 							</svg>
 
@@ -1124,7 +1065,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#beauty"></use>
 							</svg>
 
@@ -1133,7 +1074,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#children-goods"></use>
 							</svg>
 
@@ -1142,7 +1083,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#building"></use>
 							</svg>
 
@@ -1151,7 +1092,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#for-home"></use>
 							</svg>
 
@@ -1160,7 +1101,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#work"></use>
 							</svg>
 
@@ -1169,7 +1110,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#freelance"></use>
 							</svg>
 
@@ -1178,7 +1119,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#auto"></use>
 							</svg>
 
@@ -1187,7 +1128,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#auto2"></use>
 							</svg>
 
@@ -1196,7 +1137,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#spare-parts"></use>
 							</svg>
 
@@ -1205,7 +1146,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#animals"></use>
 							</svg>
 
@@ -1214,7 +1155,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#electronics"></use>
 							</svg>
 
@@ -1223,7 +1164,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#exchange"></use>
 							</svg>
 
@@ -1232,7 +1173,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#for-busines"></use>
 							</svg>
 
@@ -1241,7 +1182,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#hobbies"></use>
 							</svg>
 
@@ -1250,7 +1191,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-transparent stroke-shark">
+							<svg class="w-5 h-5 fill-transparent stroke-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#school"></use>
 							</svg>
 
@@ -1259,7 +1200,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#books"></use>
 							</svg>
 
@@ -1268,7 +1209,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#jewerly"></use>
 							</svg>
 
@@ -1277,7 +1218,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#roll-brush"></use>
 							</svg>
 
@@ -1286,7 +1227,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#garden"></use>
 							</svg>
 
@@ -1295,7 +1236,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#health"></use>
 							</svg>
 
@@ -1304,7 +1245,7 @@
 					</li>
 					<li class="rounded-lg px-2.5 py-1.5">
 						<a href="#" class="flex items-center gap-4">
-							<svg class="h-5 w-5 fill-shark">
+							<svg class="w-5 h-5 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-category.svg#office-supplies"></use>
 							</svg>
 
@@ -1313,9 +1254,9 @@
 					</li>
 				</ul>
 			</div>
-			<div class="scrollbar-custom max-h-full w-[21.875rem] overflow-y-auto overflow-x-hidden py-[1.875rem] pl-11 pr-[3.375rem] mxxl:w-80 mxxl:px-[10px] border border-r-ebb">
-				<p class="text-[1.125rem] font-semibold">Дитячі товари</p>
-				<ul class="mt-[1.5625rem] flex w-[15.125rem] flex-col gap-4 text-[0.875rem] leading-[121%]">
+			<div class="scrollbar-custom max-h-full xl:w-[21.875rem] overflow-y-auto overflow-x-hidden py-[1.875rem] xl:pl-11 xl:pr-[3.375rem] w-80 px-2.5 border border-r-ebb">
+				<p class="text-lg font-semibold">Дитячі товари</p>
+				<ul class="flex flex-col gap-4 mt-6 text-sm w-60">
 					<li class="rounded-lg py-1.5">
 						<a href="#" class="flex items-center gap-4">
 							<span>Дитячі мебелі</span>
@@ -1381,7 +1322,8 @@
 					<li class="active-subcategory rounded-lg py-1.5">
 						<a href="#" class="relative flex items-center gap-4">
 							<span class="font-semibold">Дитячі коляски</span>
-							<svg class="absolute -right-[0.875rem] top-[50%] h-[0.875rem] w-[0.875rem] -translate-y-[50%]">
+							
+							<svg class="h-3.5 w-3.5 absolute -right-3.5 top-1/2 -translate-y-1/2">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 							</svg>
 						</a>
@@ -1407,12 +1349,12 @@
 					</li>
 				</ul>
 			</div>
-			<div class="scrollbar-custom max-h-full w-[27.125rem] overflow-y-auto overflow-x-hidden px-[3.125rem] py-[1.875rem] mxxl:w-80 mxxl:px-2.5">
-				<div class="rounded-5 h-[26.125rem] w-[20.875rem] overflow-hidden mxxl:w-auto">
-					<img class="h-full w-full object-cover" src="img/subcategory-image.png" alt="Дитячі коляски" />
+			<div class="scrollbar-custom max-h-full xl:w-[27.125rem] overflow-y-auto overflow-x-hidden xl:px-[3.125rem] py-7.5 w-80 px-2.5">
+				<div class="rounded-5 h-[26.125rem] xl:w-[20.875rem] overflow-hidden w-auto">
+					<img class="object-cover w-full h-full" src="img/subcategory-image.png" alt="Дитячі коляски" />
 				</div>
 
-				<p class="mt-[0.875rem] text-center font-semibold">Дитячі коляски</p>
+				<p class="mt-3.5 text-center font-semibold">Дитячі коляски</p>
 			</div>
 		</div>
 	</div>
