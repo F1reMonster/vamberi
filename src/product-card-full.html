@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="ua-UK">
+<html>
 	<head>
 		@@include('html/components/_head.html', {title: "VamBeri - Карточка товару"})
 	</head>
 	<body>
 		@@include('html/components/_header.html')
-
 		<main>
 			@@include("html/components/_breadcrumbs.html", {})
 			<!-- product-card-full -->
@@ -146,7 +145,18 @@
 									</div>
 								</div>
 
-								<p class="mt-2.5 text-[0.75rem] sm:text-[0.875rem]">Опубліковано 27.07.2022, 17:54</p>
+								<!-- <p class="mt-2.5 text-[0.75rem] sm:text-[0.875rem]">Опубліковано 27.07.2022, 17:54</p> -->
+								<div class="mt-2.5 flex items-center justify-between">
+									
+									<button class="text-[0.875rem] text-persian-red sm:text-[1rem]" aria-label="Поскаржитись">Поскаржитись</button>
+									<button class="flex items-center gap-2.5 sm:hidden" aria-label="Додати до обраного">
+										<p class="text-[0.875rem]">У обране</p>
+
+										<svg class="w-5 h-5 fill-lavender-purple">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
+										</svg>
+									</button>
+								</div>
 
 								<div class="mt-[1.4375rem] flex items-center justify-between sm:mt-[1.125rem]">
 									<div class="flex flex-col sm:flex-row sm:items-center sm:gap-4">
@@ -162,25 +172,18 @@
 
 								<div class="flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
 									<p class="text-[0.875rem] font-medium sm:text-[1.125rem]">Опт. 7500 грн от 5 шт.</p>
-									<p class="text-[0.75rem] text-limeade sm:text-[1rem]">У наявності</p>
+									<p class="text-[0.75rem] text-limeade sm:text-[1rem] sm:block hidden">У наявності</p>
 								</div>
 
-								<p class="mt-[0.875rem] hidden text-[0.75rem] sm:block sm:text-[0.875rem]">Доставка протягом 3 днів</p>
+								<p class="mt-[0.875rem] hidden text-[0.75rem] sm:block sm:text-[0.875rem]">Відправка протягом 3 днів</p>
 
 								<div class="mt-2.5 flex flex-col justify-between gap-[1.625rem] sm:flex-row sm:items-end">
 									<div class="flex flex-col gap-2">
-										<div>
-											<span class="rounded-lge bg-lavender-purple px-6 py-[0.3125rem] text-[0.875rem] text-white">Б/У</span>
-										</div>
 										<div class="flex items-center justify-between">
-											<button class="text-[0.875rem] text-persian-red sm:text-[1rem]" aria-label="Поскаржитись">Поскаржитись</button>
-											<button class="flex items-center gap-2.5 sm:hidden" aria-label="Додати до обраного">
-												<p class="text-[0.875rem]">У обране</p>
-
-												<svg class="w-5 h-5 fill-lavender-purple">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
-												</svg>
-											</button>
+											<div>
+												<span class="rounded-lge bg-lavender-purple px-6 py-[0.3125rem] text-[0.875rem] text-white">Б/У</span>
+											</div>
+											<p class="text-[0.75rem] text-limeade sm:hidden sm:text-[1rem]">У наявності</p>
 										</div>
 									</div>
 									<div class="flex flex-col gap-[0.9375rem] sm:gap-2.5">
@@ -236,15 +239,15 @@
 					</div>
 
 					<div class="flex flex-col">
-						<div class="mt-5 sm:mt-[3.125rem] rounded-lge bg-white px-4 py-[0.875rem] order-1 sm:-order-1">
-							<h3 class="text-[0.875rem] sm:text-[1.25rem] font-bold text-shark">Опис товару</h3>
-							<p class="mt-3 text-[0.625rem] sm:leading-[121%] leading-[200%] sm:text-[0.875rem] text-tundora">Ноутбук хороший звоните, пишите 0963465090 цена 8000 тора нет. Продаю за бесценок так как срочно.</p>
+						<div class="order-1 mt-5 rounded-lge bg-white px-4 py-[0.875rem] sm:-order-1 sm:mt-[3.125rem]">
+							<h3 class="text-[0.875rem] font-bold text-shark sm:text-[1.25rem]">Опис товару</h3>
+							<p class="mt-3 text-[0.625rem] leading-[200%] text-tundora sm:text-[0.875rem] sm:leading-[121%]">Ноутбук хороший звоните, пишите 0963465090 цена 8000 тора нет. Продаю за бесценок так как срочно.</p>
 						</div>
 
-						<div class="mt-5 sm:mt-6 rounded-lge bg-white px-4 py-[0.875rem]">
-							<button class="mb-5 text-[0.875rem] text-dusty-gray/[60] underline decoration-dashed decoration-[0.0313rem] underline-offset-[5px] sm:block hidden" aria-label="Розгорнути характеристики">Розгорнути характеристики</button>
+						<div class="mt-5 rounded-lge bg-white px-4 py-[0.875rem] sm:mt-6">
+							<button class="mb-5 hidden text-[0.875rem] text-dusty-gray/[60] underline decoration-dashed decoration-[0.0313rem] underline-offset-[5px] sm:block" aria-label="Розгорнути характеристики">Розгорнути характеристики</button>
 
-							<h3 class="text-[0.875rem] sm:text-[1.25rem] font-bold text-shark">Характеристики</h3>
+							<h3 class="text-[0.875rem] font-bold text-shark sm:text-[1.25rem]">Характеристики</h3>
 
 							<div class="mt-[0.875rem] flex flex-col gap-4 text-[0.75rem] md:text-[0.875rem]">
 								<div class="flex items-end gap-3">
@@ -338,15 +341,15 @@
 								</div>
 							</div>
 
-							<button class="mt-5 text-[0.875rem] text-tundora underline decoration-dashed decoration-[0.0313rem] underline-offset-[0.3125rem] sm:block hidden" aria-label="Згорнути характеристики">Згорнути характеристики</button>
+							<button class="mt-5 hidden text-[0.875rem] text-tundora underline decoration-dashed decoration-[0.0313rem] underline-offset-[0.3125rem] sm:block" aria-label="Згорнути характеристики">Згорнути характеристики</button>
 						</div>
 					</div>
 
-					<div class="mt-5 sm:mt-6 rounded-lge bg-white px-4 py-[0.875rem]">
+					<div class="mt-5 rounded-lge bg-white px-4 py-[0.875rem] sm:mt-6">
 						<div class="flex items-end justify-between sm:items-center">
-							<textarea class="sm:placeholder:text-[0.875rem] sm:text-[0.875rem] h-[6.625rem] sm:h-auto  text-[0.625rem] placeholder:text-[0.625rem] placeholder:text-dusty-gray w-full border-0 p-0 leading-[121%] min-h-0 resize-none pr-4" disabled placeholder="Додавати коментарі можуть лише авторизовані користувачі"></textarea>
+							<textarea class="h-[6.625rem] min-h-0 w-full resize-none border-0 p-0 pr-4 text-[0.625rem] leading-[121%] placeholder:text-[0.625rem] placeholder:text-dusty-gray sm:h-auto sm:text-[0.875rem] sm:placeholder:text-[0.875rem]" disabled placeholder="Додавати коментарі можуть лише авторизовані користувачі"></textarea>
 							<button aria-label="Відправити повідомлення">
-								<svg class="w-4 h-4 sm:w-6 sm:h-6 fill-lavender-purple">
+								<svg class="w-4 h-4 fill-lavender-purple sm:h-6 sm:w-6">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#message-send"></use>
 								</svg>
 							</button>
@@ -356,11 +359,12 @@
 			</section>
 			<!-- product-card-full -->
 
-			<section class="pb-2.5 sm:pb-[0.9375rem] pt-[0.3125rem] sm:pt-5">
+			<!-- other products of this seller -->
+			<section class="pb-2.5 pt-[0.3125rem] sm:pb-[0.9375rem] sm:pt-5">
 				<div class="container">
 					<div class="flex items-center justify-between">
-						<h2 class="text-[0.75rem] sm:text-[1.25rem] font-semibold leading-[121%]">Інші товари продавця</h2>
-						<div class="hidden sm:flex gap-[3.125rem]">
+						<h2 class="text-[0.75rem] font-semibold leading-[121%] sm:text-[1.25rem]">Інші товари продавця</h2>
+						<div class="hidden gap-[3.125rem] sm:flex">
 							<button class="group flex h-9 w-9 items-center justify-center rounded-[50%] bg-white transition ease-in hover:bg-lavender-purple">
 								<svg class="h-5 w-2.5 transition ease-linear group-hover:fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
@@ -376,12 +380,14 @@
 					@@include("html/components/_cards-slider.html")
 				</div>
 			</section>
+			<!-- ./other products of this seller -->
 
+			<!-- viewed products -->
 			<section class="py-2.5 sm:py-[0.9375rem]">
 				<div class="container">
 					<div class="flex items-center justify-between">
-						<h2 class="text-[0.75rem] sm:text-[1.25rem] font-semibold leading-[121%]">Переглянуті товари</h2>
-						<div class="hidden sm:flex gap-[3.125rem]">
+						<h2 class="text-[0.75rem] font-semibold leading-[121%] sm:text-[1.25rem]">Переглянуті товари</h2>
+						<div class="hidden gap-[3.125rem] sm:flex">
 							<button class="group flex h-9 w-9 items-center justify-center rounded-[50%] bg-white transition ease-in hover:bg-lavender-purple">
 								<svg class="h-5 w-2.5 transition ease-linear group-hover:fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
@@ -397,12 +403,14 @@
 					@@include("html/components/_cards-slider.html")
 				</div>
 			</section>
+			<!-- ./viewed products -->
 
+			<!-- also be interested -->
 			<section class="py-2.5 sm:py-[0.9375rem]">
 				<div class="container">
 					<div class="flex items-center justify-between">
-						<h2 class="text-[0.75rem] sm:text-[1.25rem] font-semibold leading-[121%]">Також вас можуть зацікавити</h2>
-						<div class="hidden sm:flex gap-[3.125rem]">
+						<h2 class="text-[0.75rem] font-semibold leading-[121%] sm:text-[1.25rem]">Також вас можуть зацікавити</h2>
+						<div class="hidden gap-[3.125rem] sm:flex">
 							<button class="group flex h-9 w-9 items-center justify-center rounded-[50%] bg-white transition ease-in hover:bg-lavender-purple">
 								<svg class="h-5 w-2.5 transition ease-linear group-hover:fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
@@ -418,6 +426,7 @@
 					@@include("html/components/_cards-slider.html")
 				</div>
 			</section>
+			<!-- ./also be interested -->
 		</main>
 
 		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
