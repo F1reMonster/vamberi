@@ -1,0 +1,75 @@
+[
+	{
+		"iconHeartStroke": true,
+		"image": "img/photo_2023-07-29_22-15-03.jpg",
+		"discount": "-40%",
+		"price": "8000 грн",
+		"oldPrice": "8300 грн",
+		"title": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, deleniti.",
+		"groupPrice": "275 грн від 5 шт.",
+		"rate": "4.5",
+		"totalScores": "940 оцінок",
+		"category": "Бізнес",
+		"stateNew": true,
+		"deliveryState": true
+	},
+	{
+		"iconHeartFill": true,
+		"image": "img/photo_2023-07-29_22-17-00.jpg",
+		"discount": "-40%",
+		"price": "100999 грн",
+		"oldPrice": "120999 грн",
+		"title": "Шкаф кровать трансформер",
+		"groupPrice": "99999 грн від 5 шт.",
+		"rate": "4.5",
+		"totalScores": "1940 оцінок",
+		"category": "Бізнес",
+		"stateNew": true,
+		"deliveryState": true
+	},
+	
+	{
+		"iconHeartStroke": true,
+		"image": "img/goods/4.jpg",
+		"discount": "-40%",
+		"price": "8000 грн",
+		"oldPrice": "8300 грн",
+		"title": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, deleniti.",
+		
+		"rate": "4.5",
+		"totalScores": "940 оцінок",
+		"category": "Бізнес",
+		"stateNew": true,
+		"deliveryState": true
+	},
+	{
+		"iconHeartFill": true,
+		"image": "img/goods/1.jpg",
+		"price": "8000 грн",
+		"additionalText": "<div class=\"sm:block hidden\">Лише </div><div>ОПТ</div>",
+		"title": "Шкаф кровать трансформер",
+		"groupPrice": "275 грн від 5 шт.",
+		"rate": "4.5",
+		"totalScores": "940 оцінок",
+		"category": "Бізнес",
+		"stateNew": false,
+		"stateUsed": true,
+		"slidersBtn": true,
+		"deliveryState": true
+	},
+	{
+		"iconHeartStroke": true,
+		"image": "img/goods/2.jpg",
+		"discount": "-40%",
+		"price": "999 грн",
+		"oldPrice": "1199 грн",
+		"title": "Супер товар",
+		"groupPrice": "1275 грн від 5 шт.",
+		"rate": "4.5",
+		"totalScores": "556 оцінок",
+		"category": "Бізнес",
+		"stateNew": true,
+		"deliveryState": false,
+		"onOrder": true
+	}
+]

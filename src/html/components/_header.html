@@ -5,9 +5,17 @@
 		<div class="justify-between hidden lg:flex pt-9">
 			<div class="flex items-center">
 				<!-- lang switcher -->
-				<div class="mr-4 xl:mr-10 flex h-10 items-center rounded-2lge bg-deep-blush px-2.5 py-1.5 text-sm transition ease-in hover:bg-pink-800">
-					<button aria-label="Мова" class="rounded-2lge bg-white px-5 py-1.5 text-shark transition ease-in">Мова</button>
-					<button aria-label="Язык" class="rounded-2lge px-5 py-1.5 text-white transition ease-in">Язык</button>
+				<div class="mr-4 xl:mr-10 flex h-10 items-center rounded-2lge bg-deep-blush px-2.5 py-1.5 text-sm transition ease-in ">
+				
+
+					<label class="cursor-pointer">
+						<input type="radio" name="langSite" class="hidden peer" checked />
+						<div class="rounded-lge bg-transparent px-5 py-0.5 text-white transition ease-in peer-checked:bg-white peer-checked:text-shark">Мова</div>
+					</label>
+					<label class="cursor-pointer">
+						<input type="radio" name="langSite" class="hidden peer" />
+						<div class="rounded-lge bg-transparent px-5 py-0.5 text-white transition ease-in peer-checked:bg-white peer-checked:text-shark">Язык</div>
+					</label>
 				</div>
 				<!-- ./lang switcher -->
 				<a href="#" class="btn-primary flex h-10 min-w-[18.125rem] items-center justify-center text-sm">Продавай на VamBeri</a>

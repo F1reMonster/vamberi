@@ -42,6 +42,7 @@ module.exports = {
 				inter: "Inter, sans-serif",
 			},
 			fontSize: {
+				ss: ["0.5rem", "120%"], // 8px
 				ms: ["0.625rem", "120%"], // 10px
 				"4ms": ["2.5rem", "120%"], // 40px
 
@@ -104,6 +105,8 @@ module.exports = {
 			boxShadow: {
 				"custom": "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25)",
 				"card": "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25), 0 0 0 0.0625rem #999494",
+				"white": "0 0 0 1px #fff",
+				'dusty-gray': "0 0 0 1px #999494"
 			},
 			dropShadow: {
 				"text": "box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25)",
@@ -159,6 +162,7 @@ module.exports = {
 				"12.5": "3.125rem", // 50px
 				"13": "3.25rem", // 52px
 				"15": "3.75rem", // 60px
+				"35": "8.75rem", // 140px
 			},
 			gap: {
 				"4.5": "1.125rem", // 18px
