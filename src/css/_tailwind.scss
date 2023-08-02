@@ -45,6 +45,10 @@
 		@apply rounded-2lge bg-transparent border border-deep-blush text-deep-blush transition ease-in hover:bg-deep-blush hover:text-white;
 	}
 
+	.btn-blue-royal-light {
+		@apply rounded-2lge bg-transparent border border-royal-blue text-royal-blue transition ease-in hover:bg-blue-500 hover:text-white;
+	}
+
 	.link-primary {
 		@apply text-lavender-purple transition ease-in hover:text-purple-800;
 	}
