@@ -119,6 +119,7 @@ module.exports = {
 				banner: "linear-gradient(90.77deg, #FFE6E6 1.76%, #F7CCC8 92.9%)",
 			},
 			borderRadius: {
+				"emd": "0.3125rem", // 5px
 				"lge": "0.625rem", // 10px
 				"2lge": "1.25rem", // 20px
 				"6md": "2.25rem", // 36px

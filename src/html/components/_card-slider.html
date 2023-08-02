@@ -49,15 +49,15 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-2.5 flex grow flex-col break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pb-1 pt-2.5 leading-none shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-2.5">
+		<div class="relative z-10 -mt-2.5 flex grow flex-col break-all rounded-bl-2xl rounded-br-2xl rounded-tl-2lge rounded-tr-2lge border border-dusty-gray bg-white px-1 pb-1 pt-2.5 shadow-custom sm:-mt-3 sm:rounded-tl-6md sm:rounded-tr-6md sm:px-3 sm:py-2.5">
 			<div class="absolute -top-[1px] left-1/2 h-2.5 w-[89%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div>
 
-			<div class="mt-1 overflow-hidden text-xs font-medium h-8.5 line-clamp-2 text-ellipsis sm:text-sm sm:h-10">@@title</div>
+			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">@@title</div>
 			<div class="flex items-center">
 				<div class="relative flex items-center gap-0.5 sm:gap-3">
 					<div class="text-xs font-bold sm:text-lg">@@price</div>
 					@@if (context.oldPrice) {
-					<div class="text-[0.5625rem] text-dove-gray line-through decoration-dove-gray sm:text-base">@@oldPrice</div>
+					<div class="line-through text-ms text-dove-gray decoration-dove-gray sm:text-base">@@oldPrice</div>
 					}
 				</div>
 
@@ -68,24 +68,23 @@
 			<div class="flex flex-col mt-auto">
 				@@if (context.groupPrice) {
 
-				<div class="text-xs sm:text-sm">@@groupPrice</div>
+					<div class="mt-1.5 text-ms sm:text-sm">@@groupPrice</div>
 
-				}
-
+				} 
+				
 				@@if (context.deliveryState) {
-					<div class="flex items-center justify-center gap-1 mt-2">
-						<div class="text-ss text-limeade sm:text-sm lg:text-sm">Готовий до відправлення</div>
-						<img class="w-5 h-5" src="img/svg/delivery-car.svg" alt="" />
+					<div class="flex items-center justify-center gap-1 mt-1">
+						<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
+						<img class="w-3 h-3 sm:w-5 sm:h-5" src="img/svg/delivery-car.svg" alt="" />
 					</div>
 				} 
 				@@if (context.onOrder) {
-					<div class="text-center text-ss text-pomegranate sm:text-sm lg:text-sm">Під замовлення 5 днів</div>
+					<div class="mt-1 text-center text-ms text-pomegranate sm:text-sm lg:text-sm">Під замовлення 5 днів</div>
 				}
 
-
-				<div class="mt-0.5 lg:mt-1.5 flex items-center flex-wrap lg:justify-between gap-1 sm:mt-2 justify-center">
+				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 lg:gap-2 sm:mt-2 lg:mt-1.5 lg:justify-between ">
 					<div class="flex-wrap items-center hidden gap-1 lg:flex">
-						<div class="flex items-center gap-1">
+						<div class="flex items-center">
 							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
@@ -105,15 +104,15 @@
 						<div class="text-xs text-dove-gray">@@totalScores</div>
 					</div>
 
-					<button class="px-2 py-1 lg:hidden btn-primary">Купити</button>
+					<button class="py-1 px-3.5 btn-primary lg:hidden rounded-emd text-ms">Купити</button>
 
 					@@if (context.stateNew) {
 
-					<p class="text-xs lg:pr-4 lg:text-sm">Новий</p>
+						<p class="text-ms xl:pr-4 lg:text-sm">Новий</p>
 
 					} @@if (context.stateUsed) {
 
-					<p class="text-xs lg:pr-4 lg:text-sm">Б/в</p>
+					<p class="text-ms xl:pr-4 lg:text-sm">Б/в</p>
 
 					}
 				</div>

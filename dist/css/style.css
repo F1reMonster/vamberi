@@ -865,6 +865,9 @@ section {
 .bottom-4 {
   bottom: 1rem;
 }
+.bottom-\[100\%\] {
+  bottom: 100%;
+}
 .left-0 {
   left: 0px;
 }
@@ -906,6 +909,9 @@ section {
 }
 .top-\[50\%\] {
   top: 50%;
+}
+.top-\[100\%\] {
+  top: 100%;
 }
 .z-10 {
   z-index: 10;
@@ -969,8 +975,8 @@ section {
 .mb-6 {
   margin-bottom: 1.5rem;
 }
-.mb-\[1\.6875rem\] {
-  margin-bottom: 1.6875rem;
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 .ml-0 {
   margin-left: 0px;
@@ -1188,6 +1194,9 @@ section {
 .h-\[2\.1875rem\] {
   height: 2.1875rem;
 }
+.h-\[2\.875rem\] {
+  height: 2.875rem;
+}
 .h-\[20\.75rem\] {
   height: 20.75rem;
 }
@@ -1331,9 +1340,6 @@ section {
 }
 .w-\[2\.1875rem\] {
   width: 2.1875rem;
-}
-.w-\[260px\] {
-  width: 260px;
 }
 .w-\[280px\] {
   width: 280px;
@@ -1577,9 +1583,6 @@ section {
 .gap-y-3 {
   row-gap: 0.75rem;
 }
-.gap-y-4 {
-  row-gap: 1rem;
-}
 .gap-y-6 {
   row-gap: 1.5rem;
 }
@@ -1670,6 +1673,9 @@ section {
 }
 .rounded-xl {
   border-radius: 0.75rem;
+}
+.rounded-emd {
+  border-radius: 0.3125rem;
 }
 .rounded-bl-2lge {
   border-bottom-left-radius: 1.25rem;
@@ -1881,6 +1887,9 @@ section {
 .p-3 {
   padding: 0.75rem;
 }
+.p-3\.5 {
+  padding: 0.875rem;
+}
 .p-4 {
   padding: 1rem;
 }
@@ -1965,6 +1974,10 @@ section {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
 }
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2005,6 +2018,14 @@ section {
   padding-top: 1.875rem;
   padding-bottom: 1.875rem;
 }
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -2020,14 +2041,14 @@ section {
 .pb-2\.5 {
   padding-bottom: 0.625rem;
 }
+.pb-20 {
+  padding-bottom: 5rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
 }
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-.pb-\[5rem\] {
-  padding-bottom: 5rem;
 }
 .pl-\[1\%\] {
   padding-left: 1%;
@@ -2093,12 +2114,6 @@ section {
 .text-\[0\.625rem\] {
   font-size: 0.625rem;
 }
-.text-\[0\.6875rem\] {
-  font-size: 0.6875rem;
-}
-.text-\[0\.75rem\] {
-  font-size: 0.75rem;
-}
 .text-\[0\.875rem\] {
   font-size: 0.875rem;
 }
@@ -2113,12 +2128,6 @@ section {
 }
 .text-\[1\.875rem\] {
   font-size: 1.875rem;
-}
-.text-\[12px\] {
-  font-size: 12px;
-}
-.text-\[1rem\] {
-  font-size: 1rem;
 }
 .text-base {
   font-size: 1rem;
@@ -2140,6 +2149,10 @@ section {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-ms {
+  font-size: 0.625rem;
+  line-height: 120%;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -2155,23 +2168,23 @@ section {
 .leading-8 {
   line-height: 2rem;
 }
-.leading-\[121\%\] {
-  line-height: 121%;
-}
 .leading-\[145\%\] {
   line-height: 145%;
 }
 .leading-\[166\%\] {
   line-height: 166%;
 }
-.leading-\[175\%\] {
-  line-height: 175%;
-}
 .leading-\[200\%\] {
   line-height: 200%;
 }
 .leading-none {
   line-height: 1;
+}
+.leading-\[120\] {
+  line-height: 120;
+}
+.leading-\[120\%\] {
+  line-height: 120%;
 }
 .tracking-\[0\.0225em\] {
   letter-spacing: 0.0225em;
@@ -2373,14 +2386,6 @@ section {
   background-size: 0.625rem 100%;
 }
 
-.placeholder\:text-\[0\.625rem\]::-moz-placeholder {
-  font-size: 0.625rem;
-}
-
-.placeholder\:text-\[0\.625rem\]::placeholder {
-  font-size: 0.625rem;
-}
-
 .placeholder\:text-sm::-moz-placeholder {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2389,6 +2394,16 @@ section {
 .placeholder\:text-sm::placeholder {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.placeholder\:text-xs::-moz-placeholder {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.placeholder\:text-xs::placeholder {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .placeholder\:text-dusty-gray::-moz-placeholder {
@@ -2818,26 +2833,8 @@ section {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
-  .sm\:text-\[0\.875rem\] {
-    font-size: 0.875rem;
-  }
   .sm\:text-\[0\.9375rem\] {
     font-size: 0.9375rem;
-  }
-  .sm\:text-\[1\.125rem\] {
-    font-size: 1.125rem;
-  }
-  .sm\:text-\[1\.25rem\] {
-    font-size: 1.25rem;
-  }
-  .sm\:text-\[1\.5rem\] {
-    font-size: 1.5rem;
-  }
-  .sm\:text-\[1\.875rem\] {
-    font-size: 1.875rem;
-  }
-  .sm\:text-\[1rem\] {
-    font-size: 1rem;
   }
   .sm\:text-base {
     font-size: 1rem;
@@ -2858,9 +2855,6 @@ section {
   .sm\:font-normal {
     font-weight: 400;
   }
-  .sm\:leading-\[121\%\] {
-    line-height: 121%;
-  }
   .sm\:text-shark {
     --tw-text-opacity: 1;
     color: rgb(33 37 41 / var(--tw-text-opacity));
@@ -2868,11 +2862,13 @@ section {
   .sm\:underline {
     text-decoration-line: underline;
   }
-  .sm\:placeholder\:text-\[0\.875rem\]::-moz-placeholder {
+  .sm\:placeholder\:text-sm::-moz-placeholder {
     font-size: 0.875rem;
+    line-height: 1.25rem;
   }
-  .sm\:placeholder\:text-\[0\.875rem\]::placeholder {
+  .sm\:placeholder\:text-sm::placeholder {
     font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -2995,10 +2991,6 @@ section {
   .md\:gap-32 {
     gap: 8rem;
   }
-  .md\:gap-x-10 {
-    -moz-column-gap: 2.5rem;
-         column-gap: 2.5rem;
-  }
   .md\:gap-x-4 {
     -moz-column-gap: 1rem;
          column-gap: 1rem;
@@ -3012,9 +3004,6 @@ section {
   }
   .md\:bg-white\/60 {
     background-color: rgb(255 255 255 / 0.6);
-  }
-  .md\:bg-white\/\[0\.64\] {
-    background-color: rgb(255 255 255 / 0.64);
   }
   .md\:p-3 {
     padding: 0.75rem;
@@ -3047,9 +3036,6 @@ section {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-  .md\:text-\[0\.875rem\] {
-    font-size: 0.875rem;
   }
   .md\:text-\[1\.125rem\] {
     font-size: 1.125rem;
@@ -3276,9 +3262,6 @@ section {
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-  .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -3324,12 +3307,8 @@ section {
   .lg\:gap-\[9\.375rem\] {
     gap: 9.375rem;
   }
-  .lg\:gap-x-6 {
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
-  }
-  .lg\:gap-y-8 {
-    row-gap: 2rem;
+  .lg\:gap-2 {
+    gap: 0.5rem;
   }
   .lg\:overflow-hidden {
     overflow: hidden;
@@ -3392,6 +3371,9 @@ section {
   .lg\:pr-20 {
     padding-right: 5rem;
   }
+  .lg\:pr-4 {
+    padding-right: 1rem;
+  }
   .lg\:pt-0 {
     padding-top: 0px;
   }
@@ -3400,9 +3382,6 @@ section {
   }
   .lg\:pt-7\.5 {
     padding-top: 1.875rem;
-  }
-  .lg\:pr-4 {
-    padding-right: 1rem;
   }
   .lg\:text-left {
     text-align: left;
@@ -3415,12 +3394,13 @@ section {
     font-size: 2.5rem;
     line-height: 120%;
   }
-  .lg\:text-\[1\.125rem\] {
-    font-size: 1.125rem;
-  }
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
   .lg\:text-sm {
     font-size: 0.875rem;
@@ -3451,7 +3431,10 @@ section {
   .xl\:mr-8 {
     margin-right: 2rem;
   }
-  .xl\:mt-\[0\.875rem\] {
+  .xl\:mt-3 {
+    margin-top: 0.75rem;
+  }
+  .xl\:mt-3\.5 {
     margin-top: 0.875rem;
   }
   .xl\:block {
@@ -3524,6 +3507,9 @@ section {
   }
   .xl\:pr-\[3\.375rem\] {
     padding-right: 3.375rem;
+  }
+  .xl\:pr-4 {
+    padding-right: 1rem;
   }
 }
 
