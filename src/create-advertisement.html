@@ -8,7 +8,7 @@
 		<!-- для на десктопі при відкритті категорій  -->
 		<!-- на <body> додати класи overflow-hidden overscroll-none touch-none -->
 
-		@@include('html/components/_header.html')
+		@@include('html/components/_header.html', {accountMenu: ""})
 
 		<main>
 			<section class="text-shark">
@@ -162,9 +162,9 @@
 							</div>
 						</div>
 
-						<div class="mb-6 flex flex-col lg:mb-7 lg:mt-auto lg:min-w-[25.625rem] xl:mb-6">
+						<div class="mb-6 flex flex-col lg:mb-7 lg:mt-auto lg:min-w-[25.625rem] xl:mb-8">
 							<div class="text-xs font-medium sm:text-lg">Ваш код</div>
-							<div class="mt-2.5 lg:mt-5">
+							<div class="mt-2.5 lg:mt-4">
 								<input type="text" class="w-full p-3 text-sm transition ease-in bg-white border-white rounded-lge ring-0 placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
 							</div>
 						</div>

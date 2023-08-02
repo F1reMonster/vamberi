@@ -41,203 +41,7 @@
 		<!-- header bottom -->
 		<div class="relative mt-5.5 flex items-center justify-between gap-2.5 pb-20 lg:pb-0 lg:gap-0">
 			
-			<div class=" absolute top-10 z-30 bg-white px-12.5 py-7.5 lg:top-[100%] lg:w-80 lg:rounded-2lge lg:px-10 lg:py-5 lg:shadow-lavender-purple lg:right-0 -right-[15px] -left-[15px] lg:left-auto lg:min-h-fit min-h-screen overflow-auto lg:overflow-visible">
-	
-	<div class="items-center justify-between hidden w-full px-3 py-2 mr-4 text-sm transition ease-in rounded-lge bg-lavender-purple lg:flex">
-		<label class="relative cursor-pointer">
-			<input type="radio" name="account" class="hidden peer/buyer" checked />
-			<div class="rounded-lge bg-transparent px-4 py-2.5 text-white transition ease-in peer-checked/buyer:bg-white peer-checked/buyer:text-shark">Покупець</div>
-			<svg class="absolute w-5 h-5 transition ease-in -translate-y-1/2 opacity-0 -left-10 top-1/2 fill-tall-poppy peer-checked/buyer:opacity-100">
-				<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled"></use>
-			</svg>
-		</label>
-		<label class="relative cursor-pointer">
-			<input type="radio" name="account" class="hidden peer/seller" />
-			<div class="rounded-lge bg-transparent px-4 py-2.5 text-white transition ease-in peer-checked/seller:bg-white peer-checked/seller:text-shark">Продавець</div>
-			<svg class="absolute w-5 h-5 transition ease-in -translate-y-1/2 opacity-0 -right-9 top-1/2 fill-tall-poppy peer-checked/seller:opacity-100">
-				<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled"></use>
-			</svg>
-		</label>
-	</div>
-
-	<!-- buyer -->
-	<div class="mt-4 text-shark">
-
-		<button class="flex items-center justify-center w-full h-10 btn-primary lg:hidden">
-			Додати товар
-		</button>
-
-		<button class="flex items-center justify-center w-full gap-4 p-1 mt-5 text-xs btn-blue-royal-light group h-9 rounded-lge">
-			<svg class="w-5 h-5 transition ease-in fill-royal-blue group-hover:fill-white">
-				<use xlink:href="img/svg/sprites/sprite-icons.svg#Group"></use>
-			</svg>
-			<span>Панель управління</span>
-		</button>
-		
-		<ul class="flex flex-col gap-5 mt-4 text-sm">
-			<li class="flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#cart"></use>
-					</svg>
-					<span>Замовлення</span>
-				</a>
-			</li>
-			<li class="relative flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#envelope"></use>
-					</svg>
-					<span>Повідомлення</span>
-				</a>
-				<p class="absolute flex-shrink-0 w-5 h-5 -translate-y-1/2 rounded-full lg:relative bg-lavender-purple -right-8 top-1/2 lg:right-[unset] lg:translate-y-0"><span class="absolute text-white -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">6</span></p>
-			</li>
-			<li class="flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#eye"></use>
-					</svg>
-					<span>Переглянуті товари</span>
-				</a>
-			</li>
-			<li class="flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
-					</svg>
-					<span>Вибране</span>
-				</a>
-			</li>
-			<li class="relative flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#message2"></use>
-					</svg>
-					<span>Мої відгуки</span>
-				</a>
-				<p class="absolute flex-shrink-0 w-5 h-5 -translate-y-1/2 rounded-full lg:relative bg-lavender-purple -right-8 top-1/2 lg:right-[unset] lg:translate-y-0"><span class="absolute text-white -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">4</span></p>
-			</li>
-			<li class="flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#settings"></use>
-					</svg>
-					<span>Налаштування</span>
-				</a>
-			</li>
-			<li class="flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#exit"></use>
-					</svg>
-					<span>Вихід</span>
-				</a>
-			</li>
-
-
-
-
 			
-		</ul>
-	</div>
-	<!-- buyer -->
-
-	<!-- seller -->
-	<div class="hidden mt-4 text-shark">
-
-		<button class="flex items-center justify-center w-full gap-4 p-1 mt-5 text-xs btn-blue-royal-light group h-9 rounded-lge">
-			<svg class="w-5 h-5 transition ease-in fill-royal-blue group-hover:fill-white">
-				<use xlink:href="img/svg/sprites/sprite-icons.svg#Group"></use>
-			</svg>
-			<span>Панель управління</span>
-		</button>
-		
-		<ul class="flex flex-col gap-5 mt-4 text-sm">
-			<li class="flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#my-products"></use>
-					</svg>
-					<span>Мої товари</span>
-				</a>
-			</li>
-			<li class="relative flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#bag"></use>
-					</svg>
-					<span>Продажі</span>
-				</a>
-				
-			</li>
-			<li class="flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
-					</svg>
-					<span>Мої підписки</span>
-				</a>
-			</li>
-			<li class="flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#settings"></use>
-					</svg>
-					<span>Налаштування</span>
-				</a>
-			</li>
-			<li class="flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 stroke-shark fill-transparent">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#my-shop"></use>
-					</svg>
-					<span>Мій магазин </span>
-				</a>
-			</li>
-			<li class="flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#add"></use>
-					</svg>
-					<span>Додати товар</span>
-				</a>
-			</li>
-			<li class="relative flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#envelope"></use>
-					</svg>
-					<span>Повідомлення</span>
-				</a>
-				<p class="absolute flex-shrink-0 w-5 h-5 -translate-y-1/2 rounded-full lg:relative bg-lavender-purple -right-8 top-1/2 lg:right-[unset] lg:translate-y-0"><span class="absolute text-white -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">4</span></p>
-			</li>
-			
-			<li class="flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#wallet"></use>
-					</svg>
-					<span>Гаманець [0 грн.] </span>
-				</a>
-			</li>
-			<li class="flex items-center gap-5">
-				<a href="#" class="flex items-center w-full gap-5 p-3 border rounded-lge border-tundora lg:p-0 lg:border-0">
-					<svg class="flex-shrink-0 w-5 h-5 fill-shark">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#exit"></use>
-					</svg>
-					<span>Вихід</span>
-				</a>
-			</li>
-
-
-
-
-			
-		</ul>
-	</div>
-	<!-- seller -->
-</div>
-
 			
 			<!-- burger -->
 			<button class="lg:hidden h-7.5 w-7.5 items-center justify-center rounded-full bg-white flex">
@@ -1487,18 +1291,18 @@
 								<img class="object-cover w-full h-full" src="img/slider-img004.jpg" alt="image" loadin="lazy" />
 							</div>
 						</div>
-						<button class="absolute top-[50%] flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-[1.875rem] lg:w-[1.875rem]">
+						<button class="absolute top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-[1.875rem] lg:w-[1.875rem]">
 							<svg class="h-2.5 w-2.5 fill-black">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
 							</svg>
 						</button>
-						<button class="absolute right-0 top-[50%] flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-[1.875rem] lg:w-[1.875rem]">
+						<button class="absolute right-0 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-white/60 lg:h-[1.875rem] lg:w-[1.875rem]">
 							<svg class="h-2.5 w-2.5 fill-black">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 							</svg>
 						</button>
 					</div>
-					<div class="home-slider-pagination mt-[1.625rem] flex items-center justify-center gap-[0.875rem] mlg:mt-[0.625rem] mlg:gap-[0.5rem]">
+					<div class="home-slider-pagination lg:mt-6.5 flex items-center justify-center lg:gap-3.5 mt-2.5 gap-2">
 						<!-- при натяжці span видалити так як це генерує swiper -->
 
 						<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>
@@ -2636,31 +2440,31 @@
 					<div class="auto-rows-[minmax(0px, auto)] mt-4 grid grid-cols-2 gap-x-1.5 gap-y-1.5 md:grid-cols-3 md:gap-x-4 lg:mt-11 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-[3.75rem] xl:gap-y-8">
 						<a href="#" class="flex flex-col justify-between group">
 							<div class="flex overflow-hidden">
-								<img class="aspect-square h-full w-full object-cover transition ease-in group-hover:scale-[1.05]" src="img/blog-img001.jpg" alt="blog001" />
+								<img class="object-cover w-full h-full transition ease-in aspect-square group-hover:gap-3.5" src="img/blog-img001.jpg" alt="blog001" />
 							</div>
 							<div class="mt-2.5 text-xs  transition ease-in group-hover:text-purple-800 sm:mt-5 sm:text-lg">Каталог оголошеннь - швидкий зручний пошук</div>
 						</a>
 						<a href="#" class="flex flex-col justify-between group">
 							<div class="flex overflow-hidden">
-								<img class="aspect-square h-full w-full object-cover transition ease-in group-hover:scale-[1.05]" src="img/blog-img002.jpg" alt="blog002" />
+								<img class="object-cover w-full h-full transition ease-in aspect-square group-hover:scale-110" src="img/blog-img002.jpg" alt="blog002" />
 							</div>
 							<div class="mt-2.5 text-xs  transition ease-in group-hover:text-purple-800 sm:mt-5 sm:text-lg">Як купити авто, транспорт на Vamberi?</div>
 						</a>
 						<a href="#" class="flex-col justify-between hidden md:flex group">
 							<div class="flex overflow-hidden">
-								<img class="aspect-square h-full w-full object-cover transition ease-in group-hover:scale-[1.05]" src="img/blog-img003.jpg" alt="blog002" />
+								<img class="object-cover w-full h-full transition ease-in aspect-square group-hover:scale-110" src="img/blog-img003.jpg" alt="blog002" />
 							</div>
 							<div class="mt-2.5 text-xs  transition ease-in group-hover:text-purple-800 sm:mt-5 sm:text-lg">Чому варто вибрати Вамбері.</div>
 						</a>
 						<a href="#" class="flex-col justify-between hidden group lg:flex">
 							<div class="flex overflow-hidden">
-								<img class="aspect-square h-full w-full object-cover transition ease-in group-hover:scale-[1.05]" src="img/blog-img002.jpg" alt="blog002" />
+								<img class="object-cover w-full h-full transition ease-in aspect-square group-hover:scale-110" src="img/blog-img002.jpg" alt="blog002" />
 							</div>
 							<div class="mt-2.5 text-xs  transition ease-in group-hover:text-purple-800 sm:mt-5 sm:text-lg">Як купити авто, транспорт на Vamberi?</div>
 						</a>
 						<a href="#" class="flex-col justify-between hidden group xl:flex">
 							<div class="flex overflow-hidden">
-								<img class="aspect-square h-full w-full object-cover transition ease-in group-hover:scale-[1.05]" src="img/blog-img003.jpg" alt="blog002" />
+								<img class="object-cover w-full h-full transition ease-in aspect-square group-hover:scale-110" src="img/blog-img003.jpg" alt="blog002" />
 							</div>
 							<div class="mt-2.5 text-xs  transition ease-in group-hover:text-purple-800 sm:mt-5 sm:text-lg">Чому варто вибрати Вамбері.</div>
 						</a>
@@ -2679,10 +2483,10 @@
 							<p class="underline decoration-tundora decoration-dashed decoration-[0.25px] underline-offset-4 transition ease-in group-hover:decoration-purple-800">Читати повністю</p>
 						</a>
 					</div>
-					<div class="mt-[0.9375rem] sm:hidden">
-						<p class="text-xs leading-[166%]">Дошка оголошень Vamberi — майданчик, який заощаджує час пошуку необхідних спеціалістів, товарів, послуг. А ще це міс це, де пер евірені магазини можуть знайти нових вдячних клієнтів.</p>
+					<div class="mt-4 sm:hidden">
+						<p class="text-xs leading-5">Дошка оголошень Vamberi — майданчик, який заощаджує час пошуку необхідних спеціалістів, товарів, послуг. А ще це міс це, де пер евірені магазини можуть знайти нових вдячних клієнтів.</p>
 
-						<div class="mt-[0.9375rem]">
+						<div class="mt-4">
 							<a class="items-center text-xs transition ease-in group text-tundora hover:text-purple-800" href="#">
 								<p class="underline decoration-tundora decoration-dashed decoration-[0.25px] underline-offset-4 transition ease-in group-hover:decoration-purple-800">Читати повністю</p>
 							</a>
