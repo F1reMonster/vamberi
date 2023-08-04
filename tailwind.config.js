@@ -122,7 +122,9 @@ module.exports = {
 			borderRadius: {
 				"emd": "0.3125rem", // 5px
 				"lge": "0.625rem", // 10px
+				"xle": "0.9375rem", // 15px
 				"2lge": "1.25rem", // 20px
+				"4xle": "2.1875rem", // 35px
 				"6md": "2.25rem", // 36px
 			},
 			"margin": {
