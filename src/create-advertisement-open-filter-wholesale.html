@@ -502,13 +502,17 @@
 									<!-- mobile -->
 									<div class="lg:hidden">
 										<div class="mt-5 text-xs font-medium sm:text-lg">Тип продажу і ціна</div>
-										<div class="mt-3.5">
-											<button class="relative w-full rounded-lge bg-white p-3">
+										<div class="mt-3.5  relative z-30">
+											<button class="relative w-full rounded-bl-0 rounded-br-0 rounded-tl-lge rounded-tr-lge bg-white p-3">
 												<div class="line-clamp-1 text-ellipsis pr-5 text-left text-xs text-dusty-gray">Роздріб, 00грн</div>
-												<svg class="absolute right-3 top-3 h-4 w-4 fill-dusty-gray">
+												<svg class="absolute right-3 top-3 h-4 w-4 fill-dusty-gray rotate-180">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 												</svg>
 											</button>
+
+											<div class="lg:hidden">
+												@@include("html/components/_filter-mobile-rw.html", {})
+											</div>
 										</div>
 									</div>
 									<!-- ./mobile -->
@@ -523,7 +527,7 @@
 										<!-- при відкритті відалити класс rounded-lge, додати класи  rounded-bl-0 rounded-br-0 rounded-tl-lge rounded-tr-lge -->
 										<button class="rounded-bl-0 rounded-br-0 relative w-full rounded-tl-lge rounded-tr-lge bg-white p-3">
 											<div class="line-clamp-1 text-ellipsis pr-5 text-left text-xs text-dusty-gray">Оберіть категорію</div>
-											<svg class="absolute right-3 top-3 h-4 w-4 rotate-180 fill-dusty-gray">
+											<svg class="absolute right-3 top-3 h-4 w-4 fill-dusty-gray">
 												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 											</svg>
 										</button>
