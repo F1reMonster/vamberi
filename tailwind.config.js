@@ -65,6 +65,13 @@ module.exports = {
 				"waikawa-gray": "#5C78AC", // відтінок синього → text
 				"limeade": "#679B00", // салатовий → text
 				"persian-red": "#CA392D", // відтінок червого
+				"cornflower-blue": "#807FFE", // статус товару "На модераціїї"
+				"japanese-laurel": "#008001", // статус товару "Опубліковано"
+				"pumpkin": " #FF7E23", // статус товару "Чернетка "
+				"custom-gray": "#7F7F7F", // статус товару "Приховано"
+				"crimson": "#ED1B24", // статус товару "Відхидено"
+				"cerulean": "#00A3E8", // статус товару "Видалено"
+				
 				
 				
 
@@ -118,6 +125,8 @@ module.exports = {
 				strelka_up: 'url("@/img/strelka_up.svg")',
 				strelka_down: 'url("@/img/strelka_down.svg")',
 				banner: "linear-gradient(90.77deg, #FFE6E6 1.76%, #F7CCC8 92.9%)",
+				"gradient-pink": "linear-gradient(0deg, #424242, #424242), linear-gradient(90.77deg, #FFE6E6 1.76%, #F7CCC8 92.9%)",
+				
 			},
 			borderRadius: {
 				"emd": "0.3125rem", // 5px
