@@ -635,89 +635,56 @@
 	<div class="fixed inset-0 transition-opacity bg-opacity-75 bg-shark/60"></div>
 
 	<div class="fixed inset-0 z-10 overflow-y-auto">
-		<div class="flex min-h-full items-center justify-center p-[0.9375rem]">
-			<div class="relative flex w-full transform flex-col overflow-hidden rounded-lge bg-white py-7.5 px-2.5 lg:p-7.5 transition-all sm:w-[1060px]">
-				<button class="absolute z-10 flex items-center justify-center w-5 h-5 p-0 ml-auto top-4 right-4 md:right-5 md:top-5" aria-label="Закрити модальне вікно">
-					<svg class="w-4 h-4 md:w-5 md:h-5 fill-tundora">
+		<div class="flex items-center justify-center min-h-full p-4">
+			<div class="relative flex w-full transform flex-col overflow-hidden rounded-2lge bg-white px-4 py-7.5 transition-all sm:w-[752px] sm:px-7.5 sm:py-5">
+				<button class="absolute z-10 flex items-center justify-center w-5 h-5 p-0 ml-auto right-4 top-4 md:right-5 md:top-5" aria-label="Закрити модальне вікно">
+					<svg class="w-4 h-4 fill-tundora md:h-5 md:w-5">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
 					</svg>
 				</button>
 				<div>
-					<h2 class="text-base font-medium text-center md:text-xl">Кошик товарів</h2>
-					<div class="mt-6 md:mt-[1.875rem] rounded-lge border border-dusty-gray md:p-3 p-2.5">
-						<div class="relative">
-							<div class="flex items-start justify-between gap-2.5 md:flex-row flex-col">
-								<div class="flex gap-2.5 sm:gap-[0.9375rem]">
-									<div class="w-[7.5rem] h-[5.9375rem]  md:h-[6.75rem] md:w-[9.375rem] overflow-hidden rounded-[0.9375rem] flex-shrink-0">
-										<img class="object-cover w-full h-full" src="img/product-card/product001-001.jpg" alt="Lenovo ideapad 330-15ikb" />
-									</div>
-									<div class="font-medium max-w-[21.25rem]">
-										<h3 class="text-xs md:text-[1.125rem] text-shark text-ellipsis line-clamp-2">Lenovo ideapad 330-15ikb</h3>
-										<p class="mt-2 text-xs md:text-base text-royal-blue">Макс</p>
-										<div class="flex items-center gap-1 sm:gap-1.5 lg:hidden mt-[0.9375rem]">
-											<svg class="flex-shrink-0 w-4 h-4 md:w-5 md:h-5">
-												<use xlink:href="img/svg/sprites/sprite-icons.svg#wallet2"></use>
-											</svg>
-											<p class="text-xs md:text-base">Оплата онлайн</p>
-										</div>
-									</div>
+					<h2 class="text-sm font-medium text-center md:text-lg">Вкажіть причину видалення товару</h2>
+
+					<label class="flex items-center cursor-pointer sm:gap-5 mt-7 gap-3.5">
+						<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray bg-wild-sand">
+							<input type="radio" name="reason" class="hidden peer" checked />
+							<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 shadow-radio-modal transition ease-in peer-checked:opacity-100"></div>
+						</div>
+						<div class="text-xs sm:text-sm text-tundora">Товара немає в наявності</div>
+					</label>
+					<label class="flex items-center mt-3 gap-3.5 cursor-pointer sm:gap-5">
+						<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray bg-wild-sand">
+							<input type="radio" name="reason" class="hidden peer" />
+							<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 shadow-radio-modal transition ease-in peer-checked:opacity-100"></div>
+						</div>
+						<div class="text-xs sm:text-sm text-tundora">Покупець змінив рішення</div>
+					</label>
+					<div class="mt-4 text-xs font-medium text-tall-poppy sm:text-base">Тут ви можете вказати причину скасування замовлення</div>
+					<div class="mt-5 h-[157px] w-full rounded-lge border border-lavender-purple px-5 py-3.5">
+						<div class="flex w-full h-full ">
+							<div class="flex w-full gap-4 sm:items-center sm:mt-auto fill-lavender-purple">
+								<div class="flex items-end h-full">
+									<svg class="flex-shrink-0 w-4 h-4 fill-lavender-purple sm:h-8 sm:w-8">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#message"></use>
+									</svg>
 								</div>
 
-								<div class="flex justify-between w-full md:w-auto gap-1 sm:gap-4 md:flex-col md:items-end lg:items-center lg:flex-row lg:max-w-[434px] lg:w-full">
-									
-									<div class="flex items-center gap-1.5 sm:gap-[0.875rem] flex-shrink-0">
-										<button class="flex h-8 w-8 items-center justify-center rounded-[0.3125rem] border border-dusty-gray text-[1.25rem] text-shark transition ease-in hover:text-white hover:bg-lavender-purple">-</button>
-										<input type="text" value="1" class="block w-[1.375rem] text-[1.125rem] border-0 p-0 text-center" readonly />
-										<button class="flex h-8 w-8 items-center justify-center rounded-[0.3125rem] border border-dusty-gray text-[1.25rem] text-shark transition ease-in hover:text-white hover:bg-lavender-purple">+</button>
-									</div>
-	
-									<div class="flex flex-col flex-grow md:flex-shrink-0 sm:block">
-										<div class="flex gap-1 md:gap-2 text-xs md:text-[1.125rem] flex-shrink-0 whitespace-nowrap text-right items-center flex-wrap justify-end"><span class=" justify-self-end">Роздріб:</span> <span class="text-sm font-semibold md:text-[1.125rem] justify-self-end ">2, 299, 999 грн.</span></div>
-										<div class="decoration mt-[0.3125rem] text-right text-[0.625rem] md:text-xs text-dusty-gray line-through">8,300 грн.</div>
-									</div>
+								<div class="flex-grow pb-5 -ml-8 -mr-8 sm:m-0 sm:pb-0">
+									<input class="w-full min-h-0 p-0 text-xs align-bottom border-0 ring-0 placeholder:text-xs placeholder:text-dusty-gray focus:ring-0 sm:text-sm sm:placeholder:text-sm" placeholder="Ваше повідомлення..." />
 								</div>
-							</div>
-							
-							<div class="mt-5 lg:absolute bottom-0 flex items-center justify-between lg:pl-[10.3125rem] text-xs sm:text-base w-full sm:gap-20 md:gap-32 flex-wrap lg:gap-11 sm:flex-row flex-col gap-5">
-								<div class="lg:flex items-center gap-1.5 hidden">
-									<svg class="w-5 h-5">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#wallet2"></use>
-									</svg>
-									<p>Оплата онлайн</p>
-								</div>
-								<div class="flex justify-between flex-grow w-full sm:w-auto">
-									<div>Код товару: <span class="font-semibold">119954759</span></div>
-									<div>ID: <span class="font-semibold">45475541 </span></div>
-								</div>
-								<div class="flex justify-between flex-grow w-full sm:w-auto">
-									
-									<div>Всього: <span class="font-bold">8000 грн</span></div>
-									<div class="flex gap-4">
-										<button class="group" aria-label="Додати до улюблених">
-											<svg class="w-5 h-5 transition ease-linear group-hover:fill-lavender-purple">
-												<use xlink:href="img/svg/sprites/sprite-icons.svg#heart2"></use>
-											</svg>
-										</button>
-										<button class="group" aria-label="Видалити з кошика">
-											<svg class="w-5 h-5 transition ease-linear group-hover:fill-pomegranate">
-												<use xlink:href="img/svg/sprites/sprite-icons.svg#bin"></use>
-											</svg>
-										</button>
-									</div>
+								<div class="z-10 flex items-end h-full sm:hidden">
+									<button>
+										<svg class="flex-shrink-0 w-4 h-4 fill-lavender-purple sm:h-6 sm:w-6">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#message-send"></use>
+										</svg>
+									</button>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="flex justify-center mt-[2.1875rem] gap-5 lg:gap-[1.5625rem] lg:flex-row flex-col items-center">
-
-						<div class="flex">
-							<a href="#" class="flex justify-center btn-primary-light items-center h-11 min-w-[15rem]">Продовжити покупки</a>
-						</div>
-						<div class="flex">
-							<a href="#" class="flex justify-center btn-primary-light items-center h-11 min-w-[15rem]">Перейти у кошик</a>
-						</div>
-						<div class="flex">
-							<a href="#" class="flex justify-center btn-primary-light items-center h-11 min-w-[15rem]">Купити зараз</a>
+					<div class="flex justify-end mt-4">
+						<div class="w-full sm:w-auto">
+							<button class="text-sm btn-pink min-w-[220px] h-9 sm:w-auto w-full">Відправити</button>
 						</div>
 					</div>
 				</div>

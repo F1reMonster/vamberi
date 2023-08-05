@@ -115,6 +115,7 @@ module.exports = {
 				"white": "0 0 0 1px #fff",
 				'dusty-gray': "0 0 0 1px #999494",
 				'lavender-purple': "0 0 0 1px #8B7AA8",
+				'radio-modal': "0 0 0 2px #fff",
 			},
 			dropShadow: {
 				"text": "box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25)",
