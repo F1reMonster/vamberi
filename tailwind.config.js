@@ -116,6 +116,14 @@ module.exports = {
 				'dusty-gray': "0 0 0 1px #999494",
 				'lavender-purple': "0 0 0 1px #8B7AA8",
 				'radio-modal': "0 0 0 2px #fff",
+				'cornflower-blue': "0 0 0 0.5px #807FFE",  // статус товару "На модераціїї"
+				"lavender-purple": "0 0 0 0.5px ##8B7AA8", // статус товару "Опубліковано"
+				"japanese-laurel": "0 0 0 0.5px #008001", // статус товару "Опубліковано"
+				"pumpkin": "0 0 0 0.5px #FF7E23", // статус товару "Чернетка "
+				"custom-gray": "0 0 0 0.5px #7F7F7F", // статус товару "Приховано"
+				"crimson": "0 0 0 0.5px #ED1B24", // статус товару "Відхидено"
+				"cerulean": "0 0 0 0.5px #00A3E8", // статус товару "Видалено"
+				"shark": "0 0 0 0.5px #212529", // відтінок сірого
 			},
 			dropShadow: {
 				"text": "box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25)",
