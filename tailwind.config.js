@@ -24,6 +24,22 @@ module.exports = {
 			center: true,
 			xsm: "18.75rem",
 		},
+		fontSize: {
+			"xs": ["0.75rem", "121%"], // 12px
+			"sm": ["0.875rem", "121%"], // 14px
+			"base": ["1rem", "121%"], // 16px
+			"lg": ["1.125rem", "121%"], // 18px
+			"xl": ["1.25rem", "121%"], // 20px
+			"2xl": ["1.5rem", "121%"], // 24px
+			"3xl": ["1.25rem", "121%"], // 30px
+			"4xl": ["2.25rem", "121%"], // 36px
+			"5xl": ["3rem", "121%"], // 48px
+			"6xl": ["3.75rem", "121%"],  // 60px
+			"7xl": ["4.5rem", "121%"],  // 72px
+			"8xl": ["6rem", "121%"],  // 96px
+			"9xl": ["8rem", "121%"],  // 128px
+		
+		},
 		extend: {
 			screens: {
 				// mxxl: { max: "77.4375em" }, // 1239
@@ -137,12 +153,14 @@ module.exports = {
 				"crimson": "0 0 0 0.5px #ED1B24", // статус товару "Відхидено"
 				"cerulean": "0 0 0 0.5px #00A3E8", // статус товару "Видалено"
 				"shark": "0 0 0 0.5px #212529", // відтінок сірого
+				"deep-blush": "0 0 0 0.5px #E358A6", // відтінок розового
 				
 
 			},
 			dropShadow: {
 				"text": "box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25)",
-				'filter-dropdown': "0px 5px 5px rgba(33, 37, 41, 0.50)"
+				'filter-dropdown': "0px 5px 5px rgba(33, 37, 41, 0.50)",
+				'slider-button': "0px 4px 4px rgba(66, 66, 66, 0.15)",
 			},
 			backgroundImage: {
 				send: 'url("@/img/send.svg")',
