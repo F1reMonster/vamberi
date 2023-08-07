@@ -77,7 +77,7 @@
 				
 				<input type="text" class="flex-grow p-0 text-sm border-none placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
 				<button class="btn-primary rounded-lge lg:px-5 py-2.5 px-3.5">
-					<span class="hidden lg:block text-sm">Пошук</span>
+					<span class="hidden text-sm lg:block">Пошук</span>
 					<svg class="block w-4 h-4 fill-white lg:hidden">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
 					</svg>
@@ -90,7 +90,7 @@
 				<a href="#" class="flex-col items-center hidden gap-1 transition ease-in lg:flex group text-lavender-purple hover:text-purple-800" title="Увійти">
 					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
 						
-						<svg class="sm:w-5 h-4 sm:h-5 w-4 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
+						<svg class="w-4 h-4 transition ease-in sm:w-5 sm:h-5 fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
 						</svg>
 						
@@ -103,9 +103,8 @@
 
 				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 " title="Кошик">
 					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
-						<!-- <img class="h-5 w-5 transition ease-in group-hover:scale-[1.1]" src="img/svg/cart.svg" alt="Кошик" /> -->
-						<svg class="sm:w-5 h-4 sm:h-5 w-4 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
-							<use xlink:href="img/svg/sprites/sprite-icons.svg#cart"></use>
+						<svg class="w-4 h-4 transition ease-in sm:w-5 sm:h-5 fill-lavender-purple group-hover:fill-purple-800">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#basket"></use>
 						</svg>
 					</span>
 					<span class="hidden xl:block">Кошик</span>
@@ -113,7 +112,7 @@
 				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800" title="Обране">
 					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
 						
-						<svg class="sm:w-5 h-4 sm:h-5 w-4 transition ease-in fill-lavender-purple group-hover:fill-purple-800">
+						<svg class="w-4 h-4 transition ease-in sm:w-5 sm:h-5 fill-lavender-purple group-hover:fill-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 						</svg>
 					</span>
@@ -122,12 +121,12 @@
 				<a href="#" class="flex-col items-center hidden gap-1 transition ease-in lg:flex group text-lavender-purple hover:text-purple-800" title="Сповіщення">
 					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
 						<!--  якщо є сповіщення додаємо класс hidden -->
-						<svg class="sm:w-5 h-4 sm:h-5 w-4 transition ease-in fill-transparent stroke-lavender-purple group-hover:stroke-purple-800">
+						<svg class="w-4 h-4 transition ease-in sm:w-5 sm:h-5 fill-transparent stroke-lavender-purple group-hover:stroke-purple-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
 						</svg>
 
 						<!--  якщо є сповіщення видяляємо класс hidden -->
-						<svg class="hidden sm:w-5 h-4 sm:h-5 w-4 transition ease-in fill-tall-poppy stroke-tall-poppy group-hover:fill-pink-800">
+						<svg class="hidden w-4 h-4 transition ease-in sm:w-5 sm:h-5 fill-tall-poppy stroke-tall-poppy group-hover:fill-pink-800">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
 						</svg>
 					</span>
@@ -560,9 +559,9 @@
 						<!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		 
-		<svg class="h-4 w-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart-solid"></use>
 		</svg>
 		
@@ -571,7 +570,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -581,15 +580,15 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/photo_2023-07-29_22-15-03.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/photo_2023-07-29_22-15-03.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">-40%</div>
 		 
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -597,19 +596,21 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, deleniti.</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="text-ms text-dove-gray line-through decoration-dove-gray sm:text-base sm:ml-0 ml-4">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Компактний триммер для волосся, машинка для стрижки бороди Kemei KM-666</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+						<div class="ml-4 line-through text-sm text-dove-gray decoration-dove-gray sm:text-base sm:ml-0">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					
 
@@ -619,28 +620,28 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
-					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
+				<div class="flex items-center justify-center gap-1 mt-1">
+					<div class="text-limeade text-sm text-center sm:text-left">Готовий до відправки</div>
+					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5 sm:block hidden" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -651,7 +652,7 @@
 
 					
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Новий</p>
+					<p class="text-sm xl:pr-4 text-shark">Новий</p>
 
 					 
 				</div>
@@ -664,9 +665,9 @@
 <!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		
-		<svg class="h-4 w-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 		</svg>
 		 
@@ -675,7 +676,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -685,15 +686,15 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/photo_2023-07-29_22-17-00.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/photo_2023-07-29_22-17-00.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">-40%</div>
 		 
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -701,19 +702,21 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Шкаф кровать трансформер</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">100999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="text-ms text-dove-gray line-through decoration-dove-gray sm:text-base sm:ml-0 ml-4">120999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Шкаф кровать трансформер</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">100999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+						<div class="ml-4 line-through text-sm text-dove-gray decoration-dove-gray sm:text-base sm:ml-0">120999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					
 
@@ -723,28 +726,28 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
-					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
+				<div class="flex items-center justify-center gap-1 mt-1">
+					<div class="text-limeade text-sm text-center sm:text-left">Готовий до відправки</div>
+					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5 sm:block hidden" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -755,7 +758,7 @@
 
 					
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Новий</p>
+					<p class="text-sm xl:pr-4 text-shark">Новий</p>
 
 					 
 				</div>
@@ -768,9 +771,9 @@
 <!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		 
-		<svg class="h-4 w-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart-solid"></use>
 		</svg>
 		
@@ -779,7 +782,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -789,15 +792,15 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/goods/4.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/goods/4.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">-40%</div>
 		 
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -805,46 +808,48 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, deleniti.</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="text-ms text-dove-gray line-through decoration-dove-gray sm:text-base sm:ml-0 ml-4">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Сушилка для овочів і фруктів Беломо 8360.01 (без лотка для пастіли)</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+						<div class="ml-4 line-through text-sm text-dove-gray decoration-dove-gray sm:text-base sm:ml-0">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					 
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
-					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
+				<div class="flex items-center justify-center gap-1 mt-1">
+					<div class="text-limeade text-sm text-center sm:text-left">Готовий до відправки</div>
+					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5 sm:block hidden" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -855,7 +860,7 @@
 
 					
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Новий</p>
+					<p class="text-sm xl:pr-4 text-shark">Новий</p>
 
 					 
 				</div>
@@ -868,9 +873,9 @@
 <!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		
-		<svg class="h-4 w-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 		</svg>
 		 
@@ -879,7 +884,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -889,8 +894,8 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/goods/1.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/goods/1.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		 
 		<button class="group/btn absolute left-1 top-[calc(50%-0.25rem)] z-20 flex h-5 w-5 items-center justify-center rounded-full bg-white/60 transition ease-in hover:bg-lavender-purple sm:left-3 lg:h-7.5 lg:w-7.5">
 			<svg class="h-2.5 w-2.5 fill-black transition ease-in group-hover/btn:fill-white">
@@ -906,7 +911,7 @@
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -914,17 +919,19 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Шкаф кровать трансформер</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Шкаф кровать трансформер</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					
 
@@ -934,28 +941,28 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
-					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
+				<div class="flex items-center justify-center gap-1 mt-1">
+					<div class="text-limeade text-sm text-center sm:text-left">Готовий до відправки</div>
+					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5 sm:block hidden" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -966,7 +973,7 @@
 
 					 
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Б/в</p>
+					<p class="text-sm xl:pr-4 text-shark">Б/в</p>
 
 					
 				</div>
@@ -979,9 +986,9 @@
 <!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		 
-		<svg class="h-4 w-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart-solid"></use>
 		</svg>
 		
@@ -990,7 +997,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -1000,15 +1007,15 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/goods/2.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/goods/2.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">-40%</div>
 		 
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -1016,19 +1023,21 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Супер товар</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="text-ms text-dove-gray line-through decoration-dove-gray sm:text-base sm:ml-0 ml-4">1199 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Супер товар</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+						<div class="ml-4 line-through text-sm text-dove-gray decoration-dove-gray sm:text-base sm:ml-0">1199 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					
 
@@ -1038,25 +1047,25 @@
 				</div>
 
 				 
-				<div class="mt-1 text-center text-ms text-pomegranate sm:text-sm lg:text-sm">Під замовлення 5 днів</div>
+				<div class="mt-1 text-center text-pomegranate text-xs sm:text-sm">Під замовлення 5 днів</div>
 				
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -1067,7 +1076,7 @@
 
 					
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Новий</p>
+					<p class="text-sm xl:pr-4 text-shark">Новий</p>
 
 					 
 				</div>
@@ -1106,9 +1115,9 @@
 						<!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		 
-		<svg class="h-4 w-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart-solid"></use>
 		</svg>
 		
@@ -1117,7 +1126,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -1127,15 +1136,15 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/photo_2023-07-29_22-15-03.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/photo_2023-07-29_22-15-03.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">-40%</div>
 		 
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -1143,19 +1152,21 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, deleniti.</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="text-ms text-dove-gray line-through decoration-dove-gray sm:text-base sm:ml-0 ml-4">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Компактний триммер для волосся, машинка для стрижки бороди Kemei KM-666</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+						<div class="ml-4 line-through text-sm text-dove-gray decoration-dove-gray sm:text-base sm:ml-0">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					
 
@@ -1165,28 +1176,28 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
-					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
+				<div class="flex items-center justify-center gap-1 mt-1">
+					<div class="text-limeade text-sm text-center sm:text-left">Готовий до відправки</div>
+					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5 sm:block hidden" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -1197,7 +1208,7 @@
 
 					
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Новий</p>
+					<p class="text-sm xl:pr-4 text-shark">Новий</p>
 
 					 
 				</div>
@@ -1210,9 +1221,9 @@
 <!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		
-		<svg class="h-4 w-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 		</svg>
 		 
@@ -1221,7 +1232,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -1231,15 +1242,15 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/photo_2023-07-29_22-17-00.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/photo_2023-07-29_22-17-00.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">-40%</div>
 		 
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -1247,19 +1258,21 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Шкаф кровать трансформер</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">100999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="text-ms text-dove-gray line-through decoration-dove-gray sm:text-base sm:ml-0 ml-4">120999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Шкаф кровать трансформер</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">100999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+						<div class="ml-4 line-through text-sm text-dove-gray decoration-dove-gray sm:text-base sm:ml-0">120999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					
 
@@ -1269,28 +1282,28 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
-					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
+				<div class="flex items-center justify-center gap-1 mt-1">
+					<div class="text-limeade text-sm text-center sm:text-left">Готовий до відправки</div>
+					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5 sm:block hidden" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -1301,7 +1314,7 @@
 
 					
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Новий</p>
+					<p class="text-sm xl:pr-4 text-shark">Новий</p>
 
 					 
 				</div>
@@ -1314,9 +1327,9 @@
 <!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		 
-		<svg class="h-4 w-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart-solid"></use>
 		</svg>
 		
@@ -1325,7 +1338,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -1335,15 +1348,15 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/goods/4.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/goods/4.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">-40%</div>
 		 
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -1351,46 +1364,48 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, deleniti.</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="text-ms text-dove-gray line-through decoration-dove-gray sm:text-base sm:ml-0 ml-4">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Сушилка для овочів і фруктів Беломо 8360.01 (без лотка для пастіли)</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+						<div class="ml-4 line-through text-sm text-dove-gray decoration-dove-gray sm:text-base sm:ml-0">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					 
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
-					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
+				<div class="flex items-center justify-center gap-1 mt-1">
+					<div class="text-limeade text-sm text-center sm:text-left">Готовий до відправки</div>
+					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5 sm:block hidden" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -1401,7 +1416,7 @@
 
 					
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Новий</p>
+					<p class="text-sm xl:pr-4 text-shark">Новий</p>
 
 					 
 				</div>
@@ -1414,9 +1429,9 @@
 <!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		
-		<svg class="h-4 w-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 		</svg>
 		 
@@ -1425,7 +1440,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -1435,8 +1450,8 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/goods/1.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/goods/1.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		 
 		<button class="group/btn absolute left-1 top-[calc(50%-0.25rem)] z-20 flex h-5 w-5 items-center justify-center rounded-full bg-white/60 transition ease-in hover:bg-lavender-purple sm:left-3 lg:h-7.5 lg:w-7.5">
 			<svg class="h-2.5 w-2.5 fill-black transition ease-in group-hover/btn:fill-white">
@@ -1452,7 +1467,7 @@
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -1460,17 +1475,19 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Шкаф кровать трансформер</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Шкаф кровать трансформер</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					
 
@@ -1480,28 +1497,28 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
-					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
+				<div class="flex items-center justify-center gap-1 mt-1">
+					<div class="text-limeade text-sm text-center sm:text-left">Готовий до відправки</div>
+					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5 sm:block hidden" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -1512,7 +1529,7 @@
 
 					 
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Б/в</p>
+					<p class="text-sm xl:pr-4 text-shark">Б/в</p>
 
 					
 				</div>
@@ -1525,9 +1542,9 @@
 <!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		 
-		<svg class="h-4 w-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart-solid"></use>
 		</svg>
 		
@@ -1536,7 +1553,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -1546,15 +1563,15 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/goods/2.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/goods/2.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">-40%</div>
 		 
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -1562,19 +1579,21 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Супер товар</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="text-ms text-dove-gray line-through decoration-dove-gray sm:text-base sm:ml-0 ml-4">1199 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Супер товар</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+						<div class="ml-4 line-through text-sm text-dove-gray decoration-dove-gray sm:text-base sm:ml-0">1199 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					
 
@@ -1584,25 +1603,25 @@
 				</div>
 
 				 
-				<div class="mt-1 text-center text-ms text-pomegranate sm:text-sm lg:text-sm">Під замовлення 5 днів</div>
+				<div class="mt-1 text-center text-pomegranate text-xs sm:text-sm">Під замовлення 5 днів</div>
 				
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -1613,7 +1632,7 @@
 
 					
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Новий</p>
+					<p class="text-sm xl:pr-4 text-shark">Новий</p>
 
 					 
 				</div>
@@ -1652,9 +1671,9 @@
 						<!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		 
-		<svg class="h-4 w-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart-solid"></use>
 		</svg>
 		
@@ -1663,7 +1682,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -1673,15 +1692,15 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/photo_2023-07-29_22-15-03.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/photo_2023-07-29_22-15-03.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">-40%</div>
 		 
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -1689,19 +1708,21 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, deleniti.</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="text-ms text-dove-gray line-through decoration-dove-gray sm:text-base sm:ml-0 ml-4">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Компактний триммер для волосся, машинка для стрижки бороди Kemei KM-666</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+						<div class="ml-4 line-through text-sm text-dove-gray decoration-dove-gray sm:text-base sm:ml-0">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					
 
@@ -1711,28 +1732,28 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
-					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
+				<div class="flex items-center justify-center gap-1 mt-1">
+					<div class="text-limeade text-sm text-center sm:text-left">Готовий до відправки</div>
+					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5 sm:block hidden" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -1743,7 +1764,7 @@
 
 					
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Новий</p>
+					<p class="text-sm xl:pr-4 text-shark">Новий</p>
 
 					 
 				</div>
@@ -1756,9 +1777,9 @@
 <!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		
-		<svg class="h-4 w-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 		</svg>
 		 
@@ -1767,7 +1788,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -1777,15 +1798,15 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/photo_2023-07-29_22-17-00.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/photo_2023-07-29_22-17-00.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">-40%</div>
 		 
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -1793,19 +1814,21 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Шкаф кровать трансформер</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">100999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="text-ms text-dove-gray line-through decoration-dove-gray sm:text-base sm:ml-0 ml-4">120999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Шкаф кровать трансформер</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">100999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+						<div class="ml-4 line-through text-sm text-dove-gray decoration-dove-gray sm:text-base sm:ml-0">120999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					
 
@@ -1815,28 +1838,28 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
-					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
+				<div class="flex items-center justify-center gap-1 mt-1">
+					<div class="text-limeade text-sm text-center sm:text-left">Готовий до відправки</div>
+					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5 sm:block hidden" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -1847,7 +1870,7 @@
 
 					
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Новий</p>
+					<p class="text-sm xl:pr-4 text-shark">Новий</p>
 
 					 
 				</div>
@@ -1860,9 +1883,9 @@
 <!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		 
-		<svg class="h-4 w-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart-solid"></use>
 		</svg>
 		
@@ -1871,7 +1894,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -1881,15 +1904,15 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/goods/4.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/goods/4.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">-40%</div>
 		 
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -1897,46 +1920,48 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, deleniti.</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="text-ms text-dove-gray line-through decoration-dove-gray sm:text-base sm:ml-0 ml-4">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Сушилка для овочів і фруктів Беломо 8360.01 (без лотка для пастіли)</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+						<div class="ml-4 line-through text-sm text-dove-gray decoration-dove-gray sm:text-base sm:ml-0">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					 
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
-					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
+				<div class="flex items-center justify-center gap-1 mt-1">
+					<div class="text-limeade text-sm text-center sm:text-left">Готовий до відправки</div>
+					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5 sm:block hidden" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -1947,7 +1972,7 @@
 
 					
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Новий</p>
+					<p class="text-sm xl:pr-4 text-shark">Новий</p>
 
 					 
 				</div>
@@ -1960,9 +1985,9 @@
 <!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		
-		<svg class="h-4 w-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 		</svg>
 		 
@@ -1971,7 +1996,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -1981,8 +2006,8 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/goods/1.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/goods/1.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		 
 		<button class="group/btn absolute left-1 top-[calc(50%-0.25rem)] z-20 flex h-5 w-5 items-center justify-center rounded-full bg-white/60 transition ease-in hover:bg-lavender-purple sm:left-3 lg:h-7.5 lg:w-7.5">
 			<svg class="h-2.5 w-2.5 fill-black transition ease-in group-hover/btn:fill-white">
@@ -1998,7 +2023,7 @@
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -2006,17 +2031,19 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Шкаф кровать трансформер</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Шкаф кровать трансформер</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					
 
@@ -2026,28 +2053,28 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-ms text-limeade sm:text-sm lg:text-sm">Готовий до відправки</div>
-					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
+				<div class="flex items-center justify-center gap-1 mt-1">
+					<div class="text-limeade text-sm text-center sm:text-left">Готовий до відправки</div>
+					<img class="h-3.5 w-3.5 sm:h-5 sm:w-5 sm:block hidden" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -2058,7 +2085,7 @@
 
 					 
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Б/в</p>
+					<p class="text-sm xl:pr-4 text-shark">Б/в</p>
 
 					
 				</div>
@@ -2071,9 +2098,9 @@
 <!-- card -->
 <div class="group relative flex w-35 flex-shrink-0 sm:w-[16.875rem]">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute z-20 transition ease-in opacity-100 right-3 top-3 group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
 		 
-		<svg class="h-4 w-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
+		<svg class="w-4 h-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart-solid"></use>
 		</svg>
 		
@@ -2082,7 +2109,7 @@
 
 	<!-- buy button -->
 
-	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block">
+	<div class="absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:opacity-100 lg:block pointer-events-none group-hover:pointer-events-auto">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
 			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
@@ -2092,15 +2119,15 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
-		<img src="img/goods/2.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+	<div class="absolute top-1 z-10 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+		<img src="img/goods/2.jpg" alt="" class="object-cover w-full h-full rounded-xle" />
 		
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">-40%</div>
 		 
 	</div>
 	<!-- .image -->
 
-	<a class="flex flex-grow flex-col" href="#">
+	<a class="flex flex-col flex-grow" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
 			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
@@ -2108,19 +2135,21 @@
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col break-all rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
-			<div class="mt-1 line-clamp-2 h-8.5 overflow-hidden text-ellipsis text-xs font-medium sm:h-10 sm:text-sm">Супер товар</div>
-			<div class="flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="text-ms text-dove-gray line-through decoration-dove-gray sm:text-base sm:ml-0 ml-4">1199 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
+			
+				<div class="mt-1 line-clamp-2 overflow-hidden text-ellipsis font-medium h-10 text-sm">Супер товар</div>
+				<div class="flex items-center">
+					<div class="relative flex items-center gap-0.5 sm:gap-3">
+						<div class="text-base font-bold sm:text-lg">999 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+						<div class="ml-4 line-through text-sm text-dove-gray decoration-dove-gray sm:text-base sm:ml-0">1199 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
+						
+					</div>
 				</div>
-			</div>
-			<div class="mt-auto flex flex-col">
+			
+			<div class="flex flex-col mt-auto">
 				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
 					
 
@@ -2130,25 +2159,25 @@
 				</div>
 
 				 
-				<div class="mt-1 text-center text-ms text-pomegranate sm:text-sm lg:text-sm">Під замовлення 5 днів</div>
+				<div class="mt-1 text-center text-pomegranate text-xs sm:text-sm">Під замовлення 5 днів</div>
 				
 
-				<div class="mt-1.5 flex flex-wrap items-center justify-center gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
+				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
+					<div class="flex-wrap items-center hidden gap-1 lg:flex">
 						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
+							<svg class="w-3 h-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 							</svg>
 						</div>
@@ -2159,7 +2188,7 @@
 
 					
 
-					<p class="text-ms lg:text-sm xl:pr-4 text-shark">Новий</p>
+					<p class="text-sm xl:pr-4 text-shark">Новий</p>
 
 					 
 				</div>
@@ -2227,7 +2256,7 @@
 
 <!-- ./sticky menu -->
  <!-- footer -->
-<footer class="sticky py-6 text-white bg-tundora lg:py-12.5 z-30">
+<footer class="sticky py-6 text-white bg-tundora lg:py-12.5">
 	<div class="container">
 		<div class="relative">
 			<div class="flex flex-col md:flex-row">

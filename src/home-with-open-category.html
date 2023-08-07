@@ -8,9 +8,10 @@
 	<body class="overflow-auto lg:overflow-hidden lg:overscroll-none lg:touch-none overscroll-auto touch-auto">
 		<!-- для на десктопі при відкритті категорій  -->
 		<!-- на <body> додати класи overflow-hidden overscroll-none touch-none -->
-		@@include('html/components/_header.html') 
+		@@include('html/components/_header.html', {accountMenu: ""}) 
 		@@include('html/_banner-slider.html')
 		@@include('html/components/_category-mobile.html', {hidden: ""})
+		
 
 	
 

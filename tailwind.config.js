@@ -34,8 +34,10 @@ module.exports = {
 				// mxmd: { max: "35.9375em" }, // 575
 				// msm: { max: "30em" }, // 480
 				// mlw: { max: "23.375em" }, // 374
-				lw: "30em", // 480
-				low: "23.4375em", // 375
+				lge: "1100px",
+				xle: "1230px", // 1230
+				lw: "480px", // 480
+				low: "375px", // 375
 			},
 			fontFamily: {
 				montserrat: "Montserrat, sans-serif",
@@ -71,6 +73,12 @@ module.exports = {
 				"custom-gray": "#7F7F7F", // статус товару "Приховано"
 				"crimson": "#ED1B24", // статус товару "Відхидено"
 				"cerulean": "#00A3E8", // статус товару "Видалено"
+				"parchment": "#EFE4D2", // бежевий
+				"jordy-blue": "#82BAF1", // Блакитний 
+				"koromiko": "#FEC169", // жовтий
+				"fruit-salad": "#47935D", // зелений
+				"punch": "#DC3836", // червоний
+				"coral": "#FA8446", // помаранчевий
 				
 				
 				
@@ -114,7 +122,12 @@ module.exports = {
 				"card": "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25), 0 0 0 0.0625rem #999494",
 				"white": "0 0 0 1px #fff",
 				'dusty-gray': "0 0 0 1px #999494",
+				'dusty-gray-mid': "0 0 0 0.5px #999494",
+				'dusty-gray-mid-inset': "inset 0 0 0 0.5px #999494",
+				'dusty-gray-thin': "0 0 0 0.3px #999494",
 				'lavender-purple': "0 0 0 1px #8B7AA8",
+				'lavender-purple-thin': "0 0 0 0.5px #8B7AA8",
+				'lavender-purple-thin-inset': "inset 0 0 0 0.5px #8B7AA8",
 				'radio-modal': "0 0 0 2px #fff",
 				'cornflower-blue': "0 0 0 0.5px #807FFE",  // статус товару "На модераціїї"
 				"lavender-purple": "0 0 0 0.5px ##8B7AA8", // статус товару "Опубліковано"
@@ -124,9 +137,12 @@ module.exports = {
 				"crimson": "0 0 0 0.5px #ED1B24", // статус товару "Відхидено"
 				"cerulean": "0 0 0 0.5px #00A3E8", // статус товару "Видалено"
 				"shark": "0 0 0 0.5px #212529", // відтінок сірого
+				
+
 			},
 			dropShadow: {
 				"text": "box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25)",
+				'filter-dropdown': "0px 5px 5px rgba(33, 37, 41, 0.50)"
 			},
 			backgroundImage: {
 				send: 'url("@/img/send.svg")',
@@ -146,6 +162,7 @@ module.exports = {
 				"6md": "2.25rem", // 36px
 			},
 			"margin": {
+				"fix-shadow": "0.0375rem", // 0.6 px,
 				"4.5": "1.125rem", // 18px
 				"5.5": "1.375rem", // 22px
 				"6.5": "1.625rem", // 26px
@@ -155,6 +172,7 @@ module.exports = {
 				"12.5": "3.125rem", // 50px
 			},
 			padding: {
+				"fix-shadow": "0.0375rem", // 0.6 px,
 				"4.5": "1.125rem", // 18px
 				"5.5": "1.375rem", // 22px
 				"6.5": "1.625rem", // 26px
