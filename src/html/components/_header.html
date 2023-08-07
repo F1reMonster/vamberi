@@ -2,18 +2,16 @@
 <header>
 	<div class="container">
 		<!-- header top -->
-		<div class="justify-between hidden lg:flex pt-9">
+		<div class="hidden justify-between pt-9 lg:flex">
 			<div class="flex items-center">
 				<!-- lang switcher -->
-				<div class="mr-4 xl:mr-10 flex h-10 items-center rounded-2lge bg-deep-blush px-2.5 py-1.5 text-sm transition ease-in ">
-				
-
+				<div class="mr-4 flex h-10 items-center rounded-2lge bg-deep-blush px-2.5 py-1.5 text-sm transition ease-in xl:mr-10">
 					<label class="cursor-pointer">
-						<input type="radio" name="langSite" class="hidden peer" checked />
+						<input type="radio" name="langSite" class="peer hidden" checked />
 						<div class="rounded-lge bg-transparent px-5 py-0.5 text-white transition ease-in peer-checked:bg-white peer-checked:text-shark">Мова</div>
 					</label>
 					<label class="cursor-pointer">
-						<input type="radio" name="langSite" class="hidden peer" />
+						<input type="radio" name="langSite" class="peer hidden" />
 						<div class="rounded-lge bg-transparent px-5 py-0.5 text-white transition ease-in peer-checked:bg-white peer-checked:text-shark">Язык</div>
 					</label>
 				</div>
@@ -25,30 +23,29 @@
 		<!-- ./header top -->
 
 		<!-- header bottom -->
-		<div class="relative mt-5.5 flex items-center justify-between gap-2.5 pb-20 lg:pb-0 lg:gap-0">
-			
+		<div class="relative mt-5.5 flex items-center justify-between gap-2.5 pb-20 lg:gap-0 lg:pb-0">
 			@@accountMenu
-			
+
 			<!-- burger -->
-			<button class="lg:hidden h-7.5 w-7.5 items-center justify-center rounded-full bg-white flex">
-				<svg class="w-4 h-4 fill-black">
+			<button class="flex h-7.5 w-7.5 items-center justify-center rounded-full bg-white lg:hidden">
+				<svg class="h-4 w-4 fill-black">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
 				</svg>
 
-				<svg class="hidden w-4 h-4 fill-black">
+				<svg class="hidden h-4 w-4 fill-black">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
 				</svg>
 			</button>
 			<!-- ./burger -->
 			<!-- logo -->
-			<a href="index.html" title="VamBeri" class="ml-10 mr-0 text-lg font-semibold text-center sm:text-2xl lg:mr-4 xl:mr-10 lg:text-4ms text-lavender-purple lg:text-left lg:ml-0">VamBeri</a>
+			<a href="index.html" title="VamBeri" class="ml-10 mr-0 text-center text-lg font-semibold text-lavender-purple sm:text-2xl lg:ml-0 lg:mr-4 lg:text-left lg:text-4ms xl:mr-10">VamBeri</a>
 			<!-- ./logo -->
 
 			<!-- category dropdown -->
-			<button aria-label="Обрати категорію" class="group xl:mr-8 hidden h-12.5 w-[18.125rem] flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5 mr-4 lg:flex">
+			<button aria-label="Обрати категорію" class="group mr-4 hidden h-12.5 w-[18.125rem] flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5 lg:flex xl:mr-8">
 				<div class="flex items-center gap-3.5">
-					<div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-lg btn-primary">
-						<svg class="w-5 h-5 fill-white">
+					<div class="btn-primary flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg">
+						<svg class="h-5 w-5 fill-white">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#category"></use>
 						</svg>
 					</div>
@@ -63,12 +60,11 @@
 			<!-- ./category dropdown -->
 
 			<!-- search -->
-			<div class="group flex lg:h-12.5 flex-grow items-center lg:gap-4 rounded-lge lg:rounded-2lge bg-white px-2.5 py-1.5 absolute bottom-4 left-0 h-14 w-full gap-2.5 lg:relative lg:bottom-0">
-				
-				<input type="text" class="flex-grow p-0 text-sm border-none placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
-				<button class="btn-primary rounded-lge lg:px-5 py-2.5 px-3.5">
+			<div class="group absolute bottom-4 left-0 flex h-14 w-full flex-grow items-center gap-2.5 rounded-lge bg-white px-2.5 py-1.5 lg:relative lg:bottom-0 lg:h-12.5 lg:gap-4 lg:rounded-2lge">
+				<input type="text" class="flex-grow border-none p-0 text-sm placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
+				<button class="btn-primary rounded-lge px-3.5 py-2.5 lg:px-5">
 					<span class="hidden text-sm lg:block">Пошук</span>
-					<svg class="block w-4 h-4 fill-white lg:hidden">
+					<svg class="block h-4 w-4 fill-white lg:hidden">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
 					</svg>
 				</button>
@@ -76,64 +72,52 @@
 			<!-- ./search -->
 
 			<!-- actions buttons -->
-			<div class="xl:ml-8 flex xl:gap-3.5 text-sm lg:ml-4 lg:gap-1 ml-0 gap-2.5 relative">
-				<a href="#" class="flex-col items-center hidden gap-1 transition ease-in lg:flex group text-lavender-purple hover:text-purple-800" title="Увійти">
-					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
-						
-						<svg class="w-4 h-4 transition ease-in sm:w-5 sm:h-5 fill-lavender-purple group-hover:fill-purple-800">
+			<div class="relative ml-0 flex gap-2.5 text-sm lg:ml-4 lg:gap-1 xl:ml-8 xl:gap-3.5">
+				<a href="#" class="group hidden flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 lg:flex" title="Увійти">
+					<span class="flex h-7.5 w-7.5 items-center justify-center rounded-full bg-white lg:h-8.5 lg:w-8.5">
+						<svg class="h-4 w-4 fill-lavender-purple transition ease-in group-hover:fill-purple-800 sm:h-5 sm:w-5">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
 						</svg>
-						
 					</span>
 					<span class="hidden xl:block">Увійти</span>
 				</a>
 
-
-				
-
-				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800 " title="Кошик">
-					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
-						<svg class="w-4 h-4 transition ease-in sm:w-5 sm:h-5 fill-lavender-purple group-hover:fill-purple-800">
+				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800" title="Кошик">
+					<span class="flex h-7.5 w-7.5 items-center justify-center rounded-full bg-white lg:h-8.5 lg:w-8.5">
+						<svg class="h-4 w-4 fill-lavender-purple transition ease-in group-hover:fill-purple-800 sm:h-5 sm:w-5">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#basket"></use>
 						</svg>
 					</span>
 					<span class="hidden xl:block">Кошик</span>
 				</a>
-				<a href="#" class="flex flex-col items-center gap-1 transition ease-in group text-lavender-purple hover:text-purple-800" title="Обране">
-					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
-						
-						<svg class="w-4 h-4 transition ease-in sm:w-5 sm:h-5 fill-lavender-purple group-hover:fill-purple-800">
+				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800" title="Обране">
+					<span class="flex h-7.5 w-7.5 items-center justify-center rounded-full bg-white lg:h-8.5 lg:w-8.5">
+						<svg class="h-4 w-4 fill-lavender-purple transition ease-in group-hover:fill-purple-800 sm:h-5 sm:w-5">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 						</svg>
 					</span>
 					<span class="hidden xl:block">Обране</span>
 				</a>
-				<a href="#" class="flex-col items-center hidden gap-1 transition ease-in lg:flex group text-lavender-purple hover:text-purple-800" title="Сповіщення">
-					<span class="flex lg:h-8.5 w-7.5 lg:w-8.5 h-7.5 items-center justify-center rounded-full bg-white">
+				<a href="#" class="group hidden flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800 lg:flex" title="Сповіщення">
+					<span class="flex h-7.5 w-7.5 items-center justify-center rounded-full bg-white lg:h-8.5 lg:w-8.5">
 						<!--  якщо є сповіщення додаємо класс hidden -->
-						<svg class="w-4 h-4 transition ease-in sm:w-5 sm:h-5 fill-transparent stroke-lavender-purple group-hover:stroke-purple-800">
+						<svg class="h-4 w-4 fill-transparent stroke-lavender-purple transition ease-in group-hover:stroke-purple-800 sm:h-5 sm:w-5">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
 						</svg>
 
 						<!--  якщо є сповіщення видяляємо класс hidden -->
-						<svg class="hidden w-4 h-4 transition ease-in sm:w-5 sm:h-5 fill-tall-poppy stroke-tall-poppy group-hover:fill-pink-800">
+						<svg class="hidden h-4 w-4 fill-tall-poppy stroke-tall-poppy transition ease-in group-hover:fill-pink-800 sm:h-5 sm:w-5">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
 						</svg>
 					</span>
 					<span class="hidden xl:block">Сповіщення </span>
 				</a>
 
-			
-				
 				<!-- @@include("_account-seller-menu.html", {}) -->
-
-				
 			</div>
 			<!-- ./actions buttons -->
 		</div>
 		<!-- ./header bottom -->
-
-		
 	</div>
 </header>
 <!-- ./header -->

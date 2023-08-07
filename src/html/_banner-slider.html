@@ -1,32 +1,30 @@
 <!-- banner slider -->
-<section class="pt-2.5 lg:pt-12 lg:pb-0">
+<section class="pt-2.5 lg:pb-0 lg:pt-12">
 	<div class="container">
 		<div class="relative">
 			<div class="swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<div class="lg:h-[18.75rem] overflow-hidden lg:rounded-2lge md:h-[12.5rem] rounded-lge sm:h-[9.375rem] h-[6.875rem]">
+						<div class="h-[6.875rem] overflow-hidden rounded-lge sm:h-[9.375rem] md:h-[12.5rem] lg:h-[18.75rem] lg:rounded-2lge">
 							<picture>
 								<source srcset="img/banner-mobile.jpg" media="(max-width: 30em)" />
-								<img class="object-cover object-center w-full h-full" src="img/banner.jpg" alt="banner" />
+								<img class="h-full w-full object-cover object-center" src="img/banner.jpg" alt="banner" />
 							</picture>
 						</div>
 					</div>
 				</div>
 			</div>
-			<button class="btn-home-slider-prev absolute lg:left-[0.9375rem] lg:top-[7.8125rem] flex lg:h-12.5 lg:w-12.5 items-center justify-center rounded-full bg-wild-sand/60 w-6.5 h-6.5 left-0 md:top-[5.4375rem] sm:top-[3.875rem] top-[2.625rem] group transition ease-in hover:bg-lavender-purple">
-				
-				<svg class="w-2.5 h-2.5 lg:h-5 lg:w-5 group-hover:fill-white transition ease-in">
+			<button class="btn-home-slider-prev group absolute left-0 top-[2.625rem] flex h-6.5 w-6.5 items-center justify-center rounded-full bg-wild-sand/60 transition ease-in hover:bg-lavender-purple sm:top-[3.875rem] md:top-[5.4375rem] lg:left-[0.9375rem] lg:top-[7.8125rem] lg:h-12.5 lg:w-12.5">
+				<svg class="h-2.5 w-2.5 transition ease-in group-hover:fill-white lg:h-5 lg:w-5">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
 				</svg>
 			</button>
-			<button class="btn-home-slider-next absolute lg:right-[0.9375rem] lg:top-[7.8125rem] flex lg:h-12.5 lg:w-12.5 items-center justify-center rounded-full bg-wild-sand/60 w-6.5 h-6.5 right-0 md:top-[5.4375rem] sm:top-[3.875rem] top-[2.625rem] group transition ease-in hover:bg-lavender-purple">
-				<svg class="w-2.5 h-2.5 lg:h-5 lg:w-5 group-hover:fill-white transition ease-in">
+			<button class="btn-home-slider-next group absolute right-0 top-[2.625rem] flex h-6.5 w-6.5 items-center justify-center rounded-full bg-wild-sand/60 transition ease-in hover:bg-lavender-purple sm:top-[3.875rem] md:top-[5.4375rem] lg:right-[0.9375rem] lg:top-[7.8125rem] lg:h-12.5 lg:w-12.5">
+				<svg class="h-2.5 w-2.5 transition ease-in group-hover:fill-white lg:h-5 lg:w-5">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 				</svg>
 			</button>
-			<div class="home-slider-pagination lg:mt-6.5 flex items-center justify-center lg:gap-3.5 mt-2.5 gap-2">
-				
+			<div class="home-slider-pagination mt-2.5 flex items-center justify-center gap-2 lg:mt-6.5 lg:gap-3.5">
 				<!-- при натяжці span видалити так як це генерує swiper -->
 
 				<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>

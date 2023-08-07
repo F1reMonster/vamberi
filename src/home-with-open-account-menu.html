@@ -4,15 +4,10 @@
 		@@include('html/components/_head.html', {title: "VamBeri - Головна сторінка"})
 	</head>
 
-	
 	<body class="">
 		<!-- для на десктопі при відкритті категорій  -->
 		<!-- на <body> додати класи overflow-hidden overscroll-none touch-none -->
-		@@include('html/components/_header.html', {accountMenu: "@@include(\"_account-menu.html\", {hidden: \"\"})"})
-		@@include('html/_banner-slider.html')
-		
-
-	
+		@@include('html/components/_header.html', {accountMenu: "@@include(\"_account-menu.html\", {hidden: \"\"})"}) @@include('html/_banner-slider.html')
 
 		<!-- slider shops -->
 		<section>
@@ -20,40 +15,40 @@
 				<div class="flex items-center justify-between sm:flex-col sm:items-start">
 					<h2 class="text-sm font-semibold text-shark sm:text-3xl">Магазини</h2>
 
-					<a class="group mt-2.5 flex items-center hover:text-lavender-purple transition ease-in text-shark text-xs sm:text-base" href="http://fil.vamberi.com.ua/ua/shops">
+					<a class="group mt-2.5 flex items-center text-xs text-shark transition ease-in hover:text-lavender-purple sm:text-base" href="http://fil.vamberi.com.ua/ua/shops">
 						<span class="decoration-tundora decoration-dotted underline-offset-2 sm:underline">Всі магазини</span>
-						<span class="flex items-center justify-center w-4 h-4 ml-1 rounded-full bg-lavender-purple sm:h-5 sm:w-5">
-							<svg class="h-2.5 w-1.5 sm:h-3 sm:w-1.5 fill-white">
+						<span class="ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-lavender-purple sm:h-5 sm:w-5">
+							<svg class="h-2.5 w-1.5 fill-white sm:h-3 sm:w-1.5">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 							</svg>
 						</span>
 					</a>
 				</div>
 
-				<div class="relative min-h-[8.25rem] w-full mt-8">
+				<div class="relative mt-8 min-h-[8.25rem] w-full">
 					<div class="relative px-1 sm:px-8">
 						<div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
 							<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px)">
 								<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0">
-									<div class="border-gray flex min-h-[8.25rem] w-[16.25rem] sm:w-[20.625rem] items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[9.75rem] sm:border-lavender-purple sm:py-2">
+									<div class="border-gray flex min-h-[8.25rem] w-[16.25rem] items-center rounded-xl border bg-white px-2 py-1 sm:min-h-[9.75rem] sm:w-[20.625rem] sm:border-lavender-purple sm:py-2">
 										<div class="w-fit flex-col items-center pl-[1%]">
 											<a href="http://fil.vamberi.com.ua/ua/shops/c9f0f895fb98ab9159f51fd0297e236d">
 												<img src="http://w2.vamberi.com.ua/media/others/5657c85f5c8a73cbc6bc4178dcc7c5b3.png" alt="" class="h-[2.875rem] w-full sm:h-14 sm:w-[8.125rem]" />
 											</a>
 											<div class="flex justify-center pt-5">
-												<svg class="w-5 h-5 fill-goldenrod">
+												<svg class="h-5 w-5 fill-goldenrod">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 												</svg>
-												<svg class="w-5 h-5 fill-goldenrod">
+												<svg class="h-5 w-5 fill-goldenrod">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 												</svg>
-												<svg class="w-5 h-5 fill-goldenrod">
+												<svg class="h-5 w-5 fill-goldenrod">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 												</svg>
-												<svg class="w-5 h-5 fill-goldenrod">
+												<svg class="h-5 w-5 fill-goldenrod">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 												</svg>
-												<svg class="w-5 h-5 fill-alto">
+												<svg class="h-5 w-5 fill-alto">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
 												</svg>
 											</div>
@@ -62,20 +57,20 @@
 											<a href="http://fil.vamberi.com.ua/ua/shops/c9f0f895fb98ab9159f51fd0297e236d">
 												<p class="text-base lg:text-lg">Мебель Платон</p>
 												<p class="mt-1.5 text-sm">49 оголошень</p>
-												<button class="mt-4 text-xs underline transition ease-in text-lavender-purple decoration-tundora decoration-dashed decoration-1 underline-offset-2 hover:decoration-tundora/75 hover:opacity-75">Докладніше</button>
+												<button class="mt-4 text-xs text-lavender-purple underline decoration-tundora decoration-dashed decoration-1 underline-offset-2 transition ease-in hover:decoration-tundora/75 hover:opacity-75">Докладніше</button>
 											</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button class="absolute left-0 top-1/2 z-10 -translate-y-1/2 rounded-full h-6 w-6 bg-lavender-purple sm:bg-white sm:px-0.5 sm:py-5 md:px-1 md:py-6 flex items-center justify-center">
-							<svg class="h-2.5 w-1.5 fill-white sm:fill-lavender-purple sm:h-3.5 sm:w-3.5">
+						<button class="absolute left-0 top-1/2 z-10 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-lavender-purple sm:bg-white sm:px-0.5 sm:py-5 md:px-1 md:py-6">
+							<svg class="h-2.5 w-1.5 fill-white sm:h-3.5 sm:w-3.5 sm:fill-lavender-purple">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
 							</svg>
 						</button>
-						<button class="absolute right-0 top-1/2 z-10 -translate-y-1/2 h-6 w-6 rounded-full bg-lavender-purple sm:bg-white sm:px-0.5 sm:py-5 md:px-1 md:py-6 flex items-center justify-center">
-							<svg class="h-2.5 w-1.5 fill-white sm:fill-lavender-purple sm:h-3.5 sm:w-3.5">
+						<button class="absolute right-0 top-1/2 z-10 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-lavender-purple sm:bg-white sm:px-0.5 sm:py-5 md:px-1 md:py-6">
+							<svg class="h-2.5 w-1.5 fill-white sm:h-3.5 sm:w-3.5 sm:fill-lavender-purple">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 							</svg>
 						</button>
@@ -85,12 +80,6 @@
 		</section>
 		<!-- ./slider shops -->
 
-		
-
-	
-
-		@@include('html/components/_sticky-menu.html') 
-		@@include('html/components/_footer.html') 
-		
+		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
 	</body>
 </html>

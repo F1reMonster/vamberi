@@ -4,7 +4,7 @@
 		@@include('html/components/_head.html', {title: "VamBeri - Головна сторінка"})
 	</head>
 
-	<body class="lg:overflow-hidden lg:overscroll-none lg:touch-none">
+	<body class="lg:touch-none lg:overflow-hidden lg:overscroll-none">
 		<!-- для на десктопі при відкритті категорій  -->
 		<!-- на <body> додати класи overflow-hidden overscroll-none touch-none -->
 
@@ -424,7 +424,7 @@
 							<!-- ./charecteristics -->
 
 							<!-- action buttons -->
-							<div class="mt-9 flex flex-col items-center justify-end gap-3.5 sm:flex-row sm:gap-7.5 lw:mt-10">
+							<div class="mt-9 flex flex-col items-center justify-end gap-3.5 lw:mt-10 sm:flex-row sm:gap-7.5">
 								<button class="btn-pink-light flex h-12.5 w-full items-center justify-center p-2 lw:h-9 lw:w-60">Зберегти в чернетку</button>
 								<button class="btn-pink flex h-12.5 w-full items-center justify-center p-2 lw:h-9 lw:w-60">Опубліковати</button>
 							</div>
@@ -502,20 +502,17 @@
 									<!-- mobile -->
 									<div class="lg:hidden">
 										<div class="mt-5 text-xs font-medium sm:text-lg">Тип продажу і ціна</div>
-										<div class="mt-3.5  relative z-30">
-											<button class="relative w-full rounded-bl-0 rounded-br-0 rounded-tl-lge rounded-tr-lge bg-white p-3">
+										<div class="relative z-30 mt-3.5">
+											<button class="rounded-bl-0 rounded-br-0 relative w-full rounded-tl-lge rounded-tr-lge bg-white p-3">
 												<div class="line-clamp-1 text-ellipsis pr-5 text-left text-xs text-dusty-gray">Роздріб, 00грн</div>
-												<svg class="absolute right-3 top-3 h-4 w-4 fill-dusty-gray rotate-180">
+												<svg class="absolute right-3 top-3 h-4 w-4 rotate-180 fill-dusty-gray">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 												</svg>
 											</button>
-											
-											<!-- mobile filter -->
-											<div class="lg:hidden">
-												@@include("html/components/_filter-mobile-rw.html", {})
-											</div>
-											<!-- mobile filter -->
 
+											<!-- mobile filter -->
+											<div class="lg:hidden">@@include("html/components/_filter-mobile-rw.html", {})</div>
+											<!-- mobile filter -->
 										</div>
 									</div>
 									<!-- ./mobile -->
@@ -525,8 +522,8 @@
 								<!-- mobile category -->
 								<div class="lg:hidden">
 									<div class="mt-5 text-xs font-medium sm:text-lg">Оберіть категорію товару</div>
-									
-									<div class="mt-3.5 relative z-20">
+
+									<div class="relative z-20 mt-3.5">
 										<!-- при відкритті відалити класс rounded-lge, додати класи  rounded-bl-0 rounded-br-0 rounded-tl-lge rounded-tr-lge -->
 										<button class="rounded-bl-0 rounded-br-0 relative w-full rounded-tl-lge rounded-tr-lge bg-white p-3">
 											<div class="line-clamp-1 text-ellipsis pr-5 text-left text-xs text-dusty-gray">Оберіть категорію</div>
@@ -672,11 +669,7 @@
 			</section>
 		</main>
 
-		@@include('html/components/_sticky-menu.html') 
-		@@include('html/components/_footer.html')
-		<div class="hidden lg:block">
-			@@include('html/components/modals/_modal-filter-retail.html')
-		</div>
-
+		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+		<div class="hidden lg:block">@@include('html/components/modals/_modal-filter-retail.html')</div>
 	</body>
 </html>

@@ -4,17 +4,15 @@
 		@@include('html/components/_head.html', {title: "VamBeri - Головна сторінка"})
 	</head>
 
-	<body class="overflow-hidden overscroll-none touch-none">
+	<body class="touch-none overflow-hidden overscroll-none">
 		<!-- для на десктопі при відкритті категорій  -->
 		<!-- на <body> додати класи overflow-hidden overscroll-none touch-none -->
 
-			@@include('html/components/_header.html', {accountMenu: ""})
+		@@include('html/components/_header.html', {accountMenu: ""})
 
 		<main>
 			@@include('html/_banner-slider.html') 
 			@@include('html/components/_category-mobile.html', {hidden: "hidden"})
-
-			
 		</main>
 
 		@@include('html/components/modals/_modal-basket.html') 

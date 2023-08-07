@@ -14,15 +14,15 @@
 			<section class="text-shark">
 				<div class="container">
 					<div class="relative flex justify-center">
-						<div class="absolute left-0 -translate-y-1/2 md:translate-none top-1/2 md:bottom-0">
+						<div class="md:translate-none absolute left-0 top-1/2 -translate-y-1/2 md:bottom-0">
 							<a href="#">
 								<svg class="h-4.5 w-2.5 md:hidden">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
 								</svg>
-								<span class="hidden text-base underline transition ease-in text-waikawa-gray decoration-dashed decoration-1 underline-offset-4 hover:text-blue-800 md:block">Повернутися на головну</span>
+								<span class="hidden text-base text-waikawa-gray underline decoration-dashed decoration-1 underline-offset-4 transition ease-in hover:text-blue-800 md:block">Повернутися на головну</span>
 							</a>
 						</div>
-						<h1 class="text-base font-semibold text-center text-shark sm:text-3xl">Публікація товару</h1>
+						<h1 class="text-center text-base font-semibold text-shark sm:text-3xl">Публікація товару</h1>
 					</div>
 
 					<div class="mt-7.5 flex flex-col-reverse justify-between lg:mt-12 lg:flex-row lg:gap-7.5">
@@ -30,25 +30,25 @@
 							<div class="flex flex-col gap-0 lg:gap-3.5 xl:flex-row xl:items-center">
 								<div class="text-xs font-medium sm:text-lg">Вкажіть назву товару</div>
 								<div class="mt-2.5 lg:hidden">
-									<input type="text" placeholder="Вкажіть назву товару" class="w-full p-3 text-sm transition ease-in bg-white border-white rounded-lge ring-0 placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
+									<input type="text" placeholder="Вкажіть назву товару" class="w-full rounded-lge border-white bg-white p-3 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
 									<p class="mt-2.5 text-xs text-dusty-gray">Символів 0 з 70</p>
 								</div>
 
 								<!-- translate actions -->
-								<div class="flex flex-col gap-5 mt-6 lg:mt-0 lg:flex-row lg:items-center lg:gap-0 xl:ml-auto">
+								<div class="mt-6 flex flex-col gap-5 lg:mt-0 lg:flex-row lg:items-center lg:gap-0 xl:ml-auto">
 									<!-- lang switcher -->
 									<div class="flex items-center gap-7.5 rounded-lge text-sm lg:mr-10 lg:gap-0 lg:bg-deep-blush lg:px-2 lg:py-1">
-										<label class="flex items-center gap-4 cursor-pointer lg:block">
-											<div class="relative flex items-center justify-center flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray lg:h-auto lg:w-auto lg:border-0">
-												<input type="radio" name="langTranslate" class="hidden peer" checked />
+										<label class="flex cursor-pointer items-center gap-4 lg:block">
+											<div class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-dusty-gray lg:h-auto lg:w-auto lg:border-0">
+												<input type="radio" name="langTranslate" class="peer hidden" checked />
 												<div class="hidden rounded-lge bg-transparent px-5 py-0.5 text-white transition ease-in peer-checked:bg-white peer-checked:text-shark lg:block">Мова</div>
 												<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100 lg:hidden"></div>
 											</div>
 											<div class="text-xs text-tundora lg:hidden">UA</div>
 										</label>
-										<label class="flex items-center gap-4 cursor-pointer lg:block">
-											<div class="relative flex items-center justify-center flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray lg:h-auto lg:w-auto lg:border-0">
-												<input type="radio" name="langTranslate" class="hidden peer" />
+										<label class="flex cursor-pointer items-center gap-4 lg:block">
+											<div class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-dusty-gray lg:h-auto lg:w-auto lg:border-0">
+												<input type="radio" name="langTranslate" class="peer hidden" />
 												<div class="hidden rounded-lge bg-transparent px-5 py-0.5 text-white transition ease-in peer-checked:bg-white peer-checked:text-shark lg:block">Язык</div>
 												<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100 lg:hidden"></div>
 											</div>
@@ -58,9 +58,9 @@
 									<!-- ./lang switcher -->
 
 									<div class="mr-24">
-										<label class="flex items-center gap-4 cursor-pointer">
-											<div class="relative flex-shrink-0 w-6 h-6 border rounded-full lex-shrink-0 border-dusty-gray">
-												<input type="checkbox" name="" class="hidden peer" />
+										<label class="flex cursor-pointer items-center gap-4">
+											<div class="lex-shrink-0 relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray">
+												<input type="checkbox" name="" class="peer hidden" />
 												<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
 											</div>
 											<div class="text-xs text-tundora lg:text-sm">Замовити переклад(безкоштовно)</div>
@@ -75,73 +75,73 @@
 								<div class="mt-6 text-xs font-medium sm:text-lg">Опис товару</div>
 
 								<div class="mt-3.5 rounded-lge border border-dashed border-dusty-gray p-2.5">
-									<div class="flex flex-wrap px-3 py-2 bg-white border gap-x-6 gap-y-3 rounded-lge border-dusty-gray">
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+									<div class="flex flex-wrap gap-x-6 gap-y-3 rounded-lge border border-dusty-gray bg-white px-3 py-2">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#bold"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#italic"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#through-letter"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#quote"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-icons.svg#warning2"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#letter-up"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#double-t"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#marker-list"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#numeric-list"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#left-side"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#center"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#right-side"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#image"></use>
 											</svg>
 										</button>
-										<button type="button" class="transition ease-linear rounded-md group hover:bg-gray-100">
+										<button type="button" class="group rounded-md transition ease-linear hover:bg-gray-100">
 											<svg class="h-3.5 w-3.5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#video"></use>
 											</svg>
@@ -157,7 +157,7 @@
 							<!-- editor mobile-->
 
 							<div class="mt-3.5 hidden lg:block">
-								<input type="text" placeholder="Вкажіть назву товару" class="w-full p-3 text-sm transition ease-in bg-white border-white rounded-lge ring-0 placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
+								<input type="text" placeholder="Вкажіть назву товару" class="w-full rounded-lge border-white bg-white p-3 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
 								<p class="mt-2.5 text-xs text-dusty-gray">Символів 0 з 70</p>
 							</div>
 						</div>
@@ -165,7 +165,7 @@
 						<div class="mb-6 flex flex-col lg:mb-7 lg:mt-auto lg:min-w-[25.625rem] xl:mb-8">
 							<div class="text-xs font-medium sm:text-lg">Ваш код</div>
 							<div class="mt-2.5 lg:mt-4">
-								<input type="text" class="w-full p-3 text-sm transition ease-in bg-white border-white rounded-lge ring-0 placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
+								<input type="text" class="w-full rounded-lge border-white bg-white p-3 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
 							</div>
 						</div>
 					</div>
@@ -180,72 +180,72 @@
 								<div class="mt-3.5 rounded-lge border border-dashed border-dusty-gray p-6">
 									<div class="flex flex-wrap gap-x-6 gap-y-3 rounded-lge border border-dusty-gray bg-white px-5 py-1.5">
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#bold"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#italic"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#through-letter"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#quote"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-icons.svg#warning2"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#letter-up"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#double-t"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#marker-list"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#numeric-list"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#left-side"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#center"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#right-side"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#image"></use>
 											</svg>
 										</button>
 										<button type="button" class="group rounded-md p-1.5 transition ease-linear hover:bg-gray-100">
-											<svg class="w-5 h-5 transition ease-in fill-dusty-gray group-hover:fill-gray-800" aria-hidden="true">
+											<svg class="h-5 w-5 fill-dusty-gray transition ease-in group-hover:fill-gray-800" aria-hidden="true">
 												<use xlink:href="img/svg/sprites/sprite-editor.svg#video"></use>
 											</svg>
 										</button>
@@ -263,10 +263,10 @@
 							<div class="hidden lg:block">
 								<div class="mt-5 text-xs font-medium sm:text-lg">Оберіть категорію товару</div>
 								<div class="mt-3.5">
-									<div class="flex items-center justify-between w-full p-3 text-sm transition ease-in bg-white rounded-lge text-tundora">
+									<div class="flex w-full items-center justify-between rounded-lge bg-white p-3 text-sm text-tundora transition ease-in">
 										<div>Дитячі м’які меблі</div>
 										<button type="button">
-											<span class="text-sm underline transition ease-in text-waikawa-gray decoration-dashed decoration-1 underline-offset-4 hover:text-blue-800">Змінити категорію</span>
+											<span class="text-sm text-waikawa-gray underline decoration-dashed decoration-1 underline-offset-4 transition ease-in hover:text-blue-800">Змінити категорію</span>
 										</button>
 									</div>
 								</div>
@@ -276,7 +276,7 @@
 							<!-- upload image -->
 							<div class="mt-4.5">
 								<div class="flex h-[20.75rem] w-full items-center justify-between rounded-lge border border-dotted border-dusty-gray bg-white p-3 text-sm text-tundora transition ease-in">
-									<label class="flex flex-col items-center w-full cursor-pointer">
+									<label class="flex w-full cursor-pointer flex-col items-center">
 										<input type="file" class="hidden" />
 										<svg class="h-15 w-15 fill-dusty-gray sm:h-[5.25rem] sm:w-[5.25rem]">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#add-image"></use>
@@ -289,12 +289,12 @@
 							<!-- ./upload image -->
 
 							<div class="mt-4.5">
-								<div class="flex items-center w-full p-3 text-sm transition ease-in bg-white rounded-lge text-tundora">
-									<label class="flex items-center gap-4 cursor-pointer">
-										<div class="relative flex items-center justify-center flex-shrink-0 w-6 h-6 border rounded-md border-dusty-gray">
-											<input type="checkbox" name="" class="hidden peer" />
+								<div class="flex w-full items-center rounded-lge bg-white p-3 text-sm text-tundora transition ease-in">
+									<label class="flex cursor-pointer items-center gap-4">
+										<div class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+											<input type="checkbox" name="" class="peer hidden" />
 
-											<svg class="w-4 h-4 transition ease-in opacity-0 fill-limeade peer-checked:opacity-100">
+											<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
 												<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
 											</svg>
 										</div>
@@ -307,14 +307,14 @@
 							<div class="mt-5 text-xs font-medium sm:text-lg">Відео</div>
 							<div class="mt-4.5">
 								<div class="flex w-full items-center gap-1.5 rounded-lge bg-white p-3 text-sm text-tundora transition ease-in">
-									<svg class="flex-shrink-0 w-5 h-5">
+									<svg class="h-5 w-5 flex-shrink-0">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#question"></use>
 									</svg>
 									<div class="text-xs text-tundora sm:text-sm">Можна додати посилання на відео у Youtube чи Vimeo</div>
 								</div>
 							</div>
 							<div class="mt-3.5">
-								<input type="text" class="w-full p-3 text-sm transition ease-in bg-white border-white rounded-lge ring-0 placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
+								<input type="text" class="w-full rounded-lge border-white bg-white p-3 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
 							</div>
 							<!-- ./video link -->
 
@@ -322,7 +322,7 @@
 							<div class="mt-5 text-xs font-medium sm:text-lg">Характеристики</div>
 							<div class="mt-4.5">
 								<div class="flex w-full items-center gap-1.5 rounded-lge bg-white p-3 text-sm text-tundora transition ease-in">
-									<svg class="flex-shrink-0 w-5 h-5">
+									<svg class="h-5 w-5 flex-shrink-0">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#question"></use>
 									</svg>
 									<div class="text-xs text-tundora sm:text-sm">Вкажіть якнайбільше параметрів - це підвищить інтерес до товару.</div>
@@ -330,8 +330,8 @@
 							</div>
 							<div class="mt-3.5">
 								<label class="flex flex-col gap-2.5 sm:flex-row sm:items-center">
-									<span class="flex-shrink-0 text-xs font-medium w-60 sm:text-base sm:font-normal">Виберіть тип моделі</span>
-									<select class="w-full p-3 text-xs transition ease-in bg-white border-white rounded-lge ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
+									<span class="w-60 flex-shrink-0 text-xs font-medium sm:text-base sm:font-normal">Виберіть тип моделі</span>
+									<select class="w-full rounded-lge border-white bg-white p-3 text-xs ring-0 transition ease-in focus:border-lavender-purple focus:ring-0 sm:text-sm">
 										<option selected>Не обрано</option>
 										<option value="">Item 2</option>
 										<option value="">Item 3</option>
@@ -343,8 +343,8 @@
 							</div>
 							<div class="mt-3.5">
 								<label class="flex flex-col gap-2.5 sm:flex-row sm:items-center">
-									<span class="flex-shrink-0 text-xs font-medium w-60 sm:text-base sm:font-normal">Приватне-Бізнес</span>
-									<select class="w-full p-3 text-xs bg-white border-white  rounded-lge ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
+									<span class="w-60 flex-shrink-0 text-xs font-medium sm:text-base sm:font-normal">Приватне-Бізнес</span>
+									<select class="w-full rounded-lge border-white bg-white p-3 text-xs ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
 										<option selected>Не обрано</option>
 										<option value="">Item 2</option>
 										<option value="">Item 3</option>
@@ -356,8 +356,8 @@
 							</div>
 							<div class="mt-3.5">
 								<label class="flex flex-col gap-2.5 sm:flex-row sm:items-center">
-									<span class="flex-shrink-0 text-xs font-medium w-60 sm:text-base sm:font-normal">Стан товару</span>
-									<select class="w-full p-3 text-xs bg-white border-white  rounded-lge ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
+									<span class="w-60 flex-shrink-0 text-xs font-medium sm:text-base sm:font-normal">Стан товару</span>
+									<select class="w-full rounded-lge border-white bg-white p-3 text-xs ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
 										<option selected>Не обрано</option>
 										<option value="">Item 2</option>
 										<option value="">Item 3</option>
@@ -369,8 +369,8 @@
 							</div>
 							<div class="mt-3.5">
 								<label class="flex flex-col gap-2.5 sm:flex-row sm:items-center">
-									<span class="flex-shrink-0 text-xs font-medium w-60 sm:text-base sm:font-normal">Наявність товару </span>
-									<select class="w-full p-3 text-xs bg-white border-white  rounded-lge ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
+									<span class="w-60 flex-shrink-0 text-xs font-medium sm:text-base sm:font-normal">Наявність товару </span>
+									<select class="w-full rounded-lge border-white bg-white p-3 text-xs ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
 										<option selected>Не обрано</option>
 										<option value="">Item 2</option>
 										<option value="">Item 3</option>
@@ -382,8 +382,8 @@
 							</div>
 							<div class="mt-3.5">
 								<label class="flex flex-col gap-2.5 sm:flex-row sm:items-center">
-									<span class="flex-shrink-0 text-xs font-medium w-60 sm:text-base sm:font-normal">Матеріал </span>
-									<select class="w-full p-3 text-xs bg-white border-white  rounded-lge ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
+									<span class="w-60 flex-shrink-0 text-xs font-medium sm:text-base sm:font-normal">Матеріал </span>
+									<select class="w-full rounded-lge border-white bg-white p-3 text-xs ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
 										<option selected>Не обрано</option>
 										<option value="">Item 2</option>
 										<option value="">Item 3</option>
@@ -395,8 +395,8 @@
 							</div>
 							<div class="mt-3.5">
 								<label class="flex flex-col gap-2.5 sm:flex-row sm:items-center">
-									<span class="flex-shrink-0 text-xs font-medium w-60 sm:text-base sm:font-normal">Країна виробника </span>
-									<select class="w-full p-3 text-xs bg-white border-white  rounded-lge ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
+									<span class="w-60 flex-shrink-0 text-xs font-medium sm:text-base sm:font-normal">Країна виробника </span>
+									<select class="w-full rounded-lge border-white bg-white p-3 text-xs ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
 										<option selected>Не обрано</option>
 										<option value="">Item 2</option>
 										<option value="">Item 3</option>
@@ -408,8 +408,8 @@
 							</div>
 							<div class="mt-3.5">
 								<label class="flex flex-col gap-2.5 sm:flex-row sm:items-center">
-									<span class="flex-shrink-0 text-xs font-medium w-60 sm:text-base sm:font-normal">Торг</span>
-									<select class="w-full p-3 text-xs bg-white border-white  rounded-lge ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
+									<span class="w-60 flex-shrink-0 text-xs font-medium sm:text-base sm:font-normal">Торг</span>
+									<select class="w-full rounded-lge border-white bg-white p-3 text-xs ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
 										<option selected>Не обрано</option>
 										<option value="">Item 2</option>
 										<option value="">Item 3</option>
@@ -422,9 +422,9 @@
 							<!-- ./charecteristics -->
 
 							<!-- action buttons -->
-							<div class="mt-9 lw:mt-10 flex flex-col items-center justify-end gap-3.5 sm:flex-row sm:gap-7.5">
-								<button class="flex items-center justify-center w-full p-2 btn-pink-light lw:h-9 lw:w-60 h-12.5">Зберегти в чернетку</button>
-								<button class="flex items-center justify-center w-full p-2 btn-pink lw:h-9 lw:w-60 h-12.5">Опубліковати</button>
+							<div class="mt-9 flex flex-col items-center justify-end gap-3.5 lw:mt-10 sm:flex-row sm:gap-7.5">
+								<button class="btn-pink-light flex h-12.5 w-full items-center justify-center p-2 lw:h-9 lw:w-60">Зберегти в чернетку</button>
+								<button class="btn-pink flex h-12.5 w-full items-center justify-center p-2 lw:h-9 lw:w-60">Опубліковати</button>
 							</div>
 							<!-- ./action buttons -->
 						</div>
@@ -435,16 +435,16 @@
 							<div class="mt-5 text-xs font-medium sm:text-lg lg:-mt-2">Стан</div>
 
 							<div class="mt-3.5 flex gap-6">
-								<label class="flex items-center gap-4 cursor-pointer">
-									<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray">
-										<input type="radio" name="state" class="hidden peer" checked />
+								<label class="flex cursor-pointer items-center gap-4">
+									<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray">
+										<input type="radio" name="state" class="peer hidden" checked />
 										<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
 									</div>
 									<div class="text-xs text-tundora sm:text-sm">Нове</div>
 								</label>
-								<label class="flex items-center gap-4 cursor-pointer">
-									<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray">
-										<input type="radio" name="state" class="hidden peer" />
+								<label class="flex cursor-pointer items-center gap-4">
+									<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray">
+										<input type="radio" name="state" class="peer hidden" />
 										<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
 									</div>
 									<div class="text-xs text-tundora sm:text-sm">Б/В</div>
@@ -452,12 +452,12 @@
 							</div>
 
 							<div class="mt-5">
-								<div class="flex items-center w-full p-3 text-sm transition ease-in bg-white border rounded-lge border-lavender-purple text-tundora">
-									<label class="flex items-center gap-4 cursor-pointer">
-										<div class="relative flex items-center justify-center flex-shrink-0 w-6 h-6 border rounded-md border-dusty-gray">
-											<input type="checkbox" name="" class="hidden peer" />
+								<div class="flex w-full items-center rounded-lge border border-lavender-purple bg-white p-3 text-sm text-tundora transition ease-in">
+									<label class="flex cursor-pointer items-center gap-4">
+										<div class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+											<input type="checkbox" name="" class="peer hidden" />
 
-											<svg class="w-4 h-4 transition ease-in opacity-0 fill-limeade peer-checked:opacity-100">
+											<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
 												<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
 											</svg>
 										</div>
@@ -466,31 +466,30 @@
 								</div>
 							</div>
 
-							
-							<div class="mt-5 -order-1 lg:order-none">
+							<div class="-order-1 mt-5 lg:order-none">
 								<!-- умови продажу -->
 								<div>
 									<!-- desktop -->
-									<div class="hidden lg:flex w-full flex-col gap-3.5 rounded-lge border border-lavender-purple bg-white px-4 py-3.5 text-sm text-tundora transition ease-in">
-										<div class="text-base font-medium text-center">Умови продажу</div>
-	
-										<label class="flex items-center gap-4 cursor-pointer">
-											<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray">
-												<input type="radio" name="termsSale" class="hidden peer" />
+									<div class="hidden w-full flex-col gap-3.5 rounded-lge border border-lavender-purple bg-white px-4 py-3.5 text-sm text-tundora transition ease-in lg:flex">
+										<div class="text-center text-base font-medium">Умови продажу</div>
+
+										<label class="flex cursor-pointer items-center gap-4">
+											<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray">
+												<input type="radio" name="termsSale" class="peer hidden" />
 												<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
 											</div>
 											<div class="text-sm text-tundora">Роздріб та опт</div>
 										</label>
-										<label class="flex items-center gap-4 cursor-pointer">
-											<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray">
-												<input type="radio" name="termsSale" class="hidden peer" />
+										<label class="flex cursor-pointer items-center gap-4">
+											<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray">
+												<input type="radio" name="termsSale" class="peer hidden" />
 												<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
 											</div>
 											<div class="text-sm text-tundora">Роздріб</div>
 										</label>
-										<label class="flex items-center gap-4 cursor-pointer">
-											<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray">
-												<input type="radio" name="termsSale" class="hidden peer" />
+										<label class="flex cursor-pointer items-center gap-4">
+											<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray">
+												<input type="radio" name="termsSale" class="peer hidden" />
 												<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
 											</div>
 											<div class="text-sm text-tundora">Опт</div>
@@ -502,9 +501,9 @@
 									<div class="lg:hidden">
 										<div class="mt-5 text-xs font-medium sm:text-lg">Тип продажу і ціна</div>
 										<div class="mt-3.5">
-											<button class="relative w-full p-3 bg-white rounded-lge">
-												<div class="pr-5 text-xs text-left line-clamp-1 text-ellipsis text-dusty-gray">Роздріб, 00грн</div>
-												<svg class="absolute w-4 h-4 right-3 top-3 fill-dusty-gray">
+											<button class="relative w-full rounded-lge bg-white p-3">
+												<div class="line-clamp-1 text-ellipsis pr-5 text-left text-xs text-dusty-gray">Роздріб, 00грн</div>
+												<svg class="absolute right-3 top-3 h-4 w-4 fill-dusty-gray">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 												</svg>
 											</button>
@@ -518,9 +517,9 @@
 								<div class="lg:hidden">
 									<div class="mt-5 text-xs font-medium sm:text-lg">Оберіть категорію товару</div>
 									<div class="mt-3.5">
-										<button class="relative w-full p-3 bg-white rounded-lge">
-											<div class="pr-5 text-xs text-left line-clamp-1 text-ellipsis text-dusty-gray">Оберіть категорію</div>
-											<svg class="absolute w-4 h-4 right-3 top-3 fill-dusty-gray">
+										<button class="relative w-full rounded-lge bg-white p-3">
+											<div class="line-clamp-1 text-ellipsis pr-5 text-left text-xs text-dusty-gray">Оберіть категорію</div>
+											<svg class="absolute right-3 top-3 h-4 w-4 fill-dusty-gray">
 												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 											</svg>
 										</button>
@@ -532,15 +531,15 @@
 							<div class="mt-5">
 								<div class="flex w-full flex-col gap-3.5 rounded-lge border border-lavender-purple bg-white px-4 py-3.5 text-sm text-tundora transition ease-in">
 									<div class="flex gap-3.5">
-										<div class="flex-shrink-0 w-3/5">
+										<div class="w-3/5 flex-shrink-0">
 											<div class="flex items-center gap-3.5">
 												<div class="text-xs font-medium sm:text-lg">Наявність</div>
-												<svg class="w-4 h-4 sm:h-5 sm:w-5">
+												<svg class="h-4 w-4 sm:h-5 sm:w-5">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#question"></use>
 												</svg>
 											</div>
 											<div class="mt-3.5">
-												<select class="w-full p-3 text-xs ease-in bg-white rounded-lge border-dusty-gray ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
+												<select class="w-full rounded-lge border-dusty-gray bg-white p-3 text-xs ring-0 ease-in focus:border-lavender-purple focus:ring-0 sm:text-sm">
 													<option selected>Під замовлення</option>
 													<option value="">У наявності</option>
 												</select>
@@ -548,8 +547,8 @@
 										</div>
 										<div class="flex-grow">
 											<div class="text-xs font-medium sm:text-lg">Дні</div>
-											<div class="mt-3 5">
-												<input type="text" class="w-full p-3 text-xs transition ease-in bg-white rounded-lge border-dusty-gray ring-0 placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 sm:text-sm" placeholder="0" />
+											<div class="5 mt-3">
+												<input type="text" class="w-full rounded-lge border-dusty-gray bg-white p-3 text-xs ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 sm:text-sm" placeholder="0" />
 											</div>
 										</div>
 									</div>
@@ -559,9 +558,9 @@
 							<div class="mt-5">
 								<div class="flex w-full flex-col gap-3.5 rounded-lge border border-lavender-purple bg-white px-4 py-3.5 text-sm text-tundora transition ease-in">
 									<div class="flex items-center justify-between">
-										<label class="flex items-center gap-4 cursor-pointer">
-											<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray">
-												<input type="radio" name="guarantee" class="hidden peer" />
+										<label class="flex cursor-pointer items-center gap-4">
+											<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray">
+												<input type="radio" name="guarantee" class="peer hidden" />
 												<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
 											</div>
 											<div class="text-xs text-tundora sm:text-sm">Гарантія</div>
@@ -572,9 +571,9 @@
 											<div>міс.</div>
 										</div>
 									</div>
-									<label class="flex items-center gap-4 cursor-pointer">
-										<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray">
-											<input type="radio" name="guarantee" class="hidden peer" />
+									<label class="flex cursor-pointer items-center gap-4">
+										<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray">
+											<input type="radio" name="guarantee" class="peer hidden" />
 											<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
 										</div>
 										<div class="text-xs text-tundora sm:text-sm">Товар без гарантії</div>
@@ -587,13 +586,13 @@
 								<div class="w-full rounded-lge border border-lavender-purple bg-white px-4 py-3.5 text-sm text-tundora transition ease-in">
 									<div class="flex items-center justify-center gap-4">
 										<div class="text-xs font-medium sm:text-base">Місто відправлення товару</div>
-										<svg class="flex-shrink-0 w-5 h-5">
+										<svg class="h-5 w-5 flex-shrink-0">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#question"></use>
 										</svg>
 									</div>
 
 									<div class="mt-4">
-										<select class="w-full p-3 text-xs ease-in bg-white transition rounded-lge border-dusty-gray ring-0 focus:border-lavender-purple focus:ring-0 sm:text-sm">
+										<select class="w-full rounded-lge border-dusty-gray bg-white p-3 text-xs ring-0 transition ease-in focus:border-lavender-purple focus:ring-0 sm:text-sm">
 											<option selected>Одеса</option>
 											<option value="">Item 2</option>
 											<option value="">Item 3</option>
@@ -617,12 +616,11 @@
 							</div>
 							<!-- ю.місто відправлення товару -->
 
-							
 							<!-- габарити -->
 							<div class="mt-5">
-								<div class="hidden w-full p-4 text-sm transition ease-in bg-white border lg:block rounded-lge border-lavender-purple text-tundora">
-									<div class="text-xs font-medium text-center sm:text-base">Габаритні розміри</div>
-									<label class="flex flex-col mt-4">
+								<div class="hidden w-full rounded-lge border border-lavender-purple bg-white p-4 text-sm text-tundora transition ease-in lg:block">
+									<div class="text-center text-xs font-medium sm:text-base">Габаритні розміри</div>
+									<label class="mt-4 flex flex-col">
 										<span class="text-xs sm:text-base">Ширина, см</span>
 										<input type="text" placeholder="Ширина, см" class="mt-3.5 w-full rounded-lge border-dusty-gray bg-white px-4 py-2.5 text-xs ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 sm:text-sm" />
 									</label>
@@ -644,19 +642,17 @@
 								<div class="lg:hidden">
 									<div class="text-xs font-medium sm:text-lg">Вкажіть габаритні розміри</div>
 									<div class="mt-3.5">
-										<button class="relative w-full p-3 bg-white rounded-lge">
-											<div class="pr-5 text-xs text-left line-clamp-1 text-ellipsis text-dusty-gray">Габаритні розміри</div>
-											<svg class="absolute w-4 h-4 right-3 top-3 fill-dusty-gray">
+										<button class="relative w-full rounded-lge bg-white p-3">
+											<div class="line-clamp-1 text-ellipsis pr-5 text-left text-xs text-dusty-gray">Габаритні розміри</div>
+											<svg class="absolute right-3 top-3 h-4 w-4 fill-dusty-gray">
 												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 											</svg>
 										</button>
 									</div>
 								</div>
 								<!-- ./mobile -->
-								
 							</div>
 							<!-- габарити -->
-
 						</div>
 						<!-- ./right side -->
 					</div>
