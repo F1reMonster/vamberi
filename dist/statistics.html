@@ -156,9 +156,9 @@
 
 			<!-- top panel -->
 			<section class="pt-2 lg:pt-8">
-				<div class="container"><div class="flex items-center rounded-lge border-shark lg:border lg:bg-white">
+				<div class="container"><div class="flex items-center rounded-lge lg:bg-white lg:shadow-shark-inset">
 	<!-- menu -->
-	<div class="relative hidden flex-shrink-0 rounded-lge border-r border-r-shark lg:block  ">
+	<div class="relative hidden flex-shrink-0 rounded-lge shadow-shark-r lg:block">
 		<div class="flex gap-5 py-4 pl-4 pr-6">
 			<ul class="flex flex-col gap-5 text-sm">
 				<li class="flex items-center gap-5">
@@ -294,7 +294,7 @@
 	</div>
 	<!-- ./center block -->
 
-	<div class="gradient-pink relative hidden h-full min-h-[224px] w-[396px] flex-col rounded-lge border-l border-l-shark px-3.5 py-5 xl:flex">
+	<div class="gradient-pink relative mr-[0.5px] hidden h-[220px] w-[396px] flex-col rounded-lge px-3.5 py-5 shadow-shark-l xl:flex">
 		<div class="text-lg font-medium text-shark">Не дайте себе обдурити!</div>
 		<div class="mt-2.5 max-w-[17.8125rem] text-sm text-tundora">Дізнайтеся, як уберегти свій гаманець від зловмисників</div>
 		<a href="#" class="mt-auto text-sm font-medium text-royal-blue">Поради з безпеки</a>
@@ -320,30 +320,31 @@
 			<!-- ./top panel -->
 
 			<!-- statistics -->
-			<section>
+			<section class="pt-2.5 lg:pt-0">
 				<div class="container">
-					<div class="auto-rows-[minmax(0px, auto)] grid grid-cols-1 gap-x-5 gap-y-4 text-shark">
+					<h2 class="text-lg font-medium lg:text-xl">Статистика</h2>
+					<div class="mt-3.5 lg:mt-6 auto-rows-[minmax(0px, auto)] grid grid-cols-1 gap-x-5 gap-y-2.5 sm:gap-y-4 text-shark sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
 							<div class="text-lg">Товарів</div>
 							<div class="mt-3.5 text-xl font-semibold">0</div>
 							<div class="mt-auto flex justify-center">
-								<button class="text-sm font-medium text-royal-blue">+ Додати нову позицію</button>
+								<button class="text-sm font-medium text-royal-blue relative z-10">+ Додати нову позицію</button>
 							</div>
 
-							<div class="absolute bottom-0 left-0 right-0 h-3">
-								<svg class="w-full h-full object-cover" viewBox="0 0 345 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg class="absolute  bottom-0 left-0 right-0" viewBox="0 0 345 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M350 5.16094H314.196C266 -2 280.5 1.99943 237.39 5.16094H-4V13.5001H350V5.16094Z" fill="#FADBA1" fill-opacity="0.18" stroke="#FADBA1" stroke-width="2" />
 								</svg>
-							</div>
+							
 						</div>
 						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
 							<div class="text-lg">Замовлень за сьогодні</div>
 							<div class="mt-3.5 text-xl font-semibold">3</div>
 							<div class="mt-auto flex justify-center">
-								<button class="text-sm font-medium text-royal-blue">Подивитись замовлення</button>
+								<button class="text-sm font-medium text-royal-blue relative z-10">Подивитись замовлення</button>
 							</div>
 
-							<svg class="absolute bottom-0 left-0 right-0" width="345" height="11" viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+							<svg class="absolute bottom-0 left-0 right-0"  viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<mask id="path-1-inside-1_1319_13714" fill="white">
 									<path d="M-4 0H350V18H-4V0Z" />
 								</mask>
@@ -355,7 +356,7 @@
 							<div class="text-lg">Сума продаж за сьогодні</div>
 							<div class="mt-3.5 text-xl font-semibold">3</div>
 
-							<svg class="absolute bottom-0 left-0 right-0" width="345" height="11" viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg class="absolute bottom-0 left-0 right-0"  viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<mask id="path-1-inside-1_1319_13714" fill="white">
 									<path d="M-4 0H350V18H-4V0Z" />
 								</mask>
@@ -371,11 +372,11 @@
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#question"></use>
 								</svg>
 							</div>
-							<div class="mt-auto flex justify-center">
+							<div class="mt-auto flex justify-center relative z-10">
 								<button class="text-sm font-medium text-royal-blue">Поповнити</button>
 							</div>
 
-							<svg class="absolute bottom-0 left-0 right-0" width="345" height="11" viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg class="absolute bottom-0 left-0 right-0" " viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<mask id="path-1-inside-1_1319_13722" fill="white">
 									<path d="M-4 0H350V18H-4V0Z" />
 								</mask>
@@ -386,7 +387,7 @@
 						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
 							<div class="text-lg">Нові повідомлення</div>
 							<div class="mt-3.5 text-xl font-semibold">0</div>
-							<div class="mt-auto flex justify-center">
+							<div class="mt-auto flex justify-center relative z-10">
 								<button class="text-sm font-medium text-royal-blue">Подивитись</button>
 							</div>
 						</div>
@@ -397,14 +398,14 @@
 						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
 							<div class="text-lg">Мої передплатники</div>
 							<div class="mt-3.5 text-xl font-semibold">0</div>
-							<div class="mt-auto flex justify-center">
+							<div class="mt-auto flex justify-center relative z-10">
 								<button class="text-sm font-medium text-royal-blue">Подивитись</button>
 							</div>
 						</div>
 						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
 							<div class="text-lg">Нові відгуки</div>
 							<div class="mt-3.5 text-xl font-semibold">0</div>
-							<div class="mt-auto flex justify-center">
+							<div class="mt-auto flex justify-center relative z-10">
 								<button class="text-sm font-medium text-royal-blue">Переглянути відгук</button>
 							</div>
 						</div>
