@@ -4,7 +4,6 @@ const allPlugins = {
 	typography: require("@tailwindcss/typography"),
 	forms: require("@tailwindcss/forms"),
 	containerQueries: require("@tailwindcss/container-queries"),
-	// groupPeerChecked: require('@tushargugnani/tailwind-group-peer-checked'),
 };
 
 const plugins = Object.keys(allPlugins)
@@ -251,9 +250,10 @@ module.exports = {
 			},
 		},
 	},
+	// plugins: [plugins, require("@tushargugnani/tailwind-group-peer-checked")],
 	plugins: [
-		plugins,
-		require('@tushargugnani/tailwind-group-peer-checked'),
-		
-	],
+		require("@tailwindcss/typography"),
+		require("@tailwindcss/forms"),
+		require("@tailwindcss/container-queries"),
+		require("@tushargugnani/tailwind-group-peer-checked")],
 };
