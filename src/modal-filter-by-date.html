@@ -3,7 +3,7 @@
 	<head>
 		@@include('html/components/_head.html', {title: "VamBeri - Статистика"})
 	</head>
-	<body>
+	<body class="overflow-hidden overscroll-none touch-none">
 		@@include('html/components/_header.html', {accountMenu: ""})
 
 		<main>
@@ -320,7 +320,7 @@
 							</div>
 							<div class="flex min-h-[182px] flex-col items-center rounded-lge bg-white p-3 lg:min-h-[362px] lg:p-7.5">
 								<div class="h-[70px] w-[70px] overflow-hidden rounded-full lg:h-[170px] lg:w-[170px]">
-									<img class="h-full w-full object-cover object-center" src="img/blog-img001.jpg" alt="avatar" />
+									<img class="h-full w-full object-cover object-center" src="img/no-avatar.jpg" alt="avatar" />
 								</div>
 								<div class="my-2.5 text-center text-base leading-6">Ольга Миколаївна</div>
 								<div class="mt-auto flex w-full justify-center">
@@ -336,6 +336,9 @@
 			</section>
 		</main>
 
-		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+		@@include('html/components/_sticky-menu.html') 
+		@@include('html/components/_footer.html')
+		@@include('html/components/modals/_modal-filter-by-date.html')
+
 	</body>
 </html>

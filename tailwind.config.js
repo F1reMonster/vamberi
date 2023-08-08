@@ -52,6 +52,7 @@ module.exports = {
 				// mlw: { max: "23.375em" }, // 374
 				lge: "1100px",
 				xle: "1230px", // 1230
+				mde: "576px",
 				lw: "480px", // 480
 				low: "375px", // 375
 			},
@@ -143,10 +144,12 @@ module.exports = {
 				'dusty-gray-thin': "0 0 0 0.3px #999494",
 				'lavender-purple': "0 0 0 1px #8B7AA8",
 				'lavender-purple-thin': "0 0 0 0.5px #8B7AA8",
+				'lavender-purple-b-thin': "0 0.5px 0 0 #8B7AA8",
+				'lavender-purple-t-thin': "0 -0.5px 0 0 #8B7AA8",
+				'lavender-purple-tb-thin': "0 -0.5px 0 0 #8B7AA8, 0 0.5px 0 0 #8B7AA8",
 				'lavender-purple-thin-inset': "inset 0 0 0 0.5px #8B7AA8",
 				'radio-modal': "0 0 0 2px #fff",
 				'cornflower-blue': "0 0 0 0.5px #807FFE",  // статус товару "На модераціїї"
-				"lavender-purple": "0 0 0 0.5px ##8B7AA8", // статус товару "Опубліковано"
 				"japanese-laurel": "0 0 0 0.5px #008001", // статус товару "Опубліковано"
 				"pumpkin": "0 0 0 0.5px #FF7E23", // статус товару "Чернетка "
 				"custom-gray": "0 0 0 0.5px #7F7F7F", // статус товару "Приховано"
@@ -158,8 +161,8 @@ module.exports = {
 				"shark-r": "0.5px 0 0 0 #212529", // відтінок сірого
 				"shark-l": "-0.5px 0 0 0 #212529", // відтінок сірого
 				"shark-inset": "inset 0 0 0 0.5px #212529", // відтінок сірого
-				"shark-r-inset": "inset 0.5px 0 0 0.5px #212529", // відтінок сірого
-				"shark-l-inset": "inset -0.5px 0 0 0.5px #212529", // відтінок сірого
+				"shark-r-inset": "inset 0.5px 0 0 0 #212529", // відтінок сірого
+				"shark-l-inset": "inset -0.5px 0 0 0 #212529", // відтінок сірого
 				
 
 			},

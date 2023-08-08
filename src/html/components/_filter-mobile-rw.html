@@ -1,40 +1,48 @@
-<div class="absolute z-30 w-full rounded-bl-lge rounded-br-lge bg-white px-3.5 pb-8 pt-3 text-shark shadow-md">
-	<div class="flex flex-col gap-4">
-		<button class="btn-primary-light flex h-11 w-full items-center justify-center text-xs text-shark">Роздріб та опт</button>
-		<button class="btn-primary-light flex h-11 w-full items-center justify-center text-xs text-shark">Роздріб</button>
-		<button class="btn-primary-light flex h-11 w-full items-center justify-center text-xs text-shark">Опт</button>
+<div class="absolute top-0 z-30 w-full rounded-lge bg-white text-shark shadow-md">
+	<div class="relative w-full p-3">
+		<div class="line-clamp-1 text-ellipsis pr-5 text-left text-sm  text-dusty-gray">Роздріб, 00грн</div>
+		<svg class="absolute right-3 top-3 h-4 w-4 rotate-180 fill-dusty-gray">
+			<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+		</svg>
 	</div>
-	<div class="mt-5 text-sm font-medium">Вкажіть відсоток знижки</div>
-	<div class="relative mt-2.5 flex">
-		<div class="relative flex h-11 w-[3.375rem] justify-center rounded-bl-lge rounded-tl-lge border border-r-0 border-dusty-gray px-4.5 py-3">
-			<input type="text" value="10" class="w-4.5 border-0 p-0 text-center text-xs ring-0 focus:ring-0" />
-			<div class="absolute bottom-0 right-0 top-0 w-[1px] bg-dusty-gray"></div>
+	<div class="mx-auto w-[290px] p-5">
+		<div class="flex flex-col gap-4">
+			<button class="btn-primary-light flex h-11 w-full items-center justify-center text-sm text-shark">Роздріб та опт</button>
+			<button class="btn-primary-light flex h-11 w-full items-center justify-center text-sm text-shark">Роздріб</button>
+			<button class="btn-primary-light flex h-11 w-full items-center justify-center text-sm text-shark">Опт</button>
 		</div>
-		<div class="flex h-11 w-[3.375rem] justify-center rounded-br-lge rounded-tr-lge border border-l-0 border-dusty-gray px-4.5 py-3 text-xs">%</div>
-	</div>
+		<div class="mt-5 text-sm font-medium">Вкажіть відсоток знижки</div>
+		<div class="relative mt-2.5 flex">
+			<div class="relative flex h-11 w-[3.375rem] justify-center rounded-bl-lge rounded-tl-lge border border-r-0 border-dusty-gray px-4.5 py-3">
+				<input type="text" value="10" class="w-4.5 border-0 p-0 text-center text-sm ring-0 focus:ring-0" />
+				<div class="absolute bottom-0 right-0 top-0 w-[1px] bg-dusty-gray"></div>
+			</div>
+			<div class="flex h-11 w-[3.375rem] justify-center rounded-br-lge rounded-tr-lge border border-l-0 border-dusty-gray px-4.5 py-3 text-sm">%</div>
+		</div>
 
-	<div class="mt-3.5 text-sm font-medium text-shark">Ваша роздрібна ціна</div>
-	<div class="mt-2.5 flex max-w-[18.75rem] items-center gap-5">
-		<input type="text" class="ring:0 h-11 w-[6.75rem] rounded-lge border border-dusty-gray px-4 py-2 text-center text-xs focus:ring-0" value="50 грн" />
-		<div class="flex h-11 items-center gap-4 rounded-lge border border-dusty-gray px-4 py-2">
-			<input type="text" class="text-sx w-9 border-0 border-b border-b-dusty-gray p-0 text-center text-xs ring-0 focus:ring-0" />
-			<span class="text-xs">шт.</span>
+		<div class="mt-3.5 text-sm font-medium text-shark">Ваша роздрібна ціна</div>
+		<div class="mt-2.5 flex max-w-[18.75rem] items-center gap-5">
+			<input type="text" class="ring:0 h-11 w-[6.75rem] rounded-lge border border-dusty-gray px-4 py-2 text-center text-sm focus:ring-0" value="50 грн" />
+			<div class="flex h-11 items-center gap-4 rounded-lge border border-dusty-gray px-4 py-2">
+				<input type="text" class="text-sx w-9 border-0 border-b border-b-dusty-gray p-0 text-center text-sm ring-0 focus:ring-0" />
+				<span class="text-sm">шт.</span>
+			</div>
 		</div>
-	</div>
-	<div class="mt-3.5 text-sm font-medium text-shark">Роздрібна ціна сайту</div>
-	<input type="text" class="ring:0 mt-2.5 h-11 w-[6.75rem] rounded-lge border border-dusty-gray px-4 py-2 text-center text-xs focus:ring-0" value="60 грн" />
+		<div class="mt-3.5 text-sm font-medium text-shark">Роздрібна ціна сайту</div>
+		<input type="text" class="ring:0 mt-2.5 h-11 w-[6.75rem] rounded-lge border border-dusty-gray px-4 py-2 text-center text-sm  focus:ring-0" value="60 грн" />
 
-	<div class="mt-3.5 text-sm font-medium text-dusty-gray">Ваша гуртова ціна</div>
-	<div class="mt-2.5 flex max-w-[18.75rem] items-center gap-5">
-		<input type="text" class="ring:0 h-11 w-[6.75rem] rounded-lge border border-dusty-gray px-4 py-2 text-center text-xs focus:ring-0" value="50 грн" />
-		<div class="flex h-11 items-center gap-4 rounded-lge border border-dusty-gray px-4 py-2">
-			<input type="text" class="w-9 border-0 border-b border-b-dusty-gray p-0 text-center text-xs ring-0 focus:ring-0" />
-			<span class="text-xs">шт.</span>
+		<div class="mt-3.5 text-sm font-medium text-dusty-gray">Ваша гуртова ціна</div>
+		<div class="mt-2.5 flex max-w-[18.75rem] items-center gap-5">
+			<input type="text" class="ring:0 h-11 w-[6.75rem] rounded-lge border border-dusty-gray px-4 py-2 text-center text-sm  focus:ring-0" value="50 грн" />
+			<div class="flex h-11 items-center gap-4 rounded-lge border border-dusty-gray px-4 py-2">
+				<input type="text" class="w-9 border-0 border-b border-b-dusty-gray p-0 text-center text-sm  ring-0 focus:ring-0" />
+				<span class="text-sm ">шт.</span>
+			</div>
 		</div>
-	</div>
-	<div class="mt-3.5 text-sm font-medium text-dusty-gray">Гуртова ціна сайту</div>
-	<input type="text" class="ring:0 mt-2.5 h-11 w-[6.75rem] rounded-lge border border-dusty-gray px-4 py-2 text-center text-xs focus:ring-0" value="60 грн" />
-	<div class="mt-5">
-		<button class="btn-primary flex h-11 w-full items-center justify-center text-sm font-medium">Зберегти</button>
+		<div class="mt-3.5 text-sm font-medium text-dusty-gray">Гуртова ціна сайту</div>
+		<input type="text" class="ring:0 mt-2.5 h-11 w-[6.75rem] rounded-lge border border-dusty-gray px-4 py-2 text-center text-sm  focus:ring-0" value="60 грн" />
+		<div class="mt-5">
+			<button class="btn-primary flex h-11 w-full items-center justify-center text-sm font-medium">Зберегти</button>
+		</div>
 	</div>
 </div>
