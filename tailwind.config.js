@@ -142,6 +142,7 @@ module.exports = {
 				'dusty-gray-mid': "0 0 0 0.5px #999494",
 				'dusty-gray-mid-inset': "inset 0 0 0 0.5px #999494",
 				'dusty-gray-thin': "0 0 0 0.3px #999494",
+				'dusty-gray-b-extrathin': "0 0.25px 0 0 #999494",
 				'lavender-purple': "0 0 0 1px #8B7AA8",
 				'lavender-purple-thin': "0 0 0 0.5px #8B7AA8",
 				'lavender-purple-b-thin': "0 0.5px 0 0 #8B7AA8",
@@ -196,6 +197,7 @@ module.exports = {
 				"7.5": "1.875rem", // 30px
 				"8.5": "2.125rem", // 34px
 				"9.5": "2.375rem", // 38px
+				"10.5": "2.625rem", // 42px
 				"12.5": "3.125rem", // 50px
 			},
 			padding: {
@@ -206,6 +208,7 @@ module.exports = {
 				"7.5": "1.875rem", // 30px
 				"8.5": "2.125rem", // 34px
 				"9.5": "2.375rem", // 38px
+				"10.5": "2.625rem", // 42px
 				"12.5": "3.125rem", // 50px
 			},
 			height: {
@@ -215,6 +218,7 @@ module.exports = {
 				"7.5": "1.875rem", // 30px
 				"8.5": "2.125rem", // 34px
 				"9.5": "2.375rem", // 38px
+				"10.5": "2.625rem", // 42px
 				"12.5": "3.125rem", // 50px
 				"13": "3.25rem", // 52px
 				"15": "3.75rem", // 60px
@@ -227,6 +231,7 @@ module.exports = {
 				"7.5": "1.875rem", // 30px
 				"8.5": "2.125rem", // 34px
 				"9.5": "2.375rem", // 38px
+				"10.5": "2.625rem", // 42px
 				"12.5": "3.125rem", // 50px
 				"13": "3.25rem", // 52px
 				"15": "3.75rem", // 60px
@@ -239,6 +244,7 @@ module.exports = {
 				"7.5": "1.875rem", // 30px
 				"8.5": "2.125rem", // 34px
 				"9.5": "2.375rem", // 38px
+				"10.5": "2.625rem", // 42px
 			},
 			spacing: {
 				"4.5": "1.125rem", // 18px
@@ -247,6 +253,7 @@ module.exports = {
 				"7.5": "1.875rem", // 30px
 				"8.5": "2.125rem", // 34px
 				"9.5": "2.375rem", // 38px
+				"10.5": "2.625rem", // 42px
 			}
 		},
 	},

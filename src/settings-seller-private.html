@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		@@include('html/components/_head.html', {title: "VamBeri - Налаштування"})
+	</head>
+	<body>
+		@@include('html/components/_header.html', {accountMenu: ""})
+
+		<main>
+			<!-- breadcrumbs -->
+			<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-11 lg:text-sm">
+				<div class="container">
+					<ul class="flex items-center gap-1 overflow-hidden">
+						<li class="flex items-center gap-1">
+							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
+							<svg class="h-2.5 w-2.5 fill-lavender-purple">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+							</svg>
+						</li>
+
+						<li class="flex items-center gap-1">
+							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Налаштування</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- ./breadcrumbs -->
+
+			<!-- top panel -->
+			<section class="pt-2 lg:pt-8">
+				<div class="container">@@include("html/components/_panel-seller.html")</div>
+			</section>
+			<!-- ./top panel -->
+
+			<section class="pt-0">
+				<div class="container">
+					<div class="flex flex-col gap-5 lg:flex-row lg:gap-5 2xl:gap-10.5">
+						<!-- right side -->
+						<div class="w-full rounded-lge bg-white p-3 shadow-lavender-purple-thin lg:bg-transparent lg:p-0 lg:shadow-none">
+							<div class="flex items-center text-sm font-medium text-shark lg:text-xl">
+								<div>Особисті дані продавця</div>
+								<svg class="ml-auto h-2 w-4 rotate-180 lg:hidden">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="mt-4.5 rounded-lge bg-white p-0 lg:p-7.5 lg:shadow-lavender-purple-thin">
+								<div class="flex flex-col gap-2.5 pb-3.5 shadow-dusty-gray-b-extrathin 2xl:flex-row 2xl:items-center 2xl:gap-0">
+									<div class="text-sm font-semibold lg:text-base">Я</div>
+									<div class="flex flex-col gap-3 2xl:ml-8 2xl:flex-row 2xl:items-center 2xl:gap-5">
+										<label class="flex cursor-pointer items-center gap-2">
+											<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+												<input type="radio" name="radio1" class="peer hidden" />
+												<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+											</div>
+											<div class="text-xs font-medium text-dusty-gray lg:text-sm">Фізична особа-підприємець</div>
+										</label>
+										<label class="flex cursor-pointer items-center gap-2">
+											<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+												<input type="radio" name="radio1" class="peer hidden" />
+												<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+											</div>
+											<div class="text-xs font-medium text-dusty-gray lg:text-sm">Юридична особа</div>
+										</label>
+										<label class="flex cursor-pointer items-center gap-2">
+											<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+												<input type="radio" name="radio1" class="peer hidden" />
+												<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+											</div>
+											<div class="text-xs font-medium text-dusty-gray lg:text-sm">Приватна особа</div>
+										</label>
+									</div>
+								</div>
+								<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-semibold lg:text-base">Коротка адреса сайту</div>
+									<div class="mt-1.5 text-xs text-dusty-gray lg:text-sm">Вкажіть коротку адресу вашої сторінки, щоб вона стала зручнішою і запам'ятовується</div>
+									<input type="text" class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-3" />
+								</div>
+								<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-semibold lg:text-base">Ім’я</div>
+									<input type="text" class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-3" />
+								</div>
+								<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-semibold lg:text-base">Прізвище</div>
+									<input type="text" class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-3" />
+								</div>
+								<div class="relative mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-semibold lg:text-base">Номер телефону</div>
+									<div class="mt-2.5 flex items-center gap-4">
+										<input type="text" class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-3" />
+										<button class="right-0 top-0 whitespace-nowrap text-xs text-lavender-purple underline decoration-lavender-purple decoration-dashed decoration-[0.25px] underline-offset-4 lg:absolute lg:text-sm lg:decoration-[0.5px]">Змінити</button>
+									</div>
+								</div>
+								<div class="relative mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-semibold lg:text-base">Email</div>
+									<div class="mt-2.5 flex items-center gap-4">
+										<input type="text" class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-3" />
+										<button class="right-0 top-0 whitespace-nowrap text-xs text-lavender-purple underline decoration-lavender-purple decoration-dashed decoration-[0.25px] underline-offset-4 lg:absolute lg:text-sm lg:decoration-[0.5px]">Змінити</button>
+									</div>
+								</div>
+								<div class="relative mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-semibold lg:text-base">Пароль</div>
+									<div class="mt-2.5 flex items-center gap-4">
+										<input type="text" class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-3" />
+										<button class="right-0 top-0 whitespace-nowrap text-xs text-lavender-purple underline decoration-lavender-purple decoration-dashed decoration-[0.25px] underline-offset-4 lg:absolute lg:text-sm lg:decoration-[0.5px]">Змінити</button>
+									</div>
+								</div>
+
+								<div class="mt-3.5">
+									<div class="text-sm font-semibold lg:text-base">Скан/фото паспорту (перша, друга сторінки та прописка) та ідентифікаційного коду.</div>
+									<div class="mt-4 flex">
+										<label class="flex h-9 w-full cursor-pointer items-center justify-center rounded-lge px-4 text-sm text-dusty-gray shadow-lavender-purple-thin transition ease-in hover:text-lavender-purple hover:shadow-lavender-purple lw:w-auto">
+											<input type="file" class="hidden" />
+											<span>Завантажити файл</span>
+										</label>
+									</div>
+									<div class="auto-rows-[minmax(0px, auto)] mt-4 grid grid-cols-3 gap-3 lw:grid-cols-4 sm:grid-cols-5 md:grid-cols-7 lg:grid-cols-4 2xl:grid-cols-5">
+										<div class="h-[60px] rounded-lge border border-dotted border-lavender-purple px-5 py-1.5 lg:h-[87px]">
+											<img class="h-full w-full object-cover" src="img/blog-img001.jpg" alt="img" />
+										</div>
+										<div class="h-[60px] rounded-lge border border-dotted border-lavender-purple px-5 py-1.5 lg:h-[87px]">
+											<img class="h-full w-full object-cover" src="img/blog-img002.jpg" alt="img" />
+										</div>
+										<div class="h-[60px] rounded-lge border border-dotted border-lavender-purple px-5 py-1.5 lg:h-[87px]">
+											<img class="h-full w-full object-cover" src="img/blog-img003.jpg" alt="img" />
+										</div>
+									</div>
+									<ul class="mt-4 text-sm font-medium text-dusty-gray">
+										<li class="relative pl-4">
+											<span>До розгляду приймаються тільки кольорові копії оригіналів документів.</span>
+											<span class="absolute left-1 top-2 block h-[3px] w-[3px] rounded-full bg-dusty-gray"></span>
+										</li>
+										<li class="relative pl-4">
+											<span>Формати JPG, GIF, PNG, PDF.</span>
+											<span class="absolute left-1 top-2 block h-[3px] w-[3px] rounded-full bg-dusty-gray"></span>
+										</li>
+										<li class="relative pl-4">
+											<span>Максимальний розмір 10 Мб.</span>
+											<span class="absolute left-1 top-2 block h-[3px] w-[3px] rounded-full bg-dusty-gray"></span>
+										</li>
+										<li class="relative pl-4">
+											<span>Максимальна кількість документів: 3.</span>
+											<span class="absolute left-1 top-2 block h-[3px] w-[3px] rounded-full bg-dusty-gray"></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- ./right side -->
+
+						<!-- left side -->
+						<div class="w-full rounded-lge bg-white p-3 shadow-lavender-purple-thin lg:bg-transparent lg:p-0 lg:shadow-none">
+							<div class="flex items-center text-sm font-medium text-shark lg:text-xl">
+								<div>Дані відправника</div>
+								<svg class="ml-auto h-2 w-4 rotate-180 lg:hidden">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="mt-4.5 rounded-lge bg-white p-0 lg:p-7.5 lg:shadow-lavender-purple-thin"></div>
+						</div>
+						<!-- ./left side -->
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+	</body>
+</html>
