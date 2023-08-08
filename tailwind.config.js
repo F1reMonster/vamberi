@@ -4,6 +4,7 @@ const allPlugins = {
 	typography: require("@tailwindcss/typography"),
 	forms: require("@tailwindcss/forms"),
 	containerQueries: require("@tailwindcss/container-queries"),
+	// groupPeerChecked: require('@tushargugnani/tailwind-group-peer-checked'),
 };
 
 const plugins = Object.keys(allPlugins)
@@ -25,20 +26,19 @@ module.exports = {
 			xsm: "18.75rem",
 		},
 		fontSize: {
-			"xs": ["0.75rem", "121%"], // 12px
-			"sm": ["0.875rem", "121%"], // 14px
-			"base": ["1rem", "121%"], // 16px
-			"lg": ["1.125rem", "121%"], // 18px
-			"xl": ["1.25rem", "121%"], // 20px
+			xs: ["0.75rem", "121%"], // 12px
+			sm: ["0.875rem", "121%"], // 14px
+			base: ["1rem", "121%"], // 16px
+			lg: ["1.125rem", "121%"], // 18px
+			xl: ["1.25rem", "121%"], // 20px
 			"2xl": ["1.5rem", "121%"], // 24px
 			"3xl": ["1.25rem", "121%"], // 30px
 			"4xl": ["2.25rem", "121%"], // 36px
 			"5xl": ["3rem", "121%"], // 48px
-			"6xl": ["3.75rem", "121%"],  // 60px
-			"7xl": ["4.5rem", "121%"],  // 72px
-			"8xl": ["6rem", "121%"],  // 96px
-			"9xl": ["8rem", "121%"],  // 128px
-		
+			"6xl": ["3.75rem", "121%"], // 60px
+			"7xl": ["4.5rem", "121%"], // 72px
+			"8xl": ["6rem", "121%"], // 96px
+			"9xl": ["8rem", "121%"], // 128px
 		},
 		extend: {
 			screens: {
@@ -64,41 +64,38 @@ module.exports = {
 				ss: ["0.5rem", "120%"], // 8px
 				ms: ["0.625rem", "120%"], // 10px
 				"4ms": ["2.5rem", "120%"], // 40px
-
 			},
 			colors: {
 				"wild-sand": "#F5F5F5", // body bg
 				"lavender-purple": "#8B7AA8", // відтінок пурпурового → buttons
 				"tall-poppy": "#B73D25", // відтінок червого
 				"deep-blush": "#E358A6", // відтінок розового
-				"shark": "#212529", // відтінок сірого
+				shark: "#212529", // відтінок сірого
 				"dusty-gray": "#999494", // відтінок сірого
-				"alto": "#D9D9D9", // slider bullets
-				"alabaster": "#FBFBFB", // відтінок сірого
-				"ebb": "#efe7e7", // відтінок сірого
-				"goldenrod": "#FCCB71", // rating star помаранчевий
-				"tundora": "#424242", // відтінок сірого → text
-				"royal-blue": " #5477E7",// відтінок винього → links
+				alto: "#D9D9D9", // slider bullets
+				alabaster: "#FBFBFB", // відтінок сірого
+				ebb: "#efe7e7", // відтінок сірого
+				goldenrod: "#FCCB71", // rating star помаранчевий
+				tundora: "#424242", // відтінок сірого → text
+				"royal-blue": " #5477E7", // відтінок винього → links
 				"dove-gray": "#6A6969", // світло сірий → text, borders
-				"pomegranate": "#F03B42", // відтінок червоного → text, borders
+				pomegranate: "#F03B42", // відтінок червоного → text, borders
 				"waikawa-gray": "#5C78AC", // відтінок синього → text
-				"limeade": "#679B00", // салатовий → text
+				limeade: "#679B00", // салатовий → text
 				"persian-red": "#CA392D", // відтінок червого
 				"cornflower-blue": "#807FFE", // статус товару "На модераціїї"
 				"japanese-laurel": "#008001", // статус товару "Опубліковано"
-				"pumpkin": " #FF7E23", // статус товару "Чернетка "
+				pumpkin: " #FF7E23", // статус товару "Чернетка "
 				"custom-gray": "#7F7F7F", // статус товару "Приховано"
-				"crimson": "#ED1B24", // статус товару "Відхидено"
-				"cerulean": "#00A3E8", // статус товару "Видалено"
-				"parchment": "#EFE4D2", // бежевий
-				"jordy-blue": "#82BAF1", // Блакитний 
-				"koromiko": "#FEC169", // жовтий
+				crimson: "#ED1B24", // статус товару "Відхидено"
+				cerulean: "#00A3E8", // статус товару "Видалено"
+				parchment: "#EFE4D2", // бежевий
+				"jordy-blue": "#82BAF1", // Блакитний
+				koromiko: "#FEC169", // жовтий
 				"fruit-salad": "#47935D", // зелений
-				"punch": "#DC3836", // червоний
-				"coral": "#FA8446", // помаранчевий
-				
-				
-				
+				punch: "#DC3836", // червоний
+				coral: "#FA8446", // помаранчевий
+				sunglow: "#FFC627", // укрпошта
 
 				//  =============== old colors =================================== //
 				// нижче закоментовані кольори для того щоб не конфліктували із == //
@@ -135,42 +132,40 @@ module.exports = {
 				"prod-contrast-10": "#000000",
 			},
 			boxShadow: {
-				"custom": "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25)",
-				"card": "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25), 0 0 0 0.0625rem #999494",
-				"white": "0 0 0 1px #fff",
-				'dusty-gray': "0 0 0 1px #999494",
-				'dusty-gray-mid': "0 0 0 0.5px #999494",
-				'dusty-gray-mid-inset': "inset 0 0 0 0.5px #999494",
-				'dusty-gray-thin': "0 0 0 0.3px #999494",
-				'dusty-gray-b-extrathin': "0 0.25px 0 0 #999494",
-				'lavender-purple': "0 0 0 1px #8B7AA8",
-				'lavender-purple-thin': "0 0 0 0.5px #8B7AA8",
-				'lavender-purple-b-thin': "0 0.5px 0 0 #8B7AA8",
-				'lavender-purple-t-thin': "0 -0.5px 0 0 #8B7AA8",
-				'lavender-purple-tb-thin': "0 -0.5px 0 0 #8B7AA8, 0 0.5px 0 0 #8B7AA8",
-				'lavender-purple-thin-inset': "inset 0 0 0 0.5px #8B7AA8",
-				'radio-modal': "0 0 0 2px #fff",
-				'cornflower-blue': "0 0 0 0.5px #807FFE",  // статус товару "На модераціїї"
+				custom: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25)",
+				card: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25), 0 0 0 0.0625rem #999494",
+				white: "0 0 0 1px #fff",
+				"dusty-gray": "0 0 0 1px #999494",
+				"dusty-gray-mid": "0 0 0 0.5px #999494",
+				"dusty-gray-mid-inset": "inset 0 0 0 0.5px #999494",
+				"dusty-gray-thin": "0 0 0 0.3px #999494",
+				"dusty-gray-b-extrathin": "0 0.25px 0 0 #999494",
+				"lavender-purple": "0 0 0 1px #8B7AA8",
+				"lavender-purple-thin": "0 0 0 0.5px #8B7AA8",
+				"lavender-purple-b-thin": "0 0.5px 0 0 #8B7AA8",
+				"lavender-purple-t-thin": "0 -0.5px 0 0 #8B7AA8",
+				"lavender-purple-tb-thin": "0 -0.5px 0 0 #8B7AA8, 0 0.5px 0 0 #8B7AA8",
+				"lavender-purple-thin-inset": "inset 0 0 0 0.5px #8B7AA8",
+				"radio-modal": "0 0 0 2px #fff",
+				"cornflower-blue": "0 0 0 0.5px #807FFE", // статус товару "На модераціїї"
 				"japanese-laurel": "0 0 0 0.5px #008001", // статус товару "Опубліковано"
-				"pumpkin": "0 0 0 0.5px #FF7E23", // статус товару "Чернетка "
+				pumpkin: "0 0 0 0.5px #FF7E23", // статус товару "Чернетка "
 				"custom-gray": "0 0 0 0.5px #7F7F7F", // статус товару "Приховано"
-				"crimson": "0 0 0 0.5px #ED1B24", // статус товару "Відхидено"
-				"cerulean": "0 0 0 0.5px #00A3E8", // статус товару "Видалено"
-				"shark": "0 0 0 0.5px #212529", // відтінок сірого
+				crimson: "0 0 0 0.5px #ED1B24", // статус товару "Відхидено"
+				cerulean: "0 0 0 0.5px #00A3E8", // статус товару "Видалено"
+				shark: "0 0 0 0.5px #212529", // відтінок сірого
 				"deep-blush": "0 0 0 0.5px #E358A6", // відтінок розового
-				"shark": "0 0 0 0.5px #212529", // відтінок сірого
+				shark: "0 0 0 0.5px #212529", // відтінок сірого
 				"shark-r": "0.5px 0 0 0 #212529", // відтінок сірого
 				"shark-l": "-0.5px 0 0 0 #212529", // відтінок сірого
 				"shark-inset": "inset 0 0 0 0.5px #212529", // відтінок сірого
 				"shark-r-inset": "inset 0.5px 0 0 0 #212529", // відтінок сірого
 				"shark-l-inset": "inset -0.5px 0 0 0 #212529", // відтінок сірого
-				
-
 			},
 			dropShadow: {
-				"text": "box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25)",
-				'filter-dropdown': "0px 5px 5px rgba(33, 37, 41, 0.50)",
-				'slider-button': "0px 4px 4px rgba(66, 66, 66, 0.15)",
+				text: "box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25)",
+				"filter-dropdown": "0px 5px 5px rgba(33, 37, 41, 0.50)",
+				"slider-button": "0px 4px 4px rgba(66, 66, 66, 0.15)",
 			},
 			backgroundImage: {
 				send: 'url("@/img/send.svg")',
@@ -179,83 +174,86 @@ module.exports = {
 				strelka_down: 'url("@/img/strelka_down.svg")',
 				banner: "linear-gradient(90.77deg, #FFE6E6 1.76%, #F7CCC8 92.9%)",
 				"gradient-pink": "linear-gradient(0deg, #424242, #424242), linear-gradient(90.77deg, #FFE6E6 1.76%, #F7CCC8 92.9%)",
-				
 			},
 			borderRadius: {
-				"emd": "0.3125rem", // 5px
-				"lge": "0.625rem", // 10px
-				"xle": "0.9375rem", // 15px
+				emd: "0.3125rem", // 5px
+				lge: "0.625rem", // 10px
+				xle: "0.9375rem", // 15px
 				"2lge": "1.25rem", // 20px
 				"4xle": "2.1875rem", // 35px
 				"6md": "2.25rem", // 36px
 			},
-			"margin": {
+			margin: {
 				"fix-shadow": "0.0375rem", // 0.6 px,
-				"4.5": "1.125rem", // 18px
-				"5.5": "1.375rem", // 22px
-				"6.5": "1.625rem", // 26px
-				"7.5": "1.875rem", // 30px
-				"8.5": "2.125rem", // 34px
-				"9.5": "2.375rem", // 38px
-				"10.5": "2.625rem", // 42px
-				"12.5": "3.125rem", // 50px
+				4.5: "1.125rem", // 18px
+				5.5: "1.375rem", // 22px
+				6.5: "1.625rem", // 26px
+				7.5: "1.875rem", // 30px
+				8.5: "2.125rem", // 34px
+				9.5: "2.375rem", // 38px
+				10.5: "2.625rem", // 42px
+				12.5: "3.125rem", // 50px
 			},
 			padding: {
 				"fix-shadow": "0.0375rem", // 0.6 px,
-				"4.5": "1.125rem", // 18px
-				"5.5": "1.375rem", // 22px
-				"6.5": "1.625rem", // 26px
-				"7.5": "1.875rem", // 30px
-				"8.5": "2.125rem", // 34px
-				"9.5": "2.375rem", // 38px
-				"10.5": "2.625rem", // 42px
-				"12.5": "3.125rem", // 50px
+				4.5: "1.125rem", // 18px
+				5.5: "1.375rem", // 22px
+				6.5: "1.625rem", // 26px
+				7.5: "1.875rem", // 30px
+				8.5: "2.125rem", // 34px
+				9.5: "2.375rem", // 38px
+				10.5: "2.625rem", // 42px
+				12.5: "3.125rem", // 50px
 			},
 			height: {
-				"4.5": "1.125rem", // 18px
-				"5.5": "1.375rem", // 22px
-				"6.5": "1.625rem", // 26px
-				"7.5": "1.875rem", // 30px
-				"8.5": "2.125rem", // 34px
-				"9.5": "2.375rem", // 38px
-				"10.5": "2.625rem", // 42px
-				"12.5": "3.125rem", // 50px
-				"13": "3.25rem", // 52px
-				"15": "3.75rem", // 60px
-				"35": "8.75rem", // 140px
+				4.5: "1.125rem", // 18px
+				5.5: "1.375rem", // 22px
+				6.5: "1.625rem", // 26px
+				7.5: "1.875rem", // 30px
+				8.5: "2.125rem", // 34px
+				9.5: "2.375rem", // 38px
+				10.5: "2.625rem", // 42px
+				12.5: "3.125rem", // 50px
+				13: "3.25rem", // 52px
+				15: "3.75rem", // 60px
+				35: "8.75rem", // 140px
 			},
 			width: {
-				"4.5": "1.125rem", // 18px
-				"5.5": "1.375rem", // 22px
-				"6.5": "1.625rem", // 26px
-				"7.5": "1.875rem", // 30px
-				"8.5": "2.125rem", // 34px
-				"9.5": "2.375rem", // 38px
-				"10.5": "2.625rem", // 42px
-				"12.5": "3.125rem", // 50px
-				"13": "3.25rem", // 52px
-				"15": "3.75rem", // 60px
-				"35": "8.75rem", // 140px
+				4.5: "1.125rem", // 18px
+				5.5: "1.375rem", // 22px
+				6.5: "1.625rem", // 26px
+				7.5: "1.875rem", // 30px
+				8.5: "2.125rem", // 34px
+				9.5: "2.375rem", // 38px
+				10.5: "2.625rem", // 42px
+				12.5: "3.125rem", // 50px
+				13: "3.25rem", // 52px
+				15: "3.75rem", // 60px
+				35: "8.75rem", // 140px
 			},
 			gap: {
-				"4.5": "1.125rem", // 18px
-				"5.5": "1.375rem", // 22px
-				"6.5": "1.625rem", // 26px
-				"7.5": "1.875rem", // 30px
-				"8.5": "2.125rem", // 34px
-				"9.5": "2.375rem", // 38px
-				"10.5": "2.625rem", // 42px
+				4.5: "1.125rem", // 18px
+				5.5: "1.375rem", // 22px
+				6.5: "1.625rem", // 26px
+				7.5: "1.875rem", // 30px
+				8.5: "2.125rem", // 34px
+				9.5: "2.375rem", // 38px
+				10.5: "2.625rem", // 42px
 			},
 			spacing: {
-				"4.5": "1.125rem", // 18px
-				"5.5": "1.375rem", // 22px
-				"6.5": "1.625rem", // 26px
-				"7.5": "1.875rem", // 30px
-				"8.5": "2.125rem", // 34px
-				"9.5": "2.375rem", // 38px
-				"10.5": "2.625rem", // 42px
-			}
+				4.5: "1.125rem", // 18px
+				5.5: "1.375rem", // 22px
+				6.5: "1.625rem", // 26px
+				7.5: "1.875rem", // 30px
+				8.5: "2.125rem", // 34px
+				9.5: "2.375rem", // 38px
+				10.5: "2.625rem", // 42px
+			},
 		},
 	},
-	plugins: plugins,
+	plugins: [
+		plugins,
+		require('@tushargugnani/tailwind-group-peer-checked'),
+		
+	],
 };
