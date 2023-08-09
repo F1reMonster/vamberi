@@ -8,7 +8,7 @@
 	}
 
 	body {
-		@apply flex h-full flex-col bg-wild-sand ;
+		@apply flex h-full flex-col bg-wild-sand;
 	}
 
 	main {
@@ -34,19 +34,19 @@
 	}
 
 	.btn-danger-light {
-		@apply rounded-2lge border border-persian-red text-persian-red transition ease-in hover:border-red-800 hover:text-red-800;
+		@apply rounded-2lge border border-persian-red text-persian-red transition ease-in hover:bg-persian-red hover:text-white;
 	}
 
 	.btn-pink {
-		@apply rounded-2lge bg-deep-blush border-deep-blush text-white transition ease-in hover:bg-pink-800 hover:border-pink-800;
+		@apply rounded-2lge border-deep-blush bg-deep-blush text-white transition ease-in hover:border-pink-800 hover:bg-pink-800;
 	}
 
 	.btn-pink-light {
-		@apply rounded-2lge bg-transparent border border-deep-blush text-deep-blush transition ease-in hover:bg-deep-blush hover:text-white;
+		@apply rounded-2lge border border-deep-blush bg-transparent text-deep-blush transition ease-in hover:bg-deep-blush hover:text-white;
 	}
 
 	.btn-blue-royal-light {
-		@apply rounded-2lge bg-transparent border border-royal-blue text-royal-blue transition ease-in hover:bg-blue-500 hover:text-white;
+		@apply rounded-2lge border border-royal-blue bg-transparent text-royal-blue transition ease-in hover:bg-blue-500 hover:text-white;
 	}
 
 	.link-primary {
@@ -57,4 +57,3 @@
 		@apply text-white transition ease-in hover:text-lavender-purple;
 	}
 }
-

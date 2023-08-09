@@ -129,6 +129,7 @@ module.exports = {
 				white: "0 0 0 1px #fff",
 				"dusty-gray": "0 0 0 1px #999494",
 				"dusty-gray-mid": "0 0 0 0.5px #999494",
+				"dusty-gray-b-mid": "0 0.5px 0 0 #999494",
 				"dusty-gray-mid-inset": "inset 0 0 0 0.5px #999494",
 				"dusty-gray-thin": "0 0 0 0.3px #999494",
 				"dusty-gray-b-extrathin": "0 0.25px 0 0 #999494",
@@ -146,6 +147,9 @@ module.exports = {
 				crimson: "0 0 0 0.5px #ED1B24", // статус товару "Відхидено"
 				cerulean: "0 0 0 0.5px #00A3E8", // статус товару "Видалено"
 				shark: "0 0 0 0.5px #212529", // відтінок сірого
+				tundora: "0 0 0 0.5px #424242", // відтінок сірого
+				"tundora-super-thin": "0 0 0 0.1px #424242", // відтінок сірого
+				"tundora-super-thin-inset": "inset 0 0 0 0.1px #424242", // відтінок сірого
 				"deep-blush": "0 0 0 0.5px #E358A6", // відтінок розового
 				shark: "0 0 0 0.5px #212529", // відтінок сірого
 				"shark-r": "0.5px 0 0 0 #212529", // відтінок сірого
