@@ -1,0 +1,119 @@
+<!-- panel buyer -->
+<div class="lg:w-[22.5rem]">
+	<!-- buyer -->
+	<div class="relative rounded-bl-3xle rounded-br-3xle rounded-tl-xle rounded-tr-xle px-3 text-shark lg:bg-white lg:py-6 lg:shadow-custom">
+		<div class="flex flex-col items-center">
+			<div class="text-lg font-semibold">Кабінет покупця</div>
+			<div class="mt-5">
+				<svg class="h-11 w-15 lg:h-[55px] lg:w-[70px]">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#buyer-office"></use>
+				</svg>
+			</div>
+			<div class="k mt-4 text-base font-medium lg:text-xl lg:font-normal">Софія Смірнова</div>
+			<div class="mt-2 text-sm text-tundora">На сайті Vamberi з 10.09.2022</div>
+			<div class="mt-2.5 flex items-center gap-4 text-sm">
+				<div class="flex items-center gap-1.5">
+					<div>
+						<svg class="h-4 w-4 fill-transparent stroke-shark">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+						</svg>
+					</div>
+					<div class="font-medium">0.0</div>
+				</div>
+				<div>
+					<span class="font-medium">0</span>
+					<span>відгуків</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mt-2.5 lg:-mt-1.5 relative rounded-bl-xle rounded-br-xle rounded-tl-3xle rounded-tr-3xle lg:bg-white lg:px-3 lg:pb-6 lg:pt-0 lg:shadow-custom">
+		<div class="w-60 mx-auto">
+			<!-- Особистий кабінет -->
+			<div class="text-center text-base font-normal sm:font-medium">Особистий кабінет</div>
+			<div class="mt-2.5 lg:mt-5 flex items-center justify-between rounded-lge bg-lavender-purple px-3 py-2 text-sm transition ease-in">
+				<label class="relative cursor-pointer">
+					<input type="radio" name="account" class="peer/buyer hidden" checked />
+					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs text-white transition ease-in peer-checked/buyer:bg-white peer-checked/buyer:text-shark sm:text-sm">Покупець</div>
+					<svg class="absolute -left-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy opacity-0 transition ease-in peer-checked/buyer:opacity-100 sm:-left-10 sm:h-5 sm:w-5">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled"></use>
+					</svg>
+				</label>
+				<label class="relative cursor-pointer">
+					<input type="radio" name="account" class="peer/seller hidden" />
+					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs text-white transition ease-in peer-checked/seller:bg-white peer-checked/seller:text-shark sm:text-sm">Продавець</div>
+					<svg class="absolute -right-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy opacity-0 transition ease-in peer-checked/seller:opacity-100 sm:-right-10 sm:h-5 sm:w-5">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled"></use>
+					</svg>
+				</label>
+			</div>
+			<!-- ./Особистий кабінет -->
+
+			<!-- menu -->
+			<div class="mt-5 lg:block hidden">
+				<ul class="flex flex-col gap-5 text-sm">
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#basket"></use>
+							</svg>
+							<span>Замовлення</span>
+						</a>
+					</li>
+					<li class="relative flex items-center gap-5">
+						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-8">
+							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#envelope"></use>
+							</svg>
+							<span>Повідомлення</span>
+						</a>
+						<p class="absolute right-0 top-1/2 flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 -translate-y-1/2 items-center justify-center rounded-full bg-lavender-purple px-1.5 leading-none"><span class="text-white">999+</span></p>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#eye2"></use>
+							</svg>
+							<span>Переглянуті товари</span>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
+							</svg>
+							<span>Вибране</span>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#message2"></use>
+							</svg>
+							<span>Мої відгуки</span>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#settings"></use>
+							</svg>
+							<span>Налаштування</span>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#exit"></use>
+							</svg>
+							<span>Вихід</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- menu -->
+		</div>
+	</div>
+</div>
+<!-- ./panel buyer -->

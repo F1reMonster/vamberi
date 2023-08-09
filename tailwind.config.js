@@ -4,6 +4,7 @@ const allPlugins = {
 	typography: require("@tailwindcss/typography"),
 	forms: require("@tailwindcss/forms"),
 	containerQueries: require("@tailwindcss/container-queries"),
+	groupPeerChecked: require("@tushargugnani/tailwind-group-peer-checked"),
 };
 
 const plugins = Object.keys(allPlugins)
@@ -41,14 +42,6 @@ module.exports = {
 		},
 		extend: {
 			screens: {
-				// mxxl: { max: "77.4375em" }, // 1239
-				// mxxlg: { max: "68.75em" }, // 1100
-				// mxlg: { max: "63.9375em" }, // 1023
-				// mlg: { max: "61.9375em" }, // 991
-				// mmd: { max: "47.9375em" }, // 767
-				// mxmd: { max: "35.9375em" }, // 575
-				// msm: { max: "30em" }, // 480
-				// mlw: { max: "23.375em" }, // 374
 				lge: "1100px",
 				xle: "1230px", // 1230
 				mde: "576px",
@@ -179,6 +172,7 @@ module.exports = {
 				lge: "0.625rem", // 10px
 				xle: "0.9375rem", // 15px
 				"2lge": "1.25rem", // 20px
+				"3xle": "1.5625rem", // 25px
 				"4xle": "2.1875rem", // 35px
 				"6md": "2.25rem", // 36px
 			},
@@ -250,10 +244,10 @@ module.exports = {
 			},
 		},
 	},
-	// plugins: [plugins, require("@tushargugnani/tailwind-group-peer-checked")],
-	plugins: [
-		require("@tailwindcss/typography"),
-		require("@tailwindcss/forms"),
-		require("@tailwindcss/container-queries"),
-		require("@tushargugnani/tailwind-group-peer-checked")],
+	// plugins: [
+	// 	require("@tailwindcss/typography"),
+	// 	require("@tailwindcss/forms"),
+	// 	require("@tailwindcss/container-queries"),
+	// 	require("@tushargugnani/tailwind-group-peer-checked")],
+	plugins: plugins,
 };

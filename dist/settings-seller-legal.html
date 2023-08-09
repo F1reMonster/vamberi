@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" href="img/svg/ua.svg" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="./css/style.css" />
-<title>VamBeri - Статистика</title>
+<title>VamBeri - Налаштування</title>
 
 	</head>
 	<body>
@@ -147,7 +147,7 @@
 						</li>
 
 						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Статистика</a>
+							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Налаштування</a>
 						</li>
 					</ul>
 				</div>
@@ -319,306 +319,282 @@
 			</section>
 			<!-- ./top panel -->
 
-			<!-- statistics -->
-			<section class="pt-2.5 lg:pt-0">
-				<div class="container">
-					<h2 class="text-lg font-medium lg:text-xl">Статистика</h2>
-					<div class="auto-rows-[minmax(0px, auto)] mt-3.5 grid grid-cols-1 gap-x-5 gap-y-2.5 text-shark sm:grid-cols-2 sm:gap-y-4 lg:mt-6 lg:grid-cols-3 xl:grid-cols-4">
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Товарів</div>
-							<div class="mt-3.5 text-xl font-semibold">0</div>
-							<div class="mt-auto flex justify-center">
-								<button class="relative z-10 text-sm font-medium text-royal-blue">+ Додати нову позицію</button>
-							</div>
-
-							<svg class="absolute bottom-0 left-0 right-0" viewBox="0 0 345 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M350 5.16094H314.196C266 -2 280.5 1.99943 237.39 5.16094H-4V13.5001H350V5.16094Z" fill="#FADBA1" fill-opacity="0.18" stroke="#FADBA1" stroke-width="2" />
-							</svg>
-						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Замовлень за сьогодні</div>
-							<div class="mt-3.5 text-xl font-semibold">3</div>
-							<div class="mt-auto flex justify-center">
-								<button class="relative z-10 text-sm font-medium text-royal-blue">Подивитись замовлення</button>
-							</div>
-
-							<svg class="absolute bottom-0 left-0 right-0" viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<mask id="path-1-inside-1_1319_13714" fill="white">
-									<path d="M-4 0H350V18H-4V0Z" />
-								</mask>
-								<path d="M-4 0H350V18H-4V0Z" fill="#64D2A5" fill-opacity="0.18" />
-								<path d="M-4 2H350V-2H-4V2Z" fill="#64D2A5" mask="url(#path-1-inside-1_1319_13714)" />
-							</svg>
-						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Сума продаж за сьогодні</div>
-							<div class="mt-3.5 text-xl font-semibold">3</div>
-
-							<svg class="absolute bottom-0 left-0 right-0" viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<mask id="path-1-inside-1_1319_13714" fill="white">
-									<path d="M-4 0H350V18H-4V0Z" />
-								</mask>
-								<path d="M-4 0H350V18H-4V0Z" fill="#64D2A5" fill-opacity="0.18" />
-								<path d="M-4 2H350V-2H-4V2Z" fill="#64D2A5" mask="url(#path-1-inside-1_1319_13714)" />
-							</svg>
-						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Баланс*:</div>
-							<div class="mt-3.5 flex items-center gap-3.5 text-xl font-semibold">
-								<div>-17,61 ₴</div>
-								<svg class="h-5 w-5 fill-dusty-gray">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#question"></use>
-								</svg>
-							</div>
-							<div class="relative z-10 mt-auto flex justify-center">
-								<button class="text-sm font-medium text-royal-blue">Поповнити</button>
-							</div>
-
-							<svg class="absolute bottom-0 left-0 right-0" viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<mask id="path-1-inside-1_1319_13722" fill="white">
-									<path d="M-4 0H350V18H-4V0Z" />
-								</mask>
-								<path d="M-4 0H350V18H-4V0Z" fill="#999999" fill-opacity="0.18" />
-								<path d="M-4 2H350V-2H-4V2Z" fill="#999999" mask="url(#path-1-inside-1_1319_13722)" />
-							</svg>
-						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Нові повідомлення</div>
-							<div class="mt-3.5 text-xl font-semibold">0</div>
-							<div class="relative z-10 mt-auto flex justify-center">
-								<button class="text-sm font-medium text-royal-blue">Подивитись</button>
-							</div>
-						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Відвідувачів сьогодні</div>
-							<div class="mt-3.5 text-xl font-semibold">0</div>
-						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Мої передплатники</div>
-							<div class="mt-3.5 text-xl font-semibold">0</div>
-							<div class="relative z-10 mt-auto flex justify-center">
-								<button class="text-sm font-medium text-royal-blue">Подивитись</button>
-							</div>
-						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Нові відгуки</div>
-							<div class="mt-3.5 text-xl font-semibold">0</div>
-							<div class="relative z-10 mt-auto flex justify-center">
-								<button class="text-sm font-medium text-royal-blue">Переглянути відгук</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- ./statistics -->
-
 			<section class="pt-0">
 				<div class="container">
-					<!-- notifications -->
-					<div class="rounded-lge bg-white p-2.5 shadow-lavender-purple-thin lg:px-0 lg:pb-5 lg:pt-0">
-						<h3 class="p-0 text-base font-semibold lg:p-5 lg:text-lg">Сповіщення</h3>
-						<ul class="mt-3 text-sm shadow-lavender-purple-tb-thin lg:mt-0 lg:text-base">
-							<li class="py-2 shadow-lavender-purple-b-thin lg:px-5 lg:py-5">Дії</li>
-							<li class="flex items-center justify-between py-2 shadow-lavender-purple-b-thin lg:px-5 lg:py-5">
-								<div class="flex items-center gap-2.5">
-									<div>Нові замовлення</div>
-									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">45+</span></div>
-								</div>
-								<button>
-									<svg class="h-3.5 w-3.5 fill-pomegranate lg:h-5 lg:w-5">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-									</svg>
-								</button>
-							</li>
-							<li class="flex items-center justify-between py-2 shadow-lavender-purple-b-thin lg:px-5 lg:py-5">
-								<div class="flex items-center gap-2.5">
-									<div>Очікує на підтверждення</div>
-									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">5+</span></div>
-								</div>
-								<button>
-									<svg class="h-3.5 w-3.5 fill-pomegranate lg:h-5 lg:w-5">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-									</svg>
-								</button>
-							</li>
-							<li class="flex items-center justify-between py-2 shadow-lavender-purple-b-thin lg:px-5 lg:py-5">
-								<div class="flex items-center gap-2.5">
-									<div>Очікує на відправку</div>
-									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">5+</span></div>
-								</div>
-								<button>
-									<svg class="h-3.5 w-3.5 fill-pomegranate lg:h-5 lg:w-5">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-									</svg>
-								</button>
-							</li>
-							<li class="flex items-center justify-between py-2 shadow-lavender-purple-b-thin lg:px-5 lg:py-5">
-								<div class="flex items-center gap-2.5">
-									<div>Скасовані</div>
-									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">45+</span></div>
-								</div>
-								<button>
-									<svg class="h-3.5 w-3.5 fill-pomegranate lg:h-5 lg:w-5">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-									</svg>
-								</button>
-							</li>
-							<li class="flex items-center justify-between py-2 shadow-lavender-purple-b-thin lg:px-5 lg:py-5">
-								<div class="flex items-center gap-2.5">
-									<div>На шляху до отримувача</div>
-									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">8+</span></div>
-								</div>
-								<button>
-									<svg class="h-3.5 w-3.5 fill-pomegranate lg:h-5 lg:w-5">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-									</svg>
-								</button>
-							</li>
-							<li class="flex items-center justify-between py-2 shadow-lavender-purple-b-thin lg:px-5 lg:py-5">
-								<div class="flex items-center gap-2.5">
-									<div>У відділені</div>
-									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">45+</span></div>
-								</div>
-								<button>
-									<svg class="h-3.5 w-3.5 fill-pomegranate lg:h-5 lg:w-5">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-									</svg>
-								</button>
-							</li>
-							<li class="flex items-center justify-between py-2 shadow-lavender-purple-b-thin lg:px-5 lg:py-5">
-								<div class="flex items-center gap-2.5">
-									<div>Отримано</div>
-									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">8+</span></div>
-								</div>
-								<button>
-									<svg class="h-3.5 w-3.5 fill-pomegranate lg:h-5 lg:w-5">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-									</svg>
-								</button>
-							</li>
-							<li class="flex items-center justify-between py-2 shadow-lavender-purple-b-thin lg:px-5 lg:py-5">
-								<div class="flex items-center gap-2.5">
-									<div>Відмова від вантажу</div>
-									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">1+</span></div>
-								</div>
-								<button>
-									<svg class="h-3.5 w-3.5 fill-pomegranate lg:h-5 lg:w-5">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-									</svg>
-								</button>
-							</li>
-						</ul>
-
-						<!-- per page -->
-						<div class="mt-3.5 flex items-center justify-center gap-4 lg:mt-7.5">
-							<select class="w-20 rounded-lge border-0 bg-white px-2.5 py-2 text-xs shadow-lavender-purple-thin-inset ring-0 ease-in focus:border-lavender-purple focus:ring-0 sm:text-sm">
-								<option selected="">10</option>
-								<option value="">50</option>
-								<option value="">100</option>
-							</select>
-							<div class="text-sm text-tundora">per page</div>
-						</div>
-						<!-- ./ per page -->
-					</div>
-					<!-- ./notifications -->
-
-					<div class="relative mt-6 flex flex-col gap-3 md:flex-row">
-						<div class="flex flex-shrink-0 items-center justify-between gap-5 rounded-lge bg-white px-3 py-2 text-sm shadow-lavender-purple-thin">
-							<div>За місяць</div>
-							<button>
-								<svg class="h-3.5 w-3.5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-								</svg>
-							</button>
-						</div>
-
-						<div class="relative w-full flex-shrink-0 md:w-auto">
-							<button class="flex h-full w-full items-center gap-7 rounded-lge bg-white px-3 py-2 shadow-lavender-purple-thin-inset transition ease-in">
-								<span class="text-sm">Загальна статистика</span>
-								<svg class="ml-auto h-2 w-4 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-								</svg>
-							</button>
-
-							<!-- dropdown -->
-							<div class="absolute left-1/2 top-0 z-40 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark shadow-lavender-purple-thin-inset">
-								<div class="flex pr-2">
-									<span class="text-sm">Загальна статистика</span>
-									<svg class="ml-auto h-2 w-4 rotate-180 fill-shark">
+					<div class="mb-3.5 mt-2.5 text-lg font-medium lg:hidden">Налаштування</div>
+					<div class="flex flex-col gap-5 lg:flex-row lg:gap-5 2xl:gap-10.5">
+						<!-- right side -->
+						<div>
+							<div class="w-full rounded-lge bg-white p-3 shadow-lavender-purple-thin lg:bg-transparent lg:p-0 lg:shadow-none">
+								<div class="flex items-center text-sm font-medium text-shark lg:text-xl">
+									<div>Особисті дані продавця</div>
+									<svg class="ml-auto h-2 w-4 rotate-180 lg:hidden">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 									</svg>
 								</div>
-								<ul class="mt-3 flex flex-col gap-2.5 text-sm">
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<span>Ресепшн зі столом 1104</span>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<span>Ресепшн зі столом 1104</span>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<span>Ресепшн зі столом 1104</span>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<span>Ресепшн зі столом 1156504</span>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<span>Ресепшн зі столом 1104</span>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<span>Ресепшн зі столом 1104</span>
-									</li>
-								</ul>
-							</div>
-							<!-- ./dropdown -->
-						</div>
-					</div>
+								<div class="mt-4.5 rounded-lge bg-white p-0 lg:p-7.5 lg:shadow-lavender-purple-thin">
+									<div class="text-sm font-medium text-shark lg:text-base">Реєстраційні документи</div>
+									<div class="mt-2.5 text-sm text-dusty-gray lg:text-tundora font-light lg:font-normal ">Завантажте копію свідоцтва про державну реєстрацію підприємства, щоб отримати знак”Наявність документів” для підвищення рейтингу</div>
+									<div class="mt-5 flex flex-col gap-2.5 pb-3.5 shadow-dusty-gray-b-extrathin 2xl:flex-row 2xl:items-center 2xl:gap-0">
+										<div class="text-sm font-medium lg:text-base">Я</div>
+										<div class="flex flex-col gap-3 2xl:ml-8 2xl:flex-row 2xl:items-center 2xl:gap-5">
+											<label class="flex cursor-pointer items-center gap-2">
+												<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+													<input type="radio" name="radio1" class="peer hidden" checked />
+													<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+												</div>
+												<div class="text-xs font-medium text-dusty-gray lg:text-sm">Юридична особа</div>
+											</label>
+											<label class="flex cursor-pointer items-center gap-2">
+												<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+													<input type="radio" name="radio1" class="peer hidden" />
+													<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+												</div>
+												<div class="text-xs font-medium text-dusty-gray lg:text-sm">Фізична особа-підприємець</div>
+											</label>
+											<label class="flex cursor-pointer items-center gap-2">
+												<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+													<input type="radio" name="radio1" class="peer hidden" />
+													<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+												</div>
+												<div class="text-xs font-medium text-dusty-gray lg:text-sm">Приватна особа</div>
+											</label>
+										</div>
+									</div>
+									<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Статус перевірки документів</div>
+										<div class="mt-2.5 text-sm lg:font-medium text-dove-gray font-light">Документи успішно пройшли перевірку. У разі змін в реєстраційних документах ви можете повторно відправити їх на верифікацію, скориставшись формою ни жче.</div>
+									</div>
+									<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Організаційно-правова форма<span class="text-tall-poppy">*</span></div>
+										<input type="text" class="mt-2.5 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-3" />
+									</div>
+									<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Повне найменування юридичної особи<span class="text-tall-poppy">*</span></div>
+										<input type="text" class="mt-2.5 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-3" />
+									</div>
+									<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Ідентифікаційний код юридичної особи(ЄДРПОУ)<span class="text-tall-poppy">*</span></div>
+										<input type="text" class="mt-2.5 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+									</div>
+									<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Скан/фото виписки або витягу з ЄДР<span class="text-tall-poppy">*</span></div>
+										<div class="mt-4 flex">
+											<label class="flex h-9 w-full cursor-pointer items-center justify-center rounded-lge px-4 text-sm text-dusty-gray shadow-lavender-purple-thin transition ease-in hover:text-lavender-purple hover:shadow-lavender-purple lw:w-auto">
+												<input type="file" class="hidden" />
+												<span>Завантажити файл</span>
+											</label>
+										</div>
+										<div class="auto-rows-[minmax(0px, auto)] mt-4 grid grid-cols-3 gap-3 lw:grid-cols-4 sm:grid-cols-5 md:grid-cols-7 lg:grid-cols-4 2xl:grid-cols-5">
+											<div class="h-[60px] rounded-lge border border-dotted border-lavender-purple px-5 py-1.5 lg:h-[87px]">
+												<img class="h-full w-full object-cover" src="img/mini-doc.jpg" alt="img" />
+											</div>
+											<div class="h-[60px] rounded-lge border border-dotted border-lavender-purple px-5 py-1.5 lg:h-[87px]">
+												<img class="h-full w-full object-cover" src="img/mini-doc.jpg" alt="img" />
+											</div>
+											<div class="h-[60px] rounded-lge border border-dotted border-lavender-purple px-5 py-1.5 lg:h-[87px]">
+												<img class="h-full w-full object-cover" src="img/mini-doc.jpg" alt="img" />
+											</div>
+										</div>
+										<ul class="mt-4 text-sm font-medium text-dusty-gray">
+											<li class="relative pl-4">
+												<span>До розгляду приймаються тільки кольорові копії оригіналів документів.</span>
+												<span class="absolute left-1 top-2 block h-[3px] w-[3px] rounded-full bg-dusty-gray"></span>
+											</li>
+											<li class="relative pl-4">
+												<span>Формати JPG, GIF, PNG, PDF.</span>
+												<span class="absolute left-1 top-2 block h-[3px] w-[3px] rounded-full bg-dusty-gray"></span>
+											</li>
+											<li class="relative pl-4">
+												<span>Максимальний розмір 10 Мб.</span>
+												<span class="absolute left-1 top-2 block h-[3px] w-[3px] rounded-full bg-dusty-gray"></span>
+											</li>
+											<li class="relative pl-4">
+												<span>Максимальна кількість документів: 3.</span>
+												<span class="absolute left-1 top-2 block h-[3px] w-[3px] rounded-full bg-dusty-gray"></span>
+											</li>
+										</ul>
 
-					<!-- graph -->
-					<div class="mt-6 lg:mt-7">
-						<img src="img/grapth.jpg" alt="graph" />
-					</div>
-					<!-- graph -->
+										<div class="mt-3.5 flex flex-col gap-2.5 2xl:flex-row 2xl:items-center 2xl:gap-0">
+											<div class="flex flex-col gap-3 2xl:flex-row 2xl:items-center 2xl:gap-5">
+												<label class="flex cursor-pointer items-center gap-2">
+													<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+														<input type="radio" name="radio3" class="peer hidden" />
+														<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+													</div>
+													<div class="text-sm font-medium text-dusty-gray">Платник податку на прибуток</div>
+												</label>
+												<label class="flex cursor-pointer items-center gap-2">
+													<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+														<input type="radio" name="radio3" class="peer hidden" checked />
+														<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+													</div>
+													<div class="text-sm font-medium text-dusty-gray">Платник єдиного податку</div>
+												</label>
+											</div>
+										</div>
 
-					<!-- active users -->
-					<div class="mt-6 lg:mt-12.5">
-						<h2 class="text-lg font-medium lg:text-xl">Активні користувачі</h2>
-						<div class="auto-rows-[minmax(0px, auto)] mt-3.5 grid grid-cols-1 gap-x-5 gap-y-5 lw:grid-cols-2 md:grid-cols-3 lg:mt-5.5 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-7.5">
-							<div class="flex min-h-[182px] flex-col items-center rounded-lge bg-white p-3 lg:min-h-[362px] lg:p-7.5">
-								<div class="h-[70px] w-[70px] overflow-hidden rounded-full lg:h-[170px] lg:w-[170px]">
-									<img class="h-full w-full object-cover object-center" src="img/no-avatar.jpg" alt="avatar" />
-								</div>
-								<div class="my-2.5 text-center text-base leading-6">Username is too longer then other users</div>
-								<div class="mt-auto flex w-full justify-center">
-									<button class="btn-primary text center flex min-h-[44px] w-[220px] items-center justify-center p-3 lw:w-full">
-										<span>Відправити</span>
-									</button>
+										<div class="mt-2.5">
+											<label class="flex cursor-pointer items-center gap-2">
+												<div class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md shadow-dusty-gray-mid">
+													<input type="checkbox" name="" class="peer hidden" />
+
+													<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+														<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+													</svg>
+												</div>
+												<div class="text-sm text-tundora">Платник ПДВ</div>
+											</label>
+										</div>
+									</div>
+									<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Місцезнаходження юридичної особи</div>
+										<input type="text" class="mt-2.5 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-3" placeholder="Згідно з даними з ЄДР" />
+									</div>
+									<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Телефон/факс</div>
+										<input type="text" class="mt-2.5 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+									</div>
+
+									<div class="relative mt-3.5">
+										<label class="flex cursor-pointer items-center gap-2">
+											<div class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md shadow-dusty-gray-mid">
+												<input type="checkbox" name="" class="peer hidden" />
+
+												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+												</svg>
+											</div>
+											<div class="text-sm font-medium text-tundora">Відхилити рахунок на оплату</div>
+										</label>
+
+										<div class="lg:ml-8 mt-2.5 text-sm lg:leading-5 text-dusty-gray">При здійсненні замовлення через кошик покупці отримують на email рахунокна оплату у форматі PDF/ При налажштуванні відправки рахунку на оплату поле “Прызвище” автоматично помічається як додаткове обов’язкове в кошику.Якщо придбати цю позначку, то рахунок не буде відправлятися.</div>
+									</div>
 								</div>
 							</div>
-							<div class="flex min-h-[182px] flex-col items-center rounded-lge bg-white p-3 lg:min-h-[362px] lg:p-7.5">
-								<div class="h-[70px] w-[70px] overflow-hidden rounded-full lg:h-[170px] lg:w-[170px]">
-									<img class="h-full w-full object-cover object-center" src="img/no-avatar.jpg" alt="avatar" />
+
+							<div class="mt-5 rounded-lge bg-white p-3 lg:p-7.5 shadow-lavender-purple-thin">
+								<div class="text-sm font-medium text-shark lg:text-base">Реєстраційні документи</div>
+								<div class="mt-2.5 text-sm lg:leading-5 text-dusty-gray">Платіжні реквізити компанії будуть використані для встановлення рахунків за замовленнями від ваших клієнтів, які були оформлені автоматично через інтернет-магазин або створені вами в кабінеті компанії</div>
+								<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-medium lg:text-base">Офіційна назва компанії<span class="text-tall-poppy">*</span></div>
+									<input type="text" class="mt-2.5 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
 								</div>
-								<div class="my-2.5 text-center text-base leading-6">Ольга Миколаївна</div>
-								<div class="mt-auto flex w-full justify-center">
-									<button class="btn-primary text center flex min-h-[44px] w-[220px] items-center justify-center p-3 lw:w-full">
-										<span>Відправити</span>
-									</button>
+								<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-medium lg:text-base">Номер розрахункового рахунку<span class="text-tall-poppy">*</span></div>
+									<input type="text" class="mt-2.5 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" placeholder="35000454812635874125" />
 								</div>
-							</div>
-							<div class="flex min-h-[182px] flex-col items-center rounded-lge bg-white p-3 lg:min-h-[362px] lg:p-7.5">
-								<div class="h-[70px] w-[70px] overflow-hidden rounded-full lg:h-[170px] lg:w-[170px]">
-									<img class="h-full w-full object-cover object-center" src="img/blog-img001.jpg" alt="avatar" />
+								<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-medium lg:text-base">Назва банку одержувача<span class="text-tall-poppy">*</span></div>
+									<input type="text" class="mt-2.5 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" placeholder="Відповідно до реєстраційних документів" />
 								</div>
-								<div class="my-2.5 text-center text-base leading-6">Ольга Миколаївна</div>
-								<div class="mt-auto flex w-full justify-center">
-									<button class="btn-primary text center flex min-h-[44px] w-[220px] items-center justify-center p-3 lw:w-full">
-										<span>Відправити</span>
-									</button>
+								<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-medium lg:text-base">МФО банку отримувача<span class="text-tall-poppy">*</span></div>
+									<input type="text" class="mt-2.5 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" placeholder="Наприклад, 768453" />
+								</div>
+
+								<div class="mt-6 flex justify-center lg:justify-end">
+									<button class="btn-primary flex h-11 w-full max-w-[290px] items-center justify-center px-3 text-sm font-normal lw:max-w-[220px] lg:h-9">Зберегти</button>
 								</div>
 							</div>
 						</div>
+						<!-- ./right side -->
+
+						<!-- left side -->
+						<div class="w-full rounded-lge bg-white p-3 shadow-lavender-purple-thin lg:bg-transparent lg:p-0 lg:shadow-none">
+							<div class="flex items-center text-sm font-medium text-shark lg:text-xl">
+								<div>Дані відправника</div>
+								<svg class="ml-auto h-2 w-4 lg:hidden">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="mt-4.5 hidden rounded-lge bg-white p-0 lg:block lg:p-7.5 lg:shadow-lavender-purple-thin">
+								<div class="pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-medium lg:text-base">Ім’я</div>
+									<input type="text" class="mt-2.5 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+								</div>
+								<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-medium lg:text-base">Прізвище</div>
+									<input type="text" class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+								</div>
+								<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-medium lg:text-base">По-батькові</div>
+									<input type="text" class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+								</div>
+								<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-medium lg:text-base">Місто</div>
+									<input type="text" class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+								</div>
+								<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-medium lg:text-base">Спосіб доставки</div>
+									<div class="mt-2.5 flex flex-col gap-4 2xl:flex-row 2xl:items-center 2xl:gap-5">
+										<label class="flex cursor-pointer items-center gap-2.5">
+											<input type="radio" name="delivery-service" class="peer hidden" checked />
+											<div class="group relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+												<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in group-peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+											</div>
+
+											<div class="flex h-7.5 min-w-[200px] items-center justify-center gap-1.5 rounded-lge px-3.5 text-sm font-medium text-tundora shadow-dusty-gray-mid peer-checked:shadow-lavender-purple-thin 2xl:min-w-[140px]">
+												<svg class="h-5 w-5 fill-pomegranate">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#nova-poshta"></use>
+												</svg>
+												<div>Нова пошта</div>
+											</div>
+										</label>
+										<label class="flex cursor-pointer items-center gap-2.5">
+											<input type="radio" name="delivery-service" class="peer hidden" />
+											<div class="group relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+												<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in group-peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+											</div>
+
+											<div class="flex h-7.5 min-w-[200px] items-center justify-center gap-1.5 rounded-lge px-3.5 text-sm font-medium text-tundora shadow-dusty-gray-mid peer-checked:shadow-lavender-purple-thin 2xl:min-w-[140px]">
+												<svg class="h-5 w-5 fill-sunglow">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#ukrposhta"></use>
+												</svg>
+												<div>Нова пошта</div>
+											</div>
+										</label>
+										<label class="flex cursor-pointer items-center gap-2.5">
+											<input type="radio" name="delivery-service" class="peer hidden" />
+											<div class="group relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+												<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in group-peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+											</div>
+
+											<div class="flex h-7.5 min-w-[200px] items-center justify-center gap-1.5 rounded-lge px-3.5 text-sm font-medium text-tundora shadow-dusty-gray-mid peer-checked:shadow-lavender-purple-thin 2xl:min-w-[140px]">
+												<svg class="h-5 w-5">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#meest"></use>
+												</svg>
+												<div>Meest</div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="relative mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+									<div class="text-sm font-medium lg:text-base">Номер телефону</div>
+									<div class="mt-2.5 flex items-center gap-4">
+										<input type="text" class="w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+										<button class="right-0 top-0 whitespace-nowrap text-xs text-lavender-purple underline decoration-lavender-purple decoration-dashed decoration-[0.25px] underline-offset-4 lg:absolute lg:text-sm lg:decoration-[0.5px]">Змінити</button>
+									</div>
+								</div>
+								<div class="relative mt-3.5 pb-3.5">
+									<div class="flex items-center gap-7.5 text-sm font-medium lg:gap-10 lg:text-base">
+										<div>Рахунок</div>
+										<button class="whitespace-nowrap text-xs font-normal text-lavender-purple underline decoration-lavender-purple decoration-dashed decoration-[0.25px] underline-offset-4 lg:text-sm lg:decoration-[0.5px]">Додати</button>
+									</div>
+									<div class="mt-2.5 flex items-center gap-4">
+										<input type="text" class="w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+										<button class="right-0 top-0 whitespace-nowrap text-xs text-lavender-purple underline decoration-lavender-purple decoration-dashed decoration-[0.25px] underline-offset-4 lg:absolute lg:text-sm lg:decoration-[0.5px]">Змінити</button>
+									</div>
+									<div class="mt-2 text-sm text-dusty-gray">Додайте рахунок для отримання оплати за безпечною угодою</div>
+								</div>
+
+								<div class="mt-6 flex justify-center lg:justify-end">
+									<button class="btn-primary flex h-11 w-full max-w-[290px] items-center justify-center px-3 text-sm font-normal lw:max-w-[220px] lg:h-9">Зберегти</button>
+								</div>
+							</div>
+						</div>
+						<!-- ./left side -->
 					</div>
-					<!-- ./active users -->
 				</div>
 			</section>
 		</main>

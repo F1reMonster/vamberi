@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		@@include('html/components/_head.html', {title: "VamBeri - Налаштування"})
+	</head>
+	<body>
+		@@include('html/components/_header.html', {accountMenu: ""})
+
+		<main>
+			<!-- breadcrumbs -->
+			<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-11 lg:text-sm">
+				<div class="container">
+					<ul class="flex items-center gap-1 overflow-hidden">
+						<li class="flex items-center gap-1">
+							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
+							<svg class="h-2.5 w-2.5 fill-lavender-purple">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+							</svg>
+						</li>
+
+						<li class="flex items-center gap-1">
+							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Налаштування</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- ./breadcrumbs -->
+
+			<section>
+				<div class="container">
+					<div class="flex flex-col gap-5 lg:flex-row lg:gap-5 2xl:gap-10.5">
+						<div>@@include("html/components/_panel-buyer.html")</div>
+
+						<div class="w-full">
+							<!-- info banner  -->
+							<div class="gradient-pink relative mb-6 mt-0 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:mb-9 lg:mt-0 lg:min-h-[11.25rem] lg:px-3.5">
+								<button class="absolute right-2 top-2">
+									<svg class="h-4 w-4 fill-tundora">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
+									</svg>
+								</button>
+								<div class="text-xs font-medium text-shark lg:text-lg">Не дайте себе обдурити!</div>
+								<div class="mt-4 pr-24 text-xs text-tundora lg:mt-2.5 lg:pr-32 lg:text-sm">Дізнайтеся, як уберегти свій гаманець від зловмисників</div>
+								<a href="#" class="mt-1.5 text-xs font-medium text-royal-blue sm:mt-auto lg:text-sm">Поради з безпеки</a>
+								<img src="img/icon005.png" alt="icon" class="absolute bottom-0 right-0 h-[7.125rem] w-[7.8125rem] lg:h-[10.625rem] lg:w-[11.625rem]" style="float: right" />
+							</div>
+							<!-- ./info banner  -->
+
+							<div class="mb-3.5 mt-2.5 text-lg font-medium lg:hidden">Налаштування</div>
+							<div class="w-full rounded-lge bg-white p-3 shadow-lavender-purple-thin lg:max-w-[43.75rem] lg:bg-transparent lg:p-0 lg:shadow-none">
+								<div class="flex items-center text-sm font-medium text-shark lg:text-xl">
+									<div>Особисті дані покупця</div>
+									<svg class="ml-auto h-2 w-4 rotate-180 lg:hidden">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+								<div class="mt-4.5 rounded-lge bg-white p-0 lg:p-7.5 lg:shadow-lavender-purple-thin">
+									<div class="pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Ім’я</div>
+										<input type="text" class="mt-2.5 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+									</div>
+									<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Прізвище</div>
+										<input type="text" class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+									</div>
+									<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">По-батькові</div>
+										<input type="text" class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+									</div>
+
+									<div class="relative mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Номер телефону</div>
+										<div class="mt-2.5 flex items-center gap-4">
+											<input type="text" class="w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+											<button class="right-0 top-0 whitespace-nowrap text-xs text-lavender-purple underline decoration-lavender-purple decoration-dashed decoration-[0.25px] underline-offset-4 lg:absolute lg:text-sm lg:decoration-[0.5px]">Змінити</button>
+										</div>
+									</div>
+									<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm text-dusty-gray lg:leading-5">Дані, наведені нижче, будуть використані як стандартні для автозаповнення при оформленні замовлення. Якщо Вам потрібно буде замовити доставку за іншою адресою або на іншого отримувача - Ви можете змінити на даній сторінці або у вікні оформлення замовлення.</div>
+										<div class="mt-2.5 text-sm font-medium lg:text-base">Спосіб доставки</div>
+										<div class="mt-2.5 flex flex-col gap-4 2xl:flex-row 2xl:items-center 2xl:gap-5">
+											<label class="flex cursor-pointer items-center gap-2.5">
+												<input type="radio" name="delivery-service" class="peer hidden" checked />
+												<div class="group relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+													<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in group-peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+												</div>
+
+												<div class="flex h-7.5 min-w-[200px] items-center justify-center gap-1.5 rounded-lge px-3.5 text-sm font-medium text-tundora shadow-dusty-gray-mid peer-checked:shadow-lavender-purple-thin 2xl:min-w-[140px]">
+													<svg class="h-5 w-5 fill-pomegranate">
+														<use xlink:href="img/svg/sprites/sprite-icons.svg#nova-poshta"></use>
+													</svg>
+													<div>Нова пошта</div>
+												</div>
+											</label>
+											<label class="flex cursor-pointer items-center gap-2.5">
+												<input type="radio" name="delivery-service" class="peer hidden" />
+												<div class="group relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+													<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in group-peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+												</div>
+
+												<div class="flex h-7.5 min-w-[200px] items-center justify-center gap-1.5 rounded-lge px-3.5 text-sm font-medium text-tundora shadow-dusty-gray-mid peer-checked:shadow-lavender-purple-thin 2xl:min-w-[140px]">
+													<svg class="h-5 w-5 fill-sunglow">
+														<use xlink:href="img/svg/sprites/sprite-icons.svg#ukrposhta"></use>
+													</svg>
+													<div>Нова пошта</div>
+												</div>
+											</label>
+											<label class="flex cursor-pointer items-center gap-2.5">
+												<input type="radio" name="delivery-service" class="peer hidden" />
+												<div class="group relative h-5.5 w-5.5 flex-shrink-0 rounded-full shadow-dusty-gray-mid lg:h-6 lg:w-6">
+													<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in group-peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
+												</div>
+
+												<div class="flex h-7.5 min-w-[200px] items-center justify-center gap-1.5 rounded-lge px-3.5 text-sm font-medium text-tundora shadow-dusty-gray-mid peer-checked:shadow-lavender-purple-thin 2xl:min-w-[140px]">
+													<svg class="h-5 w-5">
+														<use xlink:href="img/svg/sprites/sprite-icons.svg#meest"></use>
+													</svg>
+													<div>Meest</div>
+												</div>
+											</label>
+										</div>
+									</div>
+
+									<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Місто одержувача</div>
+
+										<select class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5">
+											<option value="" selected>Одеська область, Україна</option>
+											<option value="">option 2</option>
+											<option value="">option 3</option>
+										</select>
+									</div>
+									<div class="mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Відділення</div>
+
+										<select class="mt-2 w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5">
+											<option value="" selected>Відділення № 1 Київське шосе</option>
+											<option value="">option 2</option>
+											<option value="">option 3</option>
+										</select>
+									</div>
+
+									<div class="relative mt-3.5 pb-3.5 shadow-dusty-gray-b-extrathin">
+										<div class="text-sm font-medium lg:text-base">Пароль</div>
+										<div class="mt-2.5 flex items-center gap-4">
+											<input type="text" class="w-full rounded-lge border-0 px-3 py-2 text-sm shadow-lavender-purple-thin ring-0 transition ease-in placeholder:text-dusty-gray focus:shadow-lavender-purple focus:ring-0 lg:py-2.5" />
+											<button class="right-0 top-0 whitespace-nowrap text-xs text-lavender-purple underline decoration-lavender-purple decoration-dashed decoration-[0.25px] underline-offset-4 lg:absolute lg:text-sm lg:decoration-[0.5px]">Змінити</button>
+										</div>
+									</div>
+
+									<div class="mt-6 flex justify-center lg:justify-end">
+										<button class="btn-primary flex h-11 w-full max-w-[290px] items-center justify-center px-3 text-sm font-normal lw:max-w-[220px] lg:h-9">Зберегти</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+	</body>
+</html>
