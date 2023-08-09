@@ -32,19 +32,9 @@
 						<div>@@include("html/components/_panel-buyer.html")</div>
 
 						<div class="w-full">
-							<!-- info banner  -->
-							<div class="gradient-pink relative mb-6 mt-0 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:mb-9 lg:mt-0 lg:min-h-[11.25rem] lg:px-3.5">
-								<button class="absolute right-2 top-2">
-									<svg class="h-4 w-4 fill-tundora">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-									</svg>
-								</button>
-								<div class="text-xs font-medium text-shark lg:text-lg">Не дайте себе обдурити!</div>
-								<div class="mt-4 pr-24 text-xs text-tundora lg:mt-2.5 lg:pr-32 lg:text-sm">Дізнайтеся, як уберегти свій гаманець від зловмисників</div>
-								<a href="#" class="mt-1.5 text-xs font-medium text-royal-blue sm:mt-auto lg:text-sm">Поради з безпеки</a>
-								<img src="img/icon005.png" alt="icon" class="absolute bottom-0 right-0 h-[7.125rem] w-[7.8125rem] lg:h-[10.625rem] lg:w-[11.625rem]" style="float: right" />
+							<div class="mb-6">
+								@@include("html/components/_info-banner.html")
 							</div>
-							<!-- ./info banner  -->
 
 							<div class="mb-3.5 mt-2.5 text-lg font-medium lg:hidden">Мої замовлення</div>
 							<div class="w-full rounded-lge bg-white p-2.5 text-shark lg:p-5">
@@ -57,7 +47,7 @@
 									<div class="text-sm">створено 26.06.2023 11:30</div>
 								</div>
 
-								<div class="mt-3.5 lg:mt-5 lg:pb-7.5 lg:shadow-dusty-gray-b-mid">
+								<div class="mt-3.5 pb-6 shadow-dusty-gray-b-mid lg:mt-5 lg:pb-7.5">
 									<div class="text-base font-medium">Продавець: Анна</div>
 									<div class="relative mt-3.5 flex flex-col gap-4.5 lg:flex-row">
 										<div class="h-[74px] w-[142px] flex-shrink-0 overflow-hidden rounded-emd lg:h-20 lg:w-40">
@@ -109,7 +99,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="mt-5.5 lg:mt-7.5 lg:pb-7.5">
+								<div class="mt-6 lg:mt-7.5 lg:pb-7.5">
 									<div class="text-base font-medium">Продавець: Анна</div>
 									<div class="relative mt-3.5 flex flex-col gap-4.5 lg:flex-row">
 										<div class="h-[74px] w-[142px] flex-shrink-0 overflow-hidden rounded-emd lg:h-20 lg:w-40">
@@ -256,7 +246,7 @@
 
 					<div class="mt-8 lg:mt-20">
 						<div class="text-center text-sm font-semibold lg:text-xl">Пропозиція продавця</div>
-						<div class="auto-rows-[minmax(0px, auto)] mt-4 grid grid-cols-2 gap-x-1.5 gap-y-5 md:grid-cols-3 md:gap-x-4 lg:mt-5.5 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-5.5 xl:gap-y-8">@@loop("html/components/_card-home-page.html", "files/cards-list.json")</div>
+						<div class="mt-4 flex justify-between gap-1.5 overflow-auto px-0.5 pb-2.5 pt-0.5 sm:gap-4 lg:mt-7 lg:pb-12">@@loop("html/components/_card-slider.html", "files/cards-list.json")</div>
 					</div>
 				</div>
 			</section>

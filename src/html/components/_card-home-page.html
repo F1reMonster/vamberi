@@ -26,7 +26,7 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[8.5rem] w-full overflow-hidden px-1 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
+	<div class="absolute top-1 z-20 h-[148px] w-full overflow-hidden px-1.5 pb-1 sm:top-2 sm:h-[17.625rem] sm:px-3 sm:pb-2">
 		<img src="@@image" alt="" class="h-full w-full rounded-xle object-cover" />
 		@@if (context.discount) {
 		<div class="absolute bottom-2.5 right-2.5 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:bottom-4 sm:right-4">@@discount</div>
@@ -48,7 +48,7 @@
 	<a class="flex flex-grow flex-col" href="#">
 		<!-- card image -->
 		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:px-3 sm:pb-5">
-			<div class="relative h-[8.5rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
+			<div class="relative h-[148px] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
 		</div>
 		<!-- ./card image -->
 
@@ -79,11 +79,11 @@
 
 				@@if (context.deliveryState) {
 				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-center text-sm text-limeade sm:text-left">Готовий до відправки</div>
+					<div class="text-center text-xs text-limeade sm:text-left sm:text-sm">Готовий до відправки</div>
 					<img class="hidden h-3.5 w-3.5 sm:block sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				} @@if (context.onOrder) {
-				<div class="mt-1 text-center text-ms text-pomegranate sm:text-sm">Під замовлення 5 днів</div>
+				<div class="mt-1 text-center text-xs text-pomegranate sm:text-sm">Під замовлення 5 днів</div>
 				}
 
 				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">

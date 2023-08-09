@@ -117,7 +117,7 @@
 			<div class="text-center text-sm font-medium sm:text-lg sm:font-normal">Особистий кабінет</div>
 			<div class="mt-3.5 flex w-full items-center justify-between rounded-lge bg-lavender-purple px-3 py-2 text-sm transition ease-in sm:mt-11">
 				<label class="relative cursor-pointer">
-					<input type="radio" name="account" class="peer/buyer hidden"  />
+					<input type="radio" name="account" class="peer/buyer hidden" />
 					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs text-white transition ease-in peer-checked/buyer:bg-white peer-checked/buyer:text-shark sm:text-sm">Покупець</div>
 					<svg class="absolute -left-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy opacity-0 transition ease-in peer-checked/buyer:opacity-100 sm:-top-8 sm:left-1/2 sm:h-5 sm:w-5 sm:-translate-x-1/2">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled"></use>
@@ -144,16 +144,4 @@
 	</div>
 </div>
 
-<!-- info banner  -->
-<div class="gradient-pink relative mt-7.5 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:min-h-[11.25rem] lg:px-3.5 xl:hidden">
-	<button class="absolute right-2 top-2">
-		<svg class="h-4 w-4 fill-tundora">
-			<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-		</svg>
-	</button>
-	<div class="text-xs font-medium text-shark lg:text-lg">Не дайте себе обдурити!</div>
-	<div class="mt-4 pr-24 text-xs text-tundora lg:mt-2.5 lg:pr-32 lg:text-sm">Дізнайтеся, як уберегти свій гаманець від зловмисників</div>
-	<a href="#" class="mt-1.5 text-xs font-medium text-royal-blue sm:mt-auto lg:text-sm">Поради з безпеки</a>
-	<img src="img/icon005.png" alt="icon" class="absolute bottom-0 right-0 h-[7.125rem] w-[7.8125rem] lg:h-[10.625rem] lg:w-[11.625rem]" style="float: right" />
-</div>
-<!-- ./info banner  -->
+<div class="xl:hidden mt-7.5 ">@@include("_info-banner.html")</div>
