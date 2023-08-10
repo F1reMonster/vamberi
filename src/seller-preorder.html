@@ -32,7 +32,7 @@
 					@@include("html/components/_panel-seller.html")
 
 					<div class="mb-4 mt-6 text-lg font-medium lg:hidden">Мої продажі</div>
-					<div class="flex flex-col gap-2.5 xl:flex-row xl:items-center xl:justify-between xl:mt-6">
+					<div class="flex flex-col gap-2.5 xl:mt-6 xl:flex-row xl:items-center xl:justify-between">
 						<div class="text-base font-medium lg:text-lg">Замовлення №11211749</div>
 						<div class="order-1 flex items-center gap-4 xl:order-none">
 							<div class="text-sm font-medium lg:text-base">Статус</div>
@@ -153,13 +153,13 @@
 						</div>
 					</div>
 
-					<div class="relative mt-5 flex items-end md:items-center justify-center lg:mt-6 xl:justify-center flex-col-reverse gap-8">
-						<div class="lg:max-w-[none] max-w-[290px] mx-auto">
-							<button class="btn-blue-royal-light flex h-11 lg:h-9 items-center justify-center px-5 text-sm">Запропонувати товари покупцю</button>
+					<div class="relative mt-5 flex flex-col-reverse items-end justify-center gap-8 md:items-center lg:mt-6 xl:justify-center">
+						<div class="mx-auto max-w-[290px] lg:max-w-[none]">
+							<button class="btn-blue-royal-light flex h-11 items-center justify-center px-5 text-sm lg:h-9">Запропонувати товари покупцю</button>
 						</div>
-						<div class="text-base lg:text-lg font-semibold md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2">Всього: 100000 грн.</div>
+						<div class="text-base font-semibold md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 lg:text-lg">Всього: 100000 грн.</div>
 					</div>
-					<div class="mx-auto mt-4.5 lg:flex max-w-[290px] sm:mx-0 sm:max-w-[none] sm:justify-end hidden">
+					<div class="mx-auto mt-4.5 hidden max-w-[290px] sm:mx-0 sm:max-w-[none] sm:justify-end lg:flex">
 						<button class="btn-danger-light h-11 w-full px-6.5 text-sm sm:w-auto lg:h-9">Скасувати</button>
 					</div>
 
@@ -196,7 +196,6 @@
 						</div>
 					</div>
 
-
 					<div class="mt-9">
 						<div class="text-center text-sm font-semibold lg:text-xl">Мої пропозиції</div>
 						<div class="mt-4 flex justify-between gap-1.5 overflow-auto px-0.5 pb-2.5 pt-0.5 sm:gap-4 lg:mt-7 lg:pb-12">@@loop("html/components/_card-slider.html", "files/cards-list.json")</div>
@@ -204,8 +203,6 @@
 				</div>
 			</section>
 			<!-- ./top panel -->
-
-			
 		</main>
 
 		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')

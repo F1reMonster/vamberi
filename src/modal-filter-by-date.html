@@ -3,7 +3,7 @@
 	<head>
 		@@include('html/components/_head.html', {title: "VamBeri - Статистика"})
 	</head>
-	<body class="overflow-hidden overscroll-none touch-none">
+	<body class="touch-none overflow-hidden overscroll-none">
 		@@include('html/components/_header.html', {accountMenu: ""})
 
 		<main>
@@ -336,9 +336,6 @@
 			</section>
 		</main>
 
-		@@include('html/components/_sticky-menu.html') 
-		@@include('html/components/_footer.html')
-		@@include('html/components/modals/_modal-filter-by-date.html')
-
+		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html') @@include('html/components/modals/_modal-filter-by-date.html')
 	</body>
 </html>
