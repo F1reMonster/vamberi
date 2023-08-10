@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" href="img/svg/ua.svg" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="./css/style.css" />
-<title>VamBeri - Налаштування</title>
+<title>VamBeri - Мої продажі</title>
 
 	</head>
 	<body>
@@ -150,140 +150,163 @@
 						</li>
 
 						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Налаштування</a>
+							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Мої продажі</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<!-- ./breadcrumbs -->
 
-			<section>
+			<!-- top panel -->
+			<section class="pt-2 lg:pt-8">
 				<div class="container">
-					<div class="flex flex-col gap-5 lg:flex-row lg:gap-5 2xl:gap-10.5">
-						<div><!-- panel buyer -->
-<div class="lg:w-[22.5rem]">
-	<!-- buyer -->
-	<div class="relative rounded-bl-3xle rounded-br-3xle rounded-tl-xle rounded-tr-xle px-3 text-shark lg:bg-white lg:py-6 lg:shadow-custom">
-		<div class="flex flex-col items-center">
-			<div class="text-lg font-semibold">Кабінет покупця</div>
-			<div class="mt-5">
-				<svg class="h-11 w-15 lg:h-[55px] lg:w-[70px]">
-					<use xlink:href="img/svg/sprites/sprite-icons.svg#buyer-office"></use>
-				</svg>
-			</div>
-			<div class="k mt-4 text-base font-medium lg:text-xl lg:font-normal">Софія Смірнова</div>
-			<div class="mt-2 text-sm text-tundora">На сайті Vamberi з 10.09.2022</div>
-			<div class="mt-2.5 flex items-center gap-4 text-sm">
-				<div class="flex items-center gap-1.5">
-					<div>
-						<svg class="h-4 w-4 fill-transparent stroke-shark">
-							<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+					<div class="flex items-center rounded-lge lg:bg-white lg:shadow-shark-inset">
+	<!-- menu -->
+	<div class="relative hidden flex-shrink-0 rounded-lge shadow-shark-r lg:block">
+		<div class="flex gap-5 py-4 pl-4 pr-6">
+			<ul class="flex flex-col gap-5 text-sm">
+				<li class="flex items-center gap-5">
+					<button class="btn-blue-royal-light group flex h-7.5 w-full items-center justify-center gap-3 rounded-lge p-1 text-xs">
+						<svg class="h-4.5 w-4.5 fill-royal-blue transition ease-in group-hover:fill-white">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#Group"></use>
 						</svg>
-					</div>
-					<div class="font-medium">0.0</div>
-				</div>
-				<div>
-					<span class="font-medium">0</span>
-					<span>відгуків</span>
-				</div>
-			</div>
+						<span>Панель управління</span>
+					</button>
+				</li>
+				<li class="flex items-center gap-5">
+					<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#my-products"></use>
+						</svg>
+						<span>Мої товари</span>
+					</a>
+				</li>
+				<li class="relative flex items-center gap-5">
+					<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-8">
+						<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#bag"></use>
+						</svg>
+						<span>Продажі</span>
+					</a>
+					<p class="absolute right-0 top-1/2 flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 -translate-y-1/2 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">999+</span></p>
+				</li>
+				<li class="flex items-center gap-5">
+					<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
+						</svg>
+						<span>Мої підписки</span>
+					</a>
+				</li>
+				<li class="flex items-center gap-5">
+					<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#settings"></use>
+						</svg>
+						<span>Налаштування</span>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="flex flex-col gap-5 text-sm">
+				<li class="flex h-7.5 items-center gap-5 p-1">
+					<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:p-0">
+						<svg class="h-5 w-5 flex-shrink-0 fill-transparent stroke-shark">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#my-shop"></use>
+						</svg>
+						<span>Мій магазин </span>
+					</a>
+				</li>
+				<li class="flex items-center gap-5">
+					<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:p-0">
+						<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#add"></use>
+						</svg>
+						<span>Додати товар</span>
+					</a>
+				</li>
+				<li class="relative flex items-center gap-5 pr-8">
+					<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:p-0">
+						<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#envelope"></use>
+						</svg>
+						<span class="">Повідомлення</span>
+					</a>
+					<p class="absolute -right-5.5 top-1/2 flex h-5 min-w-[20px] flex-shrink-0 -translate-y-1/2 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">999+</span></p>
+				</li>
+
+				<li class="flex items-center gap-5">
+					<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:p-0">
+						<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#wallet"></use>
+						</svg>
+						<span>Гаманець [0 грн.] </span>
+					</a>
+				</li>
+				<li class="flex items-center gap-5">
+					<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:p-0">
+						<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#exit"></use>
+						</svg>
+						<span>Вихід</span>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</div>
+	<!-- ./menu -->
 
-	<div class="mt-2.5 lg:-mt-1.5 relative rounded-bl-xle rounded-br-xle rounded-tl-3xle rounded-tr-3xle lg:bg-white lg:px-3 lg:pb-6 lg:pt-0 lg:shadow-custom">
-		<div class="w-60 mx-auto">
-			<!-- Особистий кабінет -->
-			<div class="text-center text-base font-normal sm:font-medium">Особистий кабінет</div>
-			<div class="mt-2.5 lg:mt-5 flex items-center justify-between rounded-lge bg-lavender-purple px-3 py-2 text-sm transition ease-in">
+	<!-- center block -->
+	<div class="flex w-full flex-grow flex-col items-center justify-center sm:flex-row sm:px-4.5 xl:w-auto">
+		<div class="flex flex-col items-center 2xl:flex-row">
+			<div class="mb-4 text-sm font-medium text-tundora sm:hidden">Кабінет продавця</div>
+			<svg class="h-[55px] w-[55px] fill-shark 2xl:h-[110px] 2xl:w-[110px]">
+				<use xlink:href="img/svg/sprites/sprite-icons.svg#seller-office"></use>
+			</svg>
+			<div class="mt-4 text-center sm:mt-0 2xl:ml-5 2xl:text-left">
+				<div class="hidden text-lg font-semibold text-tundora sm:block">Кабінет продавця:</div>
+				<div class="text-sm font-medium text-tundora sm:mt-1.5 sm:text-base sm:font-normal">Софія Смірнова</div>
+				<div class="mt-2.5 flex justify-center gap-3 text-xs sm:mt-3.5 sm:text-sm 2xl:justify-start">
+					<div class="text-tundora"><span class="font-medium">12</span> відгуків</div>
+					<div class="text-tundora"><span class="font-medium">446</span> товарів</div>
+				</div>
+				<div class="mt-2.5 text-xs text-tundora sm:mt-3.5 sm:text-sm">На сайті Vamberi з 10.09.2022</div>
+			</div>
+		</div>
+
+		<!-- Особистий кабінет -->
+		<div class="mt-3 sm:ml-6 sm:mt-0">
+			<div class="text-center text-sm font-medium sm:text-lg sm:font-normal">Особистий кабінет</div>
+			<div class="mt-3.5 flex w-full items-center justify-between rounded-lge bg-lavender-purple px-3 py-2 text-sm transition ease-in sm:mt-11">
 				<label class="relative cursor-pointer">
-					<input type="radio" name="account" class="peer/buyer hidden" checked />
+					<input type="radio" name="account" class="peer/buyer hidden" />
 					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs text-white transition ease-in peer-checked/buyer:bg-white peer-checked/buyer:text-shark sm:text-sm">Покупець</div>
-					<svg class="absolute -left-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy opacity-0 transition ease-in peer-checked/buyer:opacity-100 sm:-left-10 sm:h-5 sm:w-5">
+					<svg class="absolute -left-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy opacity-0 transition ease-in peer-checked/buyer:opacity-100 sm:-top-8 sm:left-1/2 sm:h-5 sm:w-5 sm:-translate-x-1/2">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled"></use>
 					</svg>
 				</label>
 				<label class="relative cursor-pointer">
-					<input type="radio" name="account" class="peer/seller hidden" />
+					<input type="radio" name="account" class="peer/seller hidden" checked />
 					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs text-white transition ease-in peer-checked/seller:bg-white peer-checked/seller:text-shark sm:text-sm">Продавець</div>
-					<svg class="absolute -right-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy opacity-0 transition ease-in peer-checked/seller:opacity-100 sm:-right-10 sm:h-5 sm:w-5">
+					<svg class="absolute -right-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy opacity-0 transition ease-in peer-checked/seller:opacity-100 sm:-top-8 sm:left-1/2 sm:h-5 sm:w-5 sm:-translate-x-1/2">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled"></use>
 					</svg>
 				</label>
 			</div>
-			<!-- ./Особистий кабінет -->
-
-			<!-- menu -->
-			<div class="mt-5 lg:block hidden">
-				<ul class="flex flex-col gap-5 text-sm">
-					<li class="flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
-							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#basket"></use>
-							</svg>
-							<span>Замовлення</span>
-						</a>
-					</li>
-					<li class="relative flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-8">
-							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#envelope"></use>
-							</svg>
-							<span>Повідомлення</span>
-						</a>
-						<p class="absolute right-0 top-1/2 flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 -translate-y-1/2 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">999+</span></p>
-					</li>
-					<li class="flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
-							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#eye2"></use>
-							</svg>
-							<span>Переглянуті товари</span>
-						</a>
-					</li>
-					<li class="flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
-							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
-							</svg>
-							<span>Вибране</span>
-						</a>
-					</li>
-					<li class="flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
-							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#message2"></use>
-							</svg>
-							<span>Мої відгуки</span>
-						</a>
-					</li>
-					<li class="flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
-							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#settings"></use>
-							</svg>
-							<span>Налаштування</span>
-						</a>
-					</li>
-					<li class="flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
-							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#exit"></use>
-							</svg>
-							<span>Вихід</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<!-- menu -->
 		</div>
+		<!-- ./Особистий кабінет -->
+	</div>
+	<!-- ./center block -->
+
+	<div class="gradient-pink relative mr-[0.5px] hidden h-[220px] w-[396px] flex-col rounded-lge px-3.5 py-5 shadow-shark-l xl:flex">
+		<div class="text-lg font-medium text-shark">Не дайте себе обдурити!</div>
+		<div class="mt-2.5 max-w-[17.8125rem] text-sm text-tundora">Дізнайтеся, як уберегти свій гаманець від зловмисників</div>
+		<a href="#" class="mt-auto text-sm font-medium text-royal-blue">Поради з безпеки</a>
+		<img src="img/icon005.png" alt="icon" class="absolute -bottom-2 -right-2" />
 	</div>
 </div>
-<!-- ./panel buyer -->
-</div>
 
-						<div class="w-full">
-							<div class="mb-6">
-								<!-- info banner  -->
+<div class="xl:hidden mt-7.5 "><!-- info banner  -->
 <div class="gradient-pink relative mt-0 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:mb-9 lg:mt-0 lg:min-h-[11.25rem] lg:px-3.5">
 	<button class="absolute right-2 top-2">
 		<svg class="h-4 w-4 fill-tundora">
@@ -295,218 +318,225 @@
 	<a href="#" class="text-xs font-medium text-royal-blue mt-auto lg:text-sm">Поради з безпеки</a>
 	<img src="img/icon005.png" alt="icon" class="absolute bottom-0 right-0 h-[7.125rem] w-[7.8125rem] lg:h-[10.625rem] lg:w-[11.625rem]" style="float: right" />
 </div>
-<!-- ./info banner  -->
+<!-- ./info banner  --></div>
+
+
+					<div class="mb-4 mt-6 text-lg font-medium lg:hidden">Мої продажі</div>
+					<div class="flex flex-col gap-2.5 xl:mt-6 xl:flex-row xl:items-center xl:justify-between">
+						<div class="text-base font-medium lg:text-lg">Замовлення №11211749</div>
+						<div class="order-1 flex items-center gap-4 xl:order-none">
+							<div class="text-sm font-medium lg:text-base">Статус</div>
+							<div class="rounded-lge bg-white px-8 py-1.5 text-sm shadow-lavender-purple-thin">Чекає на оформлення</div>
+						</div>
+						<div class="text-sm">створено 26.06.2023 11:30</div>
+					</div>
+
+					<div class="mt-4.5 w-full rounded-lge bg-white p-2.5 text-shark lg:p-5">
+						<div class="pb-5 shadow-dusty-gray-b-mid lg:pb-7.5">
+							<div class="flex items-center justify-between text-base font-medium">
+								<div>Покупець: Анна</div>
+
+								<button class="lg:hidden">
+									<svg class="h-4 w-4">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
+									</svg>
+								</button>
 							</div>
-
-							<div class="mb-3.5 mt-2.5 text-lg font-medium lg:hidden">Мої замовлення</div>
-							<div class="w-full rounded-lge bg-white p-2.5 text-shark lg:p-5">
-								<div class="flex flex-col gap-2.5 xl:flex-row xl:items-center xl:justify-between">
-									<div class="text-base font-medium lg:text-lg">Замовлення №11211749</div>
-									<div class="order-1 flex items-center gap-4 xl:order-none">
-										<div class="text-sm font-medium lg:text-base">Статус</div>
-										<div class="rounded-lge px-8 py-1.5 text-sm shadow-lavender-purple-thin">У відділенні</div>
-									</div>
-									<div class="text-sm">створено 26.06.2023 11:30</div>
+							<div class="relative mt-3.5 flex flex-col gap-4.5 lg:flex-row">
+								<div class="h-[74px] w-[142px] flex-shrink-0 overflow-hidden rounded-emd lg:h-20 lg:w-40">
+									<img class="h-full w-full object-cover object-center" src="img/goods/1.jpg" alt="" />
 								</div>
-
-								<div class="mt-3.5 pb-6 shadow-dusty-gray-b-mid lg:mt-5 lg:pb-7.5">
-									<div class="text-base font-medium">Продавець: Анна</div>
-									<div class="relative mt-3.5 flex flex-col gap-4.5 lg:flex-row">
-										<div class="h-[74px] w-[142px] flex-shrink-0 overflow-hidden rounded-emd lg:h-20 lg:w-40">
-											<img class="h-full w-full object-cover object-center" src="img/goods/1.jpg" alt="" />
-										</div>
-										<div class="flex w-full flex-col">
-											<div class="flex justify-between gap-4">
-												<div class="text-base lg:line-clamp-3 lg:max-w-[412px] lg:text-ellipsis">Тумба прикроватная подвесная консоль настенная, VELVET MEDEL</div>
-												<div class="absolute right-0 top-0 max-w-[150px] flex-shrink-0 text-sm lw:max-w-[none] lg:static">
-													<div class="flex flex-wrap items-center justify-end gap-2 text-tundora">
-														<div class="font-medium">Опт:</div>
-														<div class="text-sm font-semibold lg:text-base">3 520 000 грн.</div>
-													</div>
-													<div class="text-right leading-5 line-through">7041 грн.</div>
+								<div class="flex w-full flex-col">
+									<div class="flex flex-col justify-between gap-4 sm:flex-row">
+										<div class="text-sm lg:line-clamp-3 lg:max-w-[412px] lg:text-ellipsis lg:text-base">Тумба прикроватная подвесная консоль настенная, VELVET MEDEL</div>
+										<div class="flex flex-shrink-0 justify-between gap-4 text-sm">
+											<div class="text-sm font-semibold lg:hidden">1 шт.</div>
+											<div>
+												<div class="flex flex-wrap items-center justify-end gap-2 text-tundora">
+													<div class="font-medium">Опт:</div>
+													<div class="text-sm font-semibold lg:text-base">3 520 000 грн.</div>
 												</div>
-											</div>
-											<div class="mt-3.5 flex flex-col lg:mt-auto lg:flex-row lg:items-center lg:justify-between">
-												<div class="flex">
-													<div class="flex gap-2 rounded-lge px-5 py-1.5 text-sm tracking-tight shadow-lavender-purple-thin lg:px-0 lg:py-0 lg:shadow-none">
-														<div class="text-dusty-gray">Код <span class="hidden xl:inline-block">товару</span>:</div>
-														<div class="font-semibold">119954759</div>
-													</div>
-													<div class="ml-5 flex gap-2 rounded-lge px-5 py-1.5 text-sm tracking-tight shadow-lavender-purple-thin lg:px-0 lg:py-0 lg:shadow-none">
-														<div class="text-dusty-gray">ID:</div>
-														<div class="font-semibold">45475541</div>
-													</div>
-												</div>
-												<div class="mt-6.5 flex items-center justify-between lg:mt-0">
-													<div class="flex flex-shrink-0 items-center gap-1.5 sm:gap-2 xl:gap-3.5">
-														<button class="flex h-7 w-7 items-center justify-center rounded-emd border border-dusty-gray text-xl text-shark transition ease-in hover:bg-lavender-purple hover:text-white">-</button>
-														<input type="text" value="1" class="block w-5.5 border-0 p-0 text-center text-lg" readonly="" />
-														<button class="flex h-7 w-7 items-center justify-center rounded-emd border border-dusty-gray text-xl text-shark transition ease-in hover:bg-lavender-purple hover:text-white">+</button>
-													</div>
-													<div class="absolute right-0 top-[24%] flex gap-4 lg:static lg:ml-4 xl:ml-20">
-														<button class="group" aria-label="Додати до улюблених">
-															<svg class="h-4 w-4 fill-shark transition ease-linear group-hover:fill-lavender-purple lg:h-5 lg:w-5">
-																<use xlink:href="img/svg/sprites/sprite-icons.svg#heart2"></use>
-															</svg>
-														</button>
-														<button class="group" aria-label="Видалити з кошика">
-															<svg class="h-4 w-4 fill-shark transition ease-linear group-hover:fill-pomegranate lg:h-5 lg:w-5">
-																<use xlink:href="img/svg/sprites/sprite-icons.svg#bin2"></use>
-															</svg>
-														</button>
-													</div>
-													<div class="text-base font-semibold lg:hidden">Всього: 9 999 999 грн.</div>
-												</div>
+												<div class="text-right leading-5 line-through">7041 грн.</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="mt-6 lg:mt-7.5 lg:pb-7.5">
-									<div class="text-base font-medium">Продавець: Анна</div>
-									<div class="relative mt-3.5 flex flex-col gap-4.5 lg:flex-row">
-										<div class="h-[74px] w-[142px] flex-shrink-0 overflow-hidden rounded-emd lg:h-20 lg:w-40">
-											<img class="h-full w-full object-cover object-center" src="img/goods/1.jpg" alt="" />
-										</div>
-										<div class="flex w-full flex-col">
-											<div class="flex justify-between gap-4">
-												<div class="text-base lg:line-clamp-3 lg:max-w-[412px] lg:text-ellipsis">Тумба прикроватная подвесная консоль настенная, VELVET MEDEL</div>
-												<div class="absolute right-0 top-0 max-w-[150px] flex-shrink-0 text-sm lw:max-w-[none] lg:static">
-													<div class="flex flex-wrap items-center justify-end gap-2 text-tundora">
-														<div class="font-medium">Роздріб:</div>
-														<div class="text-sm font-semibold lg:text-base">3 520 грн.</div>
-													</div>
-													<div class="text-right leading-5 line-through">7041 грн.</div>
-												</div>
+									<div class="mt-3.5 flex flex-col lg:mt-auto lg:flex-row lg:items-center lg:justify-between">
+										<div class="absolute right-0 top-0 flex flex-col-reverse gap-4.5 lg:static lg:flex-row lg:gap-5">
+											<div class="flex min-w-[140px] justify-center gap-2 rounded-lge px-2 py-1.5 text-sm tracking-tight shadow-lavender-purple-thin lg:min-w-[none] lg:px-0 lg:py-0 lg:shadow-none">
+												<div class="text-dusty-gray">Код <span class="hidden lg:inline-block">товару</span>:</div>
+												<div class="font-semibold">119954759</div>
 											</div>
-											<div class="mt-3.5 flex flex-col lg:mt-auto lg:flex-row lg:items-center lg:justify-between">
-												<div class="flex">
-													<div class="flex gap-2 rounded-lge px-5 py-1.5 text-sm tracking-tight shadow-lavender-purple-thin lg:px-0 lg:py-0 lg:shadow-none">
-														<div class="text-dusty-gray">Код <span class="hidden xl:inline-block">товару</span>:</div>
-														<div class="font-semibold">119954759</div>
-													</div>
-													<div class="ml-5 flex gap-2 rounded-lge px-5 py-1.5 text-sm tracking-tight shadow-lavender-purple-thin lg:px-0 lg:py-0 lg:shadow-none">
-														<div class="text-dusty-gray">ID:</div>
-														<div class="font-semibold">45475541</div>
-													</div>
-												</div>
-												<div class="mt-6.5 flex items-center justify-between lg:mt-0">
-													<div class="flex flex-shrink-0 items-center gap-1.5 sm:gap-2 xl:gap-3.5">
-														<button class="flex h-7 w-7 items-center justify-center rounded-emd border border-dusty-gray text-xl text-shark transition ease-in hover:bg-lavender-purple hover:text-white">-</button>
-														<input type="text" value="1" class="block w-5.5 border-0 p-0 text-center text-lg" readonly="" />
-														<button class="flex h-7 w-7 items-center justify-center rounded-emd border border-dusty-gray text-xl text-shark transition ease-in hover:bg-lavender-purple hover:text-white">+</button>
-													</div>
-													<div class="absolute right-0 top-[24%] flex gap-4 lg:static lg:ml-4 xl:ml-20">
-														<button class="group" aria-label="Додати до улюблених">
-															<svg class="h-4 w-4 fill-shark transition ease-linear group-hover:fill-lavender-purple lg:h-5 lg:w-5">
-																<use xlink:href="img/svg/sprites/sprite-icons.svg#heart2"></use>
-															</svg>
-														</button>
-														<button class="group" aria-label="Видалити з кошика">
-															<svg class="h-4 w-4 fill-shark transition ease-linear group-hover:fill-pomegranate lg:h-5 lg:w-5">
-																<use xlink:href="img/svg/sprites/sprite-icons.svg#bin2"></use>
-															</svg>
-														</button>
-													</div>
-													<div class="text-basr font-semibold lg:hidden">Всього: 1 грн.</div>
-												</div>
+											<div class="flex min-w-[140px] justify-center gap-2 rounded-lge px-2 py-1.5 text-sm tracking-tight shadow-lavender-purple-thin lg:min-w-[none] lg:px-0 lg:py-0 lg:shadow-none">
+												<div class="text-dusty-gray">ID:</div>
+												<div class="font-semibold">45475541</div>
 											</div>
 										</div>
-									</div>
-								</div>
-
-								<div class="relative mt-5 flex items-center justify-center lg:mt-0 lg:justify-between xl:justify-center">
-									<div>
-										<button class="btn-pink-light flex h-9 items-center justify-center px-5 text-sm">Додати товари продавця у кошик</button>
-									</div>
-									<div class="hidden text-lg font-semibold lg:block xl:absolute xl:right-0 xl:top-1/2 xl:-translate-y-1/2">Всього: 9 999 999 грн.</div>
-								</div>
-							</div>
-
-							<div class="mt-6">
-								<div class="w-full rounded-lge bg-white p-2.5 lg:p-5">
-									<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-										<div class="text-shark">
-											<div class="text-base font-semibold text-tundora">Доставка</div>
-											<div class="mt-2 text-sm font-medium lg:text-base">Товар продається лише через транспортну компанію</div>
-											<div class="mt-2.5 flex flex-col gap-2 text-sm sm:mt-5 sm:flex-row sm:items-center sm:gap-4">
-												<div>Спосіб доставки:</div>
-												<div class="flex items-center gap-3">
-													<svg class="h-5 w-5 fill-pomegranate">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#nova-poshta"></use>
-													</svg>
-													<div>Нова пошта - от 40 грн.</div>
-												</div>
-											</div>
+										<div class="mr-60 hidden items-center justify-between lg:flex">
+											<div class="text-base font-semibold">1 шт.</div>
 										</div>
-										<div class="hidden flex-shrink-0 lg:block xl:mr-5">
-											<div class="text-center text-lg text-limeade">Безпечна угода</div>
-											<div class="mt-3.5 text-center">
-												<button class="btn-pink h-9 px-6 text-sm">Оформити замовлення</button>
-											</div>
-										</div>
-									</div>
-
-									<div class="mt-2.5 flex flex-col justify-center lg:mt-10">
-										<label class="flex cursor-pointer items-center gap-3">
-											<div class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" checked />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+										<div class="text-right lg:hidden">
+											<div class="text-base font-semibold">Всього: 100000 грн.</div>
+											<button class="group mt-2" aria-label="Видалити">
+												<svg class="h-4 w-4 fill-shark transition ease-linear group-hover:fill-pomegranate">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#bin2"></use>
 												</svg>
-											</div>
-											<div class="text-xs text-tundora sm:text-sm">Погоджуюся з правилами користування торговим майданчиком та повернення</div>
-										</label>
-
-										<div class="mx-auto mt-3.5 w-full max-w-[290px] sm:mx-0 sm:max-w-[none] lg:hidden">
-											<div class="text-center text-sm text-limeade lg:text-lg">Безпечна угода</div>
-											<div class="mt-2 text-center">
-												<button class="btn-pink h-11 w-full px-6 text-sm sm:w-auto lg:h-9">Оформити замовлення</button>
-											</div>
+											</button>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="mx-auto mt-4.5 flex max-w-[290px] sm:mx-0 sm:max-w-[none] sm:justify-end">
-								<button class="btn-danger-light h-11 w-full px-6.5 text-sm sm:w-auto lg:h-9">Скасувати замовлення</button>
+						</div>
+
+						<div class="mt-6">
+							<div class="flex items-center justify-between text-base font-medium">
+								<div>Покупець: Анна</div>
+
+								<button class="lg:hidden">
+									<svg class="h-4 w-4">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
+									</svg>
+								</button>
 							</div>
-
-							<div class="mt-6">
-								<div class="lg:pb-10 lg:shadow-dusty-gray-b-mid">
-									<div class="text-base font-medium lg:text-lg">Повідомлення</div>
-									<div class="mt-2.5 w-full rounded-lge border border-lavender-purple bg-white p-2.5 lg:border-0 lg:p-5">
-										<div class="h-[8.75rem] w-full lg:h-auto">
-											<div class="flex h-full w-full">
-												<div class="flex w-full gap-4 fill-lavender-purple lg:items-center">
-													<div class="flex h-full items-end">
-														<svg class="h-4 w-4 flex-shrink-0 fill-lavender-purple lg:h-8 lg:w-8">
-															<use xlink:href="img/svg/sprites/sprite-icons.svg#message"></use>
-														</svg>
-													</div>
-
-													<div class="-ml-8 -mr-8 flex-grow pb-5 lg:m-0 lg:pb-0">
-														<textarea class="h-20 min-h-0 w-full resize-none border-0 p-0 align-bottom text-sm ring-0 placeholder:text-sm placeholder:text-dusty-gray focus:ring-0 lg:h-4.5" placeholder="Ваше повідомлення..."></textarea>
-													</div>
-													<div class="z-10 flex h-full items-end">
-														<button>
-															<svg class="h-4 w-4 flex-shrink-0 fill-lavender-purple lg:h-6 lg:w-6">
-																<use xlink:href="img/svg/sprites/sprite-icons.svg#message-send"></use>
-															</svg>
-														</button>
-													</div>
+							<div class="relative mt-3.5 flex flex-col gap-4.5 lg:flex-row">
+								<div class="h-[74px] w-[142px] flex-shrink-0 overflow-hidden rounded-emd lg:h-20 lg:w-40">
+									<img class="h-full w-full object-cover object-center" src="img/goods/2.jpg" alt="" />
+								</div>
+								<div class="flex w-full flex-col">
+									<div class="flex flex-col justify-between gap-4 sm:flex-row">
+										<div class="text-sm lg:line-clamp-3 lg:max-w-[412px] lg:text-ellipsis lg:text-base">Тумба прикроватная подвесная консоль настенная, VELVET MEDEL</div>
+										<div class="flex flex-shrink-0 justify-between gap-4 text-sm">
+											<div class="text-sm font-semibold lg:hidden">1 шт.</div>
+											<div>
+												<div class="flex flex-wrap items-center justify-end gap-2 text-tundora">
+													<div class="font-medium">Роздріб:</div>
+													<div class="text-sm font-semibold lg:text-base">3 520 000 грн.</div>
 												</div>
+												<div class="text-right leading-5 line-through">7041 грн.</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="mt-3.5 text-right lg:mt-5">
-									<button class="whitespace-nowrap text-sm text-tall-poppy underline decoration-tall-poppy decoration-dashed decoration-[0.25px] underline-offset-4 lg:text-base lg:decoration-[0.5px]">Поскаржитися</button>
+									<div class="mt-3.5 flex flex-col lg:mt-auto lg:flex-row lg:items-center lg:justify-between">
+										<div class="absolute right-0 top-0 flex flex-col-reverse gap-4.5 lg:static lg:flex-row lg:gap-5">
+											<div class="flex min-w-[140px] justify-center gap-2 rounded-lge px-2 py-1.5 text-sm tracking-tight shadow-lavender-purple-thin lg:min-w-[none] lg:px-0 lg:py-0 lg:shadow-none">
+												<div class="text-dusty-gray">Код <span class="hidden lg:inline-block">товару</span>:</div>
+												<div class="font-semibold">119954759</div>
+											</div>
+											<div class="flex min-w-[140px] justify-center gap-2 rounded-lge px-2 py-1.5 text-sm tracking-tight shadow-lavender-purple-thin lg:min-w-[none] lg:px-0 lg:py-0 lg:shadow-none">
+												<div class="text-dusty-gray">ID:</div>
+												<div class="font-semibold">45475541</div>
+											</div>
+										</div>
+										<div class="mr-60 hidden items-center justify-between lg:flex">
+											<div class="text-base font-semibold">1 шт.</div>
+										</div>
+										<div class="text-right lg:hidden">
+											<div class="text-base font-semibold">Всього: 100000 грн.</div>
+											<button class="group mt-2" aria-label="Видалити">
+												<svg class="h-4 w-4 fill-shark transition ease-linear group-hover:fill-pomegranate">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#bin2"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="mt-8 lg:mt-20">
+					<div class="relative mt-5 flex justify-end lg:mt-6 lg:hidden">
+						<div class="text-base font-semibold">Всього: 100000 грн.</div>
+					</div>
+
+					<div class="mt-6">
+						<div class="w-full rounded-lge bg-white p-2.5 lg:p-5">
+							<div class="md:text-center md:text-lg  md:font-semibold text-tundora text=base font-medium">Доставка</div>
+							<div class="mt-5 flex flex-col xl:flex-row xl:items-center xl:justify-between">
+								<div class="text-shark">
+									<div class="flex flex-col gap-2 text-sm sm:flex-row sm:items-center sm:gap-4">
+										<div>Спосіб доставки:</div>
+										<div class="flex items-center gap-3">
+											<svg class="h-5 w-5 fill-pomegranate">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#nova-poshta"></use>
+											</svg>
+											<div>Нова пошта - от 40 грн.</div>
+										</div>
+									</div>
+									<div class="mt-3.5 text-sm leading-5">Замовлення має бути відправлено протягом 3-х днів з моменту прийняття замовлення</div>
+									<div class="mt-5 flex flex-col gap-3.5">
+										<div class="flex flex-col gap-2.5 md:flex-row md:items-center md:gap-10">
+											<div class="flex-shrink-0 text-sm font-semibold md:w-[200px] md:text-base">Адреса</div>
+											<div class="text-sm md:font-normal font-medium">Кам’янське (Дніпропетровська обл.), №9(до 200 кг) вул. Медична 2а</div>
+										</div>
+										<div class="flex flex-col gap-2.5 md:flex-row md:items-center md:gap-10">
+											<div class="flex-shrink-0 text-sm font-semibold md:w-[200px] md:text-base">Одержувач</div>
+											<div class="text-sm md:font-normal font-medium">Бойко Семен</div>
+										</div>
+										<div class="flex flex-col gap-2.5 md:flex-row md:items-center md:gap-10">
+											<div class="flex-shrink-0 text-sm font-semibold md:w-[200px] md:text-base">Дата відправлення</div>
+											<div class="text-sm md:font-normal font-medium">до 25.02.2023</div>
+										</div>
+										<div class="flex flex-col gap-2.5 md:flex-row md:items-center md:gap-10">
+											<div class="flex-shrink-0 text-sm font-semibold md:w-[200px] md:text-base">Оціночна вартість</div>
+											<div class="text-sm md:font-normal font-medium">2800 грн.</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="mt-3.5 flex flex-col gap-3.5 md:gap-6 xl:mx-auto xl:mt-0 xl:items-center">
+									<div class="flex">
+										<div class="flex flex-col gap-1 rounded-lge p-3.5 text-sm shadow-lavender-purple-thin">
+											<div>1. (осталось три дня до отправки)</div>
+											<div>2. (осталось два дня до отправки</div>
+											<div>3. (отправка ожидается завтра)</div>
+											<div>4. ( отправка ожидается сегодня)</div>
+										</div>
+									</div>
+
+									<div class="flex">
+										<div class="flex flex-shrink-0 md:gap-20 rounded-lge px-5 py-2 text-sm shadow-lavender-purple-thin md:flex-row flex-col">
+											<div class="flex-shrink-0">Номер транспортної накладної</div>
+											<div class="font-semibold">20004422556633</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mt-6">
+						<div class="lg:pb-10 lg:shadow-dusty-gray-b-mid">
+							<div class="text-base font-medium lg:text-lg">Повідомлення</div>
+							<div class="mt-2.5 w-full rounded-lge border border-lavender-purple bg-white p-2.5 lg:border-0 lg:p-5">
+								<div class="h-[8.75rem] w-full lg:h-auto">
+									<div class="flex h-full w-full">
+										<div class="flex w-full gap-4 fill-lavender-purple lg:items-center">
+											<div class="flex h-full items-end">
+												<svg class="h-4 w-4 flex-shrink-0 fill-lavender-purple lg:h-8 lg:w-8">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#message"></use>
+												</svg>
+											</div>
+
+											<div class="-ml-8 -mr-8 flex-grow pb-5 lg:m-0 lg:pb-0">
+												<textarea class="h-20 min-h-0 w-full resize-none border-0 p-0 align-bottom text-sm ring-0 placeholder:text-sm placeholder:text-dusty-gray focus:ring-0 lg:h-4.5" placeholder="Ваше повідомлення..."></textarea>
+											</div>
+											<div class="z-10 flex h-full items-end">
+												<button>
+													<svg class="h-4 w-4 flex-shrink-0 fill-lavender-purple lg:h-6 lg:w-6">
+														<use xlink:href="img/svg/sprites/sprite-icons.svg#message-send"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mt-3.5 text-right lg:mt-5">
+							<button class="whitespace-nowrap text-sm text-tall-poppy underline decoration-tall-poppy decoration-dashed decoration-[0.25px] underline-offset-4 lg:text-base lg:decoration-[0.5px]">Поскаржитися</button>
+						</div>
+					</div>
+
+					<div class="mt-9">
 						<div class="text-center text-sm font-semibold lg:text-xl">Пропозиція продавця</div>
 						<div class="mt-4 flex justify-between gap-1.5 overflow-auto px-0.5 pb-2.5 pt-0.5 sm:gap-4 lg:mt-7 lg:pb-12"><!-- card -->
 <div class="group relative flex w-40 flex-shrink-0 sm:w-[16.875rem]">
@@ -1037,6 +1067,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- ./top panel -->
 		</main>
 
 		<!-- sticky menu -->

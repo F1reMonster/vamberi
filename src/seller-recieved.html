@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		@@include('html/components/_head.html', {title: "VamBeri - Мої продажі"})
+	</head>
+	<body>
+		@@include('html/components/_header.html', {accountMenu: ""})
+
+		<main>
+			<!-- breadcrumbs -->
+			<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-11 lg:text-sm">
+				<div class="container">
+					<ul class="flex items-center gap-1 overflow-hidden">
+						<li class="flex items-center gap-1">
+							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
+							<svg class="h-2.5 w-2.5 fill-lavender-purple">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+							</svg>
+						</li>
+
+						<li class="flex items-center gap-1">
+							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Мої продажі</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- ./breadcrumbs -->
+
+			<!-- top panel -->
+			<section class="pt-2 lg:pt-8">
+				<div class="container">
+					@@include("html/components/_panel-seller.html")
+
+					<div class="mt-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+						<div class="text-lg font-medium">Мої продажі</div>
+						<div class="flex items-center gap-9">
+							<label class="hidden cursor-pointer items-center gap-2 lg:flex">
+								<div class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md shadow-dusty-gray-mid">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="text-sm text-tundora">Всі <span class="font-medium">3773 шт.</span></div>
+							</label>
+
+							<div class="trasition flex h-9 w-full items-center justify-between gap-4 rounded-lge border border-lavender-purple/50 bg-white px-3 py-1 text-left text-xs transition ease-in sm:text-sm md:w-[20.625rem]">
+								<input type="text" class="flex-grow border-0 p-0 text-xs placeholder-dusty-gray ring-0 focus:ring-0" placeholder="Знайти замовлення" />
+								<button class="btn-primary flex flex-shrink-0 items-center gap-2.5 rounded-lge px-2.5 py-1 text-xs">
+									<span>Знайти</span>
+									<svg class="h-3 w-3 flex-shrink-0 fill-white">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- status desktop -->
+					<div class="auto-rows-[minmax(0px, auto)] mt-5 hidden grid-cols-4 gap-y-3 text-tundora lg:grid lg:gap-x-1 xl:gap-x-6">
+						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">Нові замовлення <span class="font-medium">45 шт.</span></div>
+						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">Очікує на підтвердження <span class="font-medium">5 шт.</span></div>
+						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">Очікує на відправку <span class="font-medium">5 шт.</span></div>
+						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">На шляху до отримувача <span class="font-medium">45 шт.</span></div>
+						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">У відділені <span class="font-medium">5 шт.</span></div>
+						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">Отримано <span class="font-medium">1 шт.</span></div>
+						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">Відмова від вантажу <span class="font-medium">45 шт.</span></div>
+						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">Скасовано <span class="font-medium">5 шт.</span></div>
+					</div>
+					<!-- ./status desktop -->
+
+					<!-- status mobile -->
+					<div class="mt-5 flex items-center gap-4.5 lg:hidden">
+						<div class="text-sm font-medium">Статус</div>
+						<div class="relative w-[264px]">
+							<button class="flex h-full w-full items-center rounded-lge bg-white px-2.5 py-2 shadow-lavender-purple-thin-inset transition ease-in">
+								<span class="text-sm">Отримано</span>
+								<svg class="ml-auto h-1.5 w-3">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+								</svg>
+							</button>
+
+							<!-- dropdown -->
+							<div class="absolute left-1/2 top-0 z-40 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark shadow-lavender-purple-thin-inset">
+								<div class="flex items-center pr-2 text-sm">
+									<span class="">Отримано</span>
+									<svg class="ml-auto h-1.5 w-3 rotate-180">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+
+								<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+									<li>Всі <span class="font-medium">3773 шт.</span></li>
+									<li>Нові замовлення <span class="font-medium">45 шт.</span></li>
+									<li>Очікує на підтвердження <span class="font-medium">5 шт.</span></li>
+									<li>Очікує на відправку <span class="font-medium">5 шт.</span></li>
+									<li>На шляху до отримувача <span class="font-medium">45 шт.</span></li>
+									<li>У відділені <span class="font-medium">5 шт.</span></li>
+									<li>Отримано <span class="font-medium">1 шт.</span></li>
+									<li>Відмова від вантажу <span class="font-medium">45 шт.</span></li>
+									<li>Скасовано <span class="font-medium">5 шт.</span></li>
+								</ul>
+							</div>
+							<!-- ./dropdown -->
+						</div>
+					</div>
+					<!-- ./status mobile -->
+
+					<div class="scrollbar-custom mt-7.5 overflow-auto">
+						<div class="sm:min-w-[1100px]">
+							<!-- product row -->
+							<div class="flex flex-col gap-3 rounded-lge bg-white p-4 sm:flex-row sm:gap-7.5">
+								<div class="h-[140px] flex-shrink-0 overflow-hidden rounded-xle sm:w-[278px]">
+									<img class="h-full w-full object-cover object-center" src="img/goods-001.jpg" alt="" />
+								</div>
+								<div class="flex w-full flex-col justify-between sm:flex-row">
+									<div class="relative flex flex-col sm:w-[240px]">
+										<div class="flex">
+											<div class="rounded-lge border border-lavender-purple/60 bg-white px-2.5 py-1.5 text-center text-sm leading-5 sm:px-6 sm:py-2">Очікує на оформлення</div>
+										</div>
+										<div class="mt-4 sm:mt-auto">
+											<div class="text-sm font-medium sm:line-clamp-3 sm:text-ellipsis sm:text-base">LED насадка на кран TVOOO172 400</div>
+											<div class="absolute right-0 top-0 flex flex-col items-end text-sm tracking-tight sm:static sm:mt-4 sm:flex-row sm:gap-2">
+												<div class="text-dusty-gray">Код товару:</div>
+												<div class="font-semibold">119954759</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="mt-3.5 flex items-center text-sm sm:mt-0 sm:w-[120px] sm:flex-col sm:text-base xl:w-[200px]">
+										<div class="w-[120px] font-semibold text-shark sm:w-auto">Ціна</div>
+										<div class="mt-auto font-semibold text-deep-blush">300 грн.</div>
+									</div>
+									<div class="mt-3.5 flex items-center text-sm sm:mt-0 sm:w-[120px] sm:flex-col sm:text-base xl:w-[200px]">
+										<div class="w-[120px] font-semibold text-shark sm:w-auto">Кількість</div>
+										<div class="mt-auto text-tundora">3 шт.</div>
+									</div>
+									<div class="mt-3.5 flex items-center text-sm sm:mt-0 sm:w-[120px] sm:flex-col sm:text-base xl:w-[200px]">
+										<div class="w-[120px] font-semibold text-shark sm:w-auto">Сума</div>
+										<div class="mt-auto text-tundora">900 грн.</div>
+									</div>
+								</div>
+							</div>
+							<!-- ./product row -->
+							<!-- product row -->
+							<div class="mt-5 flex flex-col gap-3 rounded-lge bg-white p-4 sm:mt-4.5 sm:flex-row sm:gap-7.5">
+								<div class="h-[140px] flex-shrink-0 overflow-hidden rounded-xle sm:w-[278px]">
+									<img class="h-full w-full object-cover object-center" src="img/goods-001.jpg" alt="" />
+								</div>
+								<div class="flex w-full flex-col justify-between sm:flex-row">
+									<div class="relative flex flex-col sm:w-[240px]">
+										<div class="flex">
+											<div class="rounded-lge border border-lavender-purple/60 bg-white px-2.5 py-1.5 text-center text-sm leading-5 sm:px-6 sm:py-2">Очікує на оформлення</div>
+										</div>
+										<div class="mt-4 sm:mt-auto">
+											<div class="text-sm font-medium sm:line-clamp-3 sm:text-ellipsis sm:text-base">LED насадка на кран TVOOO172 400</div>
+											<div class="absolute right-0 top-0 flex flex-col items-end text-sm tracking-tight sm:static sm:mt-4 sm:flex-row sm:gap-2">
+												<div class="text-dusty-gray">Код товару:</div>
+												<div class="font-semibold">119954759</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="mt-3.5 flex items-center text-sm sm:mt-0 sm:w-[120px] sm:flex-col sm:text-base xl:w-[200px]">
+										<div class="w-[120px] font-semibold text-shark sm:w-auto">Ціна</div>
+										<div class="mt-auto font-semibold text-deep-blush">300 грн.</div>
+									</div>
+									<div class="mt-3.5 flex items-center text-sm sm:mt-0 sm:w-[120px] sm:flex-col sm:text-base xl:w-[200px]">
+										<div class="w-[120px] font-semibold text-shark sm:w-auto">Кількість</div>
+										<div class="mt-auto text-tundora">3 шт.</div>
+									</div>
+									<div class="mt-3.5 flex items-center text-sm sm:mt-0 sm:w-[120px] sm:flex-col sm:text-base xl:w-[200px]">
+										<div class="w-[120px] font-semibold text-shark sm:w-auto">Сума</div>
+										<div class="mt-auto text-tundora">900 грн.</div>
+									</div>
+								</div>
+							</div>
+							<!-- ./product row -->
+							<!-- product row -->
+							<div class="mt-5 flex flex-col gap-3 rounded-lge bg-white p-4 sm:mt-4.5 sm:flex-row sm:gap-7.5">
+								<div class="h-[140px] flex-shrink-0 overflow-hidden rounded-xle sm:w-[278px]">
+									<img class="h-full w-full object-cover object-center" src="img/goods-001.jpg" alt="" />
+								</div>
+								<div class="flex w-full flex-col justify-between sm:flex-row">
+									<div class="relative flex flex-col sm:w-[240px]">
+										<div class="flex">
+											<div class="rounded-lge border border-lavender-purple/60 bg-white px-2.5 py-1.5 text-center text-sm leading-5 sm:px-6 sm:py-2">Очікує на підтвердження</div>
+										</div>
+										<div class="mt-4 sm:mt-auto">
+											<div class="text-sm font-medium sm:line-clamp-3 sm:text-ellipsis sm:text-base">LED насадка на кран TVOOO172 400</div>
+											<div class="absolute right-0 top-0 flex flex-col items-end text-sm tracking-tight sm:static sm:mt-4 sm:flex-row sm:gap-2">
+												<div class="text-dusty-gray">Код товару:</div>
+												<div class="font-semibold">119954759</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="mt-3.5 flex items-center text-sm sm:mt-0 sm:w-[120px] sm:flex-col sm:text-base xl:w-[200px]">
+										<div class="w-[120px] font-semibold text-shark sm:w-auto">Ціна</div>
+										<div class="mt-auto font-semibold text-deep-blush">30000 грн.</div>
+									</div>
+									<div class="mt-3.5 flex items-center text-sm sm:mt-0 sm:w-[120px] sm:flex-col sm:text-base xl:w-[200px]">
+										<div class="w-[120px] font-semibold text-shark sm:w-auto">Кількість</div>
+										<div class="mt-auto text-tundora">3 шт.</div>
+									</div>
+									<div class="mt-3.5 flex items-center text-sm sm:mt-0 sm:w-[120px] sm:flex-col sm:text-base xl:w-[200px]">
+										<div class="w-[120px] font-semibold text-shark sm:w-auto">Сума</div>
+										<div class="mt-auto text-tundora">900000 грн.</div>
+									</div>
+								</div>
+							</div>
+							<!-- ./product row -->
+							<!-- product row -->
+							<div class="mt-5 flex flex-col gap-3 rounded-lge bg-white p-4 sm:mt-4.5 sm:flex-row sm:gap-7.5">
+								<div class="h-[140px] flex-shrink-0 overflow-hidden rounded-xle sm:w-[278px]">
+									<img class="h-full w-full object-cover object-center" src="img/goods-001.jpg" alt="" />
+								</div>
+								<div class="flex w-full flex-col justify-between sm:flex-row">
+									<div class="relative flex flex-col sm:w-[240px]">
+										<div class="flex">
+											<div class="rounded-lge border border-lavender-purple/60 bg-white px-2.5 py-1.5 text-center text-sm leading-5 sm:px-6 sm:py-2">На шляху до отримувача</div>
+										</div>
+										<div class="mt-4 sm:mt-auto">
+											<div class="text-sm font-medium sm:line-clamp-3 sm:text-ellipsis sm:text-base">LED насадка на кран TVOOO172 400</div>
+											<div class="absolute right-0 top-0 flex flex-col items-end text-sm tracking-tight sm:static sm:mt-4 sm:flex-row sm:gap-2">
+												<div class="text-dusty-gray">Код товару:</div>
+												<div class="font-semibold">119954759</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="mt-3.5 flex items-center text-sm sm:mt-0 sm:w-[120px] sm:flex-col sm:text-base xl:w-[200px]">
+										<div class="w-[120px] font-semibold text-shark sm:w-auto">Ціна</div>
+										<div class="mt-auto font-semibold text-deep-blush">30000 грн.</div>
+									</div>
+									<div class="mt-3.5 flex items-center text-sm sm:mt-0 sm:w-[120px] sm:flex-col sm:text-base xl:w-[200px]">
+										<div class="w-[120px] font-semibold text-shark sm:w-auto">Кількість</div>
+										<div class="mt-auto text-tundora">3 шт.</div>
+									</div>
+									<div class="mt-3.5 flex items-center text-sm sm:mt-0 sm:w-[120px] sm:flex-col sm:text-base xl:w-[200px]">
+										<div class="w-[120px] font-semibold text-shark sm:w-auto">Сума</div>
+										<div class="mt-auto text-tundora">900000 грн.</div>
+									</div>
+								</div>
+							</div>
+							<!-- ./product row -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ./top panel -->
+		</main>
+
+		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+	</body>
+</html>
