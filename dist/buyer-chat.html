@@ -150,7 +150,7 @@
 						</li>
 
 						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Налаштування</a>
+							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Повідомлення</a>
 						</li>
 					</ul>
 				</div>
@@ -297,111 +297,50 @@
 <!-- ./info banner  -->
 </div>
 
-							<div class="mb-3.5 mt-2.5 text-lg font-medium lg:hidden">Налаштування</div>
-							<div class="w-full rounded-lge border border-lavender-purple/50 bg-white p-3 lg:max-w-[43.75rem] lg:border-0 lg:bg-transparent lg:p-0">
-								<div class="flex items-center text-sm font-medium text-shark lg:text-xl">
-									<div>Особисті дані покупця</div>
-									<svg class="ml-auto h-2 w-4 rotate-180 lg:hidden">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-									</svg>
-								</div>
-								<div class="mt-4.5 rounded-lge bg-white p-0 lg:border lg:border-lavender-purple/50 lg:p-7.5">
-									<div class="border-b border-b-dusty-gray/[0.25] pb-3.5">
-										<div class="text-sm font-medium lg:text-base">Ім’я</div>
-										<input type="text" class="mt-2.5 w-full rounded-lge border border-lavender-purple/50 px-3 py-2 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 lg:py-2.5" />
+							<div class="rounded-lge bg-white p-5 border border-lavender-purple/50">
+								<div class="flex">
+									<!-- messages -->
+									<div class="flex-shrin-0 w-[408px]">
+										<div class="text-sm font-medium text-shark lg:text-lg">Повідомлення</div>
 									</div>
-									<div class="mt-3.5 border-b border-b-dusty-gray/[0.25] pb-3.5">
-										<div class="text-sm font-medium lg:text-base">Прізвище</div>
-										<input type="text" class="mt-2 w-full rounded-lge border border-lavender-purple/50 px-3 py-2 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 lg:py-2.5" />
-									</div>
-									<div class="mt-3.5 border-b border-b-dusty-gray/[0.25] pb-3.5">
-										<div class="text-sm font-medium lg:text-base">По-батькові</div>
-										<input type="text" class="mt-2 w-full rounded-lge border border-lavender-purple/50 px-3 py-2 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 lg:py-2.5" />
-									</div>
+									<!-- messages -->
 
-									<div class="relative mt-3.5 border-b border-b-dusty-gray/[0.25] pb-3.5">
-										<div class="text-sm font-medium lg:text-base">Номер телефону</div>
-										<div class="mt-2.5 flex items-center gap-4">
-											<input type="text" class="w-full rounded-lge border border-lavender-purple/50 px-3 py-2 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 lg:py-2.5" />
-											<button class="right-0 top-0 whitespace-nowrap text-xs text-lavender-purple underline decoration-lavender-purple decoration-dashed decoration-[0.25px] underline-offset-4 lg:absolute lg:text-sm lg:decoration-[0.5px]">Змінити</button>
+									<!-- chat -->
+									<div class="mt-5 flex-grow rounded-lge px-6 py-4.5 border border-lavender-purple/50">
+										<div class="flex p-2.5 border border-lavender-purple/40 rounded-lge items-center gap-4">
+											<div class="relative h-12 w-12 flex-shrink-0">
+												<div class="h-12 w-12 overflow-hidden rounded-full">
+													<img class="w-fill object-ccover h-full object-center" src="img/no-avatar.jpg" alt="img" />
+												</div>
+
+												<div class="absolute bottom-0.5 right-1 h-2.5 w-2.5 rounded-full bg-limeade"></div>
+											</div>
+											<div class="flex justify-between items-center w-full gap-4">
+												<div class="flex flex-col gap-2">
+													<div class="font-semibold text-base text-shark">Иван Семенов</div>
+													<div class="text-sm text-dusty-gray">Шкаф кровать трансформер</div>
+												</div>
+												<div class="flex flex-col gap-2.5 text-sm items-end ml-auto">
+													<div class="text-limeade text-right">
+														Сейчас онлайн
+													</div>
+													<div>
+														<button>
+															<svg class="w-5 h-5">
+																<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
+															</svg>
+														</button>
+														<button>
+															<svg class="w-5 h-5 fill-tall-poppy">
+																<use xlink:href="img/svg/sprites/sprite-icons.svg#bin2"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="border-b-dusty-gray/[0.25]n mt-3.5 border-b pb-3.5">
-										<div class="text-sm text-dusty-gray lg:leading-5">Дані, наведені нижче, будуть використані як стандартні для автозаповнення при оформленні замовлення. Якщо Вам потрібно буде замовити доставку за іншою адресою або на іншого отримувача - Ви можете змінити на даній сторінці або у вікні оформлення замовлення.</div>
-										<div class="mt-2.5 text-sm font-medium lg:text-base">Спосіб доставки</div>
-										<div class="mt-2.5 flex flex-col gap-4 2xl:flex-row 2xl:items-center 2xl:gap-5">
-											<label class="flex cursor-pointer items-center gap-2.5">
-												<input type="radio" name="delivery-service" class="peer hidden" checked />
-												<div class="group relative h-5.5 w-5.5 flex-shrink-0 rounded-full border border-dusty-gray/50 lg:h-6 lg:w-6">
-													<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in group-peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
-												</div>
-
-												<div class="peer-checked:border-lavender-purple-thin flex h-7.5 min-w-[200px] items-center justify-center gap-1.5 rounded-lge border border-dusty-gray/50 px-3.5 text-sm font-medium text-tundora 2xl:min-w-[140px]">
-													<svg class="h-5 w-5 fill-pomegranate">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#nova-poshta"></use>
-													</svg>
-													<div>Нова пошта</div>
-												</div>
-											</label>
-											<label class="flex cursor-pointer items-center gap-2.5">
-												<input type="radio" name="delivery-service" class="peer hidden" />
-												<div class="group relative h-5.5 w-5.5 flex-shrink-0 rounded-full border border-dusty-gray/50 lg:h-6 lg:w-6">
-													<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in group-peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
-												</div>
-
-												<div class="peer-checked:border-lavender-purple-thin flex h-7.5 min-w-[200px] items-center justify-center gap-1.5 rounded-lge border border-dusty-gray/50 px-3.5 text-sm font-medium text-tundora 2xl:min-w-[140px]">
-													<svg class="h-5 w-5 fill-sunglow">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#ukrposhta"></use>
-													</svg>
-													<div>Нова пошта</div>
-												</div>
-											</label>
-											<label class="flex cursor-pointer items-center gap-2.5">
-												<input type="radio" name="delivery-service" class="peer hidden" />
-												<div class="group relative h-5.5 w-5.5 flex-shrink-0 rounded-full border border-dusty-gray/50 lg:h-6 lg:w-6">
-													<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-purple opacity-0 transition ease-in group-peer-checked:opacity-100 lg:h-4.5 lg:w-4.5"></div>
-												</div>
-
-												<div class="flex h-7.5 min-w-[200px] items-center justify-center gap-1.5 rounded-lge border border-dusty-gray/50 px-3.5 text-sm font-medium text-tundora peer-checked:border-lavender-purple/50 2xl:min-w-[140px]">
-													<svg class="h-5 w-5">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#meest"></use>
-													</svg>
-													<div>Meest</div>
-												</div>
-											</label>
-										</div>
-									</div>
-
-									<div class="mt-3.5 border-b border-b-dusty-gray/[0.25] pb-3.5">
-										<div class="text-sm font-medium lg:text-base">Місто одержувача</div>
-
-										<select class="mt-2 w-full rounded-lge border border-lavender-purple/50 px-3 py-2 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 lg:py-2.5">
-											<option value="" selected>Одеська область, Україна</option>
-											<option value="">option 2</option>
-											<option value="">option 3</option>
-										</select>
-									</div>
-									<div class="mt-3.5 border-b border-b-dusty-gray/[0.25] pb-3.5">
-										<div class="text-sm font-medium lg:text-base">Відділення</div>
-
-										<select class="mt-2 w-full rounded-lge border border-lavender-purple/50 px-3 py-2 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 lg:py-2.5">
-											<option value="" selected>Відділення № 1 Київське шосе</option>
-											<option value="">option 2</option>
-											<option value="">option 3</option>
-										</select>
-									</div>
-
-									<div class="relative mt-3.5 border-b border-b-dusty-gray/[0.25] pb-3.5">
-										<div class="text-sm font-medium lg:text-base">Пароль</div>
-										<div class="mt-2.5 flex items-center gap-4">
-											<input type="text" class="w-full rounded-lge border border-lavender-purple/50 px-3 py-2 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 lg:py-2.5" />
-											<button class="right-0 top-0 whitespace-nowrap text-xs text-lavender-purple underline decoration-lavender-purple decoration-dashed decoration-[0.25px] underline-offset-4 lg:absolute lg:text-sm lg:decoration-[0.5px]">Змінити</button>
-										</div>
-									</div>
-
-									<div class="mt-6 flex justify-center lg:justify-end">
-										<button class="btn-primary flex h-11 w-full max-w-[290px] items-center justify-center px-3 text-sm font-normal lw:max-w-[220px] lg:h-9">Зберегти</button>
-									</div>
+									<!-- ./chat -->
 								</div>
 							</div>
 						</div>
