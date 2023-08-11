@@ -88,6 +88,7 @@ module.exports = {
 				punch: "#DC3836", // червоний
 				coral: "#FA8446", // помаранчевий
 				sunglow: "#FFC627", // укрпошта
+				"pattens-blue": "#D9EBFF", // chat answer background
 
 				//  =============== old colors =================================== //
 				// нижче закоментовані кольори для того щоб не конфліктували із == //
@@ -190,6 +191,7 @@ module.exports = {
 				9.5: "2.375rem", // 38px
 				10.5: "2.625rem", // 42px
 				12.5: "3.125rem", // 50px
+				22: "5.5rem", // 88px
 			},
 			padding: {
 				"fix-shadow": "0.0375rem", // 0.6 px,
@@ -201,6 +203,7 @@ module.exports = {
 				9.5: "2.375rem", // 38px
 				10.5: "2.625rem", // 42px
 				12.5: "3.125rem", // 50px
+				22: "5.5rem", // 88px
 			},
 			height: {
 				4.5: "1.125rem", // 18px
@@ -213,6 +216,7 @@ module.exports = {
 				12.5: "3.125rem", // 50px
 				13: "3.25rem", // 52px
 				15: "3.75rem", // 60px
+				30: "7.5rem", // 120px
 				35: "8.75rem", // 140px
 			},
 			width: {
@@ -226,6 +230,7 @@ module.exports = {
 				12.5: "3.125rem", // 50px
 				13: "3.25rem", // 52px
 				15: "3.75rem", // 60px
+				30: "7.5rem", // 120px
 				35: "8.75rem", // 140px
 			},
 			gap: {
