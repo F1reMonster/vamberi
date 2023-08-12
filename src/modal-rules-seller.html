@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		@@include('html/components/_head.html', {title: "VamBeri - Головна сторінка"})
+	</head>
+
+	<body class="touch-none overflow-hidden overscroll-none">
+		<!-- для на десктопі при відкритті категорій  -->
+		<!-- на <body> додати класи overflow-hidden overscroll-none touch-none -->
+
+		@@include('html/components/_header.html', {accountMenu: ""})
+
+		<main>
+			@@include('html/components/_category-mobile.html', {hidden: "hidden"})
+		</main>
+
+		@@include('html/components/modals/_modal-rules-seller.html') 
+		@@include('html/components/_sticky-menu.html') 
+		@@include('html/components/_footer.html')
+	</body>
+</html>

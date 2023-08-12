@@ -1,0 +1,62 @@
+<div class="relative z-[9999]" aria-labelledby="modal-app-sending-success" role="dialog" aria-modal="true">
+	<div class="fixed inset-0 bg-shark/60 bg-opacity-75 transition-opacity"></div>
+
+	<div class="fixed inset-0 z-10 overflow-y-auto">
+		<div class="flex min-h-full items-center justify-center px-6 py-1">
+			<div class="relative flex w-full transform flex-col overflow-hidden rounded-lge bg-white px-4 py-10 transition-all sm:w-[47rem] lg:p-7.5">
+				<button class="absolute right-4 top-4 z-10 ml-auto flex h-5 w-5 items-center justify-center p-0 md:right-5 md:top-5" aria-label="Закрити модальне вікно">
+					<svg class="h-4 w-4 fill-tundora md:h-5 md:w-5">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="text-center text-base font-medium leading-5 lg:text-lg lg:leading-7">Вкажіть причину скасування замовлення</div>
+				<div class="mt-6 flex flex-col gap-4 text-shark lg:gap-5">
+					<label class="flex cursor-pointer items-center gap-3.5 lg:gap-5">
+						<div class="lex-shrink-0 relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray/50 bg-wild-sand">
+							<input type="radio" name="radio3" class="peer hidden" checked />
+							<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+						</div>
+						<div class="text-sm leading-5 text-tundora">Товару немає в наявності</div>
+					</label>
+					<label class="flex cursor-pointer items-center gap-3.5 lg:gap-5">
+						<div class="lex-shrink-0 relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray/50 bg-wild-sand">
+							<input type="radio" name="radio3" class="peer hidden" />
+							<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+						</div>
+						<div class="text-sm leading-5 text-tundora">Передумав(ла) купувати</div>
+					</label>
+					<label class="flex cursor-pointer items-center gap-3.5 lg:gap-5">
+						<div class="lex-shrink-0 relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray/50 bg-wild-sand">
+							<input type="radio" name="radio3" class="peer hidden" />
+							<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+						</div>
+						<div class="text-sm leading-5 text-tundora">Продавець не підтверджує угоду</div>
+					</label>
+					<label class="flex cursor-pointer items-center gap-3.5 lg:gap-5">
+						<div class="lex-shrink-0 relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray/50 bg-wild-sand">
+							<input type="radio" name="radio3" class="peer hidden" />
+							<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+						</div>
+						<div class="text-sm leading-5 text-tundora">Знайшов(ла) дешевше</div>
+					</label>
+					<label class="flex cursor-pointer items-center gap-3.5 lg:gap-5">
+						<div class="lex-shrink-0 relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray/50 bg-wild-sand">
+							<input type="radio" name="radio3" class="peer hidden" />
+							<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+						</div>
+						<div class="text-sm leading-5 text-tundora">Продавець не відповідає</div>
+					</label>
+					<div>
+						<div class="text-xs font-medium text-tall-poppy sm:text-base">Тут ви можете вказати причину скасування замовлення</div>
+
+						<textarea name="" class="placeholder:text-dusty-gray placeholder:absolute relative placeholder:text-sm placeholder:bottom-3.5 mt-5 h-40 w-full resize-none rounded-lge border border-lavender-purple/50 px-5 py-3.5 ring-0 focus:border-lavender-purple focus:ring-0 " placeholder="Ваше повідомлення..."></textarea>
+					</div>
+				</div>
+				<div class="flex justify-center lg:justify-end mt-3.5">
+					<button class="btn-pink h-11 min-w-[18.125rem] lg:min-w-[13.75rem]">Відправити</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
