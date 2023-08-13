@@ -125,7 +125,8 @@ module.exports = {
 				"prod-contrast-8": "#FFFFFF",
 				"prod-contrast-10": "#000000",
 			},
-			boxShadow: {
+			boxShadow: { 
+				// in mozilla firefox rounded shadow not work properly with width less 0.8px → need replace to border with alpha
 				custom: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25)",
 				card: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25), 0 0 0 0.0625rem #999494",
 				white: "0 0 0 1px #fff",
@@ -172,6 +173,7 @@ module.exports = {
 				strelka_down: 'url("@/img/strelka_down.svg")',
 				banner: "linear-gradient(90.77deg, #FFE6E6 1.76%, #F7CCC8 92.9%)",
 				"gradient-pink": "linear-gradient(0deg, #424242, #424242), linear-gradient(90.77deg, #FFE6E6 1.76%, #F7CCC8 92.9%)",
+				"gradient-pink2": "linear-gradient(118deg, #ffe6e6 0%, #f6ccc8 100%)",
 			},
 			borderRadius: {
 				emd: "0.3125rem", // 5px

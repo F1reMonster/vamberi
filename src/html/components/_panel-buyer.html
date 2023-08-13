@@ -53,22 +53,35 @@
 			<!-- menu -->
 			<div class="mt-5 hidden lg:block">
 				<ul class="flex flex-col gap-5 text-sm">
-					<li class="flex items-center gap-5">
+					<li class="flex">
+						<button class="btn-blue-royal-light group flex h-7.5 items-center justify-center gap-3 rounded-lge p-1 text-xs">
+							<svg class="h-4.5 w-4.5 fill-royal-blue transition ease-in group-hover:fill-white">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#Group"></use>
+							</svg>
+							<span>Панель управління</span>
+						</button>
+					</li>
+					<li class="relative flex items-center gap-5">
 						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#basket"></use>
 							</svg>
-							<span>Замовлення</span>
+							<div class="relative">
+								Замовлення
+								<p class="absolute left-[calc(100%+1.375rem)] top-1/2 flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 -translate-y-1/2 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">656+</span></p>
+							</div>
 						</a>
 					</li>
 					<li class="relative flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-8">
+						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#envelope"></use>
 							</svg>
-							<span>Повідомлення</span>
+							<div class="relative">
+								Повідомлення
+								<p class="absolute left-[calc(100%+1.375rem)] top-1/2 flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 -translate-y-1/2 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">656+</span></p>
+							</div>
 						</a>
-						<p class="absolute right-0 top-1/2 flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 -translate-y-1/2 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">999+</span></p>
 					</li>
 					<li class="flex items-center gap-5">
 						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
@@ -89,9 +102,17 @@
 					<li class="flex items-center gap-5">
 						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#user02"></use>
+							</svg>
+							<span>Вибране</span>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#message2"></use>
 							</svg>
-							<span>Мої відгуки</span>
+							<span>Мої підписки</span>
 						</a>
 					</li>
 					<li class="flex items-center gap-5">
