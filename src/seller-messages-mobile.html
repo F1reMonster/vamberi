@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		@@include('html/components/_head.html', {title: "VamBeri - Повідомлення"})
+	</head>
+	<body>
+		
+
+		<main>
+			
+			<section>
+				<div class="container">
+					@@include("html/components/_info-banner.html")
+
+					<div class="mt-6 lg:mt-0 xl:mt-7.5">
+						<!-- messages & chat block  -->
+						<div class="rounded-lge border-lavender-purple/50 lg:border lg:bg-white lg:p-5">
+							<div class="flex flex-col gap-3 lg:flex-row lg:gap-6">
+								<!-- messages -->
+								<div class="flex-shrink-0 w-full">
+									<div class="flex items-center gap-2.5">
+										<div class="text-lg font-medium text-shark">Повідомлення</div>
+										<p class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none lg:hidden"><span class="text-white">99+</span></p>
+									</div>
+
+									<div class="mt-4 flex flex-wrap gap-2">
+										<button class="flex min-w-[100px] justify-center rounded-emd border border-lavender-purple/50 bg-white px-2 py-0.5 text-sm lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
+											<p>Непрочитані <span class="hidden font-medium lg:inline-block">2</span></p>
+										</button>
+										<button class="flex min-w-[100px] justify-center rounded-emd border border-royal-blue bg-white px-2 py-0.5 text-sm text-royal-blue lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
+											<p>Активні <span class="hidden font-medium lg:inline-block">5</span></p>
+										</button>
+										<button class="flex min-w-[100px] justify-center rounded-emd border border-lavender-purple/50 bg-white px-2 py-0.5 text-sm lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
+											<p>Архів <span class="hidden font-medium lg:inline-block">5</span></p>
+										</button>
+									</div>
+
+									<div class="mt-4 flex w-full flex-col items-center justify-center gap-0.5 rounded-lge bg-lavender-purple p-2.5 text-white">
+										<p class="text-center text-base leading-6 lg:text-lg lg:leading-7">Підтримка VamBeri</p>
+										<p class="text-center text-sm leading-5 lg:text-base lg:leading-6">Будемо раді вам допомогти!</p>
+									</div>
+
+									<!-- search -->
+									<div class="relative mt-5">
+										<input type="text" class="h-9 w-full rounded-lge border-dusty-gray px-3 py-1 pr-10 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 lg:h-auto lg:py-3.5 lg:pl-3.5" placeholder="Пошук по повідомленням" />
+										<button class="absolute right-1.5 top-1/2 flex h-7 -translate-y-1/2 items-center gap-1 rounded-lge bg-lavender-purple px-2.5 text-sm text-white lg:bg-transparent">
+											<span class="lg:hidden">Знайти</span>
+											<svg class="h-3.5 w-3.5 fill-white lg:h-5 lg:w-5 lg:fill-dusty-gray">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
+											</svg>
+										</button>
+									</div>
+									<!-- ./search -->
+
+									<!-- messages list -->
+									<ul class="mt-5 flex flex-col gap-3.5 lg:mt-4.5">
+										<!-- messages list item -->
+										<li class="relative rounded-lge border border-lavender-purple/40 bg-white px-2.5 py-1.5 lg:px-3 lg:pb-1 lg:pt-3.5">
+											<div class="flex items-center gap-2.5">
+												<div class="relative h-12.5 w-12.5 flex-shrink-0 lg:h-[4.375rem] lg:w-[4.375rem]">
+													<div class="h-12.5 w-12.5 overflow-hidden rounded-full lg:h-[4.375rem] lg:w-[4.375rem]">
+														<img class="w-fill object-ccover h-full object-center" src="img/no-avatar.jpg" alt="img" />
+													</div>
+												</div>
+												<div>
+													<div class="pr-16 text-base font-medium text-shark lg:pr-0">Іван Семенов</div>
+													<div class="mt-1 line-clamp-2 text-ellipsis pr-16 text-sm text-tundora lg:mt-2 lg:line-clamp-1 lg:pr-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, quam?</div>
+												</div>
+											</div>
+											<div class="mt-2.5 line-clamp-1 hidden text-ellipsis pr-10 text-sm leading-5 text-dusty-gray lg:block">Шкаф кровать трансформер</div>
+											<p class="absolute bottom-2.5 right-3 flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">99+</span></p>
+											<p class="absolute right-2 top-2 text-sm text-dusty-gray lg:hidden">вчора</p>
+										</li>
+										<!-- ./messages list item -->
+										<!-- messages list item -->
+										<li class="relative rounded-lge border border-lavender-purple/40 bg-white px-2.5 py-1.5 lg:px-3 lg:pb-1 lg:pt-3.5">
+											<div class="flex items-center gap-2.5">
+												<div class="relative h-12.5 w-12.5 flex-shrink-0 lg:h-[4.375rem] lg:w-[4.375rem]">
+													<div class="h-12.5 w-12.5 overflow-hidden rounded-full lg:h-[4.375rem] lg:w-[4.375rem]">
+														<img class="w-fill object-ccover h-full object-center" src="img/no-avatar.jpg" alt="img" />
+													</div>
+												</div>
+												<div>
+													<div class="pr-16 text-base font-medium text-shark lg:pr-0">Іван Семенов</div>
+													<div class="mt-1 line-clamp-2 text-ellipsis pr-16 text-sm text-tundora lg:mt-2 lg:line-clamp-1 lg:pr-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, quam?</div>
+												</div>
+											</div>
+											<div class="mt-2.5 line-clamp-1 hidden text-ellipsis pr-10 text-sm leading-5 text-dusty-gray lg:block">Шкаф кровать трансформер</div>
+											<p class="absolute bottom-2.5 right-3 flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">99+</span></p>
+											<p class="absolute right-2 top-2 text-sm text-dusty-gray lg:hidden">вчора</p>
+										</li>
+										<!-- ./messages list item -->
+										<!-- messages list item -->
+										<li class="relative rounded-lge border border-lavender-purple/40 bg-white px-2.5 py-1.5 lg:px-3 lg:pb-1 lg:pt-3.5">
+											<div class="flex items-center gap-2.5">
+												<div class="relative h-12.5 w-12.5 flex-shrink-0 lg:h-[4.375rem] lg:w-[4.375rem]">
+													<div class="h-12.5 w-12.5 overflow-hidden rounded-full lg:h-[4.375rem] lg:w-[4.375rem]">
+														<img class="w-fill object-ccover h-full object-center" src="img/no-avatar.jpg" alt="img" />
+													</div>
+												</div>
+												<div>
+													<div class="pr-16 text-base font-medium text-shark lg:pr-0">Іван Семенов</div>
+													<div class="mt-1 line-clamp-2 text-ellipsis pr-16 text-sm text-tundora lg:mt-2 lg:line-clamp-1 lg:pr-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, quam?</div>
+												</div>
+											</div>
+											<div class="mt-2.5 line-clamp-1 hidden text-ellipsis pr-10 text-sm leading-5 text-dusty-gray lg:block">Шкаф кровать трансформер</div>
+											<p class="absolute bottom-2.5 right-3 flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">99+</span></p>
+											<p class="absolute right-2 top-2 text-sm text-dusty-gray lg:hidden">вчора</p>
+										</li>
+										<!-- ./messages list item -->
+										<!-- messages list item -->
+										<li class="relative rounded-lge border border-lavender-purple/40 bg-white px-2.5 py-1.5 lg:px-3 lg:pb-1 lg:pt-3.5">
+											<div class="flex items-center gap-2.5">
+												<div class="relative h-12.5 w-12.5 flex-shrink-0 lg:h-[4.375rem] lg:w-[4.375rem]">
+													<div class="h-12.5 w-12.5 overflow-hidden rounded-full lg:h-[4.375rem] lg:w-[4.375rem]">
+														<img class="w-fill object-ccover h-full object-center" src="img/no-avatar.jpg" alt="img" />
+													</div>
+												</div>
+												<div>
+													<div class="pr-16 text-base font-medium text-shark lg:pr-0">Іван Семенов</div>
+													<div class="mt-1 line-clamp-2 text-ellipsis pr-16 text-sm text-tundora lg:mt-2 lg:line-clamp-1 lg:pr-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, quam?</div>
+												</div>
+											</div>
+											<div class="mt-2.5 line-clamp-1 hidden text-ellipsis pr-10 text-sm leading-5 text-dusty-gray lg:block">Шкаф кровать трансформер</div>
+											<p class="absolute bottom-2.5 right-3 flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">99+</span></p>
+											<p class="absolute right-2 top-2 text-sm text-dusty-gray lg:hidden">вчора</p>
+										</li>
+										<!-- ./messages list item -->
+										<!-- messages list item -->
+										<li class="relative rounded-lge border border-lavender-purple/40 bg-white px-2.5 py-1.5 lg:px-3 lg:pb-1 lg:pt-3.5">
+											<div class="flex items-center gap-2.5">
+												<div class="relative h-12.5 w-12.5 flex-shrink-0 lg:h-[4.375rem] lg:w-[4.375rem]">
+													<div class="h-12.5 w-12.5 overflow-hidden rounded-full lg:h-[4.375rem] lg:w-[4.375rem]">
+														<img class="w-fill object-ccover h-full object-center" src="img/no-avatar.jpg" alt="img" />
+													</div>
+												</div>
+												<div>
+													<div class="pr-16 text-base font-medium text-shark lg:pr-0">Іван Семенов</div>
+													<div class="mt-1 line-clamp-2 text-ellipsis pr-16 text-sm text-tundora lg:mt-2 lg:line-clamp-1 lg:pr-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, quam?</div>
+												</div>
+											</div>
+											<div class="mt-2.5 line-clamp-1 hidden text-ellipsis pr-10 text-sm leading-5 text-dusty-gray lg:block">Шкаф кровать трансформер</div>
+											<p class="absolute bottom-2.5 right-3 flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">99+</span></p>
+											<p class="absolute right-2 top-2 text-sm text-dusty-gray lg:hidden">вчора</p>
+										</li>
+										<!-- ./messages list item -->
+									</ul>
+									<!-- ./messages list -->
+
+									
+								</div>
+								<!-- messages -->
+
+							
+							</div>
+						</div>
+						<!-- messages & chat block -->
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('html/components/_sticky-menu.html')
+	</body>
+</html>

@@ -3,7 +3,7 @@
 	<head>
 		@@include('html/components/_head.html', {title: "VamBeri → Взуття → Для новонароджених"})
 	</head>
-	<body class="touch-none overflow-hidden overscroll-none lg:touch-auto lg:overflow-auto lg:overscroll-auto">
+	<body>
 		@@include('html/components/_header.html', {accountMenu: ""})
 
 		<main>
@@ -117,7 +117,7 @@
 									</button>
 
 									<!-- dropdown -->
-									<div class="absolute left-1/2 top-0 z-30 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-1 text-shark">
+									<div class="absolute left-1/2 top-0 z-30  w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-1 text-shark">
 										<div class="flex items-center pr-1.5">
 											<span class="line-clamp-1 text-ellipsis pr-4 text-sm">Опт та роздріб</span>
 											<svg class="ml-auto h-1.5 w-3 flex-shrink-0 rotate-180 fill-shark">
@@ -659,7 +659,7 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-0 top-[calc(100%+1rem)] z-10 w-60 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown lge:left-[unset] lge:right-0 xle:left-1/2 xle:right-[unset] xle:-translate-x-1/2">
+								<div class="absolute left-0 top-[calc(100%+1rem)] z-10 hidden w-60 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown lge:left-[unset] lge:right-0 xle:left-1/2 xle:right-[unset] xle:-translate-x-1/2">
 									<svg class="absolute -top-2.5 left-[50px] h-2.5 w-4 fill-white lge:left-[unset] lge:right-[50px] xle:left-1/2 xle:right-[unset] xle:-translate-x-1/2">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -1028,11 +1028,10 @@
 		<!-- ./full filters desktop-->
 
 		<!-- filters mobile -->
-		<div class="lg:hidden">
-			@@include("html/components/_product-filter-mobile.html", {filter1: "hidden", brand: "", category: "hidden", color: "hidden", popular: "hidden", price: "hidden", seller: "hidden", size: "hidden", newused: "hidden", "rw": "hidden"})
-		</div>
+		<div class="lg:hidden">@@include("html/components/_product-filter-mobile.html", {filter1: "hidden", brand: "hidden", category: "hidden", color: "hidden", popular: "hidden", price: "hidden", seller: "hidden", size: "hidden", newused: "hidden", "rw": ""})</div>
 		<!-- ./filters mobile -->
 
-		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+		@@include('html/components/_sticky-menu.html')
+		<div class="hidden lg:block">@@include('html/components/_footer.html')</div>
 	</body>
 </html>

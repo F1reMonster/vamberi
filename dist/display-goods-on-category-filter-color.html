@@ -10,7 +10,7 @@
 	</head>
 	<body class="touch-none overflow-hidden overscroll-none lg:touch-auto lg:overflow-auto lg:overscroll-auto">
 		<!-- header -->
-<header>
+<header class="lg:border-0 border-b border-b-dusty-gray/50">
 	<div class="container">
 		<!-- header top -->
 		<div class="hidden justify-between pt-9 lg:flex">
@@ -34,11 +34,11 @@
 		<!-- ./header top -->
 
 		<!-- header bottom -->
-		<div class="relative mt-3.5 flex items-center justify-between gap-2.5 pb-20 lg:gap-0 lg:pb-0 lg:mt-5.5">
+		<div class="relative flex items-center justify-between gap-2.5 lg:gap-0 lg:pb-0 lg:mt-5.5 lg:py-0 py-3">
 			
 
 			<!-- burger -->
-			<button class="flex h-7.5 w-7.5 items-center justify-center rounded-full bg-white lg:hidden">
+			<!-- <button class="flex h-7.5 w-7.5 items-center justify-center rounded-full bg-white lg:hidden">
 				<svg class="h-4 w-4 fill-black">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
 				</svg>
@@ -46,10 +46,10 @@
 				<svg class="hidden h-4 w-4 fill-black">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
 				</svg>
-			</button>
+			</button> -->
 			<!-- ./burger -->
 			<!-- logo -->
-			<a href="index.html" title="VamBeri" class="ml-10 mr-0 text-center text-lg font-semibold text-lavender-purple sm:text-2xl lg:ml-0 lg:mr-4 lg:text-left lg:text-4ms xl:mr-10">VamBeri</a>
+			<a href="index.html" title="VamBeri" class="mr-0 text-center font-semibold text-lavender-purple text-2xl lg:mr-4 lg:text-left lg:text-4ms xl:mr-10">VamBeri</a>
 			<!-- ./logo -->
 
 			<!-- category dropdown -->
@@ -71,7 +71,7 @@
 			<!-- ./category dropdown -->
 
 			<!-- search -->
-			<div class="group absolute bottom-4 left-0 flex h-14 w-full flex-grow items-center gap-2.5 rounded-lge bg-white px-2.5 py-1.5 lg:relative lg:bottom-0 lg:h-12.5 lg:gap-4 lg:rounded-2lge">
+			<div class="group hidden lg:flex h-14 w-full flex-grow items-center gap-2.5 rounded-lge bg-white px-2.5 py-1.5 lg:h-12.5 lg:gap-4 lg:rounded-2lge">
 				<input type="text" class="flex-grow border-none p-0 text-sm placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Пошук по сайту..." />
 				<button class="btn-primary rounded-lge px-3.5 py-2.5 lg:px-5">
 					<span class="hidden text-sm lg:block">Пошук</span>
@@ -95,8 +95,11 @@
 
 				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800" title="Кошик">
 					<span class="flex h-7.5 w-7.5 items-center justify-center rounded-full bg-white lg:h-8.5 lg:w-8.5">
-						<svg class="h-4 w-4 fill-lavender-purple transition ease-in group-hover:fill-purple-800 sm:h-5 sm:w-5">
+						<svg class="lg:block hidden h-4 w-4 fill-lavender-purple transition ease-in group-hover:fill-purple-800 sm:h-5 sm:w-5">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#basket"></use>
+						</svg>
+						<svg class="h-4 w-4 lg:hidden fill-shark ">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#cart2-solid"></use>
 						</svg>
 					</span>
 					<span class="hidden xl:block">Кошик</span>
@@ -121,7 +124,7 @@
 						<svg class="h-4 w-4 fill-tundora stroke-tundora transition ease-in sm:h-5 sm:w-5">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
 						</svg>
-						<p class="absolute -right-1.5 lg:-right-2.5 -top-2 lg:top-0 flex h-4 items-center justify-center rounded-lge bg-tall-poppy px-1 text-sm"><span class="text-white">1+</span></p>
+						<p class="absolute -right-1.5 lg:-right-2.5 -top-1.5 lg:top-0 flex h-4 items-center justify-center rounded-lge bg-tall-poppy px-1 text-sm"><span class="text-white">1+</span></p>
 					</div>
 					<span class="hidden xl:block">Сповіщення </span>
 				</a>
@@ -164,38 +167,110 @@
 
 			<section class="overflow-x-hidden pt-1 lg:pt-3.5">
 				<div class="container">
+					<div class="mt-2 lg:hidden">
+						<!-- mob search -->
+						<div class="trasition flex h-9 w-full items-center justify-between gap-4 rounded-lge border border-lavender-purple/50 bg-white py-1 pl-3 pr-1.5 text-sm transition ease-in">
+							<input type="text" class="flex-grow border-0 p-0 text-xs placeholder-dusty-gray ring-0 focus:ring-0" placeholder="Знайти замовлення" />
+							<button class="btn-primary flex flex-shrink-0 items-center gap-2.5 rounded-lge px-2.5 py-1 text-sm">
+								<span>Знайти</span>
+								<svg class="h-3 w-3 flex-shrink-0 fill-white">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
+								</svg>
+							</button>
+						</div>
+						<!-- ./mob search -->
+
+						<!-- category dropdown -->
+						<button aria-label="Обрати категорію" class="group mb-5 mr-4 mt-3 flex h-12.5 w-full flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5 xl:mr-8">
+							<div class="flex items-center gap-3.5">
+								<div class="btn-primary flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg">
+									<svg class="h-5 w-5 fill-white">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#category"></use>
+									</svg>
+								</div>
+								<span class="text-xs">Обрати категорію</span>
+							</div>
+							<div class="ml-auto">
+								<svg class="h-2.5 w-2.5">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+								</svg>
+							</div>
+						</button>
+						<!-- ./category dropdown -->
+					</div>
+
 					<!-- top sections -->
-					<div class="relative flex flex-col justify-between gap-4 lg:flex-row lg:items-center">
+					<div class="relative flex flex-col justify-between gap-2.5 lg:flex-row lg:items-center lg:gap-4">
 						<div class="flex flex-col gap-1.5 lg:flex-row lg:items-center lg:gap-20">
-							<div class="text-sm font-medium lg:text-xl">Взуття для новонароджених</div>
-							<div class="text-xs text-dusty-gray lg:text-base">14 219 товарів</div>
+							<div class="text-base font-medium lg:text-xl">Взуття для новонароджених</div>
+							<div class="hidden text-base text-dusty-gray lg:block">14 219 товарів</div>
 						</div>
 
 						<div class="flex items-center justify-between gap-6 lg:justify-start">
-							<!-- роздріб опт -->
-							<div class="flex items-center gap-3.5 lg:gap-5">
-								<label class="flex cursor-pointer items-center gap-2.5 lg:gap-4">
-									<div class="relative flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray lg:h-6 lg:w-6">
-										<input type="radio" name="state-1" class="peer hidden" />
+							<div class="text-sm text-dusty-gray lg:hidden">14 219 товарів</div>
 
-										<svg class="h-3 w-3 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100 lg:h-4 lg:w-4">
-											<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+							<div class="hidden items-center gap-3.5 lg:flex lg:gap-5">
+								<!-- нове, б/в -->
+								<div class="relative w-[9.375rem]">
+									<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 bg-white px-3.5 py-2 transition ease-in lg:hover:border-lavender-purple">
+										<span class="pr- text-sm">Нове та б/в</span>
+										<svg class="ml-auto h-1.5 w-3">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 										</svg>
-									</div>
-									<div class="text-xs text-shark lg:text-sm">Опт</div>
-								</label>
-								<label class="flex cursor-pointer items-center gap-2.5 lg:gap-4">
-									<div class="relative flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray lg:h-6 lg:w-6">
-										<input type="radio" name="state-1" class="peer hidden" />
+									</button>
 
-										<svg class="h-3 w-3 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100 lg:h-4 lg:w-4">
-											<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-										</svg>
+									<!-- dropdown -->
+									<div class="absolute left-1/2 top-0 z-30 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-1 text-shark">
+										<div class="flex items-center pr-1.5">
+											<span class="line-clamp-1 text-ellipsis pr-4 text-sm">Нове та б/в</span>
+											<svg class="ml-auto h-1.5 w-3 flex-shrink-0 rotate-180 fill-shark">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+											</svg>
+										</div>
+
+										<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-[8.125rem] flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+												<div class="">Нове</div>
+											</li>
+											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+												<div class="">Б/У</div>
+											</li>
+										</ul>
 									</div>
-									<div class="text-xs text-shark lg:text-sm">Роздріб</div>
-								</label>
+									<!-- ./dropdown -->
+								</div>
+								<!-- нове, б/в -->
+								<!-- Роздріб, опт -->
+								<div class="relative w-[10.625rem]">
+									<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 bg-white px-3.5 py-2 transition ease-in lg:hover:border-lavender-purple">
+										<span class="pr- text-sm">Опт та роздріб</span>
+										<svg class="ml-auto h-1.5 w-3">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+										</svg>
+									</button>
+
+									<!-- dropdown -->
+									<div class="absolute left-1/2 top-0 z-30 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-1 text-shark">
+										<div class="flex items-center pr-1.5">
+											<span class="line-clamp-1 text-ellipsis pr-4 text-sm">Опт та роздріб</span>
+											<svg class="ml-auto h-1.5 w-3 flex-shrink-0 rotate-180 fill-shark">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+											</svg>
+										</div>
+
+										<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-[8.125rem] flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+												<div class="">Опт</div>
+											</li>
+											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+												<div class="">Роздріб</div>
+											</li>
+										</ul>
+									</div>
+									<!-- ./dropdown -->
+								</div>
+								<!-- Роздріб, опт -->
 							</div>
-							<!-- ./роздріб опт -->
 
 							<!-- actions -->
 							<div class="relative flex items-center gap-6 lg:gap-5">
@@ -216,7 +291,7 @@
 								<!-- mobile filter -->
 								<button class="lg:hidden">
 									<svg class="h-4 w-4 fill-transparent stroke-shark lg:h-6 lg:w-6">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#filter"></use>
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#filter2"></use>
 									</svg>
 								</button>
 
@@ -225,7 +300,6 @@
 							<!-- ./actions -->
 						</div>
 					</div>
-
 					<!-- ./top sections -->
 
 					<!-- filters -->
@@ -2108,7 +2182,7 @@
 
 					<!-- 4cols -->
 					<div class="relative z-10">
-						<div class="auto-rows-[minmax(0px, auto)] mt-5 grid grid-cols-2 gap-x-1.5 gap-y-5 md:grid-cols-3 md:gap-x-4 lg:mt-7.5 lg:grid-cols-4 lg:gap-x-6.5 xl:gap-y-10"><!-- card -->
+						<div class="auto-rows-[minmax(0px, auto)] mt-5 grid grid-cols-1 gap-x-1.5 gap-y-5 px-2.5 lw:grid-cols-2 lw:px-0 md:gap-x-4 lg:mt-7.5 lg:grid-cols-4 lg:gap-x-6.5 xl:gap-y-10"><!-- card -->
 <div class="group relative flex flex-col">
 	<!--  favorite icon -->
 	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
@@ -2132,7 +2206,7 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[9.25rem] w-full overflow-hidden px-1.5 pb-1 sm:top-2 sm:h-[17.625rem] sm:pb-2">
+	<div class="absolute top-2.5 z-20 h-[9.25rem] w-full overflow-hidden px-2.5 pb-1 lw:top-2 lw:px-1.5 sm:h-[17.625rem] sm:pb-2">
 		<img src="img/photo_2023-07-29_22-15-03.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
 		
 		<div class="absolute left-3 top-3 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:left-4 sm:top-3 sm:text-sm">-40%</div>
@@ -2142,13 +2216,13 @@
 
 	<a class="flex flex-grow flex-col" href="#">
 		<!-- card image -->
-		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
+		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-2.5 pb-3.5 shadow-custom lw:px-1.5 sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
 			<div class="relative h-[9.25rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
 		</div>
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-2.5 lw:px-1 pb-2.5 lw:pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
 			<div class="mt-1 line-clamp-2 h-8 overflow-hidden text-ellipsis text-sm font-medium">Компактний триммер для волосся, машинка для стрижки бороди Kemei KM-666</div>
@@ -2171,8 +2245,8 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-center text-xs text-limeade sm:text-left sm:text-sm">Готовий до відправки</div>
+				<div class="mt-1 flex items-center gap-1 lw:justify-center">
+					<div class="text-sm text-limeade">Готовий до відправки</div>
 					<img class="hidden h-3.5 w-3.5 sm:block sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
@@ -2199,7 +2273,7 @@
 						<div class="text-xs text-dusty-gray">940 оцінок</div>
 					</div>
 
-					<button class="btn-primary rounded-emd px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
+					<button class="btn-primary w-[11.25rem] rounded-lge px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
 
 					
 
@@ -2237,7 +2311,7 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[9.25rem] w-full overflow-hidden px-1.5 pb-1 sm:top-2 sm:h-[17.625rem] sm:pb-2">
+	<div class="absolute top-2.5 z-20 h-[9.25rem] w-full overflow-hidden px-2.5 pb-1 lw:top-2 lw:px-1.5 sm:h-[17.625rem] sm:pb-2">
 		<img src="img/photo_2023-07-29_22-17-00.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
 		
 		<div class="absolute left-3 top-3 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:left-4 sm:top-3 sm:text-sm">-40%</div>
@@ -2247,13 +2321,13 @@
 
 	<a class="flex flex-grow flex-col" href="#">
 		<!-- card image -->
-		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
+		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-2.5 pb-3.5 shadow-custom lw:px-1.5 sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
 			<div class="relative h-[9.25rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
 		</div>
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-2.5 lw:px-1 pb-2.5 lw:pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
 			<div class="mt-1 line-clamp-2 h-8 overflow-hidden text-ellipsis text-sm font-medium">Шкаф кровать трансформер</div>
@@ -2276,8 +2350,8 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-center text-xs text-limeade sm:text-left sm:text-sm">Готовий до відправки</div>
+				<div class="mt-1 flex items-center gap-1 lw:justify-center">
+					<div class="text-sm text-limeade">Готовий до відправки</div>
 					<img class="hidden h-3.5 w-3.5 sm:block sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
@@ -2304,108 +2378,7 @@
 						<div class="text-xs text-dusty-gray">1940 оцінок</div>
 					</div>
 
-					<button class="btn-primary rounded-emd px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
-
-					
-
-					<p class="text-sm text-shark xl:pr-4">Новий</p>
-
-					 
-				</div>
-			</div>
-		</div>
-		<!-- ./card info -->
-	</a>
-</div>
-<!-- ./card -->
-<!-- card -->
-<div class="group relative flex flex-col">
-	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
-		 
-		<svg class="h-4 w-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
-			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart-solid"></use>
-		</svg>
-		
-	</button>
-	<!-- ./favorite icon -->
-
-	<!-- buy button -->
-
-	<div class="pointer-events-none absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:pointer-events-auto group-hover:opacity-100 lg:block">
-		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
-		<div class="flex justify-center">
-			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
-		</div>
-	</div>
-
-	<!-- ./buy button -->
-
-	<!-- image -->
-	<div class="absolute top-1 z-20 h-[9.25rem] w-full overflow-hidden px-1.5 pb-1 sm:top-2 sm:h-[17.625rem] sm:pb-2">
-		<img src="img/goods/4.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
-		
-		<div class="absolute left-3 top-3 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:left-4 sm:top-3 sm:text-sm">-40%</div>
-		 
-	</div>
-	<!-- .image -->
-
-	<a class="flex flex-grow flex-col" href="#">
-		<!-- card image -->
-		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
-			<div class="relative h-[9.25rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
-		</div>
-		<!-- ./card image -->
-
-		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
-			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
-
-			<div class="mt-1 line-clamp-2 h-8 overflow-hidden text-ellipsis text-sm font-medium">Сушилка для овочів і фруктів Беломо 8360.01 (без лотка для пастіли)</div>
-			<div class="mt-1.5 flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="ml-4 text-xs text-dove-gray line-through decoration-dove-gray sm:ml-0 sm:text-base">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-				</div>
-			</div>
-
-			<div class="mt-auto flex flex-col">
-				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
-					 
-				</div>
-
-				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-center text-xs text-limeade sm:text-left sm:text-sm">Готовий до відправки</div>
-					<img class="hidden h-3.5 w-3.5 sm:block sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
-				</div>
-				 
-
-				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
-						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
-							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
-							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
-							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
-							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
-							</svg>
-						</div>
-						<div class="text-xs text-dusty-gray">940 оцінок</div>
-					</div>
-
-					<button class="btn-primary rounded-emd px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
+					<button class="btn-primary w-[11.25rem] rounded-lge px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
 
 					
 
@@ -2443,7 +2416,7 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[9.25rem] w-full overflow-hidden px-1.5 pb-1 sm:top-2 sm:h-[17.625rem] sm:pb-2">
+	<div class="absolute top-2.5 z-20 h-[9.25rem] w-full overflow-hidden px-2.5 pb-1 lw:top-2 lw:px-1.5 sm:h-[17.625rem] sm:pb-2">
 		<img src="img/goods/1.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
 		 
 		<button class="group/btn absolute left-1 top-[calc(50%-0.25rem)] z-20 flex h-5 w-5 items-center justify-center rounded-full bg-white/60 transition ease-in hover:bg-lavender-purple sm:left-3 lg:h-7.5 lg:w-7.5">
@@ -2462,13 +2435,13 @@
 
 	<a class="flex flex-grow flex-col" href="#">
 		<!-- card image -->
-		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
+		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-2.5 pb-3.5 shadow-custom lw:px-1.5 sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
 			<div class="relative h-[9.25rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
 		</div>
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-2.5 lw:px-1 pb-2.5 lw:pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
 			<div class="mt-1 line-clamp-2 h-8 overflow-hidden text-ellipsis text-sm font-medium">Шкаф кровать трансформер</div>
@@ -2489,8 +2462,8 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-center text-xs text-limeade sm:text-left sm:text-sm">Готовий до відправки</div>
+				<div class="mt-1 flex items-center gap-1 lw:justify-center">
+					<div class="text-sm text-limeade">Готовий до відправки</div>
 					<img class="hidden h-3.5 w-3.5 sm:block sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
@@ -2517,7 +2490,7 @@
 						<div class="text-xs text-dusty-gray">940 оцінок</div>
 					</div>
 
-					<button class="btn-primary rounded-emd px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
+					<button class="btn-primary w-[11.25rem] rounded-lge px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
 
 					 
 
@@ -2555,7 +2528,7 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[9.25rem] w-full overflow-hidden px-1.5 pb-1 sm:top-2 sm:h-[17.625rem] sm:pb-2">
+	<div class="absolute top-2.5 z-20 h-[9.25rem] w-full overflow-hidden px-2.5 pb-1 lw:top-2 lw:px-1.5 sm:h-[17.625rem] sm:pb-2">
 		<img src="img/goods/2.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
 		
 		<div class="absolute left-3 top-3 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:left-4 sm:top-3 sm:text-sm">-40%</div>
@@ -2565,13 +2538,13 @@
 
 	<a class="flex flex-grow flex-col" href="#">
 		<!-- card image -->
-		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
+		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-2.5 pb-3.5 shadow-custom lw:px-1.5 sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
 			<div class="relative h-[9.25rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
 		</div>
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-2.5 lw:px-1 pb-2.5 lw:pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
 			<div class="mt-1 line-clamp-2 h-8 overflow-hidden text-ellipsis text-sm font-medium">Супер товар</div>
@@ -2594,7 +2567,7 @@
 				</div>
 
 				 
-				<div class="mt-1 text-center text-xs text-pomegranate sm:text-sm">Під замовлення 5 днів</div>
+				<div class="mt-1 text-sm text-pomegranate lw:text-center">Під замовлення 5 днів</div>
 				
 
 				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
@@ -2619,7 +2592,7 @@
 						<div class="text-xs text-dusty-gray">556 оцінок</div>
 					</div>
 
-					<button class="btn-primary rounded-emd px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
+					<button class="btn-primary w-[11.25rem] rounded-lge px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
 
 					
 
@@ -2657,7 +2630,7 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[9.25rem] w-full overflow-hidden px-1.5 pb-1 sm:top-2 sm:h-[17.625rem] sm:pb-2">
+	<div class="absolute top-2.5 z-20 h-[9.25rem] w-full overflow-hidden px-2.5 pb-1 lw:top-2 lw:px-1.5 sm:h-[17.625rem] sm:pb-2">
 		<img src="img/photo_2023-07-29_22-15-03.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
 		
 		<div class="absolute left-3 top-3 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:left-4 sm:top-3 sm:text-sm">-40%</div>
@@ -2667,13 +2640,13 @@
 
 	<a class="flex flex-grow flex-col" href="#">
 		<!-- card image -->
-		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
+		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-2.5 pb-3.5 shadow-custom lw:px-1.5 sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
 			<div class="relative h-[9.25rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
 		</div>
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-2.5 lw:px-1 pb-2.5 lw:pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
 			<div class="mt-1 line-clamp-2 h-8 overflow-hidden text-ellipsis text-sm font-medium">Компактний триммер для волосся, машинка для стрижки бороди Kemei KM-666</div>
@@ -2696,8 +2669,8 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-center text-xs text-limeade sm:text-left sm:text-sm">Готовий до відправки</div>
+				<div class="mt-1 flex items-center gap-1 lw:justify-center">
+					<div class="text-sm text-limeade">Готовий до відправки</div>
 					<img class="hidden h-3.5 w-3.5 sm:block sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
@@ -2724,7 +2697,7 @@
 						<div class="text-xs text-dusty-gray">940 оцінок</div>
 					</div>
 
-					<button class="btn-primary rounded-emd px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
+					<button class="btn-primary w-[11.25rem] rounded-lge px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
 
 					
 
@@ -2762,7 +2735,7 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[9.25rem] w-full overflow-hidden px-1.5 pb-1 sm:top-2 sm:h-[17.625rem] sm:pb-2">
+	<div class="absolute top-2.5 z-20 h-[9.25rem] w-full overflow-hidden px-2.5 pb-1 lw:top-2 lw:px-1.5 sm:h-[17.625rem] sm:pb-2">
 		<img src="img/photo_2023-07-29_22-17-00.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
 		
 		<div class="absolute left-3 top-3 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:left-4 sm:top-3 sm:text-sm">-40%</div>
@@ -2772,13 +2745,13 @@
 
 	<a class="flex flex-grow flex-col" href="#">
 		<!-- card image -->
-		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
+		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-2.5 pb-3.5 shadow-custom lw:px-1.5 sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
 			<div class="relative h-[9.25rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
 		</div>
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-2.5 lw:px-1 pb-2.5 lw:pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
 			<div class="mt-1 line-clamp-2 h-8 overflow-hidden text-ellipsis text-sm font-medium">Шкаф кровать трансформер</div>
@@ -2801,8 +2774,8 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-center text-xs text-limeade sm:text-left sm:text-sm">Готовий до відправки</div>
+				<div class="mt-1 flex items-center gap-1 lw:justify-center">
+					<div class="text-sm text-limeade">Готовий до відправки</div>
 					<img class="hidden h-3.5 w-3.5 sm:block sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
@@ -2829,108 +2802,7 @@
 						<div class="text-xs text-dusty-gray">1940 оцінок</div>
 					</div>
 
-					<button class="btn-primary rounded-emd px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
-
-					
-
-					<p class="text-sm text-shark xl:pr-4">Новий</p>
-
-					 
-				</div>
-			</div>
-		</div>
-		<!-- ./card info -->
-	</a>
-</div>
-<!-- ./card -->
-<!-- card -->
-<div class="group relative flex flex-col">
-	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
-		 
-		<svg class="h-4 w-4 shrink-0 fill-lavender-purple sm:h-5 sm:w-5">
-			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart-solid"></use>
-		</svg>
-		
-	</button>
-	<!-- ./favorite icon -->
-
-	<!-- buy button -->
-
-	<div class="pointer-events-none absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:pointer-events-auto group-hover:opacity-100 lg:block">
-		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
-		<div class="flex justify-center">
-			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
-		</div>
-	</div>
-
-	<!-- ./buy button -->
-
-	<!-- image -->
-	<div class="absolute top-1 z-20 h-[9.25rem] w-full overflow-hidden px-1.5 pb-1 sm:top-2 sm:h-[17.625rem] sm:pb-2">
-		<img src="img/goods/4.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
-		
-		<div class="absolute left-3 top-3 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:left-4 sm:top-3 sm:text-sm">-40%</div>
-		 
-	</div>
-	<!-- .image -->
-
-	<a class="flex flex-grow flex-col" href="#">
-		<!-- card image -->
-		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
-			<div class="relative h-[9.25rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
-		</div>
-		<!-- ./card image -->
-
-		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
-			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
-
-			<div class="mt-1 line-clamp-2 h-8 overflow-hidden text-ellipsis text-sm font-medium">Сушилка для овочів і фруктів Беломо 8360.01 (без лотка для пастіли)</div>
-			<div class="mt-1.5 flex items-center">
-				<div class="relative flex items-center gap-0.5 sm:gap-3">
-					<div class="text-sm font-bold sm:text-lg">8000 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-					<div class="ml-4 text-xs text-dove-gray line-through decoration-dove-gray sm:ml-0 sm:text-base">8300 <span class="hidden sm:inline-block">грн</span><span class="inline-block sm:hidden">₴</span></div>
-					
-				</div>
-			</div>
-
-			<div class="mt-auto flex flex-col">
-				<div class="mt-1.5 flex items-center gap-2 sm:justify-between">
-					 
-				</div>
-
-				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-center text-xs text-limeade sm:text-left sm:text-sm">Готовий до відправки</div>
-					<img class="hidden h-3.5 w-3.5 sm:block sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
-				</div>
-				 
-
-				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
-					<div class="hidden flex-wrap items-center gap-1 lg:flex">
-						<div class="flex items-center">
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
-							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
-							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
-							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
-							</svg>
-							<svg class="h-3 w-3 shrink-0 fill-goldenrod sm:h-4 sm:w-4">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
-							</svg>
-						</div>
-						<div class="text-xs text-dusty-gray">940 оцінок</div>
-					</div>
-
-					<button class="btn-primary rounded-emd px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
+					<button class="btn-primary w-[11.25rem] rounded-lge px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
 
 					
 
@@ -2968,7 +2840,7 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[9.25rem] w-full overflow-hidden px-1.5 pb-1 sm:top-2 sm:h-[17.625rem] sm:pb-2">
+	<div class="absolute top-2.5 z-20 h-[9.25rem] w-full overflow-hidden px-2.5 pb-1 lw:top-2 lw:px-1.5 sm:h-[17.625rem] sm:pb-2">
 		<img src="img/goods/1.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
 		 
 		<button class="group/btn absolute left-1 top-[calc(50%-0.25rem)] z-20 flex h-5 w-5 items-center justify-center rounded-full bg-white/60 transition ease-in hover:bg-lavender-purple sm:left-3 lg:h-7.5 lg:w-7.5">
@@ -2987,13 +2859,13 @@
 
 	<a class="flex flex-grow flex-col" href="#">
 		<!-- card image -->
-		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
+		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-2.5 pb-3.5 shadow-custom lw:px-1.5 sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
 			<div class="relative h-[9.25rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
 		</div>
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-2.5 lw:px-1 pb-2.5 lw:pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
 			<div class="mt-1 line-clamp-2 h-8 overflow-hidden text-ellipsis text-sm font-medium">Шкаф кровать трансформер</div>
@@ -3014,8 +2886,8 @@
 				</div>
 
 				
-				<div class="mt-1 flex items-center justify-center gap-1">
-					<div class="text-center text-xs text-limeade sm:text-left sm:text-sm">Готовий до відправки</div>
+				<div class="mt-1 flex items-center gap-1 lw:justify-center">
+					<div class="text-sm text-limeade">Готовий до відправки</div>
 					<img class="hidden h-3.5 w-3.5 sm:block sm:h-5 sm:w-5" src="img/svg/delivery-car.svg" alt="" />
 				</div>
 				 
@@ -3042,7 +2914,7 @@
 						<div class="text-xs text-dusty-gray">940 оцінок</div>
 					</div>
 
-					<button class="btn-primary rounded-emd px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
+					<button class="btn-primary w-[11.25rem] rounded-lge px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
 
 					 
 
@@ -3080,7 +2952,7 @@
 	<!-- ./buy button -->
 
 	<!-- image -->
-	<div class="absolute top-1 z-20 h-[9.25rem] w-full overflow-hidden px-1.5 pb-1 sm:top-2 sm:h-[17.625rem] sm:pb-2">
+	<div class="absolute top-2.5 z-20 h-[9.25rem] w-full overflow-hidden px-2.5 pb-1 lw:top-2 lw:px-1.5 sm:h-[17.625rem] sm:pb-2">
 		<img src="img/goods/2.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
 		
 		<div class="absolute left-3 top-3 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:left-4 sm:top-3 sm:text-sm">-40%</div>
@@ -3090,13 +2962,13 @@
 
 	<a class="flex flex-grow flex-col" href="#">
 		<!-- card image -->
-		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-1.5 pb-1 shadow-custom sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
+		<div class="rounded-bl-2lge rounded-br-xle rounded-tl-xle rounded-tr-lge bg-white px-2.5 pb-3.5 shadow-custom lw:px-1.5 sm:rounded-bl-4xle sm:rounded-br-4xle sm:pb-5">
 			<div class="relative h-[9.25rem] overflow-hidden rounded-xle sm:h-[17.125rem]"></div>
 		</div>
 		<!-- ./card image -->
 
 		<!-- card info -->
-		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-1 pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
+		<div class="relative z-10 -mt-1 flex grow flex-col rounded-bl-lge rounded-br-lge rounded-tl-2lge rounded-tr-2lge bg-white px-2.5 lw:px-1 pb-2.5 lw:pb-1 pt-1 shadow-custom sm:-mt-4 sm:rounded-bl-xle sm:rounded-br-xle sm:rounded-tl-4xle sm:rounded-tr-4xle sm:px-2.5 sm:py-2">
 			<!-- <div class="absolute -top-[1px] left-1/2 h-2.5 w-[90.5%] -translate-x-1/2 bg-white sm:w-[91%] md:w-[86%]"></div> -->
 
 			<div class="mt-1 line-clamp-2 h-8 overflow-hidden text-ellipsis text-sm font-medium">Супер товар</div>
@@ -3119,7 +2991,7 @@
 				</div>
 
 				 
-				<div class="mt-1 text-center text-xs text-pomegranate sm:text-sm">Під замовлення 5 днів</div>
+				<div class="mt-1 text-sm text-pomegranate lw:text-center">Під замовлення 5 днів</div>
 				
 
 				<div class="mt-1.5 flex flex-wrap items-center justify-start gap-4 sm:mt-2 lg:mt-1 lg:justify-between lg:gap-0">
@@ -3144,7 +3016,7 @@
 						<div class="text-xs text-dusty-gray">556 оцінок</div>
 					</div>
 
-					<button class="btn-primary rounded-emd px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
+					<button class="btn-primary w-[11.25rem] rounded-lge px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
 
 					
 
@@ -3800,784 +3672,857 @@
 		<!-- filters mobile -->
 		<div class="lg:hidden">
 			<div class="fixed inset-0 z-50 bg-black/40">
-				<div class="absolute right-0 h-screen w-[320px] bg-white">
-					<div class="flex items-center justify-between p-3">
-						<div class="text-base font-bold">Фільтри</div>
-						<button>
-							<svg class="h-4 w-4">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
+	<div class="absolute right-0 h-screen w-full bg-white lw:w-[20rem]">
+		<div class="flex items-center justify-between p-3">
+			<div class="text-base font-bold">Фільтри</div>
+			<button>
+				<svg class="h-4 w-4">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
+				</svg>
+			</button>
+		</div>
+		<div class="scrollbar-custom ml-3 mt-1.5 h-[calc(100vh-5rem)] min-h-[5rem] overflow-auto pb-1 pr-3 pt-0.5 text-sm">
+			<!-- filter new & used -->
+			<div class="relative h-7.5 w-full">
+				<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 border border-lavender-purple/50 transition ease-in">
+					<svg class="h-3.5 w-4">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
+					</svg>
+					<span class="ml-2.5 text-sm lg:text-xs">Нове та б/в</span>
+					<svg class="ml-auto h-1.5 w-3">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+					</svg>
+				</button>
+
+				<!-- dropdown -->
+				<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
+					<div class="flex pr-2">
+						<svg class="h-3.5 w-4">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
+						</svg>
+						<span class="ml-2.5 text-sm lg:text-xs">Нове та б/в</span>
+						<svg class="ml-auto h-1.5 w-3 rotate-180">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+						</svg>
+					</div>
+					<ul class="scrollbar-custom-thin mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<span>Нове</span>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<span>Б/В</span>
+						</li>
+					</ul>
+				</div>
+				<!-- ./dropdown -->
+			</div>
+			<!-- ./filter new &  used-->
+
+			<!-- filter Опт та роздріб -->
+			<div class="relative mt-3 h-7.5 w-full">
+				<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 border border-lavender-purple/50 transition ease-in">
+					<svg class="h-3.5 w-4">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
+					</svg>
+					<span class="ml-2.5 text-sm lg:text-xs">Опт та роздріб</span>
+					<svg class="ml-auto h-1.5 w-3">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+					</svg>
+				</button>
+
+				<!-- dropdown -->
+				<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
+					<div class="flex pr-2">
+						<svg class="h-3.5 w-4">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
+						</svg>
+						<span class="ml-2.5 text-sm lg:text-xs">Опт та роздріб</span>
+						<svg class="ml-auto h-1.5 w-3 rotate-180">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+						</svg>
+					</div>
+					<ul class="scrollbar-custom-thin mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<span>Опт</span>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<span>Роздріб</span>
+						</li>
+					</ul>
+				</div>
+				<!-- ./dropdown -->
+			</div>
+			<!-- ./filter Опт та роздріб-->
+
+			<!-- filter category first-->
+			<div class="relative mt-3 h-7.5 w-full">
+				<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 border border-lavender-purple/50 transition ease-in">
+					<svg class="h-3.5 w-4">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
+					</svg>
+					<span class="ml-2.5 text-sm lg:text-xs">Взуття</span>
+					<svg class="ml-auto h-1.5 w-3">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+					</svg>
+				</button>
+
+				<!-- dropdown -->
+				<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
+					<div class="flex pr-2">
+						<svg class="h-3.5 w-4">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
+						</svg>
+						<span class="ml-2.5 text-sm lg:text-xs">Взуття</span>
+						<svg class="ml-auto h-1.5 w-3 rotate-180">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+						</svg>
+					</div>
+					<ul class="scrollbar-custom-thin mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<span>Дитяче</span>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<span>Для новонароджених</span>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<span>Жіноче</span>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<span>Чоловіче</span>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<span>Ортопедичне взуття</span>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<span>Аксесуари для взуття</span>
+						</li>
+					</ul>
+				</div>
+				<!-- ./dropdown -->
+			</div>
+			<!-- ./filter category first-->
+
+			<!-- filter category -->
+			<div class="relative mt-3 h-7.5 w-full">
+				<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 border border-lavender-purple/50 transition ease-in">
+					<span class="text-sm lg:text-xs">Категорія</span>
+					<svg class="ml-auto h-1.5 w-3">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+					</svg>
+				</button>
+
+				<!-- dropdown -->
+				<div class="hidden absolute left-1/2 top-0 z-10 mx-fix-shadow w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark shadow-lavender-purple-thin">
+					<div class="flex pr-2">
+						<span class="text-sm">Категорія</span>
+						<svg class="ml-auto h-1.5 w-3 rotate-180">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+						</svg>
+					</div>
+
+					<div class="mr-2 mt-3 flex h-10 items-center rounded-lge px-2.5 shadow-dusty-gray-mid">
+						<input type="text" class="flex-grow border-none p-0 text-sm placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Я шукаю..." />
+						<button class="">
+							<svg class="block h-4 w-4 fill-dusty-gray">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
 							</svg>
 						</button>
 					</div>
-					<div class="scrollbar-custom ml-3 mt-1.5 h-[calc(100vh-5rem)] min-h-[5rem] overflow-auto pb-1 pr-3 pt-0.5 text-sm">
-						<!-- filter category first-->
-						<div class="relative h-7.5 w-full">
-							<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 shadow-lavender-purple-thin-inset transition ease-in">
-								<svg class="h-3.5 w-4">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
-								</svg>
-								<span class="ml-2.5 text-sm lg:text-xs">Взуття</span>
-								<svg class="ml-auto h-1.5 w-3">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-								</svg>
-							</button>
 
-							<!-- dropdown -->
-							<div class="absolute left-1/2 top-0 z-10 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark shadow-lavender-purple-thin-inset">
-								<div class="flex pr-2">
-									<svg class="h-3.5 w-4">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
-									</svg>
-									<span class="ml-2.5 text-sm lg:text-xs">Взуття</span>
-									<svg class="ml-auto h-1.5 w-3 rotate-180">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-									</svg>
-								</div>
-								<ul class="scrollbar-custom-thin mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<span>Дитяче</span>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<span>Для новонароджених</span>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<span>Жіноче</span>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<span>Чоловіче</span>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<span>Ортопедичне взуття</span>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<span>Аксесуари для взуття</span>
-									</li>
-								</ul>
-							</div>
-							<!-- ./dropdown -->
-						</div>
-						<!-- ./filter category first-->
+					<ul class="scrollbar-custom-thin mt-4 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
 
-						<!-- filter category -->
-						<div class="relative mt-3 h-7.5 w-full">
-							<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 shadow-lavender-purple-thin-inset transition ease-in">
-								<span class="text-sm lg:text-xs">Категорія</span>
-								<svg class="ml-auto h-1.5 w-3">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-								</svg>
-							</button>
-
-							<!-- dropdown -->
-							<div class="absolute left-1/2 top-0 z-10 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark shadow-lavender-purple-thin-inset">
-								<div class="flex pr-2">
-									<span class="text-sm">Категорія</span>
-									<svg class="ml-auto h-1.5 w-3 rotate-180">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
 									</svg>
 								</div>
 
-								<div class="mr-2 mt-3 flex h-10 items-center rounded-lge px-2.5 shadow-dusty-gray-mid">
-									<input type="text" class="flex-grow border-none p-0 text-sm placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Я шукаю..." />
-									<button class="">
-										<svg class="block h-4 w-4 fill-dusty-gray">
-											<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
-										</svg>
-									</button>
-								</div>
-
-								<ul class="scrollbar-custom-thin mt-4 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="text-sm text-shark">Допомога</div>
-										</label>
-									</li>
-
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="text-shark">Спорт та відпочинок</div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="text-shark">Обладнання та сировина</div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="text-shark">Будматеріали та інструменти</div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="text-shark">Мода та стиль</div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="text-shark">Краса і здоров’я</div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="text-shark">Дитячі товари</div>
-										</label>
-									</li>
-								</ul>
-
-								<div class="mt-3 pr-2">
-									<button class="btn-pink mt-4 flex h-8.5 w-full items-center justify-center rounded-lge">Готово</button>
-								</div>
-							</div>
-							<!-- ./dropdown -->
-						</div>
-						<!-- ./filter category -->
-
-						<!-- filter seller -->
-						<div class="relative mt-3 h-7.5 w-full">
-							<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 shadow-lavender-purple-thin-inset transition ease-in">
-								<span class="text-sm">Продавець</span>
-								<svg class="ml-auto h-1.5 w-3">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-								</svg>
-							</button>
-
-							<!-- dropdown -->
-							<div class="absolute left-1/2 top-0 z-10 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark shadow-lavender-purple-thin-inset">
-								<div class="flex pr-2">
-									<span class="text-sm">Продавець</span>
-									<svg class="ml-auto h-1.5 w-3 rotate-180">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-									</svg>
-								</div>
-								<ul class="scrollbar-custom-thin mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="text-shark">Wildberries <span class="text-dove-gray">2 151</span></div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="text-shark">KARI <span class="text-dove-gray">74</span></div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="text-shark">Биг Трейд <span class="text-dove-gray">26</span></div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="text-shark">Sport Point <span class="text-dove-gray">17</span></div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="text-shark">ECCO <span class="text-dove-gray">10</span></div>
-										</label>
-									</li>
-								</ul>
-
-								<div class="mt-3 pr-2.5">
-									<button class="text-xs text-shark underline decoration-shark decoration-dashed decoration-[0.5px] underline-offset-4">Показати все</button>
-									<button class="btn-pink mt-4 flex h-8.5 w-full items-center justify-center rounded-lge">Готово</button>
-								</div>
-							</div>
-							<!-- ./dropdown -->
-						</div>
-						<!-- ./filter seller -->
-
-						<!-- filter price -->
-						<div class="relative mt-3 h-7.5 w-full">
-							<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 shadow-lavender-purple-thin-inset transition ease-in">
-								<span class="text-sm">Ціна</span>
-								<svg class="ml-auto h-1.5 w-3">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-								</svg>
-							</button>
-
-							<!-- dropdown -->
-							<div class="absolute left-1/2 top-0 z-10 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark shadow-lavender-purple-thin-inset">
-								<div class="flex pr-2">
-									<span class="text-sm">Ціна</span>
-									<svg class="ml-auto h-1.5 w-3 rotate-180">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-									</svg>
-								</div>
-								<div class="mt-2.5 flex gap-7.5 text-sm">
-									<div class="flex items-center gap-2.5">
-										<div>від</div>
-										<div>
-											<input type="text" class="w-12.5 border-0 border-b border-b-dusty-gray p-0 text-center text-sm ring-0 focus:ring-0" value="86" />
-										</div>
-									</div>
-									<div class="flex items-center gap-2.5">
-										<div>до</div>
-										<div>
-											<input type="text" class="w-12.5 border-0 border-b border-b-dusty-gray p-0 text-center text-sm ring-0 focus:ring-0" value="20 000" />
-										</div>
-									</div>
-								</div>
-
-								<div class="mt-3 pr-2.5">
-									<button class="btn-pink mt-4 flex h-8.5 w-full items-center justify-center rounded-lge">Готово</button>
-								</div>
-							</div>
-							<!-- ./dropdown -->
-						</div>
-						<!-- ./filter price -->
-
-						<!-- filter color -->
-						<div class="relative mt-3 h-7.5 w-full">
-							<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 shadow-lavender-purple-thin-inset transition ease-in">
-								<span class="text-sm">Колір</span>
-								<svg class="ml-auto h-1.5 w-3">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-								</svg>
-							</button>
-
-							<!-- dropdown -->
-							<div class="absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark shadow-lavender-purple-thin-inset">
-								<div class="flex pr-2">
-									<span class="text-sm">Колір</span>
-									<svg class="ml-auto h-1.5 w-3 rotate-180">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-									</svg>
-								</div>
-								<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-									<!-- Чорний -->
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="h-5.5 w-5.5 rounded-full bg-black"></div>
-
-											<div class="">Чорний <span class="text-dove-gray">724</span></div>
-										</label>
-									</li>
-
-									<!-- білий -->
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="h-5.5 w-5.5 rounded-full bg-white shadow-dusty-gray-thin"></div>
-
-											<div class="">Білий <span class="text-dove-gray">2 724</span></div>
-										</label>
-									</li>
-
-									<!-- бежевий -->
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="h-5.5 w-5.5 rounded-full bg-parchment"></div>
-
-											<div class="">Бежевий <span class="text-dove-gray">980</span></div>
-										</label>
-									</li>
-
-									<!-- блакитний -->
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="h-5.5 w-5.5 rounded-full bg-jordy-blue"></div>
-
-											<div class="">Блакитний <span class="text-dove-gray">1 026</span></div>
-										</label>
-									</li>
-
-									<!-- жовтий -->
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="h-5.5 w-5.5 rounded-full bg-koromiko"></div>
-
-											<div class="">Жовтий <span class="text-dove-gray">175</span></div>
-										</label>
-									</li>
-
-									<!-- зелений -->
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="h-5.5 w-5.5 rounded-full bg-fruit-salad"></div>
-
-											<div class="">Зелений <span class="text-dove-gray">104</span></div>
-										</label>
-									</li>
-
-									<!-- Червоний -->
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="h-5.5 w-5.5 rounded-full bg-punch"></div>
-
-											<div class="">Червоний <span class="text-dove-gray">1 104</span></div>
-										</label>
-									</li>
-
-									<!-- Помаранчевий -->
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="h-5.5 w-5.5 rounded-full bg-coral"></div>
-
-											<div class="">Помаранчевий <span class="text-dove-gray">1 456</span></div>
-										</label>
-									</li>
-								</ul>
-
-								<div class="mt-3 pr-2.5">
-									<button class="btn-pink mt-4 flex h-8.5 w-full items-center justify-center rounded-lge">Готово</button>
-								</div>
-							</div>
-							<!-- ./dropdown -->
-						</div>
-						<!-- ./filter color -->
-
-						<!-- filter brand -->
-						<div class="relative mt-3 h-7.5 w-full">
-							<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 shadow-lavender-purple-thin-inset transition ease-in">
-								<span class="text-sm">Бренд</span>
-								<svg class="ml-auto h-1.5 w-3">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-								</svg>
-							</button>
-
-							<!-- dropdown -->
-							<div class="absolute left-1/2 top-0 z-10 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark shadow-lavender-purple-thin-inset">
-								<div class="flex pr-2">
-									<span class="text-sm">Бренд</span>
-									<svg class="ml-auto h-1.5 w-3 rotate-180">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-									</svg>
-								</div>
-								<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="">MFMaster <span class="text-dove-gray">270</span></div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="">LETTA <span class="text-dove-gray">74</span></div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="">Моби <span class="text-dove-gray">26</span></div>
-										</label>
-									</li>
-
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="">ИНВЕСТ <span class="text-dove-gray">17</span></div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-											<div class="">Стендмебель <span class="text-dove-gray">10</span></div>
-										</label>
-									</li>
-								</ul>
-
-								<div class="mt-3 pr-2.5">
-									<button class="text-xs text-shark underline decoration-shark decoration-dashed decoration-[0.5px] underline-offset-4">Показати все</button>
-									<button class="btn-pink mt-4 flex h-8.5 w-full items-center justify-center rounded-lge">Готово</button>
-								</div>
-							</div>
-							<!-- ./dropdown -->
-						</div>
-						<!-- ./filter brand -->
-
-						<!-- filter size -->
-						<div class="relative mt-3 h-7.5 w-full">
-							<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 shadow-lavender-purple-thin-inset transition ease-in">
-								<span class="text-sm">Розмір</span>
-								<svg class="ml-auto h-1.5 w-3">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-								</svg>
-							</button>
-
-							<!-- dropdown -->
-							<div class="absolute left-1/2 top-0 z-10 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark shadow-lavender-purple-thin-inset">
-								<div class="flex pr-2">
-									<span class="text-sm">Розмір</span>
-									<svg class="ml-auto h-1.5 w-3 rotate-180">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-									</svg>
-								</div>
-								<div class="mr-3 mt-3 flex h-10 items-center rounded-lge px-3 shadow-dusty-gray-mid">
-									<input type="text" class="flex-grow border-none p-0 text-sm placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Я шукаю..." />
-									<button class="">
-										<svg class="block h-4 w-4 fill-dusty-gray">
-											<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
-										</svg>
-									</button>
-								</div>
-								<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="">1 <span class="text-dove-gray">37</span></div>
-										</label>
-									</li>
-
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="">2 <span class="text-dove-gray">38</span></div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="">3 <span class="text-dove-gray">40</span></div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="">4 <span class="text-dove-gray">39</span></div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="">5 <span class="text-dove-gray">47</span></div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="">6 <span class="text-dove-gray">55</span></div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-												<input type="checkbox" name="" class="peer hidden" />
-
-												<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-												</svg>
-											</div>
-
-											<div class="">7 <span class="text-dove-gray">87</span></div>
-										</label>
-									</li>
-								</ul>
-
-								<div class="mt-3 pr-2.5">
-									<button class="text-xs text-shark underline decoration-shark decoration-dashed decoration-[0.5px] underline-offset-4">Показати все</button>
-									<button class="btn-pink mt-4 flex h-8.5 w-full items-center justify-center rounded-lge">Готово</button>
-								</div>
-							</div>
-							<!-- ./dropdown -->
-						</div>
-						<!-- ./filter size -->
-
-						<!-- filter popular -->
-						<div class="relative mt-3 h-7.5 w-full">
-							<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 shadow-lavender-purple-thin-inset transition ease-in">
-								<svg class="h-3.5 w-4">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#up-down"></use>
-								</svg>
-								<span class="ml-2.5 text-sm lg:text-xs">За популярністю</span>
-								<svg class="ml-auto h-1.5 w-3">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-								</svg>
-							</button>
-
-							<!-- dropdown -->
-							<div class="absolute left-1/2 top-0 z-10 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark shadow-lavender-purple-thin-inset">
-								<div class="flex items-center pr-2">
-									<svg class="h-3.5 w-4">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#up-down"></use>
-									</svg>
-									<span class="ml-2.5 text-sm">За популярністю</span>
-									<svg class="ml-auto h-1.5 w-3 rotate-180">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+								<div class="text-sm text-shark">Допомога</div>
+							</label>
+						</li>
+
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
 									</svg>
 								</div>
 
-								<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative h-5 w-5 flex-shrink-0 rounded-full border border-dusty-gray">
-												<input type="radio" name="popular-state" class="peer hidden" />
-												<div class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
-											</div>
-											<div class="">За популярністю</div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative h-5 w-5 flex-shrink-0 rounded-full border border-dusty-gray">
-												<input type="radio" name="popular-state" class="peer hidden" />
-												<div class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
-											</div>
-											<div class="">За рейтингом</div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative h-5 w-5 flex-shrink-0 rounded-full border border-dusty-gray">
-												<input type="radio" name="popular-state" class="peer hidden" />
-												<div class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
-											</div>
-											<div class="">За зростанням ціни</div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative h-5 w-5 flex-shrink-0 rounded-full border border-dusty-gray">
-												<input type="radio" name="popular-state" class="peer hidden" />
-												<div class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
-											</div>
-											<div class="">За зменшенням ціни</div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative h-5 w-5 flex-shrink-0 rounded-full border border-dusty-gray">
-												<input type="radio" name="popular-state" class="peer hidden" />
-												<div class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
-											</div>
-											<div class="">За новинками</div>
-										</label>
-									</li>
-									<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-										<label class="flex cursor-pointer items-center gap-2">
-											<div class="relative h-5 w-5 flex-shrink-0 rounded-full border border-dusty-gray">
-												<input type="radio" name="popular-state" class="peer hidden" />
-												<div class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
-											</div>
-											<div class="">Спочатку вигідні</div>
-										</label>
-									</li>
-								</ul>
-							</div>
-							<!-- ./dropdown -->
-						</div>
-						<!-- ./filter popular -->
+								<div class="text-shark">Спорт та відпочинок</div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+
+								<div class="text-shark">Обладнання та сировина</div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+
+								<div class="text-shark">Будматеріали та інструменти</div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+
+								<div class="text-shark">Мода та стиль</div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+
+								<div class="text-shark">Краса і здоров’я</div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+
+								<div class="text-shark">Дитячі товари</div>
+							</label>
+						</li>
+					</ul>
+
+					<div class="mt-3 pr-2">
+						<button class="btn-pink mt-4 flex h-8.5 w-full items-center justify-center rounded-lge">Готово</button>
 					</div>
 				</div>
+				<!-- ./dropdown -->
 			</div>
+			<!-- ./filter category -->
+
+			<!-- filter seller -->
+			<div class="relative mt-3 h-7.5 w-full">
+				<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 border border-lavender-purple/50 transition ease-in">
+					<span class="text-sm">Продавець</span>
+					<svg class="ml-auto h-1.5 w-3">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+					</svg>
+				</button>
+
+				<!-- dropdown -->
+				<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
+					<div class="flex pr-2">
+						<span class="text-sm">Продавець</span>
+						<svg class="ml-auto h-1.5 w-3 rotate-180">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+						</svg>
+					</div>
+					<ul class="scrollbar-custom-thin mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="text-shark">Wildberries <span class="text-dove-gray">2 151</span></div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="text-shark">KARI <span class="text-dove-gray">74</span></div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="text-shark">Биг Трейд <span class="text-dove-gray">26</span></div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="text-shark">Sport Point <span class="text-dove-gray">17</span></div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="text-shark">ECCO <span class="text-dove-gray">10</span></div>
+							</label>
+						</li>
+					</ul>
+
+					<div class="mt-3 pr-2.5">
+						<button class="text-xs text-shark underline decoration-shark decoration-dashed decoration-[0.5px] underline-offset-4">Показати все</button>
+						<button class="btn-pink mt-4 flex h-8.5 w-full items-center justify-center rounded-lge">Готово</button>
+					</div>
+				</div>
+				<!-- ./dropdown -->
+			</div>
+			<!-- ./filter seller -->
+
+			<!-- filter price -->
+			<div class="relative mt-3 h-7.5 w-full">
+				<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 border border-lavender-purple/50 transition ease-in">
+					<span class="text-sm">Ціна</span>
+					<svg class="ml-auto h-1.5 w-3">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+					</svg>
+				</button>
+
+				<!-- dropdown -->
+				<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
+					<div class="flex pr-2">
+						<span class="text-sm">Ціна</span>
+						<svg class="ml-auto h-1.5 w-3 rotate-180">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+						</svg>
+					</div>
+					<div class="mt-2.5 flex gap-7.5 text-sm">
+						<div class="flex items-center gap-2.5">
+							<div>від</div>
+							<div>
+								<input type="text" class="w-12.5 border-0 border-b border-b-dusty-gray p-0 text-center text-sm ring-0 focus:ring-0" value="86" />
+							</div>
+						</div>
+						<div class="flex items-center gap-2.5">
+							<div>до</div>
+							<div>
+								<input type="text" class="w-12.5 border-0 border-b border-b-dusty-gray p-0 text-center text-sm ring-0 focus:ring-0" value="20 000" />
+							</div>
+						</div>
+					</div>
+
+					<div class="mt-3 pr-2.5">
+						<button class="btn-pink mt-4 flex h-8.5 w-full items-center justify-center rounded-lge">Готово</button>
+					</div>
+				</div>
+				<!-- ./dropdown -->
+			</div>
+			<!-- ./filter price -->
+
+			<!-- filter color -->
+			<div class="relative mt-3 h-7.5 w-full">
+				<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 border border-lavender-purple/50 transition ease-in">
+					<span class="text-sm">Колір</span>
+					<svg class="ml-auto h-1.5 w-3">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+					</svg>
+				</button>
+
+				<!-- dropdown -->
+				<div class=" absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
+					<div class="flex pr-2">
+						<span class="text-sm">Колір</span>
+						<svg class="ml-auto h-1.5 w-3 rotate-180">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+						</svg>
+					</div>
+					<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+						<!-- Чорний -->
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="h-5.5 w-5.5 rounded-full bg-black"></div>
+
+								<div class="">Чорний <span class="text-dove-gray">724</span></div>
+							</label>
+						</li>
+
+						<!-- білий -->
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="h-5.5 w-5.5 rounded-full bg-white shadow-dusty-gray-thin"></div>
+
+								<div class="">Білий <span class="text-dove-gray">2 724</span></div>
+							</label>
+						</li>
+
+						<!-- бежевий -->
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="h-5.5 w-5.5 rounded-full bg-parchment"></div>
+
+								<div class="">Бежевий <span class="text-dove-gray">980</span></div>
+							</label>
+						</li>
+
+						<!-- блакитний -->
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="h-5.5 w-5.5 rounded-full bg-jordy-blue"></div>
+
+								<div class="">Блакитний <span class="text-dove-gray">1 026</span></div>
+							</label>
+						</li>
+
+						<!-- жовтий -->
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="h-5.5 w-5.5 rounded-full bg-koromiko"></div>
+
+								<div class="">Жовтий <span class="text-dove-gray">175</span></div>
+							</label>
+						</li>
+
+						<!-- зелений -->
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="h-5.5 w-5.5 rounded-full bg-fruit-salad"></div>
+
+								<div class="">Зелений <span class="text-dove-gray">104</span></div>
+							</label>
+						</li>
+
+						<!-- Червоний -->
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="h-5.5 w-5.5 rounded-full bg-punch"></div>
+
+								<div class="">Червоний <span class="text-dove-gray">1 104</span></div>
+							</label>
+						</li>
+
+						<!-- Помаранчевий -->
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="h-5.5 w-5.5 rounded-full bg-coral"></div>
+
+								<div class="">Помаранчевий <span class="text-dove-gray">1 456</span></div>
+							</label>
+						</li>
+					</ul>
+
+					<div class="mt-3 pr-2.5">
+						<button class="btn-pink mt-4 flex h-8.5 w-full items-center justify-center rounded-lge">Готово</button>
+					</div>
+				</div>
+				<!-- ./dropdown -->
+			</div>
+			<!-- ./filter color -->
+
+			<!-- filter brand -->
+			<div class="relative mt-3 h-7.5 w-full">
+				<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 border border-lavender-purple/50 transition ease-in">
+					<span class="text-sm">Бренд</span>
+					<svg class="ml-auto h-1.5 w-3">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+					</svg>
+				</button>
+
+				<!-- dropdown -->
+				<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
+					<div class="flex pr-2">
+						<span class="text-sm">Бренд</span>
+						<svg class="ml-auto h-1.5 w-3 rotate-180">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+						</svg>
+					</div>
+					<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="">MFMaster <span class="text-dove-gray">270</span></div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="">LETTA <span class="text-dove-gray">74</span></div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="">Моби <span class="text-dove-gray">26</span></div>
+							</label>
+						</li>
+
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="">ИНВЕСТ <span class="text-dove-gray">17</span></div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+								<div class="">Стендмебель <span class="text-dove-gray">10</span></div>
+							</label>
+						</li>
+					</ul>
+
+					<div class="mt-3 pr-2.5">
+						<button class="text-xs text-shark underline decoration-shark decoration-dashed decoration-[0.5px] underline-offset-4">Показати все</button>
+						<button class="btn-pink mt-4 flex h-8.5 w-full items-center justify-center rounded-lge">Готово</button>
+					</div>
+				</div>
+				<!-- ./dropdown -->
+			</div>
+			<!-- ./filter brand -->
+
+			<!-- filter size -->
+			<div class="relative mt-3 h-7.5 w-full">
+				<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 border border-lavender-purple/50 transition ease-in">
+					<span class="text-sm">Розмір</span>
+					<svg class="ml-auto h-1.5 w-3">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+					</svg>
+				</button>
+
+				<!-- dropdown -->
+				<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
+					<div class="flex pr-2">
+						<span class="text-sm">Розмір</span>
+						<svg class="ml-auto h-1.5 w-3 rotate-180">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+						</svg>
+					</div>
+					<div class="mr-3 mt-3 flex h-10 items-center rounded-lge px-3 shadow-dusty-gray-mid">
+						<input type="text" class="flex-grow border-none p-0 text-sm placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Я шукаю..." />
+						<button class="">
+							<svg class="block h-4 w-4 fill-dusty-gray">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
+							</svg>
+						</button>
+					</div>
+					<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+
+								<div class="">1 <span class="text-dove-gray">37</span></div>
+							</label>
+						</li>
+
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+
+								<div class="">2 <span class="text-dove-gray">38</span></div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+
+								<div class="">3 <span class="text-dove-gray">40</span></div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+
+								<div class="">4 <span class="text-dove-gray">39</span></div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+
+								<div class="">5 <span class="text-dove-gray">47</span></div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+
+								<div class="">6 <span class="text-dove-gray">55</span></div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+									<input type="checkbox" name="" class="peer hidden" />
+
+									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+									</svg>
+								</div>
+
+								<div class="">7 <span class="text-dove-gray">87</span></div>
+							</label>
+						</li>
+					</ul>
+
+					<div class="mt-3 pr-2.5">
+						<button class="text-xs text-shark underline decoration-shark decoration-dashed decoration-[0.5px] underline-offset-4">Показати все</button>
+						<button class="btn-pink mt-4 flex h-8.5 w-full items-center justify-center rounded-lge">Готово</button>
+					</div>
+				</div>
+				<!-- ./dropdown -->
+			</div>
+			<!-- ./filter size -->
+
+			<!-- filter popular -->
+			<div class="relative mt-3 h-7.5 w-full">
+				<button class="flex h-full w-full items-center rounded-lge px-2.5 py-2 border border-lavender-purple/50 transition ease-in">
+					<svg class="h-3.5 w-4">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#up-down"></use>
+					</svg>
+					<span class="ml-2.5 text-sm lg:text-xs">За популярністю</span>
+					<svg class="ml-auto h-1.5 w-3">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+					</svg>
+				</button>
+
+				<!-- dropdown -->
+				<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
+					<div class="flex items-center pr-2">
+						<svg class="h-3.5 w-4">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#up-down"></use>
+						</svg>
+						<span class="ml-2.5 text-sm">За популярністю</span>
+						<svg class="ml-auto h-1.5 w-3 rotate-180">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+						</svg>
+					</div>
+
+					<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative h-5 w-5 flex-shrink-0 rounded-full border border-dusty-gray">
+									<input type="radio" name="popular-state" class="peer hidden" />
+									<div class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+								</div>
+								<div class="">За популярністю</div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative h-5 w-5 flex-shrink-0 rounded-full border border-dusty-gray">
+									<input type="radio" name="popular-state" class="peer hidden" />
+									<div class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+								</div>
+								<div class="">За рейтингом</div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative h-5 w-5 flex-shrink-0 rounded-full border border-dusty-gray">
+									<input type="radio" name="popular-state" class="peer hidden" />
+									<div class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+								</div>
+								<div class="">За зростанням ціни</div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative h-5 w-5 flex-shrink-0 rounded-full border border-dusty-gray">
+									<input type="radio" name="popular-state" class="peer hidden" />
+									<div class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+								</div>
+								<div class="">За зменшенням ціни</div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative h-5 w-5 flex-shrink-0 rounded-full border border-dusty-gray">
+									<input type="radio" name="popular-state" class="peer hidden" />
+									<div class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+								</div>
+								<div class="">За новинками</div>
+							</label>
+						</li>
+						<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+							<label class="flex cursor-pointer items-center gap-2">
+								<div class="relative h-5 w-5 flex-shrink-0 rounded-full border border-dusty-gray">
+									<input type="radio" name="popular-state" class="peer hidden" />
+									<div class="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+								</div>
+								<div class="">Спочатку вигідні</div>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<!-- ./dropdown -->
+			</div>
+			<!-- ./filter popular -->
+		</div>
+	</div>
+</div>
+
 		</div>
 		<!-- ./filters mobile -->
 

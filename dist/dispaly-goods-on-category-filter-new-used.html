@@ -8,7 +8,7 @@
 <title>VamBeri → Взуття → Для новонароджених</title>
 
 	</head>
-	<body class="touch-none overflow-hidden overscroll-none lg:touch-auto lg:overflow-auto lg:overscroll-auto">
+	<body>
 		<!-- header -->
 <header class="lg:border-0 border-b border-b-dusty-gray/50">
 	<div class="container">
@@ -220,7 +220,7 @@
 									</button>
 
 									<!-- dropdown -->
-									<div class="absolute left-1/2 top-0 z-30 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-1 text-shark">
+									<div class="absolute left-1/2 top-0 z-30 w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-1 text-shark">
 										<div class="flex items-center pr-1.5">
 											<span class="line-clamp-1 text-ellipsis pr-4 text-sm">Нове та б/в</span>
 											<svg class="ml-auto h-1.5 w-3 flex-shrink-0 rotate-180 fill-shark">
@@ -507,7 +507,7 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 w-60 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown">
+								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-60 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown">
 									<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -3670,8 +3670,7 @@
 		<!-- ./full filters desktop-->
 
 		<!-- filters mobile -->
-		<div class="lg:hidden">
-			<div class="fixed inset-0 z-50 bg-black/40">
+		<div class="lg:hidden"><div class="fixed inset-0 z-50 bg-black/40">
 	<div class="absolute right-0 h-screen w-full bg-white lw:w-[20rem]">
 		<div class="flex items-center justify-between p-3">
 			<div class="text-base font-bold">Фільтри</div>
@@ -3695,7 +3694,7 @@
 				</button>
 
 				<!-- dropdown -->
-				<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
+				<div class=" absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
 					<div class="flex pr-2">
 						<svg class="h-3.5 w-4">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
@@ -3942,7 +3941,7 @@
 				</button>
 
 				<!-- dropdown -->
-				<div class=" absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
+				<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
 					<div class="flex pr-2">
 						<span class="text-sm">Продавець</span>
 						<svg class="ml-auto h-1.5 w-3 rotate-180">
@@ -4522,8 +4521,7 @@
 		</div>
 	</div>
 </div>
-
-		</div>
+</div>
 		<!-- ./filters mobile -->
 
 		<!-- sticky menu -->
@@ -4575,7 +4573,8 @@
 </div>
 
 <!-- ./sticky menu -->
- <!-- footer -->
+
+		<div class="hidden lg:block"><!-- footer -->
 <footer class="sticky bg-tundora py-6 text-white lg:py-12.5">
 	<div class="container">
 		<div class="relative">
@@ -4732,6 +4731,6 @@
 		document.documentElement.style.setProperty("--vh", `${vh}px`);
 	});
 </script>
-
+</div>
 	</body>
 </html>
