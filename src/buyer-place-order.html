@@ -8,21 +8,8 @@
 
 		<main>
 			<!-- breadcrumbs -->
-			<div class="hidden pb-4 pt-2 text-xs lg:block lg:pb-2 lg:pt-11 lg:text-sm">
-				<div class="container">
-					<ul class="flex items-center gap-1 overflow-hidden">
-						<li class="flex items-center gap-1">
-							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
-							<svg class="h-2.5 w-2.5 fill-lavender-purple">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
-							</svg>
-						</li>
-
-						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Налаштування</a>
-						</li>
-					</ul>
-				</div>
+			<div class="hidden lg:block">
+				@@include("html/components/_breadcrumbs.html", {item1: "Головна", item2: "Налаштування"})
 			</div>
 			<!-- ./breadcrumbs -->
 
@@ -159,15 +146,15 @@
 													</svg>
 												</div> -->
 
-												<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 lg:border-dusty-gray px-3 py-2.5 transition ease-in">
-													<span class="text-sm pr-5 text-ellipsis line-clamp-1">Одеса</span>
+												<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 px-3 py-2.5 transition ease-in lg:border-dusty-gray">
+													<span class="line-clamp-1 text-ellipsis pr-5 text-sm">Одеса</span>
 													<svg class="ml-auto h-2 w-4 flex-shrink-0 fill-shark">
 														<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 													</svg>
 												</button>
 
 												<!-- dropdown -->
-												<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-1 text-shark border border-lavender-purple/50">
+												<div class="absolute left-1/2 top-0 z-10 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-1 text-shark">
 													<div class="flex items-center pr-1.5">
 														<span class="line-clamp-1 text-ellipsis pr-5 text-sm">Одеса</span>
 														<svg class="ml-auto h-2 w-4 flex-shrink-0 rotate-180 fill-shark">
@@ -219,15 +206,15 @@
 													</svg>
 												</div> -->
 
-												<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 lg:border-dusty-gray px-3 py-2.5 transition ease-in">
-													<span class="text-sm pr-5 text-ellipsis line-clamp-1">Відділення №1, Київське шосе</span>
+												<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 px-3 py-2.5 transition ease-in lg:border-dusty-gray">
+													<span class="line-clamp-1 text-ellipsis pr-5 text-sm">Відділення №1, Київське шосе</span>
 													<svg class="ml-auto h-2 w-4 flex-shrink-0 fill-shark">
 														<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 													</svg>
 												</button>
 
 												<!-- dropdown -->
-												<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-1 text-shark border border-lavender-purple/50">
+												<div class="absolute left-1/2 top-0 z-10 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-1 text-shark">
 													<div class="flex items-center pr-1.5">
 														<span class="line-clamp-1 text-ellipsis pr-5 text-sm">Відділення №1, Київське шосе</span>
 														<svg class="ml-auto h-2 w-4 flex-shrink-0 rotate-180">
@@ -256,7 +243,7 @@
 															<div class="">Відділення №7, вул. Жуковського, 10</div>
 														</li>
 														<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-															<div class="">Відділення №8,  Одеса, вул. Генерала Цветаєва, 3/5</div>
+															<div class="">Відділення №8, Одеса, вул. Генерала Цветаєва, 3/5</div>
 														</li>
 														<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
 															<div class="">Відділення №9, вул. Сегедська, 18</div>

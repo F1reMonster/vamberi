@@ -8,22 +8,7 @@
 
 		<main>
 			<!-- breadcrumbs -->
-			<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-11 lg:text-sm">
-				<div class="container">
-					<ul class="flex items-center gap-1 overflow-hidden">
-						<li class="flex items-center gap-1">
-							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
-							<svg class="h-2.5 w-2.5 fill-lavender-purple">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
-							</svg>
-						</li>
-
-						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Повідомлення</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+			@@include("html/components/_breadcrumbs.html", {item1: "Головна", item2: "Повідомлення"})
 			<!-- ./breadcrumbs -->
 
 			<section>
@@ -42,13 +27,13 @@
 									</div>
 
 									<div class="mt-4 flex flex-wrap gap-2">
-										<button class="flex min-w-[100px] justify-center rounded-emd border border-lavender-purple/50 bg-white px-2 py-0.5 text-sm lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
+										<button class="flex min-w-[6.25rem] lg:h-8.5 h-9 items-center justify-center rounded-emd border border-lavender-purple/50 bg-white px-2 py-0.5 text-sm lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
 											<p>Непрочитані <span class="hidden font-medium lg:inline-block">2</span></p>
 										</button>
-										<button class="flex min-w-[100px] justify-center rounded-emd border border-royal-blue bg-white px-2 py-0.5 text-sm text-royal-blue lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
+										<button class="flex min-w-[6.25rem] lg:h-8.5 h-9 items-center justify-center rounded-emd border border-royal-blue bg-white px-2 py-0.5 text-sm text-royal-blue lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
 											<p>Активні <span class="hidden font-medium lg:inline-block">5</span></p>
 										</button>
-										<button class="flex min-w-[100px] justify-center rounded-emd border border-lavender-purple/50 bg-white px-2 py-0.5 text-sm lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
+										<button class="flex min-w-[6.25rem] lg:h-8.5 h-9 items-center justify-center rounded-emd border border-lavender-purple/50 bg-white px-2 py-0.5 text-sm lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
 											<p>Архів <span class="hidden font-medium lg:inline-block">5</span></p>
 										</button>
 									</div>
@@ -194,12 +179,12 @@
 													<div class="text-limeade lg:text-right">Зараз онлайн</div>
 													<div class="ml-auto flex gap-2">
 														<button>
-															<svg class="h-3.5 w-3.5 lg:h-5 lg:w-5">
+															<svg class="h-5.5 w-5.5 lg:h-5 lg:w-5">
 																<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
 															</svg>
 														</button>
 														<button>
-															<svg class="h-3.5 w-3.5 fill-tall-poppy lg:h-5 lg:w-5">
+															<svg class="h53.5 w-5.5 fill-tall-poppy lg:h-5 lg:w-5">
 																<use xlink:href="img/svg/sprites/sprite-icons.svg#bin2"></use>
 															</svg>
 														</button>

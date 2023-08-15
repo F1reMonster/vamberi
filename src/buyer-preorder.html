@@ -8,22 +8,7 @@
 
 		<main>
 			<!-- breadcrumbs -->
-			<div class="hidden pb-4 pt-2 text-xs lg:block lg:pb-2 lg:pt-11 lg:text-sm">
-				<div class="container">
-					<ul class="flex items-center gap-1 overflow-hidden">
-						<li class="flex items-center gap-1">
-							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
-							<svg class="h-2.5 w-2.5 fill-lavender-purple">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
-							</svg>
-						</li>
-
-						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Налаштування</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<div class="hidden lg:block">@@include("html/components/_breadcrumbs.html", {item1: "Головна", item2: "Налаштування"})</div>
 			<!-- ./breadcrumbs -->
 
 			<section>
@@ -215,51 +200,12 @@
 							</div>
 
 							<div class="mt-6">
-								<!-- message block -->
+
 								<div class="lg:border-b lg:border-b-dusty-gray/50 lg:pb-10">
 									<div class="text-base font-medium lg:text-lg">Повідомлення</div>
-									<div class="mt-2.5 w-full rounded-lge border border-lavender-purple bg-white p-2.5 lg:border-0 lg:p-5">
-										<div class="h-[8.75rem] w-full lg:h-auto">
-											<div class="flex h-full w-full">
-												<div class="relative flex w-full flex-col gap-2 fill-lavender-purple lg:flex-row lg:items-center">
-													<div class="flex-grow lg:px-10">
-														<textarea class="h-full w-full resize-none border-0 p-0 align-bottom text-sm ring-0 placeholder:text-sm placeholder:text-dusty-gray focus:ring-0 lg:h-4.5" placeholder="Ваше повідомлення..."></textarea>
-													</div>
-													<div class="z-10 flex justify-between">
-														<div class="flex items-center gap-4.5">
-															<button class="hidden lg:absolute lg:left-0 lg:top-1/2 lg:block lg:-translate-y-1/2">
-																<svg class="h-4 w-4 flex-shrink-0 fill-lavender-purple lg:h-8 lg:w-8">
-																	<use xlink:href="img/svg/sprites/sprite-icons.svg#message"></use>
-																</svg>
-															</button>
-															<button class="lg:hidden">
-																<svg class="h-4.5 w-4.5 fill-lavender-purple">
-																	<use xlink:href="img/svg/sprites/sprite-icons.svg#image"></use>
-																</svg>
-															</button>
-															<button class="lg:hidden">
-																<svg class="h-5 w-4.5 fill-lavender-purple">
-																	<use xlink:href="img/svg/sprites/sprite-icons.svg#photo"></use>
-																</svg>
-															</button>
-															<button class="lg:hidden">
-																<svg class="h-4.5 w-4.5 fill-lavender-purple">
-																	<use xlink:href="img/svg/sprites/sprite-icons.svg#attachment"></use>
-																</svg>
-															</button>
-														</div>
-														<button class="lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2">
-															<svg class="h-4.5 w-4.5 flex-shrink-0 fill-lavender-purple lg:h-6 lg:w-6">
-																<use xlink:href="img/svg/sprites/sprite-icons.svg#message-send"></use>
-															</svg>
-														</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+									
+										@@include("html/components/_message-block.html")
 								</div>
-								<!-- ./message block -->
 
 								<div class="mt-3.5 text-right lg:mt-5">
 									<button class="whitespace-nowrap text-sm text-tall-poppy underline decoration-tall-poppy decoration-dashed decoration-[0.25px] underline-offset-4 lg:text-base lg:decoration-[0.5px]">Поскаржитися</button>

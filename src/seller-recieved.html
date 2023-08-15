@@ -8,28 +8,14 @@
 
 		<main>
 			<!-- breadcrumbs -->
-			<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-11 lg:text-sm">
-				<div class="container">
-					<ul class="flex items-center gap-1 overflow-hidden">
-						<li class="flex items-center gap-1">
-							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
-							<svg class="h-2.5 w-2.5 fill-lavender-purple">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
-							</svg>
-						</li>
-
-						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Мої продажі</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<div class="hidden lg:block">@@include("html/components/_breadcrumbs.html", {item1: "Головна", item2: "Мої продажі"})</div>
 			<!-- ./breadcrumbs -->
 
 			<!-- top panel -->
-			<section class="pt-2 lg:pt-8">
+			<section class="pt-3.5 lg:pt-8">
 				<div class="container">
-					@@include("html/components/_panel-seller.html")
+					<div class="hidden lg:block">@@include("html/components/_panel-seller.html")</div>
+					<div class="lg:hidden">@@include("html/components/_info-banner.html")</div>
 
 					<div class="mt-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
 						<div class="text-lg font-medium">Мої продажі</div>

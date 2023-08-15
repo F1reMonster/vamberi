@@ -8,21 +8,8 @@
 
 		<main>
 			<!-- breadcrumbs -->
-			<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-11 lg:text-sm">
-				<div class="container">
-					<ul class="flex items-center gap-1 overflow-hidden">
-						<li class="flex items-center gap-1">
-							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
-							<svg class="h-2.5 w-2.5 fill-lavender-purple">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
-							</svg>
-						</li>
-
-						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Повідомлення</a>
-						</li>
-					</ul>
-				</div>
+			<div>
+				@@include("html/components/_breadcrumbs.html", {item1: "Головна", item2: "Повідомлення"})
 			</div>
 			<!-- ./breadcrumbs -->
 

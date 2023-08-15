@@ -6,17 +6,41 @@
 	<body>
 		@@include('html/components/_header.html', {accountMenu: ""})
 		<main>
-			@@include("html/components/_breadcrumbs.html", {})
+			<div class="lg:block hidden">
+				@@include("html/components/_breadcrumbs.html", {item1: "Головна", item2: "Електроніка", item3: "Комп’ютери і комплектуючі"})
+			</div>
+			
 			<!-- product-card-full -->
 			<section class="pb-5">
 				<div class="container">
+					<div class="lg:hidden flex flex-col-reverse gap-4 pb-4">
+						@@include("html/components/_search-and-category.html", {placeholder:"Пошук по сайту..."})
+		
+					</div>
 					<div class="flex flex-col justify-between lg:flex-row">
 						<div class="w-full lg:w-[calc(57.5%-1.5625rem)]">
-							<div class="mb-4.5 flex justify-between gap-2.5 lw:gap-7.5 xl:hidden">
-								<div class="flex h-[3.125rem] w-full items-center justify-center gap-1 rounded-lge bg-white p-1.5 text-sm shadow-dusty-gray lw:w-[calc(50%-0.9375rem)] sm:shadow-none">
-									<span class="text-dusty-gray">Код <span class="hidden sm:inline-block">товару</span>:</span><span class="font-semibold">119954759</span>
+							<div class="mb-4.5 flex justify-center gap-2.5 lw:gap-7.5 lg:justify-normal xl:hidden">
+								<div class="flex h-7 min-w-[8.125rem] items-center justify-center gap-1 rounded-lge border border-lavender-purple/50 bg-white p-1.5 px-3 text-sm leading-5 xl:border-0">
+									<div class="flex items-center gap-1">
+										<div class="">Код:</div>
+										<div class="flex items-center gap-1">
+											<div class="font-medium">1198</div>
+											<div class="flex flex-col gap-0.5">
+												<button class="cursor-pointer">
+													<svg class="h-1 w-2">
+														<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up"></use>
+													</svg>
+												</button>
+												<button class="cursor-pointer">
+													<svg class="h-1 w-2">
+														<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-down"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="flex h-[3.125rem] w-full items-center justify-center gap-1 rounded-lge bg-white p-1.5 text-sm shadow-dusty-gray lw:w-[calc(50%-0.9375rem)] sm:shadow-none"><span class="text-dusty-gray">ID:</span><span class="font-semibold">45475541</span></div>
+								<div class="flex h-7 min-w-[8.125rem] items-center justify-center gap-1 rounded-lge border border-lavender-purple/50 bg-white p-1.5 px-3 text-sm leading-5 xl:border-0"><span>ID:</span><span>45475541</span></div>
 							</div>
 
 							<h2 class="mb-3 text-base font-medium text-shark lw:mb-6.5 sm:text-3xl">Lenovo ideapad 330-15ikb</h2>

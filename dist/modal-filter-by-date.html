@@ -307,7 +307,7 @@
 	</div>
 </div>
 
-<div class="mt-7.5 xl:hidden"><!-- info banner  -->
+<div class="@@infobanner mt-7.5 xl:hidden"><!-- info banner  -->
 <div class="bg-gradient-pink2 relative mb-6 mt-0 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:mb-9 lg:mt-0 lg:min-h-[11.25rem] lg:px-3.5">
 	<button class="absolute right-2 top-2">
 		<svg class="h-4 w-4 fill-tundora">
@@ -631,7 +631,7 @@
 
 		<!-- sticky menu -->
 
-<div class="sticky inset-x-0 bottom-0 z-30 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
+<div class="sticky inset-x-0 z-50 h-12.5 bottom-0 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
 	<div class="flex items-center justify-between gap-x-3">
 		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua">
 			<div class="flex shrink-0 flex-col items-center gap-1">
@@ -677,8 +677,17 @@
 	</div>
 </div>
 
-<!-- ./sticky menu -->
- <!-- footer -->
+<script>
+	// mobile chrome fix for sticky bottom-0
+	// We listen to the resize event
+	window.addEventListener("resize", () => {
+		// We execute the same script as before
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty("--vh", `${vh}px`);
+	});
+</script>
+
+<!-- ./sticky menu --> <!-- footer -->
 <footer class="sticky bg-tundora py-6 text-white lg:py-12.5">
 	<div class="container">
 		<div class="relative">
@@ -826,15 +835,7 @@
 	</div>
 </footer>
 <!-- ./footer -->
-<script>
-	// mobile chrome fix for sticky bottom-0
-	// We listen to the resize event
-	window.addEventListener("resize", () => {
-		// We execute the same script as before
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty("--vh", `${vh}px`);
-	});
-</script>
+
  <div class="relative z-[9999]" aria-labelledby="modal-app-sending-success" role="dialog" aria-modal="true">
 	<div class="fixed inset-0 bg-shark/60 bg-opacity-75 transition-opacity"></div>
 

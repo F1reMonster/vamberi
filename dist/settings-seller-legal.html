@@ -141,26 +141,33 @@
 
 		<main>
 			<!-- breadcrumbs -->
-			<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-11 lg:text-sm">
-				<div class="container">
-					<ul class="flex items-center gap-1 overflow-hidden">
-						<li class="flex items-center gap-1">
-							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
-							<svg class="h-2.5 w-2.5 fill-lavender-purple">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
-							</svg>
-						</li>
+			<div class="lg:block hidden">
+				<!-- breadcrumbs -->
+<div class="pb-4 pt-2 text-sm lg:pb-2 lg:pt-7.5">
+	<div class="container">
+		<ul class="flex items-center gap-1 overflow-hidden">
+			
+			<li class="flex items-center gap-1">
+				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
+				<svg class="h-2.5 w-2.5 fill-lavender-purple">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+				</svg>
+			</li>
+			   
+			<li class="flex items-center gap-1">
+				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Налаштування</a>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+<!-- ./breadcrumbs -->
 
-						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Налаштування</a>
-						</li>
-					</ul>
-				</div>
 			</div>
 			<!-- ./breadcrumbs -->
 
 			<!-- top panel -->
-			<section class="pt-2 lg:pt-8">
+			<section class="pt-2 lg:pt-8 lg:block hidden">
 				<div class="container"><div class="flex items-center rounded-lge lg:border lg:border-shark/50 lg:bg-white">
 	<!-- menu -->
 	<div class="relative hidden flex-shrink-0 rounded-lge border-r border-r-shark/50 lg:block">
@@ -307,7 +314,7 @@
 	</div>
 </div>
 
-<div class="mt-7.5 xl:hidden"><!-- info banner  -->
+<div class="@@infobanner mt-7.5 xl:hidden"><!-- info banner  -->
 <div class="bg-gradient-pink2 relative mb-6 mt-0 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:mb-9 lg:mt-0 lg:min-h-[11.25rem] lg:px-3.5">
 	<button class="absolute right-2 top-2">
 		<svg class="h-4 w-4 fill-tundora">
@@ -607,7 +614,7 @@
 
 		<!-- sticky menu -->
 
-<div class="sticky inset-x-0 bottom-0 z-30 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
+<div class="sticky inset-x-0 z-50 h-12.5 bottom-0 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
 	<div class="flex items-center justify-between gap-x-3">
 		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua">
 			<div class="flex shrink-0 flex-col items-center gap-1">
@@ -653,8 +660,19 @@
 	</div>
 </div>
 
-<!-- ./sticky menu -->
- <!-- footer -->
+<script>
+	// mobile chrome fix for sticky bottom-0
+	// We listen to the resize event
+	window.addEventListener("resize", () => {
+		// We execute the same script as before
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty("--vh", `${vh}px`);
+	});
+</script>
+
+<!-- ./sticky menu --> 
+		<div class="lg:block hidden">
+			<!-- footer -->
 <footer class="sticky bg-tundora py-6 text-white lg:py-12.5">
 	<div class="container">
 		<div class="relative">
@@ -802,15 +820,8 @@
 	</div>
 </footer>
 <!-- ./footer -->
-<script>
-	// mobile chrome fix for sticky bottom-0
-	// We listen to the resize event
-	window.addEventListener("resize", () => {
-		// We execute the same script as before
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty("--vh", `${vh}px`);
-	});
-</script>
 
+
+		</div>
 	</body>
 </html>

@@ -141,21 +141,28 @@
 
 		<main>
 			<!-- breadcrumbs -->
-			<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-11 lg:text-sm">
-				<div class="container">
-					<ul class="flex items-center gap-1 overflow-hidden">
-						<li class="flex items-center gap-1">
-							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
-							<svg class="h-2.5 w-2.5 fill-lavender-purple">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
-							</svg>
-						</li>
+			<div>
+				<!-- breadcrumbs -->
+<div class="pb-4 pt-2 text-sm lg:pb-2 lg:pt-7.5">
+	<div class="container">
+		<ul class="flex items-center gap-1 overflow-hidden">
+			
+			<li class="flex items-center gap-1">
+				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
+				<svg class="h-2.5 w-2.5 fill-lavender-purple">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+				</svg>
+			</li>
+			   
+			<li class="flex items-center gap-1">
+				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Повідомлення</a>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+<!-- ./breadcrumbs -->
 
-						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Повідомлення</a>
-						</li>
-					</ul>
-				</div>
 			</div>
 			<!-- ./breadcrumbs -->
 
@@ -664,7 +671,7 @@
 
 		<!-- sticky menu -->
 
-<div class="sticky inset-x-0 bottom-0 z-30 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
+<div class="sticky inset-x-0 z-50 h-12.5 bottom-0 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
 	<div class="flex items-center justify-between gap-x-3">
 		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua">
 			<div class="flex shrink-0 flex-col items-center gap-1">
@@ -710,8 +717,17 @@
 	</div>
 </div>
 
-<!-- ./sticky menu -->
- <!-- footer -->
+<script>
+	// mobile chrome fix for sticky bottom-0
+	// We listen to the resize event
+	window.addEventListener("resize", () => {
+		// We execute the same script as before
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty("--vh", `${vh}px`);
+	});
+</script>
+
+<!-- ./sticky menu --> <!-- footer -->
 <footer class="sticky bg-tundora py-6 text-white lg:py-12.5">
 	<div class="container">
 		<div class="relative">
@@ -859,15 +875,7 @@
 	</div>
 </footer>
 <!-- ./footer -->
-<script>
-	// mobile chrome fix for sticky bottom-0
-	// We listen to the resize event
-	window.addEventListener("resize", () => {
-		// We execute the same script as before
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty("--vh", `${vh}px`);
-	});
-</script>
+
 
 	</body>
 </html>

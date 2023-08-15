@@ -141,22 +141,27 @@
 
 		<main>
 			<!-- breadcrumbs -->
-			<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-11 lg:text-sm">
-				<div class="container">
-					<ul class="flex items-center gap-1 overflow-hidden">
-						<li class="flex items-center gap-1">
-							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
-							<svg class="h-2.5 w-2.5 fill-lavender-purple">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
-							</svg>
-						</li>
+			<!-- breadcrumbs -->
+<div class="pb-4 pt-2 text-sm lg:pb-2 lg:pt-7.5">
+	<div class="container">
+		<ul class="flex items-center gap-1 overflow-hidden">
+			
+			<li class="flex items-center gap-1">
+				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
+				<svg class="h-2.5 w-2.5 fill-lavender-purple">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+				</svg>
+			</li>
+			   
+			<li class="flex items-center gap-1">
+				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Повідомлення</a>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+<!-- ./breadcrumbs -->
 
-						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Повідомлення</a>
-						</li>
-					</ul>
-				</div>
-			</div>
 			<!-- ./breadcrumbs -->
 
 			<section>
@@ -307,7 +312,7 @@
 	</div>
 </div>
 
-<div class="mt-7.5 xl:hidden"><!-- info banner  -->
+<div class="@@infobanner mt-7.5 xl:hidden"><!-- info banner  -->
 <div class="bg-gradient-pink2 relative mb-6 mt-0 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:mb-9 lg:mt-0 lg:min-h-[11.25rem] lg:px-3.5">
 	<button class="absolute right-2 top-2">
 		<svg class="h-4 w-4 fill-tundora">
@@ -335,13 +340,13 @@
 									</div>
 
 									<div class="mt-4 flex flex-wrap gap-2">
-										<button class="flex min-w-[100px] justify-center rounded-emd border border-lavender-purple/50 bg-white px-2 py-0.5 text-sm lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
+										<button class="flex min-w-[6.25rem] lg:h-8.5 h-9 items-center justify-center rounded-emd border border-lavender-purple/50 bg-white px-2 py-0.5 text-sm lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
 											<p>Непрочитані <span class="hidden font-medium lg:inline-block">2</span></p>
 										</button>
-										<button class="flex min-w-[100px] justify-center rounded-emd border border-royal-blue bg-white px-2 py-0.5 text-sm text-royal-blue lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
+										<button class="flex min-w-[6.25rem] lg:h-8.5 h-9 items-center justify-center rounded-emd border border-royal-blue bg-white px-2 py-0.5 text-sm text-royal-blue lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
 											<p>Активні <span class="hidden font-medium lg:inline-block">5</span></p>
 										</button>
-										<button class="flex min-w-[100px] justify-center rounded-emd border border-lavender-purple/50 bg-white px-2 py-0.5 text-sm lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
+										<button class="flex min-w-[6.25rem] lg:h-8.5 h-9 items-center justify-center rounded-emd border border-lavender-purple/50 bg-white px-2 py-0.5 text-sm lg:min-w-[8.125rem] lg:rounded-lge lg:px-2.5 lg:py-1.5">
 											<p>Архів <span class="hidden font-medium lg:inline-block">5</span></p>
 										</button>
 									</div>
@@ -487,12 +492,12 @@
 													<div class="text-limeade lg:text-right">Зараз онлайн</div>
 													<div class="ml-auto flex gap-2">
 														<button>
-															<svg class="h-3.5 w-3.5 lg:h-5 lg:w-5">
+															<svg class="h-5.5 w-5.5 lg:h-5 lg:w-5">
 																<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
 															</svg>
 														</button>
 														<button>
-															<svg class="h-3.5 w-3.5 fill-tall-poppy lg:h-5 lg:w-5">
+															<svg class="h53.5 w-5.5 fill-tall-poppy lg:h-5 lg:w-5">
 																<use xlink:href="img/svg/sprites/sprite-icons.svg#bin2"></use>
 															</svg>
 														</button>
@@ -667,7 +672,7 @@
 
 		<!-- sticky menu -->
 
-<div class="sticky inset-x-0 bottom-0 z-30 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
+<div class="sticky inset-x-0 z-50 h-12.5 bottom-0 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
 	<div class="flex items-center justify-between gap-x-3">
 		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua">
 			<div class="flex shrink-0 flex-col items-center gap-1">
@@ -713,8 +718,17 @@
 	</div>
 </div>
 
-<!-- ./sticky menu -->
- <!-- footer -->
+<script>
+	// mobile chrome fix for sticky bottom-0
+	// We listen to the resize event
+	window.addEventListener("resize", () => {
+		// We execute the same script as before
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty("--vh", `${vh}px`);
+	});
+</script>
+
+<!-- ./sticky menu --> <!-- footer -->
 <footer class="sticky bg-tundora py-6 text-white lg:py-12.5">
 	<div class="container">
 		<div class="relative">
@@ -862,15 +876,7 @@
 	</div>
 </footer>
 <!-- ./footer -->
-<script>
-	// mobile chrome fix for sticky bottom-0
-	// We listen to the resize event
-	window.addEventListener("resize", () => {
-		// We execute the same script as before
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty("--vh", `${vh}px`);
-	});
-</script>
+
 
 	</body>
 </html>

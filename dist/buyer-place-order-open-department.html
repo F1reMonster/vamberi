@@ -141,21 +141,28 @@
 
 		<main>
 			<!-- breadcrumbs -->
-			<div class="hidden pb-4 pt-2 text-xs lg:block lg:pb-2 lg:pt-11 lg:text-sm">
-				<div class="container">
-					<ul class="flex items-center gap-1 overflow-hidden">
-						<li class="flex items-center gap-1">
-							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
-							<svg class="h-2.5 w-2.5 fill-lavender-purple">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
-							</svg>
-						</li>
+			<div class="hidden lg:block">
+				<!-- breadcrumbs -->
+<div class="pb-4 pt-2 text-sm lg:pb-2 lg:pt-7.5">
+	<div class="container">
+		<ul class="flex items-center gap-1 overflow-hidden">
+			
+			<li class="flex items-center gap-1">
+				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
+				<svg class="h-2.5 w-2.5 fill-lavender-purple">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+				</svg>
+			</li>
+			   
+			<li class="flex items-center gap-1">
+				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Налаштування</a>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+<!-- ./breadcrumbs -->
 
-						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Налаштування</a>
-						</li>
-					</ul>
-				</div>
 			</div>
 			<!-- ./breadcrumbs -->
 
@@ -445,15 +452,15 @@
 													</svg>
 												</div> -->
 
-												<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 lg:border-dusty-gray px-3 py-2.5 transition ease-in">
-													<span class="text-sm pr-5 text-ellipsis line-clamp-1">Одеса</span>
+												<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 px-3 py-2.5 transition ease-in lg:border-dusty-gray">
+													<span class="line-clamp-1 text-ellipsis pr-5 text-sm">Одеса</span>
 													<svg class="ml-auto h-2 w-4 flex-shrink-0 fill-shark">
 														<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 													</svg>
 												</button>
 
 												<!-- dropdown -->
-												<div class="hidden absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-1 text-shark border border-lavender-purple/50">
+												<div class="absolute left-1/2 top-0 z-10 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-1 text-shark">
 													<div class="flex items-center pr-1.5">
 														<span class="line-clamp-1 text-ellipsis pr-5 text-sm">Одеса</span>
 														<svg class="ml-auto h-2 w-4 flex-shrink-0 rotate-180 fill-shark">
@@ -505,15 +512,15 @@
 													</svg>
 												</div> -->
 
-												<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 lg:border-dusty-gray px-3 py-2.5 transition ease-in">
-													<span class="text-sm pr-5 text-ellipsis line-clamp-1">Відділення №1, Київське шосе</span>
+												<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 px-3 py-2.5 transition ease-in lg:border-dusty-gray">
+													<span class="line-clamp-1 text-ellipsis pr-5 text-sm">Відділення №1, Київське шосе</span>
 													<svg class="ml-auto h-2 w-4 flex-shrink-0 fill-shark">
 														<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 													</svg>
 												</button>
 
 												<!-- dropdown -->
-												<div class="absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-1 text-shark border border-lavender-purple/50">
+												<div class="absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-1 text-shark">
 													<div class="flex items-center pr-1.5">
 														<span class="line-clamp-1 text-ellipsis pr-5 text-sm">Відділення №1, Київське шосе</span>
 														<svg class="ml-auto h-2 w-4 flex-shrink-0 rotate-180">
@@ -542,7 +549,7 @@
 															<div class="">Відділення №7, вул. Жуковського, 10</div>
 														</li>
 														<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-															<div class="">Відділення №8,  Одеса, вул. Генерала Цветаєва, 3/5</div>
+															<div class="">Відділення №8, Одеса, вул. Генерала Цветаєва, 3/5</div>
 														</li>
 														<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
 															<div class="">Відділення №9, вул. Сегедська, 18</div>
@@ -626,7 +633,7 @@
 
 		<!-- sticky menu -->
 
-<div class="sticky inset-x-0 bottom-0 z-30 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
+<div class="sticky inset-x-0 z-50 h-12.5 bottom-0 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
 	<div class="flex items-center justify-between gap-x-3">
 		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua">
 			<div class="flex shrink-0 flex-col items-center gap-1">
@@ -672,8 +679,17 @@
 	</div>
 </div>
 
-<!-- ./sticky menu -->
+<script>
+	// mobile chrome fix for sticky bottom-0
+	// We listen to the resize event
+	window.addEventListener("resize", () => {
+		// We execute the same script as before
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty("--vh", `${vh}px`);
+	});
+</script>
 
+<!-- ./sticky menu -->
 		<div class="hidden lg:block"><!-- footer -->
 <footer class="sticky bg-tundora py-6 text-white lg:py-12.5">
 	<div class="container">
@@ -822,15 +838,7 @@
 	</div>
 </footer>
 <!-- ./footer -->
-<script>
-	// mobile chrome fix for sticky bottom-0
-	// We listen to the resize event
-	window.addEventListener("resize", () => {
-		// We execute the same script as before
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty("--vh", `${vh}px`);
-	});
-</script>
+
 </div>
 	</body>
 </html>

@@ -139,16 +139,19 @@
 <!-- ./header -->
 
 		<main>
-			<!-- breadcrumbs -->
-<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-7.5 lg:text-sm">
+			<div class="lg:block hidden">
+				<!-- breadcrumbs -->
+<div class="pb-4 pt-2 text-sm lg:pb-2 lg:pt-7.5">
 	<div class="container">
 		<ul class="flex items-center gap-1 overflow-hidden">
+			
 			<li class="flex items-center gap-1">
-				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Україна</a>
+				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
 				<svg class="h-2.5 w-2.5 fill-lavender-purple">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 				</svg>
 			</li>
+			  
 			<li class="flex items-center gap-1">
 				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Електроніка</a>
 				<svg class="h-2.5 w-2.5 fill-lavender-purple">
@@ -158,21 +161,73 @@
 			<li class="flex items-center gap-1">
 				<a href="#" class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora">Комп’ютери і комплектуючі</a>
 			</li>
+			 
 		</ul>
 	</div>
 </div>
 <!-- ./breadcrumbs -->
 
+			</div>
+			
 			<!-- product-card-full -->
 			<section class="pb-5">
 				<div class="container">
+					<div class="lg:hidden flex flex-col-reverse gap-4 pb-4">
+						<!-- mob search -->
+<div class="trasition flex h-9 w-full items-center justify-between gap-4 rounded-lge border border-lavender-purple/50 bg-white py-1 pl-3 pr-1.5 text-sm transition ease-in">
+	<input type="text" class="flex-grow border-0 p-0 text-xs placeholder-dusty-gray ring-0 focus:ring-0" placeholder="Пошук по сайту..." />
+	<button class="btn-primary flex flex-shrink-0 items-center gap-2.5 rounded-lge px-2.5 py-1 text-sm">
+		<span>Знайти</span>
+		<svg class="h-3 w-3 flex-shrink-0 fill-white">
+			<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
+		</svg>
+	</button>
+</div>
+<!-- ./mob search -->
+
+<!-- category dropdown -->
+<button aria-label="Обрати категорію" class="group mr-4 flex h-12.5 w-full flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5">
+	<div class="flex items-center gap-3.5">
+		<div class="btn-primary flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg">
+			<svg class="h-5 w-5 fill-white">
+				<use xlink:href="img/svg/sprites/sprite-icons.svg#category"></use>
+			</svg>
+		</div>
+		<span class="text-xs">Обрати категорію</span>
+	</div>
+	<div class="ml-auto">
+		<svg class="h-2.5 w-2.5">
+			<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+		</svg>
+	</div>
+</button>
+<!-- ./category dropdown -->
+		
+					</div>
 					<div class="flex flex-col justify-between lg:flex-row">
 						<div class="w-full lg:w-[calc(57.5%-1.5625rem)]">
-							<div class="mb-4.5 flex justify-between gap-2.5 lw:gap-7.5 xl:hidden">
-								<div class="flex h-[3.125rem] w-full items-center justify-center gap-1 rounded-lge bg-white p-1.5 text-sm shadow-dusty-gray lw:w-[calc(50%-0.9375rem)] sm:shadow-none">
-									<span class="text-dusty-gray">Код <span class="hidden sm:inline-block">товару</span>:</span><span class="font-semibold">119954759</span>
+							<div class="mb-4.5 flex justify-center gap-2.5 lw:gap-7.5 lg:justify-normal xl:hidden">
+								<div class="flex h-7 min-w-[8.125rem] items-center justify-center gap-1 rounded-lge border border-lavender-purple/50 bg-white p-1.5 px-3 text-sm leading-5 xl:border-0">
+									<div class="flex items-center gap-1">
+										<div class="">Код:</div>
+										<div class="flex items-center gap-1">
+											<div class="font-medium">1198</div>
+											<div class="flex flex-col gap-0.5">
+												<button class="cursor-pointer">
+													<svg class="h-1 w-2">
+														<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up"></use>
+													</svg>
+												</button>
+												<button class="cursor-pointer">
+													<svg class="h-1 w-2">
+														<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-down"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="flex h-[3.125rem] w-full items-center justify-center gap-1 rounded-lge bg-white p-1.5 text-sm shadow-dusty-gray lw:w-[calc(50%-0.9375rem)] sm:shadow-none"><span class="text-dusty-gray">ID:</span><span class="font-semibold">45475541</span></div>
+								<div class="flex h-7 min-w-[8.125rem] items-center justify-center gap-1 rounded-lge border border-lavender-purple/50 bg-white p-1.5 px-3 text-sm leading-5 xl:border-0"><span>ID:</span><span>45475541</span></div>
 							</div>
 
 							<h2 class="mb-3 text-base font-medium text-shark lw:mb-6.5 sm:text-3xl">Lenovo ideapad 330-15ikb</h2>
@@ -2176,7 +2231,7 @@
 
 		<!-- sticky menu -->
 
-<div class="sticky inset-x-0 bottom-0 z-30 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
+<div class="sticky inset-x-0 z-50 h-12.5 bottom-0 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
 	<div class="flex items-center justify-between gap-x-3">
 		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua">
 			<div class="flex shrink-0 flex-col items-center gap-1">
@@ -2222,8 +2277,17 @@
 	</div>
 </div>
 
-<!-- ./sticky menu -->
- <!-- footer -->
+<script>
+	// mobile chrome fix for sticky bottom-0
+	// We listen to the resize event
+	window.addEventListener("resize", () => {
+		// We execute the same script as before
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty("--vh", `${vh}px`);
+	});
+</script>
+
+<!-- ./sticky menu --> <!-- footer -->
 <footer class="sticky bg-tundora py-6 text-white lg:py-12.5">
 	<div class="container">
 		<div class="relative">
@@ -2371,15 +2435,7 @@
 	</div>
 </footer>
 <!-- ./footer -->
-<script>
-	// mobile chrome fix for sticky bottom-0
-	// We listen to the resize event
-	window.addEventListener("resize", () => {
-		// We execute the same script as before
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty("--vh", `${vh}px`);
-	});
-</script>
+
 
 	</body>
 </html>

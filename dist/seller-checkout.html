@@ -141,28 +141,34 @@
 
 		<main>
 			<!-- breadcrumbs -->
-			<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-11 lg:text-sm">
-				<div class="container">
-					<ul class="flex items-center gap-1 overflow-hidden">
-						<li class="flex items-center gap-1">
-							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
-							<svg class="h-2.5 w-2.5 fill-lavender-purple">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
-							</svg>
-						</li>
+			<div class="hidden lg:block"><!-- breadcrumbs -->
+<div class="pb-4 pt-2 text-sm lg:pb-2 lg:pt-7.5">
+	<div class="container">
+		<ul class="flex items-center gap-1 overflow-hidden">
+			
+			<li class="flex items-center gap-1">
+				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
+				<svg class="h-2.5 w-2.5 fill-lavender-purple">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+				</svg>
+			</li>
+			   
+			<li class="flex items-center gap-1">
+				<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Мої продажі</a>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+<!-- ./breadcrumbs -->
+</div>
 
-						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Мої продажі</a>
-						</li>
-					</ul>
-				</div>
-			</div>
 			<!-- ./breadcrumbs -->
 
 			<!-- top panel -->
-			<section class="pt-2 lg:pt-8">
+			<section class="pt-3.5 lg:pt-8">
 				<div class="container">
-					<div class="flex items-center rounded-lge lg:border lg:border-shark/50 lg:bg-white">
+					<div class="hidden lg:block"><div class="flex items-center rounded-lge lg:border lg:border-shark/50 lg:bg-white">
 	<!-- menu -->
 	<div class="relative hidden flex-shrink-0 rounded-lge border-r border-r-shark/50 lg:block">
 		<div class="flex gap-5 py-4 pl-4 pr-6">
@@ -308,7 +314,7 @@
 	</div>
 </div>
 
-<div class="mt-7.5 xl:hidden"><!-- info banner  -->
+<div class="@@infobanner mt-7.5 xl:hidden"><!-- info banner  -->
 <div class="bg-gradient-pink2 relative mb-6 mt-0 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:mb-9 lg:mt-0 lg:min-h-[11.25rem] lg:px-3.5">
 	<button class="absolute right-2 top-2">
 		<svg class="h-4 w-4 fill-tundora">
@@ -322,7 +328,21 @@
 </div>
 <!-- ./info banner  -->
 </div>
-
+</div>
+					<div class="lg:hidden"><!-- info banner  -->
+<div class="bg-gradient-pink2 relative mb-6 mt-0 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:mb-9 lg:mt-0 lg:min-h-[11.25rem] lg:px-3.5">
+	<button class="absolute right-2 top-2">
+		<svg class="h-4 w-4 fill-tundora">
+			<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
+		</svg>
+	</button>
+	<div class="text-xs font-medium text-shark lg:text-lg">Не дайте себе обдурити!</div>
+	<div class="mb-1.5 mt-4 pr-24 text-xs text-tundora lg:mt-2.5 lg:pr-32 lg:text-sm">Дізнайтеся, як уберегти свій гаманець від зловмисників</div>
+	<a href="#" class="mt-auto text-xs font-medium text-royal-blue lg:text-sm">Поради з безпеки</a>
+	<img src="img/icon005.png" alt="icon" class="absolute bottom-0 right-0 h-[7.125rem] w-[7.8125rem] lg:h-[10.625rem] lg:w-[11.625rem]" style="float: right" />
+</div>
+<!-- ./info banner  -->
+</div>
 
 					<div class="mb-4 mt-6 text-lg font-medium lg:hidden">Мої продажі</div>
 					<div class="flex flex-col gap-2.5 xl:mt-6 xl:flex-row xl:items-center xl:justify-between">
@@ -509,30 +529,53 @@
 					<div class="mt-6">
 						<div class="lg:pb-10 lg:shadow-dusty-gray-b-mid">
 							<div class="text-base font-medium lg:text-lg">Повідомлення</div>
-							<div class="mt-2.5 w-full rounded-lge border border-lavender-purple bg-white p-2.5 lg:border-0 lg:p-5">
-								<div class="h-[8.75rem] w-full lg:h-auto">
-									<div class="flex h-full w-full">
-										<div class="flex w-full gap-4 fill-lavender-purple lg:items-center">
-											<div class="flex h-full items-end">
-												<svg class="h-4 w-4 flex-shrink-0 fill-lavender-purple lg:h-8 lg:w-8">
-													<use xlink:href="img/svg/sprites/sprite-icons.svg#message"></use>
-												</svg>
-											</div>
+							<!-- message block -->
+<div class="mt-2.5 w-full rounded-lge border border-lavender-purple bg-white p-2.5 lg:p-5">
+	<div class="h-20 w-full lg:h-auto">
+		<div class="flex h-full w-full">
+			<div class="relative flex w-full flex-col gap-2 fill-lavender-purple lg:flex-row lg:items-center">
+				<div class="flex-grow lg:px-10">
+					<textarea class="h-full w-full resize-none border-0 p-0 align-bottom text-sm ring-0 placeholder:text-sm placeholder:text-dusty-gray focus:ring-0 lg:h-4.5" placeholder="Ваше повідомлення..."></textarea>
+				</div>
+				<div class="z-10 flex justify-between">
+					<div class="flex items-center gap-4.5">
+						<button class="hidden lg:absolute lg:left-0 lg:top-1/2 lg:block lg:-translate-y-1/2">
+							<svg class="h-4 w-4 flex-shrink-0 fill-lavender-purple lg:h-8 lg:w-8">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#message"></use>
+							</svg>
+						</button>
+						<button class="lg:hidden">
+							<svg class="h-5.5 w-5.5 fill-lavender-purple">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#image"></use>
+							</svg>
+						</button>
+						<button class="lg:hidden">
+							<svg class="h-5.5 w-5.5 fill-lavender-purple">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#photo"></use>
+							</svg>
+						</button>
+						<button class="lg:hidden">
+							<svg class="h-5.5 w-5.5 fill-lavender-purple">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#attachment"></use>
+							</svg>
+						</button>
+					</div>
+					<button class="lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2">
+						<svg class="h-5.5 w-5.5 flex-shrink-0 fill-lavender-purple lg:h-6 lg:w-6">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#message-send"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ./message block -->
 
-											<div class="-ml-8 -mr-8 flex-grow pb-5 lg:m-0 lg:pb-0">
-												<textarea class="h-20 min-h-0 w-full resize-none border-0 p-0 align-bottom text-sm ring-0 placeholder:text-sm placeholder:text-dusty-gray focus:ring-0 lg:h-4.5" placeholder="Ваше повідомлення..."></textarea>
-											</div>
-											<div class="z-10 flex h-full items-end">
-												<button>
-													<svg class="h-4 w-4 flex-shrink-0 fill-lavender-purple lg:h-6 lg:w-6">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#message-send"></use>
-													</svg>
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+
+
+
+
 						</div>
 						<div class="mt-3.5 text-right lg:mt-5">
 							<button class="whitespace-nowrap text-sm text-tall-poppy underline decoration-tall-poppy decoration-dashed decoration-[0.25px] underline-offset-4 lg:text-base lg:decoration-[0.5px]">Поскаржитися</button>
@@ -1075,7 +1118,7 @@
 
 		<!-- sticky menu -->
 
-<div class="sticky inset-x-0 bottom-0 z-30 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
+<div class="sticky inset-x-0 z-50 h-12.5 bottom-0 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
 	<div class="flex items-center justify-between gap-x-3">
 		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua">
 			<div class="flex shrink-0 flex-col items-center gap-1">
@@ -1121,8 +1164,17 @@
 	</div>
 </div>
 
-<!-- ./sticky menu -->
- <!-- footer -->
+<script>
+	// mobile chrome fix for sticky bottom-0
+	// We listen to the resize event
+	window.addEventListener("resize", () => {
+		// We execute the same script as before
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty("--vh", `${vh}px`);
+	});
+</script>
+
+<!-- ./sticky menu --> <!-- footer -->
 <footer class="sticky bg-tundora py-6 text-white lg:py-12.5">
 	<div class="container">
 		<div class="relative">
@@ -1270,15 +1322,7 @@
 	</div>
 </footer>
 <!-- ./footer -->
-<script>
-	// mobile chrome fix for sticky bottom-0
-	// We listen to the resize event
-	window.addEventListener("resize", () => {
-		// We execute the same script as before
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty("--vh", `${vh}px`);
-	});
-</script>
+
 
 	</body>
 </html>

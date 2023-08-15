@@ -8,27 +8,12 @@
 
 		<main>
 			<!-- breadcrumbs -->
-			<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-11 lg:text-sm">
-				<div class="container">
-					<ul class="flex items-center gap-1 overflow-hidden">
-						<li class="flex items-center gap-1">
-							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Головна</a>
-							<svg class="h-2.5 w-2.5 fill-lavender-purple">
-								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
-							</svg>
-						</li>
-
-						<li class="flex items-center gap-1">
-							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Статистика</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<div class="hidden lg:block">@@include("html/components/_breadcrumbs.html", {item1: "Головна", item2: "Статистика"})</div>
 			<!-- ./breadcrumbs -->
 
 			<!-- top panel -->
 			<section class="pt-2 lg:pt-8">
-				<div class="container">@@include("html/components/_panel-seller.html")</div>
+				<div class="container">@@include("html/components/_panel-seller.html", {infobanner: "hidden"})</div>
 			</section>
 			<!-- ./top panel -->
 
@@ -37,25 +22,25 @@
 				<div class="container">
 					<h2 class="text-lg font-medium lg:text-xl">Статистика</h2>
 					<div class="auto-rows-[minmax(0px, auto)] mt-3.5 grid grid-cols-1 gap-x-5 gap-y-2.5 text-shark sm:grid-cols-2 sm:gap-y-4 lg:mt-6 lg:grid-cols-3 xl:grid-cols-4">
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Товарів</div>
-							<div class="mt-3.5 text-xl font-semibold">0</div>
+						<div class="relative flex h-20 flex-col overflow-hidden rounded-lge bg-white p-2.5 lg:h-[8.75rem] lg:rounded-2lge lg:px-7.5 lg:py-5">
+							<div class="text-base lg:text-lg">Товарів</div>
+							<div class="mt-1.5 text-sm font-semibold lg:mt-3.5 lg:text-xl">0</div>
 							<div class="mt-auto flex justify-center">
 								<button class="relative z-10 text-sm font-medium text-royal-blue">+ Додати нову позицію</button>
 							</div>
 
-							<svg class="absolute bottom-0 left-0 right-0" viewBox="0 0 345 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg class="absolute bottom-0 left-0 right-0 hidden lg:block" viewBox="0 0 345 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M350 5.16094H314.196C266 -2 280.5 1.99943 237.39 5.16094H-4V13.5001H350V5.16094Z" fill="#FADBA1" fill-opacity="0.18" stroke="#FADBA1" stroke-width="2" />
 							</svg>
 						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Замовлень за сьогодні</div>
-							<div class="mt-3.5 text-xl font-semibold">3</div>
+						<div class="relative flex h-20 flex-col overflow-hidden rounded-lge bg-white p-2.5 lg:h-[8.75rem] lg:rounded-2lge lg:px-7.5 lg:py-5">
+							<div class="text-base lg:text-lg">Замовлень за сьогодні</div>
+							<div class="mt-1.5 text-sm font-semibold lg:mt-3.5 lg:text-xl">3</div>
 							<div class="mt-auto flex justify-center">
 								<button class="relative z-10 text-sm font-medium text-royal-blue">Подивитись замовлення</button>
 							</div>
 
-							<svg class="absolute bottom-0 left-0 right-0" viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg class="absolute bottom-0 left-0 right-0 hidden lg:block" viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<mask id="path-1-inside-1_1319_13714" fill="white">
 									<path d="M-4 0H350V18H-4V0Z" />
 								</mask>
@@ -63,11 +48,11 @@
 								<path d="M-4 2H350V-2H-4V2Z" fill="#64D2A5" mask="url(#path-1-inside-1_1319_13714)" />
 							</svg>
 						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Сума продаж за сьогодні</div>
-							<div class="mt-3.5 text-xl font-semibold">3</div>
+						<div class="relative flex h-20 flex-col overflow-hidden rounded-lge bg-white p-2.5 lg:h-[8.75rem] lg:rounded-2lge lg:px-7.5 lg:py-5">
+							<div class="text-base lg:text-lg">Сума продаж за сьогодні</div>
+							<div class="mt-1.5 text-sm font-semibold lg:mt-3.5 lg:text-xl">3</div>
 
-							<svg class="absolute bottom-0 left-0 right-0" viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg class="absolute bottom-0 left-0 right-0 hidden lg:block" viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<mask id="path-1-inside-1_1319_13714" fill="white">
 									<path d="M-4 0H350V18H-4V0Z" />
 								</mask>
@@ -75,11 +60,11 @@
 								<path d="M-4 2H350V-2H-4V2Z" fill="#64D2A5" mask="url(#path-1-inside-1_1319_13714)" />
 							</svg>
 						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Баланс*:</div>
-							<div class="mt-3.5 flex items-center gap-3.5 text-xl font-semibold">
+						<div class="relative flex h-20 flex-col overflow-hidden rounded-lge bg-white p-2.5 lg:h-[8.75rem] lg:rounded-2lge lg:px-7.5 lg:py-5">
+							<div class="text-base lg:text-lg">Баланс*:</div>
+							<div class="mt-1.5 flex items-center gap-3.5 text-sm font-semibold lg:mt-3.5 lg:text-xl">
 								<div>-17,61 ₴</div>
-								<svg class="h-5 w-5 fill-dusty-gray">
+								<svg class="h-4 w-4 fill-dusty-gray lg:h-5 lg:w-5">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#question"></use>
 								</svg>
 							</div>
@@ -87,7 +72,7 @@
 								<button class="text-sm font-medium text-royal-blue">Поповнити</button>
 							</div>
 
-							<svg class="absolute bottom-0 left-0 right-0" viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg class="absolute bottom-0 left-0 right-0 hidden lg:block" viewBox="0 0 345 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<mask id="path-1-inside-1_1319_13722" fill="white">
 									<path d="M-4 0H350V18H-4V0Z" />
 								</mask>
@@ -95,27 +80,27 @@
 								<path d="M-4 2H350V-2H-4V2Z" fill="#999999" mask="url(#path-1-inside-1_1319_13722)" />
 							</svg>
 						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Нові повідомлення</div>
-							<div class="mt-3.5 text-xl font-semibold">0</div>
+						<div class="relative flex h-20 flex-col overflow-hidden rounded-lge bg-white p-2.5 lg:h-[8.75rem] lg:rounded-2lge lg:px-7.5 lg:py-5">
+							<div class="text-base lg:text-lg">Нові повідомлення</div>
+							<div class="mt-1.5 text-sm font-semibold lg:mt-3.5 lg:text-xl">0</div>
 							<div class="relative z-10 mt-auto flex justify-center">
 								<button class="text-sm font-medium text-royal-blue">Подивитись</button>
 							</div>
 						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Відвідувачів сьогодні</div>
-							<div class="mt-3.5 text-xl font-semibold">0</div>
+						<div class="relative flex h-20 flex-col overflow-hidden rounded-lge bg-white p-2.5 lg:h-[8.75rem] lg:rounded-2lge lg:px-7.5 lg:py-5">
+							<div class="text-base lg:text-lg">Відвідувачів сьогодні</div>
+							<div class="mt-1.5 text-sm font-semibold lg:mt-3.5 lg:text-xl">0</div>
 						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Мої передплатники</div>
-							<div class="mt-3.5 text-xl font-semibold">0</div>
+						<div class="relative flex h-20 flex-col overflow-hidden rounded-lge bg-white p-2.5 lg:h-[8.75rem] lg:rounded-2lge lg:px-7.5 lg:py-5">
+							<div class="text-base lg:text-lg">Мої передплатники</div>
+							<div class="mt-1.5 text-sm font-semibold lg:mt-3.5 lg:text-xl">0</div>
 							<div class="relative z-10 mt-auto flex justify-center">
 								<button class="text-sm font-medium text-royal-blue">Подивитись</button>
 							</div>
 						</div>
-						<div class="relative flex h-[8.75rem] flex-col overflow-hidden rounded-2lge bg-white px-7.5 py-5">
-							<div class="text-lg">Нові відгуки</div>
-							<div class="mt-3.5 text-xl font-semibold">0</div>
+						<div class="relative flex h-20 flex-col overflow-hidden rounded-lge bg-white p-2.5 lg:h-[8.75rem] lg:rounded-2lge lg:px-7.5 lg:py-5">
+							<div class="text-base lg:text-lg">Нові відгуки</div>
+							<div class="mt-1.5 text-sm font-semibold lg:mt-3.5 lg:text-xl">0</div>
 							<div class="relative z-10 mt-auto flex justify-center">
 								<button class="text-sm font-medium text-royal-blue">Переглянути відгук</button>
 							</div>
@@ -128,11 +113,11 @@
 			<section class="pt-0">
 				<div class="container">
 					<!-- notifications -->
-					<div class="rounded-lge bg-white p-2.5 border border-lavender-purple/50 lg:px-0 lg:pb-5 lg:pt-0">
+					<div class="rounded-lge border border-lavender-purple/50 bg-white p-2.5 lg:px-0 lg:pb-5 lg:pt-0">
 						<h3 class="p-0 text-base font-semibold lg:p-5 lg:text-lg">Сповіщення</h3>
-						<ul class="mt-3 text-sm border-b border-b-lavender-purple/50  border-t border-t-lavender-purple/50 lg:mt-0 lg:text-base">
-							<li class="py-2 border-b border-b-lavender-purple/50 lg:px-5 lg:py-5">Дії</li>
-							<li class="flex items-center justify-between py-2 border-b border-b-lavender-purple/50 lg:px-5 lg:py-5">
+						<ul class="mt-3 border-b border-t border-b-lavender-purple/50 border-t-lavender-purple/50 text-sm lg:mt-0 lg:text-base">
+							<li class="border-b border-b-lavender-purple/50 py-2 lg:px-5 lg:py-5">Дії</li>
+							<li class="flex items-center justify-between border-b border-b-lavender-purple/50 py-2 lg:px-5 lg:py-5">
 								<div class="flex items-center gap-2.5">
 									<div>Нові замовлення</div>
 									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">45+</span></div>
@@ -143,7 +128,7 @@
 									</svg>
 								</button>
 							</li>
-							<li class="flex items-center justify-between py-2 border-b border-b-lavender-purple/50 lg:px-5 lg:py-5">
+							<li class="flex items-center justify-between border-b border-b-lavender-purple/50 py-2 lg:px-5 lg:py-5">
 								<div class="flex items-center gap-2.5">
 									<div>Очікує на підтверждення</div>
 									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">5+</span></div>
@@ -154,7 +139,7 @@
 									</svg>
 								</button>
 							</li>
-							<li class="flex items-center justify-between py-2 border-b border-b-lavender-purple/50 lg:px-5 lg:py-5">
+							<li class="flex items-center justify-between border-b border-b-lavender-purple/50 py-2 lg:px-5 lg:py-5">
 								<div class="flex items-center gap-2.5">
 									<div>Очікує на відправку</div>
 									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">5+</span></div>
@@ -165,7 +150,7 @@
 									</svg>
 								</button>
 							</li>
-							<li class="flex items-center justify-between py-2 border-b border-b-lavender-purple/50 lg:px-5 lg:py-5">
+							<li class="flex items-center justify-between border-b border-b-lavender-purple/50 py-2 lg:px-5 lg:py-5">
 								<div class="flex items-center gap-2.5">
 									<div>Скасовані</div>
 									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">45+</span></div>
@@ -176,7 +161,7 @@
 									</svg>
 								</button>
 							</li>
-							<li class="flex items-center justify-between py-2 border-b border-b-lavender-purple/50 lg:px-5 lg:py-5">
+							<li class="flex items-center justify-between border-b border-b-lavender-purple/50 py-2 lg:px-5 lg:py-5">
 								<div class="flex items-center gap-2.5">
 									<div>На шляху до отримувача</div>
 									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">8+</span></div>
@@ -187,7 +172,7 @@
 									</svg>
 								</button>
 							</li>
-							<li class="flex items-center justify-between py-2 border-b border-b-lavender-purple/50 lg:px-5 lg:py-5">
+							<li class="flex items-center justify-between border-b border-b-lavender-purple/50 py-2 lg:px-5 lg:py-5">
 								<div class="flex items-center gap-2.5">
 									<div>У відділені</div>
 									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">45+</span></div>
@@ -198,7 +183,7 @@
 									</svg>
 								</button>
 							</li>
-							<li class="flex items-center justify-between py-2 border-b border-b-lavender-purple/50 lg:px-5 lg:py-5">
+							<li class="flex items-center justify-between border-b border-b-lavender-purple/50 py-2 lg:px-5 lg:py-5">
 								<div class="flex items-center gap-2.5">
 									<div>Отримано</div>
 									<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-pomegranate px-1 py-0.5"><span class="text-xs text-white">8+</span></div>
@@ -224,7 +209,7 @@
 
 						<!-- per page -->
 						<div class="mt-3.5 flex items-center justify-center gap-4 lg:mt-7.5">
-							<select class="w-20 rounded-lge bg-white px-2.5 py-2 text-xs border border-lavender-purple/50 ring-0 ease-in focus:border-lavender-purple focus:ring-0 sm:text-sm">
+							<select class="w-20 rounded-lge border border-lavender-purple/50 bg-white px-2.5 py-2 text-xs ring-0 ease-in focus:border-lavender-purple focus:ring-0 sm:text-sm">
 								<option selected="">10</option>
 								<option value="">50</option>
 								<option value="">100</option>
@@ -236,7 +221,7 @@
 					<!-- ./notifications -->
 
 					<div class="relative mt-6 flex flex-col gap-3 md:flex-row">
-						<div class="flex flex-shrink-0 items-center justify-between gap-5 rounded-lge bg-white px-3 py-2 text-sm border border-lavender-purple/50">
+						<div class="flex flex-shrink-0 items-center justify-between gap-5 rounded-lge border border-lavender-purple/50 bg-white px-3 py-2 text-sm">
 							<div>За місяць</div>
 							<button>
 								<svg class="h-3.5 w-3.5 fill-shark">
@@ -246,7 +231,7 @@
 						</div>
 
 						<div class="relative w-full flex-shrink-0 md:w-auto">
-							<button class="flex h-full w-full items-center gap-7 rounded-lge bg-white px-3 py-2 border border-lavender-purple/50 transition ease-in">
+							<button class="flex h-full w-full items-center gap-7 rounded-lge border border-lavender-purple/50 bg-white px-3 py-2 transition ease-in">
 								<span class="text-sm">Загальна статистика</span>
 								<svg class="ml-auto h-2 w-4 fill-shark">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
@@ -254,7 +239,7 @@
 							</button>
 
 							<!-- dropdown -->
-							<div class="absolute left-1/2 top-0 z-40 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark border border-lavender-purple/50">
+							<div class="absolute left-1/2 top-0 z-40 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-0.5 text-shark">
 								<div class="flex pr-2">
 									<span class="text-sm">Загальна статистика</span>
 									<svg class="ml-auto h-2 w-4 rotate-180 fill-shark">
