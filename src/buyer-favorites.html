@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+		@@include('html/components/_head.html', {title: "VamBeri - Налаштування"})
+	</head>
+
+	<style>
+		
+	</style>
+	<body class="">
+		@@include('html/components/_header.html', {accountMenu: ""})
+
+		<main class="">
+			<!-- breadcrumbs -->
+			<div class="hidden lg:block">@@include("html/components/_breadcrumbs.html", {item1: "Головна", item2: "Налаштування"})</div>
+			<!-- ./breadcrumbs -->
+
+			<section class="overflow-hidden">
+				<div class="container">
+					<div class="flex flex-col gap-5 lg:flex-row lg:gap-5 2xl:gap-10 ">
+						<div class="hidden lg:block relative z-20">@@include("html/components/_panel-buyer.html")</div>
+
+						<div class="relative sm:px-1 sm:-mx-1 pb-1.5 sm:pb-14 lg:w-[calc(100%-400px)] z-10 after:absolute after:inset-0 after:bg-wild-sand after:z-20 after:-translate-x-full">
+							<div>@@include("html/components/_info-banner.html")</div>
+
+							<div class="mt-5 flex flex-col lg:mt-8.5 ">
+								<div class="flex items-center justify-between">
+									<h2 class="text-sm font-semibold sm:text-xl">Вибране</h2>
+									<div class="hidden gap-[3.125rem] lg:flex">
+										<button class="btn-prev group flex h-9 w-9 items-center justify-center rounded-full bg-white transition ease-in hover:bg-lavender-purple">
+											<svg class="h-5 w-2.5 transition ease-linear group-hover:fill-white">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
+											</svg>
+										</button>
+										<button class="btn-next group flex h-9 w-9 items-center justify-center rounded-full bg-white transition ease-in hover:bg-lavender-purple">
+											<svg class="h-5 w-2.5 transition ease-linear group-hover:fill-white">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="lg:hidden">
+
+								<div class="flex gap-5 items-center mt-3.5">
+									<div class="h-12.5 w-12.5 rounded-full overflow-hidden">
+										<img class="w-full h-full object-cover" src="img/no-avatar.jpg" alt="img">
+									</div>
+									<div class="text-shark">
+										<div class="text-base font-medium leading-6">Макс</div>
+										<div class="text-sm leading-5">1 товар</div>
+									</div>
+								</div>
+								<div class="mt-3.5 flex gap-2.5 flex-wrap">@@loop("html/components/_card-favorites.html", "files/cards-list-2elm-favorites.json") </div>
+							</div>
+
+
+
+							<div class="lg:hidden flex gap-5 items-center mt-5">
+								<div class="h-12.5 w-12.5 rounded-full overflow-hidden">
+									<img class="w-full h-full object-cover" src="img/tvshop-logo.png" alt="img">
+								</div>
+								<div class="text-shark">
+									<div class="text-base font-medium leading-6">TV Shop</div>
+									<div class="text-sm leading-5">110 товаров</div>
+								</div>
+							</div>
+							<div class="mt-3.5 lg:mt-6.5 relative">
+								<div class="swiper swiper2 lg:overflow-visible lg:pb-0 pb-2.5">
+									<div class="swiper-wrapper">@@loop("html/components/_card-swiper-slide-favorites.html", "files/cards-list-v2.json") @@loop("html/components/_card-swiper-slide-favorites.html", "files/cards-list-v2.json")</div>
+								</div>
+								<button class="lg:hidden btn-prev absolute top-[42%] left-0 z-20 group flex h-6 w-6 items-center justify-center rounded-full bg-wild-sand/60 border border-lavender-purple/50 transition ease-in hover:bg-lavender-purple">
+									<svg class="h-3 w-1.5 transition ease-linear group-hover:fill-white">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
+									</svg>
+								</button>
+								<button class="lg:hidden btn-next group absolute top-[42%] right-0 z-20 flex h-6 w-6 items-center justify-center rounded-full bg-wild-sand/60 border border-lavender-purple/50 transition ease-in hover:bg-lavender-purple">
+									<svg class="h-3 w-1.5 transition ease-linear group-hover:fill-white">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			
+		</main>
+
+		@@include('html/components/_sticky-menu.html')
+		<div class="hidden lg:block">@@include('html/components/_footer.html')</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper(".swiper", {
+				slidesPerView: "auto",
+				spaceBetween: 22,
+				
+
+				navigation: {
+					nextEl: ".btn-next",
+					prevEl: ".btn-prev",
+				},
+				breakpoints: {
+					0: {
+						spaceBetween: 10,
+					},
+					1024: {
+						spaceBetween: 22,
+					}
+				}
+			});
+
+			
+		</script>
+	</body>
+</html>
