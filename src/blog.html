@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		@@include('html/components/_head.html', {title: "VamBeri - Блог"})
+	</head>
+
+	<body class="">
+		@@include('html/components/_header.html', {accountMenu: ""})
+
+		<main>
+			<div class="container my-4 lg:hidden">
+				<!-- mob search -->
+				<div class="trasition flex h-9 w-full items-center justify-between gap-4 rounded-lge border border-lavender-purple/50 bg-white py-1 pl-3 pr-1.5 text-sm transition ease-in">
+					<input type="text" class="flex-grow border-0 p-0 text-xs placeholder-dusty-gray ring-0 focus:ring-0" placeholder="Пошук по сайту..." />
+					<button class="btn-primary flex flex-shrink-0 items-center gap-2.5 rounded-lge px-2.5 py-1 text-sm">
+						<span>Знайти</span>
+						<svg class="h-3 w-3 flex-shrink-0 fill-white">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
+						</svg>
+					</button>
+				</div>
+				<!-- ./mob search -->
+			</div>
+
+			<div class="lg:hidden">@@include('html/_banner-slider.html')</div>
+
+			<!-- breadcrumbs -->
+			<div class="">@@include("html/components/_breadcrumbs.html", {item1: "Головна", item2: "Блог"})</div>
+			<!-- ./breadcrumbs -->
+
+			<section>
+				<div class="container">
+					<div class="relative z-30">
+						<button class="flex h-9 w-full items-center rounded-lge border border-lavender-purple/50 bg-white px-2.5 py-1.5 transition ease-in lg:hidden">
+							<span class="y line-clamp-1 text-ellipsis pr-5 text-sm leading-5">Всі категорії</span>
+							<svg class="ml-auto h-2 w-4 flex-shrink-0 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+							</svg>
+						</button>
+
+						<div class="absolute left-1/2 top-0 z-10 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-2.5 pl-2 pr-1 text-shark lg:static lg:block lg:translate-x-0 lg:border-0 lg:bg-transparent lg:p-0">
+							<div class="flex items-center pr-1.5 lg:hidden">
+								<span class="line-clamp-1 text-ellipsis pr-5 text-sm">Всі категорії</span>
+								<svg class="ml-auto h-2 w-4 flex-shrink-0 rotate-180 fill-shark">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+								</svg>
+							</div>
+
+							<ul class="mt-3 flex flex-col gap-2.5 text-sm leading-5 lg:mt-0 lg:flex-row lg:gap-5">
+								<li class="">
+									<a href="#" class="flex rounded-lge border-lavender-purple/50 bg-white lg:h-9 lg:min-w-[220px] lg:items-center lg:justify-center lg:border lg:shadow-lavender">Всі категорї</a>
+								</li>
+								<li class="">
+									<a href="#" class="flex rounded-lge border-lavender-purple/50 bg-white lg:h-9 lg:min-w-[220px] lg:items-center lg:justify-center lg:border">Новини компанії Vamberi</a>
+								</li>
+								<li class="">
+									<a href="#" class="flex rounded-lge border-lavender-purple/50 bg-white lg:h-9 lg:min-w-[220px] lg:items-center lg:justify-center lg:border">Нерухомість</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="mt-6 flex flex-col gap-5">
+						<!-- item -->
+						<div class="flex flex-col rounded-lge lg:flex-row lg:gap-5 lg:bg-white lg:p-5">
+							<div class="text-base font-medium leading-5 lg:hidden">Як купити авто, транспорт на Vamberi?</div>
+							<div class="mt-3.5 h-[10.1875rem] flex-shrink-0 overflow-hidden rounded-lge lg:mt-0 lg:h-[9.875rem] lg:w-[20.375rem]">
+								<img class="h-full w-full object-cover" src="img/blog-img002.jpg" alt="img" />
+							</div>
+							<div class="mt-3 flex flex-1 flex-col lg:mt-0">
+								<div class="hidden text-xl font-medium leading-7 lg:block">Як купити авто, транспорт на Vamberi?</div>
+								<div class="lg:line-clamp-3 text-ellipsis text-sm leading-5 sm:pb-2 sm:text-base sm:leading-6 lg:mt-2.5 xl:mr-[220px]">Як купити авто, б/в та нове, через дошку приватних оголошень Vamberi?</div>
+								<div class="mt-3 flex flex-col justify-between sm:flex-row lg:mt-auto">
+									<div class="flex flex-col-reverse gap-2 text-sm leading-5 text-dusty-gray lg:flex-col">
+										<div class="flex gap-5">
+											<div class="flex items-center gap-1.5">
+												<svg class="h-5 w-5 fill-dusty-gray">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#clock"></use>
+												</svg>
+												<div>25.04.2022</div>
+											</div>
+											<div class="flex items-center gap-1.5">
+												<svg class="h-5 w-5 fill-dusty-gray">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#eye2"></use>
+												</svg>
+												<div>24</div>
+											</div>
+										</div>
+										<div class="font-light sm:font-normal">Новини компанії Vamberi • 25 червня 2022</div>
+									</div>
+									<div class="mx-auto mt-4.5 w-full max-w-[18.125rem] sm:mx-0 sm:mt-0 sm:w-auto sm:max-w-none sm:self-end">
+										<a href="#" class="btn-primary flex h-11 w-full items-center justify-center text-sm sm:h-10 sm:min-w-[13.75rem]">Читати</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- item -->
+						<!-- item -->
+						<div class="flex flex-col rounded-lge lg:flex-row lg:gap-5 lg:bg-white lg:p-5">
+							<div class="text-base font-medium leading-5 lg:hidden">Каталог оголошень — швидкий зручний пошук</div>
+							<div class="mt-3.5 h-[10.1875rem] flex-shrink-0 overflow-hidden rounded-lge lg:mt-0 lg:h-[9.875rem] lg:w-[20.375rem]">
+								<img class="h-full w-full object-cover" src="img/blog-img001.jpg" alt="img" />
+							</div>
+							<div class="mt-3 flex flex-1 flex-col lg:mt-0">
+								<div class="hidden text-xl font-medium leading-7 lg:block">Каталог оголошень — швидкий зручний пошук</div>
+								<div class="lg:line-clamp-3 text-ellipsis text-sm leading-5 lg:mt-2.5 xl:mr-[220px]">Каталог свіжих оголошень ➔ Як працювати з каталогом✔ Поради щодо складання✔ Різні типи оголошень✔ Купити нерухомість✔ Продати авто✔ Знайти роботу✔ Вакансії ✔Віддати задарма✔ Обмін✔ Розмістити ефективне оголошення прямо зараз★</div>
+								<div class="mt-3 flex flex-col justify-between sm:flex-row lg:mt-auto">
+									<div class="flex flex-col-reverse gap-2 text-sm leading-5 text-dusty-gray lg:flex-col">
+										<div class="flex gap-5">
+											<div class="flex items-center gap-1.5">
+												<svg class="h-5 w-5 fill-dusty-gray">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#clock"></use>
+												</svg>
+												<div>25.04.2022</div>
+											</div>
+											<div class="flex items-center gap-1.5">
+												<svg class="h-5 w-5 fill-dusty-gray">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#eye2"></use>
+												</svg>
+												<div>24</div>
+											</div>
+										</div>
+										<div class="font-light sm:font-normal">Новини компанії Vamberi • 25 червня 2022</div>
+									</div>
+									<div class="mx-auto mt-4.5 w-full max-w-[18.125rem] sm:mx-0 sm:mt-0 sm:w-auto sm:max-w-none sm:self-end">
+										<a href="#" class="btn-primary flex h-11 w-full items-center justify-center text-sm sm:h-10 sm:min-w-[13.75rem]">Читати</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- item -->
+						<!-- item -->
+						<div class="flex flex-col rounded-lge lg:flex-row lg:gap-5 lg:bg-white lg:p-5">
+							<div class="text-base font-medium leading-5 lg:hidden">Як купити авто, транспорт на Vamberi?</div>
+							<div class="mt-3.5 h-[10.1875rem] flex-shrink-0 overflow-hidden rounded-lge lg:mt-0 lg:h-[9.875rem] lg:w-[20.375rem]">
+								<img class="h-full w-full object-cover" src="img/blog-img003.jpg" alt="img" />
+							</div>
+							<div class="mt-3 flex flex-1 flex-col lg:mt-0">
+								<div class="hidden text-xl font-medium leading-7 lg:block">Як купити авто, транспорт на Vamberi?</div>
+								<div class="lg:line-clamp-3 text-ellipsis text-sm leading-5 lg:mt-2.5 xl:mr-[220px]">Сайт объявлений Украина ➔ Покупка недвижимости✔ Продажа авто ✔Выгодный обмен ✔Купить машину б.у. ✔Купить мебель ✔Отдать даром вещи✔ Купить питомца✔ Бесплатные объявления✔ Работа✔ Вакансии✔ Онлайн-покупки ★Полезная информация★ Размещайте объявления уже сейчас <span class="text-pomegranate">☎</span></div>
+								<div class="mt-3 flex flex-col justify-between sm:flex-row lg:mt-auto">
+									<div class="flex flex-col-reverse gap-2 text-sm leading-5 text-dusty-gray lg:flex-col">
+										<div class="flex gap-5">
+											<div class="flex items-center gap-1.5">
+												<svg class="h-5 w-5 fill-dusty-gray">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#clock"></use>
+												</svg>
+												<div>25.04.2022</div>
+											</div>
+											<div class="flex items-center gap-1.5">
+												<svg class="h-5 w-5 fill-dusty-gray">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#eye2"></use>
+												</svg>
+												<div>24</div>
+											</div>
+										</div>
+										<div class="font-light sm:font-normal">Новини компанії Vamberi • 25 червня 2022</div>
+									</div>
+									<div class="mx-auto mt-4.5 w-full max-w-[18.125rem] sm:mx-0 sm:mt-0 sm:w-auto sm:max-w-none sm:self-end">
+										<a href="#" class="btn-primary flex h-11 w-full items-center justify-center text-sm sm:h-10 sm:min-w-[13.75rem]">Читати</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- item -->
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+	</body>
+</html>

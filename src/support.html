@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		@@include('html/components/_head.html', {title: "VamBeri - Служба підтримки"})
+	</head>
+
+	<body class="">
+		@@include('html/components/_header.html', {accountMenu: ""})
+
+		<main>
+			<div class="container my-4 lg:hidden">
+				<!-- mob search -->
+				<div class="trasition flex h-9 w-full items-center justify-between gap-4 rounded-lge border border-lavender-purple/50 bg-white py-1 pl-3 pr-1.5 text-sm transition ease-in">
+					<input type="text" class="flex-grow border-0 p-0 text-xs placeholder-dusty-gray ring-0 focus:ring-0" placeholder="Пошук по сайту..." />
+					<button class="btn-primary flex flex-shrink-0 items-center gap-2.5 rounded-lge px-2.5 py-1 text-sm">
+						<span>Знайти</span>
+						<svg class="h-3 w-3 flex-shrink-0 fill-white">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
+						</svg>
+					</button>
+				</div>
+				<!-- ./mob search -->
+			</div>
+
+			@@include('html/_banner-slider.html')
+
+			<!-- breadcrumbs -->
+			<div class="">@@include("html/components/_breadcrumbs.html", {item1: "Головна", item2: "Служба підтримки"})</div>
+			<!-- ./breadcrumbs -->
+
+			<section class="pt-0 lg:pt-7.5">
+				<div class="container">
+					<div class="flex flex-col gap-6 lg:flex-row lg:gap-10">
+						<div>@@include("html/components/_aside-menu.html")</div>
+						<div class="flex-grow">
+							<h2 class="text-base font-semibold lg:text-xl">Питання до служби підтримки</h2>
+							<div class="mt-3.5 rounded-lge lg:mt-5 lg:bg-white lg:p-7.5">
+								<h3 class="text-base font-medium lg:text-lg lg:font-semibold">Часті питання</h3>
+
+								<div class="mt-3.5 flex flex-col gap-4 rounded-lge bg-white p-2.5 text-shark lg:mt-6 lg:gap-5 lg:p-0">
+									<!--  -->
+									<div class="rounded-lge border border-lavender-purple p-4">
+										<button class="flex w-full items-center justify-between gap-4 lg:gap-16">
+											<span class="text-left text-sm font-medium leading-5 lg:text-base lg:leading-6">Як найшвидше продати товар?</span>
+
+											<svg class="h-2.5 w-5 flex-shrink-0 rotate-180 fill-shark">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+											</svg>
+										</button>
+										<div class="mt-2.5 text-sm leading-5 lg:pr-16">Виділити своє оголошення із загальної маси дуже просто, для цього ви можете підкоючити до свого оголошення платну послугу або пакет послуг <a href="#" class="text-royal-blue">Турбо продаж</a> ваше оголошення буде піднято у стрічці та виділено маркером, ви точно не пропустите свого покупця!</div>
+									</div>
+									<!--  -->
+
+									<!--  -->
+									<div class="rounded-lge border border-lavender-purple p-4">
+										<button class="flex w-full items-center justify-between gap-4 lg:gap-16">
+											<span class="text-left text-sm font-medium leading-5 lg:text-base lg:leading-6">Мій товар заблоковано</span>
+
+											<svg class="h-2.5 w-5 flex-shrink-0 fill-shark">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+											</svg>
+										</button>
+										<div class="mt-2.5 hidden text-sm leading-5 lg:pr-16">Виділити своє оголошення із загальної маси дуже просто, для цього ви можете підкоючити до свого оголошення платну послугу або пакет послуг <a href="#" class="text-royal-blue">Турбо продаж</a> ваше оголошення буде піднято у стрічці та виділено маркером, ви точно не пропустите свого покупця!</div>
+									</div>
+									<!--  -->
+
+									<!--  -->
+									<div class="rounded-lge border border-lavender-purple p-4">
+										<button class="flex w-full items-center justify-between gap-4 lg:gap-16">
+											<span class="text-left text-sm font-medium leading-5 lg:text-base lg:leading-6">Мій обліковий запис заблокований адміністрацією</span>
+
+											<svg class="h-2.5 w-5 flex-shrink-0 fill-shark">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+											</svg>
+										</button>
+										<div class="mt-2.5 hidden text-sm leading-5 lg:pr-16">Виділити своє оголошення із загальної маси дуже просто, для цього ви можете підкоючити до свого оголошення платну послугу або пакет послуг <a href="#" class="text-royal-blue">Турбо продаж</a> ваше оголошення буде піднято у стрічці та виділено маркером, ви точно не пропустите свого покупця!</div>
+									</div>
+									<!--  -->
+
+									<!--  -->
+									<div class="rounded-lge border border-lavender-purple p-4">
+										<button class="flex w-full items-center justify-between gap-4 lg:gap-16">
+											<span class="text-left text-sm font-medium leading-5 lg:text-base lg:leading-6">Чому для мого товару недоступна безпечна угода?</span>
+
+											<svg class="h-2.5 w-5 flex-shrink-0 fill-shark">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+											</svg>
+										</button>
+										<div class="mt-2.5 hidden text-sm leading-5 lg:pr-16">Виділити своє оголошення із загальної маси дуже просто, для цього ви можете підкоючити до свого оголошення платну послугу або пакет послуг <a href="#" class="text-royal-blue">Турбо продаж</a> ваше оголошення буде піднято у стрічці та виділено маркером, ви точно не пропустите свого покупця!</div>
+									</div>
+									<!--  -->
+
+									<!--  -->
+									<div class="rounded-lge border border-lavender-purple p-4">
+										<button class="flex w-full items-center justify-between gap-4 lg:gap-16">
+											<span class="text-left text-sm font-medium leading-5 lg:text-base lg:leading-6">Протягом якого часу здійснюється повернення коштів за безпечною угодою?</span>
+
+											<svg class="h-2.5 w-5 flex-shrink-0 fill-shark">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+											</svg>
+										</button>
+										<div class="mt-2.5 hidden text-sm leading-5 lg:pr-16">Виділити своє оголошення із загальної маси дуже просто, для цього ви можете підкоючити до свого оголошення платну послугу або пакет послуг <a href="#" class="text-royal-blue">Турбо продаж</a> ваше оголошення буде піднято у стрічці та виділено маркером, ви точно не пропустите свого покупця!</div>
+									</div>
+									<!--  -->
+								</div>
+
+								<h3 class="mt-6 text-base font-medium lg:mt-7.5 lg:text-lg lg:font-semibold">Не знайшли відповідь? Напишіть нам!</h3>
+
+								<div class="mt-3.5 rounded-lge bg-white p-2.5 lg:mt-4.5 lg:p-0">
+									<div class="flex max-w-full flex-col gap-3.5 lg:max-w-[40rem]">
+										<div class="border-b border-b-dusty-gray/[0.25] pb-3.5">
+											<div class="text-sm font-medium lg:text-base">Виберіть тему звернення (повідомлення)</div>
+
+											<div class="relative mt-5">
+												<button class="flex h-9 w-full items-center rounded-lge border border-lavender-purple/50 px-2.5 py-1.5 transition ease-in lg:border-dusty-gray">
+													<span class="line-clamp-1 text-ellipsis pr-5 text-sm leading-5 text-dusty-gray">не вибрано</span>
+													<svg class="ml-auto h-2 w-4 flex-shrink-0 fill-shark">
+														<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+													</svg>
+												</button>
+
+												<!-- dropdown -->
+												<div class="absolute left-1/2 top-0 z-10 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-2.5 pl-2 pr-1 text-shark">
+													<div class="flex items-center pr-1.5">
+														<span class="line-clamp-1 text-ellipsis pr-5 text-sm text-dusty-gray">не вибрано</span>
+														<svg class="ml-auto h-2 w-4 flex-shrink-0 rotate-180 fill-shark">
+															<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+														</svg>
+													</div>
+
+													<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-[8.125rem] flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+														<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+															<div class="">item1</div>
+														</li>
+														<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+															<div class="">item2</div>
+														</li>
+														<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+															<div class="">item3</div>
+														</li>
+														<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+															<div class="">item4</div>
+														</li>
+														<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+															<div class="">item5</div>
+														</li>
+														<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+															<div class="">item6</div>
+														</li>
+														<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+															<div class="">item7</div>
+														</li>
+													</ul>
+												</div>
+												<!-- ./dropdown -->
+											</div>
+										</div>
+
+										<div class="border-b border-b-dusty-gray/[0.25] pb-3.5">
+											<div class="text-sm font-medium lg:text-base">Звернення</div>
+											<textarea class="mt-2.5 h-48 w-full resize-none rounded-lge border-lavender-purple/50 p-2 ring-0 transition ease-in focus:border-lavender-purple focus:ring-0 lg:h-64"></textarea>
+										</div>
+
+										<div class="border-b border-b-dusty-gray/[0.25] pb-3.5">
+											<div class="text-sm font-medium lg:text-base">Як до Вас можна звертатись?</div>
+											<input type="text" class="mt-2.5 h-9 w-full rounded-lge border border-lavender-purple/50 px-3 py-1 text-sm leading-5 ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 lg:py-2.5" />
+										</div>
+
+										<div class="border-b border-b-dusty-gray/[0.25] pb-3.5">
+											<div class="text-sm font-medium lg:text-base">Пошта, на яку ми відповімо</div>
+											<input type="text" class="mt-2.5 h-9 w-full rounded-lge border border-lavender-purple/50 px-3 py-1 text-sm leading-5 ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 lg:py-2.5" />
+										</div>
+
+										<div class="lg:pb-0 pb-2.5">
+											<div class="text-sm font-medium lg:text-base">Вкажіть код перевірки</div>
+											<div class="mt-2.5 flex gap-7.5">
+												<div class="h-9 w-[5.75rem]">
+													<img class="h-full w-full object-contain" src="img/code.jpg" alt="code" />
+												</div>
+												<input type="text" class="h-9 w-[10.125rem] rounded-lge border border-lavender-purple/50 px-3 py-1 text-sm leading-5 ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 lg:py-2.5" />
+											</div>
+										</div>
+									</div>
+
+									<div class="mt-5 flex justify-center lg:mt-7.5">
+										<button class="btn-pink flex h-11 w-full max-w-[18.125rem] items-center justify-center px-3 text-sm font-normal lw:max-w-[15rem] lg:h-9">Надіслати звернення</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+	</body>
+</html>

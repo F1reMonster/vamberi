@@ -45,6 +45,10 @@
 		@apply rounded-2lge border border-deep-blush bg-transparent text-deep-blush transition ease-in hover:bg-deep-blush hover:text-white;
 	}
 
+	.btn-gray-light {
+		@apply rounded-2lge border border-dusty-gray bg-transparent text-shark transition ease-in hover:bg-gray-200;
+	}
+
 	.btn-blue-royal-light {
 		@apply rounded-2lge border border-royal-blue bg-transparent text-royal-blue transition ease-in hover:bg-royal-blue hover:text-white;
 	}

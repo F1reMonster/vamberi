@@ -26,19 +26,19 @@ module.exports = {
 			xsm: "18.75rem",
 		},
 		fontSize: {
-			xs: ["0.75rem", "121%"], // 12px
-			sm: ["0.875rem", "121%"], // 14px
-			base: ["1rem", "121%"], // 16px
-			lg: ["1.125rem", "121%"], // 18px
-			xl: ["1.25rem", "121%"], // 20px
-			"2xl": ["1.5rem", "121%"], // 24px
-			"3xl": ["1.875rem", "121%"], // 30px
-			"4xl": ["2.25rem", "121%"], // 36px
-			"5xl": ["3rem", "121%"], // 48px
-			"6xl": ["3.75rem", "121%"], // 60px
-			"7xl": ["4.5rem", "121%"], // 72px
-			"8xl": ["6rem", "121%"], // 96px
-			"9xl": ["8rem", "121%"], // 128px
+			xs: ["0.75rem", "120%"], // 12px
+			sm: ["0.875rem", "1.25rem"], // 14px
+			base: ["1rem", "1.5rem"], // 16px
+			lg: ["1.125rem", "1.75rem"], // 18px
+			xl: ["1.25rem", "120%"], // 20px
+			"2xl": ["1.5rem", "120%"], // 24px
+			"3xl": ["1.875rem", "120%"], // 30px
+			"4xl": ["2.25rem", "2.5rem"], // 36px
+			"5xl": ["3rem", "120%"], // 48px
+			"6xl": ["3.75rem", "120%"], // 60px
+			"7xl": ["4.5rem", "120%"], // 72px
+			"8xl": ["6rem", "120%"], // 96px
+			"9xl": ["8rem", "120%"], // 128px
 		},
 		extend: {
 			screens: {
@@ -128,6 +128,7 @@ module.exports = {
 			boxShadow: { 
 				// in mozilla firefox rounded shadow not work properly with width less 0.8px → need replace to border with alpha
 				custom: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25)",
+				lavender: "0px 0.25rem 0.25rem 0px rgba(139, 122, 168, 0.6)",
 				card: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25), 0 0 0 0.0625rem #999494",
 				white: "0 0 0 1px #fff",
 				"dusty-gray": "0 0 0 1px #999494",

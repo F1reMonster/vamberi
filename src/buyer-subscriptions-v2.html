@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+		@@include('html/components/_head.html', {title: "VamBeri - Мої підписки 2"})
+	</head>
+
+	<style></style>
+	<body class="">
+		@@include('html/components/_header.html', {accountMenu: ""})
+
+		<main class="">
+			<!-- breadcrumbs -->
+			<div class="hidden lg:block">@@include("html/components/_breadcrumbs.html", {item1: "Головна", item2: "Налаштування"})</div>
+			<!-- ./breadcrumbs -->
+
+			<section class="overflow-hidden">
+				<div class="container">
+					<div class="flex flex-col gap-5 lg:flex-row lg:gap-5 2xl:gap-10">
+						<div class="relative z-20 hidden lg:block">@@include("html/components/_panel-buyer.html")</div>
+
+						<div class="relative z-10 pb-1.5 after:absolute after:inset-0 after:z-20 after:-translate-x-full after:bg-wild-sand sm:-mx-1 sm:px-1 sm:pb-14 lg:w-[calc(100%-400px)]">
+							<div>@@include("html/components/_info-banner.html")</div>
+
+							<h2 class="text-sm font-semibold sm:text-xl">Мої підписки</h2>
+							<div class="mt-5.5 flex sm:gap-5 gap-2.5">
+								<button class="flex h-8.5 sm:min-w-[12.5rem] sm:w-auto w-full items-center justify-center rounded-lge border border-lavender-purple/50 bg-white p-1 text-sm shadow-custom">Категорії</button>
+								<button class="flex h-8.5 sm:min-w-[12.5rem] sm:w-auto w-full items-center justify-center rounded-lge border border-lavender-purple/50 bg-white p-1 text-sm">Магазини</button>
+							</div>
+
+							<div class="mt-5">
+								<!-- item -->
+								<div class="rounded-lge bg-white p-3.5">
+									<div class="flex gap-5">
+										<div class="h-[4.375rem] w-[8.75rem] flex-shrink-0 overflow-hidden rounded-lge sm:h-[6.625rem] sm:w-40">
+											<img class="h-full w-full object-cover" src="img/subscriber.jpg" alt="img" />
+										</div>
+
+										<div class="flex flex-grow flex-col">
+											<div class="flex justify-between gap-4">
+												<div class="line-clamp-1 text-ellipsis text-lg font-medium leading-7">Анна</div>
+												<div class="hidden min-w-fit flex-shrink-0 text-base leading-6 sm:block">сьогодні в 16:01</div>
+											</div>
+											<div class="mt-1 text-sm leading-5">114 товарів</div>
+											<div class="mt-1 flex items-center">
+												<svg class="h-3 w-3 shrink-0 fill-goldenrod lg:h-4 lg:w-4">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+												</svg>
+												<svg class="h-3 w-3 shrink-0 fill-goldenrod lg:h-4 lg:w-4">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+												</svg>
+												<svg class="h-3 w-3 shrink-0 fill-goldenrod lg:h-4 lg:w-4">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+												</svg>
+												<svg class="h-3 w-3 shrink-0 fill-goldenrod lg:h-4 lg:w-4">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+												</svg>
+												<svg class="h-3 w-3 shrink-0 fill-goldenrod lg:h-4 lg:w-4">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#star"></use>
+												</svg>
+											</div>
+											<div class="mt-auto line-clamp-2 hidden text-ellipsis text-sm leading-5 sm:block">Виробництво торгового обладнання</div>
+										</div>
+									</div>
+
+									<div class="mt-3 text-ellipsis text-sm sm:hidden">Виробництво торгового обладнання</div>
+									<div class="mt-4 flex flex-col justify-between sm:mt-6 sm:flex-row">
+										<div class="text-base leading-6">
+											<label class="flex cursor-pointer items-center gap-3.5">
+												<div class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+													<input type="checkbox" name="" class="peer hidden" />
+
+													<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+														<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+													</svg>
+												</div>
+
+												<div class="">Раз в день</div>
+											</label>
+											<label class="mt-5 flex cursor-pointer items-center gap-3.5">
+												<div class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+													<input type="checkbox" name="" class="peer hidden" />
+
+													<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+														<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+													</svg>
+												</div>
+
+												<div class="">Відразу під час публікації</div>
+											</label>
+										</div>
+										<div class="mt-5 flex w-full justify-center sm:mt-0 sm:w-auto sm:justify-normal">
+											<div class="flex w-full flex-col items-center gap-6 sm:mt-auto sm:flex-row sm:gap-11">
+												<div class="flex">
+													<button class="btn-pink h-11 min-w-[18.125rem] text-sm sm:min-w-[13.75rem] lg:h-9">Відписатися</button>
+												</div>
+												<div class="flex w-full items-center justify-between">
+													<div class="min-w-fit flex-shrink-0 text-sm leading-5 sm:hidden">сьогодні в 16:01</div>
+
+													<button class="group" aria-label="Видалити з кошика">
+														<svg class="h-4 w-4 fill-pomegranate transition ease-linear lg:h-5 lg:w-5">
+															<use xlink:href="img/svg/sprites/sprite-icons.svg#bin2"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- item -->
+							</div>
+
+							<div class="mt-5 flex flex-col lg:mt-12.5">
+								<div class="flex items-center justify-between">
+									<h2 class="text-sm font-semibold sm:text-xl">Нові надходження</h2>
+									<div class="hidden gap-[3.125rem] lg:flex">
+										<button class="btn-prev group flex h-9 w-9 items-center justify-center rounded-full bg-white transition ease-in hover:bg-lavender-purple">
+											<svg class="h-5 w-2.5 transition ease-linear group-hover:fill-white">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
+											</svg>
+										</button>
+										<button class="btn-next group flex h-9 w-9 items-center justify-center rounded-full bg-white transition ease-in hover:bg-lavender-purple">
+											<svg class="h-5 w-2.5 transition ease-linear group-hover:fill-white">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="relative mt-3.5 lg:mt-6.5">
+								<div class="swiper swiper2 pb-2.5 lg:overflow-visible lg:pb-0">
+									<div class="swiper-wrapper">@@loop("html/components/_card-swiper-slide.html", "files/cards-list-v2.json") @@loop("html/components/_card-swiper-slide.html", "files/cards-list-v2.json")</div>
+								</div>
+								<button class="btn-prev group absolute left-0 top-[42%] z-20 flex h-6 w-6 items-center justify-center rounded-full border border-lavender-purple/50 bg-wild-sand/60 transition ease-in hover:bg-lavender-purple lg:hidden">
+									<svg class="h-3 w-1.5 transition ease-linear group-hover:fill-white">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
+									</svg>
+								</button>
+								<button class="btn-next group absolute right-0 top-[42%] z-20 flex h-6 w-6 items-center justify-center rounded-full border border-lavender-purple/50 bg-wild-sand/60 transition ease-in hover:bg-lavender-purple lg:hidden">
+									<svg class="h-3 w-1.5 transition ease-linear group-hover:fill-white">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('html/components/_sticky-menu.html')
+		<div class="hidden lg:block">@@include('html/components/_footer.html')</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper(".swiper2", {
+				slidesPerView: "auto",
+				spaceBetween: 22,
+
+				navigation: {
+					nextEl: ".btn-next",
+					prevEl: ".btn-prev",
+				},
+				breakpoints: {
+					0: {
+						spaceBetween: 10,
+					},
+					1024: {
+						spaceBetween: 22,
+					},
+				},
+			});
+		</script>
+	</body>
+</html>
