@@ -185,17 +185,17 @@
 							<div class="hidden items-center gap-3.5 lg:flex lg:gap-5">
 								<!-- нове, б/в -->
 								<div class="relative w-[9.375rem]">
-									<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 bg-white px-3.5 py-2 transition ease-in lg:hover:border-lavender-purple">
-										<span class="pr- text-sm">Нове та б/в</span>
+									<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 bg-white px-3.5 py-2 transition ease-in lg:hover:border-lavender-purple" data-filter="20">
+										<span class="text-sm">Нове та б/в</span>
 										<svg class="ml-auto h-1.5 w-3">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 										</svg>
 									</button>
 
 									<!-- dropdown -->
-									<div class="absolute left-1/2 top-0 z-30 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-1 text-shark">
+									<!-- <div class="absolute left-1/2 top-0 z-30 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-2 pl-2.5 pr-1 text-shark" data-filter="20">
 										<div class="flex items-center pr-1.5">
-											<span class="line-clamp-1 text-ellipsis pr-4 text-sm">Нове та б/в</span>
+											<a href="#" class="line-clamp-1 text-ellipsis pr-4 text-sm transition ease-in hover:text-lavender-purple">Нове та б/в</a>
 											<svg class="ml-auto h-1.5 w-3 flex-shrink-0 rotate-180 fill-shark">
 												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 											</svg>
@@ -203,10 +203,29 @@
 
 										<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-[8.125rem] flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
 											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-												<div class="">Нове</div>
+												<a href="#" class="">Нове</a>
 											</li>
 											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-												<div class="">Б/У</div>
+												<a href="#" class="">Б/У</a>
+											</li>
+										</ul> -->
+									<!-- </div> -->
+									<!-- ./dropdown -->
+
+									<!-- dropdown -->
+									<div class="absolute left-1/2 top-[calc(100%+1rem)] z-30 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="20">
+										<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
+										</svg>
+										<ul class="scrollbar-custom-thin flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Нове та б/в</a>
+											</li>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Нове</a>
+											</li>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Б/У</a>
 											</li>
 										</ul>
 									</div>
@@ -215,28 +234,46 @@
 								<!-- нове, б/в -->
 								<!-- Роздріб, опт -->
 								<div class="relative w-[10.625rem]">
-									<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 bg-white px-3.5 py-2 transition ease-in lg:hover:border-lavender-purple">
-										<span class="pr- text-sm">Опт та роздріб</span>
+									<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 bg-white px-3.5 py-2 transition ease-in lg:hover:border-lavender-purple" data-filter="21">
+										<span class="text-sm">Опт та роздріб</span>
 										<svg class="ml-auto h-1.5 w-3">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 										</svg>
 									</button>
 
 									<!-- dropdown -->
-									<div class="absolute left-1/2 top-0 z-30 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-3 pl-2.5 pr-1 text-shark">
+									<!-- <div class="absolute left-1/2 top-0 z-30 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-2 pl-2.5 pr-1 text-shark" data-filter="21">
 										<div class="flex items-center pr-1.5">
-											<span class="line-clamp-1 text-ellipsis pr-4 text-sm">Опт та роздріб</span>
+											<a href="#" class="line-clamp-1 text-ellipsis pr-4 text-sm transition ease-in hover:text-lavender-purple">Опт та роздріб</a>
 											<svg class="ml-auto h-1.5 w-3 flex-shrink-0 rotate-180 fill-shark">
 												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 											</svg>
 										</div>
 
 										<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-[8.125rem] flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-												<div class="">Опт</div>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Опт</a>
 											</li>
-											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-												<div class="">Роздріб</div>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Роздріб</a>
+											</li>
+										</ul>
+									</div> -->
+
+
+									<div class="absolute left-1/2 top-[calc(100%+1rem)] z-30 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="21">
+										<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
+										</svg>
+										<ul class="scrollbar-custom-thin flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Опт та роздріб</a>
+											</li>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Опт</a>
+											</li>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Роздріб</a>
 											</li>
 										</ul>
 									</div>
@@ -281,7 +318,7 @@
 							<!-- filter category first-->
 							<div class="relative flex w-60 flex-col">
 								<div class="mt-auto flex flex-col">
-									<button class="mt-auto flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="mt-auto flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="1">
 										<svg class="h-3.5 w-4">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#burger"></use>
 										</svg>
@@ -293,28 +330,28 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 w-60 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown">
+								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-60 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="1">
 									<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
 									<ul class="scrollbar-custom-thin flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<span>Дитяче</span>
+										<li>
+											<a href="#children" class="transition ease-in hover:text-lavender-purple">Дитяче</a>
 										</li>
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<span>Для новонароджених</span>
+										<li>
+											<a href="#newborns" class="transition ease-in hover:text-lavender-purple">Для новонароджених</a>
 										</li>
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<span>Жіноче</span>
+										<li>
+											<a href="#women" class="transition ease-in hover:text-lavender-purple">Жіноче</a>
 										</li>
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<span>Чоловіче</span>
+										<li>
+											<a href="#man" class="transition ease-in hover:text-lavender-purple">Чоловіче</a>
 										</li>
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<span>Ортопедичне взуття</span>
+										<li>
+											<a href="#orthopedics" class="transition ease-in hover:text-lavender-purple">Ортопедичне взуття</a>
 										</li>
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<span>Аксесуари для взуття</span>
+										<li>
+											<a href="#accessory" class="transition ease-in hover:text-lavender-purple">Аксесуари для взуття</a>
 										</li>
 									</ul>
 								</div>
@@ -338,7 +375,7 @@
 							<!-- filter category -->
 							<div class="relative flex w-[8.75rem] flex-col">
 								<div class="mt-auto flex flex-col">
-									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="11">
 										<span class="ml-2.5 text-sm">Категорія</span>
 										<svg class="ml-auto h-1.5 w-3">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
@@ -347,7 +384,7 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-80 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown">
+								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-80 -translate-x-1/2 rounded-lge bg-white py-2 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="11">
 									<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -471,7 +508,7 @@
 										<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-lavender-purple px-1 py-0.5 text-sm"><span class="text-white">999</span></div>
 									</div>
 
-									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="12">
 										<span class="ml-2.5 text-sm">Продавець</span>
 										<svg class="ml-auto h-1.5 w-3">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
@@ -480,7 +517,7 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-60 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown">
+								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-60 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="12">
 									<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -559,7 +596,7 @@
 							<!-- filter price -->
 							<div class="relative flex w-[7.5rem] flex-col">
 								<div class="mt-auto flex flex-col">
-									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="13">
 										<span class="ml-2.5 text-sm">Ціна</span>
 										<svg class="ml-auto h-1.5 w-3">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
@@ -568,7 +605,7 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-60 -translate-x-1/2 rounded-lge bg-white px-3.5 py-3 text-shark drop-shadow-filter-dropdown">
+								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-60 -translate-x-1/2 rounded-lge bg-white px-3.5 py-3 text-shark drop-shadow-filter-dropdown" data-filter="13">
 									<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -599,7 +636,7 @@
 							<!-- filter color -->
 							<div class="relative flex w-[7.5rem] flex-col">
 								<div class="mt-auto flex flex-col">
-									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="14">
 										<span class="ml-2.5 text-sm">Колір</span>
 										<svg class="ml-auto h-1.5 w-3">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
@@ -608,7 +645,7 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-60 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown">
+								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-60 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="14">
 									<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -756,7 +793,7 @@
 									<div class="flex justify-end">
 										<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-lavender-purple px-1 py-0.5 text-sm"><span class="text-white">999</span></div>
 									</div>
-									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="15">
 										<span class="ml-2.5 text-sm">Бренд</span>
 										<svg class="ml-auto h-1.5 w-3">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
@@ -765,7 +802,7 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-0 top-[calc(100%+1rem)] z-10 hidden w-60 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown lge:left-[unset] lge:right-0 xle:left-1/2 xle:right-[unset] xle:-translate-x-1/2">
+								<div class="absolute left-0 top-[calc(100%+1rem)] z-10 hidden w-60 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown lge:left-[unset] lge:right-0 xle:left-1/2 xle:right-[unset] xle:-translate-x-1/2" data-filter="15">
 									<svg class="absolute -top-2.5 left-[50px] h-2.5 w-4 fill-white lge:left-[unset] lge:right-[50px] xle:left-1/2 xle:right-[unset] xle:-translate-x-1/2">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -845,7 +882,7 @@
 							<!-- filter size -->
 							<div class="relative flex w-[7.5rem] flex-col">
 								<div class="mt-auto flex flex-col">
-									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="16">
 										<span class="ml-2.5 text-sm">Розмір</span>
 										<svg class="ml-auto h-1.5 w-3">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
@@ -853,7 +890,7 @@
 									</button>
 								</div>
 								<!-- dropdown -->
-								<div class="absolute left-0 top-[calc(100%+1rem)] z-10 hidden w-60 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown xle:left-[unset] xle:right-0 xl:left-1/2 xl:right-[unset] xl:-translate-x-1/2">
+								<div class="absolute left-0 top-[calc(100%+1rem)] z-10 hidden w-60 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown xle:left-[unset] xle:right-0 xl:left-1/2 xl:right-[unset] xl:-translate-x-1/2" data-filter="16">
 									<svg class="absolute -top-2.5 left-[50px] h-2.5 w-4 fill-white xle:left-[unset] xle:right-[3.125rem] xl:left-1/2 xl:right-[unset] xl:-translate-x-1/2">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -973,7 +1010,7 @@
 							<!-- filter popular-->
 							<div class="relative flex w-[14.375rem] flex-col">
 								<div class="col mt-auto flex">
-									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="17">
 										<svg class="h-3.5 w-3.5 fill-shark">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#up-down"></use>
 										</svg>
@@ -985,7 +1022,7 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-60 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown">
+								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-60 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="17">
 									<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -3845,8 +3882,7 @@
 		<!-- ./full filters desktop-->
 
 		<!-- filters mobile -->
-		<div class="lg:hidden">
-			<div class="fixed inset-0 z-50 bg-black/40">
+		<div class="lg:hidden"><div class="fixed inset-0 z-50 bg-black/40">
 	<div class="absolute right-0 h-screen w-full bg-white lw:w-[20rem]">
 		<div class="flex items-center justify-between p-3">
 			<div class="text-base font-bold">Фільтри</div>
@@ -4697,8 +4733,7 @@
 		</div>
 	</div>
 </div>
-
-		</div>
+</div>
 		<!-- ./filters mobile -->
 
 		<!-- sticky menu -->
@@ -4909,5 +4944,45 @@
 <!-- ./footer -->
 
 
+
+		<script>
+			// Отримуємо всі кнопки та фільтри за допомогою атрибута data-filter
+			const buttons = document.querySelectorAll("button[data-filter]");
+			const filters = document.querySelectorAll("div[data-filter]");
+
+			// Додаємо обробник подій для кожної кнопки
+			buttons.forEach((button) => {
+				button.addEventListener("click", (event) => {
+					event.stopPropagation(); // Зупиняємо подію від поширення на дочірні елементи кнопки
+					// Отримуємо значення атрибута data-filter кнопки, яка була натиснута
+					const filterValue = button.getAttribute("data-filter");
+
+					// Ітеруємося через всі фільтри і приховуємо ті, які не відповідають обраному фільтру
+					filters.forEach((filter) => {
+						if (filter.getAttribute("data-filter") === filterValue) {
+							filter.classList.remove("hidden");
+						} else {
+							filter.classList.add("hidden");
+						}
+					});
+				});
+			});
+
+			// Додаємо обробник подій для кожного фільтра, щоб закривати фільтр при кліку на нього
+			// filters.forEach((filter) => {
+			// 	filter.addEventListener("click", () => {
+			// 		filter.classList.add("hidden");
+			// 	});
+			// });
+
+			// Додаємо обробник подій на документ, щоб при кліку поза фільтрами і кнопками фільтр закривався
+			document.addEventListener("click", (event) => {
+				filters.forEach((filter) => {
+					if (!filter.contains(event.target)) {
+						filter.classList.add("hidden");
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
