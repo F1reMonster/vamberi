@@ -45,7 +45,7 @@
 							<!-- category -->
 							<div class="relative flex w-[8.75rem] flex-col">
 								<div class="flex flex-col">
-									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="1">
 										<span class="text-sm">Категорія</span>
 										<svg class="ml-auto h-1.5 w-3">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
@@ -54,7 +54,7 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-0 top-[calc(100%+1rem)] z-30 hidden w-80 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown">
+								<div class="absolute left-0 top-[calc(100%+1rem)] z-30 hidden w-80 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="1">
 									<svg class="absolute -top-2.5 left-[4.375rem] h-2.5 w-4 fill-white">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -174,7 +174,7 @@
 							<!-- popupar -->
 							<div class="relative flex w-[14.375rem] flex-col">
 								<div class="col mt-auto flex">
-									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="2">
 										<svg class="h-3.5 w-3.5 fill-shark">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#up-down"></use>
 										</svg>
@@ -186,7 +186,7 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-40 hidden w-60 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown">
+								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-40 hidden w-60 -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="2">
 									<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -254,7 +254,7 @@
 							<!-- price -->
 							<div class="relative flex w-[7.5rem] flex-col">
 								<div class="mt-auto flex flex-col">
-									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="3">
 										<span class="text-sm">Ціна</span>
 										<svg class="ml-auto h-1.5 w-3">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
@@ -263,7 +263,7 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-40 hidden w-60 -translate-x-1/2 rounded-lge bg-white px-3.5 py-3 text-shark drop-shadow-filter-dropdown">
+								<div class="absolute left-1/2 top-[calc(100%+1rem)] z-40 hidden w-60 -translate-x-1/2 rounded-lge bg-white px-3.5 py-3 text-shark drop-shadow-filter-dropdown" data-filter="3">
 									<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -294,7 +294,7 @@
 							<!-- Нове та б/в -->
 							<div class="relative flex w-[8.75rem] flex-col">
 								<div class="mt-auto flex flex-col">
-									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="5">
 										<span class="text-sm">Нове та б/в</span>
 										<svg class="ml-auto h-1.5 w-3">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
@@ -303,20 +303,20 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="absolute left-0 top-[calc(100%+1rem)] z-30 hidden w-full rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown">
+								<div class="absolute left-0 top-[calc(100%+1rem)] z-40 hidden w-full rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="5">
 									<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
 
 									<ul class="scrollbar-custom-thin flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
 										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<span>Нове та б/в</span>
+											<a href="#">Нове та б/в</a>
 										</li>
 										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<span>Нове</span>
+											<a href="#">Нове</a>
 										</li>
 										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<span>Б/В</span>
+											<a href="#">Б/В</a>
 										</li>
 									</ul>
 								</div>
@@ -324,38 +324,38 @@
 							</div>
 							<!-- ./Нове та б/в -->
 
-								<!-- Опт та роздріб -->
-								<div class="relative flex w-[10.625rem] flex-col">
-									<div class="mt-auto flex flex-col">
-										<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
-											<span class="text-sm">Опт та роздріб</span>
-											<svg class="ml-auto h-1.5 w-3">
-												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-											</svg>
-										</button>
-									</div>
-	
-									<!-- dropdown -->
-									<div class="absolute left-0 top-[calc(100%+1rem)] z-30 hidden w-full rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown">
-										<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
-											<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
+							<!-- Опт та роздріб -->
+							<div class="relative flex w-[10.625rem] flex-col">
+								<div class="mt-auto flex flex-col">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-3.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="4">
+										<span class="text-sm">Опт та роздріб</span>
+										<svg class="ml-auto h-1.5 w-3">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 										</svg>
-	
-										<ul class="scrollbar-custom-thin flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-												<span>Опт та роздріб</span>
-											</li>
-											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-												<span>Опт</span>
-											</li>
-											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-												<span>Роздріб</span>
-											</li>
-										</ul>
-									</div>
-									<!-- ./dropdown -->
+									</button>
 								</div>
-								<!-- ./Опт та роздріб -->
+
+								<!-- dropdown -->
+								<div class="absolute left-0 top-[calc(100%+1rem)] z-40 hidden w-full rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="4">
+									<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
+									</svg>
+
+									<ul class="scrollbar-custom-thin flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+											<a href="#">Опт та роздріб</a>
+										</li>
+										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+											<a href="#">Опт</a>
+										</li>
+										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+											<a href="#">Роздріб</a>
+										</li>
+									</ul>
+								</div>
+								<!-- ./dropdown -->
+							</div>
+							<!-- ./Опт та роздріб -->
 						</div>
 						<!-- ./filters dropdown-->
 
@@ -403,5 +403,6 @@
 		<!-- ./filters mobile -->
 
 		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+		
 	</body>
 </html>

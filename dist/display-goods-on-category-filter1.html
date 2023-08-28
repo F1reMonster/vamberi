@@ -193,26 +193,6 @@
 									</button>
 
 									<!-- dropdown -->
-									<!-- <div class="absolute left-1/2 top-0 z-30 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-2 pl-2.5 pr-1 text-shark" data-filter="20">
-										<div class="flex items-center pr-1.5">
-											<a href="#" class="line-clamp-1 text-ellipsis pr-4 text-sm transition ease-in hover:text-lavender-purple">Нове та б/в</a>
-											<svg class="ml-auto h-1.5 w-3 flex-shrink-0 rotate-180 fill-shark">
-												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-											</svg>
-										</div>
-
-										<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-[8.125rem] flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-												<a href="#" class="">Нове</a>
-											</li>
-											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-												<a href="#" class="">Б/У</a>
-											</li>
-										</ul> -->
-									<!-- </div> -->
-									<!-- ./dropdown -->
-
-									<!-- dropdown -->
 									<div class="absolute left-1/2 top-[calc(100%+1rem)] z-30 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="20">
 										<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
@@ -232,6 +212,7 @@
 									<!-- ./dropdown -->
 								</div>
 								<!-- нове, б/в -->
+								
 								<!-- Роздріб, опт -->
 								<div class="relative w-[10.625rem]">
 									<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 bg-white px-3.5 py-2 transition ease-in lg:hover:border-lavender-purple" data-filter="21">
@@ -242,25 +223,6 @@
 									</button>
 
 									<!-- dropdown -->
-									<!-- <div class="absolute left-1/2 top-0 z-30 hidden w-full -translate-x-1/2 rounded-lge border border-lavender-purple/50 bg-white py-2 pl-2.5 pr-1 text-shark" data-filter="21">
-										<div class="flex items-center pr-1.5">
-											<a href="#" class="line-clamp-1 text-ellipsis pr-4 text-sm transition ease-in hover:text-lavender-purple">Опт та роздріб</a>
-											<svg class="ml-auto h-1.5 w-3 flex-shrink-0 rotate-180 fill-shark">
-												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-											</svg>
-										</div>
-
-										<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-[8.125rem] flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-											<li>
-												<a href="#" class="transition ease-in hover:text-lavender-purple">Опт</a>
-											</li>
-											<li>
-												<a href="#" class="transition ease-in hover:text-lavender-purple">Роздріб</a>
-											</li>
-										</ul>
-									</div> -->
-
-
 									<div class="absolute left-1/2 top-[calc(100%+1rem)] z-30 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown" data-filter="21">
 										<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 -translate-x-1/2 fill-white">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
@@ -4943,46 +4905,8 @@
 </footer>
 <!-- ./footer -->
 
-
-
-		<script>
-			// Отримуємо всі кнопки та фільтри за допомогою атрибута data-filter
-			const buttons = document.querySelectorAll("button[data-filter]");
-			const filters = document.querySelectorAll("div[data-filter]");
-
-			// Додаємо обробник подій для кожної кнопки
-			buttons.forEach((button) => {
-				button.addEventListener("click", (event) => {
-					event.stopPropagation(); // Зупиняємо подію від поширення на дочірні елементи кнопки
-					// Отримуємо значення атрибута data-filter кнопки, яка була натиснута
-					const filterValue = button.getAttribute("data-filter");
-
-					// Ітеруємося через всі фільтри і приховуємо ті, які не відповідають обраному фільтру
-					filters.forEach((filter) => {
-						if (filter.getAttribute("data-filter") === filterValue) {
-							filter.classList.remove("hidden");
-						} else {
-							filter.classList.add("hidden");
-						}
-					});
-				});
-			});
-
-			// Додаємо обробник подій для кожного фільтра, щоб закривати фільтр при кліку на нього
-			// filters.forEach((filter) => {
-			// 	filter.addEventListener("click", () => {
-			// 		filter.classList.add("hidden");
-			// 	});
-			// });
-
-			// Додаємо обробник подій на документ, щоб при кліку поза фільтрами і кнопками фільтр закривався
-			document.addEventListener("click", (event) => {
-				filters.forEach((filter) => {
-					if (!filter.contains(event.target)) {
-						filter.classList.add("hidden");
-					}
-				});
-			});
-		</script>
+<!-- scripts -->
+<script src="js/app.js"></script>
+<!-- ./scripts -->
 	</body>
 </html>
