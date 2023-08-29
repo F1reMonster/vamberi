@@ -48,4 +48,69 @@ window.addEventListener("DOMContentLoaded", () => {
 			}
 		});
 	});
+
+	// show more seller-my-goods.html mobile
+	
+	const parentShowMoreAll = document.querySelectorAll('[data-item="parent"]');
+	
+
+	parentShowMoreAll.forEach((parentElement) => {
+		
+		const btnShowMore = parentElement.querySelector('[data-item="show-more"]');
+		const codeElement = parentElement.querySelector('[data-item="code"]');
+		const categoryElement = parentElement.querySelector('[data-item="category"]');
+		const statElement = parentElement.querySelector('[data-item="stat"]');
+		const actionElement = parentElement.querySelector('[data-item="action"]');
+
+		btnShowMore.addEventListener("click", function () {
+			const svgBtnShowMore = btnShowMore.querySelector("svg");
+
+			codeElement.classList.toggle("hidden");
+			categoryElement.classList.toggle("sm:flex");
+			categoryElement.classList.toggle("flex");
+			categoryElement.classList.toggle("hidden");
+			statElement.classList.toggle("sm:flex");
+			statElement.classList.toggle("flex");
+			statElement.classList.toggle("hidden");
+			actionElement.classList.toggle("sm:flex");
+			actionElement.classList.toggle("flex");
+			actionElement.classList.toggle("hidden");
+			svgBtnShowMore.classList.toggle("rotate-x-180");
+		});
+	});
+
+	window.addEventListener("resize", function () {
+		const btnShowMoreAll = document.querySelectorAll('[data-item="show-more"]');
+		const codeElementAll = document.querySelectorAll('[data-item="code"]');
+		const categoryElementAll = document.querySelectorAll('[data-item="category"]');
+		const statElementAll = document.querySelectorAll('[data-item="stat"]');
+		const actionElementAll = document.querySelectorAll('[data-item="action"]');
+
+		btnShowMoreAll.forEach((item) => {
+			item.querySelector("svg").classList.remove("rotate-x-180");
+		});
+		codeElementAll.forEach((item) => {
+			// item.classList.add('sm:flex');
+			item.classList.add("hidden");
+		});
+		statElementAll.forEach((item) => {
+			item.classList.add("sm:flex");
+			item.classList.remove("flex");
+			item.classList.add("hidden");
+		});
+		actionElementAll.forEach((item) => {
+			item.classList.add("sm:flex");
+			item.classList.remove("flex");
+			item.classList.add("hidden");
+		});
+		categoryElementAll.forEach((item) => {
+			item.classList.add("sm:flex");
+			item.classList.remove("flex");
+			item.classList.add("hidden");
+		});
+
+		filters.forEach((item) => {
+			item.classList.add('hidden')
+		})
+	});
 });

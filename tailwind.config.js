@@ -5,6 +5,7 @@ const allPlugins = {
 	forms: require("@tailwindcss/forms"),
 	containerQueries: require("@tailwindcss/container-queries"),
 	groupPeerChecked: require("@tushargugnani/tailwind-group-peer-checked"),
+	plugin3d: require('tailwindcss-3d')
 };
 
 const plugins = Object.keys(allPlugins)
