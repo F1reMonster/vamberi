@@ -1076,6 +1076,15 @@ section {
 .z-\[9999\] {
   z-index: 9999;
 }
+.z-\[\] {
+  z-index: ;
+}
+.z-\[8\] {
+  z-index: 8;
+}
+.z-\[9\] {
+  z-index: 9;
+}
 .-order-1 {
   order: -1;
 }
@@ -4814,6 +4823,12 @@ section {
   }
   .md\:w-auto {
     width: auto;
+  }
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+  .md\:w-full {
+    width: 100%;
   }
   .md\:max-w-\[14\.5rem\] {
     max-width: 14.5rem;
