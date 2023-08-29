@@ -131,6 +131,7 @@ module.exports = {
 				custom: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25)",
 				lavender: "0px 0.25rem 0.25rem 0px rgba(139, 122, 168, 0.6)",
 				card: "0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25), 0 0 0 0.0625rem #999494",
+				sticky: "0px -0.10rem 0.5rem 0px rgba(0,0,0,0.2);",
 				white: "0 0 0 1px #fff",
 				"dusty-gray": "0 0 0 1px #999494",
 				"dusty-gray-mid": "0 0 0 0.5px #999494",

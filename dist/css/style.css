@@ -869,9 +869,6 @@ section {
 .pointer-events-none {
   pointer-events: none;
 }
-.visible {
-  visibility: visible;
-}
 .static {
   position: static;
 }
@@ -1809,9 +1806,6 @@ section {
 .w-\[3px\] {
   width: 3px;
 }
-.w-\[4\.4375rem\] {
-  width: 4.4375rem;
-}
 .w-\[4\.625rem\] {
   width: 4.625rem;
 }
@@ -1894,8 +1888,11 @@ section {
 .w-screen {
   width: 100vw;
 }
-.w-\[5rem\] {
-  width: 5rem;
+.w-\[16\.5rem\] {
+  width: 16.5rem;
+}
+.w-\[150px\] {
+  width: 150px;
 }
 .min-w-\[1\.25rem\] {
   min-width: 1.25rem;
@@ -2053,6 +2050,9 @@ section {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.flex-row {
+  flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
@@ -2239,9 +2239,6 @@ section {
 }
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-.overflow-y-visible {
-  overflow-y: visible;
 }
 .overscroll-auto {
   overscroll-behavior: auto;
@@ -3030,11 +3027,8 @@ section {
 .pt-9 {
   padding-top: 2.25rem;
 }
-.pb-40 {
-  padding-bottom: 10rem;
-}
-.pb-48 {
-  padding-bottom: 12rem;
+.pr-3\.5 {
+  padding-right: 0.875rem;
 }
 .text-left {
   text-align: left;
@@ -3386,6 +3380,11 @@ section {
 .shadow-radio-modal {
   --tw-shadow: 0 0 0 2px #fff;
   --tw-shadow-colored: 0 0 0 2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-sticky {
+  --tw-shadow: 0px -0.10rem 0.5rem 0px rgba(0,0,0,0.2);;
+  --tw-shadow-colored: 0px -0.10rem 0.5rem 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-cerulean {
@@ -4641,14 +4640,14 @@ section {
   .sm\:pb-2 {
     padding-bottom: 0.5rem;
   }
+  .sm\:pb-48 {
+    padding-bottom: 12rem;
+  }
   .sm\:pb-5 {
     padding-bottom: 1.25rem;
   }
   .sm\:pt-5 {
     padding-top: 1.25rem;
-  }
-  .sm\:pb-48 {
-    padding-bottom: 12rem;
   }
   .sm\:text-left {
     text-align: left;
@@ -4740,6 +4739,9 @@ section {
   }
   .md\:order-1 {
     order: 1;
+  }
+  .md\:order-none {
+    order: 0;
   }
   .md\:mb-4 {
     margin-bottom: 1rem;
@@ -4854,6 +4856,12 @@ section {
   }
   .md\:w-auto {
     width: auto;
+  }
+  .md\:w-\[10\.625rem\] {
+    width: 10.625rem;
+  }
+  .md\:w-\[16\.5rem\] {
+    width: 16.5rem;
   }
   .md\:max-w-\[14\.5rem\] {
     max-width: 14.5rem;

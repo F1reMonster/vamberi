@@ -343,34 +343,146 @@
 <!-- ./info banner  -->
 </div>
 
+					<div class="mt-6 text-lg font-medium">Мої продажі</div>
 					<div class="mt-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-						<div class="text-lg font-medium">Мої продажі</div>
-						<div class="flex items-center gap-9">
-							<label class="hidden cursor-pointer items-center gap-2 lg:flex">
-								<div class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md shadow-dusty-gray-mid">
-									<input type="checkbox" name="" class="peer hidden" />
+						<div class="flex flex-col gap-4.5 md:flex-row md:items-center">
+							<!-- status  -->
+							<div class="order-3 flex items-center gap-4.5 md:order-none">
+								<div class="flex-shrink-0 text-sm font-medium md:hidden">Статус</div>
+								<div class="relative w-full md:w-[16.5rem]">
+									<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 bg-white px-2.5 py-2 transition ease-in" data-filter="1">
+										<span class="text-sm">Всі <span class="font-medium">3773 шт.</span></span>
+										<svg class="ml-auto h-1.5 w-3">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+										</svg>
+									</button>
 
-									<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-									</svg>
+									<!-- dropdown -->
+									<div class="absolute left-1/2 top-0 z-40 hidden w-full rounded-lge border border-lavender-purple/50 bg-white py-2 pl-2.5 pr-0.5 text-shark -translate-x-1/2" data-filter="1">
+										<div class="flex items-center pr-2 text-sm">
+											<span class="">Статус</span>
+											<svg class="ml-auto h-1.5 w-3 cursor-pointer rotate-x-180">
+												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+											</svg>
+										</div>
+
+										<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Всі <span class="font-medium">3773 шт.</span></a>
+											</li>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Нові замовлення <span class="font-medium">45 шт.</span></a>
+											</li>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Очікує на підтвердження <span class="font-medium">5 шт.</span></a>
+											</li>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Очікує на відправку <span class="font-medium">5 шт.</span></a>
+											</li>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">На шляху до отримувача <span class="font-medium">45 шт.</span></a>
+											</li>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">У відділені <span class="font-medium">5 шт.</span></a>
+											</li>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Отримано <span class="font-medium">1 шт.</span></a>
+											</li>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Відмова від вантажу <span class="font-medium">45 шт.</span></a>
+											</li>
+											<li>
+												<a href="#" class="transition ease-in hover:text-lavender-purple">Скасовано <span class="font-medium">5 шт.</span></a>
+											</li>
+										</ul>
+									</div>
+									<!-- ./dropdown -->
 								</div>
-								<div class="text-sm text-tundora">Всі <span class="font-medium">3773 шт.</span></div>
-							</label>
+							</div>
+							<!-- ./status  -->
 
-							<div class="trasition flex h-9 w-full items-center justify-between gap-4 rounded-lge border border-lavender-purple/50 bg-white px-3 py-1 text-left text-xs transition ease-in sm:text-sm md:w-[20.625rem]">
-								<input type="text" class="flex-grow border-0 p-0 text-xs placeholder-dusty-gray ring-0 focus:ring-0" placeholder="Знайти замовлення" />
-								<button class="btn-primary flex flex-shrink-0 items-center gap-2.5 rounded-lge px-2.5 py-1 text-xs">
-									<span>Знайти</span>
-									<svg class="h-3 w-3 flex-shrink-0 fill-white">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
+							<!-- нове, б/в -->
+							<div class="relative order-1 md:order-none md:w-[9.375rem]">
+								<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 bg-white px-2.5 py-2 transition ease-in lg:hover:border-lavender-purple" data-filter="20">
+									<span class="text-sm">Стан</span>
+									<svg class="ml-auto h-1.5 w-3">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 									</svg>
 								</button>
+
+								<!-- dropdown -->
+								<div class="absolute left-1/2 top-0 z-40 hidden w-full rounded-lge border border-lavender-purple/50 bg-white py-2 pl-2.5 pr-0.5 text-shark -translate-x-1/2" data-filter="20">
+									<div class="flex items-center pr-2 text-sm">
+										<span class="">Стан</span>
+										<svg class="ml-auto h-1.5 w-3 cursor-pointer rotate-x-180">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+										</svg>
+									</div>
+
+									<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+										<li>
+											<a href="#" class="transition ease-in hover:text-lavender-purple">Нове та б/в</a>
+										</li>
+										<li>
+											<a href="#" class="transition ease-in hover:text-lavender-purple">Нове</a>
+										</li>
+										<li>
+											<a href="#" class="transition ease-in hover:text-lavender-purple">Б/в</a>
+										</li>
+									</ul>
+								</div>
+								<!-- ./dropdown -->
 							</div>
+							<!-- нове, б/в -->
+
+							<!-- Роздріб, опт -->
+							<div class="relative order-2 md:order-none md:w-[10.625rem]">
+								<button class="flex h-full w-full items-center rounded-lge border border-lavender-purple/50 bg-white px-2.5 py-2 transition ease-in lg:hover:border-lavender-purple" data-filter="21">
+									<span class="text-sm">Опт та роздріб</span>
+									<svg class="ml-auto h-1.5 w-3">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+									</svg>
+								</button>
+
+								<!-- dropdown -->
+								<div class="absolute left-1/2 top-0 z-40 hidden w-full rounded-lge border border-lavender-purple/50 bg-white py-2 pl-2.5 pr-0.5 text-shark -translate-x-1/2" data-filter="21">
+									<div class="flex items-center pr-2 text-sm">
+										<span class="">Назва фільтру</span>
+										<svg class="ml-auto h-1.5 w-3 cursor-pointer rotate-x-180">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+										</svg>
+									</div>
+
+									<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
+										<li>
+											<a href="#" class="transition ease-in hover:text-lavender-purple">Опт та роздріб</a>
+										</li>
+										<li>
+											<a href="#" class="transition ease-in hover:text-lavender-purple">Опт</a>
+										</li>
+										<li>
+											<a href="#" class="transition ease-in hover:text-lavender-purple">Роздріб</a>
+										</li>
+									</ul>
+								</div>
+								<!-- ./dropdown -->
+							</div>
+							<!-- Роздріб, опт -->
+						</div>
+
+						<div class="trasition -order-1 flex h-9 w-full items-center justify-between gap-4 rounded-lge border border-lavender-purple/50 bg-white px-3 py-1 text-left text-sm transition ease-in lg:order-none lg:w-[20.625rem]">
+							<input type="text" class="flex-grow border-0 p-0 text-sm placeholder-dusty-gray ring-0 focus:ring-0" placeholder="Знайти замовлення" />
+							<button class="btn-primary flex flex-shrink-0 items-center gap-2.5 rounded-lge px-2.5 py-1 text-sm">
+								<span>Знайти</span>
+								<svg class="h-3 w-3 flex-shrink-0 fill-white">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
+								</svg>
+							</button>
 						</div>
 					</div>
 
 					<!-- status desktop -->
-					<div class="auto-rows-[minmax(0px, auto)] mt-5 hidden grid-cols-4 gap-y-3 text-tundora lg:grid lg:gap-x-1 xl:gap-x-6">
+					<!-- <div class="auto-rows-[minmax(0px, auto)] mt-5 hidden grid-cols-4 gap-y-3 text-tundora lg:grid lg:gap-x-1 xl:gap-x-6">
 						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">Нові замовлення <span class="font-medium">45 шт.</span></div>
 						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">Очікує на підтвердження <span class="font-medium">5 шт.</span></div>
 						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">Очікує на відправку <span class="font-medium">5 шт.</span></div>
@@ -379,45 +491,8 @@
 						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">Отримано <span class="font-medium">1 шт.</span></div>
 						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">Відмова від вантажу <span class="font-medium">45 шт.</span></div>
 						<div class="rounded-lge bg-white p-2 text-center text-sm leading-5 shadow-lavender-purple-thin">Скасовано <span class="font-medium">5 шт.</span></div>
-					</div>
+					</div> -->
 					<!-- ./status desktop -->
-
-					<!-- status mobile -->
-					<div class="mt-5 flex items-center gap-4.5 lg:hidden">
-						<div class="text-sm font-medium">Статус</div>
-						<div class="relative w-[264px]">
-							<button class="flex h-full w-full items-center rounded-lge bg-white px-2.5 py-2 shadow-lavender-purple-thin-inset transition ease-in">
-								<span class="text-sm">Отримано</span>
-								<svg class="ml-auto h-1.5 w-3">
-									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-								</svg>
-							</button>
-
-							<!-- dropdown -->
-							<div class="absolute left-1/2 top-0 z-40 hidden w-full -translate-x-1/2 rounded-lge bg-white py-3 pl-2.5 pr-0.5 text-shark shadow-lavender-purple-thin-inset">
-								<div class="flex items-center pr-2 text-sm">
-									<span class="">Отримано</span>
-									<svg class="ml-auto h-1.5 w-3 rotate-180">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-									</svg>
-								</div>
-
-								<ul class="scrollbar-custom-thin mb-0.5 mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm">
-									<li>Всі <span class="font-medium">3773 шт.</span></li>
-									<li>Нові замовлення <span class="font-medium">45 шт.</span></li>
-									<li>Очікує на підтвердження <span class="font-medium">5 шт.</span></li>
-									<li>Очікує на відправку <span class="font-medium">5 шт.</span></li>
-									<li>На шляху до отримувача <span class="font-medium">45 шт.</span></li>
-									<li>У відділені <span class="font-medium">5 шт.</span></li>
-									<li>Отримано <span class="font-medium">1 шт.</span></li>
-									<li>Відмова від вантажу <span class="font-medium">45 шт.</span></li>
-									<li>Скасовано <span class="font-medium">5 шт.</span></li>
-								</ul>
-							</div>
-							<!-- ./dropdown -->
-						</div>
-					</div>
-					<!-- ./status mobile -->
 
 					<div class="scrollbar-custom mt-7.5 overflow-auto">
 						<div class="sm:min-w-[68.75rem]">
@@ -566,7 +641,7 @@
 
 		<!-- sticky menu -->
 
-<div class="sticky inset-x-0 z-50 h-12.5 bottom-0 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden" id="sticky">
+<div class="sticky inset-x-0 z-50 h-12.5 bottom-0 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden shadow-sticky" id="sticky">
 	<div class="flex items-center justify-between gap-x-3">
 		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua">
 			<div class="flex shrink-0 flex-col items-center gap-1">
