@@ -76,6 +76,44 @@ window.addEventListener("DOMContentLoaded", () => {
 			svgBtnShowMore.classList.toggle("rotate-x-180");
 		});
 	});
+
+	const btnDropDowns = document.querySelectorAll("button[data-dropdown]");
+	const divDropDonwns = document.querySelectorAll("div[data-dropdown]");
+
+	btnDropDowns.forEach((button) => {
+		button.addEventListener("click", (event) => {
+			event.stopPropagation(); // Зупиняємо подію від поширення на дочірні елементи кнопки
+
+			const filterValue = button.getAttribute("data-dropdown");
+			const svgBtn = button.querySelector("svg");
+
+			divDropDonwns.forEach((filter) => {
+				if (filter.getAttribute("data-dropdown") === filterValue) {
+					filter.classList.toggle("hidden");
+					svgBtn.classList.toggle("rotate-x-180");
+				}
+			});
+		});
+	});
+
+	const labelRadios = document.querySelectorAll("label[data-radio]");
+	const divRadios = document.querySelectorAll("div[data-radio]");
+
+	labelRadios.forEach((label) => {
+		label.addEventListener("click", (event) => {
+			event.stopPropagation(); // Зупиняємо подію від поширення на дочірні елементи кнопки
+
+			const radioValue = label.getAttribute("data-radio");
+
+			divRadios.forEach((filter) => {
+				if (filter.getAttribute("data-radio") === radioValue) {
+					filter.classList.remove("hidden");
+				} else {
+					filter.classList.add("hidden");
+				}
+			});
+		});
+	});
 });
 
 window.addEventListener("resize", function () {
@@ -96,7 +134,6 @@ window.addEventListener("resize", function () {
 		item.querySelector("svg").classList.remove("rotate-x-180");
 	});
 	codeElementAll.forEach((item) => {
-		// item.classList.add('sm:flex');
 		item.classList.add("hidden");
 	});
 	statElementAll.forEach((item) => {

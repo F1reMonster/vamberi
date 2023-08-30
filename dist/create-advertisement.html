@@ -557,21 +557,21 @@
 									<div class="hidden w-full flex-col gap-3.5 rounded-lge border border-lavender-purple/50 bg-white px-4 py-3.5 text-sm text-tundora transition ease-in lg:flex">
 										<div class="text-center text-base font-medium">Умови продажу</div>
 
-										<label class="flex cursor-pointer items-center gap-4">
+										<label class="flex cursor-pointer items-center gap-4" data-radio="radio-1">
 											<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray/50">
-												<input type="radio" name="termsSale" class="peer hidden" checked />
+												<input type="radio" name="termsSale" class="peer hidden"  />
 												<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
 											</div>
 											<div class="text-sm text-tundora">Роздріб та опт</div>
 										</label>
-										<label class="flex cursor-pointer items-center gap-4">
+										<label class="flex cursor-pointer items-center gap-4" data-radio="radio-2">
 											<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray/50">
 												<input type="radio" name="termsSale" class="peer hidden" />
 												<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
 											</div>
 											<div class="text-sm text-tundora">Роздріб</div>
 										</label>
-										<label class="flex cursor-pointer items-center gap-4">
+										<label class="flex cursor-pointer items-center gap-4" data-radio="radio-3">
 											<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray/50">
 												<input type="radio" name="termsSale" class="peer hidden" />
 												<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
@@ -580,7 +580,7 @@
 										</label>
 
 										<!-- Роздріб та опт -->
-										<div class="">
+										<div class="hidden" data-radio="radio-1">
 											<div>Ваша роздрібна ціна</div>
 											<div class="mt-2.5 flex max-w-[18.75rem] items-center justify-between">
 												<input type="text" class="ring:0 w-[5.5rem] rounded-lge border border-dusty-gray/50 px-4 py-2 focus:ring-0" value="50 грн" />
@@ -606,7 +606,7 @@
 										<!-- ./Роздріб та опт -->
 
 										<!-- Роздріб -->
-										<div class="hidden">
+										<div class="hidden" data-radio="radio-2">
 											<div>Ваша роздрібна ціна</div>
 											<div class="mt-2.5 flex max-w-[18.75rem] items-center justify-between">
 												<input type="text" class="ring:0 w-[5.5rem] rounded-lge border border-dusty-gray/50 px-4 py-2 focus:ring-0" value="50 грн" />
@@ -621,7 +621,7 @@
 										<!-- ./Роздріб -->
 
 										<!-- Опт -->
-										<div class="hidden">
+										<div class="hidden" data-radio="radio-3">
 											<div>Ваша гуртова ціна</div>
 											<div class="mt-2.5 flex max-w-[18.75rem] items-center justify-between">
 												<input type="text" class="ring:0 w-[5.5rem] rounded-lge border border-dusty-gray/50 px-4 py-2 focus:ring-0" value="50 грн" />
@@ -641,7 +641,7 @@
 									<div class="lg:hidden">
 										<div class="mt-5 text-base font-medium sm:text-lg">Тип продажу і ціна</div>
 										<div class="relative mt-3.5">
-											<button class="relative flex w-full items-center justify-between rounded-lge border border-lavender-purple/50 bg-white px-2.5 py-2">
+											<button class="relative flex w-full items-center justify-between rounded-lge border border-lavender-purple/50 bg-white px-2.5 py-2" data-filter="filter-1">
 												<div class="line-clamp-1 text-ellipsis pr-5 text-left text-sm leading-5 text-dusty-gray">Роздріб, 00грн</div>
 												<svg class="h-1.5 w-3 fill-dusty-gray">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
@@ -649,14 +649,14 @@
 											</button>
 
 											<!-- dropdown -->
-											<div class="hidden"><div class="absolute top-0 z-30 w-full rounded-lge bg-white text-shark shadow-md">
-	<div class="relative w-full p-3">
+											<div class="hidden" data-filter="filter-1"><div class="absolute top-0 z-30 w-full rounded-lge bg-white text-shark shadow-md">
+	<div class="relative flex w-full items-center justify-between px-2.5 py-2">
 		<div class="line-clamp-1 text-ellipsis pr-5 text-left text-sm text-dusty-gray">Роздріб, 00грн</div>
-		<svg class="absolute right-3 top-3 h-4 w-4 rotate-180 fill-dusty-gray">
+		<svg class="h-1.5 w-3 flex-shrink-0 fill-dusty-gray rotate-x-180">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 		</svg>
 	</div>
-	<div class="mx-auto w-[290px] p-5">
+	<div class="mx-auto w-[18.125rem] p-5">
 		<div class="flex flex-col gap-4">
 			<button class="btn-primary-light flex h-11 w-full items-center justify-center text-sm text-shark">Роздріб та опт</button>
 			<button class="btn-primary-light flex h-11 w-full items-center justify-center text-sm text-shark">Роздріб</button>
@@ -787,136 +787,143 @@
 							<!-- color -->
 							<div class="mt-5">
 								<div class="w-full rounded-lge border border-lavender-purple/50 bg-white p-2.5 text-sm text-tundora transition ease-in lg:py-3.5 lg:pl-4 lg:pr-1">
-									<div class="text-center text-lg font-medium">Колір</div>
-									<ul class="scrollbar-custom-thin mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-base">
-										<!-- Чорний -->
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<label class="flex cursor-pointer items-center gap-2">
-												<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-													<input type="checkbox" name="" class="peer hidden" />
+									<button class="flex w-full items-center justify-between lg:pr-3" data-dropdown="dropdown-1">
+										<div class="text-sm font-medium sm:text-base">Колір</div>
+										<svg class="h-1.5 w-3 transition ease-in">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+										</svg>
+									</button>
+									<div class="hidden" data-dropdown="dropdown-1">
+										<ul class="scrollbar-custom-thin mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-sm lg:text-base">
+											<!-- Чорний -->
+											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+												<label class="flex cursor-pointer items-center gap-2">
+													<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+														<input type="checkbox" name="" class="peer hidden" />
 
-													<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-													</svg>
-												</div>
-												<div class="h-5.5 w-5.5 rounded-full bg-black"></div>
+														<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+															<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+														</svg>
+													</div>
+													<div class="h-5.5 w-5.5 rounded-full bg-black"></div>
 
-												<div class="text-xs text-shark lg:text-base">Чорний <span class="text-dove-gray">724</span></div>
-											</label>
-										</li>
+													<div class="text-shark">Чорний <span class="text-dove-gray">724</span></div>
+												</label>
+											</li>
 
-										<!-- білий -->
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<label class="flex cursor-pointer items-center gap-2">
-												<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-													<input type="checkbox" name="" class="peer hidden" />
+											<!-- білий -->
+											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+												<label class="flex cursor-pointer items-center gap-2">
+													<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+														<input type="checkbox" name="" class="peer hidden" />
 
-													<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-													</svg>
-												</div>
-												<div class="h-5.5 w-5.5 rounded-full border border-dusty-gray/50 bg-white"></div>
+														<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+															<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+														</svg>
+													</div>
+													<div class="h-5.5 w-5.5 rounded-full border border-dusty-gray/50 bg-white"></div>
 
-												<div class="text-xs text-shark lg:text-base">Білий <span class="text-dove-gray">2 724</span></div>
-											</label>
-										</li>
+													<div class="text-shark">Білий <span class="text-dove-gray">2 724</span></div>
+												</label>
+											</li>
 
-										<!-- бежевий -->
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<label class="flex cursor-pointer items-center gap-2">
-												<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-													<input type="checkbox" name="" class="peer hidden" />
+											<!-- бежевий -->
+											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+												<label class="flex cursor-pointer items-center gap-2">
+													<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+														<input type="checkbox" name="" class="peer hidden" />
 
-													<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-													</svg>
-												</div>
-												<div class="h-5.5 w-5.5 rounded-full bg-parchment"></div>
+														<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+															<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+														</svg>
+													</div>
+													<div class="h-5.5 w-5.5 rounded-full bg-parchment"></div>
 
-												<div class="text-xs text-shark lg:text-base">Бежевий <span class="text-dove-gray">980</span></div>
-											</label>
-										</li>
+													<div class="text-shark">Бежевий <span class="text-dove-gray">980</span></div>
+												</label>
+											</li>
 
-										<!-- блакитний -->
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<label class="flex cursor-pointer items-center gap-2">
-												<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-													<input type="checkbox" name="" class="peer hidden" />
+											<!-- блакитний -->
+											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+												<label class="flex cursor-pointer items-center gap-2">
+													<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+														<input type="checkbox" name="" class="peer hidden" />
 
-													<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-													</svg>
-												</div>
-												<div class="h-5.5 w-5.5 rounded-full bg-jordy-blue"></div>
+														<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+															<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+														</svg>
+													</div>
+													<div class="h-5.5 w-5.5 rounded-full bg-jordy-blue"></div>
 
-												<div class="text-xs text-shark lg:text-base">Блакитний <span class="text-dove-gray">1 026</span></div>
-											</label>
-										</li>
+													<div class="text-shark">Блакитний <span class="text-dove-gray">1 026</span></div>
+												</label>
+											</li>
 
-										<!-- жовтий -->
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<label class="flex cursor-pointer items-center gap-2">
-												<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-													<input type="checkbox" name="" class="peer hidden" />
+											<!-- жовтий -->
+											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+												<label class="flex cursor-pointer items-center gap-2">
+													<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+														<input type="checkbox" name="" class="peer hidden" />
 
-													<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-													</svg>
-												</div>
-												<div class="h-5.5 w-5.5 rounded-full bg-koromiko"></div>
+														<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+															<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+														</svg>
+													</div>
+													<div class="h-5.5 w-5.5 rounded-full bg-koromiko"></div>
 
-												<div class="text-xs text-shark lg:text-base">Жовтий <span class="text-dove-gray">175</span></div>
-											</label>
-										</li>
+													<div class="text-shark">Жовтий <span class="text-dove-gray">175</span></div>
+												</label>
+											</li>
 
-										<!-- зелений -->
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<label class="flex cursor-pointer items-center gap-2">
-												<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-													<input type="checkbox" name="" class="peer hidden" />
+											<!-- зелений -->
+											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+												<label class="flex cursor-pointer items-center gap-2">
+													<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+														<input type="checkbox" name="" class="peer hidden" />
 
-													<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-													</svg>
-												</div>
-												<div class="h-5.5 w-5.5 rounded-full bg-fruit-salad"></div>
+														<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+															<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+														</svg>
+													</div>
+													<div class="h-5.5 w-5.5 rounded-full bg-fruit-salad"></div>
 
-												<div class="text-xs text-shark lg:text-base">Зелений <span class="text-dove-gray">104</span></div>
-											</label>
-										</li>
+													<div class="text-shark">Зелений <span class="text-dove-gray">104</span></div>
+												</label>
+											</li>
 
-										<!-- Червоний -->
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<label class="flex cursor-pointer items-center gap-2">
-												<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-													<input type="checkbox" name="" class="peer hidden" />
+											<!-- Червоний -->
+											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+												<label class="flex cursor-pointer items-center gap-2">
+													<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+														<input type="checkbox" name="" class="peer hidden" />
 
-													<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-													</svg>
-												</div>
-												<div class="h-5.5 w-5.5 rounded-full bg-punch"></div>
+														<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+															<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+														</svg>
+													</div>
+													<div class="h-5.5 w-5.5 rounded-full bg-punch"></div>
 
-												<div class="text-xs text-shark lg:text-base">Червоний <span class="text-dove-gray">1 104</span></div>
-											</label>
-										</li>
+													<div class="text-shark">Червоний <span class="text-dove-gray">1 104</span></div>
+												</label>
+											</li>
 
-										<!-- Помаранчевий -->
-										<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-											<label class="flex cursor-pointer items-center gap-2">
-												<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
-													<input type="checkbox" name="" class="peer hidden" />
+											<!-- Помаранчевий -->
+											<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
+												<label class="flex cursor-pointer items-center gap-2">
+													<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+														<input type="checkbox" name="" class="peer hidden" />
 
-													<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
-														<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
-													</svg>
-												</div>
-												<div class="h-5.5 w-5.5 rounded-full bg-coral"></div>
+														<svg class="h-4 w-4 fill-limeade opacity-0 transition ease-in peer-checked:opacity-100">
+															<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+														</svg>
+													</div>
+													<div class="h-5.5 w-5.5 rounded-full bg-coral"></div>
 
-												<div class="text-xs text-shark lg:text-base">Помаранчевий <span class="text-dove-gray">1 456</span></div>
-											</label>
-										</li>
-									</ul>
+													<div class="text-shark">Помаранчевий <span class="text-dove-gray">1 456</span></div>
+												</label>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 							<!-- ./color -->
@@ -958,39 +965,35 @@
 
 							<!-- габарити -->
 							<div class="mt-5">
-								<div class="hidden w-full rounded-lge border border-lavender-purple/50 bg-white p-4 text-sm text-tundora transition ease-in lg:block">
-									<div class="text-center text-sm font-medium sm:text-base">Габаритні розміри</div>
-									<label class="mt-4 flex flex-col">
-										<span class="text-sm sm:text-base">Ширина, см</span>
-										<input type="text" placeholder="Ширина, см" class="mt-3.5 w-full rounded-lge border border-dusty-gray/50 bg-white px-4 py-2.5 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
-									</label>
-									<label class="mt-3.5 flex flex-col">
-										<span class="text-sm sm:text-base">Висота, см</span>
-										<input type="text" placeholder="Висота, см" class="mt-3.5 w-full rounded-lge border border-dusty-gray/50 bg-white px-4 py-2.5 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
-									</label>
-									<label class="mt-3.5 flex flex-col">
-										<span class="text-sm sm:text-base">Довжина, см</span>
-										<input type="text" placeholder="Довжина, см" class="mt-3.5 w-full rounded-lge border border-dusty-gray/50 bg-white px-4 py-2.5 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
-									</label>
-									<label class="mt-3.5 flex flex-col">
-										<span class="text-sm sm:text-base">Вага, кг</span>
-										<input type="text" placeholder="Вага, кг" class="mt-3.5 w-full rounded-lge border border-dusty-gray/50 bg-white px-4 py-2.5 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
-									</label>
-								</div>
+								<div class="w-full rounded-lge border border-lavender-purple/50 bg-white p-2.5 lg:p-4 text-sm text-tundora transition ease-in">
+									<button class="flex w-full items-center justify-between" data-dropdown="dropdown-2">
+										<div class="text-sm font-medium sm:text-base">Габаритні розміри</div>
+										<svg class="h-1.5 w-3 transition ease-in">
+											<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
+										</svg>
+									</button>
 
-								<!-- mobile -->
-								<div class="lg:hidden">
-									<div class="text-base font-medium sm:text-lg">Вкажіть габаритні розміри</div>
-									<div class="mt-3.5">
-										<button class="relative w-full rounded-lge border border-lavender-purple/50 bg-white px-2.5 py-2">
-											<div class="line-clamp-1 text-ellipsis pr-5 text-left text-sm leading-5 text-dusty-gray">Габаритні розміри</div>
-											<svg class="absolute right-3 top-3 h-4 w-4 fill-dusty-gray">
-												<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-											</svg>
-										</button>
+									<div class="hidden text-sm" data-dropdown="dropdown-2">
+										<label class="mt-3 flex flex-col">
+											<span class="">Ширина, см</span>
+											<input type="text" placeholder="Ширина, см" class="mt-3.5 w-full rounded-lge border border-dusty-gray/50 bg-white px-4 py-2.5 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
+										</label>
+										<label class="mt-3.5 flex flex-col">
+											<span class="">Висота, см</span>
+											<input type="text" placeholder="Висота, см" class="mt-3.5 w-full rounded-lge border border-dusty-gray/50 bg-white px-4 py-2.5 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
+										</label>
+										<label class="mt-3.5 flex flex-col">
+											<span class="">Довжина, см</span>
+											<input type="text" placeholder="Довжина, см" class="mt-3.5 w-full rounded-lge border border-dusty-gray/50 bg-white px-4 py-2.5 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
+										</label>
+										<label class="mt-3.5 flex flex-col">
+											<span class="">Вага, кг</span>
+											<input type="text" placeholder="Вага, кг" class="mt-3.5 w-full rounded-lge border border-dusty-gray/50 bg-white px-4 py-2.5 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0" />
+										</label>
 									</div>
 								</div>
-								<!-- ./mobile -->
+
+								
 							</div>
 							<!-- габарити -->
 						</div>

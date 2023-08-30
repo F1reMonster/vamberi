@@ -3442,6 +3442,9 @@ section {
 .ease-linear {
   transition-timing-function: linear;
 }
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
   translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
@@ -6041,6 +6044,9 @@ section {
   }
   .lg\:pt-9 {
     padding-top: 2.25rem;
+  }
+  .lg\:pr-3 {
+    padding-right: 0.75rem;
   }
   .lg\:text-left {
     text-align: left;
