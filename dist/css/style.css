@@ -6030,6 +6030,15 @@ section {
   .lg\:pt-9 {
     padding-top: 2.25rem;
   }
+  .lg\:pr-4 {
+    padding-right: 1rem;
+  }
+  .lg\:pr-1 {
+    padding-right: 0.25rem;
+  }
+  .lg\:pl-4 {
+    padding-left: 1rem;
+  }
   .lg\:text-left {
     text-align: left;
   }
