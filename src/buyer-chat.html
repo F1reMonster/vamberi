@@ -49,7 +49,7 @@
 										<!-- search -->
 										<div class="relative mt-5">
 											<input type="text" class="h-9 w-full rounded-lge border-dusty-gray px-3 py-1 pr-10 text-sm ring-0 transition ease-in placeholder:text-dusty-gray focus:border-lavender-purple focus:ring-0 lg:h-auto lg:py-3.5 lg:pl-3.5" placeholder="Пошук по повідомленням" />
-											<button class="absolute right-1.5 top-1/2 flex h-7 -translate-y-1/2 items-center gap-1 rounded-lge bg-lavender-purple px-2.5 text-sm text-white lg:bg-transparent">
+											<button class="absolute right-1.5 top-1/2 flex h-7 items-center gap-1 rounded-lge bg-lavender-purple px-2.5 text-sm text-white -translate-y-1/2 lg:bg-transparent">
 												<span class="lg:hidden">Знайти</span>
 												<svg class="h-3.5 w-3.5 fill-white lg:h-5 lg:w-5 lg:fill-dusty-gray">
 													<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
@@ -320,7 +320,7 @@
 											<!-- chat area -->
 											<div class="mt-12.5 lg:mt-22">
 												<div class="h-24 w-full rounded-lge border border-lavender-purple bg-white p-2.5">
-													<div class="flex flex-col h-full">
+													<div class="flex h-full flex-col">
 														<div class="flex">
 															<textarea class="h-10 w-full resize-none border-0 bg-transparent p-0 align-bottom text-sm ring-0 placeholder:text-sm placeholder:text-dusty-gray focus:ring-0" placeholder="Ваше повідомлення..."></textarea>
 														</div>
@@ -365,6 +365,7 @@
 			</section>
 		</main>
 
-		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+		@@include('html/components/_sticky-menu.html')
+		<script src="js/app.js"></script>
 	</body>
 </html>

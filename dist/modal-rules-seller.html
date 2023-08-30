@@ -120,7 +120,7 @@
 
 				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800" title="Кошик">
 					<span class="flex h-9 w-9 items-center justify-center rounded-full bg-white lg:h-8.5 lg:w-8.5">
-						<svg class="hidden h-4 w-4 fill-lavender-purple transition ease-in group-hover:fill-purple-800 lg:h-5 lg:w-5 lg:block">
+						<svg class="hidden h-4 w-4 fill-lavender-purple transition ease-in group-hover:fill-purple-800 lg:block lg:h-5 lg:w-5">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#basket"></use>
 						</svg>
 						<svg class="h-4 w-4 fill-shark lg:hidden lg:h-5 lg:w-5">
@@ -719,7 +719,7 @@
  
 		<!-- sticky menu -->
 
-<div class="sticky inset-x-0 z-50 h-12.5 bottom-0 bg-white px-4 pb-1 pt-1.5 md:px-5 lg:hidden shadow-sticky" id="sticky">
+<div class="sticky inset-x-0 bottom-0 z-50 h-12.5 bg-white px-4 pb-1 pt-1.5 shadow-sticky md:px-5 lg:hidden" id="sticky">
 	<div class="flex items-center justify-between gap-x-3">
 		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua">
 			<div class="flex shrink-0 flex-col items-center gap-1">
@@ -765,17 +765,8 @@
 	</div>
 </div>
 
-<script>
-	// mobile chrome fix for sticky bottom-0
-	// We listen to the resize event
-	window.addEventListener("resize", () => {
-		// We execute the same script as before
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty("--vh", `${vh}px`);
-	});
-</script>
-
-<!-- ./sticky menu --> 
+<!-- ./sticky menu -->
+ 
 		<!-- footer -->
 <footer class="sticky bg-tundora py-6 text-white lg:py-12.5">
 	<div class="container">

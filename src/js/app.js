@@ -49,12 +49,10 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 
 	// show more seller-my-goods.html mobile
-	
+
 	const parentShowMoreAll = document.querySelectorAll('[data-item="parent"]');
-	
 
 	parentShowMoreAll.forEach((parentElement) => {
-		
 		const btnShowMore = parentElement.querySelector('[data-item="show-more"]');
 		const codeElement = parentElement.querySelector('[data-item="code"]');
 		const categoryElement = parentElement.querySelector('[data-item="category"]');
@@ -77,39 +75,46 @@ window.addEventListener("DOMContentLoaded", () => {
 			svgBtnShowMore.classList.toggle("rotate-x-180");
 		});
 	});
+});
 
-	window.addEventListener("resize", function () {
-		const btnShowMoreAll = document.querySelectorAll('[data-item="show-more"]');
-		const codeElementAll = document.querySelectorAll('[data-item="code"]');
-		const categoryElementAll = document.querySelectorAll('[data-item="category"]');
-		const statElementAll = document.querySelectorAll('[data-item="stat"]');
-		const actionElementAll = document.querySelectorAll('[data-item="action"]');
+window.addEventListener("resize", function () {
+	// mobile chrome fix for sticky bottom-0
+	// We listen to the resize event
+	// We execute the same script as before
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty("--vh", `${vh}px`);
+	// ===============================================================//
 
-		btnShowMoreAll.forEach((item) => {
-			item.querySelector("svg").classList.remove("rotate-x-180");
-		});
-		codeElementAll.forEach((item) => {
-			// item.classList.add('sm:flex');
-			item.classList.add("hidden");
-		});
-		statElementAll.forEach((item) => {
-			item.classList.add("sm:flex");
-			item.classList.remove("flex");
-			item.classList.add("hidden");
-		});
-		actionElementAll.forEach((item) => {
-			item.classList.add("sm:flex");
-			item.classList.remove("flex");
-			item.classList.add("hidden");
-		});
-		categoryElementAll.forEach((item) => {
-			item.classList.add("sm:flex");
-			item.classList.remove("flex");
-			item.classList.add("hidden");
-		});
+	const btnShowMoreAll = document.querySelectorAll('[data-item="show-more"]');
+	const codeElementAll = document.querySelectorAll('[data-item="code"]');
+	const categoryElementAll = document.querySelectorAll('[data-item="category"]');
+	const statElementAll = document.querySelectorAll('[data-item="stat"]');
+	const actionElementAll = document.querySelectorAll('[data-item="action"]');
 
-		filters.forEach((item) => {
-			item.classList.add('hidden')
-		})
+	btnShowMoreAll.forEach((item) => {
+		item.querySelector("svg").classList.remove("rotate-x-180");
+	});
+	codeElementAll.forEach((item) => {
+		// item.classList.add('sm:flex');
+		item.classList.add("hidden");
+	});
+	statElementAll.forEach((item) => {
+		item.classList.add("sm:flex");
+		item.classList.remove("flex");
+		item.classList.add("hidden");
+	});
+	actionElementAll.forEach((item) => {
+		item.classList.add("sm:flex");
+		item.classList.remove("flex");
+		item.classList.add("hidden");
+	});
+	categoryElementAll.forEach((item) => {
+		item.classList.add("sm:flex");
+		item.classList.remove("flex");
+		item.classList.add("hidden");
+	});
+
+	filters.forEach((item) => {
+		item.classList.add("hidden");
 	});
 });
