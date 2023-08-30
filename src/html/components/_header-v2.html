@@ -1,0 +1,69 @@
+<!-- header -->
+<header class="border-b border-b-dusty-gray/50">
+	<div class="container">
+		<!-- header bottom -->
+		<div class="relative flex items-center justify-between py-3 lg:py-5">
+			<!-- logo -->
+			<a href="index.html" title="VamBeri" class="text-2xl font-semibold text-lavender-purple lg:text-left lg:text-4ms">VamBeri</a>
+			<!-- ./logo -->
+
+			<!-- actions buttons -->
+			<div class="relative flex gap-5 text-sm lg:gap-10">
+				<!-- lang swither mobile -->
+				<div class="relative ">
+					<button class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-sm font-medium transition ease-in lg:hover:border-lavender-purple lg:h-12.5 lg:w-12.5 lg:text-base" data-filter="20">
+						<span class="">UA</span>
+					</button>
+
+					<!-- dropdown -->
+					<div class="absolute left-1/2 top-full z-40 mt-2 hidden rounded-emd border border-lavender-purple/50 bg-white px-3.5 py-2.5 text-shark -translate-x-1/2" data-filter="20">
+						<ul class="flex flex-col gap-3 text-sm font-medium lg:text-base">
+							<li>
+								<a href="#ua" class="transition ease-in hover:text-lavender-purple">UA</a>
+							</li>
+							<li>
+								<a href="#ru" class="transition ease-in hover:text-lavender-purple">RU</a>
+							</li>
+						</ul>
+					</div>
+					<!-- ./dropdown -->
+				</div>
+				<!-- ./lang swither mobile -->
+
+				
+
+				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800" title="Кошик">
+					<span class="flex h-9 w-9 items-center justify-center rounded-full bg-white lg:h-12.5 lg:w-12.5">
+						
+						<svg class="h-4 w-4 fill-shark lg:w-5.5 lg:h-5.5">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#cart2-solid"></use>
+						</svg>
+					</span>
+					
+				</a>
+				
+
+				<a href="#" class="group flex flex-col items-center gap-1 text-lavender-purple transition ease-in hover:text-purple-800" title="Сповіщення">
+					<div class="relative flex h-9 w-9 items-center justify-center rounded-full bg-white lg:h-12.5 lg:w-12.5">
+						<!--  якщо є сповіщення додаємо класс hidden -->
+						<svg class="hidden h-4 w-4 fill-transparent stroke-lavender-purple transition ease-in group-hover:stroke-purple-800 lg:w-5.5 lg:h-5.5">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
+						</svg>
+
+						<!--  якщо є сповіщення видяляємо класс hidden -->
+						<svg class="h-4 w-4 fill-tundora stroke-tundora transition ease-in lg:w-5.5 lg:h-5.5">
+							<use xlink:href="img/svg/sprites/sprite-icons.svg#bell"></use>
+						</svg>
+						<p class="absolute -right-1.5 -top-1.5 flex h-4 items-center justify-center rounded-lge bg-tall-poppy px-1 text-sm lg:-right-2.5 lg:top-0"><span class="text-white">1+</span></p>
+					</div>
+					
+				</a>
+
+				<!-- @@include("_account-seller-menu.html", {}) -->
+			</div>
+			<!-- ./actions buttons -->
+		</div>
+		<!-- ./header bottom -->
+	</div>
+</header>
+<!-- ./header -->
