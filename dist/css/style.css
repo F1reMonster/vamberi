@@ -6033,6 +6033,9 @@ section {
   .lg\:pt-9 {
     padding-top: 2.25rem;
   }
+  .lg\:pr-10 {
+    padding-right: 2.5rem;
+  }
   .lg\:text-left {
     text-align: left;
   }
