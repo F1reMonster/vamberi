@@ -129,7 +129,7 @@
 							</div>
 
 							<div class="relative mt-3.5 lg:mt-6.5">
-								<div class="swiper swiper2 pb-2.5 lg:overflow-visible lg:pb-0">
+								<div class="swiper swiper4 pb-2.5 lg:overflow-visible lg:pb-0">
 									<div class="swiper-wrapper">@@loop("html/components/_card-swiper-slide.html", "files/cards-list-v2.json") @@loop("html/components/_card-swiper-slide.html", "files/cards-list-v2.json")</div>
 								</div>
 								<button class="btn-prev group absolute left-0 top-[42%] z-20 flex h-6 w-6 items-center justify-center rounded-full border border-lavender-purple/50 bg-wild-sand/60 transition ease-in hover:bg-lavender-purple lg:hidden">
@@ -151,26 +151,6 @@
 
 		@@include('html/components/_sticky-menu.html')
 		<div class="hidden lg:block">@@include('html/components/_footer.html')</div>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-		<script>
-			const swiper = new Swiper(".swiper2", {
-				slidesPerView: "auto",
-				spaceBetween: 22,
-
-				navigation: {
-					nextEl: ".btn-next",
-					prevEl: ".btn-prev",
-				},
-				breakpoints: {
-					0: {
-						spaceBetween: 10,
-					},
-					1024: {
-						spaceBetween: 22,
-					},
-				},
-			});
-		</script>
-		<script src="js/app.js"></script>
+		@@include("html/components/_scripts.html")
 	</body>
 </html>

@@ -1,4 +1,3 @@
-//libraries like jquery etc
 window.addEventListener("DOMContentLoaded", () => {
 	// Отримуємо всі кнопки та фільтри за допомогою атрибута data-filter
 	const buttons = document.querySelectorAll("button[data-filter]");
@@ -155,4 +154,60 @@ window.addEventListener("resize", function () {
 	filters.forEach((item) => {
 		item.classList.add("hidden");
 	});
+});
+
+// sliders
+//  buyer-favorites.html
+const swiper2 = new Swiper(".swiper2", {
+	slidesPerView: "auto",
+	spaceBetween: 22,
+
+	navigation: {
+		nextEl: ".btn-next",
+		prevEl: ".btn-prev",
+	},
+	breakpoints: {
+		0: {
+			spaceBetween: 10,
+		},
+		1024: {
+			spaceBetween: 22,
+		},
+	},
+});
+const swiper3 = new Swiper(".swiper3", {
+	slidesPerView: "auto",
+	spaceBetween: 22,
+
+	navigation: {
+		nextEl: ".btn-next1",
+		prevEl: ".btn-prev1",
+	},
+	breakpoints: {
+		0: {
+			spaceBetween: 10,
+		},
+		1024: {
+			spaceBetween: 22,
+		},
+	},
+});
+
+// 
+const swiper4 = new Swiper(".swiper4", {
+	slidesPerView: "auto",
+	spaceBetween: 22,
+
+	navigation: {
+		nextEl: ".btn-next",
+		prevEl: ".btn-prev",
+	},
+	breakpoints: {
+		0: {
+			spaceBetween: 10,
+		},
+		1024: {
+			spaceBetween: 22,
+		},
+	},
 });

@@ -197,7 +197,7 @@
 							<!-- all filter -->
 							<div class="flex w-[8.125rem] flex-col">
 								<div class="mt-auto flex flex-col">
-									<button class="flex h-full w-full items-center rounded-lge bg-white px-2.5 py-2 transition ease-in lg:hover:shadow-lavender-purple">
+									<button class="flex h-full w-full items-center rounded-lge bg-white px-2.5 py-2 transition ease-in lg:hover:shadow-lavender-purple" data-filter="all-filters">
 										<svg class="h-4 w-4 fill-transparent stroke-shark">
 											<use xlink:href="img/svg/sprites/sprite-icons.svg#filter"></use>
 										</svg>
@@ -1002,7 +1002,7 @@
 		</main>
 
 		<!-- full filters desktop -->
-		<div class="hidden">@@include("html/components/_product-filter-desktop.html")</div>
+		<div class="hidden" data-filter="all-filters">@@include("html/components/_product-filter-desktop.html")</div>
 		<!-- ./full filters desktop-->
 
 		<!-- filters mobile -->
@@ -1011,5 +1011,6 @@
 
 		@@include('html/components/_sticky-menu.html')
 		<div class="hidden lg:block">@@include('html/components/_footer.html')</div>
+		@@include("html/components/_scripts.html")
 	</body>
 </html>
