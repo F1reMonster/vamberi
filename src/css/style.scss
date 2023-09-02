@@ -1,9 +1,70 @@
 @import "./fonts";
+@import "./colors";
 @import "./tailwind";
 @import "./scrollbar";
 @import "./sliders";
 
+body {
+	&.lock {
+		overflow: hidden;
+		touch-action: none;
+		overscroll-behavior: none;
+	}
+}
+
+.lang-active {
+	background: $white;
+	color: $shark;
+}
+
 .dashed-line {
 	background-image: linear-gradient(to right, transparent 50%, #999999 50%);
 	background-size: 0.625rem 100%;
+}
+
+.category {
+	&__item {
+		// &:hover {
+		// 	> a {
+		// 		background: $lavender-purple;
+		// 		color: white;
+		// 		transition: all 0.2s;
+		// 		> svg {
+		// 			fill: $white;
+		// 			transition: all 0.2s;
+		// 		}
+		// 	}
+		// }
+
+		&.active {
+			background: $lavender-purple;
+			color: white;
+			transition: all 0.2s ease-in;
+
+			> a {
+				> svg {
+					fill: $white;
+					transition: all 0.2s ease-in;
+				}
+			}
+		}
+	}
+
+	&__submenu-item {
+		&.active {
+			span {
+				text-shadow: 0 0 0.2px $shark;
+				transition: all 0.2s ease-in;
+			}
+		}
+	}
+
+	&__submenu2-item {
+		&:hover {
+			span {
+				text-shadow: 0 0 0.2px $shark;
+				transition: all 0.2s ease-in;
+			}
+		}
+	}
 }

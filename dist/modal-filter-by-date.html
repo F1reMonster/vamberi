@@ -21,14 +21,8 @@
 			<div class="flex items-center">
 				<!-- lang switcher -->
 				<div class="mr-4 flex h-10 items-center rounded-2lge bg-deep-blush px-2.5 py-1.5 text-sm transition ease-in xl:mr-10">
-					<label class="cursor-pointer">
-						<input type="radio" name="langSite" class="peer hidden" checked />
-						<div class="rounded-2lge bg-transparent px-5 py-1.5 text-white transition ease-in peer-checked:bg-white peer-checked:text-shark">Мова</div>
-					</label>
-					<label class="cursor-pointer">
-						<input type="radio" name="langSite" class="peer hidden" />
-						<div class="rounded-2lge bg-transparent px-5 py-1.5 text-white transition ease-in peer-checked:bg-white peer-checked:text-shark">Язык</div>
-					</label>
+					<a href="#" lang="ua" class="lang-active rounded-2lge bg-transparent px-5 py-1.5 text-white transition ease-in">Мова</a>
+					<a href="#" lang="ru" class="rounded-2lge bg-transparent px-5 py-1.5 text-white transition ease-in">Язык</a>
 				</div>
 				<!-- ./lang switcher -->
 				<a href="#" class="btn-primary flex h-10 min-w-[18.125rem] items-center justify-center text-sm">Продавай на VamBeri</a>
@@ -57,9 +51,9 @@
 			<!-- ./logo -->
 
 			<!-- category dropdown -->
-			<button aria-label="Обрати категорію" class="group mr-4 hidden h-12.5 w-[18.125rem] flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5 lg:flex xl:mr-8">
+			<button aria-label="Обрати категорію" class="btn-category-desktop group mr-4 hidden h-12.5 w-[18.125rem] flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5 lg:flex xl:mr-8">
 				<div class="flex items-center gap-3.5">
-					<div class="btn-primary flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg">
+					<div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-lavender-purple group-hover:bg-purple-800 transition ease-in">
 						<svg class="h-5 w-5 fill-white">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#category"></use>
 						</svg>
@@ -67,7 +61,7 @@
 					<span class="text-xs">Обрати категорію</span>
 				</div>
 				<div class="ml-auto">
-					<svg class="h2.5 w-2.5">
+					<svg class="h-2.5 w-2.5 category-arrow-down transition ease-in">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 					</svg>
 				</div>
