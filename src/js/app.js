@@ -333,6 +333,17 @@ $(document).ready(function () {
 	$(".modal-close").click(function () {
 		Fancybox.close();
 	});
+
+	// faq accordeon
+	$(".faq-btn").on("click", function () {
+		console.log("click");
+		$(".faq-content").not($(this).next()).slideUp();
+		$(".faq-item").not($(this).parent()).removeClass("active");
+		$(".faq-item").not($(this).parent()).find('svg').removeClass('rotate-x-180');
+		$(this).parent().toggleClass("active");
+		$(this).next().slideToggle();
+		$(this).find('svg').toggleClass('rotate-x-180');
+	});
 });
 
 $(window).on("resize", function () {

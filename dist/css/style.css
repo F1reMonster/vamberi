@@ -512,6 +512,9 @@ html {
   line-height: 1;
 }
 body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }

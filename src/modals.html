@@ -35,6 +35,11 @@
 						<button class="btn-primary h-10 flex items-center justify-center w-[15rem]" data-modal="modal-add-discount">Додавання знижки</button>
 						<button class="btn-primary h-10 flex items-center justify-center w-[15rem]" data-modal="modal-product-delete">Видалення товару</button>
 						<button class="btn-primary h-10 flex items-center justify-center w-[15rem]" data-modal="modal-date-filter">Фільтрування за датою</button>
+						<button class="btn-primary h-10 flex items-center justify-center w-[15rem]" data-modal="modal-compliant">Скарга</button>
+						<button class="btn-primary h-10 flex items-center justify-center w-[15rem]" data-modal="modal-rules-buyer">Правила → покупець</button>
+						<button class="btn-primary h-10 flex items-center justify-center w-[15rem]" data-modal="modal-rules-seller">Правила → продавець</button>
+						<button class="btn-primary h-10 flex items-center justify-center w-[15rem]" data-modal="modal-cancel-order-by-seller">Скасування замовлення → продавець</button>
+						<button class="btn-primary h-10 flex items-center justify-center w-[15rem]" data-modal="modal-cancel-order-by-buyer">Скасування замовлення → покупець</button>
 
 					</div>
 				</div>
@@ -48,6 +53,11 @@
 		@@include('html/components/modals/_modal-basket.html')
 		@@include('html/components/modals/_modal-product-delete.html')
 		@@include('html/components/modals/_modal-filter-by-date.html')
+		@@include('html/components/modals/_modal-compliant.html')
+		@@include('html/components/modals/_modal-rules-buyer.html')
+		@@include('html/components/modals/_modal-rules-seller.html')
+		@@include('html/components/modals/_modal-cancel-order-by-buyer.html')
+		@@include('html/components/modals/_modal-cancel-order-by-seller.html')
 		@@include('html/components/_scripts.html')
 	</body>
 </html>
