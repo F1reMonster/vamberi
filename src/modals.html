@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		@@include('html/components/_head.html', {title: "VamBeri - Модальні вікна"})
+	</head>
+	<body class="">
+		@@include('html/components/_header.html', {accountMenu: ""})
+
+		<main>
+			<!-- breadcrumbs -->
+			<div class="pb-4 pt-2 text-xs lg:pb-2 lg:pt-11 lg:text-sm">
+				<div class="container">
+					<ul class="flex items-center gap-1 overflow-hidden">
+						<li class="flex items-center gap-1">
+							<a href="#" class="link-primary line-clamp-1 text-ellipsis text-tundora">Україна</a>
+							<svg class="h-2.5 w-2.5 fill-lavender-purple">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
+							</svg>
+						</li>
+
+						<li class="flex items-center gap-1">
+							<a class="link-primary line-clamp-1 overflow-hidden text-ellipsis text-tundora hover:text-tundora">Модальні вікна</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- ./breadcrumbs -->
+
+			
+
+			<section class="pt-0">
+				<div class="container">
+					<div class="flex flex-col justify-center w-full items-center gap-4">
+						<button class="btn-primary h-10 flex items-center justify-center w-[15rem]" data-modal="modal-basket">Кошик товарів</button>
+						<button class="btn-primary h-10 flex items-center justify-center w-[15rem]" data-modal="modal-add-discount">Додавання знижки</button>
+						<button class="btn-primary h-10 flex items-center justify-center w-[15rem]" data-modal="modal-product-delete">Видалення товару</button>
+						<button class="btn-primary h-10 flex items-center justify-center w-[15rem]" data-modal="modal-date-filter">Фільтрування за датою</button>
+
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('html/components/_category.html') 
+		@@include('html/components/_sticky-menu.html') 
+		@@include('html/components/_footer.html') 
+		@@include('html/components/modals/_modal-discount.html')
+		@@include('html/components/modals/_modal-basket.html')
+		@@include('html/components/modals/_modal-product-delete.html')
+		@@include('html/components/modals/_modal-filter-by-date.html')
+		@@include('html/components/_scripts.html')
+	</body>
+</html>

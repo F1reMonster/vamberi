@@ -272,36 +272,67 @@ $(document).ready(function () {
 	// category mobile
 	$(".btn-category-mobile").click(function () {
 		$(this).addClass("active");
-		$(this).parent().css({ BorderBottomLeftRadius: 0, BorderBottomRightRadius: 0 });
 		$(".category-mobile").removeClass("hidden");
-		$(".category-mobile-arrow-down").addClass("rotate-x-180");
+		$("body").addClass("lock-mobile");
 	});
 
-	$('.category-mobile__item').click(function (e) {
+	$(".category-mobile__item").click(function (e) {
 		$currentItem = $(this);
 		$catID = $currentItem.data("mobile-category");
-			$("[data-mobile-subctg-level-2]").each(function () {
-				if ($(this).data("mobile-subctg-level-2") === $catID) {
-					e.preventDefault();
-					$('.category-mobile').addClass('hidden')
-					$(this).removeClass("hidden");
-				}
-			});
-	})
+		$("[data-mobile-subctg-level-2]").each(function () {
+			if ($(this).data("mobile-subctg-level-2") === $catID) {
+				e.preventDefault();
+				$(".category-mobile-main").addClass("hidden");
+				$(".subcategory-mobile-level-1").removeClass("hidden");
+				$(this).removeClass("hidden");
+			}
+		});
+	});
 
-	$('.category-mobile__submenu-item').click(function (e) {
+	$(".category-mobile__submenu-item").click(function (e) {
 		$currentItem = $(this);
 		$catID = $currentItem.data("mobile-submenu");
 		console.log($catID);
-			$("[data-mobile-subctg-level-3]").each(function () {
-				if ($(this).data("mobile-subctg-level-3") === $catID) {
-					e.preventDefault();
-					$('.category-mobile').addClass('hidden');
-					$('[data-mobile-subctg-level-2]').addClass('hidden');
-					$(this).removeClass("hidden");
-				}
-			});
-	})
+		$("[data-mobile-subctg-level-3]").each(function () {
+			if ($(this).data("mobile-subctg-level-3") === $catID) {
+				e.preventDefault();
+				$(".subcategory-mobile-level-1").addClass("hidden");
+				$(".subcategory-mobile-level-2").removeClass("hidden");
+				$("[data-mobile-subctg-level-2]").addClass("hidden");
+				$(this).removeClass("hidden");
+			}
+		});
+	});
+
+	$(".category-mobile-close").click(function () {
+		$(".category-mobile").addClass("hidden");
+		$(".category-mobile-main").removeClass("hidden");
+		$(".subcategory-mobile-level-1").addClass("hidden");
+		$(".subcategory-mobile-level-2").addClass("hidden");
+		$("[data-mobile-subctg-level-2]").addClass("hidden");
+		$("[data-mobile-subctg-level-3]").addClass("hidden");
+		$("body").removeClass("lock-mobile");
+	});
+
+	// modal
+	$("[data-modal]").click(function () {
+		$btn = $(this);
+		$modalName = $btn.data("modal");
+		Fancybox.show([
+			{
+				src: "#" + $modalName,
+				closeButton: false,
+				backdropClick: false,
+				clickOutside: false,
+				type: "inline",
+			},
+		]);
+	});
+
+	// modal close
+	$(".modal-close").click(function () {
+		Fancybox.close();
+	});
 });
 
 $(window).on("resize", function () {
@@ -315,8 +346,9 @@ $(window).on("resize", function () {
 
 	if ($(".btn-category-mobile").hasClass("active")) {
 		$(".btn-category-mobile").removeClass("active");
-		$(".btn-category-mobile").parent().removeAttr("style");
-		$(".category-mobile-arrow-down").removeClass("rotate-x-180");
+		$(".category-mobile-main").removeClass("hidden");
+		$(".subcategory-mobile-level-1").addClass("hidden");
+		$(".subcategory-mobile-level-2").addClass("hidden");
 	}
 
 	if ($("body").hasClass("lock")) {
@@ -336,12 +368,14 @@ $(document).mouseup(function (e) {
 		$(".category__submenu-item").find("svg").remove();
 	}
 
-	if (!$(".category-mobile-body").is(e.target) && $(".category-mobile-body").has(e.target).length === 0) {
-		$(".category-mobile").addClass("hidden");
-		$(".btn-category-mobile").removeClass("active");
-		$(".btn-category-mobile").parent().removeAttr("style");
-		$(".category-mobile-arrow-down").removeClass("rotate-x-180");
-		$("[data-mobile-subctg-level-2]").addClass('hidden');
-		$("[data-mobile-subctg-level-3]").addClass('hidden');
-	}
+	// if (!$(".category-mobile-body").is(e.target) && $(".category-mobile-body").has(e.target).length === 0) {
+	// 	$(".category-mobile").addClass("hidden");
+	// 	$(".btn-category-mobile").removeClass("active");
+	// 	$(".category-mobile-main").removeClass("hidden");
+	// 	$(".subcategory-mobile-level-1").addClass("hidden");
+	// 	$(".subcategory-mobile-level-2").addClass("hidden");
+	// 	$("[data-mobile-subctg-level-2]").addClass("hidden");
+	// 	$("[data-mobile-subctg-level-3]").addClass("hidden");
+	// 	$("body").removeClass("lock");
+	// }
 });

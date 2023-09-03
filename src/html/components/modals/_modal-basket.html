@@ -1,91 +1,85 @@
-<div class="relative z-[9999]" aria-labelledby="modal-app-sending-success" role="dialog" aria-modal="true">
-	<div class="fixed inset-0 bg-shark/60 bg-opacity-75 transition-opacity"></div>
-
-	<div class="fixed inset-0 z-10 overflow-y-auto">
-		<div class="flex min-h-full items-center justify-center p-4">
-			<div class="relative flex w-full transform flex-col overflow-hidden rounded-lge bg-white px-2.5 py-7.5 transition-all sm:w-[1060px] lg:p-7.5">
-				<button class="absolute right-4 top-4 z-10 ml-auto flex h-5 w-5 items-center justify-center p-0 md:right-5 md:top-5" aria-label="Закрити модальне вікно">
-					<svg class="h-4 w-4 fill-tundora md:h-5 md:w-5">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-					</svg>
-				</button>
-				<div>
-					<h2 class="text-center text-base font-medium md:text-xl">Кошик товарів</h2>
-					<div class="mt-6 rounded-lge border border-dusty-gray p-2.5 md:mt-7.5 md:p-3">
-						<div class="relative">
-							<div class="flex flex-col items-start justify-between gap-2.5 md:flex-row">
-								<div class="flex gap-2.5 sm:gap-4">
-									<div class="h-[5.9375rem] w-[7.5rem] flex-shrink-0 overflow-hidden rounded-xle md:h-[6.75rem] md:w-[9.375rem]">
-										<img class="h-full w-full object-cover" src="img/product-card/product001-001.jpg" alt="Lenovo ideapad 330-15ikb" />
-									</div>
-									<div class="max-w-[21.25rem] font-medium">
-										<h3 class="line-clamp-2 text-ellipsis text-xs text-shark md:text-lg">Lenovo ideapad 330-15ikb</h3>
-										<div>
-											<p class="mt-2 text-xs md:text-base">Продавець: <span class="text-royal-blue">Макс</span></p>
-										</div>
-										<div class="mt-4 flex items-center gap-1 sm:gap-1.5 lg:hidden">
-											<svg class="h-4 w-4 flex-shrink-0 md:h-5 md:w-5">
-												<use xlink:href="img/svg/sprites/sprite-icons.svg#wallet2"></use>
-											</svg>
-											<p class="text-xs md:text-base">Оплата онлайн</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex w-full justify-between gap-1 sm:gap-4 md:w-auto md:flex-col md:items-end lg:w-full lg:max-w-[27.125rem] lg:flex-row lg:items-center">
-									<div class="flex flex-shrink-0 items-center gap-1.5 sm:gap-3.5">
-										<button class="flex h-8 w-8 items-center justify-center rounded-emd border border-dusty-gray text-xl text-shark transition ease-in hover:bg-lavender-purple hover:text-white">-</button>
-										<input type="text" value="1" class="block w-[1.375rem] border-0 p-0 text-center text-lg" readonly />
-										<button class="flex h-8 w-8 items-center justify-center rounded-emd border border-dusty-gray text-xl text-shark transition ease-in hover:bg-lavender-purple hover:text-white">+</button>
-									</div>
-
-									<div class="flex flex-grow flex-col sm:block md:flex-shrink-0">
-										<div class="flex flex-shrink-0 flex-wrap items-center justify-end gap-1 whitespace-nowrap text-right text-xs md:gap-2 md:text-lg"><span class="justify-self-end">Роздріб:</span> <span class="justify-self-end text-sm font-semibold md:text-lg">2, 299, 999 грн.</span></div>
-										<div class="decoration mt-1.5 text-right text-ms text-dusty-gray line-through md:text-xs">8,300 грн.</div>
-									</div>
-								</div>
+<div id="modal-basket" style="display: none">
+	<div class="relative flex w-full flex-col overflow-hidden rounded-lge bg-white px-2.5 py-7.5 transition-all transform sm:w-[1060px] lg:p-7.5">
+		<button class="modal-close absolute right-4 top-4 z-10 ml-auto flex h-5 w-5 items-center justify-center p-0 md:right-5 md:top-5" aria-label="Закрити модальне вікно">
+			<svg class="h-4 w-4 fill-tundora md:h-5 md:w-5">
+				<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
+			</svg>
+		</button>
+		<div>
+			<h2 class="text-center text-base font-medium md:text-xl">Кошик товарів</h2>
+			<div class="mt-6 rounded-lge border border-dusty-gray p-2.5 md:mt-7.5 md:p-3">
+				<div class="relative">
+					<div class="flex flex-col items-start justify-between gap-2.5 md:flex-row">
+						<div class="flex gap-2.5 sm:gap-4">
+							<div class="h-[5.9375rem] w-[7.5rem] flex-shrink-0 overflow-hidden rounded-xle md:h-[6.75rem] md:w-[9.375rem]">
+								<img class="h-full w-full object-cover" src="img/product-card/product001-001.jpg" alt="Lenovo ideapad 330-15ikb" />
 							</div>
-
-							<div class="bottom-0 mt-5 flex w-full flex-col flex-wrap items-center justify-between gap-5 text-xs sm:flex-row sm:gap-20 sm:text-base md:gap-32 lg:absolute lg:gap-11 lg:pl-[10.3125rem]">
-								<div class="hidden items-center gap-1.5 lg:flex">
-									<svg class="h-5 w-5">
+							<div class="max-w-[21.25rem] font-medium">
+								<h3 class="line-clamp-2 text-ellipsis text-xs text-shark md:text-lg">Lenovo ideapad 330-15ikb</h3>
+								<div>
+									<p class="mt-2 text-xs md:text-base">Продавець: <span class="text-royal-blue">Макс</span></p>
+								</div>
+								<div class="mt-4 flex items-center gap-1 sm:gap-1.5 lg:hidden">
+									<svg class="h-4 w-4 flex-shrink-0 md:h-5 md:w-5">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#wallet2"></use>
 									</svg>
-									<p>Оплата онлайн</p>
-								</div>
-								<div class="flex w-full flex-grow justify-between sm:w-auto">
-									<div>Код товару: <span class="font-semibold">119954759</span></div>
-									<div>ID: <span class="font-semibold">45475541 </span></div>
-								</div>
-								<div class="flex w-full flex-grow justify-between sm:w-auto">
-									<div>Всього: <span class="font-bold">8000 грн</span></div>
-									<div class="flex gap-4">
-										<button class="group" aria-label="Додати до улюблених">
-											<svg class="h-5 w-5 transition ease-linear group-hover:fill-lavender-purple">
-												<use xlink:href="img/svg/sprites/sprite-icons.svg#heart2"></use>
-											</svg>
-										</button>
-										<button class="group" aria-label="Видалити з кошика">
-											<svg class="h-5 w-5 transition ease-linear group-hover:fill-pomegranate">
-												<use xlink:href="img/svg/sprites/sprite-icons.svg#bin"></use>
-											</svg>
-										</button>
-									</div>
+									<p class="text-xs md:text-base">Оплата онлайн</p>
 								</div>
 							</div>
 						</div>
+
+						<div class="flex w-full justify-between gap-1 sm:gap-4 md:w-auto md:flex-col md:items-end lg:w-full lg:max-w-[27.125rem] lg:flex-row lg:items-center">
+							<div class="flex flex-shrink-0 items-center gap-1.5 sm:gap-3.5">
+								<button class="flex h-8 w-8 items-center justify-center rounded-emd border border-dusty-gray text-xl text-shark transition ease-in hover:bg-lavender-purple hover:text-white">-</button>
+								<input type="text" value="1" class="block w-[1.375rem] border-0 p-0 text-center text-lg" readonly />
+								<button class="flex h-8 w-8 items-center justify-center rounded-emd border border-dusty-gray text-xl text-shark transition ease-in hover:bg-lavender-purple hover:text-white">+</button>
+							</div>
+
+							<div class="flex flex-grow flex-col sm:block md:flex-shrink-0">
+								<div class="flex flex-shrink-0 flex-wrap items-center justify-end gap-1 whitespace-nowrap text-right text-xs md:gap-2 md:text-lg"><span class="justify-self-end">Роздріб:</span> <span class="justify-self-end text-sm font-semibold md:text-lg">2, 299, 999 грн.</span></div>
+								<div class="decoration mt-1.5 text-right text-ms text-dusty-gray line-through md:text-xs">8,300 грн.</div>
+							</div>
+						</div>
 					</div>
-					<div class="mt-[2.1875rem] flex flex-col items-center justify-center gap-5 lg:flex-row lg:gap-6">
-						<div class="flex">
-							<a href="#" class="btn-primary-light flex h-11 min-w-[15rem] items-center justify-center">Продовжити покупки</a>
+
+					<div class="bottom-0 mt-5 flex w-full flex-col flex-wrap items-center justify-between gap-5 text-xs sm:flex-row sm:gap-20 sm:text-base md:gap-32 lg:absolute lg:gap-11 lg:pl-[10.3125rem]">
+						<div class="hidden items-center gap-1.5 lg:flex">
+							<svg class="h-5 w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#wallet2"></use>
+							</svg>
+							<p>Оплата онлайн</p>
 						</div>
-						<div class="flex">
-							<a href="#" class="btn-primary-light flex h-11 min-w-[15rem] items-center justify-center">Перейти у кошик</a>
+						<div class="flex w-full flex-grow justify-between sm:w-auto">
+							<div>Код товару: <span class="font-semibold">119954759</span></div>
+							<div>ID: <span class="font-semibold">45475541 </span></div>
 						</div>
-						<div class="flex">
-							<a href="#" class="btn-primary-light flex h-11 min-w-[15rem] items-center justify-center">Купити зараз</a>
+						<div class="flex w-full flex-grow justify-between sm:w-auto">
+							<div>Всього: <span class="font-bold">8000 грн</span></div>
+							<div class="flex gap-4">
+								<button class="group" aria-label="Додати до улюблених">
+									<svg class="h-5 w-5 transition ease-linear group-hover:fill-lavender-purple">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#heart2"></use>
+									</svg>
+								</button>
+								<button class="group" aria-label="Видалити з кошика">
+									<svg class="h-5 w-5 transition ease-linear group-hover:fill-pomegranate">
+										<use xlink:href="img/svg/sprites/sprite-icons.svg#bin"></use>
+									</svg>
+								</button>
+							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="mt-[2.1875rem] flex flex-col items-center justify-center gap-5 lg:flex-row lg:gap-6">
+				<div class="flex">
+					<a href="#" class="btn-primary-light flex h-11 min-w-[15rem] items-center justify-center">Продовжити покупки</a>
+				</div>
+				<div class="flex">
+					<a href="#" class="btn-primary-light flex h-11 min-w-[15rem] items-center justify-center">Перейти у кошик</a>
+				</div>
+				<div class="flex">
+					<a href="#" class="btn-primary-light flex h-11 min-w-[15rem] items-center justify-center">Купити зараз</a>
 				</div>
 			</div>
 		</div>

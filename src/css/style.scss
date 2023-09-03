@@ -10,6 +10,12 @@ body {
 		touch-action: none;
 		overscroll-behavior: none;
 	}
+
+	&.lock-mobile {
+		overflow: hidden;
+		touch-action: none;
+		overscroll-behavior: none;
+	}
 }
 
 .lang-active {
@@ -66,5 +72,143 @@ body {
 				transition: all 0.2s ease-in;
 			}
 		}
+	}
+}
+
+.fancybox {
+	&__backdrop {
+		background: rgba($shark, 0.6);
+	}
+
+	&__content {
+		padding: 0;
+		background: none;
+	}
+}
+
+// .ui-widget {
+// 	z-index: 1100 !important;
+// 	font-family: "Montserrat";
+
+// 	&-header {
+		
+// 		border-radius: 8px 8px 0 0;
+// 		background-color: $lavender-purple;
+// 		border: 1px solid $lavender-purple;
+
+// 		.ui-datepicker-next {
+// 			top: 5px;
+// 			transform: rotate(-90deg);
+
+			
+// 		}
+
+// 		.ui-datepicker-prev {
+// 			top: 3px;
+// 			transform: rotate(90deg);
+
+			
+// 		}
+
+// 		.ui-icon {
+// 			width: 20px;
+// 			height: 20px;
+// 			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath  fill='%23fff' d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z'/%3E%3C/svg%3E%0A");
+// 			background-position: unset;
+// 			background-size: contain;
+// 		}
+// 	}
+
+// 	&.ui-widget-content {
+// 		border-radius: 8px;
+// 		background-color: #ffffff;
+// 		box-shadow: 0 0 10px 0 #c7d4d4;
+// 	}
+// }
+
+// .ui-state-hover {
+// 	background-color: $lavender-purple !important;
+// 	border: none;
+// 	color: $white !important;
+// }
+
+// .ui-datepicker {
+// 	width: 300px;
+// 	padding: 20px 15px;
+
+// 	select {
+// 		background-color: $lavender-purple;
+// 		color: #fff;
+// 		border: none;
+// 		outline: none;
+// 		padding: 0;
+// 		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+
+// 		&::-webkit-scrollbar {
+// 			width: 5px;
+// 		}
+
+// 		&::-webkit-scrollbar-thumb {
+// 			width: 5px;
+// 			background: #fff;
+// 		}
+// 	}
+
+// 	table {
+// 		border-spacing: 8px;
+// 		margin: 0;
+// 	}
+
+// 	th {
+// 		span {
+// 			color: #a4a4a4;
+// 		}
+// 	}
+
+// 	td {
+// 		padding: 4px;
+// 		span,
+// 		a {
+// 			text-align: center;
+// 		}
+// 	}
+// }
+
+// .ui-state-default,
+// .ui-widget-content .ui-state-default,
+// .ui-widget-header .ui-state-default,
+// .ui-button,
+// html .ui-button.ui-state-disabled:hover,
+// html .ui-button.ui-state-disabled:active {
+// 	border: 1px solid #eef7dc;
+// 	background-color: #eef7dc;
+// 	font-weight: normal;
+// 	color: #454545;
+// 	border-radius: 5px;
+// }
+
+// .ui-state-highlight,
+// .ui-widget-content .ui-state-highlight,
+// .ui-widget-header .ui-state-highlight {
+// 	border: 1px solid #dad55e;
+// 	background: #fffa90;
+// 	color: #777620;
+// }
+
+// .ui-state-active,
+// .ui-widget-content .ui-state-active,
+// .ui-widget-header .ui-state-active,
+// a.ui-button:active,
+// .ui-button:active,
+// .ui-button.ui-state-active:hover {
+// 	border: 1px solid #003eff;
+// 	background: #007fff;
+// 	font-weight: normal;
+// 	color: #ffffff;
+// }
+
+input[type="date"] {
+	&::-webkit-calendar-picker-indicator {
+		background-image: url("data:image/svg+xml,%3Csvg width='15' height='14' viewBox='0 0 15 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3275 1.62266H12.9375V1.01105C12.9375 0.446687 12.4896 -0.0273438 11.925 -0.0273438H10.9519C10.3875 -0.0273438 9.93751 0.446657 9.93751 1.01105V1.62266H5.0625V1.01105C5.0625 0.446687 4.6125 -0.0273438 4.04811 -0.0273438H3.075C2.5104 -0.0273438 2.0625 0.446657 2.0625 1.01105V1.62266H1.6725C0.74823 1.62581 0.0006 2.37572 0 3.29984V12.1789C0.0015 13.1014 0.75 13.8482 1.6725 13.8477H13.3275C14.25 13.8483 14.9986 13.1014 15 12.1789V3.29984C14.9994 2.37572 14.2518 1.62584 13.3275 1.62266ZM10.6875 1.01105C10.6875 0.860117 10.8011 0.722657 10.9519 0.722657H11.925C12.0759 0.722657 12.1875 0.860117 12.1875 1.01105V3.27266H10.6875V1.01105ZM2.8125 1.01105C2.8125 0.860117 2.92395 0.722657 3.075 0.722657H4.04814C4.19895 0.722657 4.3125 0.860117 4.3125 1.01105V3.27266H2.8125V1.01105ZM1.6725 2.37266H2.0625V3.64238C2.05677 3.84665 2.21778 4.01693 2.42214 4.02266H4.69689C4.90209 4.01936 5.06589 3.85016 5.0625 3.64496V2.37266H9.93751V3.64238C9.93271 3.84758 10.0952 4.01798 10.3006 4.02266H12.5738C12.7781 4.01915 12.9409 3.85076 12.9375 3.64646V2.37266H13.3275C13.8376 2.37536 14.2499 2.7896 14.25 3.29984V4.92266H0.75V3.29984C0.75012 2.7896 1.16238 2.37536 1.6725 2.37266ZM13.3275 13.0977H1.6725C1.16415 13.0988 0.75105 12.6875 0.75 12.1792V5.67266H14.25V12.1789C14.249 12.6873 13.836 13.0986 13.3275 13.0977Z' fill='%23212529'/%3E%3C/svg%3E%0A");
 	}
 }

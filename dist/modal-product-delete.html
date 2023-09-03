@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" href="img/svg/ua.svg" type="image/x-icon" />
 
+<!-- <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css" /> -->
 <link rel="stylesheet" type="text/css" href="./css/fancybox.css" />
 <link rel="stylesheet" type="text/css" href="./css/select2.min.css" />
 <link rel="stylesheet" type="text/css" href="./css/swiper.min.css" />
@@ -201,551 +202,554 @@
 	</div>
 </section>
 <!-- ./banner slider -->
- <!-- category dropdown -->
-<div class="py-3 lg:hidden">
-	<div class="container">
-		<!-- при відкритті додати класи  rounded-bl-0 rounded-br-0-->
-		<div class="relative rounded-lg bg-white">
-			<button aria-label="Обрати категорію" class="btn-category-mobile group flex h-12.5 w-full items-center px-2.5 py-1.5">
-				<div class="flex items-center gap-3.5">
-					<div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-lavender-purple">
-						<svg class="h-5 w-5 fill-white">
-							<use xlink:href="img/svg/sprites/sprite-icons.svg#category"></use>
-						</svg>
-					</div>
-					<span class="text-base font-medium">Обрати категорію</span>
-				</div>
-
-				<div class="ml-auto">
-					<!-- при відкритті додати клас rotate-180 -->
-
-					<svg class="category-mobile-arrow-down h-3 w-3 fill-black transition ease-in">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-					</svg>
-				</div>
-			</button>
-
-			<div class="category-mobile-body">
-				<!-- головні категоірї -->
-				<div class="scrollbar-custom category-mobile absolute z-40 hidden h-[28.125rem] w-full overflow-y-auto overflow-x-hidden rounded-bl-lg rounded-br-lg bg-white px-4 pb-5 pt-2.5 shadow-md">
-					<ul class="flex flex-col gap-4 text-sm">
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="1">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#women"></use>
-								</svg>
-								<span>Жінкам</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="2">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#shoes"></use>
-								</svg>
-								<span>Взуття</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="3">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#children-goods2"></use>
-								</svg>
-								<span>Дитячі товари 2</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="4">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#man"></use>
-								</svg>
-								<span>Чоловікам</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="5">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#for-house2"></use>
-								</svg>
-								<span>Дім</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="6">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#accessory"></use>
-								</svg>
-								<span>Аксесуари</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="7">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#toys"></use>
-								</svg>
-								<span>Іграшки </span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="8">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#homehold"></use>
-								</svg>
-								<span>Побутова техніка </span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="9">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#help"></use>
-								</svg>
-								<span>Допомога</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="10">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#sport"></use>
-								</svg>
-								<span>Спорт та відпочинок</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="11">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#plc-board"></use>
-								</svg>
-
-								<span>Обладнання та сировина</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="12">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#instruments"></use>
-								</svg>
-
-								<span>Будматеріали та інструменти</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="13">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#fashion"></use>
-								</svg>
-
-								<span>Мода та стиль</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="14">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#beauty"></use>
-								</svg>
-
-								<span>Краса і здоров’я</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="15">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#children-goods"></use>
-								</svg>
-
-								<span>Дитячі товари</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="16">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#building"></use>
-								</svg>
-
-								<span>Нерухомість</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="17">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#for-home"></use>
-								</svg>
-
-								<span>Мебелі</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="18">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#work"></use>
-								</svg>
-
-								<span>Робота</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="19">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#freelance"></use>
-								</svg>
-
-								<span>Послуги та фріланс</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="20">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#auto"></use>
-								</svg>
-
-								<span>Авто</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="21">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#auto2"></use>
-								</svg>
-
-								<span>Автотовари</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="22">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#spare-parts"></use>
-								</svg>
-
-								<span>Запчастини для транспорту</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="23">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#animals"></use>
-								</svg>
-
-								<span>Тварини</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="24">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#electronics"></use>
-								</svg>
-
-								<span>Електроніка</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="25">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#exchange"></use>
-								</svg>
-
-								<span>Обмін</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="26">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#for-busines"></use>
-								</svg>
-
-								<span>Для бізнесу</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="27">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#hobbies"></use>
-								</svg>
-
-								<span>Хобі та розваги</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="28">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-transparent stroke-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#school"></use>
-								</svg>
-
-								<span>Школа</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="29">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#books"></use>
-								</svg>
-
-								<span>Книги</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="30">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#jewerly"></use>
-								</svg>
-
-								<span>Ювелірні вироби</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="31">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#roll-brush"></use>
-								</svg>
-
-								<span>Для ремонту</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="32">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#garden"></use>
-								</svg>
-
-								<span>Сад та дача</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="33">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#health"></use>
-								</svg>
-
-								<span>Здоров’я</span>
-							</a>
-						</li>
-						<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="34">
-							<a href="#" class="flex items-center gap-4">
-								<svg class="h-5 w-5 fill-shark">
-									<use xlink:href="img/svg/sprites/sprite-category.svg#office-supplies"></use>
-								</svg>
-
-								<span>Канцтовари</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-
-				<!-- підкатегорії 1-->
-				<div class="scrollbar-custom absolute z-40 hidden h-[28.125rem] w-full overflow-y-auto overflow-x-hidden rounded-bl-lg rounded-br-lg bg-white px-2.5 pb-5 pt-2.5 shadow-md" data-mobile-subctg-level-2="3">
-					<p class="text-lg font-semibold">Дитячі товари</p>
-					<ul class="mt-6 flex flex-col gap-4 text-sm">
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="1">
-							<a href="#" class="flex items-center gap-4">
-								<span>Дитячі мебелі</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="1123">
-							<a href="#" class="flex items-center gap-4">
-								<span>Подарунки дітям</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="2">
-							<a href="#" class="flex items-center gap-4">
-								<span>Дитячі автокрісла</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="3">
-							<a href="#" class="flex items-center gap-4">
-								<span>Товари для навчання</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="4">
-							<a href="#" class="flex items-center gap-4">
-								<span>Облаштування дитячої</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="5">
-							<a href="#" class="flex items-center gap-4">
-								<span>Дитячий одяг</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="6">
-							<a href="#" class="flex items-center gap-4">
-								<span>Іграшки та ігри</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="7">
-							<a href="#" class="flex items-center gap-4">
-								<span>Прогулянки та активний відпочинок</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="8">
-							<a href="#" class="flex items-center gap-4">
-								<span>Радіо-та відеоняні</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="9">
-							<a href="#" class="flex items-center gap-4">
-								<span>Дитяче взуття</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="10">
-							<a href="#" class="flex items-center gap-4">
-								<span>Дитячий транспорт</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="11">
-							<a href="#" class="flex items-center gap-4">
-								<span>Здоров’я та догляд</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="12">
-							<a href="#" class="flex items-center gap-4">
-								<span>Товари для мам</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="13">
-							<a href="#" class="relative flex items-center gap-4">
-								<span>Дитячі коляски</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="14">
-							<a href="#" class="flex items-center gap-4">
-								<span>Дитяче харчування та годування</span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="15">
-							<a href="#" class="flex items-center gap-4">
-								<span>Розвиток та творчість </span>
-							</a>
-						</li>
-						<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="16">
-							<a href="#" class="flex items-center gap-4">
-								<span>Дитячі товари, інше</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<!-- підкатегорії 1 -->
-
-				<!-- підкатегорії 2-->
-				<div class="scrollbar-custom absolute z-40 hidden h-[28.125rem] w-full overflow-y-auto overflow-x-hidden rounded-bl-lg rounded-br-lg bg-white px-2.5 pb-5 pt-2.5 shadow-md" data-mobile-subctg-level-3="1123">
-					<p class="text-lg font-semibold">Подарунки дітям</p>
-					<ul class="mt-6 flex flex-col gap-4 text-sm">
-						<li class="rounded-lg py-1.5">
-							<a href="#" class="flex items-center gap-4">
-								<span>Іграшки</span>
-							</a>
-						</li>
-						<li class="category__submenu2-item rounded-lg py-1.5">
-							<a href="#" class="flex items-center gap-4">
-								<span>Аксесуари</span>
-							</a>
-						</li>
-						<li class="category__submenu2-item rounded-lg py-1.5">
-							<a href="#" class="flex items-center gap-4">
-								<span>Для будинку</span>
-							</a>
-						</li>
-						<li class="category__submenu2-item rounded-lg py-1.5">
-							<a href="#" class="flex items-center gap-4">
-								<span>Книги та канцтовари</span>
-							</a>
-						</li>
-						<li class="category__submenu2-item rounded-lg py-1.5">
-							<a href="#" class="flex items-center gap-4">
-								<span>Косметика та догляд</span>
-							</a>
-						</li>
-						<li class="category__submenu2-item rounded-lg py-1.5">
-							<a href="#" class="flex items-center gap-4">
-								<span>Кульки та упаковка</span>
-							</a>
-						</li>
-						<li class="category__submenu2-item rounded-lg py-1.5">
-							<a href="#" class="flex items-center gap-4">
-								<span>Листівки та сувеніри</span>
-							</a>
-						</li>
-						<li class="category__submenu2-item rounded-lg py-1.5">
-							<a href="#" class="flex items-center gap-4">
-								<span>Посуд</span>
-							</a>
-						</li>
-						<li class="category__submenu2-item rounded-lg py-1.5">
-							<a href="#" class="flex items-center gap-4">
-								<span>Смачні подарунки</span>
-							</a>
-						</li>
-						<li class="category__submenu2-item rounded-lg py-1.5">
-							<a href="#" class="flex items-center gap-4">
-								<span>Хобі та розваги</span>
-							</a>
-						</li>
-						<li class="category__submenu2-item rounded-lg py-1.5">
-							<a href="#" class="flex items-center gap-4">
-								<span>Шкарпетки</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<!-- підкатегорії 1 -->
-			</div>
-		</div>
-	</div>
-</div>
-<!-- ./category dropdown -->
-</main>
-
-		<div class="relative z-[9999]" aria-labelledby="modal-app-sending-success" role="dialog" aria-modal="true">
-	<div class="fixed inset-0 transition-opacity bg-opacity-75 bg-shark/60"></div>
-
-	<div class="fixed inset-0 z-10 overflow-y-auto">
-		<div class="flex items-center justify-center min-h-full p-4">
-			<div class="relative flex w-full transform flex-col overflow-hidden rounded-2lge bg-white px-4 py-7.5 transition-all sm:w-[752px] sm:px-7.5 sm:py-5">
-				<button class="absolute z-10 flex items-center justify-center w-5 h-5 p-0 ml-auto right-4 top-4 md:right-5 md:top-5" aria-label="Закрити модальне вікно">
-					<svg class="w-4 h-4 fill-tundora md:h-5 md:w-5">
+ <!-- mobile category -->
+<div class="category-mobile fixed left-0 top-0 z-[100] hidden h-screen w-screen bg-white">
+	<div class="category-mobile-body flex max-h-screen w-full">
+		<!-- головні категоірї -->
+		<div class="category-mobile-main w-full ">
+			<div class="flex items-center justify-between px-5 py-4.5">
+				<div class="text-base font-semibold text-shark">Обрати категорію</div>
+				<button class="category-mobile-close">
+					<svg class="h-5 w-5">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
 					</svg>
 				</button>
-				<div>
-					<h2 class="text-sm font-medium text-center md:text-lg">Вкажіть причину видалення товару</h2>
+			</div>
+			<div class="scrollbar-custom max-h-full w-full overflow-y-auto overflow-x-hidden rounded-bl-lg rounded-br-lg bg-white px-5 pb-5">
+				<ul class="flex flex-col gap-4 text-sm">
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="1">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#women"></use>
+							</svg>
+							<span>Жінкам</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="2">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#shoes"></use>
+							</svg>
+							<span>Взуття</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="3">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#children-goods2"></use>
+							</svg>
+							<span>Дитячі товари 2</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="4">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#man"></use>
+							</svg>
+							<span>Чоловікам</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="5">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#for-house2"></use>
+							</svg>
+							<span>Дім</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="6">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#accessory"></use>
+							</svg>
+							<span>Аксесуари</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="7">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#toys"></use>
+							</svg>
+							<span>Іграшки </span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="8">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#homehold"></use>
+							</svg>
+							<span>Побутова техніка </span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="9">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#help"></use>
+							</svg>
+							<span>Допомога</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="10">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#sport"></use>
+							</svg>
+							<span>Спорт та відпочинок</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="11">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#plc-board"></use>
+							</svg>
 
-					<label class="flex items-center cursor-pointer sm:gap-5 mt-7 gap-3.5">
-						<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray bg-wild-sand">
-							<input type="radio" name="reason" class="hidden peer" checked />
-							<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 shadow-radio-modal transition ease-in peer-checked:opacity-100"></div>
-						</div>
-						<div class="text-xs sm:text-sm text-tundora">Товара немає в наявності</div>
-					</label>
-					<label class="flex items-center mt-3 gap-3.5 cursor-pointer sm:gap-5">
-						<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray bg-wild-sand">
-							<input type="radio" name="reason" class="hidden peer" />
-							<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 shadow-radio-modal transition ease-in peer-checked:opacity-100"></div>
-						</div>
-						<div class="text-xs sm:text-sm text-tundora">Покупець змінив рішення</div>
-					</label>
-					<div class="mt-4 text-xs font-medium text-tall-poppy sm:text-base">Тут ви можете вказати причину скасування замовлення</div>
-					<div class="mt-5 h-[157px] w-full rounded-lge border border-lavender-purple px-5 py-3.5">
-						<div class="flex w-full h-full ">
-							<div class="flex w-full gap-4 sm:items-center sm:mt-auto fill-lavender-purple">
-								<div class="flex items-end h-full">
-									<svg class="flex-shrink-0 w-4 h-4 fill-lavender-purple sm:h-8 sm:w-8">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#message"></use>
-									</svg>
-								</div>
+							<span>Обладнання та сировина</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="12">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#instruments"></use>
+							</svg>
 
-								<div class="flex-grow pb-5 -ml-8 -mr-8 sm:m-0 sm:pb-0">
-									<input class="w-full min-h-0 p-0 text-xs align-bottom border-0 ring-0 placeholder:text-xs placeholder:text-dusty-gray focus:ring-0 sm:text-sm sm:placeholder:text-sm" placeholder="Ваше повідомлення..." />
-								</div>
-								<div class="z-10 flex items-end h-full sm:hidden">
-									<button>
-										<svg class="flex-shrink-0 w-4 h-4 fill-lavender-purple sm:h-6 sm:w-6">
-											<use xlink:href="img/svg/sprites/sprite-icons.svg#message-send"></use>
-										</svg>
-									</button>
-								</div>
-							</div>
+							<span>Будматеріали та інструменти</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="13">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#fashion"></use>
+							</svg>
+
+							<span>Мода та стиль</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="14">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#beauty"></use>
+							</svg>
+
+							<span>Краса і здоров’я</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="15">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#children-goods"></use>
+							</svg>
+
+							<span>Дитячі товари</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="16">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#building"></use>
+							</svg>
+
+							<span>Нерухомість</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="17">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#for-home"></use>
+							</svg>
+
+							<span>Мебелі</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="18">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#work"></use>
+							</svg>
+
+							<span>Робота</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="19">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#freelance"></use>
+							</svg>
+
+							<span>Послуги та фріланс</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="20">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#auto"></use>
+							</svg>
+
+							<span>Авто</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="21">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#auto2"></use>
+							</svg>
+
+							<span>Автотовари</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="22">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#spare-parts"></use>
+							</svg>
+
+							<span>Запчастини для транспорту</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="23">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#animals"></use>
+							</svg>
+
+							<span>Тварини</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="24">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#electronics"></use>
+							</svg>
+
+							<span>Електроніка</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="25">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#exchange"></use>
+							</svg>
+
+							<span>Обмін</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="26">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#for-busines"></use>
+							</svg>
+
+							<span>Для бізнесу</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="27">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#hobbies"></use>
+							</svg>
+
+							<span>Хобі та розваги</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="28">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-transparent stroke-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#school"></use>
+							</svg>
+
+							<span>Школа</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="29">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#books"></use>
+							</svg>
+
+							<span>Книги</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="30">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#jewerly"></use>
+							</svg>
+
+							<span>Ювелірні вироби</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="31">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#roll-brush"></use>
+							</svg>
+
+							<span>Для ремонту</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="32">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#garden"></use>
+							</svg>
+
+							<span>Сад та дача</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="33">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#health"></use>
+							</svg>
+
+							<span>Здоров’я</span>
+						</a>
+					</li>
+					<li class="category-mobile__item rounded-lg px-2.5 py-1.5" data-mobile-category="34">
+						<a href="#" class="flex items-center gap-4">
+							<svg class="h-5 w-5 fill-shark">
+								<use xlink:href="img/svg/sprites/sprite-category.svg#office-supplies"></use>
+							</svg>
+
+							<span>Канцтовари</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- підкатегорії 1-->
+		<div class="subcategory-mobile-level-1 hidden w-full">
+			<div class="flex items-center justify-between px-5 py-4.5">
+				<div class="text-base font-semibold text-shark">Обрати підкатегорію</div>
+				<button class="category-mobile-close">
+					<svg class="h-5 w-5">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="scrollbar-custom absolute z-40 hidden  max-h-full w-full overflow-y-auto overflow-x-hidden rounded-bl-lg rounded-br-lg bg-white px-5 pb-5" data-mobile-subctg-level-2="3">
+				
+				<ul class="flex flex-col gap-4 text-sm">
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="1">
+						<a href="#" class="flex items-center gap-4">
+							<span>Дитячі мебелі</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="1123">
+						<a href="#" class="flex items-center gap-4">
+							<span>Подарунки дітям</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="2">
+						<a href="#" class="flex items-center gap-4">
+							<span>Дитячі автокрісла</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="3">
+						<a href="#" class="flex items-center gap-4">
+							<span>Товари для навчання</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="4">
+						<a href="#" class="flex items-center gap-4">
+							<span>Облаштування дитячої</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="5">
+						<a href="#" class="flex items-center gap-4">
+							<span>Дитячий одяг</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="6">
+						<a href="#" class="flex items-center gap-4">
+							<span>Іграшки та ігри</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="7">
+						<a href="#" class="flex items-center gap-4">
+							<span>Прогулянки та активний відпочинок</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="8">
+						<a href="#" class="flex items-center gap-4">
+							<span>Радіо-та відеоняні</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="9">
+						<a href="#" class="flex items-center gap-4">
+							<span>Дитяче взуття</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="10">
+						<a href="#" class="flex items-center gap-4">
+							<span>Дитячий транспорт</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="11">
+						<a href="#" class="flex items-center gap-4">
+							<span>Здоров’я та догляд</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="12">
+						<a href="#" class="flex items-center gap-4">
+							<span>Товари для мам</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="13">
+						<a href="#" class="relative flex items-center gap-4">
+							<span>Дитячі коляски</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="14">
+						<a href="#" class="flex items-center gap-4">
+							<span>Дитяче харчування та годування</span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="15">
+						<a href="#" class="flex items-center gap-4">
+							<span>Розвиток та творчість </span>
+						</a>
+					</li>
+					<li class="category-mobile__submenu-item rounded-lg py-1.5" data-mobile-submenu="16">
+						<a href="#" class="flex items-center gap-4">
+							<span>Дитячі товари, інше</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- підкатегорії 1 -->
+
+		<!-- підкатегорії 2-->
+		<div class="subcategory-mobile-level-2 hidden w-full">
+			<div class="flex items-center justify-between px-5 py-4.5">
+				<div class="text-base font-semibold text-shark">Обрати підкатегорію</div>
+				<button class="category-mobile-close">
+					<svg class="h-5 w-5">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="scrollbar-custom absolute z-40 hidden  max-h-full w-full overflow-y-auto overflow-x-hidden rounded-bl-lg rounded-br-lg bg-white px-5 pb-5" data-mobile-subctg-level-3="1123">
+				
+				<ul class="flex flex-col gap-4 text-sm">
+					<li class="rounded-lg py-1.5">
+						<a href="#" class="flex items-center gap-4">
+							<span>Іграшки</span>
+						</a>
+					</li>
+					<li class="category__submenu2-item rounded-lg py-1.5">
+						<a href="#" class="flex items-center gap-4">
+							<span>Аксесуари</span>
+						</a>
+					</li>
+					<li class="category__submenu2-item rounded-lg py-1.5">
+						<a href="#" class="flex items-center gap-4">
+							<span>Для будинку</span>
+						</a>
+					</li>
+					<li class="category__submenu2-item rounded-lg py-1.5">
+						<a href="#" class="flex items-center gap-4">
+							<span>Книги та канцтовари</span>
+						</a>
+					</li>
+					<li class="category__submenu2-item rounded-lg py-1.5">
+						<a href="#" class="flex items-center gap-4">
+							<span>Косметика та догляд</span>
+						</a>
+					</li>
+					<li class="category__submenu2-item rounded-lg py-1.5">
+						<a href="#" class="flex items-center gap-4">
+							<span>Кульки та упаковка</span>
+						</a>
+					</li>
+					<li class="category__submenu2-item rounded-lg py-1.5">
+						<a href="#" class="flex items-center gap-4">
+							<span>Листівки та сувеніри</span>
+						</a>
+					</li>
+					<li class="category__submenu2-item rounded-lg py-1.5">
+						<a href="#" class="flex items-center gap-4">
+							<span>Посуд</span>
+						</a>
+					</li>
+					<li class="category__submenu2-item rounded-lg py-1.5">
+						<a href="#" class="flex items-center gap-4">
+							<span>Смачні подарунки</span>
+						</a>
+					</li>
+					<li class="category__submenu2-item rounded-lg py-1.5">
+						<a href="#" class="flex items-center gap-4">
+							<span>Хобі та розваги</span>
+						</a>
+					</li>
+					<li class="category__submenu2-item rounded-lg py-1.5">
+						<a href="#" class="flex items-center gap-4">
+							<span>Шкарпетки</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- підкатегорії 1 -->
+	</div>
+</div>
+<!-- ./mobile category -->
+</main>
+
+		<div id="modal-product-delete" style="display: none">
+	<div class="relative flex w-full flex-col overflow-hidden rounded-2lge bg-white px-4 py-7.5 transition-all transform sm:w-[752px] sm:px-7.5 sm:py-5">
+		<button class="modal-close absolute right-4 top-4 z-10 ml-auto flex h-5 w-5 items-center justify-center p-0 md:right-5 md:top-5" aria-label="Закрити модальне вікно">
+			<svg class="h-4 w-4 fill-tundora md:h-5 md:w-5">
+				<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
+			</svg>
+		</button>
+		<div>
+			<h2 class="text-center text-sm font-medium md:text-lg">Вкажіть причину видалення товару</h2>
+
+			<label class="mt-7 flex cursor-pointer items-center gap-3.5 sm:gap-5">
+				<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray bg-wild-sand">
+					<input type="radio" name="reason" class="peer hidden" checked />
+					<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 rounded-full border border-white bg-lavender-purple opacity-0 shadow-radio-modal transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
+				</div>
+				<div class="text-xs text-tundora sm:text-sm">Товара немає в наявності</div>
+			</label>
+			<label class="mt-3 flex cursor-pointer items-center gap-3.5 sm:gap-5">
+				<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray bg-wild-sand">
+					<input type="radio" name="reason" class="peer hidden" />
+					<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 rounded-full border border-white bg-lavender-purple opacity-0 shadow-radio-modal transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
+				</div>
+				<div class="text-xs text-tundora sm:text-sm">Покупець змінив рішення</div>
+			</label>
+			<div class="mt-4 text-xs font-medium text-tall-poppy sm:text-base">Тут ви можете вказати причину скасування замовлення</div>
+			<div class="mt-5 h-[157px] w-full rounded-lge border border-lavender-purple px-5 py-3.5">
+				<div class="flex h-full w-full">
+					<div class="flex w-full gap-4 fill-lavender-purple sm:mt-auto sm:items-center">
+						<div class="flex h-full items-end">
+							<label class="cursor-pointer">
+								<input type="file" name="" id="" hidden>
+								<svg class="h-4 w-4 flex-shrink-0 fill-lavender-purple sm:h-8 sm:w-8">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#message"></use>
+								</svg>
+							</label>
+						</div>
+
+						<div class="-ml-8 -mr-8 flex-grow pb-5 sm:m-0 sm:pb-0">
+							<input class="min-h-0 w-full border-0 p-0 align-bottom text-xs ring-0 placeholder:text-xs placeholder:text-dusty-gray focus:ring-0 sm:text-sm sm:placeholder:text-sm" placeholder="Ваше повідомлення..." />
+						</div>
+						<div class="z-10 flex h-full items-end sm:hidden">
+							<button>
+								<svg class="h-4 w-4 flex-shrink-0 fill-lavender-purple sm:h-6 sm:w-6">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#message-send"></use>
+								</svg>
+							</button>
 						</div>
 					</div>
-					<div class="flex justify-end mt-4">
-						<div class="w-full sm:w-auto">
-							<button class="text-sm btn-pink min-w-[220px] h-9 sm:w-auto w-full">Відправити</button>
-						</div>
-					</div>
+				</div>
+			</div>
+			<div class="mt-4 flex justify-end">
+				<div class="w-full sm:w-auto">
+					<button class="btn-pink h-9 w-full min-w-[220px] text-sm sm:w-auto">Відправити</button>
 				</div>
 			</div>
 		</div>

@@ -1,59 +1,56 @@
-<div class="relative z-[9999]" aria-labelledby="modal-app-sending-success" role="dialog" aria-modal="true">
-	<div class="fixed inset-0 transition-opacity bg-opacity-75 bg-shark/60"></div>
+<div id="modal-product-delete" style="display: none">
+	<div class="relative flex w-full flex-col overflow-hidden rounded-2lge bg-white px-4 py-7.5 transition-all transform sm:w-[752px] sm:px-7.5 sm:py-5">
+		<button class="modal-close absolute right-4 top-4 z-10 ml-auto flex h-5 w-5 items-center justify-center p-0 md:right-5 md:top-5" aria-label="Закрити модальне вікно">
+			<svg class="h-4 w-4 fill-tundora md:h-5 md:w-5">
+				<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
+			</svg>
+		</button>
+		<div>
+			<h2 class="text-center text-sm font-medium md:text-lg">Вкажіть причину видалення товару</h2>
 
-	<div class="fixed inset-0 z-10 overflow-y-auto">
-		<div class="flex items-center justify-center min-h-full p-4">
-			<div class="relative flex w-full transform flex-col overflow-hidden rounded-2lge bg-white px-4 py-7.5 transition-all sm:w-[752px] sm:px-7.5 sm:py-5">
-				<button class="absolute z-10 flex items-center justify-center w-5 h-5 p-0 ml-auto right-4 top-4 md:right-5 md:top-5" aria-label="Закрити модальне вікно">
-					<svg class="w-4 h-4 fill-tundora md:h-5 md:w-5">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
-					</svg>
-				</button>
-				<div>
-					<h2 class="text-sm font-medium text-center md:text-lg">Вкажіть причину видалення товару</h2>
-
-					<label class="flex items-center cursor-pointer sm:gap-5 mt-7 gap-3.5">
-						<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray bg-wild-sand">
-							<input type="radio" name="reason" class="hidden peer" checked />
-							<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 shadow-radio-modal transition ease-in peer-checked:opacity-100"></div>
+			<label class="mt-7 flex cursor-pointer items-center gap-3.5 sm:gap-5">
+				<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray bg-wild-sand">
+					<input type="radio" name="reason" class="peer hidden" checked />
+					<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 rounded-full border border-white bg-lavender-purple opacity-0 shadow-radio-modal transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
+				</div>
+				<div class="text-xs text-tundora sm:text-sm">Товара немає в наявності</div>
+			</label>
+			<label class="mt-3 flex cursor-pointer items-center gap-3.5 sm:gap-5">
+				<div class="relative h-6 w-6 flex-shrink-0 rounded-full border border-dusty-gray bg-wild-sand">
+					<input type="radio" name="reason" class="peer hidden" />
+					<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 rounded-full border border-white bg-lavender-purple opacity-0 shadow-radio-modal transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
+				</div>
+				<div class="text-xs text-tundora sm:text-sm">Покупець змінив рішення</div>
+			</label>
+			<div class="mt-4 text-xs font-medium text-tall-poppy sm:text-base">Тут ви можете вказати причину скасування замовлення</div>
+			<div class="mt-5 h-[157px] w-full rounded-lge border border-lavender-purple px-5 py-3.5">
+				<div class="flex h-full w-full">
+					<div class="flex w-full gap-4 fill-lavender-purple sm:mt-auto sm:items-center">
+						<div class="flex h-full items-end">
+							<label class="cursor-pointer">
+								<input type="file" name="" id="" hidden>
+								<svg class="h-4 w-4 flex-shrink-0 fill-lavender-purple sm:h-8 sm:w-8">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#message"></use>
+								</svg>
+							</label>
 						</div>
-						<div class="text-xs sm:text-sm text-tundora">Товара немає в наявності</div>
-					</label>
-					<label class="flex items-center mt-3 gap-3.5 cursor-pointer sm:gap-5">
-						<div class="relative flex-shrink-0 w-6 h-6 border rounded-full border-dusty-gray bg-wild-sand">
-							<input type="radio" name="reason" class="hidden peer" />
-							<div class="absolute left-1/2 top-1/2 h-4.5 w-4.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 shadow-radio-modal transition ease-in peer-checked:opacity-100"></div>
-						</div>
-						<div class="text-xs sm:text-sm text-tundora">Покупець змінив рішення</div>
-					</label>
-					<div class="mt-4 text-xs font-medium text-tall-poppy sm:text-base">Тут ви можете вказати причину скасування замовлення</div>
-					<div class="mt-5 h-[157px] w-full rounded-lge border border-lavender-purple px-5 py-3.5">
-						<div class="flex w-full h-full ">
-							<div class="flex w-full gap-4 sm:items-center sm:mt-auto fill-lavender-purple">
-								<div class="flex items-end h-full">
-									<svg class="flex-shrink-0 w-4 h-4 fill-lavender-purple sm:h-8 sm:w-8">
-										<use xlink:href="img/svg/sprites/sprite-icons.svg#message"></use>
-									</svg>
-								</div>
 
-								<div class="flex-grow pb-5 -ml-8 -mr-8 sm:m-0 sm:pb-0">
-									<input class="w-full min-h-0 p-0 text-xs align-bottom border-0 ring-0 placeholder:text-xs placeholder:text-dusty-gray focus:ring-0 sm:text-sm sm:placeholder:text-sm" placeholder="Ваше повідомлення..." />
-								</div>
-								<div class="z-10 flex items-end h-full sm:hidden">
-									<button>
-										<svg class="flex-shrink-0 w-4 h-4 fill-lavender-purple sm:h-6 sm:w-6">
-											<use xlink:href="img/svg/sprites/sprite-icons.svg#message-send"></use>
-										</svg>
-									</button>
-								</div>
-							</div>
+						<div class="-ml-8 -mr-8 flex-grow pb-5 sm:m-0 sm:pb-0">
+							<input class="min-h-0 w-full border-0 p-0 align-bottom text-xs ring-0 placeholder:text-xs placeholder:text-dusty-gray focus:ring-0 sm:text-sm sm:placeholder:text-sm" placeholder="Ваше повідомлення..." />
+						</div>
+						<div class="z-10 flex h-full items-end sm:hidden">
+							<button>
+								<svg class="h-4 w-4 flex-shrink-0 fill-lavender-purple sm:h-6 sm:w-6">
+									<use xlink:href="img/svg/sprites/sprite-icons.svg#message-send"></use>
+								</svg>
+							</button>
 						</div>
 					</div>
-					<div class="flex justify-end mt-4">
-						<div class="w-full sm:w-auto">
-							<button class="text-sm btn-pink min-w-[220px] h-9 sm:w-auto w-full">Відправити</button>
-						</div>
-					</div>
+				</div>
+			</div>
+			<div class="mt-4 flex justify-end">
+				<div class="w-full sm:w-auto">
+					<button class="btn-pink h-9 w-full min-w-[220px] text-sm sm:w-auto">Відправити</button>
 				</div>
 			</div>
 		</div>
