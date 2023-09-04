@@ -9,17 +9,9 @@
 
 		<main>
 			<div class="container my-4 lg:hidden">
-				<!-- mob search -->
-				<div class="trasition flex h-9 w-full items-center justify-between gap-4 rounded-lge border border-lavender-purple/50 bg-white py-1 pl-3 pr-1.5 text-sm transition ease-in">
-					<input type="text" class="flex-grow border-0 p-0 text-xs placeholder-dusty-gray ring-0 focus:ring-0" placeholder="Пошук по сайту..." />
-					<button class="btn-primary flex flex-shrink-0 items-center gap-2.5 rounded-lge px-2.5 py-1 text-sm">
-						<span>Знайти</span>
-						<svg class="h-3 w-3 flex-shrink-0 fill-white">
-							<use xlink:href="img/svg/sprites/sprite-icons.svg#search"></use>
-						</svg>
-					</button>
-				</div>
-				<!-- ./mob search -->
+				
+				@@include("html/components/_search-mobile.html", {placeholder: "Пошук по сайту..."})
+
 			</div>
 
 			<div class="lg:hidden">@@include('html/_banner-slider.html')</div>
@@ -168,7 +160,10 @@
 			</section>
 		</main>
 
-		@@include('html/components/_sticky-menu.html') @@include('html/components/_footer.html')
+		@@include('html/components/_category.html')
+		@@include('html/components/_category-mobile.html')
+		@@include('html/components/_sticky-menu.html') 
+		@@include('html/components/_footer.html')
 		@@include("html/components/_scripts.html")
 	</body>
 </html>

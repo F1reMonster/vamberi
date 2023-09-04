@@ -339,10 +339,51 @@ $(document).ready(function () {
 		console.log("click");
 		$(".faq-content").not($(this).next()).slideUp();
 		$(".faq-item").not($(this).parent()).removeClass("active");
-		$(".faq-item").not($(this).parent()).find('svg').removeClass('rotate-x-180');
+		$(".faq-item").not($(this).parent()).find("svg").removeClass("rotate-x-180");
 		$(this).parent().toggleClass("active");
 		$(this).next().slideToggle();
-		$(this).find('svg').toggleClass('rotate-x-180');
+		$(this).find("svg").toggleClass("rotate-x-180");
+	});
+
+	// autocomplete search
+	$.ajax({
+		url: "../files/search-data.json",
+		dataType: "json",
+		success: function (jasonData) {
+			$(".search-field").each(function () {
+				$(this)
+					.autocomplete({
+						appendTo: $(this).next(),
+						minLength: 2,
+						source: jasonData.map(function (item) {
+							return {
+								label: item.text,
+								value: item.link,
+							};
+						}),
+						select: function (event, ui) {
+							$(this).val(ui.item.label);
+							return false;
+						},
+					})
+					.autocomplete("instance")._renderItem = function (ul, item) {
+					// Перевірка, чи є введена фраза
+					var term = this.term || "";
+					var regexp = new RegExp("(" + $.ui.autocomplete.escapeRegex(term) + ")", "gi");
+
+					// Виділення фрази у тексті результату
+					var highlightedText = item.label.replace(regexp, '<span class="highlighted">$1</span>');
+
+					// Створення пункту списку з виділеним текстом
+					return $("<li class='p-1.5 text-sm'>")
+						.append("<a class='autocomplete__item' href='" + item.value + "'><div class='autocomplete__item-name'><span>" + highlightedText + "</span></div></a>")
+						.appendTo(ul);
+				};
+			});
+		},
+		error: function (error) {
+			console.error("Error fetching JSON data:", error);
+		},
 	});
 });
 

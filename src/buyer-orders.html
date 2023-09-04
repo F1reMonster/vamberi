@@ -69,8 +69,9 @@
 									</div>
 								</div>
 								<div class="md:w-[25rem] lg:w-[20.625rem]">
-									<div class="trasition flex h-9 items-center justify-between gap-4 rounded-lge border border-dusty-gray/60 bg-white px-3 py-1 text-left transition ease-in md:h-auto">
-										<input type="text" class="w-full border-0 p-0 placeholder-dusty-gray ring-0 placeholder:text-xs focus:ring-0" placeholder="Пошук за назвою" />
+									<div class="relative trasition flex h-9 items-center justify-between gap-4 rounded-lge border border-dusty-gray/60 bg-white px-3 py-1 text-left transition ease-in md:h-auto">
+										<input type="text" class="search-field w-full border-0 p-0 placeholder-dusty-gray ring-0 placeholder:text-xs focus:ring-0" placeholder="Пошук за назвою" />
+										<div class="autocomplete-block scrollbar-custom absolute left-0 top-[calc(100%+0.5rem)] z-50 max-h-80 w-full overflow-y-auto overflow-x-hidden rounded-lge bg-white shadow-md"></div>
 										<button class="btn-primary flex flex-shrink-0 items-center gap-2.5 rounded-lge px-2.5 py-1 text-xs">
 											<span>Знайти</span>
 											<svg class="h-3 w-3 flex-shrink-0 fill-white">

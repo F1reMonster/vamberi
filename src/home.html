@@ -5,15 +5,15 @@
 	</head>
 
 	<body class="">
-		
 		@@include('html/components/_header.html', {accountMenu: ""})
 
 		<main>
+			<div class="container mt-5 mb-2.5 lg:hidden">@@include("html/components/_search-mobile.html", {placeholder: "Пошук по сайту..."})</div>
+
 			@@include('html/_banner-slider.html')
 			<!-- category dropdown -->
 			<div class="py-3 lg:hidden">
 				<div class="container">
-					<!-- при відкритті додати класи  rounded-bl-0 rounded-br-0-->
 					<div class="relative rounded-lg bg-white">
 						<button aria-label="Обрати категорію" class="btn-category-mobile group flex h-12.5 w-full items-center px-2.5 py-1.5">
 							<div class="flex items-center gap-3.5">
@@ -26,8 +26,6 @@
 							</div>
 
 							<div class="ml-auto">
-								<!-- при відкритті додати клас rotate-180 -->
-
 								<svg class="category-mobile-arrow-down h-3 w-3 fill-black transition ease-in">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 								</svg>
@@ -37,7 +35,6 @@
 				</div>
 			</div>
 			<!-- ./category dropdown -->
-			
 
 			<!-- slider shops -->
 			<section>
@@ -271,10 +268,11 @@
 			<!-- ./why vamberi -->
 		</main>
 
-		@@include('html/components/_category.html')
+		@@include('html/components/_category.html') 
 		@@include('html/components/_category-mobile.html')
 		@@include('html/components/_sticky-menu.html') 
-		@@include('html/components/_footer.html')
+		@@include('html/components/_footer.html') 
+		@@include('html/components/modals/_modal-basket.html') 
 		@@include("html/components/_scripts.html")
 	</body>
 </html>
