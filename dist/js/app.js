@@ -354,7 +354,7 @@ $(document).ready(function () {
 				$(this)
 					.autocomplete({
 						appendTo: $(this).next(),
-						minLength: 2,
+						minLength: 3,
 						source: jasonData.map(function (item) {
 							return {
 								label: item.text,
