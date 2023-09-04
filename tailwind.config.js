@@ -43,6 +43,7 @@ module.exports = {
 		},
 		extend: {
 			screens: {
+				"1xl": '1440px',
 				lge: "1100px",
 				xle: "1230px", // 1230
 				mde: "576px",

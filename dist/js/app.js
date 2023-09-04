@@ -162,6 +162,7 @@ window.addEventListener("resize", function () {
 $(document).ready(function () {
 	// sliders
 	//  buyer-favorites.html
+
 	const swiper2 = new Swiper(".swiper2", {
 		slidesPerView: "auto",
 		spaceBetween: 22,
@@ -212,6 +213,60 @@ $(document).ready(function () {
 			},
 			1024: {
 				spaceBetween: 22,
+			},
+		},
+	});
+
+	// banner-slider
+	if ($(".banner-slider").length > 0) {
+		let $speed = 5000,
+			$delay = 1000;
+
+		if ($(".banner-slider").data("speed") !== undefined) {
+			$speed = parseInt($(".banner-slider").data("speed"));
+		}
+
+		if ($(".banner-slider").data("delay") !== undefined) {
+			$delay = parseInt($(".banner-slider").data("delay"));
+		}
+
+		const bannerSlider = new Swiper(".banner-slider", {
+			speed: $speed, // Встановлюємо швидкість
+			autoplay: {
+				delay: $delay, // Затримка перед автоматичним переключенням слайдів (мілісекунди)
+			},
+			loop: true,
+			spaceBetween: 22,
+			effect: "fade",
+			navigation: {
+				nextEl: ".btn-banner-slider-next",
+				prevEl: ".btn-banner-slider-prev",
+			},
+			pagination: {
+				el: ".banner-slider-pagination",
+			},
+		});
+	}
+
+	// home page shos slider
+	const sliderShops = new Swiper(".shops-slider", {
+		// speed: 1000,
+		// autoplay: {
+		// 	delay: 3000, // Затримка перед автоматичним переключенням слайдів (мілісекунди)
+		// },
+		// loop: true,
+		spaceBetween: 13,
+		slidesPerView: 4,
+		navigation: {
+			nextEl: ".btn-slider-shops-next",
+			prevEl: ".btn-slider-shops-prev",
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: "auto",
+			},
+			1440: {
+				slidesPerView: 4,
 			},
 		},
 	});
@@ -346,44 +401,101 @@ $(document).ready(function () {
 	});
 
 	// autocomplete search
-	$.ajax({
-		url: "./files/search-data.json",
-		dataType: "json",
-		success: function (jasonData) {
-			$(".search-field").each(function () {
-				$(this)
-					.autocomplete({
-						appendTo: $(this).next(),
-						minLength: 3,
-						source: jasonData.map(function (item) {
-							return {
-								label: item.text,
-								value: item.link,
-							};
-						}),
-						select: function (event, ui) {
-							$(this).val(ui.item.label);
-							return false;
-						},
-					})
-					.autocomplete("instance")._renderItem = function (ul, item) {
-					// Перевірка, чи є введена фраза
-					var term = this.term || "";
-					var regexp = new RegExp("(" + $.ui.autocomplete.escapeRegex(term) + ")", "gi");
+	// $.ajax({
+	// 	url: "./files/search-data.json",
+	// 	dataType: "json",
+	// 	success: function (jasonData) {
+	// 		$(".search-field").each(function () {
+	// 			$(this)
+	// 				.autocomplete({
+	// 					appendTo: $(this).next(),
+	// 					minLength: 3,
+	// 					source: jasonData.map(function (item) {
+	// 						return {
+	// 							label: item.text,
+	// 							value: item.link,
+	// 						};
+	// 					}),
+	// 					select: function (event, ui) {
+	// 						$(this).val(ui.item.label);
+	// 						return false;
+	// 					},
+	// 				})
+	// 				.autocomplete("instance")._renderItem = function (ul, item) {
+	// 				// Перевірка, чи є введена фраза
+	// 				var term = this.term || "";
+	// 				var regexp = new RegExp("(" + $.ui.autocomplete.escapeRegex(term) + ")", "gi");
 
-					// Виділення фрази у тексті результату
-					var highlightedText = item.label.replace(regexp, '<span class="highlighted">$1</span>');
+	// 				// Виділення фрази у тексті результату
+	// 				var highlightedText = item.label.replace(regexp, '<span class="highlighted">$1</span>');
 
-					// Створення пункту списку з виділеним текстом
-					return $("<li class='py-1.5 px-2.5 text-sm'>")
-						.append("<a class='autocomplete__item' href='" + item.value + "'><div class='autocomplete__item-name'><span>" + highlightedText + "</span></div></a>")
-						.appendTo(ul);
-				};
-			});
-		},
-		error: function (error) {
-			console.error("Error fetching JSON data:", error);
-		},
+	// 				// Створення пункту списку з виділеним текстом
+	// 				return $("<li class='py-1.5 px-2.5 text-sm'>")
+	// 					.append("<a class='autocomplete__item' href='" + item.value + "'><div class='autocomplete__item-name'><span>" + highlightedText + "</span></div></a>")
+	// 					.appendTo(ul);
+	// 			};
+	// 		});
+	// 	},
+	// 	error: function (error) {
+	// 		console.error("Error fetching JSON data:", error);
+	// 	},
+	// });
+
+	$(".search-field").each(function () {
+		$(this)
+			.autocomplete({
+				appendTo: $(this).next(),
+				minLength: 3,
+				source: function (request, response) {
+					if (request.term.length >= 3) {
+						// Відправка AJAX-запиту до сервера для завантаження даних
+						$.ajax({
+							url: "./files/search-data.json",
+							dataType: "json",
+							success: function (data) {
+								var filteredData = data.filter(function (item) {
+									// Фільтрація даних за текстом введеного запиту
+									return item.text.toLowerCase().indexOf(request.term.toLowerCase()) !== -1;
+								});
+
+								// Створення посилань з тексту
+								var results = filteredData.map(function (item) {
+									return {
+										label: item.text,
+										value: item.link,
+									};
+								});
+
+								response(results); // Передача результатів до компоненту автозаповнення
+							},
+							error: function () {
+								// Обробка помилок
+								console.log("Помилка при завантаженні даних");
+								response([]); // Повернення порожнього масиву у випадку помилки
+							},
+						});
+					} else {
+						response([]); // Повернення порожнього масиву, коли менше трьох символів
+					}
+				},
+				select: function (event, ui) {
+					$(this).val(ui.item.label);
+					return false;
+				},
+			})
+			.autocomplete("instance")._renderItem = function (ul, item) {
+			// Перевірка, чи є введена фраза
+			var term = this.term || "";
+			var regexp = new RegExp("(" + $.ui.autocomplete.escapeRegex(term) + ")", "gi");
+
+			// Виділення фрази у тексті результату
+			var highlightedText = item.label.replace(regexp, '<span class="highlighted">$1</span>');
+
+			// Створення пункту списку з виділеним текстом
+			return $("<li class='py-1.5 px-2.5 text-sm'>")
+				.append("<a class='autocomplete__item' href='" + item.value + "'><div class='autocomplete__item-name'><span>" + highlightedText + "</span></div></a>")
+				.appendTo(ul);
+		};
 	});
 });
 
@@ -406,6 +518,10 @@ $(window).on("resize", function () {
 	if ($("body").hasClass("lock")) {
 		$("body").removeClass("lock");
 	}
+
+	if ($("body").hasClass("mobile-lock")) {
+		$("body").removeClass("mobile-lock");
+	}
 });
 
 $(document).mouseup(function (e) {
@@ -419,15 +535,4 @@ $(document).mouseup(function (e) {
 		$("[data-category-level-3]").addClass("hidden");
 		$(".category__submenu-item").find("svg").remove();
 	}
-
-	// if (!$(".category-mobile-body").is(e.target) && $(".category-mobile-body").has(e.target).length === 0) {
-	// 	$(".category-mobile").addClass("hidden");
-	// 	$(".btn-category-mobile").removeClass("active");
-	// 	$(".category-mobile-main").removeClass("hidden");
-	// 	$(".subcategory-mobile-level-1").addClass("hidden");
-	// 	$(".subcategory-mobile-level-2").addClass("hidden");
-	// 	$("[data-mobile-subctg-level-2]").addClass("hidden");
-	// 	$("[data-mobile-subctg-level-3]").addClass("hidden");
-	// 	$("body").removeClass("lock");
-	// }
 });
