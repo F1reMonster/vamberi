@@ -347,7 +347,7 @@ $(document).ready(function () {
 
 	// autocomplete search
 	$.ajax({
-		url: "../files/search-data.json",
+		url: "./files/search-data.json",
 		dataType: "json",
 		success: function (jasonData) {
 			$(".search-field").each(function () {
@@ -375,7 +375,7 @@ $(document).ready(function () {
 					var highlightedText = item.label.replace(regexp, '<span class="highlighted">$1</span>');
 
 					// Створення пункту списку з виділеним текстом
-					return $("<li class='p-1.5 text-sm'>")
+					return $("<li class='py-1.5 px-2.5 text-sm'>")
 						.append("<a class='autocomplete__item' href='" + item.value + "'><div class='autocomplete__item-name'><span>" + highlightedText + "</span></div></a>")
 						.appendTo(ul);
 				};
