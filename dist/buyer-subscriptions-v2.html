@@ -1489,7 +1489,7 @@
 
 <div class="sticky inset-x-0 bottom-0 z-50 h-12.5 bg-white px-4 pb-1 pt-1.5 shadow-sticky md:px-5 lg:hidden" id="sticky">
 	<div class="flex items-center justify-between gap-x-3">
-		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua">
+		<a class="shrink-0" href="#home">
 			<div class="flex shrink-0 flex-col items-center gap-1">
 				<svg class="h-5 w-5 fill-shark">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#home"></use>
@@ -1497,7 +1497,7 @@
 				<div class="text-xs text-shark">Головна</div>
 			</div>
 		</a>
-		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua/account/favorites">
+		<a class="shrink-0" href="#favorites">
 			<div class="flex shrink-0 flex-col items-center gap-1">
 				<svg class="h-5 w-5 fill-shark">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
@@ -1505,7 +1505,7 @@
 				<div class="text-xs text-shark">Вибране</div>
 			</div>
 		</a>
-		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua/account/ads/create">
+		<a class="shrink-0" href="#create">
 			<div class="flex shrink-0 flex-col items-center gap-1">
 				<svg class="h-5 w-5 fill-transparent stroke-shark">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#circle-plus"></use>
@@ -1513,7 +1513,7 @@
 				<div class="text-xs text-shark">Подати</div>
 			</div>
 		</a>
-		<a class="shrink-0" href="">
+		<a class="shrink-0" href="#chat">
 			<div class="flex shrink-0 flex-col items-center gap-1">
 				<svg class="h-5 w-5 fill-shark">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#envelope"></use>
@@ -1522,7 +1522,7 @@
 				<div class="text-xs text-shark">Чат</div>
 			</div>
 		</a>
-		<a class="shrink-0" href="http://fil.vamberi.com.ua/ua/account">
+		<a class="shrink-0" href="#account">
 			<div class="flex shrink-0 flex-col items-center gap-1">
 				<svg class="h-5 w-5 fill-shark">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
@@ -1536,13 +1536,13 @@
 <!-- ./sticky menu -->
 
 		<div class="hidden lg:block"><!-- footer -->
-<footer class=" bg-tundora py-6 text-white lg:py-12.5">
+<footer class="bg-tundora py-6 text-white lg:py-12.5">
 	<div class="container">
 		<div class="relative">
 			<div class="flex flex-col md:flex-row">
 				<div class="flex items-center justify-between pb-5 md:mr-12 md:items-start md:pb-20 lg:mr-48">
 					<a href="#" class="link-primary drop-shadow-text font-semibold hover:text-white md:text-3xl">VamBeri</a>
-					<button class="flex h-9 w-9 items-center justify-center rounded-full border border-lavender-purple md:hidden">
+					<button class="scroll-up flex h-9 w-9 items-center justify-center rounded-full border border-lavender-purple md:hidden" aria-label="Go up">
 						<svg class="h-4 w-4 fill-white transition ease-in">
 							<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-up"></use>
 						</svg>
@@ -1557,7 +1557,7 @@
 					<div>
 						<div class="flex items-center gap-2">
 							<h3 class="text-sm font-semibold md:text-xl">Покупцям</h3>
-							<button class="transition ease-linear md:hidden">
+							<button class="footer-btn-menu transition ease-in md:hidden" aria-label="показати більше">
 								<svg class="h-2.5 w-2.5 fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 								</svg>
@@ -1594,7 +1594,7 @@
 					<div>
 						<div class="flex items-center gap-2">
 							<h3 class="text-sm font-semibold md:text-xl">Партненрам</h3>
-							<button class="md:hidden">
+							<button class="footer-btn-menu transition ease-in md:hidden" aria-label="показати більше">
 								<svg class="h-2.5 w-2.5 fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 								</svg>
@@ -1621,7 +1621,7 @@
 					<div>
 						<div class="flex items-center gap-2">
 							<h3 class="text-base font-semibold md:text-xl">Компанія</h3>
-							<button class="md:hidden">
+							<button class="footer-btn-menu transition ease-in md:hidden" aria-label="показати більше">
 								<svg class="h-2.5 w-2.5 fill-white">
 									<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 								</svg>
@@ -1670,7 +1670,7 @@
 			</div>
 			<!-- copyrights -->
 			<div class="absolute bottom-0 right-0 z-10 hidden h-full flex-col items-end justify-end md:flex xl:items-center">
-				<button class="group flex h-9 w-9 items-center justify-center rounded-full border border-lavender-purple transition ease-in hover:border-white lg:h-15 lg:w-15">
+				<button class="scroll-up group flex h-9 w-9 items-center justify-center rounded-full border border-lavender-purple transition ease-in hover:border-white lg:h-15 lg:w-15" aria-label="Go up">
 					<svg class="h-4 w-4 fill-white transition ease-in group-hover:fill-lavender-purple lg:h-6 lg:w-6">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-up"></use>
 					</svg>

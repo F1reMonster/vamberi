@@ -3430,6 +3430,7 @@ section {
 }
 
 .banner-slider-pagination .swiper-pagination-bullet,
+.slider-adv-pagination .swiper-pagination-bullet,
 .product-card-slider-pagination .swiper-pagination-bullet {
   width: 0.375rem;
   height: 0.375rem;
@@ -3439,6 +3440,7 @@ section {
   transition: all 0.2s ease-in;
 }
 .banner-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.slider-adv-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
 .product-card-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 0.4375rem;
   height: 0.4375rem;
@@ -3446,11 +3448,13 @@ section {
 }
 @media (min-width: 62em) {
   .banner-slider-pagination .swiper-pagination-bullet,
+  .slider-adv-pagination .swiper-pagination-bullet,
   .product-card-slider-pagination .swiper-pagination-bullet {
     width: 0.625rem;
     height: 0.625rem;
   }
   .banner-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+  .slider-adv-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
   .product-card-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 0.875rem;
     height: 0.875rem;
@@ -6344,9 +6348,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 }
 @media (min-width: 1440px) {
-  .\31xl\:flex-shrink {
-    flex-shrink: 1;
-  }
   .\31xl\:flex-shrink-0 {
     flex-shrink: 0;
   }

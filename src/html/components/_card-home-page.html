@@ -1,7 +1,7 @@
 <!-- card -->
 <div class="group relative flex flex-col">
 	<!--  favorite icon -->
-	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0">
+	<button class="absolute right-3 top-3 z-30 opacity-100 transition ease-in group-hover:opacity-100 sm:right-5 sm:top-5 lg:opacity-0" aria-label="Обране">
 		@@if (context.iconHeartFill) {
 		<svg class="h-4 w-4 shrink-0 fill-dusty-gray sm:h-5 sm:w-5">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
@@ -19,7 +19,7 @@
 	<div class="pointer-events-none absolute -bottom-11 left-0 right-0 z-30 hidden rounded-bl-xle rounded-br-xle bg-white py-2.5 opacity-0 shadow-custom transition ease-in group-hover:pointer-events-auto group-hover:opacity-100 lg:block">
 		<div class="absolute inset-0 -top-0.5 h-1 bg-white"></div>
 		<div class="flex justify-center">
-			<button class="btn-pink h-[2.125rem] w-[11.875rem]">В кошик</button>
+			<button class="btn-pink h-[2.125rem] w-[11.875rem]" aria-label="В кошик">В кошик</button>
 		</div>
 	</div>
 
@@ -27,16 +27,34 @@
 
 	<!-- image -->
 	<div class="absolute top-1 z-20 h-[9.25rem] w-full overflow-hidden px-1.5 pb-1 sm:top-2 sm:h-[17.625rem] sm:pb-2">
-		<img src="@@image" alt="" class="h-full w-full rounded-xle object-cover" />
+		@@if (context.slider) {
+			<div class="swiper card-image-slider w-full h-full">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="@@image" alt="" class="h-full w-full rounded-xle object-cover" loading="lazy"/>
+
+					</div>
+					<div class="swiper-slide">
+						<img src="@@image2" alt="" class="h-full w-full rounded-xle object-cover" loading="lazy"/>
+					</div>
+				</div>
+			</div>
+
+		}
+
+		@@if (context.noSlider) {
+			<img src="@@image" alt="" class="h-full w-full rounded-xle object-cover" />
+		}
+
 		@@if (context.discount) {
 		<div class="absolute left-3 top-3 z-20 rounded-lg bg-pomegranate px-1 py-0.5 text-xs text-white sm:left-4 sm:top-3 sm:text-sm">@@discount</div>
 		} @@if (context.slidersBtn) {
-		<button class="group/btn absolute left-1 top-[calc(50%-0.25rem)] z-20 flex h-5 w-5 items-center justify-center rounded-full bg-white/60 transition ease-in hover:bg-lavender-purple sm:left-3 lg:h-7.5 lg:w-7.5">
+		<button class="btn-card-image-prev group/btn absolute left-1 top-[calc(50%-0.25rem)] z-20 flex h-5 w-5 items-center justify-center rounded-full bg-white/60 transition ease-in hover:bg-lavender-purple sm:left-3 lg:h-7.5 lg:w-7.5">
 			<svg class="h-2.5 w-2.5 fill-black transition ease-in group-hover/btn:fill-white">
 				<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-left"></use>
 			</svg>
 		</button>
-		<button class="group/btn absolute right-1 top-[calc(50%-0.25rem)] z-20 flex h-5 w-5 items-center justify-center rounded-full bg-white/60 transition ease-in hover:bg-lavender-purple sm:right-3 lg:h-7.5 lg:w-7.5">
+		<button class="btn-card-image-next group/btn absolute right-1 top-[calc(50%-0.25rem)] z-20 flex h-5 w-5 items-center justify-center rounded-full bg-white/60 transition ease-in hover:bg-lavender-purple sm:right-3 lg:h-7.5 lg:w-7.5">
 			<svg class="h-2.5 w-2.5 fill-black transition ease-in group-hover/btn:fill-white">
 				<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-right"></use>
 			</svg>
@@ -108,7 +126,7 @@
 						<div class="text-xs text-dusty-gray">@@totalScores</div>
 					</div>
 
-					<button class="btn-primary rounded-emd px-3.5 py-1.5 text-sm lg:hidden">Купити</button>
+					<button class="btn-primary rounded-emd px-3.5 py-1.5 text-sm lg:hidden" aria-label="Купити">Купити</button>
 
 					@@if (context.stateNew) {
 

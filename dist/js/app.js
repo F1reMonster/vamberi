@@ -271,6 +271,48 @@ $(document).ready(function () {
 		},
 	});
 
+	// home page slider adv
+	const sliderAdv = new Swiper(".slider-adv", {
+		slidesPerView: 4,
+		spaceBetween: 45,
+		navigation: {
+			nextEl: ".btn-slider-adv-next",
+			prevEl: ".btn-slider-adv-prev",
+		},
+		pagination: {
+			el: ".slider-adv-pagination",
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: "auto",
+				spaceBetween: 15,
+			},
+			1440: {
+				slidesPerView: 4,
+				spaceBetween: 45,
+			},
+		},
+	});
+
+	// cards slider
+	$(".card-image-slider").each(function (index, element) {
+		var sliderId = "card-slider-" + index;
+		var nextButtonId = "swiper-button-next-" + index;
+		var prevButtonId = "swiper-button-prev-" + index;
+
+		$(element).attr("id", sliderId);
+		$(element).parent().find(".btn-card-image-next").attr("id", nextButtonId);
+		$(element).parent().find(".btn-card-image-prev").attr("id", prevButtonId);
+
+		var swiper = new Swiper("#" + sliderId, {
+			slidersPerView: 1,
+			navigation: {
+				nextEl: "#" + nextButtonId,
+				prevEl: "#" + prevButtonId,
+			},
+		});
+	});
+
 	// desktop-category
 	$(".btn-category-desktop").click(function () {
 		$(".category-desktop").removeClass("hidden");
@@ -391,7 +433,6 @@ $(document).ready(function () {
 
 	// faq accordeon
 	$(".faq-btn").on("click", function () {
-		console.log("click");
 		$(".faq-content").not($(this).next()).slideUp();
 		$(".faq-item").not($(this).parent()).removeClass("active");
 		$(".faq-item").not($(this).parent()).find("svg").removeClass("rotate-x-180");
@@ -401,46 +442,6 @@ $(document).ready(function () {
 	});
 
 	// autocomplete search
-	// $.ajax({
-	// 	url: "./files/search-data.json",
-	// 	dataType: "json",
-	// 	success: function (jasonData) {
-	// 		$(".search-field").each(function () {
-	// 			$(this)
-	// 				.autocomplete({
-	// 					appendTo: $(this).next(),
-	// 					minLength: 3,
-	// 					source: jasonData.map(function (item) {
-	// 						return {
-	// 							label: item.text,
-	// 							value: item.link,
-	// 						};
-	// 					}),
-	// 					select: function (event, ui) {
-	// 						$(this).val(ui.item.label);
-	// 						return false;
-	// 					},
-	// 				})
-	// 				.autocomplete("instance")._renderItem = function (ul, item) {
-	// 				// Перевірка, чи є введена фраза
-	// 				var term = this.term || "";
-	// 				var regexp = new RegExp("(" + $.ui.autocomplete.escapeRegex(term) + ")", "gi");
-
-	// 				// Виділення фрази у тексті результату
-	// 				var highlightedText = item.label.replace(regexp, '<span class="highlighted">$1</span>');
-
-	// 				// Створення пункту списку з виділеним текстом
-	// 				return $("<li class='py-1.5 px-2.5 text-sm'>")
-	// 					.append("<a class='autocomplete__item' href='" + item.value + "'><div class='autocomplete__item-name'><span>" + highlightedText + "</span></div></a>")
-	// 					.appendTo(ul);
-	// 			};
-	// 		});
-	// 	},
-	// 	error: function (error) {
-	// 		console.error("Error fetching JSON data:", error);
-	// 	},
-	// });
-
 	$(".search-field").each(function () {
 		$(this)
 			.autocomplete({
@@ -497,6 +498,31 @@ $(document).ready(function () {
 				.appendTo(ul);
 		};
 	});
+
+	// footer mobile open menus
+	$(".footer-btn-menu").on("click", function () {
+		$("ul").not($(this).parent().next()).slideUp();
+		$("svg").not($(this)).removeClass("rotate-x-180");
+		$(this).parent().next().slideToggle();
+		$(this).find("svg").toggleClass("rotate-x-180");
+	});
+
+	// footer up button
+	$(".scroll-up").each(function () {
+		$(this).on("click", function (e) {
+			e.preventDefault();
+			e.stopPropagation();
+			var winHeight = $(document).height();
+			var step = 12;
+			var timeToScroll = winHeight / step;
+			$("html, body").stop().animate(
+				{
+					scrollTop: 0,
+				},
+				500
+			);
+		});
+	});
 });
 
 $(window).on("resize", function () {
@@ -522,6 +548,9 @@ $(window).on("resize", function () {
 	if ($("body").hasClass("mobile-lock")) {
 		$("body").removeClass("mobile-lock");
 	}
+
+	$('footer ul').removeAttr('style');
+	$('.footer-btn-menu').find('svg').removeClass('rotate-x-180')
 });
 
 $(document).mouseup(function (e) {

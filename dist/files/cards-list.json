@@ -1,6 +1,7 @@
 [
 	{
 		"iconHeartStroke": true,
+		"noSlider": true,
 		"image": "img/photo_2023-07-29_22-15-03.jpg",
 		"discount": "-40%",
 		"price": "8000 <span class=\"hidden sm:inline-block\">грн</span><span class=\"inline-block sm:hidden\">₴</span>",
@@ -15,6 +16,7 @@
 	},
 	{
 		"iconHeartFill": true,
+		"noSlider": true,
 		"image": "img/photo_2023-07-29_22-17-00.jpg",
 		"discount": "-40%",
 		"price": "100999 <span class=\"hidden sm:inline-block\">грн</span><span class=\"inline-block sm:hidden\">₴</span>",
@@ -30,6 +32,7 @@
 	
 	{
 		"iconHeartStroke": true,
+		"noSlider": true,
 		"image": "img/goods/4.jpg",
 		"discount": "-40%",
 		"price": "8000 <span class=\"hidden sm:inline-block\">грн</span><span class=\"inline-block sm:hidden\">₴</span>",
@@ -44,7 +47,10 @@
 	},
 	{
 		"iconHeartFill": true,
+		"slider": true,
+		"noSlider": false,
 		"image": "img/goods/1.jpg",
+		"image2": "img/goods/3.jpg",
 		"price": "8000 <span class=\"hidden sm:inline-block\">грн</span><span class=\"inline-block sm:hidden\">₴</span>",
 		
 		"title": "Шкаф кровать трансформер",
@@ -59,6 +65,7 @@
 	},
 	{
 		"iconHeartStroke": true,
+		"noSlider": true,
 		"image": "img/goods/2.jpg",
 		"discount": "-40%",
 		"price": "999 <span class=\"hidden sm:inline-block\">грн</span><span class=\"inline-block sm:hidden\">₴</span>",
