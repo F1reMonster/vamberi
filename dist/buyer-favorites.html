@@ -147,20 +147,18 @@
 			<!-- Особистий кабінет -->
 			<div class="text-center text-base font-normal sm:font-medium">Особистий кабінет</div>
 			<div class="mt-2.5 flex items-center justify-between rounded-lge bg-lavender-purple px-3 py-2 text-sm transition ease-in lg:mt-5">
-				<label class="relative cursor-pointer">
-					<input type="radio" name="account" class="peer/buyer hidden" checked />
-					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs text-white transition ease-in peer-checked/buyer:bg-white peer-checked/buyer:text-shark sm:text-sm">Покупець</div>
-					<svg class="absolute -left-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy opacity-0 transition ease-in peer-checked/buyer:opacity-100 sm:-left-10 sm:h-5 sm:w-5">
+				<a href="buyer-orders.html" class="relative">
+					
+					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs transition ease-in bg-white text-shark sm:text-sm">Покупець</div>
+					<svg class="absolute -left-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy transition ease-in sm:-left-10 sm:h-5 sm:w-5">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled"></use>
 					</svg>
-				</label>
-				<label class="relative cursor-pointer">
-					<input type="radio" name="account" class="peer/seller hidden" />
-					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs text-white transition ease-in peer-checked/seller:bg-white peer-checked/seller:text-shark sm:text-sm">Продавець</div>
-					<svg class="absolute -right-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy opacity-0 transition ease-in peer-checked/seller:opacity-100 sm:-right-10 sm:h-5 sm:w-5">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled"></use>
-					</svg>
-				</label>
+				</a>
+				<a href="seller-my-goods.html" class="relative">
+					
+					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs text-white transition ease-in  sm:text-sm">Продавець</div>
+					
+				</a>
 			</div>
 			<!-- ./Особистий кабінет -->
 
@@ -176,7 +174,7 @@
 						</button>
 					</li>
 					<li class="relative flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<a href="buyer-orders.html" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#basket"></use>
 							</svg>
@@ -187,7 +185,7 @@
 						</a>
 					</li>
 					<li class="relative flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<a href="buyer-chat.html" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#envelope"></use>
 							</svg>
@@ -206,7 +204,7 @@
 						</a>
 					</li>
 					<li class="flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<a href="buyer-favorites.html" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 							</svg>
@@ -214,7 +212,7 @@
 						</a>
 					</li>
 					<li class="flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<a href="buyer-subscriptions.html" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#user02"></use>
 							</svg>
@@ -230,7 +228,7 @@
 						</a>
 					</li>
 					<li class="flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<a href="settings-buyer.html" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#settings"></use>
 							</svg>
@@ -256,8 +254,8 @@
 
 						<div class="relative z-10 pb-1.5 after:absolute after:inset-0 after:z-20 after:-translate-x-full after:bg-wild-sand sm:-mx-1 sm:px-1 sm:pb-14 lg:w-[calc(100%-400px)]">
 							<div><!-- info banner  -->
-<div class="bg-gradient-pink2 relative mb-6 mt-0 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:mb-9 lg:mt-0 lg:min-h-[11.25rem] lg:px-3.5">
-	<button class="absolute right-2 top-2 z-10">
+<div class="info-banner bg-gradient-pink2 relative mb-6 mt-0 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:mb-9 lg:mt-0 lg:min-h-[11.25rem] lg:px-3.5">
+	<button class="absolute right-2 top-2 z-20 info-banner-close">
 		<svg class="h-4 w-4 fill-tundora">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
 		</svg>
@@ -270,7 +268,7 @@
 <!-- ./info banner  -->
 </div>
 
-							<div class="mt-5 flex flex-col lg:mt-8.5">
+							<div class="flex flex-col">
 								<div class="flex items-center justify-between">
 									<h2 class="text-sm font-semibold sm:text-xl">Вибране</h2>
 									<div class="hidden gap-[3.125rem] lg:flex">
@@ -1798,12 +1796,12 @@
 				<div class="text-xs text-shark">Чат</div>
 			</div>
 		</a>
-		<a class="shrink-0" href="#account">
+		<a class="shrink-0 account-btn" href="#">
 			<div class="flex shrink-0 flex-col items-center gap-1">
 				<svg class="h-5 w-5 fill-shark">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
 				</svg>
-				<div class="text-xs text-shark">Профіль</div>
+				<div class="text-xs text-shark">Кабінет</div>
 			</div>
 		</a>
 	</div>

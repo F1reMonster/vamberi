@@ -144,20 +144,18 @@
 			<!-- Особистий кабінет -->
 			<div class="text-center text-base font-normal sm:font-medium">Особистий кабінет</div>
 			<div class="mt-2.5 flex items-center justify-between rounded-lge bg-lavender-purple px-3 py-2 text-sm transition ease-in lg:mt-5">
-				<label class="relative cursor-pointer">
-					<input type="radio" name="account" class="peer/buyer hidden" checked />
-					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs text-white transition ease-in peer-checked/buyer:bg-white peer-checked/buyer:text-shark sm:text-sm">Покупець</div>
-					<svg class="absolute -left-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy opacity-0 transition ease-in peer-checked/buyer:opacity-100 sm:-left-10 sm:h-5 sm:w-5">
+				<a href="buyer-orders.html" class="relative">
+					
+					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs transition ease-in bg-white text-shark sm:text-sm">Покупець</div>
+					<svg class="absolute -left-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy transition ease-in sm:-left-10 sm:h-5 sm:w-5">
 						<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled"></use>
 					</svg>
-				</label>
-				<label class="relative cursor-pointer">
-					<input type="radio" name="account" class="peer/seller hidden" />
-					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs text-white transition ease-in peer-checked/seller:bg-white peer-checked/seller:text-shark sm:text-sm">Продавець</div>
-					<svg class="absolute -right-8 top-1/2 h-3.5 w-3.5 -translate-y-1/2 fill-tall-poppy opacity-0 transition ease-in peer-checked/seller:opacity-100 sm:-right-10 sm:h-5 sm:w-5">
-						<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled"></use>
-					</svg>
-				</label>
+				</a>
+				<a href="seller-my-goods.html" class="relative">
+					
+					<div class="rounded-lge bg-transparent px-4 py-2.5 text-xs text-white transition ease-in  sm:text-sm">Продавець</div>
+					
+				</a>
 			</div>
 			<!-- ./Особистий кабінет -->
 
@@ -173,7 +171,7 @@
 						</button>
 					</li>
 					<li class="relative flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<a href="buyer-orders.html" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#basket"></use>
 							</svg>
@@ -184,7 +182,7 @@
 						</a>
 					</li>
 					<li class="relative flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<a href="buyer-chat.html" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#envelope"></use>
 							</svg>
@@ -203,7 +201,7 @@
 						</a>
 					</li>
 					<li class="flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<a href="buyer-favorites.html" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
 							</svg>
@@ -211,7 +209,7 @@
 						</a>
 					</li>
 					<li class="flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<a href="buyer-subscriptions.html" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#user02"></use>
 							</svg>
@@ -227,7 +225,7 @@
 						</a>
 					</li>
 					<li class="flex items-center gap-5">
-						<a href="#" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
+						<a href="settings-buyer.html" class="flex w-full items-center gap-5 rounded-lge border border-tundora p-3 lg:border-0 lg:py-0 lg:pl-1 lg:pr-0">
 							<svg class="h-5 w-5 flex-shrink-0 fill-shark">
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#settings"></use>
 							</svg>
@@ -253,8 +251,8 @@
 
 						<div class="w-full">
 							<div class="mb-6 hidden lg:block"><!-- info banner  -->
-<div class="bg-gradient-pink2 relative mb-6 mt-0 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:mb-9 lg:mt-0 lg:min-h-[11.25rem] lg:px-3.5">
-	<button class="absolute right-2 top-2 z-10">
+<div class="info-banner bg-gradient-pink2 relative mb-6 mt-0 flex min-h-[8.5rem] flex-grow flex-col rounded-lge px-2.5 py-5 lg:mb-9 lg:mt-0 lg:min-h-[11.25rem] lg:px-3.5">
+	<button class="absolute right-2 top-2 z-20 info-banner-close">
 		<svg class="h-4 w-4 fill-tundora">
 			<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
 		</svg>
@@ -379,6 +377,215 @@
 				</div>
 			</section>
 		</main>
+		<div class="account-menu fixed inset-0 z-40 hidden bg-black/40 lg:absolute lg:inset-[unset] lg:right-0 lg:top-[102%] lg:bg-transparent">
+	<div class="account-menu-body absolute right-0 top-0 z-30 h-[calc(100vh-3rem)] w-full bg-white px-10 py-4 lw:w-[22.5rem] lg:left-auto lg:mt-4.5 lg:h-auto lg:min-h-fit lg:w-80 lg:rounded-2lge lg:border lg:border-lavender-purple/50 lg:px-10 lg:py-5">
+		<div>
+			<div class="mt-10 flex h-12.5 w-full items-center justify-between rounded-lge bg-lavender-purple px-3 py-2 text-sm transition ease-in lg:mt-0">
+				<label class="buyer-btn relative cursor-pointer" data-link-panel="settings-buyer.html">
+					<input type="radio" name="account" class="peer/buyer hidden" checked />
+					<div class="rounded-lge bg-transparent px-4 py-2.5 text-white transition ease-in peer-checked/buyer:bg-white peer-checked/buyer:text-shark">Покупець</div>
+					<svg class="absolute -left-10 top-1/2 hidden h-5 w-5 fill-tall-poppy opacity-0 transition ease-in -translate-y-1/2 peer-checked/buyer:opacity-100 lg:block">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled "></use>
+					</svg>
+				</label>
+				<label class="seller-btn relative cursor-pointer" data-link-panel="settings-seller-private.html">
+					<input type="radio" name="account" class="peer/seller hidden" />
+					<div class="rounded-lge bg-transparent px-4 py-2.5 text-white transition ease-in peer-checked/seller:bg-white peer-checked/seller:text-shark">Продавець</div>
+					<svg class="absolute -right-9 top-1/2 hidden h-5 w-5 fill-tall-poppy opacity-0 transition ease-in -translate-y-1/2 peer-checked/seller:opacity-100 lg:block">
+						<use xlink:href="img/svg/sprites/sprite-icons.svg#bell-filled "></use>
+					</svg>
+				</label>
+			</div>
+
+			<a href="settings-buyer.html" class="btn-panel btn-blue-royal-light group mt-5 flex h-9 w-full items-center justify-center gap-4 rounded-lge p-1 text-xs" aria-label="Панель управління">
+				<svg class="h-5 w-5 fill-royal-blue transition ease-in group-hover:fill-white">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#Group"></use>
+				</svg>
+				<span>Панель управління</span>
+			</a>
+		</div>
+		<button class="account-menu-close absolute right-4 top-4 lg:hidden" aria-label="Закрити">
+			<svg class="h-5 w-5">
+				<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
+			</svg>
+		</button>
+
+		<!-- buyer -->
+		<div class="buyer-menu relative">
+			<div class="absolute -top-[10.375rem] left-0 right-0 text-center text-lg font-semibold lg:hidden">Кабінет покупця</div>
+			<div class="scrollbar-custom relative -mr-3 mt-5 h-[calc(100vh-15rem)] overflow-auto pr-2.5 text-shark lg:mr-0 lg:h-auto lg:overflow-visible lg:pr-0">
+				<ul class="flex flex-col gap-4.5 text-sm">
+					<li class="flex items-center gap-3 lg:gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#basket"></use>
+							</svg>
+							<span>Замовлення</span>
+						</a>
+					</li>
+					<li class="flex items-center gap-3 lg:gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#envelope"></use>
+							</svg>
+							<div class="flex flex-grow items-center justify-between lg:justify-normal">
+								<div class="pr-5">Повідомлення</div>
+								<p class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">999+</span></p>
+							</div>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#eye"></use>
+							</svg>
+							<span>Переглянуті товари</span>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#heart"></use>
+							</svg>
+							<span>Вибране</span>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
+							</svg>
+							<span>Мої підписки</span>
+						</a>
+					</li>
+					<li class="relative flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#message2"></use>
+							</svg>
+
+							<div class="flex flex-grow items-center justify-between lg:justify-normal">
+								<div class="pr-5">Мої відгуки</div>
+								<p class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">999+</span></p>
+							</div>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#settings"></use>
+							</svg>
+							<span>Налаштування</span>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#exit"></use>
+							</svg>
+							<span>Вихід</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- buyer -->
+
+		<!-- seller -->
+		<div class="seller-menu relative hidden">
+			<div class="absolute -top-[10.375rem] left-0 right-0 text-center text-lg font-semibold lg:hidden">Кабінет продавця</div>
+			<div class="scrollbar-custom relative -mr-3 mt-5 h-[calc(100vh-15rem)] overflow-auto pr-2.5 text-shark lg:mr-0 lg:h-auto lg:overflow-visible lg:pr-0">
+				<ul class="flex flex-col gap-5 text-sm">
+					<li class="relative flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#bag"></use>
+							</svg>
+
+							<div class="flex flex-grow items-center justify-between lg:justify-normal">
+								<div class="pr-5">Продажі</div>
+								<p class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">999+</span></p>
+							</div>
+						</a>
+					</li>
+					<li class="relative flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#envelope"></use>
+							</svg>
+
+							<div class="flex flex-grow items-center justify-between lg:justify-normal">
+								<div class="pr-5">Повідомлення</div>
+								<p class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-royal-blue px-1.5 leading-none"><span class="text-white">999+</span></p>
+							</div>
+						</a>
+					</li>
+
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#my-products"></use>
+							</svg>
+							<span>Мої товари</span>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#add"></use>
+							</svg>
+							<span>Додати товар</span>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-5 w-5 flex-shrink-0 fill-transparent stroke-shark">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#my-shop"></use>
+							</svg>
+							<span>Мій магазин </span>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#wallet"></use>
+							</svg>
+							<span>Гаманець [0 грн.] </span>
+						</a>
+					</li>
+
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
+							</svg>
+							<span>Мої підписки</span>
+						</a>
+					</li>
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#settings"></use>
+							</svg>
+							<span>Налаштування</span>
+						</a>
+					</li>
+
+					<li class="flex items-center gap-5">
+						<a href="#" class="flex h-9 w-full items-center gap-5 rounded-lge border border-tundora px-3.5 py-2 leading-none lg:h-auto lg:border-0 lg:p-0">
+							<svg class="h-4 w-4 flex-shrink-0 fill-shark lg:h-5 lg:w-5">
+								<use xlink:href="img/svg/sprites/sprite-icons.svg#exit"></use>
+							</svg>
+							<span>Вихід</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- seller -->
+	</div>
+</div>
+
 
 		<!-- sticky menu -->
 
@@ -417,12 +624,12 @@
 				<div class="text-xs text-shark">Чат</div>
 			</div>
 		</a>
-		<a class="shrink-0" href="#account">
+		<a class="shrink-0 account-btn" href="#">
 			<div class="flex shrink-0 flex-col items-center gap-1">
 				<svg class="h-5 w-5 fill-shark">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#user01"></use>
 				</svg>
-				<div class="text-xs text-shark">Профіль</div>
+				<div class="text-xs text-shark">Кабінет</div>
 			</div>
 		</a>
 	</div>

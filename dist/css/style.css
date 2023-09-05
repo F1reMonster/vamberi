@@ -3215,9 +3215,6 @@ section {
 .decoration-tundora {
   text-decoration-color: #424242;
 }
-.decoration-dotted {
-  text-decoration-style: dotted;
-}
 .decoration-dashed {
   text-decoration-style: dashed;
 }
@@ -3951,9 +3948,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .sm\:-left-10 {
     left: -2.5rem;
   }
-  .sm\:-right-10 {
-    right: -2.5rem;
-  }
   .sm\:-top-8 {
     top: -2rem;
   }
@@ -4116,9 +4110,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .sm\:h-3 {
     height: 0.75rem;
   }
-  .sm\:h-3\.5 {
-    height: 0.875rem;
-  }
   .sm\:h-4 {
     height: 1rem;
   }
@@ -4188,12 +4179,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .sm\:w-2\/3 {
     width: 66.666667%;
   }
-  .sm\:w-3 {
-    width: 0.75rem;
-  }
-  .sm\:w-3\.5 {
-    width: 0.875rem;
-  }
   .sm\:w-30 {
     width: 7.5rem;
   }
@@ -4244,9 +4229,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .sm\:w-\[20\.375rem\] {
     width: 20.375rem;
-  }
-  .sm\:w-\[20\.625rem\] {
-    width: 20.625rem;
   }
   .sm\:w-\[21\.875rem\] {
     width: 21.875rem;
@@ -4447,15 +4429,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
     --tw-border-opacity: 1;
     border-color: rgb(139 122 168 / var(--tw-border-opacity));
   }
-  .sm\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
   .sm\:bg-gradient-pink2 {
     background-image: linear-gradient(118deg, #ffe6e6 0%, #f6ccc8 100%);
-  }
-  .sm\:fill-lavender-purple {
-    fill: #8B7AA8;
   }
   .sm\:p-3 {
     padding: 0.75rem;
@@ -4465,14 +4440,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .sm\:p-4 {
     padding: 1rem;
-  }
-  .sm\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .sm\:px-0\.5 {
-    padding-left: 0.125rem;
-    padding-right: 0.125rem;
   }
   .sm\:px-1 {
     padding-left: 0.25rem;
@@ -4509,10 +4476,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .sm\:px-7\.5 {
     padding-left: 1.875rem;
     padding-right: 1.875rem;
-  }
-  .sm\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
   .sm\:py-1 {
     padding-top: 0.25rem;
@@ -4597,9 +4560,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .sm\:text-shark {
     --tw-text-opacity: 1;
     color: rgb(33 37 41 / var(--tw-text-opacity));
-  }
-  .sm\:underline {
-    text-decoration-line: underline;
   }
   .sm\:-translate-x-1\/2 {
     --tw-translate-x: -50%;
@@ -4828,10 +4788,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .md\:p-6 {
     padding: 1.5rem;
-  }
-  .md\:px-1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
   }
   .md\:px-5 {
     padding-left: 1.25rem;
