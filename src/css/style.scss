@@ -1,8 +1,10 @@
-@import "./fonts";
+// @import "./fonts";
 @import "./colors";
 @import "./tailwind";
 @import "./scrollbar";
 @import "./sliders";
+@import "./filters";
+// @import "./select2";
 
 body {
 	&.lock {

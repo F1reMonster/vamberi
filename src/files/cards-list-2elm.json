@@ -1,7 +1,7 @@
 [
 	{
 		"iconHeartStroke": true,
-		"image": "img/photo_2023-07-29_22-15-03.jpg",
+		"image": "img/photo_2023-07-29_22-15-03.webp",
 		"discount": "-40%",
 		"price": "8000 <span class=\"hidden sm:inline-block\">грн</span><span class=\"inline-block sm:hidden\">₴</span>",
 		"oldPrice": "8300 <span class=\"hidden sm:inline-block\">грн</span><span class=\"inline-block sm:hidden\">₴</span>",
@@ -15,7 +15,7 @@
 	},
 	{
 		"iconHeartFill": true,
-		"image": "img/photo_2023-07-29_22-17-00.jpg",
+		"image": "img/photo_2023-07-29_22-17-00.webp",
 		"discount": "-40%",
 		"price": "100999 <span class=\"hidden sm:inline-block\">грн</span><span class=\"inline-block sm:hidden\">₴</span>",
 		"oldPrice": "120999 <span class=\"hidden sm:inline-block\">грн</span><span class=\"inline-block sm:hidden\">₴</span>",

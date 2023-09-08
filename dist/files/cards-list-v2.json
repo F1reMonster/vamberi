@@ -1,7 +1,7 @@
 [
 	{
 		"iconHeartStroke": true,
-		"image": "img/photo_2023-07-29_22-15-03.jpg",
+		"image": "img/photo_2023-07-29_22-15-03.webp",
 		"discount": "-40%",
 		"price": "8000 <span class=\"hidden lg:inline-block\">грн</span><span class=\"inline-block lg:hidden\">₴</span>",
 		"oldPrice": "8300 <span class=\"hidden lg:inline-block\">грн</span><span class=\"inline-block lg:hidden\">₴</span>",
@@ -15,7 +15,7 @@
 	},
 	{
 		"iconHeartFill": true,
-		"image": "img/photo_2023-07-29_22-17-00.jpg",
+		"image": "img/photo_2023-07-29_22-17-00.webp",
 		"discount": "-40%",
 		"price": "100999 <span class=\"hidden lg:inline-block\">грн</span><span class=\"inline-block lg:hidden\">₴</span>",
 		"oldPrice": "120999 <span class=\"hidden lg:inline-block\">грн</span><span class=\"inline-block lg:hidden\">₴</span>",
@@ -30,7 +30,7 @@
 	
 	{
 		"iconHeartStroke": true,
-		"image": "img/goods/4.jpg",
+		"image": "img/goods/4.webp",
 		"discount": "-40%",
 		"price": "8000 <span class=\"hidden lg:inline-block\">грн</span><span class=\"inline-block lg:hidden\">₴</span>",
 		"oldPrice": "8300 <span class=\"hidden lg:inline-block\">грн</span><span class=\"inline-block lg:hidden\">₴</span>",
@@ -44,7 +44,7 @@
 	},
 	{
 		"iconHeartFill": true,
-		"image": "img/goods/1.jpg",
+		"image": "img/goods/1.webp",
 		"price": "8000 <span class=\"hidden lg:inline-block\">грн</span><span class=\"inline-block lg:hidden\">₴</span>",
 		
 		"title": "Шкаф кровать трансформер",
@@ -59,7 +59,7 @@
 	},
 	{
 		"iconHeartStroke": true,
-		"image": "img/goods/2.jpg",
+		"image": "img/goods/2.webp",
 		"discount": "-40%",
 		"price": "999 <span class=\"hidden lg:inline-block\">грн</span><span class=\"inline-block lg:hidden\">₴</span>",
 		"oldPrice": "1199 <span class=\"hidden lg:inline-block\">грн</span><span class=\"inline-block lg:hidden\">₴</span>",

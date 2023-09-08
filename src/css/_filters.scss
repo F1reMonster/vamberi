@@ -1,0 +1,13 @@
+.filter-dropdown, .filter-static {
+	li {
+		&.selected {
+			color: $lavender-purple;
+			// text-shadow: 0 0 0.5px $lavender-purple, 0 0 0.5px $lavender-purple;
+			font-weight: 600;
+		}
+
+		.highlight {
+			font-weight: 600;
+		}
+	}
+}

@@ -1,8 +1,8 @@
 <div class="fixed inset-0 z-50 hidden bg-black/40 lg:block">
-	<div class="absolute right-0 top-0 h-screen w-full bg-white sm:w-[21.875rem]">
+	<div class="filters-all-body absolute right-0 top-0 h-screen w-full bg-white sm:w-[21.875rem]">
 		<div class="flex items-center justify-between p-6">
 			<div class="text-2xl font-bold">Фільтри</div>
-			<button>
+			<button aria-label="Закрити фільтри" class="filters-all-close">
 				<svg class="h-6 w-6">
 					<use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use>
 				</svg>
@@ -11,28 +11,18 @@
 
 		<!-- filters -->
 		<div class="scrollbar-custom ml-6 h-[calc(100vh-12.5rem)] min-h-[5rem] overflow-auto pr-7.5 text-sm lg:text-base">
-			<div class="text-lg font-medium">Взуття</div>
+			<div class="filter-static-item">
+				<div class="text-lg font-medium">Взуття</div>
 
-			<ul class="mt-2.5 flex flex-col gap-3">
-				<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-					<span>Дитяче</span>
-				</li>
-				<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-					<span>Для новонароджених</span>
-				</li>
-				<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-					<span>Жіноче</span>
-				</li>
-				<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-					<span>Чоловіче</span>
-				</li>
-				<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-					<span>Ортопедичне взуття</span>
-				</li>
-				<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
-					<span>Аксесуари для взуття</span>
-				</li>
-			</ul>
+				<ul class="filter-static mt-2.5 flex flex-col gap-3" data-filter-name="category-type">
+					<li class="cursor-pointer transition ease-in hover:text-lavender-purple" data-filter-option="childrens-shoes">Дитяче</li>
+					<li class="cursor-pointer transition ease-in hover:text-lavender-purple" data-filter-option="newborn-shoes">Для новонароджених дуже багато взуття</li>
+					<li class="cursor-pointer transition ease-in hover:text-lavender-purple" data-filter-option="women-shoes">Жіноче</li>
+					<li class="cursor-pointer transition ease-in hover:text-lavender-purple" data-filter-option="man-shoes">Чоловіче</li>
+					<li class="cursor-pointer transition ease-in hover:text-lavender-purple" data-filter-option="orthopedic-shoes">Ортопедичне взуття Super Shoes</li>
+					<li class="cursor-pointer transition ease-in hover:text-lavender-purple" data-filter-option="accessory-shoes">Аксесуари для взуття</li>
+				</ul>
+			</div>
 
 			<!-- popular -->
 			<ul class="mt-6 flex flex-col gap-3 text-sm lg:text-base">
@@ -40,7 +30,7 @@
 					<label class="flex cursor-pointer items-center gap-2.5">
 						<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full border border-dusty-gray/50">
 							<input type="radio" name="popular-state" class="peer hidden" checked />
-							<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+							<div class="absolute left-1/2 top-1/2 h-4 w-4 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
 						</div>
 						<div class="text-tundora">За популярністю</div>
 					</label>
@@ -49,7 +39,7 @@
 					<label class="flex cursor-pointer items-center gap-2">
 						<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full border border-dusty-gray/50">
 							<input type="radio" name="popular-state" class="peer hidden" />
-							<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+							<div class="absolute left-1/2 top-1/2 h-4 w-4 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
 						</div>
 						<div class="text-tundora">За рейтингом</div>
 					</label>
@@ -58,7 +48,7 @@
 					<label class="flex cursor-pointer items-center gap-2">
 						<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full border border-dusty-gray/50">
 							<input type="radio" name="popular-state" class="peer hidden" />
-							<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+							<div class="absolute left-1/2 top-1/2 h-4 w-4 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
 						</div>
 						<div class="text-tundora">За зростанням ціни</div>
 					</label>
@@ -67,7 +57,7 @@
 					<label class="flex cursor-pointer items-center gap-2">
 						<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full border border-dusty-gray/50">
 							<input type="radio" name="popular-state" class="peer hidden" />
-							<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+							<div class="absolute left-1/2 top-1/2 h-4 w-4 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
 						</div>
 						<div class="text-tundora">За зменшенням ціни</div>
 					</label>
@@ -76,7 +66,7 @@
 					<label class="flex cursor-pointer items-center gap-2">
 						<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full border border-dusty-gray/50">
 							<input type="radio" name="popular-state" class="peer hidden" />
-							<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+							<div class="absolute left-1/2 top-1/2 h-4 w-4 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
 						</div>
 						<div class="text-tundora">За новинками</div>
 					</label>
@@ -85,7 +75,7 @@
 					<label class="flex cursor-pointer items-center gap-2">
 						<div class="relative h-5.5 w-5.5 flex-shrink-0 rounded-full border border-dusty-gray/50">
 							<input type="radio" name="popular-state" class="peer hidden" />
-							<div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in peer-checked:opacity-100"></div>
+							<div class="absolute left-1/2 top-1/2 h-4 w-4 rounded-full border border-white bg-lavender-purple opacity-0 transition ease-in -translate-x-1/2 -translate-y-1/2 peer-checked:opacity-100"></div>
 						</div>
 						<div class="text-tundora">Спочатку вигідні</div>
 					</label>
@@ -95,7 +85,7 @@
 
 			<!-- category -->
 			<div class="mt-6 text-lg font-medium">Категорія</div>
-			<div class="mt-3 flex h-10 items-center rounded-lge px-3 border border-dusty-gray/50">
+			<div class="mt-3 flex h-10 items-center rounded-lge border border-dusty-gray/50 px-3">
 				<input type="text" class="flex-grow border-none p-0 text-sm placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Я шукаю..." />
 				<button class="">
 					<svg class="block h-4 w-4 fill-dusty-gray">
@@ -201,7 +191,7 @@
 			<!-- category -->
 
 			<!-- seller -->
-			<div class="mt-6 text-lg font-medium">Категорія</div>
+			<div class="mt-6 text-lg font-medium">Продавець</div>
 			<ul class="scrollbar-custom-thin mt-3 flex max-h-60 flex-col gap-3 overflow-y-auto pr-1.5 text-xs">
 				<li class="cursor-pointer transition ease-in hover:text-lavender-purple">
 					<label class="flex cursor-pointer items-center gap-2">
@@ -317,7 +307,7 @@
 								<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
 							</svg>
 						</div>
-						<div class="h-5.5 w-5.5 rounded-full bg-white border border-dusty-gray/50"></div>
+						<div class="h-5.5 w-5.5 rounded-full border border-dusty-gray/50 bg-white"></div>
 
 						<div class="text-xs text-shark lg:text-base">Білий <span class="text-dove-gray">2 724</span></div>
 					</label>
@@ -495,7 +485,7 @@
 
 			<!-- size -->
 			<div class="mt-6 text-lg font-medium">Розмір</div>
-			<div class="mr-3 mt-3 flex h-10 items-center rounded-lge px-3 border border-dusty-gray/50">
+			<div class="mr-3 mt-3 flex h-10 items-center rounded-lge border border-dusty-gray/50 px-3">
 				<input type="text" class="flex-grow border-none p-0 text-sm placeholder:text-sm placeholder:text-dusty-gray focus:outline-none focus:ring-0" placeholder="Я шукаю..." />
 				<button class="">
 					<svg class="block h-4 w-4 fill-dusty-gray">
@@ -605,7 +595,7 @@
 
 		<div class="mt-6 pl-6 pr-6 text-center text-base font-medium">Знайшли 18 466 товарів</div>
 		<div class="mt-3 flex justify-center">
-			<button class="btn-pink h-10 w-[17.5rem] rounded-lge text-lg">Показати</button>
+			<button class="btn-filters-all-show btn-pink h-10 w-[17.5rem] rounded-lge text-lg" aria-label="Показати">Показати</button>
 		</div>
 	</div>
 </div>

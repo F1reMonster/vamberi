@@ -6,11 +6,17 @@
 <link rel="shortcut icon" href="img/svg/ua.svg" type="image/x-icon" />
 
 <!-- <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css" /> -->
-<link rel="stylesheet" type="text/css" href="./css/fancybox.css" />
-<link rel="stylesheet" type="text/css" href="./css/select2.min.css" />
-<link rel="stylesheet" type="text/css" href="./css/swiper.min.css" />
-<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<!-- <link rel="stylesheet" type="text/css" href="./css/fancybox.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="./css/select2.min.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="./css/swiper.min.css" /> -->
+
+<!-- cdn -->
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+<link rel="stylesheet" media="screen" type="text/css" href="./css/style.css" />
 <title>VamBeri - Блог</title>
+
 
 	</head>
 
@@ -389,7 +395,7 @@
 				
 				<!-- mob search -->
 <div class="relative trasition flex h-9 w-full items-center justify-between gap-4 rounded-lge border border-lavender-purple/50 bg-white py-1 pl-3 pr-1.5 text-sm transition ease-in">
-	<input type="text" class="search-field flex-grow border-0 p-0 text-xs placeholder-dusty-gray ring-0 focus:ring-0" placeholder="Пошук по сайту..." />
+	<input type="text" class="search-field flex-grow border-0 p-0 text-xs placeholder-dusty-gray ring-0 focus:ring-0" placeholder="Пошук по сайту" />
 	<div class="autocomplete-block scrollbar-custom absolute left-0 top-[calc(100%+0.5rem)] z-[100] max-h-80 w-full overflow-y-auto overflow-x-hidden rounded-lge bg-white shadow-md"></div>
 	<button class="btn-primary flex flex-shrink-0 items-center gap-2.5 rounded-lge px-2.5 py-1 text-sm">
 		<span>Знайти</span>
@@ -411,16 +417,16 @@
 					<div class="swiper-slide">
 						<a href="#" class="h-[6.875rem] overflow-hidden rounded-lge sm:h-[9.375rem] md:h-[12.5rem] lg:h-[18.75rem] lg:rounded-2lge">
 							<picture>
-								<source srcset="img/banner-mobile.jpg" media="(max-width: 30em)" />
-								<img class="h-full w-full object-cover object-center" src="img/banner.jpg" alt="banner" />
+								<source srcset="img/banner-mobile.webp" media="(max-width: 30em)" />
+								<img class="h-full w-full object-cover object-center" src="img/banner.webp" alt="banner" />
 							</picture>
 						</a>
 					</div>
 					<div class="swiper-slide">
 						<a href="#" class="h-[6.875rem] overflow-hidden rounded-lge sm:h-[9.375rem] md:h-[12.5rem] lg:h-[18.75rem] lg:rounded-2lge">
 							<picture>
-								<source srcset="img/banner3.jpg" media="(max-width: 30em)" />
-								<img class="h-full w-full object-cover object-center" src="img/banner3.jpg" alt="banner" />
+								<source srcset="img/banner3.webp" media="(max-width: 30em)" />
+								<img class="h-full w-full object-cover object-center" src="img/banner3.webp" alt="banner" />
 							</picture>
 						</a>
 					</div>
@@ -1983,9 +1989,16 @@
 		<script src="js/libs/jquery.min.js"></script>
 <script src="js/libs/jquery-ui.min.js"></script>
 <!-- <script src="js/libs/jquery.mask.min.js"></script> -->
-<script src="js/libs/select2.min.js"></script>
+<!-- <script src="js/libs/select2.min.js"></script> -->
 <script src="js/libs/fancybox.min.js"></script>
 <script src="js/libs/swiper.min.js"></script>
+<!-- CDN scripts -->
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+
 <script src="js/app.js"></script>
+
 	</body>
 </html>

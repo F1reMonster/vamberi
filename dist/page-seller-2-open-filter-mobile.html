@@ -6,11 +6,17 @@
 <link rel="shortcut icon" href="img/svg/ua.svg" type="image/x-icon" />
 
 <!-- <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css" /> -->
-<link rel="stylesheet" type="text/css" href="./css/fancybox.css" />
-<link rel="stylesheet" type="text/css" href="./css/select2.min.css" />
-<link rel="stylesheet" type="text/css" href="./css/swiper.min.css" />
-<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<!-- <link rel="stylesheet" type="text/css" href="./css/fancybox.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="./css/select2.min.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="./css/swiper.min.css" /> -->
+
+<!-- cdn -->
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+<link rel="stylesheet" media="screen" type="text/css" href="./css/style.css" />
 <title>VamBeri - Сторінка продавця</title>
+
 
 	</head>
 	<body class="touch-none overflow-hidden overscroll-none lg:touch-auto lg:overflow-auto lg:overscroll-auto">
@@ -389,7 +395,7 @@
 					<div class="flex flex-col-reverse gap-3.5 lg:hidden"><!-- mob search -->
 <div class="trasition relative flex h-9 w-full items-center justify-between gap-4 rounded-lge border border-lavender-purple/50 bg-white py-1 pl-3 pr-1.5 text-sm transition ease-in">
 	<input type="text" class="search-field flex-grow border-0 p-0 text-xs placeholder-dusty-gray ring-0 focus:ring-0" placeholder="Пошук по сайту..." />
-	<div class="autocomplete-block scrollbar-custom absolute left-0 top-[calc(100%+0.5rem)] z-20 max-h-80 w-full overflow-y-auto overflow-x-hidden rounded-lge bg-white shadow-md"></div>
+	<div class="autocomplete-block scrollbar-custom absolute left-0 top-[calc(100%+0.5rem)] z-[100] max-h-80 w-full overflow-y-auto overflow-x-hidden rounded-lge bg-white shadow-md"></div>
 	<button class="btn-primary flex flex-shrink-0 items-center gap-2.5 rounded-lge px-2.5 py-1 text-sm">
 		<span>Знайти</span>
 		<svg class="h-3 w-3 flex-shrink-0 fill-white">
@@ -400,21 +406,23 @@
 <!-- ./mob search -->
 
 <!-- category dropdown -->
-<button aria-label="Обрати категорію" class="btn-category-mobile group mr-4 flex h-12.5 w-full flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5">
-	<div class="flex items-center gap-3.5">
-		<div class="btn-primary flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg">
-			<svg class="h-5 w-5 fill-white">
-				<use xlink:href="img/svg/sprites/sprite-icons.svg#category"></use>
+<div class="mt-4.5">
+	<button aria-label="Обрати категорію" class="btn-category-mobile group mr-4 flex h-12.5 w-full flex-shrink-0 items-center rounded-lge bg-white px-2.5 py-1.5">
+		<div class="flex items-center gap-3.5">
+			<div class="btn-primary flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg">
+				<svg class="h-5 w-5 fill-white">
+					<use xlink:href="img/svg/sprites/sprite-icons.svg#category"></use>
+				</svg>
+			</div>
+			<span class="text-xs">Обрати категорію</span>
+		</div>
+		<div class="ml-auto">
+			<svg class="h-2.5 w-2.5">
+				<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
 			</svg>
 		</div>
-		<span class="text-xs">Обрати категорію</span>
-	</div>
-	<div class="ml-auto">
-		<svg class="h-2.5 w-2.5">
-			<use xlink:href="img/svg/sprites/sprite-icons.svg#chevron-down"></use>
-		</svg>
-	</div>
-</button>
+	</button>
+</div>
 <!-- ./category dropdown --></div>
 					<div class="hidden items-center justify-between lg:flex">
 						<!-- breadcrumbs -->
@@ -859,7 +867,7 @@
 		
 
 		
-			<img src="img/photo_2023-07-29_22-15-03.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+			<img src="img/photo_2023-07-29_22-15-03.webp" alt="" class="h-full w-full rounded-xle object-cover" />
 		
 
 		
@@ -969,7 +977,7 @@
 		
 
 		
-			<img src="img/photo_2023-07-29_22-17-00.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+			<img src="img/photo_2023-07-29_22-17-00.webp" alt="" class="h-full w-full rounded-xle object-cover" />
 		
 
 		
@@ -1079,7 +1087,7 @@
 		
 
 		
-			<img src="img/goods/4.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+			<img src="img/goods/4.webp" alt="" class="h-full w-full rounded-xle object-cover" />
 		
 
 		
@@ -1186,11 +1194,11 @@
 			<div class="swiper card-image-slider w-full h-full">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<img src="img/goods/1.jpg" alt="" class="h-full w-full rounded-xle object-cover" loading="lazy"/>
+						<img src="img/goods/1.webp" alt="" class="h-full w-full rounded-xle object-cover" loading="lazy"/>
 
 					</div>
 					<div class="swiper-slide">
-						<img src="img/goods/3.jpg" alt="" class="h-full w-full rounded-xle object-cover" loading="lazy"/>
+						<img src="img/goods/3.webp" alt="" class="h-full w-full rounded-xle object-cover" loading="lazy"/>
 					</div>
 				</div>
 			</div>
@@ -1313,7 +1321,7 @@
 		
 
 		
-			<img src="img/goods/2.jpg" alt="" class="h-full w-full rounded-xle object-cover" />
+			<img src="img/goods/2.webp" alt="" class="h-full w-full rounded-xle object-cover" />
 		
 
 		
