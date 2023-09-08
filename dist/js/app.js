@@ -2,6 +2,10 @@ $(document).ready(function () {
 	// sliders
 	//  buyer-favorites.html
 
+	if ($("[data-filter-name='price']").length > 0) {
+		filterPriceLoadDefault();
+	}
+
 	if ($(".swiper2").length > 0) {
 		const swiper2 = new Swiper(".swiper2", {
 			slidesPerView: "auto",
@@ -519,7 +523,7 @@ $(document).ready(function () {
 		$(".btn-filter-apply").click(function () {
 			let $currentDropDownFilter = $(this).closest(".filter-dropdown");
 			let $filterName = $(this).closest(".filter-dropdown").data("filter-name");
-			let $selectedItems = $currentDropDownFilter.find("li.selected");
+			let $selectedItems = $currentDropDownFilter.find("li.selected").get().reverse();
 			let $countSelectedItems = $currentDropDownFilter.find("li.selected").length;
 
 			$currentDropDownFilter.addClass("hidden");
@@ -527,14 +531,14 @@ $(document).ready(function () {
 			if ($countSelectedItems > 0) {
 				if ($(".filter-selected-options-body").hasClass("hidden")) {
 					$(".filter-selected-options-body").removeClass("hidden");
-					$selectedItems.each(function () {
+					$.each($selectedItems, function () {
 						let $filterSelectedItem = $(this).find(".filter-option-name").text();
 						let $filterOption = $(this).data("filter-option");
 						$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 					});
 				} else {
 					$("[data-filter-btn-name=" + $filterName + "]").remove();
-					$selectedItems.each(function () {
+					$.each($selectedItems, function () {
 						let $filterSelectedItem = $(this).find(".filter-option-name").text();
 						let $filterOption = $(this).data("filter-option");
 						$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
@@ -614,57 +618,56 @@ $(document).ready(function () {
 			clearDesktopFilter();
 		});
 
-		// пошук
-		$(".filter-input-search").on("input", function () {
-			const searchTerm = $(this).val().trim().toLowerCase();
-			$(this).closest(".filter-dropdown").find(".not-found").addClass("hidden");
-			let found = false;
-
-			// Перевіряємо, чи введено хоча б три літери для пошуку
-			if (searchTerm.length >= 3) {
-				// Перебираємо всі елементи списку
-				$(this)
-					.parent()
-					.next()
-					.find("li")
-					.each(function () {
-						const filterOptionName = $(this).find(".filter-option-name");
-
-						// Оригінальний текст елемента
-						const originalText = filterOptionName.text();
-
-						// Перевіряємо, чи знайдено збіг
-						if (originalText.toLowerCase().includes(searchTerm)) {
-							// Замінюємо текст елемента з виділенням знайденого тексту та першої великої літери
-							const highlightedText = originalText.replace(new RegExp(`(${searchTerm})`, "gi"), '<span class="highlight">$1</span>');
-							filterOptionName.html(highlightedText.charAt(0).toUpperCase() + highlightedText.slice(1));
-
-							$(this).show(); // Показуємо знайдений елемент
-							found = true;
-						} else {
-							$(this).hide(); // Ховаємо елемент, якщо немає збігу
-						}
-					});
-				// Відображаємо або приховуємо повідомлення про "Не знайдено"
-				if (found) {
-					$(this).closest(".filter-dropdown").find(".not-found").addClass("hidden");
+		// пошук у фільтрі, в якому є пошук, мін. 3 символа
+		$(".filter-input-search").each(function () {
+			$(this).on("input", function () {
+				const searchTerm = $(this).val().trim().toLowerCase();
+				$(this).closest(".filter-with-search").find(".not-found").addClass("hidden");
+				let found = false;
+	
+				// Перевіряємо, чи введено хоча б три літери для пошуку
+				if (searchTerm.length >= 3) {
+					// Перебираємо всі елементи списку
+					
+					$(this).parent().next().find("li").each(function () {
+							const filterOptionName = $(this).find(".filter-option-name");
+	
+							// Оригінальний текст елемента
+							const originalText = filterOptionName.text();
+	
+							// Перевіряємо, чи знайдено збіг
+							if (originalText.toLowerCase().includes(searchTerm)) {
+								// Замінюємо текст елемента з виділенням знайденого тексту та першої великої літери
+								const highlightedText = originalText.replace(new RegExp(`(${searchTerm})`, "gi"), '<span class="highlight">$1</span>');
+								filterOptionName.html(highlightedText.charAt(0).toUpperCase() + highlightedText.slice(1));
+	
+								$(this).show(); // Показуємо знайдений елемент
+								found = true;
+							} else {
+								$(this).hide(); // Ховаємо елемент, якщо немає збігу
+							}
+						});
+					// Відображаємо або приховуємо повідомлення про "Не знайдено"
+					if (found) {
+						$(this).closest(".filter-with-search").find(".not-found").addClass("hidden");
+					} else {
+						$(this).closest(".filter-with-search").find(".not-found").removeClass("hidden");
+					}
 				} else {
-					$(this).closest(".filter-dropdown").find(".not-found").removeClass("hidden");
+					// Якщо введено менше трьох літер, показуємо всі елементи і прибираємо виділення
+					$(this).parent().next().find("li").show();
+					$(this)
+						.parent()
+						.next()
+						.find("li .highlight")
+						.each(function () {
+							$(this).replaceWith($(this).text());
+						});
+	
+					$(this).closest(".filter-with-search").find(".not-found").addClass("hidden");
 				}
-			} else {
-				// Якщо введено менше трьох літер, показуємо всі елементи і прибираємо виділення
-				$(this).parent().next().find("li").show();
-				$(this)
-					.parent()
-					.next()
-					.find("li .highlight")
-					.each(function () {
-						$(this).replaceWith($(this).text());
-					});
-
-				$(this).closest(".filter-dropdown").find(".not-found").addClass("hidden");
-			}
-		});
+			});
+		})
 
 		// приховуємо елементи фільтрів якщо є атрибут data-show-items та кнопка btn-show-all
 		$("[data-show-items]").each(function () {
@@ -681,19 +684,35 @@ $(document).ready(function () {
 		// показуємо/ховаємо елементи
 		$(".btn-filter-show-all").click(function () {
 			if (!$(this).hasClass("active")) {
-				$(this).closest(".filter-dropdown").find("li").show();
+				$(this).closest(".filter-dropdown").find("li").show(); // основний фільтр desktop
+				$(this).closest(".filter-static-item").find(".filter-static li").show(); // filters-all
 				$(this).addClass("active");
 				$(this).text("Приховати");
 			} else {
 				$(this).removeClass("active");
 				$(this).text("Показати все");
-				let $elements = $(this).closest(".filter-dropdown").find("li");
-				let $numForShow = parseInt($(this).closest(".filter-dropdown").data("show-items"));
-				$elements.each(function (index) {
-					if (index > $numForShow - 1) {
-						$(this).hide();
-					}
-				});
+
+				if ($(this).closest(".filter-dropdown").find("li").length > 0) {
+					let $elements = $(this).closest(".filter-dropdown").find("li");
+					let $numForShow = parseInt($(this).closest(".filter-dropdown").data("show-items"));
+
+					$elements.each(function (index) {
+						if (index > $numForShow - 1) {
+							$(this).hide();
+						}
+					});
+				}
+
+				if ($(this).closest(".filter-static-item").find(".filter-static li").length > 0) {
+					let $elements = $(this).closest(".filter-static-item").find(".filter-static li");
+					let $numForShow = parseInt($(this).closest(".filter-static-item").find(".filter-static").data("show-items"));
+
+					$elements.each(function (index) {
+						if (index > $numForShow - 1) {
+							$(this).hide();
+						}
+					});
+				}
 			}
 		});
 
@@ -712,17 +731,39 @@ $(document).ready(function () {
 			});
 		});
 
-		$('[data-filter-name="price"] .filter-price-from, [data-filter-name="price"] .filter-price-to ').on("input", function () {
-			let priceFrom = $("[data-filter-name='price'] .filter-price-from").val();
-			let priceTo = $("[data-filter-name='price'] .filter-price-to").val();
-
-			// Перевірка, чи обидва поля заповнені і ціна від менше або дорівнює ціні до
-			if (priceFrom !== "" && priceTo !== "" && parseFloat(priceFrom) > parseFloat(priceTo)) {
-				$("[data-filter-name='price'] .btn-filter-apply").prop("disabled", true);
-			} else {
-				$("[data-filter-name='price'] .btn-filter-apply").prop("disabled", false);
-			}
+		$('[data-filter-name="price"] .filter-price-from').each(function () {
+			$(this).on("input", function () {
+				let priceFrom = $(this).val();
+				let priceTo = $(this).closest(".filter-inputs-wrapper").find(".filter-price-to").val();
+				
+				if (priceFrom !== "" && priceTo !== "" && parseFloat(priceFrom) > parseFloat(priceTo)) {
+					$("[data-filter-name='price'] .btn-filter-apply").prop("disabled", true);
+					$(".filters-all .btn-filters-all-show").prop("disabled", true);
+				} else {
+					$("[data-filter-name='price'] .btn-filter-apply").prop("disabled", false);
+					$(".filters-all .btn-filters-all-show").prop("disabled", false);
+				}
+			});
 		});
+
+		$('[data-filter-name="price"] .filter-price-to').each(function () {
+			$(this).on("input", function () {
+				let priceFrom = $(this).closest(".filter-inputs-wrapper").find(".filter-price-from").val();
+				let priceTo = $(this).val();
+
+				// Перевірка, чи обидва поля заповнені і ціна від менше або дорівнює ціні до
+
+				if (priceFrom !== "" && priceTo !== "" && parseFloat(priceFrom) > parseFloat(priceTo)) {
+					$("[data-filter-name='price'] .btn-filter-apply").prop("disabled", true);
+					$(".filters-all .btn-filters-all-show").prop("disabled", true);
+				} else {
+					$("[data-filter-name='price'] .btn-filter-apply").prop("disabled", false);
+					$(".filters-all .btn-filters-all-show").prop("disabled", false);
+				}
+			});
+		});
+
+		
 
 		$('[data-filter-name="price"] .btn-filter-apply').click(function () {
 			let filterPlaceholder = "";
@@ -761,12 +802,12 @@ $(document).ready(function () {
 				filterPlaceholder = "<" + priceTo + "грн";
 			}
 
-			console.log(priceFrom + " / " + priceTo);
+			
 
 			$(this).closest(".filter-item").find(".selected-placeholder").text(filterPlaceholder);
 
-			$(this).closest(".filter-dropdown").attr("data-filter-option-pricefrom", priceFrom);
-			$(this).closest(".filter-dropdown").attr("data-filter-option-priceto", priceTo);
+			// $(this).closest(".filter-dropdown").attr("data-filter-option-pricefrom", priceFrom);
+			// $(this).closest(".filter-dropdown").attr("data-filter-option-priceto", priceTo);
 
 			$("[data-filter-btn-name='price']").remove();
 			if ($(".filter-selected-options-body").hasClass("hidden")) {
@@ -775,8 +816,6 @@ $(document).ready(function () {
 			} else {
 				$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 			}
-
-			console.log($(this).closest(".filter-item"));
 		});
 	})();
 
@@ -786,52 +825,182 @@ $(document).ready(function () {
 			$(".filters-all").removeClass("hidden");
 			$("body").addClass("lock");
 			clearDesktopFilter();
+			filterPriceLoadDefault();
 		});
 
 		$(".filters-all-close").click(function () {
 			$(".filters-all").addClass("hidden");
 			$("body").removeClass("lock");
+			filterPriceLoadDefault();
 		});
 
 		$(".btn-filters-all-show").click(function () {
 			$(".filters-all").addClass("hidden");
 			$("body").removeClass("lock");
 
-			$(".filter-static").each(function () {
+			// для виведення тегів вибраних фільтрів, робимо реверс, щоб виведення було із початку
+			reverseElements = $(".filter-static").get().reverse();
+
+			$.each(reverseElements, function () {
+				let $filterName = $(this).data("filter-name");
+
 				if ($(this).data("filter-multiselect")) {
-					console.log("miltu");
-				} else {
-					let $filterName = $(this).data("filter-name");
-					let $filterOption = $(this).find(".selected").data("filter-option");
-					let $filterSelectedItem = $(this).find(".selected").text();
+					let $selectedItems = $(this).find(".selected").get().reverse();
 
-					// змінюємо після закриття в основному фільтрі
-					$('.filter-dropdown[data-filter-name="' + $filterName + '"]')
-						.find('[data-filter-option="' + $filterOption + '"]')
-						.addClass("selected");
-					$('.filter-dropdown[data-filter-name="' + $filterName + '"]')
+					// рахуємо кількість вибраних елементів
+					let $counter = 0;
+					let $counterSelectedMainFilterElement = $('.filter-dropdown[data-filter-name="' + $filterName + '"]')
 						.closest(".filter-item")
-						.find(".selected-placeholder")
-						.text($filterSelectedItem);
+						.find(".counter-selected");
+					$counter = $(this).find(".selected").length;
 
-					if ($(".filter-selected-options-body").hasClass("hidden")) {
-						$(".filter-selected-options-body").removeClass("hidden");
-
-						$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+					// показуємо кількість вибраних елементів
+					if ($counter > 0) {
+						$counterSelectedMainFilterElement.removeClass("hidden");
+						$counterSelectedMainFilterElement.find("span").text($counter);
 					} else {
-						$("[data-filter-btn-name=" + $filterName + "]").remove();
+						$counterSelectedMainFilterElement.addClass("hidden");
+					}
 
-						$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+					$.each($selectedItems, function () {
+						let $filterOption = $(this).data("filter-option");
+						let $filterSelectedItem = $(this).find(".filter-option-name").text();
+						$('.filter-dropdown[data-filter-name="' + $filterName + '"]')
+							.find('li[data-filter-option="' + $filterOption + '"]')
+							.addClass("selected");
+						$('.filter-dropdown[data-filter-name="' + $filterName + '"]')
+							.find('li[data-filter-option="' + $filterOption + '"] .check-icon')
+							.removeClass("opacity-0");
+						$('.filter-dropdown[data-filter-name="' + $filterName + '"]')
+							.find('li[data-filter-option="' + $filterOption + '"] .check-icon')
+							.addClass("opacity-100");
+
+						if ($(".filter-selected-options-body").hasClass("hidden")) {
+							$(".filter-selected-options-body").removeClass("hidden");
+
+							$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+						} else {
+							$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+						}
+					});
+				} else {
+					if ($(this).find(".selected").length > 0) {
+						
+						let $filterOption = $(this).find(".selected").data("filter-option");
+						let $filterSelectedItem = $(this).find(".selected").text();
+
+						// змінюємо стан вибраних елементів після закриття в основному фільтрі
+						$('.filter-dropdown[data-filter-name="' + $filterName + '"]')
+							.find('[data-filter-option="' + $filterOption + '"]')
+							.addClass("selected");
+						// змінюємо стан плейсхолдера в основному фільтрі
+						$('.filter-dropdown[data-filter-name="' + $filterName + '"]')
+							.closest(".filter-item")
+							.find(".selected-placeholder")
+							.text($filterSelectedItem);
+
+						if ($(this).find(".filter-radio").length > 0) {
+							$('.filter-dropdown[data-filter-name="' + $filterName + '"]')
+								.find('[data-filter-option="' + $filterOption + '"] .filter-radio span')
+								.removeClass("opacity-0");
+							$('.filter-dropdown[data-filter-name="' + $filterName + '"]')
+								.find('[data-filter-option="' + $filterOption + '"] .filter-radio span')
+								.addClass("opacity-100");
+						}
+
+						if ($(".filter-selected-options-body").hasClass("hidden")) {
+							$(".filter-selected-options-body").removeClass("hidden");
+
+							$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+						} else {
+							$("[data-filter-btn-name=" + $filterName + "]").remove();
+
+							$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+						}
 					}
 				}
 			});
+
+			let filterPlaceholder = "";
+				let priceFrom = parseInt($('.filters-all').find("[data-filter-name='price'] .filter-price-from").val());
+				let priceTo = parseInt($('.filters-all').find("[data-filter-name='price'] .filter-price-to").val());
+	
+				if (priceFrom === 0 && priceTo === 0) {
+					filterPlaceholder = "Ціна не вказана";
+				}
+	
+				if (priceFrom === 0 && isNaN(priceTo)) {
+					filterPlaceholder = "Ціна не вказана";
+				}
+	
+				if (isNaN(priceFrom) && priceTo === 0) {
+					filterPlaceholder = "Ціна не вказана";
+				}
+	
+				if (isNaN(priceFrom) && isNaN(priceTo)) {
+					filterPlaceholder = "Ціна не вказана";
+				}
+	
+				if (priceFrom > 0 && isNaN(priceTo)) {
+					filterPlaceholder = ">" + priceFrom + "грн";
+				}
+	
+				if (isNaN(priceFrom) && priceTo > 0) {
+					filterPlaceholder = "<" + priceTo + "грн";
+				}
+	
+				if (priceFrom > 0 && priceTo > 0) {
+					filterPlaceholder = priceFrom + "грн - " + priceTo + "грн";
+				}
+	
+				if (priceFrom === 0 && priceTo > 0) {
+					filterPlaceholder = "<" + priceTo + "грн";
+				}
+	
+				
+	
+			$('.filter-dropdown[data-filter-name="price"]').closest(".filter-item").find(".selected-placeholder").text(filterPlaceholder);
+			
+			isNaN(priceFrom) ? priceFrom = '' : ""
+			isNaN(priceTo) ? priceTo = '' : ""			
+			$('.filter-dropdown[data-filter-name="price"]').find('.filter-price-from').val(priceFrom);
+			$('.filter-dropdown[data-filter-name="price"]').find('.filter-price-to').val(priceTo);
+	
+				// $(this).closest(".filter-dropdown").attr("data-filter-option-pricefrom", priceFrom);
+				// $(this).closest(".filter-dropdown").attr("data-filter-option-priceto", priceTo);
+	
+				$("[data-filter-btn-name='price']").remove();
+				if ($(".filter-selected-options-body").hasClass("hidden")) {
+					$(".filter-selected-options-body").removeClass("hidden");
+					$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+				} else {
+					$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+				}
+
+
 		});
 
 		$(".filter-static li").click(function (e) {
-			$filterStaticName = $(this).parent().data("filter-name");
-			$filterStaticOption = $(this).data("filter-option");
-			$(this).parent().find("li").removeClass("selected");
-			$(this).addClass("selected");
+			let $filterStaticName = $(this).parent().data("filter-name");
+			let $filterStaticOption = $(this).data("filter-option");
+			let $multiselect = $(this).parent().data("filter-multiselect");
+
+			if (!$multiselect) {
+				$(this).parent().find("li").removeClass("selected");
+				$(this).addClass("selected");
+
+				// якщо є типу радіо кнопка, обробляємо
+				if ($(this).find(".filter-radio").length > 0) {
+					$(this).parent().find(".filter-radio span").removeClass("opacity-100");
+					$(this).parent().find(".filter-radio span").addClass("opacity-0");
+					$(this).find(".filter-radio span").removeClass("opacity-0");
+					$(this).find(".filter-radio span").addClass("opacity-100");
+				}
+			} else {
+				$(this).toggleClass("selected");
+				$(this).find(".check-icon").toggleClass("opacity-0");
+				$(this).find(".check-icon").toggleClass("opacity-100");
+			}
 		});
 	})();
 
@@ -839,10 +1008,12 @@ $(document).ready(function () {
 	(function () {
 		$(".filters-mobile-btn").click(function () {
 			$(".filters-mobile-all").removeClass("hidden");
+			$('body').addClass('lock')
 		});
 
 		$(".filters-mobile-btn-close").click(function () {
 			$(".filters-mobile-all").addClass("hidden");
+			$('body').removeClass('lock')
 		});
 	})();
 });
@@ -866,6 +1037,22 @@ function clearDesktopFilter() {
 	$(".filter-selected-options-body").addClass("hidden");
 	$(".counter-selected").addClass("hidden");
 	$(".counter-selected").find("span").text("");
+}
+
+// price default
+function filterPriceLoadDefault() {
+	$(".filter-price-from").each(function () {
+		$defaultValue = $(this).data("default-value");
+		$(this).val($defaultValue);
+	});
+
+	$(".filter-price-to").each(function () {
+		$defaultValue = $(this).data("default-value");
+		$(this).val($defaultValue);
+	});
+
+	$('[data-filter-name="price"]').find('.btn-filter-apply').prop('disabled', false);
+	$('[data-filter-name="price"]').closest('.filters-all').find('.btn-filters-all-show').prop('disabled', false)
 }
 
 $(window).on("resize", function () {

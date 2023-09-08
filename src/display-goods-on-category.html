@@ -4,7 +4,7 @@
 		@@include('html/components/_head.html', {title: "VamBeri → Взуття → Для новонароджених"})
 	</head>
 	<body>
-		@@include('html/components/_header.html', {accountMenu: ""})
+		@@include('html/components/_header.html')
 
 		<main>
 			<!-- breadcrumbs -->
@@ -13,7 +13,7 @@
 
 			<section class="overflow-x-hidden pt-1 lg:pt-3.5">
 				<div class="container">
-					<div class="mb-5 mt-2 lg:hidden">@@include("html/components/_search-and-category.html")</div>
+					<div class="mb-5 mt-2 lg:hidden">@@include("html/components/_search-and-category.html", {placeholder: "Пошук по сайту"})</div>
 
 					<!-- top sections -->
 					<div class="relative flex flex-col justify-between gap-2.5 lg:flex-row lg:items-center lg:gap-4">
@@ -173,7 +173,7 @@
 								</div>
 
 								<!-- dropdown -->
-								<div class="filter-dropdown absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-80 rounded-lge bg-white py-2 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown -translate-x-1/2" data-filter-name="category" data-filter-multiselect="true">
+								<div class="filter-dropdown filter-with-search absolute left-1/2 top-[calc(100%+1rem)] z-10 hidden w-80 rounded-lge bg-white py-2 pl-3.5 pr-0.5 text-shark drop-shadow-filter-dropdown -translate-x-1/2" data-filter-name="category" data-filter-multiselect="true">
 									<svg class="absolute -top-2.5 left-1/2 h-2.5 w-4 fill-white -translate-x-1/2">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
@@ -420,17 +420,17 @@
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#triangle-up2"></use>
 									</svg>
 									<div class="sm:tex-base text-sm font-medium text-shark">Ціна</div>
-									<div class="mt-2.5 flex justify-between text-sm">
+									<div class="filter-inputs-wrapper mt-2.5 flex justify-between text-sm">
 										<div class="flex items-center gap-2.5">
 											<div>від</div>
 											<div>
-												<input type="text" class="filter-price-from w-12.5 border-0 border-b border-b-dusty-gray p-0 text-center text-sm ring-0 focus:ring-0" value="86" />
+												<input type="text" class="filter-price-from w-12.5 border-0 border-b border-b-dusty-gray p-0 text-center text-sm ring-0 focus:ring-0" data-default-value="86" />
 											</div>
 										</div>
 										<div class="flex items-center gap-2.5">
 											<div>до</div>
 											<div>
-												<input type="text" class="filter-price-to w-12.5 border-0 border-b border-b-dusty-gray p-0 text-center text-sm ring-0 focus:ring-0" value="20000" />
+												<input type="text" class="filter-price-to w-12.5 border-0 border-b border-b-dusty-gray p-0 text-center text-sm ring-0 focus:ring-0" data-default-value="20000" />
 											</div>
 										</div>
 									</div>
@@ -773,6 +773,50 @@
 											<div class="flex gap-1">
 												<div class="filter-option-name">4</div>
 												<div class="text-dove-gray">88</div>
+											</div>
+										</li>
+										<li class="flex cursor-pointer items-center gap-2 transition ease-in hover:text-lavender-purple" data-filter-option="size-5">
+											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+												<svg class="check-icon h-4 w-4 fill-limeade opacity-0 transition ease-in">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+												</svg>
+											</div>
+											<div class="flex gap-1">
+												<div class="filter-option-name">5</div>
+												<div class="text-dove-gray">883</div>
+											</div>
+										</li>
+										<li class="flex cursor-pointer items-center gap-2 transition ease-in hover:text-lavender-purple" data-filter-option="size-6">
+											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+												<svg class="check-icon h-4 w-4 fill-limeade opacity-0 transition ease-in">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+												</svg>
+											</div>
+											<div class="flex gap-1">
+												<div class="filter-option-name">6</div>
+												<div class="text-dove-gray">83</div>
+											</div>
+										</li>
+										<li class="flex cursor-pointer items-center gap-2 transition ease-in hover:text-lavender-purple" data-filter-option="size-7">
+											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+												<svg class="check-icon h-4 w-4 fill-limeade opacity-0 transition ease-in">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+												</svg>
+											</div>
+											<div class="flex gap-1">
+												<div class="filter-option-name">7</div>
+												<div class="text-dove-gray">77</div>
+											</div>
+										</li>
+										<li class="flex cursor-pointer items-center gap-2 transition ease-in hover:text-lavender-purple" data-filter-option="size-8">
+											<div class="relative flex h-5.5 w-5.5 flex-shrink-0 items-center justify-center rounded-md border border-dusty-gray">
+												<svg class="check-icon h-4 w-4 fill-limeade opacity-0 transition ease-in">
+													<use xlink:href="img/svg/sprites/sprite-icons.svg#checker"></use>
+												</svg>
+											</div>
+											<div class="flex gap-1">
+												<div class="filter-option-name">8</div>
+												<div class="text-dove-gray">123</div>
 											</div>
 										</li>
 									</ul>
