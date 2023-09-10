@@ -94,7 +94,7 @@
 								</button>
 
 								<!-- mobile filter -->
-								<button class="lg:hidden filters-mobile-btn" aria-label="mobile filter">
+								<button class="filters-mobile-btn lg:hidden" aria-label="mobile filter">
 									<svg class="h-4 w-4 fill-transparent stroke-shark lg:h-6 lg:w-6">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#filter2"></use>
 									</svg>
@@ -448,7 +448,9 @@
 								<div class="mt-auto flex flex-col gap-1">
 									<div class="counter-selected hidden">
 										<div class="flex justify-end">
-											<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-lavender-purple px-1 py-0.5 text-sm"><span class="text-white"></span></div>
+											<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-lavender-purple px-1 py-0.5 text-sm">
+												<span class="text-white"></span>
+											</div>
 										</div>
 									</div>
 									<button class="filter-btn flex h-full w-full items-center rounded-lge border border-white bg-white px-3.5 py-2 transition ease-in lg:hover:border-lavender-purple/50">
@@ -914,6 +916,14 @@
 					</div>
 					<!-- ./filter selected option-->
 
+					<!-- spinner -->
+					<div class="spinner flex justify-center py-7.5">
+						<div class="h-9 w-9 animate-spin rounded-full border-4 border-solid border-lavender-purple border-t-transparent lg:h-12 lg:w-12" role="status" aria-label="loading">
+							<span class="sr-only">Завантаження...</span>
+						</div>
+					</div>
+					<!-- ./spinner -->
+
 					<!-- 5cols -->
 					<div class="relative z-10">
 						<div class="auto-rows-[minmax(0px, auto)] mt-5 grid grid-cols-2 gap-x-1.5 gap-y-5 md:grid-cols-3 md:gap-x-4 lg:mt-7.5 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-5.5 xl:gap-y-10">@@loop("html/components/_card-home-page.html", "files/cards-list.json") @@loop("html/components/_card-home-page.html", "files/cards-list.json")</div>
@@ -961,10 +971,7 @@
 		<div class="filters-mobile-all hidden">@@include("html/components/_product-filter-mobile-v2.html")</div>
 		<!-- ./mobile filters -->
 
-		@@include('html/components/_account-menu-v2.html') 
-		@@include('html/components/_sticky-menu.html') 
-		@@include('html/components/_category.html') 
-		@@include('html/components/_category-mobile.html')
+		@@include('html/components/_account-menu-v2.html') @@include('html/components/_sticky-menu.html') @@include('html/components/_category.html') @@include('html/components/_category-mobile.html')
 		<div class="hidden lg:block">@@include('html/components/_footer.html')</div>
 		@@include("html/components/_scripts.html")
 	</body>

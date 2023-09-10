@@ -534,7 +534,7 @@
 								</button>
 
 								<!-- mobile filter -->
-								<button class="lg:hidden filters-mobile-btn" aria-label="mobile filter">
+								<button class="filters-mobile-btn lg:hidden" aria-label="mobile filter">
 									<svg class="h-4 w-4 fill-transparent stroke-shark lg:h-6 lg:w-6">
 										<use xlink:href="img/svg/sprites/sprite-icons.svg#filter2"></use>
 									</svg>
@@ -888,7 +888,9 @@
 								<div class="mt-auto flex flex-col gap-1">
 									<div class="counter-selected hidden">
 										<div class="flex justify-end">
-											<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-lavender-purple px-1 py-0.5 text-sm"><span class="text-white"></span></div>
+											<div class="flex h-[1.25rem] min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-lavender-purple px-1 py-0.5 text-sm">
+												<span class="text-white"></span>
+											</div>
 										</div>
 									</div>
 									<button class="filter-btn flex h-full w-full items-center rounded-lge border border-white bg-white px-3.5 py-2 transition ease-in lg:hover:border-lavender-purple/50">
@@ -1353,6 +1355,14 @@
 						</div>
 					</div>
 					<!-- ./filter selected option-->
+
+					<!-- spinner -->
+					<div class="spinner flex justify-center py-7.5">
+						<div class="h-9 w-9 animate-spin rounded-full border-4 border-solid border-lavender-purple border-t-transparent lg:h-12 lg:w-12" role="status" aria-label="loading">
+							<span class="sr-only">Завантаження...</span>
+						</div>
+					</div>
+					<!-- ./spinner -->
 
 					<!-- 5cols -->
 					<div class="relative z-10">
@@ -5053,8 +5063,7 @@
 		<!-- seller -->
 	</div>
 </div>
- 
-		<!-- sticky menu -->
+ <!-- sticky menu -->
 
 <div class="sticky inset-x-0 bottom-0 z-50 h-12.5 bg-white px-4 pb-1 pt-1.5 shadow-sticky md:px-5 lg:hidden" id="sticky">
 	<div class="flex items-center justify-between gap-x-3">
@@ -5103,8 +5112,7 @@
 </div>
 
 <!-- ./sticky menu -->
- 
-		<!-- category dropdown-menu -->
+ <!-- category dropdown-menu -->
 
 <div class="category-desktop fixed -top-[0.0625rem] left-0 z-30 hidden h-screen w-screen bg-lavender-purple/10">
 	<div class="relative flex max-h-screen max-w-[70rem]">
@@ -5572,8 +5580,7 @@
 	</div>
 </div>
 <!-- ./category dropdown-menu -->
- 
-		<!-- mobile category -->
+ <!-- mobile category -->
 <div class="category-mobile fixed left-0 top-0 z-[100] hidden h-screen w-screen bg-white">
 	<div class="category-mobile-body flex max-h-screen w-full">
 		<!-- головні категоірї -->
