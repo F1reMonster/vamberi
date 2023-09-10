@@ -624,23 +624,27 @@ $(document).ready(function () {
 				const searchTerm = $(this).val().trim().toLowerCase();
 				$(this).closest(".filter-with-search").find(".not-found").addClass("hidden");
 				let found = false;
-	
+
 				// Перевіряємо, чи введено хоча б три літери для пошуку
 				if (searchTerm.length >= 3) {
 					// Перебираємо всі елементи списку
-					
-					$(this).parent().next().find("li").each(function () {
+
+					$(this)
+						.parent()
+						.next()
+						.find("li")
+						.each(function () {
 							const filterOptionName = $(this).find(".filter-option-name");
-	
+
 							// Оригінальний текст елемента
 							const originalText = filterOptionName.text();
-	
+
 							// Перевіряємо, чи знайдено збіг
 							if (originalText.toLowerCase().includes(searchTerm)) {
 								// Замінюємо текст елемента з виділенням знайденого тексту та першої великої літери
 								const highlightedText = originalText.replace(new RegExp(`(${searchTerm})`, "gi"), '<span class="highlight">$1</span>');
 								filterOptionName.html(highlightedText.charAt(0).toUpperCase() + highlightedText.slice(1));
-	
+
 								$(this).show(); // Показуємо знайдений елемент
 								found = true;
 							} else {
@@ -663,11 +667,11 @@ $(document).ready(function () {
 						.each(function () {
 							$(this).replaceWith($(this).text());
 						});
-	
+
 					$(this).closest(".filter-with-search").find(".not-found").addClass("hidden");
 				}
 			});
-		})
+		});
 
 		// приховуємо елементи фільтрів якщо є атрибут data-show-items та кнопка btn-show-all
 		$("[data-show-items]").each(function () {
@@ -735,7 +739,7 @@ $(document).ready(function () {
 			$(this).on("input", function () {
 				let priceFrom = $(this).val();
 				let priceTo = $(this).closest(".filter-inputs-wrapper").find(".filter-price-to").val();
-				
+
 				if (priceFrom !== "" && priceTo !== "" && parseFloat(priceFrom) > parseFloat(priceTo)) {
 					$("[data-filter-name='price'] .btn-filter-apply").prop("disabled", true);
 					$(".filters-all .btn-filters-all-show").prop("disabled", true);
@@ -762,8 +766,6 @@ $(document).ready(function () {
 				}
 			});
 		});
-
-		
 
 		$('[data-filter-name="price"] .btn-filter-apply').click(function () {
 			let filterPlaceholder = "";
@@ -802,8 +804,6 @@ $(document).ready(function () {
 				filterPlaceholder = "<" + priceTo + "грн";
 			}
 
-			
-
 			$(this).closest(".filter-item").find(".selected-placeholder").text(filterPlaceholder);
 
 			// $(this).closest(".filter-dropdown").attr("data-filter-option-pricefrom", priceFrom);
@@ -812,9 +812,9 @@ $(document).ready(function () {
 			$("[data-filter-btn-name='price']").remove();
 			if ($(".filter-selected-options-body").hasClass("hidden")) {
 				$(".filter-selected-options-body").removeClass("hidden");
-				$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+				$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm line-clamp-1 text-ellipsis">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 			} else {
-				$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+				$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm line-clamp-1 text-ellipsis">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 			}
 		});
 	})();
@@ -830,6 +830,9 @@ $(document).ready(function () {
 
 		$(".filters-all-close").click(function () {
 			$(".filters-all").addClass("hidden");
+			if ($(".filters-all").hasClass('open-from-mobile')) {
+				$(".filters-all").removeClass('open-from-mobile')
+			}
 			$("body").removeClass("lock");
 			filterPriceLoadDefault();
 		});
@@ -878,14 +881,13 @@ $(document).ready(function () {
 						if ($(".filter-selected-options-body").hasClass("hidden")) {
 							$(".filter-selected-options-body").removeClass("hidden");
 
-							$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+							$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm line-clamp-1 text-ellipsis">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 						} else {
-							$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+							$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm line-clamp-1 text-ellipsis">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 						}
 					});
 				} else {
 					if ($(this).find(".selected").length > 0) {
-						
 						let $filterOption = $(this).find(".selected").data("filter-option");
 						let $filterSelectedItem = $(this).find(".selected").text();
 
@@ -911,73 +913,69 @@ $(document).ready(function () {
 						if ($(".filter-selected-options-body").hasClass("hidden")) {
 							$(".filter-selected-options-body").removeClass("hidden");
 
-							$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+							$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm line-clamp-1 text-ellipsis">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 						} else {
 							$("[data-filter-btn-name=" + $filterName + "]").remove();
 
-							$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+							$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm line-clamp-1 text-ellipsis">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 						}
 					}
 				}
 			});
 
 			let filterPlaceholder = "";
-				let priceFrom = parseInt($('.filters-all').find("[data-filter-name='price'] .filter-price-from").val());
-				let priceTo = parseInt($('.filters-all').find("[data-filter-name='price'] .filter-price-to").val());
-	
-				if (priceFrom === 0 && priceTo === 0) {
-					filterPlaceholder = "Ціна не вказана";
-				}
-	
-				if (priceFrom === 0 && isNaN(priceTo)) {
-					filterPlaceholder = "Ціна не вказана";
-				}
-	
-				if (isNaN(priceFrom) && priceTo === 0) {
-					filterPlaceholder = "Ціна не вказана";
-				}
-	
-				if (isNaN(priceFrom) && isNaN(priceTo)) {
-					filterPlaceholder = "Ціна не вказана";
-				}
-	
-				if (priceFrom > 0 && isNaN(priceTo)) {
-					filterPlaceholder = ">" + priceFrom + "грн";
-				}
-	
-				if (isNaN(priceFrom) && priceTo > 0) {
-					filterPlaceholder = "<" + priceTo + "грн";
-				}
-	
-				if (priceFrom > 0 && priceTo > 0) {
-					filterPlaceholder = priceFrom + "грн - " + priceTo + "грн";
-				}
-	
-				if (priceFrom === 0 && priceTo > 0) {
-					filterPlaceholder = "<" + priceTo + "грн";
-				}
-	
-				
-	
+			let priceFrom = parseInt($(".filters-all").find("[data-filter-name='price'] .filter-price-from").val());
+			let priceTo = parseInt($(".filters-all").find("[data-filter-name='price'] .filter-price-to").val());
+
+			if (priceFrom === 0 && priceTo === 0) {
+				filterPlaceholder = "Ціна не вказана";
+			}
+
+			if (priceFrom === 0 && isNaN(priceTo)) {
+				filterPlaceholder = "Ціна не вказана";
+			}
+
+			if (isNaN(priceFrom) && priceTo === 0) {
+				filterPlaceholder = "Ціна не вказана";
+			}
+
+			if (isNaN(priceFrom) && isNaN(priceTo)) {
+				filterPlaceholder = "Ціна не вказана";
+			}
+
+			if (priceFrom > 0 && isNaN(priceTo)) {
+				filterPlaceholder = ">" + priceFrom + "грн";
+			}
+
+			if (isNaN(priceFrom) && priceTo > 0) {
+				filterPlaceholder = "<" + priceTo + "грн";
+			}
+
+			if (priceFrom > 0 && priceTo > 0) {
+				filterPlaceholder = priceFrom + "грн - " + priceTo + "грн";
+			}
+
+			if (priceFrom === 0 && priceTo > 0) {
+				filterPlaceholder = "<" + priceTo + "грн";
+			}
+
 			$('.filter-dropdown[data-filter-name="price"]').closest(".filter-item").find(".selected-placeholder").text(filterPlaceholder);
-			
-			isNaN(priceFrom) ? priceFrom = '' : ""
-			isNaN(priceTo) ? priceTo = '' : ""			
-			$('.filter-dropdown[data-filter-name="price"]').find('.filter-price-from').val(priceFrom);
-			$('.filter-dropdown[data-filter-name="price"]').find('.filter-price-to').val(priceTo);
-	
-				// $(this).closest(".filter-dropdown").attr("data-filter-option-pricefrom", priceFrom);
-				// $(this).closest(".filter-dropdown").attr("data-filter-option-priceto", priceTo);
-	
-				$("[data-filter-btn-name='price']").remove();
-				if ($(".filter-selected-options-body").hasClass("hidden")) {
-					$(".filter-selected-options-body").removeClass("hidden");
-					$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
-				} else {
-					$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
-				}
 
+			isNaN(priceFrom) ? (priceFrom = "") : "";
+			isNaN(priceTo) ? (priceTo = "") : "";
+			$('.filter-dropdown[data-filter-name="price"]').find(".filter-price-from").val(priceFrom);
+			$('.filter-dropdown[data-filter-name="price"]').find(".filter-price-to").val(priceTo);
 
+			// $(this).closest(".filter-dropdown").attr("data-filter-option-pricefrom", priceFrom);
+			// $(this).closest(".filter-dropdown").attr("data-filter-option-priceto", priceTo);
+
+			$("[data-filter-btn-name='price']").remove();
+			if ($(".filter-selected-options-body").hasClass("hidden")) {
+				$(".filter-selected-options-body").removeClass("hidden");
+				$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+			} else {
+				$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
+			}
 		});
 
 		$(".filter-static li").click(function (e) {
@@ -1007,14 +1005,15 @@ $(document).ready(function () {
 	// mobile filter
 	(function () {
 		$(".filters-mobile-btn").click(function () {
-			$(".filters-mobile-all").removeClass("hidden");
-			$('body').addClass('lock')
+			$(".filters-all").removeClass("hidden");
+			$(".filters-all").addClass("open-from-mobile");
+			$("body").addClass("lock");
 		});
 
-		$(".filters-mobile-btn-close").click(function () {
-			$(".filters-mobile-all").addClass("hidden");
-			$('body').removeClass('lock')
-		});
+		// $(".filters-mobile-btn-close").click(function () {
+		// 	$(".filters-mobile-all").addClass("hidden");
+		// 	$('body').removeClass('lock-mobile')
+		// });
 	})();
 });
 
@@ -1051,8 +1050,8 @@ function filterPriceLoadDefault() {
 		$(this).val($defaultValue);
 	});
 
-	$('[data-filter-name="price"]').find('.btn-filter-apply').prop('disabled', false);
-	$('[data-filter-name="price"]').closest('.filters-all').find('.btn-filters-all-show').prop('disabled', false)
+	$('[data-filter-name="price"]').find(".btn-filter-apply").prop("disabled", false);
+	$('[data-filter-name="price"]').closest(".filters-all").find(".btn-filters-all-show").prop("disabled", false);
 }
 
 $(window).on("resize", function () {
@@ -1084,12 +1083,16 @@ $(window).on("resize", function () {
 		$("body").removeClass("lock");
 	}
 
-	if (!$(".account-menu").addClass("hidden")) {
-		$(".account-menu").addClass("hidden");
-	}
-
 	if ($("body").hasClass("lock-mobile")) {
 		$("body").removeClass("lock-mobile");
+	}
+
+	if (!$(".filters-all").hasClass('open-from-mobile')) {
+		$(".filters-all").addClass("hidden");
+	}
+
+	if (!$(".account-menu").addClass("hidden")) {
+		$(".account-menu").addClass("hidden");
 	}
 
 	$("footer ul").removeAttr("style");

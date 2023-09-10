@@ -884,9 +884,6 @@ button:disabled:hover {
 .visible {
   visibility: visible;
 }
-.invisible {
-  visibility: hidden;
-}
 .collapse {
   visibility: collapse;
 }
@@ -1121,6 +1118,9 @@ button:disabled:hover {
 }
 .z-\[9\] {
   z-index: 9;
+}
+.z-\[\] {
+  z-index: ;
 }
 .-order-1 {
   order: -1;
@@ -1643,6 +1643,9 @@ button:disabled:hover {
 }
 .h-screen {
   height: 100vh;
+}
+.h-\[calc\(100vh-15\.5rem\)\] {
+  height: calc(100vh - 15.5rem);
 }
 .max-h-60 {
   max-height: 15rem;
@@ -5291,6 +5294,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .lg\:h-auto {
     height: auto;
   }
+  .lg\:h-\[calc\(100vh-12\.5rem\)\] {
+    height: calc(100vh - 12.5rem);
+  }
+  .lg\:h-screen {
+    height: 100vh;
+  }
   .lg\:min-h-\[11\.25rem\] {
     min-height: 11.25rem;
   }
@@ -5300,6 +5309,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .lg\:min-h-fit {
     min-height: -moz-fit-content;
     min-height: fit-content;
+  }
+  .lg\:min-h-\[5rem\] {
+    min-height: 5rem;
   }
   .lg\:w-1\/2 {
     width: 50%;
