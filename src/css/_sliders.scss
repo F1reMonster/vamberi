@@ -26,3 +26,23 @@
 		}
 	}
 }
+
+.product-card-image-thumbs {
+	.product-card-thumbs {
+		border: 2px solid transparent;
+		transition: all 0.2s ease-in;
+	}
+	.swiper-slide {
+		&.swiper-slide-thumb-active {
+			.product-card-thumbs {
+				border: 2px solid $lavender-purple;
+			}
+		}
+	}
+}
+
+.product-card-image-thumbs-scrollbar {
+	.swiper-scrollbar-drag {
+		background: $lavender-purple;
+	}
+}

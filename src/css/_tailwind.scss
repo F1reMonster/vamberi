@@ -64,6 +64,6 @@
 	}
 
 	button:disabled {
-		@apply bg-dusty-gray/80 text-white/50 hover:bg-dusty-gray/80
+		@apply bg-dusty-gray/80 text-white/50 hover:bg-dusty-gray/80 pointer-events-none
 	}
 }

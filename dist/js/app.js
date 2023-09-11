@@ -181,6 +181,74 @@ $(document).ready(function () {
 		});
 	});
 
+	// слайдер в карточці товару
+	if ($(".product-card-image").length > 0) {
+		// thumbs
+		const productCardImageThumbs = new Swiper(".product-card-image-thumbs", {
+			slidesPerView: "auto",
+			spaceBetween: 20,
+			freeMode: true,
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			scrollbar: {
+				el: ".product-card-image-thumbs-scrollbar",
+				draggable: true,
+			},
+		});
+
+		const productCardImage = new Swiper(".product-card-image", {
+			slidersPerView: 1,
+			navigation: {
+				nextEl: ".btn-product-card-next",
+				prevEl: ".btn-product-card-prev",
+			},
+			pagination: {
+				el: ".product-card-slider-pagination",
+			},
+			thumbs: {
+				swiper: productCardImageThumbs,
+			},
+		});
+
+		// productCardImage.controller.contol = productCardImageThumbs;
+		// productCardImageThumbs.controller.controller = productCardImage;
+	}
+
+	// сладера в карточці товару
+	if ($('.slider').length > 0) {
+		$('.slider').each(function (index) {
+			$(this).find('.btn-next').addClass('btn-next-' + index);
+			$(this).find('.btn-prev').addClass('btn-prev-' + index);
+			$(this).find('.swiper-goods').addClass('swiper-goods-' + index);
+
+			new Swiper(".swiper-goods-" + index, {
+				slidesPerView: 5,
+				spaceBetween: 22,
+				navigation: {
+					nextEl: ".btn-next-" + index,
+					prevEl: ".btn-prev-" + index,
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: "auto",
+						spaceBetween: 8,
+					},
+					1440: {
+						slidesPerView: 5,
+					},
+				},
+
+			})
+		});
+
+		// $('.slider').each(function (index) {
+		// 	let sliderName = ".swiper-" + index;
+			
+
+		// 	console.log(sliderName);
+		// })
+	}
+
 	// desktop-category
 	$(".btn-category-desktop").click(function () {
 		$(".category-desktop").removeClass("hidden");
@@ -500,6 +568,8 @@ $(document).ready(function () {
 
 					$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 				}
+
+				filterData();
 			} else {
 				$(this).toggleClass("selected");
 				$(this).find(".check-icon").toggleClass("opacity-0");
@@ -544,6 +614,8 @@ $(document).ready(function () {
 						$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 					});
 				}
+
+				filterData();
 			}
 
 			$(this).closest(".filter-item").find(".filter-btn-arrow-down").removeClass("rotate-x-180");
@@ -607,6 +679,7 @@ $(document).ready(function () {
 			}
 
 			$(this).parent().remove();
+			filterData();
 
 			if ($(".filter-selected-options .btn-filter-delete").length < 1) {
 				$(".filter-selected-options-body").addClass("hidden");
@@ -616,6 +689,7 @@ $(document).ready(function () {
 		// видаляємо всі фільтри
 		$(".btn-filter-all-remove").click(function () {
 			clearDesktopFilter();
+			filterData();
 		});
 
 		// пошук у фільтрі, в якому є пошук, мін. 3 символа
@@ -804,6 +878,8 @@ $(document).ready(function () {
 				filterPlaceholder = "<" + priceTo + "грн";
 			}
 
+			isNaN(priceFrom) ? (priceFrom = "") : "";
+			isNaN(priceTo) ? (priceTo = "") : "";
 			$(this).closest(".filter-item").find(".selected-placeholder").text(filterPlaceholder);
 
 			// $(this).closest(".filter-dropdown").attr("data-filter-option-pricefrom", priceFrom);
@@ -816,6 +892,8 @@ $(document).ready(function () {
 			} else {
 				$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm line-clamp-1 text-ellipsis">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 			}
+
+			filterData();
 		});
 	})();
 
@@ -830,8 +908,8 @@ $(document).ready(function () {
 
 		$(".filters-all-close").click(function () {
 			$(".filters-all").addClass("hidden");
-			if ($(".filters-all").hasClass('open-from-mobile')) {
-				$(".filters-all").removeClass('open-from-mobile')
+			if ($(".filters-all").hasClass("open-from-mobile")) {
+				$(".filters-all").removeClass("open-from-mobile");
 			}
 			$("body").removeClass("lock");
 			filterPriceLoadDefault();
@@ -963,8 +1041,8 @@ $(document).ready(function () {
 
 			isNaN(priceFrom) ? (priceFrom = "") : "";
 			isNaN(priceTo) ? (priceTo = "") : "";
-			$('.filter-dropdown[data-filter-name="price"]').find(".filter-price-from").val(priceFrom);
-			$('.filter-dropdown[data-filter-name="price"]').find(".filter-price-to").val(priceTo);
+			// $('.filter-dropdown[data-filter-name="price"]').find(".filter-price-from").val(priceFrom);
+			// $('.filter-dropdown[data-filter-name="price"]').find(".filter-price-to").val(priceTo);
 
 			// $(this).closest(".filter-dropdown").attr("data-filter-option-pricefrom", priceFrom);
 			// $(this).closest(".filter-dropdown").attr("data-filter-option-priceto", priceTo);
@@ -976,6 +1054,8 @@ $(document).ready(function () {
 			} else {
 				$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="price" data-filter-option-pricefrom="' + priceFrom + '" data-filter-option-priceto="' + priceTo + '"><div class="text-sm">' + filterPlaceholder + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 			}
+
+			filterData();
 		});
 
 		$(".filter-static li").click(function (e) {
@@ -1016,6 +1096,43 @@ $(document).ready(function () {
 		// });
 	})();
 });
+
+// дані фільтра формуємо в об'єкт
+function filterData() {
+	let filterData = {};
+	$(".filter-selected-options [data-filter-btn-name]").each(function () {
+		let nameFilter = $(this).data("filter-btn-name");
+		let option = $(this).data("filter-option");
+
+		// Перевіряємо, чи фільтр має імена "price"
+		if (nameFilter === "price") {
+			var priceFrom = $(this).data("filter-option-pricefrom");
+			var priceTo = $(this).data("filter-option-priceto");
+
+			// Перевіряємо, чи існує об'єкт для фільтра "price"
+			if (!filterData[nameFilter]) {
+				filterData[nameFilter] = {
+					options: [],
+				};
+			}
+
+			// Додаємо дані до об'єкта filterData для фільтра "price"
+			filterData[nameFilter].options.push({ priceFrom });
+			filterData[nameFilter].options.push({ priceTo });
+		} else {
+			// Перевірка для інших фільтрів, які не мають "price" в назві
+			if (!filterData[nameFilter]) {
+				filterData[nameFilter] = {
+					options: [],
+				};
+			}
+
+			filterData[nameFilter].options.push({ option });
+		}
+	});
+
+	console.log(filterData);
+}
 
 // clear filter
 function clearDesktopFilter() {
@@ -1087,7 +1204,7 @@ $(window).on("resize", function () {
 		$("body").removeClass("lock-mobile");
 	}
 
-	if (!$(".filters-all").hasClass('open-from-mobile')) {
+	if (!$(".filters-all").hasClass("open-from-mobile")) {
 		$(".filters-all").addClass("hidden");
 	}
 
@@ -1113,9 +1230,11 @@ $(document).mouseup(function (e) {
 		}
 	}
 
-	if (!$(".account-menu-body").is(e.target) && $(".account-menu-body").has(e.target).length === 0 && !$(".account-btn").is(e.target) && $(".account-btn").has(e.target).length === 0) {
-		$(".account-menu").addClass("hidden");
-		$("body").removeClass("lock-mobile");
+	if (!$(".account-menu").hasClass("hidden")) {
+		if (!$(".account-menu-body").is(e.target) && $(".account-menu-body").has(e.target).length === 0 && !$(".account-btn").is(e.target) && $(".account-btn").has(e.target).length === 0) {
+			$(".account-menu").addClass("hidden");
+			$("body").removeClass("lock-mobile");
+		}
 	}
 
 	if (!$(".filter-dropdown").is(e.target) && $(".filter-dropdown").has(e.target).length === 0 && !$(".filter-btn").is(e.target) && $(".filter-btn").has(e.target).length === 0) {
