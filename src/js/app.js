@@ -183,8 +183,13 @@ $(document).ready(function () {
 
 	// слайдер в карточці товару
 	if ($(".product-card-image").length > 0) {
+		let $speed = 800;
+		if ($(".product-card-image").data("speed") !== undefined) {
+			$speed = parseInt($(".product-card-image").data("speed"));
+		}
 		// thumbs
 		const productCardImageThumbs = new Swiper(".product-card-image-thumbs", {
+			speed: $speed,
 			slidesPerView: "auto",
 			spaceBetween: 20,
 			freeMode: true,
@@ -197,6 +202,7 @@ $(document).ready(function () {
 		});
 
 		const productCardImage = new Swiper(".product-card-image", {
+			speed: $speed,
 			slidersPerView: 1,
 			navigation: {
 				nextEl: ".btn-product-card-next",
@@ -215,13 +221,25 @@ $(document).ready(function () {
 	}
 
 	// сладера в карточці товару
-	if ($('.slider').length > 0) {
-		$('.slider').each(function (index) {
-			$(this).find('.btn-next').addClass('btn-next-' + index);
-			$(this).find('.btn-prev').addClass('btn-prev-' + index);
-			$(this).find('.swiper-goods').addClass('swiper-goods-' + index);
+	if ($(".slider").length > 0) {
+		$(".slider").each(function (index) {
+			$(this)
+				.find(".btn-next")
+				.addClass("btn-next-" + index);
+			$(this)
+				.find(".btn-prev")
+				.addClass("btn-prev-" + index);
+			$(this)
+				.find(".swiper-goods")
+				.addClass("swiper-goods-" + index);
+
+			let $speed = 800;
+			if ($(this).find(".swiper-goods").data("speed") !== undefined) {
+				$speed = parseInt($(this).find(".swiper-goods").data("speed"));
+			}
 
 			new Swiper(".swiper-goods-" + index, {
+				speed: $speed, // Встановлюємо швидкість
 				slidesPerView: 5,
 				spaceBetween: 22,
 				navigation: {
@@ -237,13 +255,11 @@ $(document).ready(function () {
 						slidesPerView: 5,
 					},
 				},
-
-			})
+			});
 		});
 
 		// $('.slider').each(function (index) {
 		// 	let sliderName = ".swiper-" + index;
-			
 
 		// 	console.log(sliderName);
 		// })
