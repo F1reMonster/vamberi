@@ -136,12 +136,12 @@ $(document).ready(function () {
 
 		const sliderAdv = new Swiper(".slider-adv", {
 			speed: $speed, // Встановлюємо швидкість
-			autoplay: {
-				delay: $delay, // Затримка перед автоматичним переключенням слайдів (мілісекунди)
-			},
+			// autoplay: {
+			// 	delay: $delay, // Затримка перед автоматичним переключенням слайдів (мілісекунди)
+			// },
 			loop: true,
 			slidesPerView: 4,
-			spaceBetween: 45,
+			spaceBetween: 12,
 			navigation: {
 				nextEl: ".btn-slider-adv-next",
 				prevEl: ".btn-slider-adv-prev",
@@ -156,7 +156,7 @@ $(document).ready(function () {
 				},
 				1440: {
 					slidesPerView: 4,
-					spaceBetween: 45,
+					spaceBetween: 32,
 				},
 			},
 		});

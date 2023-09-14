@@ -115,3 +115,14 @@ input[type="date"] {
 		// color: $white;
 	}
 }
+
+.page-pagination {
+	&__item {
+		&.active {
+			border-radius: 50%;
+			background: $lavender-purple;
+			color: $white;
+			pointer-events: none;
+		}
+	}
+}
