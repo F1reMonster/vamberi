@@ -36,18 +36,19 @@
 			<!-- actions buttons -->
 			<div class="relative flex gap-5 text-sm lg:gap-10">
 				<!-- lang swither mobile -->
-				<div class="relative">
-					<button class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-sm font-medium transition ease-in lg:h-12.5 lg:w-12.5 lg:text-base lg:hover:border-lavender-purple" data-filter="20">
-						<span class="">UA</span>
+				<div class="relative filter-item">
+					<button class="filter-btn flex h-9 w-9 items-center justify-center rounded-full bg-white text-sm font-medium transition ease-in lg:h-12.5 lg:w-12.5 lg:text-base lg:hover:border-lavender-purple">
+						<span class="default-placeholder hidden">UA</span>
+						<span class="selected-placeholder">UA</span>
 					</button>
 
 					<!-- dropdown -->
-					<div class="absolute left-1/2 top-full z-40 mt-2 hidden rounded-emd border border-lavender-purple/50 bg-white px-3.5 py-2.5 text-shark -translate-x-1/2" data-filter="20">
+					<div class="filter-dropdown absolute left-1/2 top-full z-40 mt-2 hidden rounded-emd border border-lavender-purple/50 bg-white px-3.5 py-2.5 text-shark -translate-x-1/2" data-filter-name="lang">
 						<ul class="flex flex-col gap-3 text-sm font-medium lg:text-base">
-							<li>
+							<li data-filter-option="ua">
 								<a href="#ua" class="transition ease-in hover:text-lavender-purple">UA</a>
 							</li>
-							<li>
+							<li data-filter-option="ru">
 								<a href="#ru" class="transition ease-in hover:text-lavender-purple">RU</a>
 							</li>
 						</ul>

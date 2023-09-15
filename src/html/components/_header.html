@@ -69,19 +69,20 @@
 			<!-- actions buttons -->
 			<div class="relative ml-0 flex gap-5 text-sm lg:ml-4 lg:gap-1 xl:ml-8 xl:gap-3.5">
 				<!-- lang swither mobile -->
-				<div class="relative lg:hidden">
-					<button class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-sm font-medium transition ease-in lg:hover:border-lavender-purple" aria-label="Language switcher" data-filter="20">
-						<span class="">UA</span>
+				<div class="relative lg:hidden filter-item">
+					<button class="filter-btn flex h-9 w-9 items-center justify-center rounded-full bg-white text-sm font-medium transition ease-in lg:hover:border-lavender-purple" aria-label="Language switcher">
+						<span class="default-placeholder hidden">UA</span>
+						<span class="selected-placeholder">UA</span>
 					</button>
 
 					<!-- dropdown -->
-					<div class="absolute left-1/2 top-full z-40 mt-2 hidden rounded-emd border border-lavender-purple/50 bg-white px-3.5 py-2.5 text-shark -translate-x-1/2" data-filter="20">
+					<div class="filter-dropdown absolute left-1/2 top-full z-40 mt-2 hidden rounded-emd border border-lavender-purple/50 bg-white px-3.5 py-2.5 text-shark -translate-x-1/2" data-filter-name="lang">
 						<ul class="flex flex-col gap-3 text-sm font-medium">
-							<li>
-								<a href="#ua" class="transition ease-in hover:text-lavender-purple">UA</a>
+							<li data-filter-option="ua">
+								<a href="#" class="transition ease-in hover:text-lavender-purple">UA</a>
 							</li>
-							<li>
-								<a href="#ru" class="transition ease-in hover:text-lavender-purple">RU</a>
+							<li data-filter-option="ru">
+								<a href="#" class="transition ease-in hover:text-lavender-purple">RU</a>
 							</li>
 						</ul>
 					</div>

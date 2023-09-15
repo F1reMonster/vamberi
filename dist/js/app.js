@@ -585,7 +585,15 @@ $(document).ready(function () {
 					$(".filter-selected-options").prepend('<div class="flex h-6 items-center gap-4 rounded-lge bg-dusty-gray/[0.08] px-2 text-shark lg:px-4" data-filter-btn-name="' + $filterName + '" data-filter-option="' + $filterOption + '"><div class="text-sm">' + $filterSelectedItem + '</div><button class="btn-filter-delete relative h-3.5 w-3.5 rounded-full bg-dusty-gray" aria-label="Видалити фільтр"><svg class="absolute left-1/2 top-1/2 h-2 w-2 stroke-white -translate-x-1/2 -translate-y-1/2"><use xlink:href="img/svg/sprites/sprite-icons.svg#close"></use></svg></button></div>');
 				}
 
-				filterData();
+				if (!$filterName === 'lang') {
+					filterData();
+				} else {
+					let lang = [];
+					lang.push($filterOption)
+					console.log(lang);
+					
+				}
+
 			} else {
 				$(this).toggleClass("selected");
 				$(this).find(".check-icon").toggleClass("opacity-0");

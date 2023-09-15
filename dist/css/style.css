@@ -2772,6 +2772,9 @@ button:disabled:hover {
 .p-10 {
   padding: 2.5rem;
 }
+.p-4\.5 {
+  padding: 1.125rem;
+}
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
